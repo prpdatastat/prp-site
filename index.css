@@ -1,0 +1,171 @@
+html {
+  background-color: #0c1012;
+  height: 100%;
+}
+@font-face {
+  font-family: "heavy";
+  src: url("heavy.ttf");
+}
+@font-face {
+  font-family: "light";
+  src: url("light.ttf");
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 15%;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 50%;
+}
+.filter-item {
+  font-family: "light";
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #2d333b;
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 5px;
+  max-width: 30%;
+}
+.cutoff-bubble {
+  font-family: "light";
+}
+.cutoff-bubble strong {
+  padding: 0.5em;
+  border-radius: 10px;
+  margin: 5px;
+  outline: #5cdb71 solid 0.5px;
+}
+.cutoff-bubble strong:hover {
+  background-color: #5cdb71;
+  padding: 0.5em;
+  border-radius: 10px;
+  margin: 5px;
+  outline: #5cdb71 solid 0.5px;
+  color: rgb(19, 19, 19);
+}
+.info h1 {
+  font-family: "heavy";
+  font-size: 45px;
+}
+.info p {
+  font-family: "light";
+  font-size: 15px;
+}
+
+.stat-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.counter {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  background-color: #292c31;
+  outline: 1px solid rgb(68, 68, 68);
+}
+
+.counter-value {
+  font-family: "heavy";
+  font-size: 45px;
+}
+
+.counter-text {
+  font-family: "heavy";
+  font-size: 15px;
+}
+
+.counter-desc {
+  font-family: "light";
+  font-size: 12px;
+}
+
+.counter:hover {
+  opacity: 0.7;
+  transition-duration: ease 0.5s;
+}
+
+.stat-table {
+  background-color: #2d333b;
+  border-radius: 10px;
+  text-align: center;
+  color: aliceblue;
+  border-collapse: collapse;
+  outline: 1px solid #444c56;
+}
+
+.dt-container {
+  width: 100%;
+}
+.dt-container *[class*="dt"] {
+  overflow-x: auto;
+  max-width: 100%;
+  color: aliceblue !important;
+}
+
+.stat-table th {
+  font-family: "heavy";
+  font-size: 15px;
+  padding: 10px;
+}
+
+.stat-table td {
+  font-size: 17px;
+  font-family: "light";
+  padding: 10px;
+  background-color: #22272e;
+  border: 1px solid #444c56;
+}
+
+.stat-table td:hover {
+  background-color: #2d333b;
+  transition-duration: ease 1s;
+}
+
+.stat-table tr:hover td {
+  background-color: #2d333b;
+  cursor: pointer;
+}

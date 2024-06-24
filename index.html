@@ -18,7 +18,7 @@
   <body>
     <nav class="navbar">
       <div class="logo-container">
-        <img class="logo" src="logo.png" />
+        <img class="logo" onclick="homeUrl()"src="logo.png" />
       </div>
     </nav>
 
@@ -102,7 +102,7 @@
       MS: msMerit,
       MD: mdMerit,
     };
-    
+    const columnParams = ['pmdcNo', 'name', 'quotaName', 'specialityName', 'hospitalName']
     changeMeritList()
     jQuery(document).ready(function () {
       jQuery("#statTable").DataTable({
@@ -146,6 +146,19 @@
       }
       jQuery("#statTable").DataTable().draw();
     }
+
+    $('#statTable').on('click', 'tbody td', function() {   
+      let param =   columnParams[this._DT_CellIndex.column];
+      let paths = {
+        specialityName : 'speciality.html',
+        hospitalName : 'hospital.html',
+        pmdcNo : 'candidate.html'
+      }
+      localStorage.setItem(columnParams[this._DT_CellIndex.column], this.textContent)
+      window.location.href = paths[param]
+    }
+)
+
 
     function animateValue(obj, start, end, duration) {
       let startTimestamp = null;

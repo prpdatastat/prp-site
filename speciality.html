@@ -99,14 +99,28 @@
       program: "FCPS",
       quota: "",
       hospital: "",
-      speciality: specialityvar,
+      speciality: "",
     };
      jQuery(document).ready(function () {
       const specialityvar = localStorage.getItem('specialityName')
       default_filter.speciality = specialityvar;
-      const specialityele = document.getElementsByID('speciality-name');
+      const specialityele = document.getElementById('speciality-name');
       specialityele.innerHTML = specialityvar;
-     
+      const filters = document.getElementsByTagName("select");
+    console.log(filters)
+    for (filter in filters) {      
+      let options = getspecialityOptions(filters[filter].id, default_filter.speciality, meritData[default_filter.program]);
+      console.log("options", options);
+      for (opt in options) {
+        filters[filter].innerHTML +=
+          "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
+      }
+    }
+    
+    for (key in default_filter) {
+      const ele = document.getElementById(key);
+      ele.value = default_filter[key];
+    }
   
       jQuery("#statTable").DataTable({
         paging: true,
@@ -160,22 +174,7 @@
       window.location.href = paths[param]
     }
 )
-    const filters = document.getElementsByTagName("select");
-    console.log(filters)
-    for (filter in filters) {      
-      console.log(filter.id)
-      let options = getspecialityOptions(filters[filter].id, default_filter.speciality, meritData[default_filter.program]);
-      console.log("options", options);
-      for (opt in options) {
-        filters[filter].innerHTML +=
-          "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
-      }
-    }
     
-    for (key in default_filter) {
-      const ele = document.getElementById(key);
-      ele.value = default_filter[key];
-    }
     function updateList(e) {
       default_filter[e.target.id] = e.target.value;
       changeMeritList();

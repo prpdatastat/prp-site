@@ -102,6 +102,23 @@
       default_filter.hospital = hospitalvar;
       const hospitalele = document.getElementById('hospital-name');
       hospitalele.innerHTML = hospitalvar;
+      console.log(default_filter)
+    const filters = document.getElementsByTagName("select");
+    console.log(filters)
+    for (filter in filters) {      
+      console.log(filter.id)
+      let options = gethospitalOptions(filters[filter].id, default_filter.hospital, meritData[default_filter.program]);
+      console.log("options", options);
+      for (opt in options) {
+        filters[filter].innerHTML +=
+          "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
+      }
+    }
+    
+    for (key in default_filter) {
+      const ele = document.getElementById(key);
+      ele.value = default_filter[key];
+    }
      
       jQuery("#statTable").DataTable({
         paging: true,
@@ -155,23 +172,7 @@
       window.location.href = paths[param]
     }
 )
-    console.log(default_filter)
-    const filters = document.getElementsByTagName("select");
-    console.log(filters)
-    for (filter in filters) {      
-      console.log(filter.id)
-      let options = gethospitalOptions(filters[filter].id, default_filter.hospital, meritData[default_filter.program]);
-      console.log("options", options);
-      for (opt in options) {
-        filters[filter].innerHTML +=
-          "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
-      }
-    }
     
-    for (key in default_filter) {
-      const ele = document.getElementById(key);
-      ele.value = default_filter[key];
-    }
     function updateList(e) {
       default_filter[e.target.id] = e.target.value;
       changeMeritList();

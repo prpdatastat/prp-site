@@ -79,7 +79,15 @@ function getCandidatesData(pmdcNo) {
                 if (candData[applicantId][prog].selected[0].quotaName != null) {
                     let obj = candData[applicantId][prog].selected[0];
                     obj.symbol = '✔'
-                    result.progMarks[prog] = parseFloat((obj.marks - result.provMarks).toFixed(5)) 
+                    if (prog === 'FCPS') {
+                        
+                    result.progMarks[prog] = 40 
+
+                    }
+                    else {
+                        result.progMarks[prog] = parseFloat((obj.marks - result.provMarks).toFixed(5)) 
+
+                    }
                     result[prog].push(
                         obj
                     )
@@ -87,7 +95,15 @@ function getCandidatesData(pmdcNo) {
                 for (pref in candData[applicantId][prog].left) {
                     let obj = candData[applicantId][prog].left[pref];
                     
-                    result.progMarks[prog] = parseFloat((obj.marks - result.provMarks).toFixed(5)) 
+                    if (prog === 'FCPS') {
+                        
+                        result.progMarks[prog] = 40 
+    
+                        }
+                        else {
+                            result.progMarks[prog] = parseFloat((obj.marks - result.provMarks).toFixed(5)) 
+    
+                        }
                     obj.symbol = '✘'
                     result[prog].push( 
                         obj

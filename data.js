@@ -76,7 +76,7 @@ function getCandidatesData(pmdcNo) {
             console.log('checking', prog, candData[applicantId].hasOwnProperty(prog))
             if (candData[applicantId].hasOwnProperty(prog)){
                 console.log(candData[applicantId][prog])
-                if (candData[applicantId][prog].selected[0].quota != null) {
+                if (candData[applicantId][prog].selected[0].quotaName != null) {
                     let obj = candData[applicantId][prog].selected[0];
                     obj.symbol = '✔'
                     result.progMarks[prog] = parseFloat((obj.marks - result.provMarks).toFixed(5)) 

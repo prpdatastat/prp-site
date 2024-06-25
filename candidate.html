@@ -159,6 +159,7 @@
 )
     function changeProgramMerit() {
       let merit = data[default_filter.program];
+      console.log(merit)
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in merit) {
         jQuery("#statTable")

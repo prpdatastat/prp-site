@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="navbar notif">
+      Merit list is updated according to recent gazette (25/6/24)<br>
+      candidates increased FCPS (11),MD (9),MS (8)
+    </div>
     <nav class="navbar">
       <div class="logo-container">
         <img class="logo" onclick="homeUrl()"src="logo.png" />
@@ -39,6 +43,11 @@
           <div class="counter-text">MS</div>
           <div class="counter-desc">Number of candidates applied</div>
         </div>
+      </div>
+      <div class="candidate-merit">
+        <span><label for="fname">PMDC Number:</label>
+          <input type="text" id="pmdc-input" name="fname"> <button type="button" onmousedown="getCandidateMerit()">Check Merit</button></span>
+
       </div>
       <div class="filters">
         <select
@@ -160,7 +169,13 @@
       localStorage.setItem(columnParams[this._DT_CellIndex.column], this.textContent)
       window.location.href = paths[param]
     }
-)
+) 
+    function getCandidateMerit() {
+      let pmdcNoValue = document.getElementById('pmdc-input');
+      localStorage.setItem('pmdcNo', pmdcNoValue.value);
+      window.location.href = 'candidate.html'
+      
+    }
 
 
     function animateValue(obj, start, end, duration) {

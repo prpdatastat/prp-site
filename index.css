@@ -42,6 +42,12 @@ body {
   align-items: center;
 }
 
+.notif {
+  text-align: center;
+  font-family: 'light';
+  color: aliceblue;
+  background-color:#212427;
+}
 .info {
   display: flex;
   flex-direction: column;
@@ -49,6 +55,9 @@ body {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
+
+  align-items: center;
+  justify-content: center;
 }
 .filters {
   display: flex;
@@ -199,4 +208,109 @@ body {
   margin: 2px;
   color: black;
   background-color: #7df864;
+}
+.candidate-merit {
+  font-size: 15px;
+  font-family: 'light';
+  color: white;
+  margin-bottom: 10px;
+
+}
+
+.candidate-merit input {
+  background-color: #292c31;
+  outline: 1px solid #444444;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-family: 'light';
+  padding: 8px;
+  border: none;
+}
+span {
+  margin-bottom: 10px;
+}
+
+.aggMarks {
+  font-family: 'light';
+  width: max-content;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+}
+
+.aggMarks span {
+  text-align: center;  
+}
+
+#provMarks {
+  background-color: #2d333b;
+  border-radius: 15px;  
+  outline: 1px solid rgb(68, 68, 68);
+}
+#matricMarks {
+  background-color: rgb(66, 197, 66);
+  border-radius: 15px;
+}
+#interMarks {
+  background-color: rgb(208, 218, 76);
+  border-radius: 15px;  
+}
+#degreeMarks {
+  background-color: rgb(197, 140, 66);
+  border-radius: 15px;  
+}
+#houseJobMarks {
+  background-color: rgb(66, 101, 197);
+  border-radius: 15px;  
+}
+.legend {
+  font-family: 'light';
+  font-size: 15px;;
+}
+
+.legend-bubble {
+  padding: 0.5em;  
+  outline: 1px solid rgb(68, 68, 68);
+  opacity: 0.85;
+
+}
+
+.legend-bubble:hover {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+#experienceMarks {
+  background-color: rgb(197, 66, 110);
+  border-radius: 15px;  
+}
+.bubble {
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.candidate-merit button {
+  background-color: #2d333b;
+  border-radius: 15px;
+  outline: none;
+  color: white;
+  font-size: 12px;
+  font-family: 'heavy';
+  padding: 10px;
+  border: none;  
+  outline: 1px solid rgb(68, 68, 68);
+  opacity: 0.7;
+  
+  transition-duration: 0.5;
+}
+
+.candidate-merit button:hover {
+  opacity: 1;
+  transition-duration: 0.5;
 }

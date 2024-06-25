@@ -55,33 +55,47 @@ function getCandidatesData(pmdcNo) {
     const progs = ['FCPS', 'MS', 'MD']
     let result = {}
     for (applicantId in candData) {
-        if (candData[applicantId].pmdcNo == pmdcNo)
+        if (candData[applicantId].pmdcNo.toLowerCase() == pmdcNo.toLowerCase())
             {
         result['applicantId'] = applicantId
         result['name'] = candData[applicantId]['nameFull']
-        result['pmdcNo'] = candData[applicantId]['pmdcNo']        
+        result['pmdcNo'] = candData[applicantId]['pmdcNo']       
+        result['matric'] = candData[applicantId]['matric']
+        result['inter'] = candData[applicantId]['fsc']
+        result['degree'] = candData[applicantId]['degree']
+        result['houseJob'] = parseFloat(candData[applicantId]['houseJob'].toFixed(2))
+        result['experience'] = candData[applicantId]['experience'] 
+        result['provMarks'] = parseFloat((candData[applicantId]['matric'] + candData[applicantId]['degree'] + candData[applicantId]['fsc'] + candData[applicantId]['houseJob'] + candData[applicantId]['experience']).toFixed(5))
+        result['progMarks'] = {
+            FCPS : 0.0,
+            MS : 0.0,
+            MD : 0.0
+        }
         progs.forEach( prog => {
             result[prog] = []
+            console.log('checking', prog, candData[applicantId].hasOwnProperty(prog))
             if (candData[applicantId].hasOwnProperty(prog)){
+                console.log(candData[applicantId][prog])
                 if (candData[applicantId][prog].selected[0].quota != null) {
                     let obj = candData[applicantId][prog].selected[0];
                     obj.symbol = '✔'
-                    obj.quotaName = obj.quota
+                    result.progMarks[prog] = parseFloat((obj.marks - result.provMarks).toFixed(5)) 
                     result[prog].push(
                         obj
                     )
                 }
                 for (pref in candData[applicantId][prog].left) {
                     let obj = candData[applicantId][prog].left[pref];
+                    
+                    result.progMarks[prog] = parseFloat((obj.marks - result.provMarks).toFixed(5)) 
                     obj.symbol = '✘'
-                    result[prog].push(
+                    result[prog].push( 
                         obj
                     )
                 }
             }
             result[prog].sort( (a,b) => (a.preferenceNo - b.preferenceNo))
         })
-
 
     }
 }
@@ -123,9 +137,10 @@ function getMerit(merit,  quota='', speciality='', hospital='', all=false) {
                         if (all) {
                             for (cand in merit[prog][quot][specia][hosp].others) {
                                 let obj = merit[prog][quot][specia][hosp].others[cand]
-                                obj.quotaName = quot
                                 obj.specialityName = specia
                                 obj.hospitalName = hosp
+                                
+                                obj.quotaName = quot
                                 if (obj.selected_in.hospitalName === null ) {
                                     
                                 obj.symbol = '✖'
@@ -294,3 +309,4 @@ function getspecialityOptions(optionType, specialityName, meritData) {
     }
     return result
 }
+

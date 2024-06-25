@@ -29,39 +29,68 @@
             Ali Tahir
         </h1>
         <div class="cutoff-bubble">
-          <span > Applicant ID: <strong id="applicantId"> 15610</strong></span><br>          
+          <span > Applicant ID: <strong id="applicantId"> 15610</strong></span><br>
+          <br>        
           <span > PMDC Number: <strong id="pmdcNo"> 15610</strong></span><br>
+          
+
+        </div>
+        <div class="aggMarks">Provisional Marks:   
+          <span class="bubble "id="provMarks">29
+            <span class="bubble" id="matricMarks">4
+              <span class="bubble" id="interMarks">6
+                <span class="bubble" id="degreeMarks">14
+                  <span class="bubble" id="houseJobMarks">5
+                    <span class="bubble" id="experienceMarks">4</span></span></span></span></span>
+          </span>
+        </div>
+        
+        <div class="aggMarks progMarks">FCPS:  
+          <span class="bubble FCPSmarks" id="houseJobMarks">5</span> MS:  <span class="bubble MSmarks" id="experienceMarks">0</span> MD:  <span class="bubble MDmarks" id="experienceMarks">0</span>
+        </div>
+        <div class="legend"> Legend: 
+          <span class="legend-bubble" id="matricMarks">matric</span>
+          <span class="legend-bubble" id="interMarks">inter</span>
+          <span class="legend-bubble" id="degreeMarks">degree</span>
+          <span class="legend-bubble" id="houseJobMarks">housejob</span>
+          <span class="legend-bubble" id="experienceMarks">experience</span>
+
         </div>
         <p>
             Below is the list of hospital he / she applied for
         </p>
-        <div class="filters">
-          <select
-            onchange="updateList(event);"
-            class="filter-item"
-            name="quota"
-            id="program"
-          >
-        </select>
-        </div>
-        <table class="stat-table" style="width: 100%" id="statTable">
-          <thead>
-            <tr>
-              <th>Quota</th>
-              <th>Hospital</th>
-              <th>Speciality</th>
-              <th>Aggregate</th>
-              <th>Preference No.</th>
-              <th>Selected Elsewhere</th>
-            </tr>
-          </thead>
-          <tbody id="dataRows"></tbody>
-        </table>
         
         
-        <div class="footer">
-          <span>Made with 💓 in <strong>HTML</strong>  &  <strong>JS</strong> by <img src="github.png">reko-beep</span>
-        </div>
+    </div>
+    <div class="filters">
+      <select
+        onchange="updateList(event);"
+        class="filter-item"
+        name="quota"
+        id="program"
+      >
+      <option disabled selected value="">Select a program
+      </option>
+    </select>
+    </div>
+    <table class="stat-table" style="width: 100%" id="statTable">
+      <thead>
+        <tr>
+          <th>Quota</th>
+          <th>Hospital</th>
+          <th>Speciality</th>
+          <th>Aggregate</th>
+          <th>Preference No.</th>
+          <th>Selected Elsewhere</th>
+        </tr>
+      </thead>
+      <tbody id="dataRows"></tbody>
+    </table>
+    
+    
+    <div class="footer">
+      <span>Made with 💓 in <strong>HTML</strong>  &  <strong>JS</strong> by <img src="github.png">reko-beep</span>
+    </div>
     </div>
     
     <script>   
@@ -75,10 +104,26 @@
       const pmdcNumber = localStorage.getItem('pmdcNo')
       data = getCandidatesData(pmdcNumber);
       default_filter.pmdcNo = pmdcNumber;
-    
       console.log(data);
+      const marksagg = document.getElementsByClassName('aggMarks')[0];
+      marksagg.innerHTML = `Provisional Marks
+      <span class="bubble "id="provMarks">${data.provMarks}
+            <span class="bubble" id="matricMarks">${data.matric}
+              <span class="bubble" id="interMarks">${data.inter}
+                <span class="bubble" id="degreeMarks">${data.degree}
+                  <span class="bubble" id="houseJobMarks">${data.houseJob}
+                    <span class="bubble" id="experienceMarks">${data.experience}</span></span></span></span>`
+      for (pro in data.progMarks) {
+        const elet = document.getElementsByClassName(pro+'marks')[0];
+        
+        console.log(pro, pro+'Marks', elet)
+        elet.innerHTML = data.progMarks[pro]
+
+      }
+      
       const nameele = document.getElementById('name');
       nameele.innerHTML = data.name;
+
       
       pmdcNo.innerHTML = data.pmdcNo;
       const applicantele = document.getElementById('applicantId');
@@ -95,7 +140,7 @@
           { width: "10%" },
           { width: "10%" },
           { width: "20%" },
-          { width: "10%" }
+          { width: "5%" },
         ],
       });
       changeProgramMerit()

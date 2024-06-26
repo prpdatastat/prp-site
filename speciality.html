@@ -12,7 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
-    
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="data.js"></script>
     <link
       href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
@@ -131,7 +132,7 @@
         searching: true,
         ordering: true,
         lengthMenu: [10, 25, 50, { label: "All", value: -1 }],
-        lengthChange: true,  
+        lengthChange: true,         
         columns: [
           { width: "10%" },
           { width: "20%" },
@@ -166,7 +167,15 @@
           ]);
       }
       jQuery("#statTable").DataTable().draw();
+      addToolTips()
+
+      
     }
+     $('#statTable').on( 'draw.dt',  function () {
+      addToolTips()
+  });
+  
+  
     $('#statTable').on('click', 'tbody td', function() {   
       let param =   columnParams[this._DT_CellIndex.column];
       let paths = {
@@ -182,11 +191,48 @@
       }
     }
 )
-    
+    function getSelection(pmdcnumbercand) {
+      let cdata = getCandidatesData(pmdcnumbercand);
+      console.log(cdata)
+      if (cdata.hasOwnProperty(default_filter.program)) {
+        if (cdata.select[default_filter.program].quotaName != null) {
+          return 'Selected in   '+cdata.select[default_filter.program].specialityName+', '+cdata.select[default_filter.program].hospitalName+" at "+parseNumberth(cdata.select[default_filter.program].preferenceNo.toString())+" preference";
+         }
+         else {
+          return 'Not Selected'
+         }
+      }
+      else {
+        return 'No Selection data found'
+      }
+     }
     function updateList(e) {
       default_filter[e.target.id] = e.target.value;
       changeMeritList();
     }
+    function addToolTips() {
+  var table = $("#statTable").DataTable();
+  var statRows = table.rows().nodes().to$();
+  statRows.each(function() {
+    $(this).addClass('selectedInfo');
+  });
+
+  console.log(statRows);
+  console.log(typeof statRows);
+
+  tippy(".selectedInfo", {    
+      
+    theme: "prp",
+    content(reference) {
+      const id = reference.getElementsByTagName('td')[0].innerHTML;
+      const tooltip = getSelection(id);
+      console.log(id);
+      return tooltip;
+    },
+    allowHTML: true,
+  });
+}
+    
     </script>
   </body>
 </html>

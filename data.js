@@ -45,7 +45,7 @@ function getCandidatesNumber () {
 }
 
 function homeUrl() {
-    window.location.href = 'https://prpdatastat.github.io/prp-site/'
+    window.location.href = 'index.html'
 }
 
 
@@ -58,6 +58,11 @@ function getCandidatesData(pmdcNo) {
     for (applicantId in candData) {
         if (candData[applicantId].pmdcNo.toLowerCase() == pmdcNo.toLowerCase())
             {
+                result['select'] = {
+                    FCPS : {},
+                    MD : {},
+                    MS : {}
+                }
         result['applicantId'] = applicantId
         result['name'] = candData[applicantId]['nameFull']
         result['pmdcNo'] = candData[applicantId]['pmdcNo']       
@@ -80,6 +85,7 @@ function getCandidatesData(pmdcNo) {
                 if (candData[applicantId][prog].selected[0].quotaName != null) {
                     let obj = candData[applicantId][prog].selected[0];
                     obj.symbol = '✔'
+                    result['select'][prog] = obj
                     if (prog === 'FCPS') {
                         
                     result.progMarks[prog] = 40 
@@ -296,3 +302,19 @@ function getspecialityOptions(optionType, speciality) {
     return result
 }
 
+function parseNumberth(string ) {
+
+    const numberth = {
+        
+        "1" : "st",
+        "2" : "nd",
+        "3": "rd",      
+
+    }
+
+    let last = string.slice(-1)
+    if (last in numberth) {
+        return string+numberth[last]
+    }
+    else { return string+"th"}
+}

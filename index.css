@@ -11,6 +11,15 @@ html {
   src: url("light.ttf");
 }
 
+.tippy-tooltip.prp-theme{
+  background-color: #212427;
+  color: #35df68;
+}
+.tippy-box[data-theme~='prp'] {
+  background-color: #212427;
+  color: #35df68;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;

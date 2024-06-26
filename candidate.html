@@ -153,8 +153,12 @@
         hospitalName : 'hospital.html',
         pmdcNo : 'candidate.html'
       }
+      const checkParams = ['hospitalName', 'pmdcNo', 'specialityName'];
+      if (checkParams.includes(columnParams[this._DT_CellIndex.column]))
+      {
       localStorage.setItem(columnParams[this._DT_CellIndex.column], this.textContent)
       window.location.href = paths[param]
+      }
     }
 )
     function changeProgramMerit() {

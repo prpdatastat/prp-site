@@ -18,7 +18,7 @@
   <body>
     <div class="navbar notif">
       This is a estimated merit list wait for official one<br>
-      Click on pmdc number of candidate or speciality name or hospital name to get their merit list or preferences<br>
+      <strong><a href="help.html">How to use this website? click here</a></strong><br>
       Merit list is updated according to recent gazette (25/6/24)<br>
       The marks calculated in list also includes the parent Institute marks
     </div>
@@ -88,11 +88,11 @@
       <table class="stat-table" style="width: 100%" id="statTable">
         <thead>
           <tr>
-            <th>PMDC Number</th>
-            <th>Name</th>
+            <th class="linkable">PMDC Number</th>
+            <th >Name</th>
             <th>Quota</th>
-            <th>Speciality</th>
-            <th>Hospital</th>
+            <th class="linkable">Speciality</th>
+            <th class="linkable">Hospital</th>
             <th>Aggregate</th>
             <th>Preference No.</th>
           </tr>
@@ -167,8 +167,12 @@
         hospitalName : 'hospital.html',
         pmdcNo : 'candidate.html'
       }
+      const checkParams = ['hospitalName', 'pmdcNo', 'specialityName'];
+      if (checkParams.includes(columnParams[this._DT_CellIndex.column]))
+      {
       localStorage.setItem(columnParams[this._DT_CellIndex.column], this.textContent)
       window.location.href = paths[param]
+      }
     }
 ) 
     function getCandidateMerit() {

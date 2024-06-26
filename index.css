@@ -75,6 +75,12 @@ body {
   padding: 5px;
   max-width: 30%;
 }
+a {
+  color: aliceblue;
+}
+a:hover {  
+  color: rgb(74, 146, 33);
+}
 .cutoff-bubble {
   font-family: "light";
 }
@@ -83,6 +89,15 @@ body {
   border-radius: 10px;
   margin: 5px;
   outline: #5cdb71 solid 0.5px;
+}
+.linkable:hover {
+  color: rgb(197, 140, 66)
+}
+.stat-table td:hover {
+  color: rgb(74, 146, 33);
+}
+.infos strong {
+  color: rgb(163, 31, 31)
 }
 .cutoff-bubble strong:hover {
   background-color: #5cdb71;
@@ -96,6 +111,16 @@ body {
   font-family: "heavy";
   font-size: 45px;
 }
+.small-heading {
+  font-family: 'heavy';
+  font-size: 20px;
+  color: rgb(39, 165, 60)
+}
+.info h3 {
+  font-family: 'heavy';
+  font-size: 30px;
+}
+
 .info p {
   font-family: "light";
   font-size: 15px;

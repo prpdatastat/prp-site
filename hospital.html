@@ -38,7 +38,8 @@
           <p>
             <span>Candidates with symbol<strong>-</strong>are selected</span><br>
             <span>Candidates with symbol<strong>✔</strong>are selected elsewhere in other hospitals</span><br>
-            <span>Candidates with symbol<strong>✖</strong>failed to make it in any hospital</span><br>
+            <span>Candidates with symbol<strong>✖</strong>failed to make it in any hospital</span><br><br>
+            <strong>If candidate who is selected elsewhere with high merit has preference number lower than the selected candidate theres a chance he might<br>upgrade to this speciality</strong>
           </p> 
         </div>
         <div class="filters">
@@ -172,8 +173,12 @@
         hospitalName : 'hospital.html',
         pmdcNo : 'candidate.html'
       }
+      const checkParams = ['hospitalName', 'pmdcNo', 'specialityName'];
+      if (checkParams.includes(columnParams[this._DT_CellIndex.column]))
+      {
       localStorage.setItem(columnParams[this._DT_CellIndex.column], this.textContent)
       window.location.href = paths[param]
+      }
     }
 )
     

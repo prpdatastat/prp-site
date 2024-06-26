@@ -7,7 +7,9 @@
     <title>PRP Statistics</title>
     <script src="https://unpkg.com/sync-fetch"></script> 
     <link rel="stylesheet" href="index.css" />
-    
+        
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="data.js"></script>
     <link
       href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
@@ -99,6 +101,11 @@
       pmdcNo : '',
       program : 'FCPS'
     };
+    const meritData = {
+      FCPS: fcpsMerit,
+      MS: msMerit,
+      MD: mdMerit,
+    };
     const  columnParams = ['quotaName', 'hospitalName', 'specialityName'];
     jQuery(document).ready(function () {
       const pmdcNumber = localStorage.getItem('pmdcNo')
@@ -179,6 +186,7 @@
           ]);
       }
       jQuery("#statTable").DataTable().draw();
+      addToolTips()
     }
     console.log(default_filter)
     const filters = document.getElementsByTagName("select");
@@ -201,6 +209,49 @@
       default_filter[e.target.id] = e.target.value;
       changeProgramMerit();
     }
+    function getSpecialityLowestMerit(quota, specia, hospi) {
+      let meritDataSpeciality = getMerit(
+        meritData[default_filter.program],
+        quota,
+        specia,
+        hospi)
+      
+      meritDataSpeciality.sort( (a,b) => a.marksTotal - b.marksTotal)
+
+      return "<span class='tooltip-inf'>Lowest merit for "+ specia+ " , "+hospi +" in "+ default_filter.program + " was "+ meritDataSpeciality[0].marksTotal.toString()+"<span>"
+
+
+      
+    }
+
+    $('#statTable').on( 'draw.dt',  function () {
+      addToolTips()
+  })
+    function addToolTips() {
+  var table = $("#statTable").DataTable();
+  var statRows = table.rows().nodes().to$();
+  statRows.each(function() {
+    $(this).addClass('selectedInfo');
+  });
+
+  console.log(statRows);
+  console.log(typeof statRows);
+
+  tippy(".selectedInfo", {    
+      
+    theme: "prp",
+    content(reference) {
+      const quotaspec = reference.getElementsByTagName('td')[0].innerHTML;
+      const hospitalspec = reference.getElementsByTagName('td')[1].innerHTML;
+      const specialityspec = reference.getElementsByTagName('td')[2].innerHTML;
+      
+      const tooltip = getSpecialityLowestMerit(quotaspec, specialityspec, hospitalspec);
+
+      return tooltip;
+    },
+    allowHTML: true,
+  });
+}
     </script>
     </div>
   </body>

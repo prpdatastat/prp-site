@@ -1,0 +1,5458 @@
+[
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Institute of Child Health, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anatomy",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Anatomy",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Biochemistry",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Wazirabad  Institute of Cardiology, Warzirabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardio Thoracic Anesthesia",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardio Thoracic Anesthesia",
+   "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Wazirabad  Institute of Cardiology, Warzirabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Chemical Pathology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Chemical Pathology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Chemical Pathology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Chemical Pathology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Community Medicine",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Community Medicine",
+   "hospitalName": "Institute Of Public health (IPH) Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Community Medicine",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Community Medicine",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Community Medicine",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Community Medicine",
+   "hospitalName": "RMU Allied Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Community Medicine",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Community Medicine",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Community Medicine",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Dermatology",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Dermatology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Dermatology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Dermatology",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Dermatology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Dermatology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Dermatology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Dermatology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Dermatology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Children Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 5,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Emergency Medicine",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Forensic Medicine",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Hospital, Bhakkar"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Hospital, Jhang"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Hospital, Mandi Bahauddin"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Hematology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Hematology",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Hematology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Hematology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Hematology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Hematology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Hematology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Hematology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Histopathology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Histopathology",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Histopathology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Histopathology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Histopathology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Histopathology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Histopathology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Histopathology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Histopathology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medical Oncology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medical Oncology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 5,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medical Oncology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Hospital, Jhang"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Hospital, Mandi Bahauddin"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Govt. Teaching Hospital GM Abad, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Isfandyar Bukhari/ DHQ Hospital, Attock"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neurology",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neurology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neurology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neurology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neurology",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neurology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neurology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Neurology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Civil Hospital Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Hospital, Jhang"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Lady Aitchison Hospital"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Lady Willingdon Hospital"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 5,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Children Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Institute of Child Health, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 12,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Children Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Civil Hospital Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Hospital, Toba Tek Singh"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Institute of Child Health, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 5,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pharmacology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Physiology",
+   "hospitalName": "RMU Allied Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Physiology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Physiology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Punjab Institute of Mental Health, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Radiotherapy",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Thoracic Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Thoracic Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Thoracic Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Thoracic Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Nephrology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Children Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Punjab Institute of Mental Health, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "FCPS",
+   "specialityName": "Urology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Punjab Institute of Mental Health, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Cardiology",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Medicine",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Civil Hospital Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "FCPS",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "FCPS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "FCPS",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "FCPS",
+   "specialityName": "Hematology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "FCPS",
+   "specialityName": "Histopathology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Wazirabad  Institute of Cardiology, Warzirabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Govt. Teaching Hospital GM Abad, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Civil Hospital Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Govt. Teaching Hospital GM Abad, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Lady Aitchison Hospital"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Lady Willingdon Hospital"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Govt. Teaching Hospital GM Abad, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 5,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Children Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Institute of Child Health, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Plastic Surgery",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Thoracic Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Thoracic Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MS",
+   "specialityName": "Neuro Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MS",
+   "specialityName": "Orthopedic Surgery",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Institute of Child Health, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MS",
+   "specialityName": "Cardiac Surgery",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MS",
+   "specialityName": "General Surgery",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MS",
+   "specialityName": "Obstetrics & Gynecology",
+   "hospitalName": "Govt. Teaching Hospital GM Abad, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MS",
+   "specialityName": "Ophthalmology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MS",
+   "specialityName": "Otorhinolaryngology ENT",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MS",
+   "specialityName": "Pediatric Surgery",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MS",
+   "specialityName": "Urology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "MS",
+   "specialityName": "Anaesthesia",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  }
+ ,
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Wazirabad  Institute of Cardiology, Warzirabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Dermatology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Dermatology",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Dermatology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Dermatology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Dermatology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Dermatology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Children Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Govt. Teaching Hospital GM Abad, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Punjab Institute of Cardiology, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 5,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Emergency Medicine",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 5,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Emergency Medicine",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medical Oncology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medical Oncology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 5,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medical Oncology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Govt. Teaching Hospital GM Abad, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Neurology",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Neurology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Neurology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Neurology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Neurology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Neurology",
+   "hospitalName": "Punjab Institute of Neurosciences, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Neurology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Neurology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Neurology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "ABS Teaching Hospital, Gujrat"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 4,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 12,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 6,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Children Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Civil Hospital Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Hospital, DG Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "DHQ Teaching Hospital, Sargodha"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Govt. Teaching Hospital GM Abad, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Institute of Child Health, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 5,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 3,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Punjab Institute of Mental Health, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Sahiwal Teaching Hospital, Sahiwal"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "DHQ Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "DHQ Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Lahore General Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 2,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Sir Ganga Ram Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MD",
+   "specialityName": "Cardiology",
+   "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MD",
+   "specialityName": "Pulmonology",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "DHQ Hospital, Gujranwala"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Nishtar Hospital, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MD",
+   "specialityName": "Medicine",
+   "hospitalName": "Allied Hospital, Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MD",
+   "specialityName": "Nephrology",
+   "hospitalName": "Holy Family Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MD",
+   "specialityName": "Pediatrics",
+   "hospitalName": "AIMH, Sialkot"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MD",
+   "specialityName": "Psychiatry",
+   "hospitalName": "Benazir Bhutto Hospital, Rawalpindi"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Bahawal Victoria Hospital, Bahawalpur"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Disable",
+   "typeName": "MD",
+   "specialityName": "Diagnostic Radiology",
+   "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan"
+  }
+,
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MDS",
+   "specialityName": "Operative Dentistry",
+   "hospitalName": "Nishtar Institute of Dentistry, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MDS",
+   "specialityName": "Operative Dentistry",
+   "hospitalName": "Punjab Dental Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MDS",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Jinnah Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MDS",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MDS",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Nishtar Institute of Dentistry, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MDS",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Punjab Dental Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MDS",
+   "specialityName": "Orthodontics",
+   "hospitalName": "Punjab Dental Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "MDS",
+   "specialityName": "Prosthodontics",
+   "hospitalName": "Punjab Dental Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "KPK, Sindh, Balochistan",
+   "typeName": "MDS",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Nishtar Institute of Dentistry, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "AJK, G&B, FATA, ICT",
+   "typeName": "MDS",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Foriegn",
+   "typeName": "MDS",
+   "specialityName": "Orthodontics",
+   "hospitalName": "Punjab Dental Hospital, Lahore"
+  }
+,
+{
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Operative Dentistry",
+   "hospitalName": "Allied Hospital (Dentistry), Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Operative Dentistry",
+   "hospitalName": "Nishtar Institute of Dentistry, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Operative Dentistry",
+   "hospitalName": "Punjab Dental Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Allied Hospital (Dentistry), Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Mayo Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Nishtar Institute of Dentistry, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Punjab Dental Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Oral & Maxillofacial Surgery",
+   "hospitalName": "Services Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Orthodontics",
+   "hospitalName": "Allied Hospital (Dentistry), Faisalabad"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Orthodontics",
+   "hospitalName": "Children Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Orthodontics",
+   "hospitalName": "Nishtar Institute of Dentistry, Multan"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Orthodontics",
+   "hospitalName": "Punjab Dental Hospital, Lahore"
+  },
+  {
+   "jobs": 1,
+   "quotaName": "Punjab",
+   "typeName": "FCPS Dentistry",
+   "specialityName": "Prosthodontics",
+   "hospitalName": "Punjab Dental Hospital, Lahore"
+  }
+ ]

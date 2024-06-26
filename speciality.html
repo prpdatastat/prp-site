@@ -112,7 +112,7 @@
       const filters = document.getElementsByTagName("select");
     console.log(filters)
     for (filter in filters) {      
-      let options = getspecialityOptions(filters[filter].id, default_filter.speciality, meritData[default_filter.program]);
+      let options = getspecialityOptions(filters[filter].id, default_filter.speciality);
       console.log("options", options);
       for (opt in options) {
         filters[filter].innerHTML +=
@@ -130,7 +130,7 @@
         searching: true,
         ordering: true,
         lengthMenu: [10, 25, 50, { label: "All", value: -1 }],
-        lengthChange: true,
+        lengthChange: true,  
         columns: [
           { width: "10%" },
           { width: "20%" },

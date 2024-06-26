@@ -10,6 +10,7 @@ const candData = load_data('./cand_data.json')
 const fcpsMerit = load_data('./fcps_merit.json')
 const msMerit = load_data('./ms_merit.json')
 const mdMerit = load_data('./md_merit.json')
+const seats = load_data('./seats.json')
 
 
 
@@ -233,93 +234,62 @@ function getOptions(optionType) {
 }
 
 
-function gethospitalOptions(optionType, hospitalName, meritData) {
+function gethospitalOptions(optionType, hospital) {
+ 
     let result = [];
-    if (optionType === 'quota') {
-        for (prog in meritData) {
-            for (quota in meritData[prog]) 
-                {
-                for (specia in meritData[prog][quota]) 
-                {
-                    for (hosp in meritData[prog][quota][specia])
-                        {
-                            if (hosp === hospitalName)
-                                {
-                            if (!result.includes(quota)) {
-                                result.push(quota)
-                            }
-                        }
+    
+    if (optionType == 'quota')
+        {
+            seats.forEach(item => {
+                if (item.hospitalName == hospital) {
+                if (!result.includes(item.quotaName)) {
+                    result.push(item.quotaName)
                 }
             }
+        })
         }
-        }
-    }
-    if (optionType === 'speciality') {
-        for (prog in meritData) {
-            for (quota in meritData[prog]) {
-                for (specia in meritData[prog][quota]) 
-                    {
-                        for (hosp in meritData[prog][quota][specia])
-                            {
-                                if (hosp === hospitalName)
-                                    {
-                                if (!result.includes(specia)) {
-                                    result.push(specia)
-                                }
-                            }
-                    }
-                    }
-                
+    if (optionType == "speciality") {
+        seats.forEach(item => {
+            if (item.hospitalName == hospital) {
+                if (!result.includes(item.specialityName)) {
+                    result.push(item.specialityName)
+                }
             }
-        }
-    }   
+        })
+    }
+    
+
     if (optionType === 'program') {
         return ['FCPS', 'MS', 'MD']
     }
     return result
-}
+    }
 
 
-function getspecialityOptions(optionType, specialityName, meritData) {
+function getspecialityOptions(optionType, speciality) {
     let result = [];
-    if (optionType === 'quota') {
-        for (prog in meritData) {
-            for (quota in meritData[prog]) 
-                {
-                for (specia in meritData[prog][quota]) 
-                {
-                    for (hosp in meritData[prog][quota][specia])
-                        {
-                            if (specia === specialityName)
-                                {
-                            if (!result.includes(quota)) {
-                                result.push(quota)
-                            }
-                        }
+    
+    if (optionType == 'quota')
+        {
+            seats.forEach(item => {
+                if (item.specialityName == speciality) {
+                if (!result.includes(item.quotaName)) {
+                    result.push(item.quotaName)
                 }
             }
+        })
         }
-        }
-    }
-    if (optionType === 'hospital') {
-        for (prog in meritData) {
-            for (quota in meritData[prog]) {
-                for (specia in meritData[prog][quota]) 
-                    {
-                        for (hosp in meritData[prog][quota][specia])
-                            {
-                                if (specia === specialityName)
-                                    {
-                                if (!result.includes(hosp)) {
-                                    result.push(hosp)
-                                }
-                            }
-                    }
-                    }
-                
+    if (optionType == "hospital") {
+        seats.forEach(item => {
+            if (item.specialityName == speciality) {
+                if (!result.includes(item.hospitalName)) {
+                    result.push(item.hospitalName)
+                }
             }
-        }
-    }   
+        })
+    }
+    
+
     if (optionType === 'program') {
         return ['FCPS', 'MS', 'MD']
     }

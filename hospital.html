@@ -110,7 +110,7 @@
     console.log(filters)
     for (filter in filters) {      
       console.log(filter.id)
-      let options = gethospitalOptions(filters[filter].id, default_filter.hospital, meritData[default_filter.program]);
+      let options = gethospitalOptions(filters[filter].id, default_filter.hospital);
       console.log("options", options);
       for (opt in options) {
         filters[filter].innerHTML +=
@@ -128,7 +128,7 @@
         searching: true,
         ordering: true,
         lengthMenu: [10, 25, 50, { label: "All", value: -1 }],
-        lengthChange: true,
+        lengthChange: true,        
         columns: [
           { width: "10%" },
           { width: "20%" },
@@ -138,6 +138,7 @@
           { width: "5%" },
           { width: "5%" },
         ],
+        order: [[2, 'asc']]
       });
       changeMeritList();
     });

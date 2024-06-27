@@ -245,9 +245,9 @@
       
     theme: "prp",
     content(reference) {
-      const quotaspec = htmlDecode(document.getElementsByTagName('td')[0].innerHTML);
-      const hospitalspec = htmlDecode(document.getElementsByTagName('td')[1].innerHTML);
-      const specialityspec = htmlDecode(document.getElementsByTagName('td')[2].innerHTML);
+      const quotaspec = htmlDecode(reference.getElementsByTagName('td')[0].innerHTML);
+      const hospitalspec = htmlDecode(reference.getElementsByTagName('td')[1].innerHTML);
+      const specialityspec = htmlDecode(reference.getElementsByTagName('td')[2].innerHTML);
       console.log(quotaspec, hospitalspec, specialityspec)
       const tooltip = getSpecialityLowestMerit(quotaspec,specialityspec, hospitalspec);
 

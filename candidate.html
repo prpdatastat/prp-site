@@ -217,7 +217,7 @@
         hospi)
       
       meritDataSpeciality.sort( (a,b) => a.marksTotal - b.marksTotal)
-
+      console.log(meritDataSpeciality, meritDataSpeciality[0])
       return "<span class='tooltip-inf'>Lowest merit for "+ specia+ " , "+hospi +" in "+ default_filter.program + " was "+ meritDataSpeciality[0].marksTotal.toString()+"<span>"
 
 
@@ -227,6 +227,10 @@
     $('#statTable').on( 'draw.dt',  function () {
       addToolTips()
   })
+  function htmlDecode(input) {
+  var doc = new DOMParser().parseFromString(input, "text/html");
+  return doc.documentElement.textContent;
+}
     function addToolTips() {
   var table = $("#statTable").DataTable();
   var statRows = table.rows().nodes().to$();
@@ -241,11 +245,11 @@
       
     theme: "prp",
     content(reference) {
-      const quotaspec = reference.getElementsByTagName('td')[0].innerHTML;
-      const hospitalspec = reference.getElementsByTagName('td')[1].innerHTML;
-      const specialityspec = reference.getElementsByTagName('td')[2].innerHTML;
-      
-      const tooltip = getSpecialityLowestMerit(quotaspec, specialityspec, hospitalspec);
+      const quotaspec = htmlDecode(document.getElementsByTagName('td')[0].innerHTML);
+      const hospitalspec = htmlDecode(document.getElementsByTagName('td')[1].innerHTML);
+      const specialityspec = htmlDecode(document.getElementsByTagName('td')[2].innerHTML);
+      console.log(quotaspec, hospitalspec, specialityspec)
+      const tooltip = getSpecialityLowestMerit(quotaspec,specialityspec, hospitalspec);
 
       return tooltip;
     },

@@ -32,7 +32,9 @@ body {
   align-items: center;
   margin-bottom: 2%;
 }
-
+.important {
+  color: greenyellow;
+}
 .navbar {
   top: 0;
   width: 100%;

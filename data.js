@@ -30,17 +30,48 @@ function getCandidatesNumber () {
         MS : 0,
         MD : 0
     }
-    for (const key in candData) {
-        if (candData.hasOwnProperty(key)) {
-          const item = candData[key];
-          const keyCheckResult = checkKeys(item);
-          for (k in keyCheckResult) {
-            if (keyCheckResult[k]) {
-                counter[k]++
+
+    let data = {
+        FCPS : fcpsMerit,
+        MS : msMerit,
+        MD : mdMerit
+    }
+    let applicantsData = {
+        FCPS : [],
+        MS : [],
+        MD : []
+    }
+    for (prog in data) {
+        for ( quota in data[prog][prog]) {
+            for (speciality in data[prog][prog][quota]) {
+                for (hospital in data[prog][prog][quota][speciality]) {
+                    if (data[prog][prog][quota][speciality][hospital].candidates.length > 0) {
+                        for (cand in data[prog][prog][quota][speciality][hospital].candidates) {
+                            
+                            let obj = data[prog][prog][quota][speciality][hospital].candidates[cand]
+                            if (!applicantsData[prog].includes(obj.applicantId)) {
+                                
+                            applicantsData[prog].push(obj.applicantId)
+                            }
+
+                        }
+                    }
+                    if (data[prog][prog][quota][speciality][hospital].others.length > 0) {
+                        for (cand in data[prog][prog][quota][speciality][hospital].others) {
+                            let obj = data[prog][prog][quota][speciality][hospital].others[cand]
+                            if (!applicantsData[prog].includes(obj.applicantId)) {
+                                applicantsData[prog].push(obj.applicantId)
+                            }
+
+                        }
+                    }
+                }
+
             }
-          }
         }
-      }
+        counter[prog] = applicantsData[prog].length
+    }
+
     return counter
 }
 

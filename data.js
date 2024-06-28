@@ -123,7 +123,7 @@ function getCandidatesData(pmdcNo) {
 
                     }
                     else {
-                        result.progMarks[prog] = parseFloat((obj.marks - result.provMarks).toFixed(5)) 
+                        result.progMarks[prog] = candData[applicantId].marksProgram
 
                     }
                     result[prog].push(
@@ -139,7 +139,7 @@ function getCandidatesData(pmdcNo) {
     
                         }
                         else {
-                            result.progMarks[prog] = parseFloat((obj.marks - result.provMarks).toFixed(5)) 
+                            result.progMarks[prog] = candData[applicantId].marksProgram
     
                         }
                     obj.symbol = '✘'

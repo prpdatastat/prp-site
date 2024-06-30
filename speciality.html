@@ -54,7 +54,7 @@
           <select
             onchange="updateList(event);"
             class="filter-item"
-            name="quota"
+            name="program"
             id="program"
           >
             <option value="" disabled selected>Program</option>
@@ -62,18 +62,18 @@
           <select
             onchange="updateList(event);"
             class="filter-item"
-            name="speciality"
+            name="quota"
             id="quota"
           >
-            <option value="" selected>Quota</option>
+            <option value="" selected>All Quota's</option>
           </select>
           <select
             onchange="updateList(event);"
             class="filter-item"
-            name="quota"
+            name="hospital"
             id="hospital"
           >
-            <option value="" selected>Hospital</option>
+            <option value="" selected>All Hospitals</option>
           </select>          
         </div>
     </div>
@@ -123,10 +123,10 @@
       const specialityele = document.getElementById('speciality-name');
       specialityele.innerHTML = specialityvar;
       const filters = document.getElementsByTagName("select");
-    console.log(filters)
+    
     for (filter in filters) {      
       let options = getspecialityOptions(filters[filter].id, default_filter.speciality);
-      console.log("options", options);
+      
       for (opt in options) {
         filters[filter].innerHTML +=
           "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
@@ -157,12 +157,16 @@
       changeMeritList();
     });
     function changeMeritList() {
+      console.log('changed', default_filter);
+      
+      console.log(default_filter.quota)
       let merit = getMerit(
         meritData[default_filter.program],
-        default_filter.quotaName,
+        default_filter.quota,
         default_filter.speciality,
         default_filter.hospital,
       true);
+      console.log(merit);
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in merit) {
         jQuery("#statTable")
@@ -211,7 +215,6 @@ function shareUrl() {
     }
     function getSelection(pmdcnumbercand) {
       let cdata = getCandidatesData(pmdcnumbercand);
-      console.log(cdata)
       if (cdata.hasOwnProperty(default_filter.program)) {
         if (cdata.select[default_filter.program].quotaName != null) {
           return "<span class='tooltip-inf'>Selected in   "+cdata.select[default_filter.program].specialityName+', '+cdata.select[default_filter.program].hospitalName+" at "+parseNumberth(cdata.select[default_filter.program].preferenceNo.toString())+" preference</span>";
@@ -225,7 +228,7 @@ function shareUrl() {
       }
      }
     function updateList(e) {
-      default_filter[e.target.id] = e.target.value;
+      default_filter[e.target.id] = e.target.value;      
       changeMeritList();
     }
     function addToolTips() {
@@ -235,8 +238,6 @@ function shareUrl() {
     $(this).addClass('selectedInfo');
   });
 
-  console.log(statRows);
-  console.log(typeof statRows);
 
   tippy(".selectedInfo", {    
       
@@ -244,7 +245,6 @@ function shareUrl() {
     content(reference) {
       const id = reference.getElementsByTagName('td')[0].innerHTML;
       const tooltip = getSelection(id);
-      console.log(id);
       return tooltip;
     },
     allowHTML: true,

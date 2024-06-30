@@ -109,10 +109,8 @@ function getCandidatesData(pmdcNo) {
             MD : 0.0
         }
         progs.forEach( prog => {
-            result[prog] = []
-            console.log('checking', prog, candData[applicantId].hasOwnProperty(prog))
+            result[prog] = []            
             if (candData[applicantId].hasOwnProperty(prog)){
-                console.log(candData[applicantId][prog])
                 if (candData[applicantId][prog].selected[0].quotaName != null) {
                     let obj = candData[applicantId][prog].selected[0];
                     obj.symbol = '✔'
@@ -163,10 +161,10 @@ function getCandidatesData(pmdcNo) {
 function getMerit(merit,  quota='', speciality='', hospital='', all=false) {    
 
     let result = [];
-    let cutoff = 0;
+    console.log('selected quota', quota, 'speciality', speciality, 'hospital', hospital);
     for (prog in merit) {
         for (quot in merit[prog]) {
-            if (quota === quot || quota === '') 
+            if (quota === quot || quota === '') {
                 for (specia in merit[prog][quot]) {
                     if (specia === speciality || speciality === '')
                         {
@@ -211,6 +209,7 @@ function getMerit(merit,  quota='', speciality='', hospital='', all=false) {
             }
         }
     }
+    }
 
             
 
@@ -223,7 +222,6 @@ function getMerit(merit,  quota='', speciality='', hospital='', all=false) {
 
 
 function getOptions(optionType) {
-    console.log('optiontype', optionType)
     let result = [];
     if (optionType === 'quota') {
         for (prog in fcpsMerit) {

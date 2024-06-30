@@ -26,14 +26,20 @@
         <img class="logo"  onclick="homeUrl()" src="logo.png" />
       </div>
     </nav>
+    
     <div class="main_container">
+      
     <div class="info">
         <h1 id="hospital-name">
             Civil Hospital Bahawalpur
         </h1>
+        <div class="share-link">
+          <div class="share" onmousedown="shareUrl()"><img src="share.png"></div>
+        </div>
         <p>
             Below is the merit list of candidates who applied for the hospital
         </p>
+        
 
 
         <div class="cutoff-bubble">
@@ -104,6 +110,16 @@
       MD: mdMerit,
     };   
     jQuery(document).ready(function () {
+      if (window.location.search != '')
+      {
+      let params = new URLSearchParams(window.location.search);
+      
+      if (params.has('hospital')) {        
+        localStorage.setItem('hospitalName', params.get('hospital'))
+      }
+    }
+    
+
       const hospitalvar = localStorage.getItem('hospitalName')
       default_filter.hospital = hospitalvar;
       const hospitalele = document.getElementById('hospital-name');
@@ -205,7 +221,13 @@
         return "<span class='tooltip-inf'>No Selection data found</span>"
       }
      }
-    
+    function shareUrl() {
+      let url = new URLSearchParams();
+      url.append('hospital', default_filter['hospital'])
+      navigator.clipboard.writeText(window.location.href.split('?')[0] +"?"+url.toString());
+    // Alert the copied text
+      alert("url copied");
+    }
     function updateList(e) {
       default_filter[e.target.id] = e.target.value;
       changeMeritList();

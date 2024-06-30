@@ -30,6 +30,9 @@
         <h1 id="name">
             Ali Tahir
         </h1>
+        <div class="share-link">
+          <div class="share" onmousedown="shareUrl()"><img src="share.png"></div>
+        </div>
         <div class="cutoff-bubble">
           <span > Applicant ID: <strong id="applicantId"> 15610</strong></span><br>
           <br>        
@@ -108,6 +111,14 @@
     };
     const  columnParams = ['quotaName', 'hospitalName', 'specialityName'];
     jQuery(document).ready(function () {
+      if (window.location.search != '')
+      {
+      let params = new URLSearchParams(window.location.search);
+      
+      if (params.has('pmdcNo')) {        
+        localStorage.setItem('pmdcNo', params.get('pmdcNo'))
+      }
+    }
       const pmdcNumber = localStorage.getItem('pmdcNo')
       data = getCandidatesData(pmdcNumber);
       default_filter.pmdcNo = pmdcNumber;
@@ -168,6 +179,13 @@
       }
     }
 )
+function shareUrl() {
+      let url = new URLSearchParams();
+      url.append('pmdcNo', default_filter['pmdcNo'])
+      navigator.clipboard.writeText(window.location.href.split('?')[0]+"?"+url.toString());
+    // Alert the copied text
+      alert("url copied!");
+    }
     function changeProgramMerit() {
       let merit = data[default_filter.program];
       console.log(merit)

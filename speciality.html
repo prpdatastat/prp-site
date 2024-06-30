@@ -34,6 +34,9 @@
         <h1 id="speciality-name">
             Pediatrics
         </h1>
+        <div class="share-link">
+          <div class="share" onmousedown="shareUrl()"><img src="share.png"></div>
+        </div>
         <p>
             Below is the merit list of candidates who applied for this speciality
         </p>
@@ -107,6 +110,14 @@
       speciality: "",
     };
      jQuery(document).ready(function () {
+      if (window.location.search != '')
+      {
+      let params = new URLSearchParams(window.location.search);
+      
+      if (params.has('speciality')) {        
+        localStorage.setItem('specialityName', params.get('speciality'))
+      }
+    }
       const specialityvar = localStorage.getItem('specialityName')
       default_filter.speciality = specialityvar;
       const specialityele = document.getElementById('speciality-name');
@@ -191,6 +202,13 @@
       }
     }
 )
+function shareUrl() {
+      let url = new URLSearchParams();
+      url.append('speciality', default_filter['speciality'])
+      navigator.clipboard.writeText(window.location.href.split('?')[0]+"?"+url.toString());
+    // Alert the copied text
+      alert("url copied!");
+    }
     function getSelection(pmdcnumbercand) {
       let cdata = getCandidatesData(pmdcnumbercand);
       console.log(cdata)

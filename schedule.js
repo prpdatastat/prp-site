@@ -21,6 +21,6 @@ $.ajax({
         console.log(response);
     },
     error: function () {
-        alert("error");
+        console.log('error')
     }
 }); 

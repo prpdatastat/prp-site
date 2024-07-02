@@ -75,8 +75,8 @@ function getCandidatesNumber () {
     return counter
 }
 
-function homeUrl() {
-    window.location.href = 'index.html'
+function gotoUrl(link = 'index.html') {
+    window.location.href = link
 }
 
 
@@ -347,3 +347,26 @@ function parseNumberth(string ) {
     }
     else { return string+"th"}
 }
+
+function getSchedule() { 
+    var data = {};
+
+
+        $.ajax({
+            url: 'https://prp-api.vercel.app/schedule',
+            type: 'GET',
+        
+            dataType : 'json',
+            success: function (response) {
+                if ('data' in response) {
+                 data = response['data']
+                }
+
+            },
+            error: function () {
+                console.log('error')
+            }
+        }); 
+    
+        return data;
+    }

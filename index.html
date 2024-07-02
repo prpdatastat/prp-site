@@ -26,7 +26,7 @@
     </div>
     <nav class="navbar">
       <div class="logo-container">
-        <img class="logo" onclick="homeUrl()"src="logo.png" />
+        <img class="logo" onclick="gotoUrl()"src="logo.png" />
       </div>
     </nav>
 
@@ -48,9 +48,12 @@
           <div class="counter-desc">Number of candidates applied</div>
         </div>
       </div>
+      <div>
+        <button class="schd-button lrgbtn" onmousedown="gotoUrl('schedule.html')"> View PRP Schedule </button>
+      </div>
       <div class="candidate-merit">
         <span><label for="fname">PMDC Number:</label>
-          <input type="text" id="pmdc-input" name="fname"> <button type="button" onmousedown="getCandidateMerit()">Check Merit</button></span>
+          <input type="text" id="pmdc-input" name="fname"> <button type="button" class="schd-button" onmousedown="getCandidateMerit()">Check Merit</button></span>
 
       </div>
       <div class="filters">

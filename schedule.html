@@ -53,6 +53,7 @@
     <script>
         jQuery(document).ready(function () {
       jQuery("#statTable").DataTable({
+        order : [[1, 'asc']],
         paging: true,
         searching: true,
         ordering: true,
@@ -68,8 +69,8 @@
       });
       updateSchedule();
     });
-    function updateSchedule() {
-      let data = getSchedule();
+    async function updateSchedule() {
+      let data = await getSchedule();
       console.log(data)
       jQuery("#statTable").DataTable().clear().draw();
       for (r in data) {

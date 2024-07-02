@@ -348,26 +348,19 @@ function parseNumberth(string ) {
     else { return string+"th"}
 }
 
-function getSchedule() { 
-    var data = {};
-
-
-        $.ajax({
+async function getSchedule() { 
+    try {
+        let response = await $.ajax({
             url: 'https://prp-api.vercel.app/schedule',
             type: 'GET',
-        
-            dataType : 'json',
-            success: function (response) {
-                if ('data' in response) {
-                 data = response['data']
-                 console.log('response', data, response)
-                }
+            dataType: 'json'
+        });
 
-            },
-            error: function () {
-                console.log('error')
-            }
-        }); 
-    
-    return data;
+        if ('data' in response) {
+            console.log('response', response['data']);
+            return response['data'];
+        }
+    } catch (error) {
+        console.log('error');
+    }
     }

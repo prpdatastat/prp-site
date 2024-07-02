@@ -124,6 +124,7 @@
     const columnParams = ['pmdcNo', 'name', 'quotaName', 'specialityName', 'hospitalName']
     jQuery(document).ready(function () {
       jQuery("#statTable").DataTable({
+        order: [[5, 'desc']],
         paging: true,
         searching: true,
         ordering: true,

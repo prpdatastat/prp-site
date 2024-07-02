@@ -33,7 +33,7 @@
                 PRP Schedule
             </h1>
         </div>
-        <button type="button" onmousedown="updateSchedule()">Update Schedule</button>
+        <button type="button" class="schd-button" onmousedown="updateSchedule()">Update Schedule</button>
         
         <table class="stat-table" style="width: 100%" id="statTable">
             <thead>
@@ -66,7 +66,7 @@
           
         ],
       });
-      changeMeritList();
+      updateSchedule();
     });
     function updateSchedule() {
       let data = getSchedule()

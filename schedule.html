@@ -69,7 +69,8 @@
       updateSchedule();
     });
     function updateSchedule() {
-      let data = getSchedule()
+      let data = getSchedule();
+      console.log(data)
       jQuery("#statTable").DataTable().clear().draw();
       for (r in data) {
         jQuery("#statTable")

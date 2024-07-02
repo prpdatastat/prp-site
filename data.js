@@ -360,6 +360,7 @@ function getSchedule() {
             success: function (response) {
                 if ('data' in response) {
                  data = response['data']
+                 console.log('response', data, response)
                 }
 
             },
@@ -368,5 +369,5 @@ function getSchedule() {
             }
         }); 
     
-        return data;
+    return data;
     }

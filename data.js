@@ -11,6 +11,7 @@ const fcpsMerit = load_data('./fcps_merit.json')
 const msMerit = load_data('./ms_merit.json')
 const mdMerit = load_data('./md_merit.json')
 const seats = load_data('./seats.json')
+const changes = load_data('./changes.json')
 
 
 
@@ -364,3 +365,24 @@ async function getSchedule() {
         console.log('error');
     }
     }
+
+function getChanges(program) 
+{
+    let result = [];
+    if (program in changes) {
+        for (item in changes[program])
+                    {
+            let changeData = changes[program][item];
+            console.log(changeData, item)
+            result.push({
+                applicantId : item,
+                changes : changeData.changes,
+                nameFull : changeData.name
+            })
+        
+    }
+    
+}
+return result
+}
+

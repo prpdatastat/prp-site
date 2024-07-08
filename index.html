@@ -19,10 +19,8 @@
   </head>
   <body>
     <div class="navbar notif">
-      This is a estimated merit list wait for official one<br>
-      <strong><a href="help.html">How to use this website? click here</a></strong><br>
-      Merit list is updated according to recent gazette <span class='important'>(7/7/24 12:00AM)</span><br>
-      The marks calculated in list also includes the parent Institute marks<br>
+      This is a First Official Merit List<br>
+      <span class='important'>Click on last box to check Candidate Consent</span><br>
     </div>
     <nav class="navbar">
       <div class="logo-container">
@@ -35,28 +33,23 @@
         <div class="counter">
           <div id="FCPS" class="counter-value">500</div>
           <div class="counter-text">FCPS</div>
-          <div class="counter-desc">Number of candidates applied</div>
+          <div class="counter-desc">Accuracy of Estimated Merit List</div>
         </div>
         <div class="counter">
           <div id="MD" class="counter-value">500</div>
           <div class="counter-text">MD</div>
-          <div class="counter-desc">Number of candidates applied</div>
+          <div class="counter-desc">Accuracy of Estimated Merit List</div>
         </div>
         <div class="counter">
           <div id="MS" class="counter-value">500</div>
           <div class="counter-text">MS</div>
-          <div class="counter-desc">Number of candidates applied</div>
+          <div class="counter-desc">Accuracy of Estimated Merit List</div>
         </div>
       </div>
       <div>
         <button class="schd-button lrgbtn" onmousedown="gotoUrl('schedule.html')"> View PRP Schedule </button>
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('changes.html')"> View Gazette Changes </button>
-      </div>
-      <div class="candidate-merit">
-        <span><label for="fname">PMDC Number:</label>
-          <input type="text" id="pmdc-input" name="fname"> <button type="button" class="schd-button" onmousedown="getCandidateMerit()">Check Merit</button></span>
-
-      </div>
+        <button class="schd-button lrgbtn" onmousedown="gotoUrl('changes.html')"> View Difference between Estimated and Offical Merit List </button>
+      </div>    
       <div class="filters">
         <select
           onchange="updateList(event);"
@@ -161,27 +154,27 @@
             merit[cand].specialityName,
             merit[cand].hospitalName,
             merit[cand].marksTotal,
-            merit[cand].preferenceNo,
+            "Pref No."+merit[cand].preferenceNo+"<br> <span style='color:rgb(69, 199, 44);''>"+getConsent(merit[cand].applicantId)+"<span>",
           ]);
       }
       jQuery("#statTable").DataTable().draw();
     }
-
-    $('#statTable').on('click', 'tbody td', function() {   
-      let param =   columnParams[this._DT_CellIndex.column];
-      let paths = {
-        specialityName : 'speciality.html',
-        hospitalName : 'hospital.html',
-        pmdcNo : 'candidate.html'
+      /*
+      $('#statTable').on('click', 'tbody td', function() {   
+        let param =   columnParams[this._DT_CellIndex.column];
+        let paths = {
+          specialityName : 'speciality.html',
+          hospitalName : 'hospital.html',
+          pmdcNo : 'candidate.html'
+        }
+        const checkParams = ['hospitalName', 'pmdcNo', 'specialityName'];
+        if (checkParams.includes(columnParams[this._DT_CellIndex.column]))
+        {
+        localStorage.setItem(columnParams[this._DT_CellIndex.column], this.textContent)
+        window.location.href = paths[param]
+        }
       }
-      const checkParams = ['hospitalName', 'pmdcNo', 'specialityName'];
-      if (checkParams.includes(columnParams[this._DT_CellIndex.column]))
-      {
-      localStorage.setItem(columnParams[this._DT_CellIndex.column], this.textContent)
-      window.location.href = paths[param]
-      }
-    }
-) 
+  ) */
     function getCandidateMerit() {
       let pmdcNoValue = document.getElementById('pmdc-input');
       localStorage.setItem('pmdcNo', pmdcNoValue.value);
@@ -213,7 +206,6 @@
       }
     }
     for (key in default_filter) {
-      console.log("key", key);
       const ele = document.getElementById(key);
       ele.value = default_filter[key];
     }
@@ -222,12 +214,11 @@
       console.log(default_filter);
       changeMeritList();
     }
-    const candidatesData = getCandidatesNumber();
-    console.log(candidatesData);
-    for (program in candidatesData) {
+    for (program in accuracyMerit) {
+      console.log(accuracyMerit[program])
       const ele = document.getElementById(program);
       console.log(ele);
-      animateValue(ele, 0, candidatesData[program], 2500);
+      ele.innerHTML = accuracyMerit[program].accuracy.toFixed(2);
     }
   </script>
 </html>

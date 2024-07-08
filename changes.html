@@ -31,13 +31,13 @@
       
     <div class="info">
         <h1 id="hospital-name">
-            Changes in Recent Gazette
+            Changes B/W Estimated and Official
         </h1>
         <div class="share-link">
           <div class="share" onmousedown="shareUrl()"><img src="share.png"></div>
         </div>
         <p>
-            Below is changes observed in recent gazette as compared to previous one!
+            Below is changes observed in Official Merit list Compared to Estimated one.<br>
             Select a program
           </p>
         
@@ -59,9 +59,11 @@
     <table class="stat-table" style="width: 100%" id="statTable">
       <thead>
         <tr>
-          <th>Applicant ID</th>
-          <th>Name</th>
-          <th>Changes</th>
+          <th>Quota</th>
+          <th>Speciality</th>
+          <th>Hospital</th>
+          <th>Official</th>
+          <th>Estimated</th>
         </tr>
       </thead>
       <tbody id="dataRows"></tbody>
@@ -111,7 +113,10 @@
           { width: "10%" },
           { width: "20%" },
           { width: "10%" },
-         
+          
+          { width: "10%" },
+          
+          { width: "10%" },
         ]
       });
       changeProgramChanges();
@@ -121,12 +126,15 @@
       
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in changes) {
-        jQuery("#statTable")
+       jQuery("#statTable")
           .DataTable()
           .row.add([
-          changes[cand].applicantId,
-          changes[cand].nameFull,
-          changes[cand].changes,
+          changes[cand].quotaName,
+          changes[cand].specialityName,
+          changes[cand].hospitalName,
+          changes[cand].selected[0].nameFull +"<br>Aggregate:"+changes[cand].selected[0].marksTotal+"<br>Pref.No: "+changes[cand].selected[0].preferenceNo,
+          changes[cand].not_selected[0].nameFull +"<br>Aggregate:"+changes[cand].not_selected[0].marksTotal+"<br>Pref.No: "+changes[cand].not_selected[0].preferenceNo,
+          
           ]);
       }
       

@@ -1,3 +1,4 @@
+
 const fetch = require('sync-fetch')
 function load_data(path) {
     
@@ -5,17 +6,22 @@ function load_data(path) {
    return data;
 }
 
-
+/*
 const candData = load_data('./cand_data.json')
+*/
 const fcpsMerit = load_data('./fcps_merit.json')
 const msMerit = load_data('./ms_merit.json')
 const mdMerit = load_data('./md_merit.json')
 const seats = load_data('./seats.json')
+const accuracyMerit = load_data('./merit_stats.json')
+const changes = load_data('./merit_diff.json')
+/*
 const changes = load_data('./changes.json')
 
 
+*/
 
-
+/*
 function checkKeys(item) {
   const keysToCheck = ["FCPS", "MS", "MD"];
   const result = {};
@@ -75,12 +81,12 @@ function getCandidatesNumber () {
 
     return counter
 }
-
+*/
 function gotoUrl(link = 'index.html') {
     window.location.href = link
 }
 
-
+/*
 function getCandidatesData(pmdcNo) {
 
   
@@ -156,7 +162,7 @@ function getCandidatesData(pmdcNo) {
     return result
 
     }
-
+*/
 
  
 function getMerit(merit,  quota='', speciality='', hospital='', all=false) {    
@@ -365,24 +371,47 @@ async function getSchedule() {
         console.log('error');
     }
     }
-
+    async function getConsent(applicantId) { 
+        try {
+            let response = await $.ajax({
+                url: 'https://prp-api.vercel.app/consent/'+applicantId.toString(),
+                type: 'GET',
+                dataType: 'json'
+            });
+    
+            if ('data' in response) {
+                return response.status;
+            }
+        } catch (error) {
+            console.log('error');
+        }
+        }
 function getChanges(program) 
 {
     let result = [];
+    console.log(changes, program in changes)
     if (program in changes) {
-        for (item in changes[program])
-                    {
-            let changeData = changes[program][item];
-            console.log(changeData, item)
-            result.push({
-                applicantId : item,
-                changes : changeData.changes,
-                nameFull : changeData.name
-            })
+        for (quot in changes[program])
+        {
+            for (specia in changes[program][quot])
+            {
+                for (hosp in changes[program][quot][specia])
+                {
+                    let obj = Object()
+                    obj.quotaName = quot
+                    obj.specialityName = specia
+                    obj.hospitalName = hosp
+                    obj.selected = changes[program][quot][specia][hosp].selected
+                    obj.not_selected = changes[program][quot][specia][hosp].not_selected
+                   result.push(
+                    obj
+                   )
+                }
+            }
         
     }
-    
-}
+        }
+        console.log(result);
 return result
 }
 

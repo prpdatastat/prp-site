@@ -1,0 +1,123 @@
+{
+ "FCPS": {
+  "Punjab": {
+   "Cardiac Surgery": {
+    "Punjab Institute of Cardiology, Lahore": {
+     "selected": [      
+       {
+        "nameFull": "Rabia Rasool D/O Raja Qaiser Bashir",
+        "marksTotal": 74.092852,
+        "pmdcNo": "102506-p",
+        "applicantId": 22767,
+        "preferenceNo": 15
+       }
+      
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Amina D/O Ehsanullah Waseem",
+       "marksTotal": 71.175444,
+       "pmdcNo": "115381-P",
+       "applicantId": 28864,
+       "preferenceNo": 2
+      }
+     ]
+    },
+    "Rawalpindi Institute of Cardiology , Rawalpindi": {
+     "selected": [
+      
+       {
+        "nameFull": "Khalil Ur Rehman S/O Pir gul",
+        "marksTotal": 74.705536,
+        "pmdcNo": "116811-p",
+        "applicantId": 25135,
+        "preferenceNo": 5
+       }
+      
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Rabia Rasool D/O Raja Qaiser Bashir",
+       "marksTotal": 74.092852,
+       "pmdcNo": "102506-p",
+       "applicantId": 22767,
+       "preferenceNo": 14
+      }
+     ]
+    }
+   },
+   "General Surgery": {
+    "Benazir Bhutto Hospital, Rawalpindi": {
+     "selected": [
+      
+       {
+        "nameFull": "Amina D/O Ehsanullah Waseem",
+        "marksTotal": 76.175444,
+        "pmdcNo": "115381-P",
+        "applicantId": 28864,
+        "preferenceNo": 18
+       }
+      
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Muhammad Tanzeel Tahir S/O Nazir Ahmad",
+       "marksTotal": 74.770916,
+       "pmdcNo": "100364-P",
+       "applicantId": 26133,
+       "preferenceNo": 9
+      }
+     ]
+    },
+    "DHQ Rawalpindi": {
+     "selected": [
+      
+       {
+        "nameFull": "Muhammad Tanzeel Tahir S/O Nazir Ahmad",
+        "marksTotal": 74.770916,
+        "pmdcNo": "100364-P",
+        "applicantId": 26133,
+        "preferenceNo": 11
+       }
+      
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Momna D/O Muhammad Ashraf",
+       "marksTotal": 74.758679,
+       "pmdcNo": "758543-01-M",
+       "applicantId": 27947,
+       "preferenceNo": 3
+      }
+     ]
+    }
+   },
+   "Pediatric Surgery": {
+    "Holy Family Hospital, Rawalpindi": {
+     "selected": [
+      
+       {
+        "nameFull": "Momna D/O Muhammad Ashraf",
+        "marksTotal": 74.758679,
+        "pmdcNo": "758543-01-M",
+        "applicantId": 27947,
+        "preferenceNo": 25
+       }
+      
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Khalil Ur Rehman S/O Pir gul",
+       "marksTotal": 74.705536,
+       "pmdcNo": "116811-p",
+       "applicantId": 25135,
+       "preferenceNo": 4
+      }
+     ]
+    }
+   }
+  }
+ },
+ "MS": {},
+ "MD": {}
+}

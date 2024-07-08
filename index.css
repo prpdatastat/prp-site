@@ -92,6 +92,13 @@ body {
 a {
   color: aliceblue;
 }
+.check-consent {
+  color: rgb(197, 140, 66)
+}
+.check-consent:hover {
+  color: rgb(116, 245, 137);
+  cursor: pointer;
+}
 a:hover {  
   color: rgb(74, 146, 33);
 }

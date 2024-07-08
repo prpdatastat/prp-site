@@ -20,7 +20,7 @@
   <body>
     <div class="navbar notif">
       This is a First Official Merit List<br>
-      <span class='important'>Click on last box to check Candidate Consent</span><br>
+      <span class='important'>Click on Check Consent to check Candidate Consent</span><br>
     </div>
     <nav class="navbar">
       <div class="logo-container">
@@ -136,7 +136,7 @@
       });
       changeMeritList();
     });
-    function changeMeritList() {
+    async function changeMeritList() {
       let merit = getMerit(
         meritData[default_filter.program],
         default_filter.quota,
@@ -154,7 +154,7 @@
             merit[cand].specialityName,
             merit[cand].hospitalName,
             merit[cand].marksTotal,
-            "Pref No."+merit[cand].preferenceNo+"<br> <span style='color:rgb(69, 199, 44);''>"+getConsent(merit[cand].applicantId)+"<span>",
+            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkConsent("+merit[cand].applicantId+")'>Check Consent</span><br><span id='status-"+merit[cand].applicantId.toString()+"'></span>",
           ]);
       }
       jQuery("#statTable").DataTable().draw();
@@ -219,6 +219,12 @@
       const ele = document.getElementById(program);
       console.log(ele);
       ele.innerHTML = accuracyMerit[program].accuracy.toFixed(2);
+    }
+    async function checkConsent(applicantId) {
+      let ele = document.getElementById('status-'+applicantId.toString())
+      console.log(ele, 'status-'+applicantId.toString())
+      ele.innerHTML = await getConsent(applicantId);
+
     }
   </script>
 </html>

@@ -379,9 +379,8 @@ async function getSchedule() {
                 dataType: 'json'
             });
     
-            if ('data' in response) {
-                return response.status;
-            }
+                return response['status'];
+            
         } catch (error) {
             console.log('error');
         }

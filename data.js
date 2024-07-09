@@ -6,9 +6,8 @@ function load_data(path) {
    return data;
 }
 
-/*
+
 const candData = load_data('./cand_data.json')
-*/
 const fcpsMerit = load_data('./fcps_merit.json')
 const msMerit = load_data('./ms_merit.json')
 const mdMerit = load_data('./md_merit.json')
@@ -21,7 +20,7 @@ const changes = load_data('./changes.json')
 
 */
 
-/*
+
 function checkKeys(item) {
   const keysToCheck = ["FCPS", "MS", "MD"];
   const result = {};
@@ -81,12 +80,12 @@ function getCandidatesNumber () {
 
     return counter
 }
-*/
+
 function gotoUrl(link = 'index.html') {
     window.location.href = link
 }
 
-/*
+
 function getCandidatesData(pmdcNo) {
 
   
@@ -110,11 +109,7 @@ function getCandidatesData(pmdcNo) {
         result['houseJob'] = parseFloat(candData[applicantId]['houseJob'].toFixed(2))
         result['experience'] = candData[applicantId]['experience'] 
         result['provMarks'] = parseFloat((candData[applicantId]['matric'] + candData[applicantId]['degree'] + candData[applicantId]['fsc'] + candData[applicantId]['houseJob'] + candData[applicantId]['experience']).toFixed(5))
-        result['progMarks'] = {
-            FCPS : 0.0,
-            MS : 0.0,
-            MD : 0.0
-        }
+        result['progMarks'] = candData[applicantId]['programMarks']
         progs.forEach( prog => {
             result[prog] = []            
             if (candData[applicantId].hasOwnProperty(prog)){
@@ -122,6 +117,7 @@ function getCandidatesData(pmdcNo) {
                     let obj = candData[applicantId][prog].selected[0];
                     obj.symbol = '✔'
                     result['select'][prog] = obj
+                    /*
                     if (prog === 'FCPS') {
                         
                     result.progMarks[prog] = 40 
@@ -130,14 +126,14 @@ function getCandidatesData(pmdcNo) {
                     else {
                         result.progMarks[prog] = candData[applicantId].marksProgram
 
-                    }
+                    }*/
                     result[prog].push(
                         obj
                     )
                 }
                 for (pref in candData[applicantId][prog].left) {
                     let obj = candData[applicantId][prog].left[pref];
-                    
+                    /*
                     if (prog === 'FCPS') {
                         
                         result.progMarks[prog] = 40 
@@ -146,7 +142,7 @@ function getCandidatesData(pmdcNo) {
                         else {
                             result.progMarks[prog] = candData[applicantId].marksProgram
     
-                        }
+                        }*/
                     obj.symbol = '✘'
                     result[prog].push( 
                         obj
@@ -162,7 +158,7 @@ function getCandidatesData(pmdcNo) {
     return result
 
     }
-*/
+
 
  
 function getMerit(merit,  quota='', speciality='', hospital='', all=false) {    

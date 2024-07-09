@@ -126,7 +126,8 @@
         searching: true,
         ordering: true,
         lengthMenu: [10, 25, 50, { label: "All", value: -1 }],
-        lengthChange: true, layout: {
+        lengthChange: true,
+        layout: {
           topStart: {
               buttons: [
                 {
@@ -195,7 +196,7 @@
       }
       jQuery("#statTable").DataTable().draw();
     }
-      /*
+      
       $('#statTable').on('click', 'tbody td', function() {   
         let param =   columnParams[this._DT_CellIndex.column];
         let paths = {
@@ -210,7 +211,7 @@
         window.location.href = paths[param]
         }
       }
-  ) */
+  ) 
     function getCandidateMerit() {
       let pmdcNoValue = document.getElementById('pmdc-input');
       localStorage.setItem('pmdcNo', pmdcNoValue.value);

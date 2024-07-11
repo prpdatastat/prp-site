@@ -31,13 +31,13 @@
       
     <div class="info">
         <h1 id="hospital-name">
-            Changes B/W Estimated and Official
+            Changes B/W First and Second Merit List
         </h1>
         <div class="share-link">
           <div class="share" onmousedown="shareUrl()"><img src="share.png"></div>
         </div>
         <p>
-            Below is changes observed in Official Merit list Compared to Estimated one.<br>
+            Below is changes observed in Second Official Merit list Compared to First one.<br>
             Select a program
           </p>
         
@@ -62,8 +62,8 @@
           <th>Quota</th>
           <th>Speciality</th>
           <th>Hospital</th>
-          <th>Official</th>
-          <th>Estimated</th>
+          <th>Second</th>
+          <th>First</th>
         </tr>
       </thead>
       <tbody id="dataRows"></tbody>
@@ -126,6 +126,7 @@
       
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in changes) {
+        console.log(changes[cand].selected[0])
        jQuery("#statTable")
           .DataTable()
           .row.add([

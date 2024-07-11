@@ -6,7 +6,7 @@ function load_data(path) {
    return data;
 }
 
-
+let roundNo = 'second';
 const candData = load_data('./cand_data.json')
 const fcpsMerit = load_data('./fcps_merit.json')
 const msMerit = load_data('./ms_merit.json')
@@ -93,7 +93,7 @@ function getCandidatesData(pmdcNo) {
     const progs = ['FCPS', 'MS', 'MD']
     let result = {}
     for (applicantId in candData) {
-        if (candData[applicantId].pmdcNo.toLowerCase() == pmdcNo.toLowerCase())
+        if (candData[applicantId].pmdcNo.toLowerCase().trim() == pmdcNo.toLowerCase().trim())
             {
                 result['select'] = {
                     FCPS : {},

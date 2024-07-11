@@ -149,14 +149,14 @@
               {   
                     extend: 'pdfHtml5',
                     text: 'Download PDF',
-                    title : default_filter.hospital+' Merit List',
+                    title : default_filter.hospital+","+default_filter.speciality+' Merit List',
                     customize: function (doc) {
                         
                         let table = doc.content[1].table.body;
                         for (i = 1; i < table.length; i++) // skip table header row (i = 0)
                         {
-                          console.log(table[i][0])
-                          let txt = getSelection(table[i][0].text.toString(), true)
+                          let txt = getSelection(table[i][0].text.toString(), true);
+                          console.log(table[i][0].text.toString(), txt);
                           table[i][6].text = txt; // couldn't be bothered clearing the Age column sample data above :)
                           
                         }

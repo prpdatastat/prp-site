@@ -11,6 +11,12 @@ html {
   src: url("light.ttf");
 }
 
+
+.logo:hover {
+  filter: drop-shadow(0px 0px 7px #107e47);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
 .tippy-tooltip.prp-theme{
   background-color: #212427;
   color: #35df68;

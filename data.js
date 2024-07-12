@@ -370,12 +370,11 @@ async function getSchedule() {
 async function getConsent(applicantId) { 
     try {
         let response = await $.ajax({
-            url: 'https://prp-api.vercel.app/consent/'+applicantId.toString(),
+            url: 'https://prp-api.vercel.app/consent/'+applicantId.toString()+"/",
             type: 'GET',
-            dataType: 'json'
         });
-            
-            return response;
+            console.log(response)
+            return response.toString();
         
     } catch (error) {
         console.log('error');

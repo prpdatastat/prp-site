@@ -375,7 +375,7 @@ async function getConsent(applicantId) {
             dataType: 'json'
         });
             
-            return response['status'];
+            return response;
         
     } catch (error) {
         console.log('error');

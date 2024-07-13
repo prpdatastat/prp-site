@@ -260,7 +260,7 @@
     async function checkConsent(applicantId) {
       let ele = document.getElementById('status-'+applicantId.toString())
       console.log(ele, 'status-'+applicantId.toString())
-      ele.innerHTML = 'Consent ' + await getConsent(applicantId);
+      ele.innerHTML = '' + await getConsent(applicantId);
 
     }
   </script>

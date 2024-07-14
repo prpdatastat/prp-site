@@ -367,10 +367,12 @@ async function getSchedule() {
         console.log('error');
     }
     }
-async function getConsent(applicantId) { 
-    try {
+async function getConsent(applicantId, round = 3) { 
+     
+
+        try {
         let response = await $.ajax({
-            url: 'https://prp-api.vercel.app/consent/'+applicantId.toString()+"/",
+            url: 'https://prp-api.vercel.app/consent/'+applicantId.toString()+"/"+ round.toString(),
             type: 'GET',
         });
             console.log(response)
@@ -379,6 +381,26 @@ async function getConsent(applicantId) {
     } catch (error) {
         console.log('error');
     }
+    
+    
+    }
+
+async function getConsentData(applicantId) { 
+    
+
+        try {
+        let response = await $.ajax({
+            url: 'https://prp-api.vercel.app/consent/'+applicantId.toString()+"/",
+            type: 'GET',
+        });
+            
+            return response;
+        
+    } catch (error) {
+        console.log(error);
+    }
+    
+    
     }
 function getChanges(program) 
 {

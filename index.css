@@ -75,12 +75,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 
 
 .consentstatusstyle {

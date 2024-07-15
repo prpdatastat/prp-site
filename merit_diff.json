@@ -154,20 +154,20 @@
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Tehreem Arshad D/O Chaudhary Arshad Javaid",
+       "marksTotal": 73.840011,
+       "pmdcNo": "113193-P",
+       "applicantId": 15966,
+       "preferenceNo": 53
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Husna Rafique D/O MuhammadRafique",
        "marksTotal": 73.84425,
        "pmdcNo": "772933-01-M",
        "applicantId": 27814,
        "preferenceNo": 36
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Bakhtawar Afzal D/O Muhammad Afzal",
-       "marksTotal": 74.451158,
-       "pmdcNo": "776251-01-M",
-       "applicantId": 28686,
-       "preferenceNo": 50
       }
      ]
     }
@@ -342,6 +342,46 @@
        "preferenceNo": 3
       }
      ]
+    },
+    "Punjab Institute of Cardiology, Lahore": {
+     "selected": [
+      {
+       "nameFull": "Tayyab Bilal S/O MUHAMMAD ARSHAD",
+       "marksTotal": 77.413712,
+       "pmdcNo": "716803-01-M",
+       "applicantId": 28463,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Muhammad Abrar Riasat S/O Muhammad Riasat",
+       "marksTotal": 78.578896,
+       "pmdcNo": "111162-P",
+       "applicantId": 16634,
+       "preferenceNo": 2
+      }
+     ]
+    },
+    "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+     "selected": [
+      {
+       "nameFull": "Hamza Ehsan S/O Ehsan Ullah",
+       "marksTotal": 76.195941,
+       "pmdcNo": "745874-01-M",
+       "applicantId": 27099,
+       "preferenceNo": 9
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Muhammad Faheem Ullah S/O Muhammad Nasr Ullah",
+       "marksTotal": 76.665942,
+       "pmdcNo": "761462-01-M",
+       "applicantId": 26677,
+       "preferenceNo": 6
+      }
+     ]
     }
    },
    "Chemical Pathology": {
@@ -361,6 +401,26 @@
        "marksTotal": 76.332254,
        "pmdcNo": "92709-P",
        "applicantId": 28714,
+       "preferenceNo": 1
+      }
+     ]
+    },
+    "Bahawal Victoria Hospital, Bahawalpur": {
+     "selected": [
+      {
+       "nameFull": "Ayesha Sarfraz D/O SARFRAZ HUSSAIN",
+       "marksTotal": 74.991797,
+       "pmdcNo": "757686-01-M",
+       "applicantId": 28420,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Habiba Ahmad W/O Ahmed Hassan",
+       "marksTotal": 76.427706,
+       "pmdcNo": "757748-01-M",
+       "applicantId": 27409,
        "preferenceNo": 1
       }
      ]
@@ -585,20 +645,20 @@
     "Benazir Bhutto Hospital, Rawalpindi": {
      "selected": [
       {
+       "nameFull": "Momna D/O Muhammad Ashraf",
+       "marksTotal": 74.758679,
+       "pmdcNo": "758543-01-M",
+       "applicantId": 27947,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Muhammad Tanzeel Tahir S/O Nazir Ahmad",
        "marksTotal": 74.770916,
        "pmdcNo": "100364-P",
        "applicantId": 26133,
        "preferenceNo": 9
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Amina D/O Ehsanullah Waseem",
-       "marksTotal": 76.175444,
-       "pmdcNo": "115381-P",
-       "applicantId": 28864,
-       "preferenceNo": 18
       }
      ]
     },
@@ -685,20 +745,20 @@
     "DHQ Rawalpindi": {
      "selected": [
       {
+       "nameFull": "Khalil Ur Rehman S/O Pir gul",
+       "marksTotal": 74.705536,
+       "pmdcNo": "116811-p",
+       "applicantId": 25135,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Momna D/O Muhammad Ashraf",
        "marksTotal": 74.758679,
        "pmdcNo": "758543-01-M",
        "applicantId": 27947,
        "preferenceNo": 3
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Tanzeel Tahir S/O Nazir Ahmad",
-       "marksTotal": 74.770916,
-       "pmdcNo": "100364-P",
-       "applicantId": 26133,
-       "preferenceNo": 11
       }
      ]
     },
@@ -725,20 +785,27 @@
     "Mayo Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Muhammad Tanzeel Tahir S/O Nazir Ahmad",
+       "marksTotal": 74.770916,
+       "pmdcNo": "100364-P",
+       "applicantId": 26133,
+       "preferenceNo": 1
+      },
+      {
+       "nameFull": "Malik Muhammad Usama Ibrahim S/O MUHAMMAD IBRAHIM KHAN",
+       "marksTotal": 74.706818,
+       "pmdcNo": "112568-P",
+       "applicantId": 26812,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Hafiz Muhammad Baqir S/O Hafiz Faiz Bukhsh",
        "marksTotal": 74.918948,
        "pmdcNo": "114930-P",
        "applicantId": 29137,
        "preferenceNo": 13
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Faiq Ahmad S/O FAROOQ AHMAD SHAHID",
-       "marksTotal": 76.897694,
-       "pmdcNo": "112703-P",
-       "applicantId": 28747,
-       "preferenceNo": 1
       }
      ]
     },
@@ -827,40 +894,40 @@
     "Services Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Muhammad Zamal S/O Muhammad Zia Ullah",
+       "marksTotal": 69.458398,
+       "pmdcNo": "714820-01-M",
+       "applicantId": 29134,
+       "preferenceNo": 5
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Nusrat Abida D/O MUHAMMAD KHALID",
        "marksTotal": 70.014199,
        "pmdcNo": "775968-01-M",
        "applicantId": 28236,
        "preferenceNo": 3
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Fatima Shahnawaz D/O Shahnawaz Ahmad Cheema",
-       "marksTotal": 76.267349,
-       "pmdcNo": "777803-01-M",
-       "applicantId": 25751,
-       "preferenceNo": 1
-      }
      ]
     },
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Kousar Ramzan D/O Muhammad Ramzan",
+       "marksTotal": 69.588247,
+       "pmdcNo": "112938-P",
+       "applicantId": 18680,
+       "preferenceNo": 5
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Ayesha Sarfraz D/O SARFRAZ HUSSAIN",
        "marksTotal": 69.991797,
        "pmdcNo": "757686-01-M",
        "applicantId": 28420,
        "preferenceNo": 8
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Nusrat Abida D/O MUHAMMAD KHALID",
-       "marksTotal": 70.014199,
-       "pmdcNo": "775968-01-M",
-       "applicantId": 28236,
-       "preferenceNo": 5
       }
      ]
     }
@@ -889,20 +956,20 @@
     "Sahiwal Teaching Hospital, Sahiwal": {
      "selected": [
       {
+       "nameFull": "Zulfiqar Ali S/O M. Riaz",
+       "marksTotal": 68.89631,
+       "pmdcNo": "775768-01-M",
+       "applicantId": 27887,
+       "preferenceNo": 17
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Kousar Ramzan D/O Muhammad Ramzan",
        "marksTotal": 69.588247,
        "pmdcNo": "112938-P",
        "applicantId": 18680,
        "preferenceNo": 23
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Maryam Arshad D/O Muhammad Arshad",
-       "marksTotal": 69.952565,
-       "pmdcNo": "759001-01-M",
-       "applicantId": 26730,
-       "preferenceNo": 13
       }
      ]
     },
@@ -1196,6 +1263,26 @@
        "preferenceNo": 1
       }
      ]
+    },
+    "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+     "selected": [
+      {
+       "nameFull": "Azka Fatima D/O Imran Ashraf",
+       "marksTotal": 75.172056,
+       "pmdcNo": "111763-P",
+       "applicantId": 16881,
+       "preferenceNo": 64
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Hamza Ehsan S/O Ehsan Ullah",
+       "marksTotal": 76.195941,
+       "pmdcNo": "745874-01-M",
+       "applicantId": 27099,
+       "preferenceNo": 12
+      }
+     ]
     }
    },
    "Nephrology": {
@@ -1222,20 +1309,20 @@
     "Govt.Teaching Hospital , Shahdra , Lahore": {
      "selected": [
       {
+       "nameFull": "Sara Nadeem D/O Aamir Nadeem",
+       "marksTotal": 74.715313,
+       "pmdcNo": "781066-01-M",
+       "applicantId": 26757,
+       "preferenceNo": 42
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Humaira Shaheen D/O Nazir Ahmad Khan",
        "marksTotal": 74.920104,
        "pmdcNo": "779839-01-M ",
        "applicantId": 27159,
        "preferenceNo": 11
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Khazima Munsab D/O MUNSAB ALI",
-       "marksTotal": 75.821158,
-       "pmdcNo": "781115-01-M",
-       "applicantId": 28812,
-       "preferenceNo": 73
       }
      ]
     },
@@ -1262,32 +1349,34 @@
     "Services Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Hareem Fatima D/O Syed Umar Aftab",
+       "marksTotal": 75.958838,
+       "pmdcNo": "107180-P",
+       "applicantId": 28273,
+       "preferenceNo": 4
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Ayesha Mubashir W/O Abdul Haseeb Bhatti",
        "marksTotal": 76.274178,
        "pmdcNo": "115742-P",
        "applicantId": 25107,
        "preferenceNo": 2
-      },
-      {
-       "nameFull": "Minha Muzaffar D/O Muzaffar Iqbal",
-       "marksTotal": 76.026872,
-       "pmdcNo": "718243-01-M",
-       "applicantId": 22742,
-       "preferenceNo": 20
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Fatima Sultana D/O ISHAQ HUSSAIN",
-       "marksTotal": 76.429545,
-       "pmdcNo": "784091-01-M",
-       "applicantId": 28667,
-       "preferenceNo": 24
       }
      ]
     },
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "selected": [
+      {
+       "nameFull": "Mahreen Pervaiz D/O Muhammad Pervaiz",
+       "marksTotal": 74.59053,
+       "pmdcNo": "757573-01-M",
+       "applicantId": 28372,
+       "preferenceNo": 62
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Azka Fatima D/O Imran Ashraf",
        "marksTotal": 75.172056,
@@ -1295,34 +1384,25 @@
        "applicantId": 16881,
        "preferenceNo": 68
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Awais S/O Manzoor Hussain",
-       "marksTotal": 75.458457,
-       "pmdcNo": "104027-P",
-       "applicantId": 4293,
-       "preferenceNo": 18
-      }
      ]
     },
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Humaira Shaheen D/O Nazir Ahmad Khan",
+       "marksTotal": 74.920104,
+       "pmdcNo": "779839-01-M ",
+       "applicantId": 27159,
+       "preferenceNo": 10
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Iqra Jabbar D/O Abdul Jabbar",
        "marksTotal": 75.227202,
        "pmdcNo": "762098-01-M",
        "applicantId": 28611,
        "preferenceNo": 4
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Awais Abid S/O ABID HUSSAIN",
-       "marksTotal": 75.785693,
-       "pmdcNo": "104178-P",
-       "applicantId": 24507,
-       "preferenceNo": 19
       }
      ]
     }
@@ -1331,20 +1411,20 @@
     "DHQ Hospital, DG Khan": {
      "selected": [
       {
+       "nameFull": "Muhammad Talha Asghar S/O Muhammad Asghar Abid",
+       "marksTotal": 73.308117,
+       "pmdcNo": "757482-01-M",
+       "applicantId": 26849,
+       "preferenceNo": 37
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Muhammad Sajid S/O Sadar Hussain",
        "marksTotal": 73.705747,
        "pmdcNo": "114385-P",
        "applicantId": 28569,
        "preferenceNo": 85
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Syed Qasim Abbas S/O Syed Nadeem Abbas",
-       "marksTotal": 74.051559,
-       "pmdcNo": "757726-01-M",
-       "applicantId": 25798,
-       "preferenceNo": 14
       }
      ]
     },
@@ -1418,20 +1498,27 @@
     "Punjab Institute of Neurosciences, Lahore": {
      "selected": [
       {
+       "nameFull": "Muhammad Irfan S/O Khadim hussain",
+       "marksTotal": 71.658463,
+       "pmdcNo": "114004-p",
+       "applicantId": 21734,
+       "preferenceNo": 13
+      },
+      {
+       "nameFull": "Muhammad Hammad Shahid S/O Shahid Iqbal",
+       "marksTotal": 70.907184,
+       "pmdcNo": "776931-01-M",
+       "applicantId": 29145,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Zain Ul Abideen S/O Hafeez ahmad",
        "marksTotal": 71.689848,
        "pmdcNo": "99180-p",
        "applicantId": 24780,
        "preferenceNo": 18
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Makhdoom Ali Fida S/O Makhdoom Muhammad Hussain",
-       "marksTotal": 73.047229,
-       "pmdcNo": "108292-P",
-       "applicantId": 15728,
-       "preferenceNo": 9
       }
      ]
     },
@@ -1479,6 +1566,26 @@
        "pmdcNo": "745851-01-M",
        "applicantId": 21201,
        "preferenceNo": 19
+      }
+     ]
+    },
+    "DHQ Rawalpindi": {
+     "selected": [
+      {
+       "nameFull": "Mahrukh Usman D/O Muhammad Usman",
+       "marksTotal": 74.230584,
+       "pmdcNo": "717303-01-M",
+       "applicantId": 21479,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Nayab Hafeez D/O Abdul Hafeez",
+       "marksTotal": 74.297944,
+       "pmdcNo": "717108-01-M",
+       "applicantId": 21021,
+       "preferenceNo": 13
       }
      ]
     }
@@ -1574,20 +1681,20 @@
     "Services Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Areej D/O Muhammad Asif",
+       "marksTotal": 75.860985,
+       "pmdcNo": "775915-01-M",
+       "applicantId": 28079,
+       "preferenceNo": 7
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Alaita Fatima Bakhtiari D/O Khurshid Mohsin",
        "marksTotal": 76.468593,
        "pmdcNo": "774394\u00ad-01-\u00adM",
        "applicantId": 27101,
        "preferenceNo": 5
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Saman Shahid D/O Shahid Mehmood",
-       "marksTotal": 76.605151,
-       "pmdcNo": "777688-01-M",
-       "applicantId": 25839,
-       "preferenceNo": 9
       }
      ]
     },
@@ -1878,20 +1985,20 @@
     "DHQ Hospital, DG Khan": {
      "selected": [
       {
+       "nameFull": "Eisha Shoaib D/O Muhammad Shoaib",
+       "marksTotal": 70.687186,
+       "pmdcNo": "717053-01-M",
+       "applicantId": 22006,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Fatima Nasar D/O Nasar iqbal",
        "marksTotal": 71.32856,
        "pmdcNo": "759796-01-M",
        "applicantId": 25629,
        "preferenceNo": 10
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Amna Abbas D/O MUHAMMAD ABBAS",
-       "marksTotal": 71.398108,
-       "pmdcNo": "755993-01-M",
-       "applicantId": 26016,
-       "preferenceNo": 14
       }
      ]
     },
@@ -1978,20 +2085,40 @@
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Sana Akhtar D/O Akhtar Hussain",
+       "marksTotal": 74.914056,
+       "pmdcNo": "778212-01-M",
+       "applicantId": 26719,
+       "preferenceNo": 5
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Javeria Bibi D/O Muhammad Siddique",
        "marksTotal": 75.025829,
        "pmdcNo": "778325-01-M",
        "applicantId": 26050,
        "preferenceNo": 3
       }
+     ]
+    },
+    "Allied Hospital, Faisalabad": {
+     "selected": [
+      {
+       "nameFull": "Fatima Nasar D/O Nasar iqbal",
+       "marksTotal": 71.32856,
+       "pmdcNo": "759796-01-M",
+       "applicantId": 25629,
+       "preferenceNo": 5
+      }
      ],
      "not_selected": [
       {
-       "nameFull": "Mian Hassan Ali S/O Anwar Ali",
-       "marksTotal": 75.379441,
-       "pmdcNo": "110260-P",
-       "applicantId": 22902,
-       "preferenceNo": 6
+       "nameFull": "Muhammad Umar Farooq S/O Muhammad Farooq Ilyas",
+       "marksTotal": 79.715455,
+       "pmdcNo": "760668-01-M",
+       "applicantId": 26353,
+       "preferenceNo": 1
       }
      ]
     }
@@ -2000,20 +2127,20 @@
     "Bahawal Victoria Hospital, Bahawalpur": {
      "selected": [
       {
-       "nameFull": "Ali Rehman S/O Habib ur rehman",
-       "marksTotal": 75.157197,
-       "pmdcNo": "746384-01-M",
-       "applicantId": 29258,
-       "preferenceNo": 7
+       "nameFull": "Hafiz Muhammad Baqir S/O Hafiz Faiz Bukhsh",
+       "marksTotal": 74.918948,
+       "pmdcNo": "114930-P",
+       "applicantId": 29137,
+       "preferenceNo": 2
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Hafiz Muhammad Ali Sattar S/O Dr Abdul Sattar",
-       "marksTotal": 75.270682,
-       "pmdcNo": "757606-01-M",
-       "applicantId": 27436,
-       "preferenceNo": 19
+       "nameFull": "Zafar Ahmad S/O Zubair Ahmad",
+       "marksTotal": 77.655073,
+       "pmdcNo": "747811-01-M",
+       "applicantId": 27423,
+       "preferenceNo": 5
       }
      ]
     },
@@ -2124,20 +2251,20 @@
     "Children Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Umair Farid S/O ghulam farid",
-       "marksTotal": 73.580726,
-       "pmdcNo": "108326-p",
-       "applicantId": 15274,
-       "preferenceNo": 1
+       "nameFull": "Masood Ur Rehman S/O Gulzar Ahmad",
+       "marksTotal": 72.020389,
+       "pmdcNo": "110366-P",
+       "applicantId": 28565,
+       "preferenceNo": 11
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Muhammad Asad S/O Liaqat Ali",
-       "marksTotal": 74.42144,
-       "pmdcNo": "113215-P",
-       "applicantId": 28620,
-       "preferenceNo": 46
+       "nameFull": "Haris Bashir S/O Bashir Ahmed",
+       "marksTotal": 73.758459,
+       "pmdcNo": "115881-P",
+       "applicantId": 25507,
+       "preferenceNo": 4
       }
      ]
     },
@@ -2164,25 +2291,34 @@
     "DHQ Hospital, DG Khan": {
      "selected": [
       {
+       "nameFull": "Muhammad Sajid S/O Sadar Hussain",
+       "marksTotal": 73.705747,
+       "pmdcNo": "114385-P",
+       "applicantId": 28569,
+       "preferenceNo": 57
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Syed Qasim Abbas S/O Syed Nadeem Abbas",
        "marksTotal": 74.051559,
        "pmdcNo": "757726-01-M",
        "applicantId": 25798,
        "preferenceNo": 13
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Ahmad Jahanzaib S/O Tahir Mahmood",
-       "marksTotal": 75.255877,
-       "pmdcNo": "718796-01-M",
-       "applicantId": 22295,
-       "preferenceNo": 22
-      }
      ]
     },
     "Holy Family Hospital, Rawalpindi": {
      "selected": [
+      {
+       "nameFull": "Nayab Hafeez D/O Abdul Hafeez",
+       "marksTotal": 74.297944,
+       "pmdcNo": "717108-01-M",
+       "applicantId": 21021,
+       "preferenceNo": 11
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Khalil Ur Rehman S/O Pir gul",
        "marksTotal": 74.705536,
@@ -2190,41 +2326,25 @@
        "applicantId": 25135,
        "preferenceNo": 4
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Momna D/O Muhammad Ashraf",
-       "marksTotal": 74.758679,
-       "pmdcNo": "758543-01-M",
-       "applicantId": 27947,
-       "preferenceNo": 25
-      }
      ]
     },
     "Institute of Child Health, Faisalabad": {
      "selected": [
+      {
+       "nameFull": "Maryam Younas D/O Muhammad Younas",
+       "marksTotal": 70.040281,
+       "pmdcNo": "782909-01-M",
+       "applicantId": 28188,
+       "preferenceNo": 37
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Tehreem Fatima D/O iftikhar hussain",
        "marksTotal": 70.329925,
        "pmdcNo": "715126-01-M",
        "applicantId": 21615,
        "preferenceNo": 58
-      },
-      {
-       "nameFull": "Hafiza Sahrish Fatima D/O Manzoor Hussain",
-       "marksTotal": 70.203961,
-       "pmdcNo": "759302-01-M",
-       "applicantId": 28229,
-       "preferenceNo": 34
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Hafiz Muhammad Rafay Saad S/O Muhammad Nazir",
-       "marksTotal": 70.601786,
-       "pmdcNo": "754262-01-M",
-       "applicantId": 27335,
-       "preferenceNo": 31
       }
      ]
     },
@@ -2258,20 +2378,40 @@
     "Sahiwal Teaching Hospital, Sahiwal": {
      "selected": [
       {
+       "nameFull": "Haris Bashir S/O Bashir Ahmed",
+       "marksTotal": 73.758459,
+       "pmdcNo": "115881-P",
+       "applicantId": 25507,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Mudassar Shehzad Akram S/O Muhammad Akram",
        "marksTotal": 74.584772,
        "pmdcNo": "782199-01-M",
        "applicantId": 28257,
        "preferenceNo": 35
       }
+     ]
+    },
+    "Services Hospital, Lahore": {
+     "selected": [
+      {
+       "nameFull": "Tehreem Fatima D/O iftikhar hussain",
+       "marksTotal": 70.329925,
+       "pmdcNo": "715126-01-M",
+       "applicantId": 21615,
+       "preferenceNo": 22
+      }
      ],
      "not_selected": [
       {
-       "nameFull": "Fahad Khalid S/O Khalid Shezad",
-       "marksTotal": 75.614849,
-       "pmdcNo": "758791-01-M",
-       "applicantId": 28737,
-       "preferenceNo": 9
+       "nameFull": "Masood Ur Rehman S/O Gulzar Ahmad",
+       "marksTotal": 72.020389,
+       "pmdcNo": "110366-P",
+       "applicantId": 28565,
+       "preferenceNo": 12
       }
      ]
     }
@@ -2300,20 +2440,20 @@
     "Allied Hospital, Faisalabad": {
      "selected": [
       {
-       "nameFull": "Sidra Farooq D/O Muhammad Farooq Azam",
-       "marksTotal": 76.4675,
-       "pmdcNo": "773359-01-M",
-       "applicantId": 26875,
+       "nameFull": "Zuha Ahmad Sheikh D/O Sheikh Zafar Hanif",
+       "marksTotal": 76.126147,
+       "pmdcNo": "774102-01-M",
+       "applicantId": 25868,
        "preferenceNo": 1
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Zaineb D/O Muhammad Waris",
-       "marksTotal": 76.696136,
-       "pmdcNo": "761137-01-M",
-       "applicantId": 26822,
-       "preferenceNo": 5
+       "nameFull": "Arooba Ahmad D/O Ala Ud Din Ahmad",
+       "marksTotal": 76.728182,
+       "pmdcNo": "774096-01-M",
+       "applicantId": 25603,
+       "preferenceNo": 58
       }
      ]
     },
@@ -2407,19 +2547,19 @@
     "DHQ Hospital, Faisalabad": {
      "selected": [
       {
-       "nameFull": "Zuha Ahmad Sheikh D/O Sheikh Zafar Hanif",
-       "marksTotal": 76.126147,
-       "pmdcNo": "774102-01-M",
-       "applicantId": 25868,
-       "preferenceNo": 2
+       "nameFull": "Romesha Rehman D/O ABDUL REHMAN",
+       "marksTotal": 75.77211,
+       "pmdcNo": "760674-01-M",
+       "applicantId": 28912,
+       "preferenceNo": 17
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Sidra Farooq D/O Muhammad Farooq Azam",
-       "marksTotal": 76.4675,
-       "pmdcNo": "773359-01-M",
-       "applicantId": 26875,
+       "nameFull": "Zuha Ahmad Sheikh D/O Sheikh Zafar Hanif",
+       "marksTotal": 76.126147,
+       "pmdcNo": "774102-01-M",
+       "applicantId": 25868,
        "preferenceNo": 2
       }
      ]
@@ -2800,6 +2940,26 @@
        "preferenceNo": 5
       }
      ]
+    },
+    "Services Hospital, Lahore": {
+     "selected": [
+      {
+       "nameFull": "Hamna Zakir D/O Zakir Mahmood",
+       "marksTotal": 75.716742,
+       "pmdcNo": "778979-01-M",
+       "applicantId": 26743,
+       "preferenceNo": 25
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Tayyab Bilal S/O MUHAMMAD ARSHAD",
+       "marksTotal": 82.413712,
+       "pmdcNo": "716803-01-M",
+       "applicantId": 28463,
+       "preferenceNo": 2
+      }
+     ]
     }
    },
    "Radiotherapy": {
@@ -2848,20 +3008,27 @@
     "Services Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Muhammad Babar S/O abdul rahim khan",
+       "marksTotal": 71.781905,
+       "pmdcNo": "108687-p",
+       "applicantId": 16587,
+       "preferenceNo": 27
+      },
+      {
+       "nameFull": "Zain Ul Abideen S/O Hafeez ahmad",
+       "marksTotal": 71.689848,
+       "pmdcNo": "99180-p",
+       "applicantId": 24780,
+       "preferenceNo": 16
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Ayesha Farooq D/O Farooq Ghani",
        "marksTotal": 72.012591,
        "pmdcNo": "775219-01-M",
        "applicantId": 29288,
        "preferenceNo": 8
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Haadi Tahir S/O Dr. Tahir Naveed",
-       "marksTotal": 74.430931,
-       "pmdcNo": "116358-P",
-       "applicantId": 17828,
-       "preferenceNo": 4
       }
      ]
     },
@@ -2882,6 +3049,26 @@
        "pmdcNo": "747656-01-M",
        "applicantId": 22797,
        "preferenceNo": 6
+      }
+     ]
+    },
+    "Mayo Hospital, Lahore": {
+     "selected": [
+      {
+       "nameFull": "Ayesha Farooq D/O Farooq Ghani",
+       "marksTotal": 72.012591,
+       "pmdcNo": "775219-01-M",
+       "applicantId": 29288,
+       "preferenceNo": 7
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Zeeshan Nawaz S/O Muhammad nawaz",
+       "marksTotal": 72.50394,
+       "pmdcNo": "93313-p",
+       "applicantId": 28216,
+       "preferenceNo": 8
       }
      ]
     }
@@ -3058,20 +3245,42 @@
     "DHQ Hospital, DG Khan": {
      "selected": [
       {
+       "nameFull": "Sabir Shah S/O zahirshah",
+       "marksTotal": 68.147737,
+       "pmdcNo": "759578-01-M",
+       "applicantId": 25897,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Umme Habiba D/O MUSHTAQ AHMAD.",
        "marksTotal": 68.613485,
        "pmdcNo": "714335-02-M",
        "applicantId": 22963,
        "preferenceNo": 1
       }
+     ]
+    }
+   },
+   "Nephrology": {
+    "Mayo Hospital, Lahore": {
+     "selected": [
+      {
+       "nameFull": "Syed Tayyab Shah S/O Syed Mobin Shah",
+       "marksTotal": 68.334524,
+       "pmdcNo": "773892-04-M",
+       "applicantId": 28025,
+       "preferenceNo": 2
+      }
      ],
      "not_selected": [
       {
-       "nameFull": "Waqas Gohar S/O Gohar Rehman",
-       "marksTotal": 68.705666,
-       "pmdcNo": "116971-p",
-       "applicantId": 22600,
-       "preferenceNo": 3
+       "nameFull": "Abdul Basit S/O Sajjad Hussain",
+       "marksTotal": 69.081537,
+       "pmdcNo": "762519-01-M",
+       "applicantId": 28939,
+       "preferenceNo": 1
       }
      ]
     }
@@ -3104,19 +3313,19 @@
     "DHQ Hospital, Gujranwala": {
      "selected": [
       {
-       "nameFull": "Salia Batool D/O Syed Ashiq Hussain Shah",
-       "marksTotal": 69.689116,
-       "pmdcNo": "779862-05-M",
-       "applicantId": 26883,
-       "preferenceNo": 3
+       "nameFull": "Ghulam Shahid S/O MUHAMMAD HUSSAIN",
+       "marksTotal": 69.672088,
+       "pmdcNo": "781899-05-M",
+       "applicantId": 28584,
+       "preferenceNo": 1
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Faiza Ameen D/O Muhammad Ameen",
-       "marksTotal": 69.88894,
-       "pmdcNo": "759386-05-M",
-       "applicantId": 26749,
+       "nameFull": "Salia Batool D/O Syed Ashiq Hussain Shah",
+       "marksTotal": 69.689116,
+       "pmdcNo": "779862-05-M",
+       "applicantId": 26883,
        "preferenceNo": 3
       }
      ]
@@ -3160,6 +3369,50 @@
        "pmdcNo": "758159-05-M",
        "applicantId": 27835,
        "preferenceNo": 3
+      }
+     ]
+    }
+   },
+   "Medicine": {
+    "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+     "selected": [
+      {
+       "nameFull": "Fazila Batool D/O Mubarak Shah",
+       "marksTotal": 69.155855,
+       "pmdcNo": "776798-05-M",
+       "applicantId": 28087,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Kousar Rasheed D/O Rasheed Ahmed khan",
+       "marksTotal": 70.084428,
+       "pmdcNo": "779784-05-M",
+       "applicantId": 27388,
+       "preferenceNo": 1
+      }
+     ]
+    }
+   },
+   "Pulmonology": {
+    "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+     "selected": [
+      {
+       "nameFull": "Fareeha Akram D/O Muhammad Akram Anjum",
+       "marksTotal": 68.024124,
+       "pmdcNo": "761552-05-M",
+       "applicantId": 27768,
+       "preferenceNo": 5
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Fazila Batool D/O Mubarak Shah",
+       "marksTotal": 69.155855,
+       "pmdcNo": "776798-05-M",
+       "applicantId": 28087,
+       "preferenceNo": 2
       }
      ]
     }
@@ -3218,25 +3471,34 @@
     "Allied Hospital, Faisalabad": {
      "selected": [
       {
+       "nameFull": "Muhammad Aqib Mukhtiar S/O Mukhtiar Ahmad",
+       "marksTotal": 65.222683,
+       "pmdcNo": "745310-01-M",
+       "applicantId": 28594,
+       "preferenceNo": 4
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Aleena Shakeel D/O Shakeel Akhtar ",
        "marksTotal": 65.718441,
        "pmdcNo": "110624-P",
        "applicantId": 16143,
        "preferenceNo": 1
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Khubaib S/O muhammad ramzan",
-       "marksTotal": 65.853993,
-       "pmdcNo": "746369-01-M",
-       "applicantId": 27400,
-       "preferenceNo": 6
-      }
      ]
     },
     "Bahawal Victoria Hospital, Bahawalpur": {
      "selected": [
+      {
+       "nameFull": "Syeda Subas Naveed Bukhari D/O syed gull raiz ali",
+       "marksTotal": 63.354069,
+       "pmdcNo": "108653P",
+       "applicantId": 28710,
+       "preferenceNo": 5
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Ahsan Raza S/O Munawar Hussain",
        "marksTotal": 63.373864,
@@ -3244,61 +3506,45 @@
        "applicantId": 28102,
        "preferenceNo": 4
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Zain Azhar S/O Muhammad Azhar Baloch",
-       "marksTotal": 63.80829,
-       "pmdcNo": "758258-01-M",
-       "applicantId": 27166,
-       "preferenceNo": 3
-      }
      ]
     },
     "Benazir Bhutto Hospital, Rawalpindi": {
      "selected": [
+      {
+       "nameFull": "Ali Jawad Ahmad S/O Zafar Abbas",
+       "marksTotal": 61.719622,
+       "pmdcNo": "758637-01-M",
+       "applicantId": 27755,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Mahnoor Fatima D/O Imtiaz Ahmed",
        "marksTotal": 62.041191,
        "pmdcNo": "758544-01-M",
        "applicantId": 28271,
        "preferenceNo": 5
-      },
-      {
-       "nameFull": "Areej Mukhsneen D/O Mukhsneen Iqbal",
-       "marksTotal": 61.942167,
-       "pmdcNo": "759009-01-M",
-       "applicantId": 27946,
-       "preferenceNo": 5
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Ahmed Ibrahim S/O Muhammad Younas",
-       "marksTotal": 62.629437,
-       "pmdcNo": "113087-P",
-       "applicantId": 28426,
-       "preferenceNo": 3
       }
      ]
     },
     "Children Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Tehreem Arshad D/O Chaudhary Arshad Javaid",
+       "marksTotal": 60.400011,
+       "pmdcNo": "113193-P",
+       "applicantId": 15966,
+       "preferenceNo": 13
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Rubab Shafiq D/O Moazam Farooq",
        "marksTotal": 60.491052,
        "pmdcNo": "82385-P",
        "applicantId": 27949,
        "preferenceNo": 37
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Hamza Ashraf S/O Muhammad Ashraf",
-       "marksTotal": 60.549134,
-       "pmdcNo": "110295-P",
-       "applicantId": 22956,
-       "preferenceNo": 17
       }
      ]
     },
@@ -3365,20 +3611,20 @@
     "DHQ Teaching Hospital, Sargodha": {
      "selected": [
       {
+       "nameFull": "Mamoona Masood D/O Masood Ahmad",
+       "marksTotal": 61.651895,
+       "pmdcNo": "756320-01-M",
+       "applicantId": 28610,
+       "preferenceNo": 24
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Qurat Ul Ain D/O M Pervaiz Akhtar",
        "marksTotal": 62.84986,
        "pmdcNo": "758569-01-M",
        "applicantId": 27294,
        "preferenceNo": 17
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Mahnoor D/O Abdul Majeed",
-       "marksTotal": 64.57381,
-       "pmdcNo": "755992-01-M",
-       "applicantId": 29076,
-       "preferenceNo": 2
       }
      ]
     },
@@ -3405,27 +3651,20 @@
     "Holy Family Hospital, Rawalpindi": {
      "selected": [
       {
+       "nameFull": "Nayab Tariq D/O Raja M Tariq Nawaz",
+       "marksTotal": 60.392122,
+       "pmdcNo": "758799-01-M",
+       "applicantId": 26693,
+       "preferenceNo": 4
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Ali Jawad Ahmad S/O Zafar Abbas",
        "marksTotal": 61.719622,
        "pmdcNo": "758637-01-M",
        "applicantId": 27755,
        "preferenceNo": 4
-      },
-      {
-       "nameFull": "Muhammad Affan Baig S/O Arshad Mahmood",
-       "marksTotal": 61.405531,
-       "pmdcNo": "758822-01-M",
-       "applicantId": 27932,
-       "preferenceNo": 5
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Fariha Idrees D/O Muhammad Idrees",
-       "marksTotal": 62.638074,
-       "pmdcNo": "762516-01-M",
-       "applicantId": 27936,
-       "preferenceNo": 5
       }
      ]
     },
@@ -3459,94 +3698,75 @@
     "Lahore General Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Ahmad Sadiq S/O Sadiq Pervaiz",
+       "marksTotal": 62.703636,
+       "pmdcNo": "756947-01-M",
+       "applicantId": 27931,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Ayesha Muzaffar D/O Muzaffar Mehmood",
        "marksTotal": 66.804369,
        "pmdcNo": "720603-01-M",
        "applicantId": 21171,
        "preferenceNo": 1
-      },
-      {
-       "nameFull": "Dr Sana Mukhtiar D/O MUKHTIAR AHMAD",
-       "marksTotal": 63.042164,
-       "pmdcNo": "105067-p",
-       "applicantId": 28421,
-       "preferenceNo": 29
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Saqib Ali S/O Abdul Manan",
-       "marksTotal": 68.199307,
-       "pmdcNo": "106803-p",
-       "applicantId": 24638,
-       "preferenceNo": 2
       }
      ]
     },
     "Mayo Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Hafsa Boota W/O Hafeez Ur Rehman",
-       "marksTotal": 62.334817,
-       "pmdcNo": "720033-01-M",
-       "applicantId": 22407,
-       "preferenceNo": 8
+       "nameFull": "Zubia Afzal D/O Muhammad Afzal",
+       "marksTotal": 61.227087,
+       "pmdcNo": "760892-01-M",
+       "applicantId": 28419,
+       "preferenceNo": 1
       },
       {
-       "nameFull": "Maheen Fatima D/O Ghulam Yasin Khan",
-       "marksTotal": 62.147161,
-       "pmdcNo": "757172-01-M",
-       "applicantId": 28906,
+       "nameFull": "Sadiq Muhammad S/O Ijaz Hussain",
+       "marksTotal": 61.074545,
+       "pmdcNo": "758705-01-M",
+       "applicantId": 26369,
        "preferenceNo": 3
       },
       {
-       "nameFull": "Shajia Khan D/O Muhammad Yousaf",
-       "marksTotal": 62.102474,
-       "pmdcNo": "113857-P",
-       "applicantId": 29361,
+       "nameFull": "Khadija Khan D/O Muhammad Amjad Ali Khan",
+       "marksTotal": 60.88474,
+       "pmdcNo": "77374-P",
+       "applicantId": 28512,
        "preferenceNo": 1
-      },
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Noor Ul Quzha D/O Afzal Mahmood",
        "marksTotal": 61.608636,
        "pmdcNo": "785577-01-M",
        "applicantId": 27339,
        "preferenceNo": 6
-      },
-      {
-       "nameFull": "Khadija Tul Kubra D/O Muhammad Abdullah Naseer",
-       "marksTotal": 61.315665,
-       "pmdcNo": "105122-P",
-       "applicantId": 28573,
-       "preferenceNo": 7
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Nouman Jamshaid S/O Muhammad Jamshaid",
-       "marksTotal": 62.65243,
-       "pmdcNo": "756363-01-M",
-       "applicantId": 28053,
-       "preferenceNo": 3
       }
      ]
     },
     "Nishtar Hospital, Multan": {
      "selected": [
       {
-       "nameFull": "Amber Batool D/O SHAUKAT HUSSAIN",
-       "marksTotal": 64.553973,
-       "pmdcNo": "112180-P",
-       "applicantId": 29015,
-       "preferenceNo": 3
+       "nameFull": "Arva Imran D/O Sheikh Muhammad imran",
+       "marksTotal": 64.021061,
+       "pmdcNo": "781601-01-M",
+       "applicantId": 28370,
+       "preferenceNo": 4
       },
       {
-       "nameFull": "Rida Mushtaq W/O Umair Shahid",
-       "marksTotal": 64.265996,
-       "pmdcNo": "721557-01-M",
-       "applicantId": 27837,
-       "preferenceNo": 10
-      },
+       "nameFull": "Kausar Tariq D/O Muhammad Tariq",
+       "marksTotal": 63.828679,
+       "pmdcNo": "718701-01-M",
+       "applicantId": 24981,
+       "preferenceNo": 64
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Aimen Nasarullah D/O Muhammad Nasarullah",
        "marksTotal": 64.176591,
@@ -3554,40 +3774,24 @@
        "applicantId": 27370,
        "preferenceNo": 17
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Mujahid Ali S/O Muhammad Arshad ",
-       "marksTotal": 64.69525,
-       "pmdcNo": "757233-01-M",
-       "applicantId": 23383,
-       "preferenceNo": 11
-      }
      ]
     },
     "Punjab Institute of Cardiology, Lahore": {
      "selected": [
       {
-       "nameFull": "Zunaira Naz D/O Haji Muhammad Irahim",
-       "marksTotal": 61.283831,
-       "pmdcNo": "95744-P",
-       "applicantId": 28602,
-       "preferenceNo": 3
-      },
-      {
-       "nameFull": "Haseeb-Ur-Rehman S/O Muhammad Ashfaq",
-       "marksTotal": 60.633083,
-       "pmdcNo": "745892-01-M",
-       "applicantId": 27917,
-       "preferenceNo": 3
+       "nameFull": "Muhammad Masood Iqbal S/O Mian Khursheed Ahmed",
+       "marksTotal": 59.878096,
+       "pmdcNo": "101290-P",
+       "applicantId": 18967,
+       "preferenceNo": 28
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Syeda Zahra Batool Kazmi D/O Syed Shahid Hussain Kazmi",
-       "marksTotal": 62.130932,
-       "pmdcNo": "715644-01-M",
-       "applicantId": 20876,
+       "nameFull": "Zunaira Naz D/O Haji Muhammad Irahim",
+       "marksTotal": 61.283831,
+       "pmdcNo": "95744-P",
+       "applicantId": 28602,
        "preferenceNo": 3
       }
      ]
@@ -3595,34 +3799,20 @@
     "Punjab Institute of Neurosciences, Lahore": {
      "selected": [
       {
+       "nameFull": "Salman Ghaffar S/O Abdul ghaffar",
+       "marksTotal": 60.085533,
+       "pmdcNo": "110317-P",
+       "applicantId": 27789,
+       "preferenceNo": 12
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Shazia Sharif D/O MUHAMMAD SHARIF",
        "marksTotal": 62.744849,
        "pmdcNo": "757383-01-M",
        "applicantId": 28239,
        "preferenceNo": 3
-      },
-      {
-       "nameFull": "Raiha Ashraf D/O Muhammad Ashraf Shahid",
-       "marksTotal": 62.467003,
-       "pmdcNo": "757349-01-M",
-       "applicantId": 27765,
-       "preferenceNo": 3
-      },
-      {
-       "nameFull": "Rafia Asim D/O Asim Maqsood Mian",
-       "marksTotal": 61.525076,
-       "pmdcNo": "760662-01-M",
-       "applicantId": 28598,
-       "preferenceNo": 5
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Hammad Arif S/O Muhammad Arif Zafar",
-       "marksTotal": 63.170022,
-       "pmdcNo": "720887-01-M",
-       "applicantId": 28192,
-       "preferenceNo": 11
       }
      ]
     },
@@ -3669,27 +3859,27 @@
     "Services Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Muhammad Shahid Ehsan Khan S/O Ehsan Ahmad Khan",
-       "marksTotal": 65.186071,
-       "pmdcNo": "775424-01-M",
-       "applicantId": 27778,
-       "preferenceNo": 10
+       "nameFull": "Aqsa Mushtaq D/O Mushtaq Ahmad",
+       "marksTotal": 63.906212,
+       "pmdcNo": "778639-01-M",
+       "applicantId": 28121,
+       "preferenceNo": 4
       },
+      {
+       "nameFull": "Muhammad Jahanzaib Sajid Khan S/O Sajid Nazeer Khan",
+       "marksTotal": 63.751017,
+       "pmdcNo": "716390-01-M",
+       "applicantId": 20606,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Saood Ul Hassan S/O Ghulam Murtaza Chattha",
        "marksTotal": 64.662207,
        "pmdcNo": "775430-01-M",
        "applicantId": 27974,
        "preferenceNo": 1
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Fatima Sultana D/O ISHAQ HUSSAIN",
-       "marksTotal": 65.229545,
-       "pmdcNo": "784091-01-M",
-       "applicantId": 28667,
-       "preferenceNo": 11
       }
      ]
     },
@@ -3716,34 +3906,20 @@
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Arooj Fatima D/O Zohaib Shahbaz ",
-       "marksTotal": 62.965893,
-       "pmdcNo": "116674-P",
-       "applicantId": 18279,
-       "preferenceNo": 35
-      },
+       "nameFull": "Farwa Mukhtar D/O Mukhtar Ahmad",
+       "marksTotal": 61.405667,
+       "pmdcNo": "116590-P",
+       "applicantId": 28084,
+       "preferenceNo": 6
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Ayesha Noor W/O Bilal Sharif",
        "marksTotal": 61.604036,
        "pmdcNo": "715247-O1-M",
        "applicantId": 22115,
        "preferenceNo": 3
-      },
-      {
-       "nameFull": "Hafsa Hafeez D/O Hafiz Hafeez Ullah",
-       "marksTotal": 61.46559,
-       "pmdcNo": "714895-01-M",
-       "applicantId": 24497,
-       "preferenceNo": 1
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Qanita Shafiq D/O Mohammad Shafiq Javed",
-       "marksTotal": 63.593576,
-       "pmdcNo": "762528-01-M",
-       "applicantId": 29156,
-       "preferenceNo": 5
       }
      ]
     }
@@ -3772,12 +3948,21 @@
     "Faisalabad Institute of Cardiology, Faisalabad": {
      "selected": [
       {
-       "nameFull": "Hasan Mustafvi S/O Attique Ur Rehman Siraj",
-       "marksTotal": 59.143946,
-       "pmdcNo": "750062-01-M",
-       "applicantId": 26592,
-       "preferenceNo": 93
+       "nameFull": "Ume Farwa D/O MUQARAB NAWAZ",
+       "marksTotal": 59.021775,
+       "pmdcNo": "755824-01-M",
+       "applicantId": 29007,
+       "preferenceNo": 99
       },
+      {
+       "nameFull": "Rimsha Latif D/O Adeem Qamar",
+       "marksTotal": 58.942533,
+       "pmdcNo": "755011-01-M",
+       "applicantId": 29382,
+       "preferenceNo": 9
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Tahreem Naz D/O Muhammed Naeem",
        "marksTotal": 59.03881,
@@ -3785,19 +3970,19 @@
        "applicantId": 25241,
        "preferenceNo": 7
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Mehrosh Zain D/O Zain ul abidin buzdar",
-       "marksTotal": 59.531944,
-       "pmdcNo": "114249-P",
-       "applicantId": 28261,
-       "preferenceNo": 31
-      }
      ]
     },
     "Jinnah Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Muniba Ijaz D/O Ijaz Ahmad",
+       "marksTotal": 64.276742,
+       "pmdcNo": "715925-01-M",
+       "applicantId": 24927,
+       "preferenceNo": 4
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Muhammad Awais S/O Muhammad Saleem",
        "marksTotal": 64.662187,
@@ -3805,19 +3990,19 @@
        "applicantId": 28577,
        "preferenceNo": 1
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Asad Ayub S/O Muhammad Ayub",
-       "marksTotal": 65.243787,
-       "pmdcNo": "761816-01-M",
-       "applicantId": 25779,
-       "preferenceNo": 3
-      }
      ]
     },
     "Mayo Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Minahil Shahzad D/O Shahzad ur Rehman",
+       "marksTotal": 60.011954,
+       "pmdcNo": "719651-01-M",
+       "applicantId": 24715,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Zubia Afzal D/O Muhammad Afzal",
        "marksTotal": 61.227087,
@@ -3825,48 +4010,32 @@
        "applicantId": 28419,
        "preferenceNo": 3
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Shajia Khan D/O Muhammad Yousaf",
-       "marksTotal": 62.102474,
-       "pmdcNo": "113857-P",
-       "applicantId": 29361,
-       "preferenceNo": 7
-      }
      ]
     },
     "Punjab Institute of Cardiology, Lahore": {
      "selected": [
       {
-       "nameFull": "Ammara Arshad D/O Rana Muhammad Arshad",
-       "marksTotal": 59.955822,
-       "pmdcNo": "754536-01-M",
-       "applicantId": 27043,
-       "preferenceNo": 10
+       "nameFull": "Tahreem Naz D/O Muhammed Naeem",
+       "marksTotal": 59.03881,
+       "pmdcNo": "108370-P",
+       "applicantId": 25241,
+       "preferenceNo": 6
       },
       {
-       "nameFull": "Mehrosh Zain D/O Zain ul abidin buzdar",
-       "marksTotal": 59.531944,
-       "pmdcNo": "114249-P",
-       "applicantId": 28261,
-       "preferenceNo": 30
-      },
+       "nameFull": "Muhammad Waqar Younis S/O Muhammad Younis",
+       "marksTotal": 58.949535,
+       "pmdcNo": "714869-01-M",
+       "applicantId": 29371,
+       "preferenceNo": 74
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Maryam Romaan D/O Safdar Hussain Shah",
        "marksTotal": 59.344091,
        "pmdcNo": "773346-01-M",
        "applicantId": 28818,
        "preferenceNo": 24
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Rubab Shafiq D/O Moazam Farooq",
-       "marksTotal": 60.491052,
-       "pmdcNo": "82385-P",
-       "applicantId": 27949,
-       "preferenceNo": 40
       }
      ]
     },
@@ -3900,27 +4069,20 @@
     "Wazirabad  Institute of Cardiology, Warzirabad": {
      "selected": [
       {
-       "nameFull": "Uzman Ashfaq S/O Ashfaq Ahmad",
-       "marksTotal": 59.230059,
-       "pmdcNo": "93110-P",
-       "applicantId": 28024,
-       "preferenceNo": 3
-      },
+       "nameFull": "Talha Bin Fazal S/O Fazal ur rehman",
+       "marksTotal": 58.881708,
+       "pmdcNo": "750126-01-M",
+       "applicantId": 28671,
+       "preferenceNo": 100
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Ume Farwa D/O MUQARAB NAWAZ",
        "marksTotal": 59.021775,
        "pmdcNo": "755824-01-M",
        "applicantId": 29007,
        "preferenceNo": 130
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Tuba W/O Amir Mushtaq",
-       "marksTotal": 59.516126,
-       "pmdcNo": "718124-01-M",
-       "applicantId": 28304,
-       "preferenceNo": 134
       }
      ]
     }
@@ -4171,20 +4333,20 @@
     "Govt.Teaching Hospital , Shahdra , Lahore": {
      "selected": [
       {
+       "nameFull": "Sidra Manzoor D/O Manzoor Ahmad",
+       "marksTotal": 60.168592,
+       "pmdcNo": "780108-01-M",
+       "applicantId": 26905,
+       "preferenceNo": 9
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Shehar Bano D/O Abdul Rasheed Khan",
        "marksTotal": 61.244742,
        "pmdcNo": "781551-01-M",
        "applicantId": 28695,
        "preferenceNo": 7
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Humaira Shaheen D/O Nazir Ahmad Khan",
-       "marksTotal": 62.440104,
-       "pmdcNo": "779839-01-M ",
-       "applicantId": 27159,
-       "preferenceNo": 11
       }
      ]
     },
@@ -4211,100 +4373,81 @@
     "Jinnah Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Khadija Tariq D/O Muhammad Tariq Javid",
+       "marksTotal": 63.413495,
+       "pmdcNo": "716046-01-M",
+       "applicantId": 28856,
+       "preferenceNo": 8
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Fatima Farooq D/O Muhammad Farooq Anjum",
        "marksTotal": 63.624459,
        "pmdcNo": "759507-01-M",
        "applicantId": 28456,
        "preferenceNo": 27
-      },
-      {
-       "nameFull": "Muhammad Abuzar S/O HAQ NAWAZ",
-       "marksTotal": 63.565682,
-       "pmdcNo": "759923-01-M",
-       "applicantId": 27428,
-       "preferenceNo": 46
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Keshuf D/O Shabbir Hussain",
-       "marksTotal": 64.742522,
-       "pmdcNo": "715879-01-M",
-       "applicantId": 24750,
-       "preferenceNo": 3
       }
      ]
     },
     "Lahore General Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Muhammad Usama Yaqoob S/O Muhammad Yaqub",
-       "marksTotal": 62.077424,
-       "pmdcNo": "779644-01-M",
-       "applicantId": 28021,
-       "preferenceNo": 7
+       "nameFull": "Iram Shezadi D/O Gulzar Hussain",
+       "marksTotal": 61.159384,
+       "pmdcNo": "101449-P",
+       "applicantId": 6937,
+       "preferenceNo": 16
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Muhammad Usama S/O Muhammad Anwar Shahid",
-       "marksTotal": 62.326818,
-       "pmdcNo": "756862-01-M",
-       "applicantId": 28022,
-       "preferenceNo": 21
+       "nameFull": "Ahmad Sadiq S/O Sadiq Pervaiz",
+       "marksTotal": 62.703636,
+       "pmdcNo": "756947-01-M",
+       "applicantId": 27931,
+       "preferenceNo": 3
       }
      ]
     },
     "Mayo Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Sanam Din D/O muhammad din",
-       "marksTotal": 61.411317,
-       "pmdcNo": "107646-p",
-       "applicantId": 18946,
-       "preferenceNo": 8
+       "nameFull": "Rubab Shafiq D/O Moazam Farooq",
+       "marksTotal": 60.491052,
+       "pmdcNo": "82385-P",
+       "applicantId": 27949,
+       "preferenceNo": 9
       },
+      {
+       "nameFull": "Rabbia Tariq D/O Tariq Sarfraz",
+       "marksTotal": 60.379771,
+       "pmdcNo": "75792001-M",
+       "applicantId": 25670,
+       "preferenceNo": 9
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Iram Shezadi D/O Gulzar Hussain",
        "marksTotal": 61.159384,
        "pmdcNo": "101449-P",
        "applicantId": 6937,
        "preferenceNo": 17
-      },
-      {
-       "nameFull": "Ayesha Mubasher D/O SAIR AHMAD TABRAIZ",
-       "marksTotal": 60.786556,
-       "pmdcNo": "109271-P",
-       "applicantId": 16271,
-       "preferenceNo": 11
-      },
-      {
-       "nameFull": "Hamza Ashraf S/O Muhammad Ashraf",
-       "marksTotal": 60.549134,
-       "pmdcNo": "110295-P",
-       "applicantId": 22956,
-       "preferenceNo": 6
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Zain Ahmad Zahid S/O Muhammad Zahid Javed",
-       "marksTotal": 61.516605,
-       "pmdcNo": "755468-01-M",
-       "applicantId": 27093,
-       "preferenceNo": 5
       }
      ]
     },
     "Nishtar Hospital, Multan": {
      "selected": [
       {
-       "nameFull": "Hira Hameed D/O Hameed Ahmad Nasir",
-       "marksTotal": 65.139698,
-       "pmdcNo": "721602-01-M",
-       "applicantId": 28355,
-       "preferenceNo": 5
-      },
+       "nameFull": "Sohail Sabir S/O Sabir Hussain",
+       "marksTotal": 64.05197,
+       "pmdcNo": "762158-01-M",
+       "applicantId": 27984,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Ahmad Farooq S/O Mian Muhammad Umar Farooq",
        "marksTotal": 64.339622,
@@ -4312,19 +4455,19 @@
        "applicantId": 25520,
        "preferenceNo": 10
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Usman S/O Muhammad Hussain",
-       "marksTotal": 65.628041,
-       "pmdcNo": "746997-01-M",
-       "applicantId": 28049,
-       "preferenceNo": 3
-      }
      ]
     },
     "Sahiwal Teaching Hospital, Sahiwal": {
      "selected": [
+      {
+       "nameFull": "Talha Akbar S/O Chaudhary Muhammad Akbar Javed",
+       "marksTotal": 62.166298,
+       "pmdcNo": "103086-P",
+       "applicantId": 28175,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Fahad Khalid S/O Khalid Shezad",
        "marksTotal": 62.814849,
@@ -4332,41 +4475,25 @@
        "applicantId": 28737,
        "preferenceNo": 4
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Huma Mushtaq D/O M.Mushtaq",
-       "marksTotal": 65.019318,
-       "pmdcNo": "757305-01-M",
-       "applicantId": 28215,
-       "preferenceNo": 9
-      }
      ]
     },
     "Services Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Muhammad Usama S/O Muhammad Yaseen",
-       "marksTotal": 63.2175,
-       "pmdcNo": "782450-01-M",
-       "applicantId": 27889,
-       "preferenceNo": 10
-      },
+       "nameFull": "Muhammad Umar Numan S/O Ameer Ali",
+       "marksTotal": 62.000087,
+       "pmdcNo": "773306-01-M",
+       "applicantId": 26624,
+       "preferenceNo": 17
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Muhammad Usama S/O Abubakar Siddique",
        "marksTotal": 62.282283,
        "pmdcNo": "719746-01-M",
        "applicantId": 28094,
        "preferenceNo": 4
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Fatima Sultana D/O ISHAQ HUSSAIN",
-       "marksTotal": 65.229545,
-       "pmdcNo": "784091-01-M",
-       "applicantId": 28667,
-       "preferenceNo": 24
       }
      ]
     },
@@ -4393,20 +4520,27 @@
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Shehar Bano D/O Abdul Rasheed Khan",
+       "marksTotal": 61.244742,
+       "pmdcNo": "781551-01-M",
+       "applicantId": 28695,
+       "preferenceNo": 6
+      },
+      {
+       "nameFull": "Hafsa D/O Muhammad Zawar Aftab",
+       "marksTotal": 61.165829,
+       "pmdcNo": "780792-01-M",
+       "applicantId": 28107,
+       "preferenceNo": 23
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Fiza Waseem D/O Waseem Talib",
        "marksTotal": 61.320865,
        "pmdcNo": "716822-01-M",
        "applicantId": 21811,
        "preferenceNo": 4
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Bushra Sarwar S/O Muhammad Sarwar",
-       "marksTotal": 63.307066,
-       "pmdcNo": "778466-01-M",
-       "applicantId": 26876,
-       "preferenceNo": 1
       }
      ]
     }
@@ -4415,40 +4549,40 @@
     "ABS Teaching Hospital, Gujrat": {
      "selected": [
       {
+       "nameFull": "Muhammad Talha Bin Akram S/O MUHAMMAD AKRAM",
+       "marksTotal": 58.643766,
+       "pmdcNo": "762563-01-M",
+       "applicantId": 28189,
+       "preferenceNo": 11
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Talha Bin Fazal S/O Fazal ur rehman",
        "marksTotal": 58.881708,
        "pmdcNo": "750126-01-M",
        "applicantId": 28671,
        "preferenceNo": 132
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Wahaj Ghazi S/O Muhammad Irshad Khan",
-       "marksTotal": 60.339979,
-       "pmdcNo": "759015-01-M",
-       "applicantId": 25589,
-       "preferenceNo": 35
-      }
      ]
     },
     "AIMH, Sialkot": {
      "selected": [
       {
-       "nameFull": "Muhammad Yasin S/O MuhamadAbdullah",
-       "marksTotal": 60.842717,
-       "pmdcNo": "759830-01-M",
-       "applicantId": 28151,
-       "preferenceNo": 66
+       "nameFull": "Fizza Ijaz D/O Ijaz hussain",
+       "marksTotal": 60.803604,
+       "pmdcNo": "742684-01-M",
+       "applicantId": 27782,
+       "preferenceNo": 38
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Saira Jabeen D/O Liaqat Ali",
-       "marksTotal": 63.481211,
-       "pmdcNo": "755894-01-M",
-       "applicantId": 28080,
-       "preferenceNo": 42
+       "nameFull": "Yusra Nawaz D/O Muhammad nawaz",
+       "marksTotal": 61.097046,
+       "pmdcNo": "756093-01-M",
+       "applicantId": 28369,
+       "preferenceNo": 6
       }
      ]
     },
@@ -4596,45 +4730,54 @@
     "Jinnah Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Naveed Rasool S/O Ghulam Rasool",
-       "marksTotal": 63.865779,
-       "pmdcNo": "716089-01-M",
-       "applicantId": 28320,
-       "preferenceNo": 5
+       "nameFull": "Maryam Khalid D/O Usman Nazir",
+       "marksTotal": 63.843181,
+       "pmdcNo": "759402-01-M",
+       "applicantId": 27415,
+       "preferenceNo": 36
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Daniyal Nazir S/O Muhammad Nazir",
-       "marksTotal": 64.285671,
-       "pmdcNo": "759359-01-M",
-       "applicantId": 25951,
-       "preferenceNo": 11
+       "nameFull": "Muhammad Ahmad Sadiq S/O Muhammad Sadiq Saqi",
+       "marksTotal": 64.508301,
+       "pmdcNo": "759474-01-M",
+       "applicantId": 27761,
+       "preferenceNo": 22
       }
      ]
     },
     "Mayo Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Talha Ashraf S/O Muhammad Ashraf Tipu",
-       "marksTotal": 61.087218,
-       "pmdcNo": "756366-01-M",
-       "applicantId": 28559,
-       "preferenceNo": 12
+       "nameFull": "Awais Gul S/O Khalid Iqbal",
+       "marksTotal": 60.981614,
+       "pmdcNo": "715722-01-M",
+       "applicantId": 27842,
+       "preferenceNo": 6
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Amna Nawazish D/O Nawazish Ali",
-       "marksTotal": 61.33914,
-       "pmdcNo": "715861-01-M",
-       "applicantId": 22931,
-       "preferenceNo": 3
+       "nameFull": "Sajid Hussain S/O ASHIQ HUSSAIN",
+       "marksTotal": 62.017292,
+       "pmdcNo": "755018-01-M",
+       "applicantId": 27912,
+       "preferenceNo": 8
       }
      ]
     },
     "Nishtar Hospital, Multan": {
      "selected": [
+      {
+       "nameFull": "Muhammad Imran S/O Muhammad Suleman",
+       "marksTotal": 63.904924,
+       "pmdcNo": "757485-01-M",
+       "applicantId": 28085,
+       "preferenceNo": 8
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Asad Bilal S/O Zulfiqar Ali",
        "marksTotal": 64.135455,
@@ -4642,47 +4785,33 @@
        "applicantId": 25622,
        "preferenceNo": 46
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Maryam Romaan D/O Safdar Hussain Shah",
-       "marksTotal": 64.344091,
-       "pmdcNo": "773346-01-M",
-       "applicantId": 28818,
-       "preferenceNo": 42
-      }
      ]
     },
     "Punjab Institute of Neurosciences, Lahore": {
      "selected": [
       {
-       "nameFull": "Nida Nazar D/O Nazar Muhammad",
-       "marksTotal": 59.828105,
-       "pmdcNo": "756921-01-M",
-       "applicantId": 28922,
-       "preferenceNo": 94
+       "nameFull": "Maryam Romaan D/O Safdar Hussain Shah",
+       "marksTotal": 59.344091,
+       "pmdcNo": "773346-01-M",
+       "applicantId": 28818,
+       "preferenceNo": 20
       },
       {
-       "nameFull": "Muhammad Usman Sultan S/O Sultan Muhammad",
-       "marksTotal": 59.73487,
-       "pmdcNo": "104378-P",
-       "applicantId": 3162,
-       "preferenceNo": 8
+       "nameFull": "Ahmad Farooq S/O Mian Muhammad Umar Farooq",
+       "marksTotal": 59.339622,
+       "pmdcNo": "760688-01-M",
+       "applicantId": 25520,
+       "preferenceNo": 3
       },
       {
-       "nameFull": "Jalal Haider Khan S/O Muhammad Nawaz",
-       "marksTotal": 59.499239,
-       "pmdcNo": "113397-P",
-       "applicantId": 18051,
-       "preferenceNo": 35
-      },
-      {
-       "nameFull": "Rizwan Ali S/O Muneer Ahmad",
-       "marksTotal": 59.461203,
-       "pmdcNo": "103632-P",
-       "applicantId": 4621,
-       "preferenceNo": 39
-      },
+       "nameFull": "Ahmad Humayun Asghar S/O HUMAYUN ASGHAR",
+       "marksTotal": 59.218628,
+       "pmdcNo": "89398-P",
+       "applicantId": 27754,
+       "preferenceNo": 44
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Muhammad Asif Nawaz S/O Muhammad Mumtaz",
        "marksTotal": 59.377434,
@@ -4690,19 +4819,19 @@
        "applicantId": 27965,
        "preferenceNo": 25
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Ammara Arshad D/O Rana Muhammad Arshad",
-       "marksTotal": 59.955822,
-       "pmdcNo": "754536-01-M",
-       "applicantId": 27043,
-       "preferenceNo": 13
-      }
      ]
     },
     "Sahiwal Teaching Hospital, Sahiwal": {
      "selected": [
+      {
+       "nameFull": "Hamza Saeed S/O M Ajmal Saeed",
+       "marksTotal": 62.003637,
+       "pmdcNo": "756035-01-M",
+       "applicantId": 25537,
+       "preferenceNo": 7
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Sohaib Akbar S/O Zafar Iqbal",
        "marksTotal": 62.367933,
@@ -4710,88 +4839,65 @@
        "applicantId": 28199,
        "preferenceNo": 8
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Mohammad Sohaib Dansih S/O Mohammad Ali Tabassum",
-       "marksTotal": 63.006797,
-       "pmdcNo": "782597-01-M",
-       "applicantId": 26150,
-       "preferenceNo": 29
-      }
      ]
     },
     "Services Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Sheeraz Hanif S/O Muhammad Hanif",
+       "marksTotal": 61.495076,
+       "pmdcNo": "780446-01-M",
+       "applicantId": 26892,
+       "preferenceNo": 10
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Haseeb Ur Rehman S/O Iftikhar ali",
        "marksTotal": 61.554124,
        "pmdcNo": "721318-01-M ",
        "applicantId": 18443,
        "preferenceNo": 76
-      },
-      {
-       "nameFull": "Muhammad Bilal S/O Hafiz Khalid Mehmood",
-       "marksTotal": 61.549849,
-       "pmdcNo": "782502-01-M",
-       "applicantId": 28953,
-       "preferenceNo": 25
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Hafsa Arooj Sial D/O Ghulam Shabbir",
-       "marksTotal": 62.777219,
-       "pmdcNo": "778709-01-M",
-       "applicantId": 26852,
-       "preferenceNo": 6
       }
      ]
     },
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "selected": [
       {
+       "nameFull": "Mahreen Pervaiz D/O Muhammad Pervaiz",
+       "marksTotal": 60.51053,
+       "pmdcNo": "757573-01-M",
+       "applicantId": 28372,
+       "preferenceNo": 55
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Asher Azeem S/O Muhammad Ashraf ",
        "marksTotal": 60.840336,
        "pmdcNo": "714909-01-M",
        "applicantId": 25722,
        "preferenceNo": 15
-      },
-      {
-       "nameFull": "Yousaf Saeed S/O Muhammad Saeed",
-       "marksTotal": 60.578842,
-       "pmdcNo": "715969-01-M",
-       "applicantId": 27798,
-       "preferenceNo": 8
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Iqra Saeed D/O SAEED AHMAD",
-       "marksTotal": 61.563539,
-       "pmdcNo": "775895-01-M",
-       "applicantId": 28168,
-       "preferenceNo": 26
       }
      ]
     },
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Husna Rafique D/O MuhammadRafique",
-       "marksTotal": 61.36425,
-       "pmdcNo": "772933-01-M",
-       "applicantId": 27814,
-       "preferenceNo": 13
+       "nameFull": "Amna Malik D/O Ijaz Ahmed",
+       "marksTotal": 60.180534,
+       "pmdcNo": "773420-01-M",
+       "applicantId": 28081,
+       "preferenceNo": 11
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Hafsa Hafeez D/O Hafiz Hafeez Ullah",
-       "marksTotal": 61.46559,
-       "pmdcNo": "714895-01-M",
-       "applicantId": 24497,
-       "preferenceNo": 6
+       "nameFull": "Farwa Mukhtar D/O Mukhtar Ahmad",
+       "marksTotal": 61.405667,
+       "pmdcNo": "116590-P",
+       "applicantId": 28084,
+       "preferenceNo": 8
       }
      ]
     }
@@ -4907,20 +5013,20 @@
     "DHQ Hospital, DG Khan": {
      "selected": [
       {
+       "nameFull": "Hafiza Reja Roman D/O Muhammad Anwar",
+       "marksTotal": 61.027954,
+       "pmdcNo": "753697-01-M",
+       "applicantId": 28718,
+       "preferenceNo": 23
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Faiza Ameen D/O Muhammad Amin Ul Rasheed Khan",
        "marksTotal": 63.287122,
        "pmdcNo": "757560-01-M",
        "applicantId": 26380,
        "preferenceNo": 42
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Nimra Yaseen D/O Muhammad yaseen",
-       "marksTotal": 64.11606,
-       "pmdcNo": "757544-01-M",
-       "applicantId": 26723,
-       "preferenceNo": 10
       }
      ]
     },
@@ -5094,34 +5200,27 @@
     "Lady Willingdon Hospital": {
      "selected": [
       {
-       "nameFull": "Rida Arif D/O Muhammad Arif Sheikh",
-       "marksTotal": 63.894397,
-       "pmdcNo": "755255-01-M",
-       "applicantId": 27067,
-       "preferenceNo": 2
+       "nameFull": "Maha Umar D/O Muhammad Umar Qavi",
+       "marksTotal": 63.416297,
+       "pmdcNo": "81932-p",
+       "applicantId": 6832,
+       "preferenceNo": 7
       },
       {
-       "nameFull": "Maham Amin D/O Syed Muhammad",
-       "marksTotal": 63.882493,
-       "pmdcNo": "87753-P",
-       "applicantId": 18742,
+       "nameFull": "Nayyab Farhan D/O Farhan Shabbir",
+       "marksTotal": 62.611589,
+       "pmdcNo": "718812-01-M",
+       "applicantId": 22945,
        "preferenceNo": 2
-      },
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Fareeha Gulzar D/O Gulzar Hussain",
        "marksTotal": 63.621785,
        "pmdcNo": "716999-01-M",
        "applicantId": 22349,
        "preferenceNo": 7
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Anam Abdul Razzaq D/O Abdul Razzaq",
-       "marksTotal": 64.154686,
-       "pmdcNo": "96756-p",
-       "applicantId": 5299,
-       "preferenceNo": 2
       }
      ]
     },
@@ -5397,19 +5496,26 @@
     "Mayo Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Muhammad Shaarif Kaleem S/O Muhammad Musa Kaleem",
-       "marksTotal": 64.194871,
-       "pmdcNo": "110302-P",
-       "applicantId": 21407,
+       "nameFull": "Muhammad Adnan S/O Muhammad shafi",
+       "marksTotal": 64.104713,
+       "pmdcNo": "754521-01-M",
+       "applicantId": 26729,
+       "preferenceNo": 1
+      },
+      {
+       "nameFull": "Ghulam Mujtaba S/O Ghulam Murtaza",
+       "marksTotal": 63.828256,
+       "pmdcNo": "762529-01-M",
+       "applicantId": 28293,
        "preferenceNo": 1
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Hira Rashid D/O Rashid Ahmed",
-       "marksTotal": 64.773718,
-       "pmdcNo": "111987-P",
-       "applicantId": 16591,
+       "nameFull": "Muhammad Shaarif Kaleem S/O Muhammad Musa Kaleem",
+       "marksTotal": 64.194871,
+       "pmdcNo": "110302-P",
+       "applicantId": 21407,
        "preferenceNo": 1
       }
      ]
@@ -5417,20 +5523,20 @@
     "Nishtar Hospital, Multan": {
      "selected": [
       {
-       "nameFull": "Numra Aamir D/O muhammad aamir",
-       "marksTotal": 65.486895,
-       "pmdcNo": "761197-01-M",
-       "applicantId": 27284,
+       "nameFull": "Umer Farooq S/O Asrar Hussain",
+       "marksTotal": 64.378398,
+       "pmdcNo": "94724-P",
+       "applicantId": 17708,
        "preferenceNo": 1
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Mahnoor Fatima D/O Farooq Ahmad",
-       "marksTotal": 66.852717,
-       "pmdcNo": "112150-P",
-       "applicantId": 23380,
-       "preferenceNo": 3
+       "nameFull": "Numra Aamir D/O muhammad aamir",
+       "marksTotal": 65.486895,
+       "pmdcNo": "761197-01-M",
+       "applicantId": 27284,
+       "preferenceNo": 1
       }
      ]
     },
@@ -5799,20 +5905,20 @@
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "selected": [
       {
+       "nameFull": "Majid Ramzan S/O Muhammad Ramzan",
+       "marksTotal": 61.949924,
+       "pmdcNo": "778590-01",
+       "applicantId": 28082,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Muhammad Moawaia S/O Abdul Ghani Haidari",
        "marksTotal": 62.196202,
        "pmdcNo": "74589401-M",
        "applicantId": 27467,
        "preferenceNo": 2
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Umer Hussain S/O Muhammad Ramzan",
-       "marksTotal": 63.557023,
-       "pmdcNo": "111103-P",
-       "applicantId": 23395,
-       "preferenceNo": 1
       }
      ]
     },
@@ -5835,26 +5941,46 @@
        "preferenceNo": 17
       }
      ]
+    },
+    "Allied Hospital, Faisalabad": {
+     "selected": [
+      {
+       "nameFull": "Ikram Ullah S/O Muhammad Ashraf",
+       "marksTotal": 64.795531,
+       "pmdcNo": "762986-01-M",
+       "applicantId": 27822,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Muhammad Aqib Mukhtiar S/O Mukhtiar Ahmad",
+       "marksTotal": 65.222683,
+       "pmdcNo": "745310-01-M",
+       "applicantId": 28594,
+       "preferenceNo": 15
+      }
+     ]
     }
    },
    "Otorhinolaryngology ENT": {
     "ABS Teaching Hospital, Gujrat": {
      "selected": [
       {
+       "nameFull": "Aniqa Intizar D/O Intizar Ahmed Rajput",
+       "marksTotal": 60.231137,
+       "pmdcNo": "762374-01-M",
+       "applicantId": 26940,
+       "preferenceNo": 63
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Hafiza Reja Roman D/O Muhammad Anwar",
        "marksTotal": 61.027954,
        "pmdcNo": "753697-01-M",
        "applicantId": 28718,
        "preferenceNo": 36
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Laraib Safdar D/O mian muhammad safdar",
-       "marksTotal": 61.738343,
-       "pmdcNo": "750462-01-M ",
-       "applicantId": 26898,
-       "preferenceNo": 14
       }
      ]
     },
@@ -5941,20 +6067,20 @@
     "Holy Family Hospital, Rawalpindi": {
      "selected": [
       {
+       "nameFull": "Sara Khan W/O Muhammad Junaid",
+       "marksTotal": 62.069826,
+       "pmdcNo": "97763-P",
+       "applicantId": 28096,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Sumayyah Maryam D/O Abdus Samee",
        "marksTotal": 62.193528,
        "pmdcNo": "758596-01-M",
        "applicantId": 25760,
        "preferenceNo": 2
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Shahroz Khan S/O Nasir Ahmad Khan",
-       "marksTotal": 63.504523,
-       "pmdcNo": "88061-p2",
-       "applicantId": 423,
-       "preferenceNo": 1
       }
      ]
     },
@@ -5981,20 +6107,20 @@
     "Lahore General Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Muzamil Khurshid D/O Khurshid Ahmad",
+       "marksTotal": 63.17606,
+       "pmdcNo": "757120-01-M",
+       "applicantId": 28083,
+       "preferenceNo": 6
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Haseeb Masood S/O MUHAMMAD MASOOD UR RAUF",
        "marksTotal": 63.223388,
        "pmdcNo": "785859-01-M",
        "applicantId": 25884,
        "preferenceNo": 3
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Abdullah Waqar S/O Waqar Saeed",
-       "marksTotal": 63.538182,
-       "pmdcNo": "762938-01-M",
-       "applicantId": 28249,
-       "preferenceNo": 5
       }
      ]
     },
@@ -6061,20 +6187,20 @@
     "Services Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Muhammad Shahid Ehsan Khan S/O Ehsan Ahmad Khan",
+       "marksTotal": 65.186071,
+       "pmdcNo": "775424-01-M",
+       "applicantId": 27778,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Raheela Wajid D/O Wajid Ali",
        "marksTotal": 65.51,
        "pmdcNo": "777859-01-M",
        "applicantId": 26591,
        "preferenceNo": 3
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Rameesha Imran D/O Muhammad Imran",
-       "marksTotal": 65.856894,
-       "pmdcNo": "781861-01-M",
-       "applicantId": 28644,
-       "preferenceNo": 2
       }
      ]
     },
@@ -6103,20 +6229,20 @@
     "Allied Hospital, Faisalabad": {
      "selected": [
       {
+       "nameFull": "Bushra Ather D/O ATHER BASHIR",
+       "marksTotal": 62.996667,
+       "pmdcNo": "721995-01-M",
+       "applicantId": 22590,
+       "preferenceNo": 21
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Ikram Ullah S/O Muhammad Ashraf",
        "marksTotal": 64.795531,
        "pmdcNo": "762986-01-M",
        "applicantId": 27822,
        "preferenceNo": 5
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Rida Fatima D/O Ghulam Ghous Tahir",
-       "marksTotal": 66.020855,
-       "pmdcNo": "718339-01-M",
-       "applicantId": 27035,
-       "preferenceNo": 2
       }
      ]
     },
@@ -6143,34 +6269,34 @@
     "Children Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Safeen Azam S/O Muhammad Azam korai",
+       "marksTotal": 59.648485,
+       "pmdcNo": "114215-P",
+       "applicantId": 28901,
+       "preferenceNo": 50
+      },
+      {
+       "nameFull": "Uzair Arshad S/O Muhammad Arshad",
+       "marksTotal": 59.557266,
+       "pmdcNo": "712728-01-M",
+       "applicantId": 27918,
+       "preferenceNo": 26
+      },
+      {
+       "nameFull": "Muhammad Ibrahim Khalid S/O Khalid ur Rehman hashmi",
+       "marksTotal": 59.460531,
+       "pmdcNo": "112632-P ",
+       "applicantId": 19007,
+       "preferenceNo": 19
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Anoosha Jamil W/O TARIQ SHAFIQUE",
        "marksTotal": 59.807045,
        "pmdcNo": "108359-P",
        "applicantId": 28642,
        "preferenceNo": 8
-      },
-      {
-       "nameFull": "Bushra Anjum D/O Muhammad Sher Anjum",
-       "marksTotal": 59.753105,
-       "pmdcNo": "108905-P",
-       "applicantId": 28749,
-       "preferenceNo": 38
-      },
-      {
-       "nameFull": "Amara Gondal D/O Rustam Zahir Khan",
-       "marksTotal": 59.687489,
-       "pmdcNo": "759806-01-M",
-       "applicantId": 28700,
-       "preferenceNo": 3
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Zahid Ali S/O Karamat ali",
-       "marksTotal": 60.20038,
-       "pmdcNo": "108199-P",
-       "applicantId": 28728,
-       "preferenceNo": 19
       }
      ]
     },
@@ -6224,20 +6350,20 @@
     "Institute of Child Health, Faisalabad": {
      "selected": [
       {
+       "nameFull": "Rizwan Ali S/O Muneer Ahmad",
+       "marksTotal": 59.461203,
+       "pmdcNo": "103632-P",
+       "applicantId": 4621,
+       "preferenceNo": 17
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Uzair Arshad S/O Muhammad Arshad",
        "marksTotal": 59.557266,
        "pmdcNo": "712728-01-M",
        "applicantId": 27918,
        "preferenceNo": 30
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Bushra Anjum D/O Muhammad Sher Anjum",
-       "marksTotal": 59.753105,
-       "pmdcNo": "108905-P",
-       "applicantId": 28749,
-       "preferenceNo": 39
       }
      ]
     },
@@ -6264,27 +6390,27 @@
     "Mayo Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Sadiq Muhammad S/O Ijaz Hussain",
-       "marksTotal": 61.074545,
-       "pmdcNo": "758705-01-M",
-       "applicantId": 26369,
-       "preferenceNo": 4
+       "nameFull": "Wajiha Sarwar D/O Ijaz Ahmad",
+       "marksTotal": 60.179573,
+       "pmdcNo": "761302-01-M",
+       "applicantId": 27066,
+       "preferenceNo": 5
       },
+      {
+       "nameFull": "Bilal Ahmed S/O Inam Ullah Tatla",
+       "marksTotal": 60.12855,
+       "pmdcNo": "85012-p",
+       "applicantId": 28436,
+       "preferenceNo": 6
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Awais Gul S/O Khalid Iqbal",
        "marksTotal": 60.981614,
        "pmdcNo": "715722-01-M",
        "applicantId": 27842,
        "preferenceNo": 8
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Sanam Din D/O muhammad din",
-       "marksTotal": 61.411317,
-       "pmdcNo": "107646-p",
-       "applicantId": 18946,
-       "preferenceNo": 14
       }
      ]
     },
@@ -6311,40 +6437,40 @@
     "Sahiwal Teaching Hospital, Sahiwal": {
      "selected": [
       {
+       "nameFull": "Sohaib Akbar S/O Zafar Iqbal",
+       "marksTotal": 62.367933,
+       "pmdcNo": "756038-01-M",
+       "applicantId": 28199,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Sundas Javed D/O JAVED AKHTAR",
        "marksTotal": 63.335726,
        "pmdcNo": "743727-01-M",
        "applicantId": 28193,
        "preferenceNo": 2
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Mudassar Shehzad Akram S/O Muhammad Akram",
-       "marksTotal": 63.384772,
-       "pmdcNo": "782199-01-M",
-       "applicantId": 28257,
-       "preferenceNo": 36
-      }
      ]
     },
     "Services Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Muhammad Usama S/O Abubakar Siddique",
+       "marksTotal": 62.282283,
+       "pmdcNo": "719746-01-M",
+       "applicantId": 28094,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Aqsa Mushtaq D/O Mushtaq Ahmad",
        "marksTotal": 63.906212,
        "pmdcNo": "778639-01-M",
        "applicantId": 28121,
        "preferenceNo": 6
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Alaita Fatima Bakhtiari D/O Khurshid Mohsin",
-       "marksTotal": 64.628593,
-       "pmdcNo": "774394\u00ad-01-\u00adM",
-       "applicantId": 27101,
-       "preferenceNo": 5
       }
      ]
     },
@@ -6413,47 +6539,40 @@
     "Jinnah Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Muhammad Ahmad Sadiq S/O Muhammad Sadiq Saqi",
+       "marksTotal": 64.508301,
+       "pmdcNo": "759474-01-M",
+       "applicantId": 27761,
+       "preferenceNo": 20
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Muhammad Aaftab Khalid S/O Abdul Jabbar Bhatti",
        "marksTotal": 65.803453,
        "pmdcNo": "716116-01-M ",
        "applicantId": 20405,
        "preferenceNo": 1
-      },
-      {
-       "nameFull": "Tuba W/O Amir Mushtaq",
-       "marksTotal": 64.516126,
-       "pmdcNo": "718124-01-M",
-       "applicantId": 28304,
-       "preferenceNo": 18
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Shoaib S/O Inayat Ali",
-       "marksTotal": 65.961136,
-       "pmdcNo": "717977-01-M",
-       "applicantId": 23240,
-       "preferenceNo": 2
       }
      ]
     },
     "Lahore General Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Hafiz Muhammad Hamza Arif S/O Muhammad Arif",
+       "marksTotal": 62.477295,
+       "pmdcNo": "102036-P",
+       "applicantId": 25031,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Muzamil Khurshid D/O Khurshid Ahmad",
        "marksTotal": 63.17606,
        "pmdcNo": "757120-01-M",
        "applicantId": 28083,
        "preferenceNo": 8
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Arbab Ahmad D/O Khalil Ahmad Pasha",
-       "marksTotal": 63.764231,
-       "pmdcNo": "757095-01-M",
-       "applicantId": 27707,
-       "preferenceNo": 9
       }
      ]
     },
@@ -6516,33 +6635,53 @@
        "preferenceNo": 27
       }
      ]
+    },
+    "Children Hospital, Lahore": {
+     "selected": [
+      {
+       "nameFull": "Mehrosh Zain D/O Zain ul abidin buzdar",
+       "marksTotal": 59.531944,
+       "pmdcNo": "114249-P",
+       "applicantId": 28261,
+       "preferenceNo": 24
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Hafiz Muhammad Hamza Arif S/O Muhammad Arif",
+       "marksTotal": 62.477295,
+       "pmdcNo": "102036-P",
+       "applicantId": 25031,
+       "preferenceNo": 3
+      }
+     ]
     }
    },
    "Thoracic Surgery": {
     "Mayo Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Rabbia Tariq D/O Tariq Sarfraz",
-       "marksTotal": 60.379771,
-       "pmdcNo": "75792001-M",
-       "applicantId": 25670,
-       "preferenceNo": 12
+       "nameFull": "Hafsa Amin D/O Muhammad Talha Naveed",
+       "marksTotal": 59.952542,
+       "pmdcNo": "718856-01-M",
+       "applicantId": 23244,
+       "preferenceNo": 5
       },
+      {
+       "nameFull": "Sania Sarwar D/O Ghulam Sarwar",
+       "marksTotal": 59.807421,
+       "pmdcNo": "718992-01-M",
+       "applicantId": 29374,
+       "preferenceNo": 12
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Nofal Qundil S/O Mumtaz Ahmad",
        "marksTotal": 60.375727,
        "pmdcNo": "718294-01-M",
        "applicantId": 29421,
        "preferenceNo": 4
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Talha Ashraf S/O Muhammad Ashraf Tipu",
-       "marksTotal": 61.087218,
-       "pmdcNo": "756366-01-M",
-       "applicantId": 28559,
-       "preferenceNo": 32
       }
      ]
     },
@@ -6691,25 +6830,34 @@
     "DHQ Teaching Hospital, Sargodha": {
      "selected": [
       {
+       "nameFull": "Aftab Ahmad Khan S/O Misar Hayat Khan",
+       "marksTotal": 60.783921,
+       "pmdcNo": "750561-01-M",
+       "applicantId": 28720,
+       "preferenceNo": 21
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Asif Hassan S/O Talib Hussain",
        "marksTotal": 61.291634,
        "pmdcNo": "109193-P",
        "applicantId": 16332,
        "preferenceNo": 11
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Sna Ul Hassan S/O khizar hayat",
-       "marksTotal": 61.535227,
-       "pmdcNo": "110981-p ",
-       "applicantId": 19032,
-       "preferenceNo": 3
-      }
      ]
     },
     "Govt.Teaching Hospital , Shahdra , Lahore": {
      "selected": [
+      {
+       "nameFull": "Rizwan Rasool S/O Ghulam Rasool",
+       "marksTotal": 60.584178,
+       "pmdcNo": "753649-01-M",
+       "applicantId": 27544,
+       "preferenceNo": 6
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Aftab Ahmad Khan S/O Misar Hayat Khan",
        "marksTotal": 60.783921,
@@ -6717,34 +6865,25 @@
        "applicantId": 28720,
        "preferenceNo": 24
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Saleem S/O Anayat Ullah",
-       "marksTotal": 61.423972,
-       "pmdcNo": "92692-P",
-       "applicantId": 28533,
-       "preferenceNo": 11
-      }
      ]
     },
     "Jinnah Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Muhammad Shafique S/O Muhammad Rafiq",
+       "marksTotal": 64.110833,
+       "pmdcNo": "716926-01-M",
+       "applicantId": 28750,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Muniba Ijaz D/O Ijaz Ahmad",
        "marksTotal": 64.276742,
        "pmdcNo": "715925-01-M",
        "applicantId": 24927,
        "preferenceNo": 8
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Usman S/O Muhammad Malik",
-       "marksTotal": 64.882955,
-       "pmdcNo": "774531-01-M",
-       "applicantId": 28575,
-       "preferenceNo": 7
       }
      ]
     },
@@ -6811,19 +6950,19 @@
     "Services Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Ahmad Farhan S/O Abdul subhan",
-       "marksTotal": 62.400303,
-       "pmdcNo": "757828-01-M",
-       "applicantId": 27498,
-       "preferenceNo": 6
+       "nameFull": "Haseeb Ur Rehman S/O Iftikhar ali",
+       "marksTotal": 61.554124,
+       "pmdcNo": "721318-01-M ",
+       "applicantId": 18443,
+       "preferenceNo": 3
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Mirza Ali Hussnain S/O Muhammad Arshad",
-       "marksTotal": 65.149622,
-       "pmdcNo": "777284-01-M",
-       "applicantId": 26313,
+       "nameFull": "Ahmad Farhan S/O Abdul subhan",
+       "marksTotal": 62.400303,
+       "pmdcNo": "757828-01-M",
+       "applicantId": 27498,
        "preferenceNo": 6
       }
      ]
@@ -6831,27 +6970,27 @@
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "selected": [
       {
-       "nameFull": "Majid Ramzan S/O Muhammad Ramzan",
-       "marksTotal": 61.949924,
-       "pmdcNo": "778590-01",
-       "applicantId": 28082,
-       "preferenceNo": 7
+       "nameFull": "Muhammad Tariq S/O Ghulam Fareed",
+       "marksTotal": 60.923583,
+       "pmdcNo": "781852-01-M",
+       "applicantId": 26331,
+       "preferenceNo": 8
       },
+      {
+       "nameFull": "Asher Azeem S/O Muhammad Ashraf ",
+       "marksTotal": 60.840336,
+       "pmdcNo": "714909-01-M",
+       "applicantId": 25722,
+       "preferenceNo": 10
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Muhammad Ahmad S/O Aftab Ahmad",
        "marksTotal": 61.828409,
        "pmdcNo": "774728-01-M",
        "applicantId": 28491,
        "preferenceNo": 26
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Usama Javed S/O Muhammad Javed Iqbal",
-       "marksTotal": 62.347878,
-       "pmdcNo": "782717-01-M",
-       "applicantId": 28384,
-       "preferenceNo": 2
       }
      ]
     },
@@ -6872,6 +7011,26 @@
        "pmdcNo": "714350-1-M",
        "applicantId": 22920,
        "preferenceNo": 13
+      }
+     ]
+    },
+    "Mayo Hospital, Lahore": {
+     "selected": [
+      {
+       "nameFull": "Ahmad Farhan S/O Abdul subhan",
+       "marksTotal": 62.400303,
+       "pmdcNo": "757828-01-M",
+       "applicantId": 27498,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Muhammad Adnan S/O Muhammad shafi",
+       "marksTotal": 64.104713,
+       "pmdcNo": "754521-01-M",
+       "applicantId": 26729,
+       "preferenceNo": 2
       }
      ]
     }
@@ -7126,20 +7285,20 @@
     "Allied Hospital, Faisalabad": {
      "selected": [
       {
-       "nameFull": "Said Nabi S/O Sher Ahmad",
-       "marksTotal": 55.472379,
-       "pmdcNo": "779996-07-M",
-       "applicantId": 25840,
+       "nameFull": "Rubina Stanikzai D/O mujeeb ur rahman",
+       "marksTotal": 54.482594,
+       "pmdcNo": "000000",
+       "applicantId": 27955,
        "preferenceNo": 1
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Samiullah Zargar S/O Ataullah",
-       "marksTotal": 56.355652,
-       "pmdcNo": "773324-07-M",
-       "applicantId": 25062,
-       "preferenceNo": 3
+       "nameFull": "Said Nabi S/O Sher Ahmad",
+       "marksTotal": 55.472379,
+       "pmdcNo": "779996-07-M",
+       "applicantId": 25840,
+       "preferenceNo": 1
       }
      ]
     }
@@ -7148,20 +7307,20 @@
     "Govt. Teaching Hospital GM Abad, Faisalabad": {
      "selected": [
       {
+       "nameFull": "Aria Sadat W/O Zainullah Niazmad",
+       "marksTotal": 54.213251,
+       "pmdcNo": "AMC-R10924",
+       "applicantId": 27164,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Rubina Stanikzai D/O mujeeb ur rahman",
        "marksTotal": 54.482594,
        "pmdcNo": "000000",
        "applicantId": 27955,
        "preferenceNo": 2
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Aminullah  Betanai S/O Muhammad Sadiq",
-       "marksTotal": 56.785865,
-       "pmdcNo": "781961-07-M",
-       "applicantId": 27647,
-       "preferenceNo": 1
       }
      ]
     }
@@ -7192,20 +7351,20 @@
     "ABS Teaching Hospital, Gujrat": {
      "selected": [
       {
+       "nameFull": "Muhammad Naeem S/O Abdul Salam",
+       "marksTotal": 51.857758,
+       "pmdcNo": "AMC-R13931",
+       "applicantId": 28401,
+       "preferenceNo": 4
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Abdul Baseer Ihsas S/O Muhammad Essa",
        "marksTotal": 51.956364,
        "pmdcNo": "AMC-R10491",
        "applicantId": 27177,
        "preferenceNo": 5
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Noor Ahmad Omerkhil S/O Gul Ahmad",
-       "marksTotal": 52.967952,
-       "pmdcNo": "AMC-R14953",
-       "applicantId": 28911,
-       "preferenceNo": 3
       }
      ]
     }
@@ -7324,46 +7483,46 @@
     "Faisalabad Institute of Cardiology, Faisalabad": {
      "selected": [
       {
+       "nameFull": "Hafiz Muhammad Ahmad S/O MUHAMMAD ILYAS",
+       "marksTotal": 62.03052,
+       "pmdcNo": "111530-P",
+       "applicantId": 17202,
+       "preferenceNo": 4
+      },
+      {
+       "nameFull": "Afreen Shaukat D/O Shaukat Ali",
+       "marksTotal": 61.896969,
+       "pmdcNo": "754962-01-M",
+       "applicantId": 27935,
+       "preferenceNo": 9
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Muhammad Faizan S/O Zahoor Ahmad",
        "marksTotal": 62.399037,
        "pmdcNo": "720358-01-M",
        "applicantId": 28167,
        "preferenceNo": 1
-      },
-      {
-       "nameFull": "Tahir Nawaz S/O Muhammad Nawaz",
-       "marksTotal": 62.296667,
-       "pmdcNo": "759788-01-M",
-       "applicantId": 28549,
-       "preferenceNo": 2
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Ahsan Raza Khan S/O Muhammad Irshad Khan",
-       "marksTotal": 64.195616,
-       "pmdcNo": "94876-p",
-       "applicantId": 17950,
-       "preferenceNo": 3
       }
      ]
     },
     "Jinnah Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Iqra Ghaffar Khan D/O Abdul Ghaffar Kha",
-       "marksTotal": 65.925772,
-       "pmdcNo": "84946-P",
-       "applicantId": 22804,
-       "preferenceNo": 5
+       "nameFull": "Abdullah Shehryar S/O Zulfqar Waseem",
+       "marksTotal": 65.178864,
+       "pmdcNo": "759874-01-M",
+       "applicantId": 28281,
+       "preferenceNo": 76
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Tahir Nawaz S/O Muhammad Nawaz",
-       "marksTotal": 67.296667,
-       "pmdcNo": "759788-01-M",
-       "applicantId": 28549,
+       "nameFull": "Iqra Ghaffar Khan D/O Abdul Ghaffar Kha",
+       "marksTotal": 65.925772,
+       "pmdcNo": "84946-P",
+       "applicantId": 22804,
        "preferenceNo": 5
       }
      ]
@@ -7411,19 +7570,19 @@
     "Sahiwal Teaching Hospital, Sahiwal": {
      "selected": [
       {
-       "nameFull": "Aisha Ashraf D/O Muhammad Ashraf Tarar",
-       "marksTotal": 64.518766,
-       "pmdcNo": "109415-P",
-       "applicantId": 28469,
-       "preferenceNo": 2
+       "nameFull": "Hafiz Mamoon Aslam S/O MUHAMMAD ASLAM",
+       "marksTotal": 63.513799,
+       "pmdcNo": "107488-p",
+       "applicantId": 16741,
+       "preferenceNo": 10
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Sagheer Anjum S/O Ghulam kibrya",
-       "marksTotal": 64.951732,
-       "pmdcNo": "756018-01-M",
-       "applicantId": 27976,
+       "nameFull": "Aisha Ashraf D/O Muhammad Ashraf Tarar",
+       "marksTotal": 64.518766,
+       "pmdcNo": "109415-P",
+       "applicantId": 28469,
        "preferenceNo": 2
       }
      ]
@@ -7431,19 +7590,19 @@
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "selected": [
       {
-       "nameFull": "Hamza Ehsan S/O Ehsan Ullah",
-       "marksTotal": 62.755941,
-       "pmdcNo": "745874-01-M",
-       "applicantId": 27099,
-       "preferenceNo": 5
+       "nameFull": "Mehsem Munir Butt S/O Muhammad Munir Butt",
+       "marksTotal": 62.741298,
+       "pmdcNo": "714995-01-M",
+       "applicantId": 28301,
+       "preferenceNo": 50
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Muhammad Faheem Ullah S/O Muhammad Nasr Ullah",
-       "marksTotal": 64.505942,
-       "pmdcNo": "761462-01-M",
-       "applicantId": 26677,
+       "nameFull": "Hamza Ehsan S/O Ehsan Ullah",
+       "marksTotal": 62.755941,
+       "pmdcNo": "745874-01-M",
+       "applicantId": 27099,
        "preferenceNo": 5
       }
      ]
@@ -7451,20 +7610,20 @@
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Aysha Ghafoor D/O Abdul Ghafoor",
-       "marksTotal": 62.810719,
-       "pmdcNo": "112561-P",
-       "applicantId": 23323,
+       "nameFull": "Muhammad Umair S/O Muhammad Majeed Sarwar",
+       "marksTotal": 62.728203,
+       "pmdcNo": "758129-01-M",
+       "applicantId": 27865,
        "preferenceNo": 8
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Abeera Rafique D/O Muhammad Rafique",
-       "marksTotal": 63.569512,
-       "pmdcNo": "96768-P",
-       "applicantId": 21715,
-       "preferenceNo": 7
+       "nameFull": "Aysha Ghafoor D/O Abdul Ghafoor",
+       "marksTotal": 62.810719,
+       "pmdcNo": "112561-P",
+       "applicantId": 23323,
+       "preferenceNo": 8
       }
      ]
     }
@@ -7635,20 +7794,20 @@
     "Choudhary Prevez Ilahi Institute of Cardiology , Multan": {
      "selected": [
       {
+       "nameFull": "Maria Razzaq D/O Muhammad Ahsan Amin",
+       "marksTotal": 63.82487,
+       "pmdcNo": "94616-P ",
+       "applicantId": 23182,
+       "preferenceNo": 9
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Muhammad Mohsin Jamil S/O Muhammad Jamil Ahmad",
        "marksTotal": 64.208171,
        "pmdcNo": "744305-01-M",
        "applicantId": 28612,
        "preferenceNo": 2
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Zunaira Rasheed D/O Abdul Rasheed Dogar",
-       "marksTotal": 65.407802,
-       "pmdcNo": "714852-01-M",
-       "applicantId": 24556,
-       "preferenceNo": 3
       }
      ]
     },
@@ -7675,20 +7834,20 @@
     "DHQ Hospital, Gujranwala": {
      "selected": [
       {
+       "nameFull": "Zahid Raheem Shah S/O Abdul Raheem Shah",
+       "marksTotal": 65.630346,
+       "pmdcNo": "762701-01-M",
+       "applicantId": 29388,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Sara Fatima D/O Muhammad Rashid",
        "marksTotal": 67.02408,
        "pmdcNo": "103750-p",
        "applicantId": 24878,
        "preferenceNo": 9
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Hafsa Boota W/O Hafeez Ur Rehman",
-       "marksTotal": 67.334817,
-       "pmdcNo": "720033-01-M",
-       "applicantId": 22407,
-       "preferenceNo": 12
       }
      ]
     },
@@ -7735,20 +7894,20 @@
     "Jinnah Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Maryam Siddiqa D/O KHALID MOHIYUD DIN",
+       "marksTotal": 67.121655,
+       "pmdcNo": "113035-P",
+       "applicantId": 18058,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Samar Fatima D/O Bashir Ahmad",
        "marksTotal": 68.411109,
        "pmdcNo": "83834-P",
        "applicantId": 28400,
        "preferenceNo": 1
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Sania Javed D/O Javed iqbal",
-       "marksTotal": 69.625985,
-       "pmdcNo": "111115-P",
-       "applicantId": 21419,
-       "preferenceNo": 2
       }
      ]
     },
@@ -7815,19 +7974,19 @@
     "Sahiwal Teaching Hospital, Sahiwal": {
      "selected": [
       {
-       "nameFull": "Aqsa Anwar D/O Muhammad Anwar",
-       "marksTotal": 68.585357,
-       "pmdcNo": "757452-01-M",
-       "applicantId": 26710,
+       "nameFull": "Saddaf Akbar D/O Akbar Ali",
+       "marksTotal": 64.170433,
+       "pmdcNo": "113454-P",
+       "applicantId": 28380,
        "preferenceNo": 2
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Ali Abbas S/O Liaqat Ali",
-       "marksTotal": 69.919588,
-       "pmdcNo": "117765-P",
-       "applicantId": 28376,
+       "nameFull": "Aqsa Anwar D/O Muhammad Anwar",
+       "marksTotal": 68.585357,
+       "pmdcNo": "757452-01-M",
+       "applicantId": 26710,
        "preferenceNo": 2
       }
      ]
@@ -7835,20 +7994,20 @@
     "Services Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Rameesha Imran D/O Muhammad Imran",
+       "marksTotal": 65.856894,
+       "pmdcNo": "781861-01-M",
+       "applicantId": 28644,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Maryam Siddiqa D/O KHALID MOHIYUD DIN",
        "marksTotal": 67.121655,
        "pmdcNo": "113035-P",
        "applicantId": 18058,
        "preferenceNo": 3
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Qurat Ul Ain D/O Nazir Ahmad",
-       "marksTotal": 69.691255,
-       "pmdcNo": "107067-P",
-       "applicantId": 15390,
-       "preferenceNo": 1
       }
      ]
     },
@@ -7877,12 +8036,21 @@
     "Holy Family Hospital, Rawalpindi": {
      "selected": [
       {
-       "nameFull": "Ayesha Batool D/O AMJAD SALAM FAROOQI",
-       "marksTotal": 62.185021,
-       "pmdcNo": "774144-01-M",
-       "applicantId": 28270,
-       "preferenceNo": 10
+       "nameFull": "Umara Nasim D/O Ghulam Muhammad Dhillon",
+       "marksTotal": 62.113171,
+       "pmdcNo": "718078-01-M",
+       "applicantId": 20836,
+       "preferenceNo": 1
       },
+      {
+       "nameFull": "Areej Mukhsneen D/O Mukhsneen Iqbal",
+       "marksTotal": 61.942167,
+       "pmdcNo": "759009-01-M",
+       "applicantId": 27946,
+       "preferenceNo": 11
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Beena Abid D/O ABID ALI",
        "marksTotal": 62.116087,
@@ -7890,41 +8058,25 @@
        "applicantId": 28395,
        "preferenceNo": 11
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Faizan S/O Zahoor Ahmad",
-       "marksTotal": 62.399037,
-       "pmdcNo": "720358-01-M",
-       "applicantId": 28167,
-       "preferenceNo": 12
-      }
      ]
     },
     "Mayo Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Hafiz Muhammad Ahsan Ilyas S/O Muhammad Ilyas",
-       "marksTotal": 62.338171,
-       "pmdcNo": "745324-01-M",
-       "applicantId": 21512,
-       "preferenceNo": 8
-      },
-      {
-       "nameFull": "Maheen Fatima D/O Ghulam Yasin Khan",
-       "marksTotal": 62.147161,
-       "pmdcNo": "757172-01-M",
-       "applicantId": 28906,
-       "preferenceNo": 3
+       "nameFull": "Sajid Hussain S/O ASHIQ HUSSAIN",
+       "marksTotal": 62.017292,
+       "pmdcNo": "755018-01-M",
+       "applicantId": 27912,
+       "preferenceNo": 5
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Muhammad Nouman Jamshaid S/O Muhammad Jamshaid",
-       "marksTotal": 62.65243,
-       "pmdcNo": "756363-01-M",
-       "applicantId": 28053,
-       "preferenceNo": 10
+       "nameFull": "Muneeb Shahid S/O Shahid Kareem",
+       "marksTotal": 64.371742,
+       "pmdcNo": "780151-01-M",
+       "applicantId": 29430,
+       "preferenceNo": 4
       }
      ]
     }
@@ -7933,12 +8085,21 @@
     "Allied Hospital, Faisalabad": {
      "selected": [
       {
-       "nameFull": "Muhammad Zaeem Naeem S/O Muhammad Ashraf",
-       "marksTotal": 64.517223,
-       "pmdcNo": "100301-P",
-       "applicantId": 6686,
-       "preferenceNo": 1
+       "nameFull": "Hira Shabbir D/O Shabbir Hussain",
+       "marksTotal": 63.235866,
+       "pmdcNo": "720787-01-M",
+       "applicantId": 22273,
+       "preferenceNo": 7
       },
+      {
+       "nameFull": "Muhammad Usman S/O Muhammad Hanif",
+       "marksTotal": 63.161894,
+       "pmdcNo": "745494-01-M",
+       "applicantId": 28543,
+       "preferenceNo": 13
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Abdur Rehman S/O Shabbir Ahmad",
        "marksTotal": 63.748388,
@@ -7946,19 +8107,19 @@
        "applicantId": 26668,
        "preferenceNo": 6
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Nouman Iqbal S/O Muhammad Iqbal",
-       "marksTotal": 64.56356,
-       "pmdcNo": "774098-01-M",
-       "applicantId": 27491,
-       "preferenceNo": 10
-      }
      ]
     },
     "Jinnah Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Zunaira Saleem D/O Rana Muhammad Saleem",
+       "marksTotal": 65.270519,
+       "pmdcNo": "720348-01-M",
+       "applicantId": 22645,
+       "preferenceNo": 7
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Muhammad Aaftab Khalid S/O Abdul Jabbar Bhatti",
        "marksTotal": 65.803453,
@@ -7966,48 +8127,32 @@
        "applicantId": 20405,
        "preferenceNo": 5
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Shoaib S/O Inayat Ali",
-       "marksTotal": 65.961136,
-       "pmdcNo": "717977-01-M",
-       "applicantId": 23240,
-       "preferenceNo": 2
-      }
      ]
     },
     "Mayo Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Aleeha Batool D/O Muhammad Mumtaz",
-       "marksTotal": 62.640421,
-       "pmdcNo": "755454-01-M",
-       "applicantId": 27000,
-       "preferenceNo": 33
+       "nameFull": "Muhammad Abu Bakar Saddique S/O QAZI MUHAMMAD SADDIQUE",
+       "marksTotal": 61.619253,
+       "pmdcNo": "719452-01-M",
+       "applicantId": 28208,
+       "preferenceNo": 50
       },
+      {
+       "nameFull": "Qais Ul Malook S/O Malik Muhammad Shafi",
+       "marksTotal": 61.618886,
+       "pmdcNo": "715118-01-M",
+       "applicantId": 28286,
+       "preferenceNo": 15
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Hira Asghar D/O Muhammad Asghar",
        "marksTotal": 62.46979,
        "pmdcNo": "112009-P",
        "applicantId": 28342,
        "preferenceNo": 23
-      },
-      {
-       "nameFull": "Shajia Khan D/O Muhammad Yousaf",
-       "marksTotal": 62.102474,
-       "pmdcNo": "113857-P",
-       "applicantId": 29361,
-       "preferenceNo": 7
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Ahmad Bin Abdul Qayyum Satti S/O Abdul Qayyum Satti",
-       "marksTotal": 63.144101,
-       "pmdcNo": "715096-01-M",
-       "applicantId": 29146,
-       "preferenceNo": 17
       }
      ]
     }
@@ -8016,20 +8161,20 @@
     "ABS Teaching Hospital, Gujrat": {
      "selected": [
       {
+       "nameFull": "Zunaira Atta D/O Atta Ullah Mohsin",
+       "marksTotal": 61.949795,
+       "pmdcNo": "755566-01-M",
+       "applicantId": 28893,
+       "preferenceNo": 15
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Aqsa Nazar D/O Nazar Muhammad",
        "marksTotal": 62.104957,
        "pmdcNo": "762892-01-M",
        "applicantId": 28266,
        "preferenceNo": 47
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Umair S/O Muhammad Majeed Sarwar",
-       "marksTotal": 67.728203,
-       "pmdcNo": "758129-01-M",
-       "applicantId": 27865,
-       "preferenceNo": 30
       }
      ]
     },
@@ -8056,27 +8201,20 @@
     "Allied Hospital, Faisalabad": {
      "selected": [
       {
-       "nameFull": "Shanzay Riaz D/O Riaz ul Haq",
-       "marksTotal": 65.166819,
-       "pmdcNo": "774001-01-M",
-       "applicantId": 27807,
-       "preferenceNo": 5
-      },
+       "nameFull": "Muhammad Yahya Anwaar S/O Irfan Ahmad",
+       "marksTotal": 64.032392,
+       "pmdcNo": "774004-01-M",
+       "applicantId": 26063,
+       "preferenceNo": 48
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Iqra D/O Tariq Mehmood",
        "marksTotal": 65.072272,
        "pmdcNo": "761896-01-M",
        "applicantId": 28897,
        "preferenceNo": 2
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Sara Mahmood D/O Khalid Mahmood",
-       "marksTotal": 65.203864,
-       "pmdcNo": "762405-01-M",
-       "applicantId": 26134,
-       "preferenceNo": 4
       }
      ]
     },
@@ -8123,40 +8261,40 @@
     "DHQ Hospital, Faisalabad": {
      "selected": [
       {
+       "nameFull": "Hamza Shaukat S/O Shaukat Ali",
+       "marksTotal": 64.536342,
+       "pmdcNo": "743215-01-M ",
+       "applicantId": 26968,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Naeem Nazir S/O Nazir Ahmad",
        "marksTotal": 64.833007,
        "pmdcNo": "56771-P ",
        "applicantId": 26605,
        "preferenceNo": 2
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Shanzay Riaz D/O Riaz ul Haq",
-       "marksTotal": 65.166819,
-       "pmdcNo": "774001-01-M",
-       "applicantId": 27807,
-       "preferenceNo": 6
-      }
      ]
     },
     "DHQ Hospital, Gujranwala": {
      "selected": [
+      {
+       "nameFull": "Noor Ul Husnain S/O Mehmood Hussain",
+       "marksTotal": 62.952002,
+       "pmdcNo": "720136-01-M",
+       "applicantId": 29078,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Ayesha Ali D/O Muhammad Asad Imtiaz",
        "marksTotal": 62.997976,
        "pmdcNo": "720027-01-M",
        "applicantId": 22502,
        "preferenceNo": 14
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Ammara Arshad D/O Rana Muhammad Arshad",
-       "marksTotal": 64.955822,
-       "pmdcNo": "754536-01-M",
-       "applicantId": 27043,
-       "preferenceNo": 28
       }
      ]
     },
@@ -8203,19 +8341,19 @@
     "Govt. Teaching Hospital GM Abad, Faisalabad": {
      "selected": [
       {
-       "nameFull": "Hafiz Muhammad Faizan Javed S/O Muhammad Akram Javed",
-       "marksTotal": 63.833484,
-       "pmdcNo": "716881-01-M",
-       "applicantId": 27618,
-       "preferenceNo": 4
+       "nameFull": "Fiza Jabeen D/O Muhammad Khaliq",
+       "marksTotal": 63.466591,
+       "pmdcNo": "760850-01-M",
+       "applicantId": 27123,
+       "preferenceNo": 7
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Talha Asif S/O Asif Rashid",
-       "marksTotal": 64.05014,
-       "pmdcNo": "716859-01-M",
-       "applicantId": 25356,
+       "nameFull": "Hafiz Muhammad Faizan Javed S/O Muhammad Akram Javed",
+       "marksTotal": 63.833484,
+       "pmdcNo": "716881-01-M",
+       "applicantId": 27618,
        "preferenceNo": 4
       }
      ]
@@ -8223,20 +8361,20 @@
     "Govt.Teaching Hospital , Shahdra , Lahore": {
      "selected": [
       {
+       "nameFull": "Farwa Mukhtar D/O Mukhtar Ahmad",
+       "marksTotal": 61.405667,
+       "pmdcNo": "116590-P",
+       "applicantId": 28084,
+       "preferenceNo": 8
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Arooj Fatima D/O Zohaib Shahbaz ",
        "marksTotal": 62.965893,
        "pmdcNo": "116674-P",
        "applicantId": 18279,
        "preferenceNo": 38
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Aroba Anum D/O FATEH UD DIN SHAD",
-       "marksTotal": 63.834752,
-       "pmdcNo": "757065-01-M",
-       "applicantId": 29094,
-       "preferenceNo": 4
       }
      ]
     },
@@ -8283,12 +8421,14 @@
     "Lahore General Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Zobia Shafi D/O Muhammad shafi",
-       "marksTotal": 63.836646,
-       "pmdcNo": "840827-01-M",
-       "applicantId": 27809,
+       "nameFull": "Muhammad Haseeb S/O Muhammad munir",
+       "marksTotal": 63.036451,
+       "pmdcNo": "86252-P",
+       "applicantId": 28012,
        "preferenceNo": 4
-      },
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Iram Akbar Khan D/O Muhammad Akbar Khan",
        "marksTotal": 63.697132,
@@ -8296,19 +8436,19 @@
        "applicantId": 18832,
        "preferenceNo": 7
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Sidra Amir D/O Amir hussain",
-       "marksTotal": 64.552997,
-       "pmdcNo": "719935-01-M",
-       "applicantId": 28435,
-       "preferenceNo": 23
-      }
      ]
     },
     "Nishtar Hospital, Multan": {
      "selected": [
+      {
+       "nameFull": "Amara Tariq D/O M.Tariq Bhatti",
+       "marksTotal": 65.19052,
+       "pmdcNo": "763032-01-M",
+       "applicantId": 28037,
+       "preferenceNo": 51
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Numra Aamir D/O muhammad aamir",
        "marksTotal": 65.486895,
@@ -8316,41 +8456,32 @@
        "applicantId": 27284,
        "preferenceNo": 6
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Hasnain S/O Muhammad Saleem",
-       "marksTotal": 66.164826,
-       "pmdcNo": "718779-01-M",
-       "applicantId": 23417,
-       "preferenceNo": 102
-      }
      ]
     },
     "Sahiwal Teaching Hospital, Sahiwal": {
      "selected": [
       {
-       "nameFull": "Huma Mushtaq D/O M.Mushtaq",
-       "marksTotal": 65.019318,
-       "pmdcNo": "757305-01-M",
-       "applicantId": 28215,
-       "preferenceNo": 8
+       "nameFull": "Mudassar Shehzad Akram S/O Muhammad Akram",
+       "marksTotal": 63.384772,
+       "pmdcNo": "782199-01-M",
+       "applicantId": 28257,
+       "preferenceNo": 49
       },
+      {
+       "nameFull": "Sundas Javed D/O JAVED AKHTAR",
+       "marksTotal": 63.335726,
+       "pmdcNo": "743727-01-M",
+       "applicantId": 28193,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Nida Zulfiqar W/O Badar Munir",
        "marksTotal": 64.292576,
        "pmdcNo": "97061-P",
        "applicantId": 18708,
        "preferenceNo": 5
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Mamona Ashraf D/O Muhammad Ashraf",
-       "marksTotal": 66.778012,
-       "pmdcNo": "744941-01-M",
-       "applicantId": 28276,
-       "preferenceNo": 36
       }
      ]
     },
@@ -8384,19 +8515,19 @@
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "selected": [
       {
-       "nameFull": "Aatika Zahid D/O Zahid mehmood",
-       "marksTotal": 62.322608,
-       "pmdcNo": "759599-01-M",
-       "applicantId": 27802,
-       "preferenceNo": 5
+       "nameFull": "Majid Ramzan S/O Muhammad Ramzan",
+       "marksTotal": 61.949924,
+       "pmdcNo": "778590-01",
+       "applicantId": 28082,
+       "preferenceNo": 23
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Usama Javed S/O Muhammad Javed Iqbal",
-       "marksTotal": 62.347878,
-       "pmdcNo": "782717-01-M",
-       "applicantId": 28384,
+       "nameFull": "Aatika Zahid D/O Zahid mehmood",
+       "marksTotal": 62.322608,
+       "pmdcNo": "759599-01-M",
+       "applicantId": 27802,
        "preferenceNo": 5
       }
      ]
@@ -8426,12 +8557,14 @@
     "AIMH, Sialkot": {
      "selected": [
       {
-       "nameFull": "Yusra Nawaz D/O Muhammad nawaz",
-       "marksTotal": 61.097046,
-       "pmdcNo": "756093-01-M",
-       "applicantId": 28369,
-       "preferenceNo": 3
-      },
+       "nameFull": "Muhammad Yasin S/O MuhamadAbdullah",
+       "marksTotal": 60.842717,
+       "pmdcNo": "759830-01-M",
+       "applicantId": 28151,
+       "preferenceNo": 41
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Mubashir Hussain S/O Ghulam Yaseen",
        "marksTotal": 61.04894,
@@ -8439,34 +8572,25 @@
        "applicantId": 28003,
        "preferenceNo": 101
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Aadil Mustafa S/O AMJAD HUSSAIN",
-       "marksTotal": 61.299805,
-       "pmdcNo": "718291-01-M",
-       "applicantId": 28765,
-       "preferenceNo": 56
-      }
      ]
     },
     "Allied Hospital, Faisalabad": {
      "selected": [
+      {
+       "nameFull": "Ali Sarmad S/O Syed Imtiaz Hussain",
+       "marksTotal": 64.174849,
+       "pmdcNo": "760663-01-M",
+       "applicantId": 27269,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Muhammad Ahsan Intisar S/O MUHAMMAD INTISAR ALI",
        "marksTotal": 64.827198,
        "pmdcNo": "111499-P",
        "applicantId": 28678,
        "preferenceNo": 2
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Imran S/O Allah Ditta",
-       "marksTotal": 67.875098,
-       "pmdcNo": "114615-P",
-       "applicantId": 28706,
-       "preferenceNo": 31
       }
      ]
     },
@@ -8493,20 +8617,20 @@
     "Govt.Teaching Hospital , Shahdra , Lahore": {
      "selected": [
       {
+       "nameFull": "Muhammad Usman S/O Mushtaq Ahmed",
+       "marksTotal": 61.926559,
+       "pmdcNo": "99952-P",
+       "applicantId": 28568,
+       "preferenceNo": 11
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Humaira Shaheen D/O Nazir Ahmad Khan",
        "marksTotal": 62.440104,
        "pmdcNo": "779839-01-M ",
        "applicantId": 27159,
        "preferenceNo": 32
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Lina Iqbal D/O Muhammad Iqbal",
-       "marksTotal": 63.110294,
-       "pmdcNo": "113998-P",
-       "applicantId": 27987,
-       "preferenceNo": 19
       }
      ]
     },
@@ -8553,20 +8677,20 @@
     "Lahore General Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Ahmad Sadiq S/O Sadiq Pervaiz",
+       "marksTotal": 62.703636,
+       "pmdcNo": "756947-01-M",
+       "applicantId": 27931,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Adnan Gulzar S/O Muhammad Gulzar",
        "marksTotal": 62.985,
        "pmdcNo": "756857-01-M",
        "applicantId": 28023,
        "preferenceNo": 10
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Hammad Arif S/O Muhammad Arif Zafar",
-       "marksTotal": 63.170022,
-       "pmdcNo": "720887-01-M",
-       "applicantId": 28192,
-       "preferenceNo": 16
       }
      ]
     },
@@ -8600,20 +8724,20 @@
     "Services Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Saood Ul Hassan S/O Ghulam Murtaza Chattha",
-       "marksTotal": 64.662207,
-       "pmdcNo": "775430-01-M",
-       "applicantId": 27974,
-       "preferenceNo": 1
+       "nameFull": "Muneeb Shahid S/O Shahid Kareem",
+       "marksTotal": 64.371742,
+       "pmdcNo": "780151-01-M",
+       "applicantId": 29430,
+       "preferenceNo": 3
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Muhammad Shahid Ehsan Khan S/O Ehsan Ahmad Khan",
-       "marksTotal": 65.186071,
-       "pmdcNo": "775424-01-M",
-       "applicantId": 27778,
-       "preferenceNo": 12
+       "nameFull": "Rameesha Imran D/O Muhammad Imran",
+       "marksTotal": 65.856894,
+       "pmdcNo": "781861-01-M",
+       "applicantId": 28644,
+       "preferenceNo": 2
       }
      ]
     },
@@ -8656,26 +8780,46 @@
        "preferenceNo": 20
       }
      ]
+    },
+    "Sahiwal Teaching Hospital, Sahiwal": {
+     "selected": [
+      {
+       "nameFull": "Nida Zulfiqar W/O Badar Munir",
+       "marksTotal": 64.292576,
+       "pmdcNo": "97061-P",
+       "applicantId": 18708,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
+       "nameFull": "Hafiz Muhammad Ahmad S/O MUHAMMAD ILYAS",
+       "marksTotal": 67.03052,
+       "pmdcNo": "111530-P",
+       "applicantId": 17202,
+       "preferenceNo": 14
+      }
+     ]
     }
    },
    "Neurology": {
     "AIMH, Sialkot": {
      "selected": [
       {
+       "nameFull": "Muhammad Waseem Akram S/O MUHAMMAD AKRAM",
+       "marksTotal": 60.972889,
+       "pmdcNo": "722146-01-M",
+       "applicantId": 28479,
+       "preferenceNo": 12
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Hafiza Reja Roman D/O Muhammad Anwar",
        "marksTotal": 61.027954,
        "pmdcNo": "753697-01-M",
        "applicantId": 28718,
        "preferenceNo": 96
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Ishrat Sabir D/O Sabir Ali Mughal",
-       "marksTotal": 62.913409,
-       "pmdcNo": "756118-01-M",
-       "applicantId": 27070,
-       "preferenceNo": 3
       }
      ]
     },
@@ -8722,40 +8866,40 @@
     "Nishtar Hospital, Multan": {
      "selected": [
       {
+       "nameFull": "Niaz Ahmad S/O Zafar Ali",
+       "marksTotal": 65.449492,
+       "pmdcNo": "107447-p",
+       "applicantId": 24462,
+       "preferenceNo": 7
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Sobia Mughal D/O KHUSHI MUHAMMAD",
        "marksTotal": 66.393431,
        "pmdcNo": "112231-P",
        "applicantId": 28657,
        "preferenceNo": 6
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Mubeen Tariq S/O Tariq Mehmood",
-       "marksTotal": 66.494285,
-       "pmdcNo": "721707-01-M",
-       "applicantId": 27775,
-       "preferenceNo": 1
-      }
      ]
     },
     "Punjab Institute of Neurosciences, Lahore": {
      "selected": [
+      {
+       "nameFull": "Lina Iqbal D/O Muhammad Iqbal",
+       "marksTotal": 63.110294,
+       "pmdcNo": "113998-P",
+       "applicantId": 27987,
+       "preferenceNo": 8
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Muzamil Khurshid D/O Khurshid Ahmad",
        "marksTotal": 63.17606,
        "pmdcNo": "757120-01-M",
        "applicantId": 28083,
        "preferenceNo": 7
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Humza Tariq S/O Tariq Ali",
-       "marksTotal": 63.549319,
-       "pmdcNo": "756950-01-M",
-       "applicantId": 28636,
-       "preferenceNo": 9
       }
      ]
     },
@@ -8802,20 +8946,20 @@
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Aysha Ghafoor D/O Abdul Ghafoor",
+       "marksTotal": 62.810719,
+       "pmdcNo": "112561-P",
+       "applicantId": 23323,
+       "preferenceNo": 4
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Lina Iqbal D/O Muhammad Iqbal",
        "marksTotal": 63.110294,
        "pmdcNo": "113998-P",
        "applicantId": 27987,
        "preferenceNo": 10
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Talha Tanveer S/O Tanveer Hussain",
-       "marksTotal": 63.246136,
-       "pmdcNo": "113873-P",
-       "applicantId": 29138,
-       "preferenceNo": 13
       }
      ]
     }
@@ -8884,26 +9028,19 @@
     "Bahawal Victoria Hospital, Bahawalpur": {
      "selected": [
       {
-       "nameFull": "Sana Riaz D/O Riaz Ahmad",
-       "marksTotal": 63.889805,
-       "pmdcNo": "715799-01-M",
-       "applicantId": 28298,
+       "nameFull": "Jannat Zakir D/O ZAKIR HUSSAIN",
+       "marksTotal": 63.156959,
+       "pmdcNo": "758337-01-M",
+       "applicantId": 29062,
        "preferenceNo": 1
-      },
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Areej Sajid D/O Sajid Hussain",
        "marksTotal": 63.728684,
        "pmdcNo": "757539-01-M",
        "applicantId": 26750,
-       "preferenceNo": 4
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Ramsha Nawaz D/O Rab Nawaz",
-       "marksTotal": 65.545509,
-       "pmdcNo": "109038-P",
-       "applicantId": 17366,
        "preferenceNo": 4
       }
      ]
@@ -8931,73 +9068,75 @@
     "Children Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Fehmeeda Irfan D/O Muhammad Irfan Ullah",
-       "marksTotal": 61.676147,
-       "pmdcNo": "716547-01-M",
-       "applicantId": 28181,
-       "preferenceNo": 3
+       "nameFull": "Tayyaba Jabbar D/O Abdul Jabbar",
+       "marksTotal": 61.549394,
+       "pmdcNo": "743657-01-M",
+       "applicantId": 28394,
+       "preferenceNo": 6
       },
+      {
+       "nameFull": "Mareehah Mahmood D/O Mahmood Ahmad",
+       "marksTotal": 61.456818,
+       "pmdcNo": "759575-01-M",
+       "applicantId": 28144,
+       "preferenceNo": 1
+      },
+      {
+       "nameFull": "Laraib Khalil W/O Ihtisham Suhail",
+       "marksTotal": 61.312132,
+       "pmdcNo": "721115-01-M",
+       "applicantId": 27876,
+       "preferenceNo": 5
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Aysha Amir D/O Muhammad Amir Khan",
        "marksTotal": 61.643592,
        "pmdcNo": "716563-01-M",
        "applicantId": 22656,
        "preferenceNo": 12
-      },
-      {
-       "nameFull": "Noor Ul Quzha D/O Afzal Mahmood",
-       "marksTotal": 61.608636,
-       "pmdcNo": "785577-01-M",
-       "applicantId": 27339,
-       "preferenceNo": 14
-      },
-      {
-       "nameFull": "Rooma Khalid D/O Khalid mehmood",
-       "marksTotal": 61.562836,
-       "pmdcNo": "718621-01-M",
-       "applicantId": 29287,
-       "preferenceNo": 3
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Farhan Ahmed S/O MUHAMMAD TAQI",
-       "marksTotal": 61.713059,
-       "pmdcNo": "100894-P",
-       "applicantId": 7325,
-       "preferenceNo": 79
       }
      ]
     },
     "Children Hospital, Multan": {
      "selected": [
       {
-       "nameFull": "Muhammad Asghar S/O Ghulam Habib",
-       "marksTotal": 61.539191,
-       "pmdcNo": "758965-01-M",
-       "applicantId": 27899,
-       "preferenceNo": 19
+       "nameFull": "Iram Shezadi D/O Gulzar Hussain",
+       "marksTotal": 61.159384,
+       "pmdcNo": "101449-P",
+       "applicantId": 6937,
+       "preferenceNo": 17
       },
       {
-       "nameFull": "Musadiq Husain S/O Mansoor Ahmed",
-       "marksTotal": 61.47488,
-       "pmdcNo": "89875-p",
-       "applicantId": 28399,
+       "nameFull": "Muhammad Numan Ali S/O Abdus Sattar",
+       "marksTotal": 61.124383,
+       "pmdcNo": "714989-01-M",
+       "applicantId": 28769,
        "preferenceNo": 2
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Aruba Khalid W/O Wasim Akhtar",
-       "marksTotal": 61.603155,
-       "pmdcNo": "81869-P",
-       "applicantId": 25179,
-       "preferenceNo": 4
+       "nameFull": "Muhammad Asghar S/O Ghulam Habib",
+       "marksTotal": 61.539191,
+       "pmdcNo": "758965-01-M",
+       "applicantId": 27899,
+       "preferenceNo": 19
       }
      ]
     },
     "Civil Hospital Bahawalpur": {
      "selected": [
+      {
+       "nameFull": "Junaid Iqbal S/O Muhammad Iqbal",
+       "marksTotal": 62.908798,
+       "pmdcNo": "757878-01-M",
+       "applicantId": 28155,
+       "preferenceNo": 40
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Maaz Ahmed S/O Abdul Sattar",
        "marksTotal": 63.246417,
@@ -9005,34 +9144,25 @@
        "applicantId": 26326,
        "preferenceNo": 35
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Arslan Iqbal S/O Iqbal Hussain",
-       "marksTotal": 63.390379,
-       "pmdcNo": "757595-01-M",
-       "applicantId": 27896,
-       "preferenceNo": 4
-      }
      ]
     },
     "DHQ Hospital, Faisalabad": {
      "selected": [
+      {
+       "nameFull": "Ayesha Manzoor D/O Manzoor Hussain Shah",
+       "marksTotal": 63.956591,
+       "pmdcNo": "762042-01-M",
+       "applicantId": 27281,
+       "preferenceNo": 7
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Ali Sarmad S/O Syed Imtiaz Hussain",
        "marksTotal": 64.174849,
        "pmdcNo": "760663-01-M",
        "applicantId": 27269,
        "preferenceNo": 9
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Ayesha Saher Masud Mir D/O Sajawal Javed",
-       "marksTotal": 64.207359,
-       "pmdcNo": "111426-P",
-       "applicantId": 18930,
-       "preferenceNo": 3
       }
      ]
     },
@@ -9106,20 +9236,20 @@
     "Govt. Teaching Hospital GM Abad, Faisalabad": {
      "selected": [
       {
+       "nameFull": "Faiqa Rashid D/O Abdul Rashid",
+       "marksTotal": 63.608182,
+       "pmdcNo": "761796-01-M",
+       "applicantId": 26569,
+       "preferenceNo": 41
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Ayesha Manzoor D/O Manzoor Hussain Shah",
        "marksTotal": 63.956591,
        "pmdcNo": "762042-01-M",
        "applicantId": 27281,
        "preferenceNo": 8
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Yahya Anwaar S/O Irfan Ahmad",
-       "marksTotal": 64.032392,
-       "pmdcNo": "774004-01-M",
-       "applicantId": 26063,
-       "preferenceNo": 56
       }
      ]
     },
@@ -9146,20 +9276,20 @@
     "Jinnah Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Muhammad Aaftab Khalid S/O Abdul Jabbar Bhatti",
+       "marksTotal": 65.803453,
+       "pmdcNo": "716116-01-M ",
+       "applicantId": 20405,
+       "preferenceNo": 4
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Mareehah Mahmood D/O Mahmood Ahmad",
        "marksTotal": 66.456818,
        "pmdcNo": "759575-01-M",
        "applicantId": 28144,
        "preferenceNo": 6
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Awais Abbas S/O Ghulam Abbas",
-       "marksTotal": 67.25158,
-       "pmdcNo": "74101-01-M",
-       "applicantId": 27821,
-       "preferenceNo": 15
       }
      ]
     },
@@ -9186,20 +9316,20 @@
     "Mayo Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Iqra Ghulam D/O Ghulam Muhammad",
+       "marksTotal": 61.738614,
+       "pmdcNo": "742900-01-M",
+       "applicantId": 28323,
+       "preferenceNo": 21
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Nayyab Farhan D/O Farhan Shabbir",
        "marksTotal": 62.611589,
        "pmdcNo": "718812-01-M",
        "applicantId": 22945,
        "preferenceNo": 1
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Awais Munir S/O Muhammad Munir",
-       "marksTotal": 63.316969,
-       "pmdcNo": "92599-P",
-       "applicantId": 27883,
-       "preferenceNo": 5
       }
      ]
     },
@@ -9226,40 +9356,40 @@
     "Sahiwal Teaching Hospital, Sahiwal": {
      "selected": [
       {
+       "nameFull": "Huma Mushtaq D/O M.Mushtaq",
+       "marksTotal": 65.019318,
+       "pmdcNo": "757305-01-M",
+       "applicantId": 28215,
+       "preferenceNo": 2
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Benish Amin D/O Muhammad Amin",
        "marksTotal": 66.324091,
        "pmdcNo": "758759-01-M",
        "applicantId": 26703,
        "preferenceNo": 15
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Iqra Nasir D/O Nasir Ishfaq",
-       "marksTotal": 67.287229,
-       "pmdcNo": "98530-P",
-       "applicantId": 28398,
-       "preferenceNo": 10
-      }
      ]
     },
     "Services Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Fizza Khalid D/O Khalid Mahmood Khalid",
+       "marksTotal": 63.948193,
+       "pmdcNo": "115743-P",
+       "applicantId": 16021,
+       "preferenceNo": 19
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Alaita Fatima Bakhtiari D/O Khurshid Mohsin",
        "marksTotal": 64.628593,
        "pmdcNo": "774394\u00ad-01-\u00adM",
        "applicantId": 27101,
        "preferenceNo": 1
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Raheela Wajid D/O Wajid Ali",
-       "marksTotal": 65.51,
-       "pmdcNo": "777859-01-M",
-       "applicantId": 26591,
-       "preferenceNo": 4
       }
      ]
     },
@@ -9335,32 +9465,34 @@
     "DHQ Hospital, Faisalabad": {
      "selected": [
       {
+       "nameFull": "Kashaf Rashid D/O Rashid Aslam",
+       "marksTotal": 63.718139,
+       "pmdcNo": "761861-01-M",
+       "applicantId": 28482,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Muhammad Yahya Anwaar S/O Irfan Ahmad",
        "marksTotal": 64.032392,
        "pmdcNo": "774004-01-M",
        "applicantId": 26063,
        "preferenceNo": 50
-      },
-      {
-       "nameFull": "Hafiza Momina Baig D/O Muhammad Furqan Adeel",
-       "marksTotal": 63.811959,
-       "pmdcNo": "716863-01-M",
-       "applicantId": 22393,
-       "preferenceNo": 4
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Ali Sarmad S/O Syed Imtiaz Hussain",
-       "marksTotal": 64.174849,
-       "pmdcNo": "760663-01-M",
-       "applicantId": 27269,
-       "preferenceNo": 15
       }
      ]
     },
     "Jinnah Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Muhammad Asad Ayub S/O Muhammad Ayub",
+       "marksTotal": 65.243787,
+       "pmdcNo": "761816-01-M",
+       "applicantId": 25779,
+       "preferenceNo": 4
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Hamza Sarwar S/O Muhammad Sarwar",
        "marksTotal": 65.382045,
@@ -9368,34 +9500,25 @@
        "applicantId": 27999,
        "preferenceNo": 2
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Mubashir Iqbal S/O Muhammad Iqbal",
-       "marksTotal": 65.614091,
-       "pmdcNo": "761664-01-M",
-       "applicantId": 27732,
-       "preferenceNo": 126
-      }
      ]
     },
     "Lahore General Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Raiha Ashraf D/O Muhammad Ashraf Shahid",
+       "marksTotal": 62.467003,
+       "pmdcNo": "757349-01-M",
+       "applicantId": 27765,
+       "preferenceNo": 53
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Shazia Sharif D/O MUHAMMAD SHARIF",
        "marksTotal": 62.744849,
        "pmdcNo": "757383-01-M",
        "applicantId": 28239,
        "preferenceNo": 7
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Dr Sana Mukhtiar D/O MUKHTIAR AHMAD",
-       "marksTotal": 63.042164,
-       "pmdcNo": "105067-p",
-       "applicantId": 28421,
-       "preferenceNo": 10
       }
      ]
     },
@@ -9442,32 +9565,34 @@
     "Punjab Institute of Mental Health, Lahore": {
      "selected": [
       {
-       "nameFull": "Fiza Waseem D/O Waseem Talib",
-       "marksTotal": 61.320865,
-       "pmdcNo": "716822-01-M",
-       "applicantId": 21811,
-       "preferenceNo": 33
-      },
-      {
-       "nameFull": "Zunaira Naz D/O Haji Muhammad Irahim",
-       "marksTotal": 61.283831,
-       "pmdcNo": "95744-P",
-       "applicantId": 28602,
-       "preferenceNo": 20
+       "nameFull": "Aftab Ahmad Khan S/O Misar Hayat Khan",
+       "marksTotal": 60.783921,
+       "pmdcNo": "750561-01-M",
+       "applicantId": 28720,
+       "preferenceNo": 54
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Huda Rauf D/O Shahroz Khan",
-       "marksTotal": 62.960422,
-       "pmdcNo": " 89551-P",
-       "applicantId": 16277,
-       "preferenceNo": 17
+       "nameFull": "Muhammad Abu Bakar Saddique S/O QAZI MUHAMMAD SADDIQUE",
+       "marksTotal": 61.619253,
+       "pmdcNo": "719452-01-M",
+       "applicantId": 28208,
+       "preferenceNo": 53
       }
      ]
     },
     "Sahiwal Teaching Hospital, Sahiwal": {
      "selected": [
+      {
+       "nameFull": "Mohammad Sohaib Dansih S/O Mohammad Ali Tabassum",
+       "marksTotal": 63.006797,
+       "pmdcNo": "782597-01-M",
+       "applicantId": 26150,
+       "preferenceNo": 52
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Sundas Javed D/O JAVED AKHTAR",
        "marksTotal": 63.335726,
@@ -9475,19 +9600,19 @@
        "applicantId": 28193,
        "preferenceNo": 5
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Mavra Zaidi D/O Muhammad Saleem Zaidi",
-       "marksTotal": 63.769914,
-       "pmdcNo": "716079-01-M",
-       "applicantId": 23361,
-       "preferenceNo": 4
-      }
      ]
     },
     "Services Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Muhammad Ahsan Naeem S/O NAEEM AHMAD",
+       "marksTotal": 64.349048,
+       "pmdcNo": "777083-01-M",
+       "applicantId": 27420,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Umar Zohaib S/O Muhammad Azam",
        "marksTotal": 64.547176,
@@ -9495,34 +9620,25 @@
        "applicantId": 27555,
        "preferenceNo": 23
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Amna Ikram W/O Salman Ul Moazzam",
-       "marksTotal": 66.162738,
-       "pmdcNo": "716386-01-M",
-       "applicantId": 25153,
-       "preferenceNo": 9
-      }
      ]
     },
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Husna Rafique D/O MuhammadRafique",
+       "marksTotal": 61.36425,
+       "pmdcNo": "772933-01-M",
+       "applicantId": 27814,
+       "preferenceNo": 14
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Ayesha Noor W/O Bilal Sharif",
        "marksTotal": 61.604036,
        "pmdcNo": "715247-O1-M",
        "applicantId": 22115,
        "preferenceNo": 3
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Maryam Liaqat D/O Liaqat Ali Anjum",
-       "marksTotal": 63.125586,
-       "pmdcNo": "747059-01-M",
-       "applicantId": 23336,
-       "preferenceNo": 12
       }
      ]
     }
@@ -9571,47 +9687,47 @@
     "DHQ Hospital, Faisalabad": {
      "selected": [
       {
+       "nameFull": "Sidra Amir D/O Amir hussain",
+       "marksTotal": 64.552997,
+       "pmdcNo": "719935-01-M",
+       "applicantId": 28435,
+       "preferenceNo": 1
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Haseeb-Ur-Rehman S/O Muhammad Ashfaq",
        "marksTotal": 65.633083,
        "pmdcNo": "745892-01-M",
        "applicantId": 27917,
        "preferenceNo": 7
       }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Imran S/O Allah Ditta",
-       "marksTotal": 67.875098,
-       "pmdcNo": "114615-P",
-       "applicantId": 28706,
-       "preferenceNo": 33
-      }
      ]
     },
     "DHQ Rawalpindi": {
      "selected": [
       {
-       "nameFull": "Sumayyah Maryam D/O Abdus Samee",
-       "marksTotal": 62.193528,
-       "pmdcNo": "758596-01-M",
-       "applicantId": 25760,
-       "preferenceNo": 6
+       "nameFull": "Ali Jawad Ahmad S/O Zafar Abbas",
+       "marksTotal": 61.719622,
+       "pmdcNo": "758637-01-M",
+       "applicantId": 27755,
+       "preferenceNo": 10
       },
+      {
+       "nameFull": "Muhammad Sabir Khan S/O Muhammad Imtiazullah Khan",
+       "marksTotal": 61.467241,
+       "pmdcNo": "773274-01-M",
+       "applicantId": 28217,
+       "preferenceNo": 6
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Mahnoor Fatima D/O Imtiaz Ahmed",
        "marksTotal": 62.041191,
        "pmdcNo": "758544-01-M",
        "applicantId": 28271,
        "preferenceNo": 9
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Wasif Ali S/O MUHAMMAD ASHRAF",
-       "marksTotal": 62.2075,
-       "pmdcNo": "758807-01-M",
-       "applicantId": 27816,
-       "preferenceNo": 13
       }
      ]
     },
@@ -9638,19 +9754,19 @@
     "Lahore General Hospital, Lahore": {
      "selected": [
       {
-       "nameFull": "Muhammad Abdullah Waqar S/O Waqar Saeed",
-       "marksTotal": 63.538182,
-       "pmdcNo": "762938-01-M",
-       "applicantId": 28249,
-       "preferenceNo": 7
+       "nameFull": "Shazia Sharif D/O MUHAMMAD SHARIF",
+       "marksTotal": 62.744849,
+       "pmdcNo": "757383-01-M",
+       "applicantId": 28239,
+       "preferenceNo": 5
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Maha D/O Nadeem Ahmad Ghaznavi",
-       "marksTotal": 63.82355,
-       "pmdcNo": "95234-P",
-       "applicantId": 3085,
+       "nameFull": "Muhammad Abdullah Waqar S/O Waqar Saeed",
+       "marksTotal": 63.538182,
+       "pmdcNo": "762938-01-M",
+       "applicantId": 28249,
        "preferenceNo": 7
       }
      ]
@@ -9658,20 +9774,20 @@
     "Mayo Hospital, Lahore": {
      "selected": [
       {
+       "nameFull": "Muhammad Abdullah Waqar S/O Waqar Saeed",
+       "marksTotal": 63.538182,
+       "pmdcNo": "762938-01-M",
+       "applicantId": 28249,
+       "preferenceNo": 3
+      }
+     ],
+     "not_selected": [
+      {
        "nameFull": "Muhammad Shaarif Kaleem S/O Muhammad Musa Kaleem",
        "marksTotal": 64.194871,
        "pmdcNo": "110302-P",
        "applicantId": 21407,
        "preferenceNo": 2
-      }
-     ],
-     "not_selected": [
-      {
-       "nameFull": "Muhammad Shahrukh Khalil S/O Muhammad khalil ahmad",
-       "marksTotal": 66.802922,
-       "pmdcNo": "108929-P",
-       "applicantId": 28353,
-       "preferenceNo": 6
       }
      ]
     },
@@ -9698,25 +9814,34 @@
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "selected": [
       {
-       "nameFull": "Usama Javed S/O Muhammad Javed Iqbal",
-       "marksTotal": 62.347878,
-       "pmdcNo": "782717-01-M",
-       "applicantId": 28384,
-       "preferenceNo": 1
+       "nameFull": "Maheen Munir D/O Muhammad Munir",
+       "marksTotal": 62.007413,
+       "pmdcNo": "110494-P",
+       "applicantId": 28444,
+       "preferenceNo": 11
       }
      ],
      "not_selected": [
       {
-       "nameFull": "Maryam Murtaza D/O Ghulam Murtaza Anjum",
-       "marksTotal": 62.363615,
-       "pmdcNo": "776385-01-M",
-       "applicantId": 27594,
-       "preferenceNo": 16
+       "nameFull": "Mehsem Munir Butt S/O Muhammad Munir Butt",
+       "marksTotal": 62.741298,
+       "pmdcNo": "714995-01-M",
+       "applicantId": 28301,
+       "preferenceNo": 51
       }
      ]
     },
     "Sir Ganga Ram Hospital, Lahore": {
      "selected": [
+      {
+       "nameFull": "Zainab Sohail D/O Sohail Hameed Khan",
+       "marksTotal": 62.547793,
+       "pmdcNo": "749328-01-M",
+       "applicantId": 22377,
+       "preferenceNo": 10
+      }
+     ],
+     "not_selected": [
       {
        "nameFull": "Muhammad Umair S/O Muhammad Majeed Sarwar",
        "marksTotal": 62.728203,
@@ -9724,14 +9849,25 @@
        "applicantId": 27865,
        "preferenceNo": 14
       }
+     ]
+    },
+    "DHQ Hospital, Gujranwala": {
+     "selected": [
+      {
+       "nameFull": "Sibgha Khan D/O Muhammad Zaheer Ahmed",
+       "marksTotal": 63.109297,
+       "pmdcNo": "754573-01-M",
+       "applicantId": 26620,
+       "preferenceNo": 7
+      }
      ],
      "not_selected": [
       {
-       "nameFull": "Rabia Shahzadi D/O Munawar Hussain",
-       "marksTotal": 63.64029,
-       "pmdcNo": "775105-01-M ",
-       "applicantId": 26701,
-       "preferenceNo": 6
+       "nameFull": "Zahid Raheem Shah S/O Abdul Raheem Shah",
+       "marksTotal": 65.630346,
+       "pmdcNo": "762701-01-M",
+       "applicantId": 29388,
+       "preferenceNo": 3
       }
      ]
     }

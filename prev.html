@@ -22,8 +22,8 @@
   </head>
   <body>
     <div class="navbar notif">
-      This is a Fifth Official Merit List<br>
-      <span class='important'>Click on Check Consent to check Candidate Consent</span><br>
+      Previous Merit lists<br>
+      <span class='important'>If you want to contribute some of the merits lists email them at rekorex358@gmail.com</span><br>
     </div>
     <nav class="navbar">
       <div class="logo-container">
@@ -37,21 +37,24 @@
       
       <div class="filters">
         <select
-        onchange="updateMeritList(event);"
+        onchange="updateMeritData(event);"
         class="filter-item all-merit"
         id="year"
       >
         <option value="" disabled selected>Year</option>
+        <option value="2022" >2022</option>
+        <option value="2023" >2023</option>
+        <option value="2024" >2024</option>
       </select>
       <select
-        onchange="updateMeritList(event);"
+        onchange="updateMeritData(event);"
         class="filter-item all-merit"
         id="month"
       >
         <option value="" disabled selected>Month</option>
       </select>
       <select
-        onchange="updateMeritList(event);"
+        onchange="updateMeritData(event);"
         class="filter-item all-merit"
         id="round"
       >
@@ -150,14 +153,13 @@
                     customize: function (doc) {
                         
                         let table = doc.content[1].table.body;
-                        console.log(table)
                         for (i = 1; i < table.length; i++) // skip table header row (i = 0)
                         {
                           let txt = table[i][6].text.replace('Check Consent', '')
                           table[i][6].text = txt; // couldn't be bothered clearing the Age column sample data above :)
                           
                         }
-                        console.log(doc['header'])
+
                         var cols = [];
                         cols[0] = {text: 'List downloaded', alignment: 'left', margin:[20] };
                         cols[1] = {text: 'from PRP statistics', alignment: 'right', margin:[0,0,20] };
@@ -206,7 +208,7 @@
             merit[cand].specialityName,
             merit[cand].hospitalName,
             merit[cand].marksTotal,
-            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkConsent("+merit[cand].applicantId+")'>Check Consent</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
+            "Pref No."+merit[cand].preferenceNo
           ]);
       }
       jQuery("#statTable").DataTable().draw();
@@ -216,22 +218,12 @@
 
     const filters = document.getElementsByTagName("select");
     for (filter in filters) { 
-      console.log(filters[filter].classList,filters[filter].classList.contains('all-merit'))
-        if (filters[filter].classList.contains('all-merit')) {
-            let options = async () => { await getMeritListOptions(default_data.year, default_data.month, default_data.round, default_filter.program);
-            }
-        for (opt in options()) {
-                filters[filter].innerHTML +=
-                "<option value='" + options[opt] + "'>" + options[opt].title() + "</option>";
-            }
-        }
-        else
-        {
+     
             let options = getOptions(filters[filter].id);
         for (opt in options) {
             filters[filter].innerHTML +=
             "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
-        }
+        
 
         }
      
@@ -244,33 +236,42 @@
       default_filter[e.target.id] = e.target.value;
       changeMeritList();
     }
-    function updatemeritData(e) {
+    function updateMeritData(e) {
       default_data[e.target.id] = e.target.value;
-      
-      if ( ['year', 'month'].contains(e.target.id)) {
+      let changeSequence = {
+        'year' : 'month',
+        'month' : 'round'
+      }
+      if ( ['year', 'month'].includes(e.target.id)) {
         default_filter.program = ''
       }
-      if (e.target.id == 'round') {        
-        meritData.FCPS = getMeritListOptions(default_data.year, default_data.month, default_data.round, 'fcps');
-        meritData.MS = getMeritListOptions(default_data.year, default_data.month, default_data.round, 'ms');
-        meritData.MD =  getMeritListOptions(default_data.year, default_data.month, default_data.round, 'md');
-        changeMeritList();
+      if (e.target.id in changeSequence) {
+        const ele = document.getElementById(changeSequence[e.target.id]);
+        default_data[changeSequence[e.target.id]] = ''
+        ele.innerHTML = ""
+        let options = getPreviousMerits(default_data.year, default_data.month, default_data.round, '');
+        for (opt in options) {
+          ele.innerHTML += 
+            "<option value='" + options[opt] + "'>" + options[opt] + "</option>"
+        }
       }
       else {
-        
-      for (id in default_data) {
-        const ele = document.getElementById(id);
-        let options = getMeritListOptions(default_data.year, default_data.month, default_data.round, default_filter.program);
-            for (opt in options) {
-                filters[filter].innerHTML +=
-                "<option value='" + options[opt] + "'>" + options[opt].title() + "</option>";
-            }
 
-      } 
+        for (prog in meritData) {
+         meritData[prog] = getPreviousMerits(default_data.year, default_data.month, default_data.round, prog);
+     
+        } 
 
+        changeMeritList();
       }
+      }
+      
+
+      
+
+    
      
       
-    }
+    
   </script>
 </html>

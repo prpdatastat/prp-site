@@ -17,40 +17,36 @@ const mdMerit = load_data('./md_merit.json')
 const seats = load_data('./seats.json')
 const accuracyMerit = load_data('./merit_stats.json')
 const changes = load_data('./merit_diff.json')
+const prevMerit = load_data('./previous_merits.json')
 /*
 const changes = load_data('./changes.json')
 
 
 */
 
-async function getMeritListOptions(year= '', month ='', round='', program='') { 
-    let path = year;
-    if (month  != '')
-    {        
-        path = year+"/"+month +"/"
-    }
+ function getPreviousMerits(year= '', month ='', round='', program='') { 
     
-    if (round  != '')
-        {        
-            path = year+"/"+month +"/"+round+"/"
-        }
-    
-    if (program != '') {        
-        path = year+"/"+month +"/"+round+"/"+program     
-        
-    }
-    try {
-        let response = await $.ajax({
-            url: 'https://prp-api.vercel.app/merit/'+path,
-            type: 'GET',
-        });
+    let result = [];
+    if (year == '')
+        {
             
-            return response['data'];
+        return  Object.keys(prevMerit)      
         
-    } catch (error) {
-        console.log(error);
+        }
+    if (month == '')
+        {
+        return Object.keys(prevMerit[year])
+        }
+    if (round == '')
+        {
+        return Object.keys(prevMerit[year][month])
+        }
+    if (program != '')
+        {
+        return { program : prevMerit[year][month][round][program]}
+        }
     }
-    }
+    
 
 function checkKeys(item) {
   const keysToCheck = ["FCPS", "MS", "MD"];
@@ -195,7 +191,6 @@ function getCandidatesData(pmdcNo) {
 function getMerit(merit,  quota='', speciality='', hospital='', all=false) {    
 
     let result = [];
-    console.log('selected quota', quota, 'speciality', speciality, 'hospital', hospital);
     for (prog in merit) {
         for (quot in merit[prog]) {
             if (quota === quot || quota === '') {
@@ -260,7 +255,6 @@ function getOptions(optionType) {
     if (optionType === 'quota') {
         for (prog in fcpsMerit) {
             for (quota in fcpsMerit[prog]) {
-                console.log(quota, !result.includes(quota))
                 if (!result.includes(quota)) {
                     result.push(quota)
                 }
@@ -392,7 +386,6 @@ async function getSchedule() {
         });
 
         if ('data' in response) {
-            console.log('response', response['data']);
             return response['data'];
         }
     } catch (error) {
@@ -407,7 +400,6 @@ async function getConsent(applicantId, round = 5) {
             url: 'https://prp-api.vercel.app/consent/'+applicantId.toString()+"/"+ round.toString(),
             type: 'GET',
         });
-            console.log(response)
             return response.toString();
         
     } catch (error) {
@@ -437,7 +429,6 @@ async function getConsentData(applicantId) {
 function getChanges(program) 
 {
     let result = [];
-    console.log(changes, program in changes)
     if (program in changes) {
         for (quot in changes[program])
         {
@@ -459,7 +450,7 @@ function getChanges(program)
         
     }
         }
-        console.log(result);
+        
 return result
 }
 

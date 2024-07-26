@@ -1,10 +1,13 @@
 
-const fetch = require('sync-fetch')
+
+const fetch = require('sync-fetch');
+
 function load_data(path) {
     
    const data = fetch(path).json();
    return data;
 }
+
 
 let roundNo = 'second';
 const candData = load_data('./cand_data.json')
@@ -20,6 +23,34 @@ const changes = load_data('./changes.json')
 
 */
 
+async function getMeritListOptions(year= '', month ='', round='', program='') { 
+    let path = year;
+    if (month  != '')
+    {        
+        path = year+"/"+month +"/"
+    }
+    
+    if (round  != '')
+        {        
+            path = year+"/"+month +"/"+round+"/"
+        }
+    
+    if (program != '') {        
+        path = year+"/"+month +"/"+round+"/"+program     
+        
+    }
+    try {
+        let response = await $.ajax({
+            url: 'https://prp-api.vercel.app/merit/'+path,
+            type: 'GET',
+        });
+            
+            return response['data'];
+        
+    } catch (error) {
+        console.log(error);
+    }
+    }
 
 function checkKeys(item) {
   const keysToCheck = ["FCPS", "MS", "MD"];
@@ -268,6 +299,7 @@ function getOptions(optionType) {
     if (optionType === 'program') {
         return ['FCPS', 'MS', 'MD']
     }
+   
     return result
 }
 
@@ -430,4 +462,5 @@ function getChanges(program)
         console.log(result);
 return result
 }
+
 

@@ -408,6 +408,22 @@ async function getConsent(applicantId, round = 5) {
     
     
     }
+    async function getJoining(applicantId) { 
+     
+
+        try {
+        let response = await $.ajax({
+            url: 'https://prp-api.vercel.app/joining/'+applicantId.toString(),
+            type: 'GET',
+        });
+            return response.toString();
+        
+    } catch (error) {
+        console.log('error');
+    }
+    
+    
+    }
 
 async function getConsentData(applicantId) { 
     

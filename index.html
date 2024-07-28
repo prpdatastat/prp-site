@@ -141,7 +141,7 @@
                         console.log(table)
                         for (i = 1; i < table.length; i++) // skip table header row (i = 0)
                         {
-                          let txt = table[i][6].text.replace('Check Consent', '')
+                          let txt = table[i][6].text.replace('Check Joining', '')
                           table[i][6].text = txt; // couldn't be bothered clearing the Age column sample data above :)
                           
                         }
@@ -193,7 +193,7 @@
             merit[cand].specialityName,
             merit[cand].hospitalName,
             merit[cand].marksTotal,
-            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkConsent("+merit[cand].applicantId+")'>Check Consent</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
+            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkJoining("+merit[cand].applicantId+")'>Check Joining</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
           ]);
       }
       jQuery("#statTable").DataTable().draw();
@@ -264,6 +264,12 @@
       let ele = document.getElementById('status-'+applicantId.toString())
       console.log(ele, 'status-'+applicantId.toString())
       ele.innerHTML = '' + await getConsent(applicantId);
+
+    }
+    async function checkJoining(applicantId) {
+      let ele = document.getElementById('status-'+applicantId.toString())
+      console.log(ele, 'status-'+applicantId.toString())
+      ele.innerHTML = '' + await getJoining(applicantId);
 
     }
   </script>

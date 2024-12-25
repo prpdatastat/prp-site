@@ -18,6 +18,7 @@ const seats = load_data('./seats.json')
 const accuracyMerit = load_data('./merit_stats.json')
 const changes = load_data('./merit_diff.json')
 const prevMerit = load_data('./previous_merits.json')
+const rejected = load_data('./rejected.json')
 /*
 const changes = load_data('./changes.json')
 
@@ -401,6 +402,22 @@ async function getConsent(applicantId, round = 5) {
             type: 'GET',
         });
             return response.toString();
+        
+    } catch (error) {
+        console.log('error');
+    }
+    
+    
+    }
+    async function getScrutiny(applicantId) { 
+     
+
+        try {
+        let response = await $.ajax({
+            url: 'https://prp-api.vercel.app/scrutiny/'+applicantId.toString(),
+            type: 'GET',
+        });
+            return response.status.toString();
         
     } catch (error) {
         console.log('error');

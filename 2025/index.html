@@ -216,7 +216,7 @@
       ele.innerHTML = candidates[program];
     }
     async function checkScrutiny(applicantId) {
-      let ele = document.getElementById('scrutiny-'+applicantId.toString())
+      let ele = document.getElementById('status-'+applicantId.toString())
       console.log(ele, 'status-'+applicantId.toString())
       ele.innerHTML = '' + await getScrutiny(applicantId);
 

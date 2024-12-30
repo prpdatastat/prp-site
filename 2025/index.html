@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRP Statistics</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sync-fetch"></script>
+    
+    <script src="../2025/main.js"></script>
+    <link
+    href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
+    rel="stylesheet"
+  />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <div class="navbar notif">
+      This is candidates list of <span class='important'>2025 Jan</span> Induction<br>
+      <span class='important'>Some candidates might not be there as its not official</span><br>
+      Click on applicant ID to check their preferences
+    </div>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img class="logo" onclick="gotoUrl('../index.html')"src="../logo.png" />
+      </div>
+    </nav>
+    <div class="info">
+      <h1 id="name">
+        Unofficial PRP 2025 Gazette
+    </h1>
+    <div class="main_container" style="width: 80%">
+      <div class="flex stat-container">
+        
+        <div class="counter">
+          <div id="FCPS" class="counter-value">500</div>
+          <div class="counter-text">FCPS</div>
+          <div class="counter-desc">Candidates applied </div>
+        </div>
+        <div class="counter">
+          <div id="MD" class="counter-value">500</div>
+          <div class="counter-text">MD</div>
+          <div class="counter-desc">Candidates applied </div>
+        </div>
+        <div class="counter">
+          <div id="MS" class="counter-value">500</div>
+          <div class="counter-text">MS</div>
+          <div class="counter-desc">Candidates applied </div>
+        </div>
+      
+      </div>
+      
+  </div>
+          
+      <div class="filters">
+        <select
+          onchange="updateList(event);"
+          class="filter-item"
+          name="quota"
+          id="program"
+        >
+          <option value="" disabled selected>Program</option>
+        </select>
+        
+      </div>
+      <table class="stat-table" style="width: 100%" id="statTable">
+        <thead>
+          <tr>
+            <th class="linkable">Applicant ID</th>
+            <th >PMDC Number</th>
+            <th >Name</th>
+            <th>Aggregate</th>
+            <th>Aggregate with program</th>
+            <th class="linkable">Scrutiny</th>            
+          </tr>
+        </thead>
+        <tbody id="dataRows"></tbody>
+      </table>
+      <div class="footer">
+        <span>Made with 💓 in <strong>HTML</strong>  &  <strong>JS</strong> by <img src="../github.png">reko-beep</span>
+      </div>
+    </div>
+  </body>
+  <script>
+    const default_filter = {
+      program: "FCPS"     
+    };
+    
+    const columnParams = ['applicantId', 'pmdcNo', 'nameFull', ,'marksTotal', 'marksProgram', 'scrutinyStatus'];
+    jQuery(document).ready(function () {
+      jQuery("#statTable").DataTable({
+        order: [[3, 'desc']],
+        paging: true,
+        searching: true,
+        ordering: true,
+        lengthMenu: [10, 25, 50, { label: "All", value: -1 }],
+        lengthChange: true,
+        layout: {
+          topStart: {
+              buttons: [
+                {
+                    extend: 'pdfHtml5',
+                    text: 'Download PDF',
+                    title : 'PRP '+default_filter.program+' Gazette '+default_filter.hospital+' '+default_filter.speciality+' ',
+                    customize: function (doc) {
+                        
+                        let table = doc.content[1].table.body;
+                        console.log(table)
+                        for (i = 1; i < table.length; i++) // skip table header row (i = 0)
+                        {
+                          let txt = table[i][6].text.replace('Check Joining', '')
+                          table[i][6].text = txt; // couldn't be bothered clearing the Age column sample data above :)
+                          
+                        }
+                        console.log(doc['header'])
+                        var cols = [];
+                        cols[0] = {text: 'List downloaded', alignment: 'left', margin:[20] };
+                        cols[1] = {text: 'from PRP statistics', alignment: 'right', margin:[0,0,20] };
+                        var objFooter = {};
+                        objFooter['columns'] = cols;
+                        doc['footer']=objFooter;
+
+                        }
+                        }
+                        // Data URL generated by http://dataurl.net/#dataurlmaker
+                    
+                
+            ]
+          }
+    },
+    
+        columns: [
+          { width: "10%" },
+          { width: "20%" },
+          { width: "10%" },
+          { width: "10%" },
+          { width: "20%" },
+          { width: "5%" },
+        ],
+      });
+      changeGazetteList();
+    });
+    
+    async function changeGazetteList() {
+      let gazette = getGazetteData(default_filter.program);
+      jQuery("#statTable").DataTable().clear().draw();
+      for (cand in gazette) {
+        jQuery("#statTable")
+          .DataTable()
+          .row.add([
+          gazette[cand].applicantId,
+            gazette[cand].pmdcNo,
+            gazette[cand].nameFull,
+            gazette[cand].marksTotal,
+            gazette[cand].marksProgram,
+            "<span class='check-consent' onmousedown='checkScrutiny("+gazette[cand].applicantId+")'>Check Status</span><br><span class='consentstatusstyle' id='status-"+gazette[cand].applicantId.toString()+"'></span>",
+       ]);
+      }
+      jQuery("#statTable").DataTable().draw();
+    }
+      
+      $('#statTable').on('click', 'tbody td', function() {   
+        let param =   columnParams[this._DT_CellIndex.column];
+        let paths = {
+          applicantId : '../2025/candidate.html'
+        }
+        const checkParams = ['applicantId'];
+        if (checkParams.includes(columnParams[this._DT_CellIndex.column]))
+        {
+        localStorage.setItem(columnParams[this._DT_CellIndex.column], this.textContent)
+        window.location.href = paths[param]
+        }
+      }
+  ) 
+    
+
+
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    const filters = document.getElementsByTagName("select");
+    console.log(filters);
+    for (filter in filters) {
+      let options = ['FCPS', 'MD', 'MS'];
+      for (opt in options) {
+        filters[filter].innerHTML +=
+          "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
+      }
+    }
+    for (key in default_filter) {
+      const ele = document.getElementById(key);
+      ele.value = default_filter[key];
+    }
+    function updateList(e) {
+      default_filter[e.target.id] = e.target.value;
+      console.log(default_filter);
+      changeGazetteList();
+    }
+    for (program in candidates) {
+      console.log(candidates[program])
+      const ele = document.getElementById(program);
+      ele.innerHTML = candidates[program];
+    }
+    async function checkScrutiny(applicantId) {
+      let ele = document.getElementById('scrutiny-'+applicantId.toString())
+      console.log(ele, 'status-'+applicantId.toString())
+      ele.innerHTML = '' + await getScrutiny(applicantId);
+
+    }
+   
+  </script>
+</html>

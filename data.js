@@ -8,12 +8,27 @@ function load_data(path) {
    return data;
 }
 
+function changeNotification(text) {
+    document.getElementById('notif').innerHTML = text
+}
+const prevMsMeritList = load_data('./ms_merit.json')
+const prevMdMeritList = load_data('./md_merit.json')
+const prevfcpsMeritList = load_data('./fcps_merit.json')
+const prevcandList = load_data('./cand_data.json')
+const candDataUnOfficial = load_data('./2025/cand_data.json')
+const fcpsMeritUnOfficial = load_data('./2025/fcps_merit.json')
+const msMeritUnOfficial = load_data('./2025/ms_merit.json')
+const mdMeritUnOfficial = load_data('./2025/md_merit.json')
 
-let roundNo = 'second';
-const candData = load_data('./cand_data.json')
-const fcpsMerit = load_data('./fcps_merit.json')
-const msMerit = load_data('./ms_merit.json')
-const mdMerit = load_data('./md_merit.json')
+let candData = prevcandList
+let fcpsMerit = prevfcpsMeritList
+let msMerit = prevMsMeritList
+let mdMerit = prevMdMeritList
+
+function toggleMerit() {    
+    localStorage.setItem('viewUnofficial', !localStorage.getItem('viewUnofficial'));
+}
+
 const seats = load_data('./seats.json')
 const accuracyMerit = load_data('./merit_stats.json')
 const changes = load_data('./merit_diff.json')
@@ -458,6 +473,29 @@ async function getConsentData(applicantId) {
     }
     
     
+    }
+    function checkMeritDataUnhinged() {
+        if (localStorage.getItem('viewUnofficial'))
+      {
+      meritData.FCPS = fcpsMeritUnOfficial;
+      meritData.MS = msMeritUnOfficial;
+      meritData.MD = mdMeritUnOfficial;
+      candData = candDataUnOfficial;
+      if (document.getElementById('checkbox2025')){
+        
+        document.getElementById('checkbox2025').checked = true
+        }
+      
+    }else {
+      meritData.FCPS = prevfcpsMeritList;
+      meritData.MS = prevMsMeritList;
+      meritData.MD = prevMdMeritList;
+      candData = prevcandList;
+      if (document.getElementById('checkbox2025')){
+        
+      document.getElementById('checkbox2025').checked = false
+      }
+      }
     }
 function getChanges(program) 
 {

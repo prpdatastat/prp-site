@@ -125,11 +125,13 @@
       pmdcNo : '',
       program : 'FCPS'
     };
+
     const meritData = {
       FCPS: fcpsMerit,
       MS: msMerit,
       MD: mdMerit,
     };
+    checkMeritDataUnhinged()
     const  columnParams = ['quotaName', 'hospitalName', 'specialityName'];
     jQuery(document).ready(function () {
       if (window.location.search != '')

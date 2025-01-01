@@ -7,7 +7,7 @@
     <title>PRP Statistics</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sync-fetch"></script>
-    <script src="data.js"></script>
+    <script id='data' src="data.js"></script>
     <script src="schedule.js"></script>
    
     <link
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="navbar notif">
+    <div class="navbar notif" id="notif">
       This is a Official Merit list of last <span class='important'>2024 Jan</span> Induction<br>
       <span class='important'>Click on Check Consent to check Candidate Consent</span><br>
     </div>
@@ -54,8 +54,14 @@
         <button class="schd-button lrgbtn" onmousedown="gotoUrl('schedule.html')"> View PRP Schedule </button>
         <button class="schd-button lrgbtn" onmousedown="gotoUrl('prev.html')"> View Previous Merit Lists </button>
         <button class="schd-button lrgbtn" onmousedown="gotoUrl('scrutiny.html')"> View 2025 Grievance List </button>
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('https://prpdatastat.github.io/prp-site/2025/index.html')"> View unofficial Gazette 2025 </button>
+        <button class="schd-button lrgbtn" onmousedown="gotoUrl('/2025/index.html')"> View unofficial Gazette 2025 </button>
       </div>    
+      <div class="consent-pref-switch">
+        <label class="switch">
+          <input id="checkbox2025" onchange="changeMeritYear(this)" type="checkbox">
+          <span class="slider"></span>
+        </label><span class="slidertext"> 2025 Unofficial Merit List</span> 
+      </div>  
       <div class="filters">
         <select
           onchange="updateList(event);"
@@ -116,13 +122,15 @@
       speciality: "",
       hospital: "",
     };
-    const meritData = {
+    let meritData = {
       FCPS: fcpsMerit,
       MS: msMerit,
       MD: mdMerit,
     };
     const columnParams = ['pmdcNo', 'name', 'quotaName', 'specialityName', 'hospitalName']
     jQuery(document).ready(function () {
+      $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
+    
       jQuery("#statTable").DataTable({
         order: [[5, 'desc']],
         paging: true,
@@ -274,5 +282,32 @@
       ele.innerHTML = '' + await getJoining(applicantId);
 
     }
+
+    
+    function changeMeritYear(e) {
+      
+  if (e.checked) {
+    localStorage.setItem('viewUnofficial', 'true');
+    meritData.FCPS = fcpsMeritUnOfficial;
+    meritData.MS = msMeritUnOfficial;
+    meritData.MD = mdMeritUnOfficial;
+    candData = candDataUnOfficial;
+    changeMeritList()
+    $('.slidertext').css({'color': 'white', 'font-weight': 'bold', 'filter': 'drop-shadow(0px 0px 7px #107e47)', 'transition-duration': '1s'})
+    changeNotification("This is a unofficial Merit list based on unofficial<span class='important'> 2025 Jan</span> Gazette<br>To compare ur merit, see unofficial gazette and click on applicant ID <br><span class='important'>Click on speciality or hospital to see individual merits</span><br></br>")
+    
+  }else {
+    localStorage.setItem('viewUnofficial', 'false');
+    meritData.FCPS = prevfcpsMeritList;
+    meritData.MS = prevMsMeritList;
+    meritData.MD = prevMdMeritList;
+    candData = prevcandList;
+    changeMeritList()
+    changeNotification("This is a Official Merit list of last <span class='important'>2024 Jan</span> Induction<br>      <span class='important'>Click on Check Consent to check Candidate Consent</span><br></br>")
+    $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
+    
+
+  }
+}
   </script>
 </html>

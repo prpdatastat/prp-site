@@ -251,6 +251,20 @@ a:hover {
 .linkable:hover {
   color: rgb(197, 140, 66)
 }
+.linkableunderline {
+  color: rgb(24, 155, 31);
+  opacity: 1;
+  font-family: 'light';
+  text-decoration: underline;
+  transition-duration: 1s;
+}
+.linkableunderline:hover {
+  opacity: 0.5;
+  
+  cursor: pointer;
+  text-decoration: underline;
+  transition-duration: 1s;
+}
 .stat-table td:hover {
   color: rgb(27, 185, 185);
 }

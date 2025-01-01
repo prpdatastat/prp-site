@@ -5,7 +5,10 @@ function load_data(path) {
    const data = fetch(path).json();
    return data;
 }
-
+function ViewMeritList(link = '../index.html') {
+    window.location.href = link
+    localStorage.setItem('viewUnofficial', true);
+}
 
 const candData = load_data('./applicants2025.json').data
 let candGazetteData = {

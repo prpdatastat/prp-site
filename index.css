@@ -566,3 +566,16 @@ button:hover {
   opacity: 0.7;
   cursor:pointer;
 }
+.idhover:hover {
+  color: rgb(197, 195, 193);
+  font-size: medium;
+  text-shadow: solid 0px 15px #5cdb71;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.noted {
+  color: rgb(163, 31, 31);    
+  text-shadow: 1px 1px 2.5px #3a3a3a;
+  font-size: medium;
+}

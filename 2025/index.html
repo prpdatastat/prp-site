@@ -54,6 +54,22 @@
       
       </div>
       <h4 class="linkableunderline" onclick="ViewMeritList()">Wanna see merit list based on this gazette?</h4>
+      <h4 class="linkable">Issues with Gazat</h4>
+      <br>
+      <p>
+        Note this gazette has issues with some candidates. Some of the candidates in FCPS and MD, MS are not given their program marks from PRP backend
+        <br>, hence have low marks in unofficial merit list. This is due to the fact that their program marks are not available in the gazette.
+        <br>
+        <span class="noted">
+          But these are rectified in FCPS unofficial merit list, dated  3/1/2025.
+          Tho the issue still persists in MS and MD merit list.
+        </span>
+        <br>
+        <br>
+        <span id='issues' class="important">
+
+        </span>
+      </p>
   </div>
           
       <div class="filters">
@@ -92,6 +108,13 @@
     
     const columnParams = ['applicantId', 'pmdcNo', 'nameFull', ,'marksTotal', 'marksProgram', 'scrutinyStatus'];
     jQuery(document).ready(function () {
+      const issueele = document.getElementById('issues');
+      console.log(issueele)
+      issueele.innerHTML += "Issues with candidate ids:<br>"
+      for (prog in issueIds) {
+        
+      issueele.innerHTML += "<span class='linkable'>"+prog+" </span>" + issueIds[prog].join("</span>,<span class='idhover'> ")+"<br>"
+      }
       jQuery("#statTable").DataTable({
         order: [[3, 'desc']],
         paging: true,

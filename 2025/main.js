@@ -9,7 +9,7 @@ function ViewMeritList(link = '../index.html') {
     window.location.href = link
     localStorage.setItem('viewUnofficial', true);
 }
-
+const issueIds = load_data('./candmarks_issue.json')
 const candData = load_data('./applicants2025.json').data
 let candGazetteData = {
     FCPS: [],
@@ -19,7 +19,7 @@ let candGazetteData = {
 let candidates = {
     FCPS : 0,
     MS : 0,
-    MD : 0
+    MD : 0 
 }
 function toFixedNumber(num, digits, base){
     const pow = Math.pow(base ?? 10, digits);

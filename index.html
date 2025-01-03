@@ -56,6 +56,7 @@
         <button class="schd-button lrgbtn" onmousedown="gotoUrl('scrutiny.html')"> View 2025 Grievance List </button>
         <button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/2025/index.html')"> View unofficial Gazette 2025 </button>
       </div>    
+      <h3 class="linkableunderline" onclick="gotoComment()"> Wanna Leave a comment for developer? Click here!</h3>
       <div class="consent-pref-switch">
         <label class="switch">
           <input id="checkbox2025" onchange="changeMeritYear(this)" type="checkbox">
@@ -110,6 +111,16 @@
         </thead>
         <tbody id="dataRows"></tbody>
       </table>
+      <br>
+      <script src="https://utteranc.es/client.js"
+        repo="prpdatastat/prp-site"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script> 
+<br>
+
       <div class="footer">
         <span>Made with 💓 in <strong>HTML</strong>  &  <strong>JS</strong> by <img src="github.png">reko-beep</span>
       </div>
@@ -308,6 +319,10 @@
     
 
   }
+}
+function gotoComment(){
+  const ele = document.getElementsByClassName('utterances')[0];
+  ele.scrollIntoView();
 }
   </script>
 </html>

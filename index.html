@@ -303,7 +303,7 @@
     candData = candDataUnOfficial;
     changeMeritList()
     $('.slidertext').css({'color': 'white', 'font-weight': 'bold', 'filter': 'drop-shadow(0px 0px 7px #107e47)', 'transition-duration': '1s'})
-    changeNotification("This is a unofficial Merit list based on unofficial<span class='important'> 2025 Jan</span> Gazette<br>To compare ur merit, see unofficial gazette and click on applicant ID <br><span class='important'>Click on speciality or hospital to see individual merits</span><br>The issue with some candidates not being selected in FCPS have been recitified due to them not being awarded FCPS Marks<br>")
+    changeNotification("This is a unofficial Merit list based on unofficial<span class='important'> 2025 Jan</span> Gazette<br>To compare ur merit, see unofficial gazette and click on applicant ID <br><span class='important'>Click on speciality or hospital to see individual merits</span><br>The issue with some candidates not being selected in FCPS have been recitified due to them not being awarded FCPS Marks<br>Note MS and MD merit lists are not correct due to marks not added in gazette from PRP backend.")
     
   }else {
     localStorage.setItem('viewUnofficial', 'false');
@@ -319,7 +319,7 @@
   }
 }
 function gotoComment(){
-  const ele = document.getElementsByClassName('utterances')[0];
+  const ele = document.getElementsById('HCB_comment_box');
   ele.scrollIntoView();
 }
   </script>

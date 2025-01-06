@@ -55,6 +55,7 @@
             <span class="slider"></span>
           </label><span class="slidertext"> 2025 Unofficial Merit List</span> 
         </div>  
+        <h3 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h5>
         <div class="filters">
           <select
             onchange="updateList(event);"
@@ -204,6 +205,10 @@
         default_filter.hospital,
       true);
       console.log(merit);
+      let seats = getSeatsOccupied(meritData[default_filter.program],default_filter.program,  default_filter.quota, default_filter.hospital, default_filter.speciality);
+      for (k in seats) {        
+        const ele = document.getElementById(k).innerHTML = seats[k]
+      }
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in merit) {
         jQuery("#statTable")

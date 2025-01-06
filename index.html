@@ -63,6 +63,8 @@
           <span class="slider"></span>
         </label><span class="slidertext"> 2025 Unofficial Merit List</span> 
       </div>  
+       
+      <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
       <div class="filters">
         <select
           onchange="updateList(event);"
@@ -195,12 +197,17 @@
     });
     
     async function changeMeritList() {
+
       let merit = getMerit(
         meritData[default_filter.program],
         default_filter.quota,
         default_filter.speciality,
         default_filter.hospital
       );
+      let seats = getSeatsOccupied(meritData[default_filter.program],default_filter.program,  default_filter.quota, default_filter.hospital, default_filter.speciality);
+      for (k in seats) {        
+        const ele = document.getElementById(k).innerHTML = seats[k]
+      }
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in merit) {
         jQuery("#statTable")
@@ -303,7 +310,7 @@
     candData = candDataUnOfficial;
     changeMeritList()
     $('.slidertext').css({'color': 'white', 'font-weight': 'bold', 'filter': 'drop-shadow(0px 0px 7px #107e47)', 'transition-duration': '1s'})
-    changeNotification("This is a unofficial Merit list based on unofficial<span class='important'> 2025 Jan</span> Gazette<br>To compare ur merit, see unofficial gazette and click on applicant ID <br><span class='important'>Click on speciality or hospital to see individual merits</span><br>Merit list is updated according to current policy, without program marks.")
+    changeNotification("This is a unofficial Merit list based on unofficial<span class='important'> 2025 Jan</span> Gazette<br>To compare ur merit, see unofficial gazette and click on applicant ID <br><span class='important'>Click on speciality or hospital to see individual merits</span><br>Merit list is updated according to current policy, without program marks.<br><span class='important'>Now you can see how many seats are occupied for  specific speciality and hospital</span>")
     
   }else {
     localStorage.setItem('viewUnofficial', 'false');

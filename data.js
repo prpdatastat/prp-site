@@ -40,6 +40,35 @@ const changes = load_data('./changes.json')
 
 */
 
+function getSeatsOccupied(data, prog, quotaName, hospitalaname, specialityName) {
+    if (quotaName !== '')
+    {
+        if (quotaName in data[prog]) {
+            if (specialityName != '')
+                {
+                    if (specialityName in data[prog][quotaName]) {
+                        if (hospitalaname != '')
+                        {
+                            if (hospitalaname in data[prog][quotaName][specialityName]) {
+                                return {
+                                    occupied : data[prog][quotaName][specialityName][hospitalaname].candidates.length,
+                                    total : data[prog][quotaName][specialityName][hospitalaname].jobs
+                
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            
+        }
+    }
+    
+    return {
+        occupied : 0,
+        total : 0
+    }
+}
  function getPreviousMerits(year= '', month ='', round='', program='') { 
     
     let result = [];

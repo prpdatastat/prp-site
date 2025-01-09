@@ -708,3 +708,22 @@ button:hover {
   filter: drop-shadow(0px 0px 2px #5bcf5b);
   transition-duration : 1s;
 }
+
+
+.likes img {
+  background: linear-gradient(rgba(216, 199, 199, 0.5), rgba(109, 105, 105, 0.5)),
+  url('https://www.htmlcommentbox.com/static/images/like.png') !important;
+  padding: 5px !important;
+  border-radius: 15px;
+  
+  transition-duration : 1s;
+
+}
+.likes img:hover {
+  filter:hue-rotate(0deg) !important;
+  filter: drop-shadow(0px 0px 5px #ebe7e4) !important;
+  transition-duration : 1s;
+  transform: scale(110%) !important;
+  transform: rotateX('180') !important;
+
+}

@@ -21,8 +21,9 @@
   </head>
   <body>
     <div class="navbar notif" id="notif">
-      This is the Estimated Merit List of <span class='important'>2025 Jan</span> Induction based on Official Gazette<br>Accuracy of unofficial Gazette has been displayed below<span class='important'>  </div>
-    <nav class="navbar">
+      This is the Estimated Merit List of <span class='important'>2025 Jan</span> Induction based on Official Gazette<br>Accuracy of unofficial Gazette has been displayed below<span class='important'><br>There were some issues with merit list which has been fixed due to unofficial gazette interference</div>
+        <br>
+        <nav class="navbar">
       <div class="logo-container">
         <img class="logo" onclick="gotoUrl()"src="logo.png" />
       </div>
@@ -63,6 +64,12 @@
         </label><span class="slidertext"> 2025 Unofficial Merit List</span> 
       </div>  
        -->
+      
+        <div class="alert">
+          <h3 class="alert-title">Merit List Issue</h3>
+          <p class="alert-content">There is issue with MS and MD merit list, where <br>MS applicants <span class="important">7254, 24793, 21123, 29533, 28483, 28584, 17828, 23330, 25557, 17815, 31085</span> and <br> MD applicants <span class="important">18398, 7254, 18250, 15719, 16054, 28303, 21123, 29533, 26805, 28483, 30255, 23330, 20457, 25557, 28461, 17815, 17980, 31085</span> dont have any preference showing up on data thats why they may not show up on list<br><span class="important">We will keep on updating list as the gazette changes. Do inform us in comments.</span></p>
+        </div>
+        </h3>
       <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
       <div class="filters">
         <select
@@ -298,7 +305,7 @@
 
     }
 
-    
+    /*
     function changeMeritYear(e) {
       
   if (e.checked) {
@@ -323,7 +330,7 @@
     
 
   }
-}
+}*/
 function gotoComment(){
   const ele = document.getElementById('HCB_comment_box');
   ele.scrollIntoView();

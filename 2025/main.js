@@ -9,22 +9,37 @@ function ViewMeritList(link = '../index.html') {
     window.location.href = link
     localStorage.setItem('viewUnofficial', true);
 }
+
+
+
+
+function changeNotification(text) {
+    document.getElementById('notif').innerHTML = text
+}
+const gazetteFCPS = load_data('../2025/fcps_gazat.json')
+const cand_data = load_data('../2025/cand_data.json')
+const gazetteMS = load_data('../2025/ms_gazat.json')
+const gazetteMD = load_data('../2025/md_gazat.json')
 const issueIds = load_data('./candmarks_issue.json')
-const candData = load_data('./applicants2025.json').data
+let candData = {};
 let candGazetteData = {
-    FCPS: [],
-    MS : [],
-    MD : []
+    FCPS: gazetteFCPS,
+    MS : gazetteMS,
+    MD : gazetteMD
 };
+
 let candidates = {
-    FCPS : 0,
-    MS : 0,
-    MD : 0 
+    FCPS : gazetteFCPS[0].totalCount,
+    MS : gazetteMS[0].totalCount,
+    MD : gazetteMD[0].totalCount
 }
 function toFixedNumber(num, digits, base){
     const pow = Math.pow(base ?? 10, digits);
     return Math.round(num*pow) / pow;
   }
+
+
+  /*
 for (cand in candData) {
     let cData = candData[cand];
     for (prog in cData.applied_in) {
@@ -42,32 +57,19 @@ for (cand in candData) {
         }
     }
 }
+*/
+
 
 function getGazetteData(prog) {
     return candGazetteData[prog];
 }
+
 function getCandidatesData(applicantId) {
-    let data =  candData[applicantId];
-    for (prog in data.applied_in) {
-        if (data.applied_in[prog])
+    console.log(cand_data[applicantId])
+    return cand_data[applicantId];
+  
+    }
 
-            data.preference[prog].forEach((pref) => {
-                pref.marksTotal = data.marksTotal + toFixedNumber(data.programMark[prog], 5);
-                if (pref.parentInstitute)
-                {
-                    pref.marksTotal += toFixedNumber(5, 5);
-                    pref.symbol = '✓';
-                }
-                else {
-                    pref.symbol = '✗';
-                }
-
-    })
-}
-console.log(data);
-return data;
-};
-    
 async function getScrutiny(applicantId) { 
      
 

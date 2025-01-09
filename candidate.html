@@ -61,6 +61,8 @@
           <span class="legend-bubble" id="degreeMarks">degree</span>
           <span class="legend-bubble" id="houseJobMarks">housejob</span>
           <span class="legend-bubble" id="experienceMarks">experience</span>
+          
+          <span class="bubble" id="hardAreaMarks">hard area</span>
 
         </div>
         <div class="consent-pref-switch">
@@ -131,7 +133,6 @@
       MS: msMerit,
       MD: mdMerit,
     };
-    checkMeritDataUnhinged()
     const  columnParams = ['quotaName', 'hospitalName', 'specialityName'];
     jQuery(document).ready(function () {
       if (window.location.search != '')
@@ -154,7 +155,8 @@
               <span class="bubble" id="interMarks">${data.inter}
                 <span class="bubble" id="degreeMarks">${data.degree}
                   <span class="bubble" id="houseJobMarks">${data.houseJob}
-                    <span class="bubble" id="experienceMarks">${data.experience}</span></span></span></span>`
+                    <span class="bubble" id="experienceMarks">${data.experience}                      
+                    <span class="bubble" id="hardAreaMarks">${data.hardArea}</span></span></span></span></span>`
       for (pro in data.progMarks) {
         const elet = document.getElementsByClassName(pro+'marks')[0];
         
@@ -311,8 +313,7 @@ function shareUrl() {
         jQuery("#statTable")
           .DataTable()
           .row.add([
-            merit[cand].quotaName,
-            
+            merit[cand].quotaName,            
             merit[cand].hospitalName,
             merit[cand].specialityName,
             merit[cand].marks,

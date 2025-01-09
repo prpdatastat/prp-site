@@ -15,10 +15,10 @@ const prevMsMeritList = load_data('./ms_merit.json')
 const prevMdMeritList = load_data('./md_merit.json')
 const prevfcpsMeritList = load_data('./fcps_merit.json')
 const prevcandList = load_data('./cand_data.json')
-const candDataUnOfficial = load_data('./2025/cand_data.json')
-const fcpsMeritUnOfficial = load_data('./2025/fcps_merit.json')
-const msMeritUnOfficial = load_data('./2025/ms_merit.json')
-const mdMeritUnOfficial = load_data('./2025/md_merit.json')
+// const candDataUnOfficial = load_data('./2025/cand_data.json')
+//const fcpsMeritUnOfficial = load_data('./2025/fcps_merit.json')
+//const msMeritUnOfficial = load_data('./2025/ms_merit.json')
+//const mdMeritUnOfficial = load_data('./2025/md_merit.json')
 
 let candData = prevcandList
 let fcpsMerit = prevfcpsMeritList
@@ -180,6 +180,7 @@ function getCandidatesData(pmdcNo) {
         result['degree'] = candData[applicantId]['degree']
         result['houseJob'] = parseFloat(candData[applicantId]['houseJob'].toFixed(2))
         result['experience'] = candData[applicantId]['experience'] 
+        result['hardArea'] = candData[applicantId]['hardArea'] 
         result['provMarks'] = parseFloat((candData[applicantId]['matric'] + candData[applicantId]['degree'] + candData[applicantId]['fsc'] + candData[applicantId]['houseJob'] + candData[applicantId]['experience']).toFixed(5))
         result['progMarks'] = candData[applicantId]['programMarks']
         progs.forEach( prog => {
@@ -503,6 +504,7 @@ async function getConsentData(applicantId) {
     
     
     }
+    /*
     function checkMeritDataUnhinged() {
         if (localStorage.getItem('viewUnofficial'))
       {
@@ -525,7 +527,7 @@ async function getConsentData(applicantId) {
       document.getElementById('checkbox2025').checked = false
       }
       }
-    }
+    }*/
 function getChanges(program) 
 {
     let result = [];

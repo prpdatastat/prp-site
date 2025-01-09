@@ -111,7 +111,7 @@
       MS: msMerit,
       MD: mdMerit,
     };
-    checkMeritDataUnhinged()
+    //checkMeritDataUnhinged()
     let default_filter = {
       program: "FCPS",
       quota: "",
@@ -304,31 +304,32 @@ function shareUrl() {
     allowHTML: true,
   });
 }
-function changeMeritYear(e) {
+ /*
+    function changeMeritYear(e) {
       
-      if (e.checked) {
-        localStorage.setItem('viewUnofficial', 'true');
-        meritData.FCPS = fcpsMeritUnOfficial;
-        meritData.MS = msMeritUnOfficial;
-        meritData.MD = mdMeritUnOfficial;
-        candData = candDataUnOfficial;
-        changeMeritList()
-        $('.slidertext').css({'color': 'white', 'font-weight': 'bold', 'filter': 'drop-shadow(0px 0px 7px #107e47)', 'transition-duration': '1s'})
-        changeNotification("This is a unofficial Merit list based on unofficial<span class='important'> 2025 Jan</span> Gazette<br>To compare ur merit, see unofficial gazette and click on applicant ID <br><span class='important'>Click on speciality or hospital to see individual merits</span><br></br>")
-        
-      }else {
-        localStorage.setItem('viewUnofficial', 'false');
-        meritData.FCPS = prevfcpsMeritList;
-        meritData.MS = prevMsMeritList;
-        meritData.MD = prevMdMeritList;
-        candData = prevcandList;
-        changeMeritList()
-        changeNotification("This is a Official Merit list of last <span class='important'>2024 Jan</span> Induction<br>      <span class='important'>Click on Check Consent to check Candidate Consent</span><br></br>")
-        $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
-        
+  if (e.checked) {
+    localStorage.setItem('viewUnofficial', 'true');
+    meritData.FCPS = fcpsMeritUnOfficial;
+    meritData.MS = msMeritUnOfficial;
+    meritData.MD = mdMeritUnOfficial;
+    candData = candDataUnOfficial;
+    changeMeritList()
+    $('.slidertext').css({'color': 'white', 'font-weight': 'bold', 'filter': 'drop-shadow(0px 0px 7px #107e47)', 'transition-duration': '1s'})
+    changeNotification("This is a unofficial Merit list based on unofficial<span class='important'> 2025 Jan</span> Gazette<br>To compare ur merit, see unofficial gazette and click on applicant ID <br><span class='important'>Click on speciality or hospital to see individual merits</span><br>Merit list is updated according to current policy, without program marks.<br><span class='important'>Now you can see how many seats are occupied for  specific speciality and hospital</span>")
     
-      }
-    }
+  }else {
+    localStorage.setItem('viewUnofficial', 'false');
+    meritData.FCPS = prevfcpsMeritList;
+    meritData.MS = prevMsMeritList;
+    meritData.MD = prevMdMeritList;
+    candData = prevcandList;
+    changeMeritList()
+    changeNotification(" This is the Estimated Merit List of <span class='important'>2025 Jan</span> Induction<br>Accuracy of unofficial merit list has been displayed below<span class='important'>  </div>")
+    $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
+    
+
+  }
+}*/
     </script>
   </body>
 </html>

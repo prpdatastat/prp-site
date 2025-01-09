@@ -48,7 +48,8 @@
               <span class="bubble" id="interMarks">6
                 <span class="bubble" id="degreeMarks">14
                   <span class="bubble" id="houseJobMarks">5
-                    <span class="bubble" id="experienceMarks">4</span></span></span></span></span>
+                    <span class="bubble" id="experienceMarks">4</span>
+                    <span class="bubble" id="hardAreaMarks">4</span></span></span></span></span>
           </span>
         </div>
         
@@ -61,16 +62,17 @@
           <span class="legend-bubble" id="degreeMarks">degree</span>
           <span class="legend-bubble" id="houseJobMarks">housejob</span>
           <span class="legend-bubble" id="experienceMarks">experience</span>
+          <span class="legend-bubble" id="hardAreaMarks">hard area</span>
 
         </div>
-        <!--
+       
         <div class="consent-pref-switch">
           <label class="switch">
             <input onchange="changeTable(this)" type="checkbox">
             <span class="slider"></span>
           </label><span> Show Consent</span> 
         </div>  
-      -->
+      
         <p>
             Below is the list of hospital he / she applied for
         </p>
@@ -121,13 +123,12 @@
     </div>
     </div>
     
-    <script>   
-    let data = {};   
+    <script>    
     const default_filter = {
       applicantId : '',
       program : 'FCPS'
     };
-    
+    let data = {};
     const  columnParams = ['quotaName', 'hospitalName', 'specialityName'];
     jQuery(document).ready(function () {
       if (window.location.search != '')
@@ -147,10 +148,11 @@
       marksagg.innerHTML = `Provisional Marks
       <span class="bubble "id="provMarks">${data.marksTotal}
             <span class="bubble" id="matricMarks">${data.matric}
-              <span class="bubble" id="interMarks">${data.inter}
+              <span class="bubble" id="interMarks">${data.fsc}
                 <span class="bubble" id="degreeMarks">${data.degree}
                   <span class="bubble" id="houseJobMarks">${data.houseJob}
-                    <span class="bubble" id="experienceMarks">${data.experience}</span></span></span></span>`
+                    <span class="bubble" id="experienceMarks">${data.experience}</span>
+                    <span class="bubble" id="hardAreaMarks">${data.hardArea}</span></span></span></span>`
       for (pro in data.programMark) {
         console.log('program marks')
         const elet = document.getElementsByClassName(pro+'marks')[0];
@@ -297,11 +299,10 @@ function shareUrl() {
         jQuery("#statTable")
           .DataTable()
           .row.add([
-            merit[cand].quotaName,
-            
+            merit[cand].quotaName,            
             merit[cand].hospitalName,
             merit[cand].specialityName,
-            merit[cand].marksTotal,
+            data.marksTotal + merit[cand].marks,
             merit[cand].preferenceNo,
             merit[cand].symbol
           ]);

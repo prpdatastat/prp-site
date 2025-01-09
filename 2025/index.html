@@ -21,7 +21,6 @@
   <body>
     <div class="navbar notif">
       This is candidates list of <span class='important'>2025 Jan</span> Induction<br>
-      <span class='important'>Some candidates might not be there as its not official</span><br>
       Click on applicant ID to check their preferences
     </div>
     <nav class="navbar">
@@ -31,7 +30,7 @@
     </nav>
     <div class="info">
       <h1 id="name">
-        Unofficial PRP 2025 Gazette
+        Official PRP 2025 Gazette
     </h1>
     <div class="main_container" style="width: 80%">
       <div class="flex stat-container">
@@ -54,15 +53,10 @@
       
       </div>
       <h4 class="linkableunderline" onclick="ViewMeritList()">Wanna see merit list based on this gazette?</h4>
-      <h4 class="linkable">Issues with Gazat</h4>
+      <!-- <h4 class="linkable">Issues with Gazat</h4> -->
       <br>
       <p>
-        Note this gazette has issues with some candidates. Some of the candidates in FCPS and MD, MS are not given their program marks from PRP backend
-        <br>, hence have low marks in unofficial merit list. This is due to the fact that their program marks are not available in the gazette.
-        <br>
-        <span class="noted">
-          But these are rectified in FCPS unofficial merit list, dated  3/1/2025.
-          Tho the issue still persists in MS and MD merit list.
+        This is the official Gazette List dated <span class="important">9/1/25 11:50</span>
         </span>
         <br>
         <br>
@@ -90,7 +84,6 @@
             <th >PMDC Number</th>
             <th >Name</th>
             <th>Aggregate</th>
-            <th>Aggregate with program</th>
             <th class="linkable">Scrutiny</th>            
           </tr>
         </thead>
@@ -106,15 +99,17 @@
       program: "FCPS"     
     };
     
-    const columnParams = ['applicantId', 'pmdcNo', 'nameFull', ,'marksTotal', 'marksProgram', 'scrutinyStatus'];
+    const columnParams = ['applicantId', 'pmdcNo', 'nameFull', ,'marksTotal', 'scrutinyStatus'];
+    
     jQuery(document).ready(function () {
+      /*
       const issueele = document.getElementById('issues');
       console.log(issueele)
       issueele.innerHTML += "Issues with candidate ids:<br>"
       for (prog in issueIds) {
         
       issueele.innerHTML += "<span class='linkable'>"+prog+" </span>" + issueIds[prog].join("</span>,<span class='idhover'> ")+"<br>"
-      }
+      }*/
       jQuery("#statTable").DataTable({
         order: [[3, 'desc']],
         paging: true,
@@ -133,13 +128,7 @@
                         
                         let table = doc.content[1].table.body;
                         console.log(table)
-                        for (i = 1; i < table.length; i++) // skip table header row (i = 0)
-                        {
-                          let txt = table[i][6].text.replace('Check Joining', '')
-                          table[i][6].text = txt; // couldn't be bothered clearing the Age column sample data above :)
-                          
-                        }
-                        console.log(doc['header'])
+                       
                         var cols = [];
                         cols[0] = {text: 'List downloaded', alignment: 'left', margin:[20] };
                         cols[1] = {text: 'from PRP statistics', alignment: 'right', margin:[0,0,20] };
@@ -162,7 +151,6 @@
           { width: "10%" },
           { width: "10%" },
           { width: "20%" },
-          { width: "5%" },
         ],
       });
       changeGazetteList();
@@ -179,7 +167,6 @@
             gazette[cand].pmdcNo,
             gazette[cand].nameFull,
             gazette[cand].marksTotal,
-            gazette[cand].marksProgram,
             "<span class='check-consent' onmousedown='checkScrutiny("+gazette[cand].applicantId+")'>Check Status</span><br><span class='consentstatusstyle' id='status-"+gazette[cand].applicantId.toString()+"'></span>",
        ]);
       }

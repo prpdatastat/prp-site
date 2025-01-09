@@ -69,7 +69,12 @@ html {
 input:checked + .slider {
   background-color: #40c040;
 }
-
+.title {
+  font-family: 'heavy';
+  font-size: 30px;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px #427388; 
+}
 /* Move the slider when checked */
 input:checked + .slider:before {
   transform: translateX(26px);

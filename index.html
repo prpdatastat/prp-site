@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="navbar notif" id="notif">
-      This is the Estimated Merit List of <span class='important'>2025 Jan</span> Induction based on Official Gazette<br>Accuracy of unofficial Gazette has been displayed below<span class='important'><br>There were some issues with merit list which has been fixed due to unofficial gazette interference</div>
+      This is the Estimated Merit List of <span class='important'>2025 Jan</span> Induction based on Official Gazette<br>Accuracy of unofficial Gazette has been displayed below<span class='important'><br>There were some issues with merit list which has been fixed due to unofficial gazette interference<br>Gazette updated dated 11/1/25</div>
         <br>
         <nav class="navbar">
       <div class="logo-container">
@@ -68,6 +68,8 @@
         <div class="alert">
           <h3 class="alert-title">Merit List Issue</h3>
           <p class="alert-content">There is issue with MS and MD merit list, where <br>MS applicants <span class="important">7254, 24793, 21123, 29533, 28483, 28584, 17828, 23330, 25557, 17815, 31085</span> and <br> MD applicants <span class="important">18398, 7254, 18250, 15719, 16054, 28303, 21123, 29533, 26805, 28483, 30255, 23330, 20457, 25557, 28461, 17815, 17980, 31085</span> dont have any preference showing up on data thats why they may not show up on list<br><span class="important">We will keep on updating list as the gazette changes. Do inform us in comments.</span></p>
+          <h3 class="alert-title">Merit List Updated</h3>
+          <p class="alert-content">Merit list is updated according to recent gazette 11/1/21 11:00pm, to see changes in gazette, click <span class="linkableunderline" onclick="gotoUrl('changes.html')">here</span><br><strong>Note:</strong> <span class="important"> These changes might not apparent in gazette on PRP but might show up in few hours or one day</span></p>
         </div>
         </h3>
       <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
@@ -105,6 +107,7 @@
           <option value="" elected>Hospital</option>
         </select>
       </div>
+      <p id="headline"> No Filter selected.</p>
       <table class="stat-table" style="width: 100%" id="statTable">
         <thead>
           <tr>
@@ -203,7 +206,8 @@
     });
     
     async function changeMeritList() {
-
+      const ele = document.getElementById('headline');
+      ele.innerHTML = changeHeadline(default_filter);
       let merit = getMerit(
         meritData[default_filter.program],
         default_filter.quota,

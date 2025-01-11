@@ -87,7 +87,7 @@
           </select>          
         </div>
     </div>
-
+    <p id="headline"> No Filter selected.</p>
     <table class="stat-table" style="width: 100%" id="statTable">
       <thead>
         <tr>
@@ -202,6 +202,8 @@
       changeMeritList();
     });
     function changeMeritList() {
+      const ele = document.getElementById('headline');
+    ele.innerHTML = changeHeadline(default_filter);
       let seats = getSeatsOccupied(meritData[default_filter.program],default_filter.program,  default_filter.quota, default_filter.hospital, default_filter.speciality);
       for (k in seats) {        
         const ele = document.getElementById(k).innerHTML = seats[k]

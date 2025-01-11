@@ -31,7 +31,7 @@ function toggleMerit() {
 
 const seats = load_data('./seats.json')
 const accuracyMerit = load_data('./merit_stats.json')
-const changes = load_data('./merit_diff.json')
+const changes = load_data('./changes.json')
 const prevMerit = load_data('./previous_merits.json')
 const rejected = load_data('./rejected.json')
 /*
@@ -528,6 +528,7 @@ async function getConsentData(applicantId) {
       }
       }
     }*/
+/*
 function getChanges(program) 
 {
     let result = [];
@@ -556,4 +557,25 @@ function getChanges(program)
 return result
 }
 
+*/
+function getChanges(program) {
+    return changes[program]
+}
 
+function changeHeadline(data) {
+    let headline = `Showing merit list of ${data.program} candidates who applied`;
+
+    if (data.quota) {
+        headline += ` for quota ${data.quota}`;
+    }
+
+    if (data.speciality) {
+        headline += ` in ${data.speciality}`;
+    }
+
+    if (data.hospital) {
+        headline += ` at ${data.hospital}`;
+    }
+
+    return headline;
+}

@@ -1720,20 +1720,6 @@
        }
       },
       {
-       "applicantId": 17957,
-       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
-       "pmdcNo": "101650-P",
-       "marksTotal": 28.14829,
-       "preferenceNo": 8,
-       "selected": false,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Plastic Surgery",
-        "hospitalName": "Jinnah Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
        "applicantId": 30216,
        "nameFull": "Muneeb Ur Rahman S/O Munir Hussain",
        "pmdcNo": "784935-01-M",
@@ -1786,6 +1772,20 @@
         "quotaName": "Punjab",
         "specialityName": "Plastic Surgery",
         "hospitalName": "Services Hospital, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 17957,
+       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
+       "pmdcNo": "101650-P",
+       "marksTotal": 31.481623,
+       "preferenceNo": 8,
+       "selected": false,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Plastic Surgery",
+        "hospitalName": "Jinnah Hospital, Lahore",
         "preferenceNo": 1
        }
       },
@@ -6561,7 +6561,7 @@
        "applicantId": 17957,
        "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
        "pmdcNo": "101650-P",
-       "marksTotal": 28.14829,
+       "marksTotal": 31.481623,
        "preferenceNo": 1
       }
      ],
@@ -6614,7 +6614,7 @@
        "pmdcNo": "784935-01-M",
        "marksTotal": 29.304654,
        "preferenceNo": 13,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Orthopedic Surgery",
@@ -6628,7 +6628,7 @@
        "pmdcNo": "761675-01-M",
        "marksTotal": 30.45076,
        "preferenceNo": 9,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Plastic Surgery",
@@ -6642,7 +6642,7 @@
        "pmdcNo": "86170801M",
        "marksTotal": 31.146364,
        "preferenceNo": 3,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Plastic Surgery",
@@ -6811,6 +6811,13 @@
        "preferenceNo": 18
       },
       {
+       "applicantId": 17957,
+       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
+       "pmdcNo": "101650-P",
+       "marksTotal": 31.481623,
+       "preferenceNo": 3
+      },
+      {
        "applicantId": 29498,
        "nameFull": "Marjan Zakria D/O Muhammad Zakria",
        "pmdcNo": "86170801M",
@@ -6823,13 +6830,6 @@
        "pmdcNo": "784935-01-M",
        "marksTotal": 29.304654,
        "preferenceNo": 29
-      },
-      {
-       "applicantId": 17957,
-       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
-       "pmdcNo": "101650-P",
-       "marksTotal": 28.14829,
-       "preferenceNo": 3
       },
       {
        "applicantId": 28593,
@@ -6902,20 +6902,6 @@
        }
       },
       {
-       "applicantId": 17957,
-       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
-       "pmdcNo": "101650-P",
-       "marksTotal": 28.14829,
-       "preferenceNo": 2,
-       "selected": false,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Plastic Surgery",
-        "hospitalName": "Jinnah Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
        "applicantId": 30216,
        "nameFull": "Muneeb Ur Rahman S/O Munir Hussain",
        "pmdcNo": "784935-01-M",
@@ -6940,6 +6926,20 @@
         "quotaName": "Punjab",
         "specialityName": "Plastic Surgery",
         "hospitalName": "Services Hospital, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 17957,
+       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
+       "pmdcNo": "101650-P",
+       "marksTotal": 31.481623,
+       "preferenceNo": 2,
+       "selected": false,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Plastic Surgery",
+        "hospitalName": "Jinnah Hospital, Lahore",
         "preferenceNo": 1
        }
       },
@@ -7167,20 +7167,6 @@
        }
       },
       {
-       "applicantId": 17957,
-       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
-       "pmdcNo": "101650-P",
-       "marksTotal": 28.14829,
-       "preferenceNo": 4,
-       "selected": false,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Plastic Surgery",
-        "hospitalName": "Jinnah Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
        "applicantId": 30216,
        "nameFull": "Muneeb Ur Rahman S/O Munir Hussain",
        "pmdcNo": "784935-01-M",
@@ -7191,6 +7177,20 @@
         "quotaName": "Punjab",
         "specialityName": "Orthopedic Surgery",
         "hospitalName": "Allied Hospital, Faisalabad",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 17957,
+       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
+       "pmdcNo": "101650-P",
+       "marksTotal": 31.481623,
+       "preferenceNo": 4,
+       "selected": false,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Plastic Surgery",
+        "hospitalName": "Jinnah Hospital, Lahore",
         "preferenceNo": 1
        }
       },
@@ -8035,6 +8035,13 @@
        "preferenceNo": 60
       },
       {
+       "applicantId": 17957,
+       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
+       "pmdcNo": "101650-P",
+       "marksTotal": 31.481623,
+       "preferenceNo": 5
+      },
+      {
        "applicantId": 29498,
        "nameFull": "Marjan Zakria D/O Muhammad Zakria",
        "pmdcNo": "86170801M",
@@ -8054,13 +8061,6 @@
        "pmdcNo": "784935-01-M",
        "marksTotal": 29.304654,
        "preferenceNo": 16
-      },
-      {
-       "applicantId": 17957,
-       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
-       "pmdcNo": "101650-P",
-       "marksTotal": 28.14829,
-       "preferenceNo": 5
       },
       {
        "applicantId": 28593,
@@ -8118,6 +8118,13 @@
        "preferenceNo": 56
       },
       {
+       "applicantId": 17957,
+       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
+       "pmdcNo": "101650-P",
+       "marksTotal": 31.481623,
+       "preferenceNo": 7
+      },
+      {
        "applicantId": 29498,
        "nameFull": "Marjan Zakria D/O Muhammad Zakria",
        "pmdcNo": "86170801M",
@@ -8130,13 +8137,6 @@
        "pmdcNo": "784935-01-M",
        "marksTotal": 29.304654,
        "preferenceNo": 34
-      },
-      {
-       "applicantId": 17957,
-       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
-       "pmdcNo": "101650-P",
-       "marksTotal": 28.14829,
-       "preferenceNo": 7
       },
       {
        "applicantId": 28593,
@@ -8486,6 +8486,13 @@
        "preferenceNo": 58
       },
       {
+       "applicantId": 17957,
+       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
+       "pmdcNo": "101650-P",
+       "marksTotal": 31.481623,
+       "preferenceNo": 6
+      },
+      {
        "applicantId": 29498,
        "nameFull": "Marjan Zakria D/O Muhammad Zakria",
        "pmdcNo": "86170801M",
@@ -8498,13 +8505,6 @@
        "pmdcNo": "784935-01-M",
        "marksTotal": 29.304654,
        "preferenceNo": 33
-      },
-      {
-       "applicantId": 17957,
-       "nameFull": "Muhammad Saad Riaz S/O Muhammad Riaz",
-       "pmdcNo": "101650-P",
-       "marksTotal": 28.14829,
-       "preferenceNo": 6
       },
       {
        "applicantId": 28593,

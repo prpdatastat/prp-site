@@ -31,13 +31,13 @@
       
     <div class="info">
         <h1 id="hospital-name">
-            Changes B/W Third and Fourth Merit List
+            Changes in Gazette 2025
         </h1>
         <div class="share-link">
           <div class="share" onmousedown="shareUrl()"><img src="share.png"></div>
         </div>
         <p>
-            Below is changes observed in Fourth Official Merit list Compared to Third one.<br>
+            Below are the changes observed in Gazette.<br>
             Select a program
           </p>
         
@@ -59,11 +59,9 @@
     <table class="stat-table" style="width: 100%" id="statTable">
       <thead>
         <tr>
-          <th>Quota</th>
-          <th>Speciality</th>
-          <th>Hospital</th>
-          <th>Fourth</th>
-          <th>Third</th>
+          <th>Applicant ID</th>
+          <th>Name</th>
+          <th>Changes</th>
         </tr>
       </thead>
       <tbody id="dataRows"></tbody>
@@ -110,13 +108,10 @@
         lengthMenu: [10, 25, 50, { label: "All", value: -1 }],
         lengthChange: true,        
         columns: [
-          { width: "10%" },
-          { width: "20%" },
-          { width: "10%" },
+          { width: "5%" },
+          { width: "40%" },
+          { width: "30%" },
           
-          { width: "10%" },
-          
-          { width: "10%" },
         ]
       });
       changeProgramChanges();
@@ -126,17 +121,18 @@
       
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in changes) {
-        console.log(changes[cand].selected[0])
-       jQuery("#statTable")
+        console.log(changes[cand])
+        if (changes[cand].changed) {
+          jQuery("#statTable")
           .DataTable()
           .row.add([
-          changes[cand].quotaName,
-          changes[cand].specialityName,
-          changes[cand].hospitalName,
-          changes[cand].selected[0].nameFull +"<br>Aggregate:"+changes[cand].selected[0].marksTotal+"<br>Pref.No: "+changes[cand].selected[0].preferenceNo,
-          changes[cand].not_selected[0].nameFull +"<br>Aggregate:"+changes[cand].not_selected[0].marksTotal+"<br>Pref.No: "+changes[cand].not_selected[0].preferenceNo,
-          
+          changes[cand].applicantId,
+          changes[cand].nameFull,
+          changes[cand].text
           ]);
+
+        }
+       
       }
       
       jQuery("#statTable").DataTable().draw();

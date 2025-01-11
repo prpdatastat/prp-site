@@ -85,7 +85,7 @@
           </select>          
         </div>
     </div>
-
+    <p id="headline"> No Filter selected.</p>
     <table class="stat-table" style="width: 100%" id="statTable">
       <thead>
         <tr>
@@ -200,6 +200,9 @@
       console.log('changed', default_filter);
       
       console.log(default_filter.quota)
+      
+      const ele = document.getElementById('headline');
+      ele.innerHTML = changeHeadline(default_filter);
       let merit = getMerit(
         meritData[default_filter.program],
         default_filter.quota,

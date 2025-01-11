@@ -658,8 +658,8 @@
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 5
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 6
        }
       },
       {
@@ -685,9 +685,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -980,8 +980,8 @@
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 5
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 6
        }
       },
       {
@@ -1007,9 +1007,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -1402,6 +1402,13 @@
        "preferenceNo": 1
       },
       {
+       "applicantId": 22550,
+       "nameFull": "Muhammad Munawar Siraj S/O Siraj Din",
+       "pmdcNo": "716306-01-M",
+       "marksTotal": 30.857619,
+       "preferenceNo": 1
+      },
+      {
        "applicantId": 29643,
        "nameFull": "Zia ur rehman S/O rab nawaz",
        "pmdcNo": "90448601M",
@@ -1413,13 +1420,6 @@
        "nameFull": "Zoha Saleem D/O Muhammad Saleem",
        "pmdcNo": "904714-01-M",
        "marksTotal": 30.639242,
-       "preferenceNo": 1
-      },
-      {
-       "applicantId": 29485,
-       "nameFull": "Ahmad Rafique S/O Muhammad Rafique Anjum",
-       "pmdcNo": "78607401M",
-       "marksTotal": 30.590682,
        "preferenceNo": 1
       }
      ],
@@ -1453,20 +1453,6 @@
        }
       },
       {
-       "applicantId": 22550,
-       "nameFull": "Muhammad Munawar Siraj S/O Siraj Din",
-       "pmdcNo": "716306-01-M",
-       "marksTotal": 29.190952,
-       "preferenceNo": 1,
-       "selected": false,
-       "selected_in": {
-        "quotaName": null,
-        "specialityName": null,
-        "hospitalName": null,
-        "preferenceNo": null
-       }
-      },
-      {
        "applicantId": 28153,
        "nameFull": "Raza Rasheed S/O Rasheed Ahmed",
        "pmdcNo": "742983-01-M",
@@ -1476,8 +1462,8 @@
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 5
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 6
        }
       },
       {
@@ -1537,12 +1523,26 @@
        }
       },
       {
+       "applicantId": 29485,
+       "nameFull": "Ahmad Rafique S/O Muhammad Rafique Anjum",
+       "pmdcNo": "78607401M",
+       "marksTotal": 30.590682,
+       "preferenceNo": 1,
+       "selected": false,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
+       }
+      },
+      {
        "applicantId": 30997,
        "nameFull": "Rana Ijaz S/O Muhammad Ramzan",
        "pmdcNo": "922495-01-M",
        "marksTotal": 30.594697,
        "preferenceNo": 3,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Medicine",
@@ -1556,7 +1556,7 @@
        "pmdcNo": "760892-01-M",
        "marksTotal": 30.627087,
        "preferenceNo": 20,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Neurology",
@@ -1917,8 +1917,8 @@
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 5
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 6
        }
       },
       {
@@ -2762,9 +2762,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -3420,9 +3420,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       }
      ]
@@ -3644,9 +3644,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -4249,7 +4249,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 14
       },
       {
@@ -4361,7 +4361,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 3,
        "selected": false,
        "selected_in": {
@@ -4417,7 +4417,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 18,
        "selected": true,
        "selected_in": {
@@ -4529,7 +4529,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 19,
        "selected": true,
        "selected_in": {
@@ -4563,7 +4563,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 7
       },
       {
@@ -4625,7 +4625,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 20
       },
       {
@@ -4716,7 +4716,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 21,
        "selected": true,
        "selected_in": {
@@ -4750,7 +4750,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 11
       },
       {
@@ -4876,7 +4876,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 13,
        "selected": false,
        "selected_in": {
@@ -4896,7 +4896,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 6
       },
       {
@@ -4944,7 +4944,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 12
       },
       {
@@ -5091,7 +5091,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 15,
        "selected": false,
        "selected_in": {
@@ -5110,7 +5110,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 37.571515,
+       "marksTotal": 38.171515,
        "preferenceNo": 1
       }
      ],
@@ -5223,7 +5223,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 5
       },
       {
@@ -5363,7 +5363,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 2,
        "selected": true,
        "selected_in": {
@@ -5461,7 +5461,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 16,
        "selected": false,
        "selected_in": {
@@ -5495,7 +5495,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 8
       },
       {
@@ -5557,7 +5557,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 9
       },
       {
@@ -5619,7 +5619,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 17
       },
       {
@@ -5660,7 +5660,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 4
       },
       {
@@ -5749,7 +5749,7 @@
        "applicantId": 30271,
        "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
        "pmdcNo": "798062-01-M",
-       "marksTotal": 32.571515,
+       "marksTotal": 33.171515,
        "preferenceNo": 10
       },
       {
@@ -6021,9 +6021,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -6463,9 +6463,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -8640,8 +8640,8 @@
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 5
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 6
        }
       },
       {
@@ -8681,9 +8681,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -9268,8 +9268,8 @@
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 5
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 6
        }
       },
       {
@@ -9351,9 +9351,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -10593,8 +10593,8 @@
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 5
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 6
        }
       },
       {
@@ -10620,9 +10620,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -11645,9 +11645,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -12129,8 +12129,8 @@
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 5
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 6
        }
       },
       {
@@ -12520,9 +12520,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       }
      ]
@@ -14541,9 +14541,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -15016,9 +15016,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {
@@ -17295,147 +17295,281 @@
     },
     "Jinnah Hospital, Lahore": {
      "jobs": 1,
-     "candidates": [],
-     "others": [
-      {
-       "applicantId": 21144,
-       "nameFull": "Hanana Nasir D/O Nasir Javed",
-       "pmdcNo": "719009-01-M",
-       "marksTotal": 35.345963,
-       "preferenceNo": 21
-      },
-      {
-       "applicantId": 16123,
-       "nameFull": "Asim Rafiq S/O MUHAMMAD RAFIQ",
-       "pmdcNo": "114980-p",
-       "marksTotal": 33.476483,
-       "preferenceNo": 27
-      },
-      {
-       "applicantId": 30279,
-       "nameFull": "Muhammad Ali Zafar S/O Mamoon Ur Rashid Zafar",
-       "pmdcNo": "785171-01-M",
-       "marksTotal": 37.527272,
-       "preferenceNo": 8
-      },
-      {
-       "applicantId": 30372,
-       "nameFull": "Hamza Hassan S/O Muhammad Hussain",
-       "pmdcNo": "78772001M",
-       "marksTotal": 36.998637,
-       "preferenceNo": 8
-      },
-      {
-       "applicantId": 30508,
-       "nameFull": "Usama S/O MUHAMMAD AKRAM SABIR",
-       "pmdcNo": "862182-01-M",
-       "marksTotal": 31.948292,
-       "preferenceNo": 24
-      },
-      {
-       "applicantId": 26896,
-       "nameFull": "Laraib Tariq Khan W/O MUHAMMAD SHEERAZ KHAN",
-       "pmdcNo": "758593-01-M",
-       "marksTotal": 31.640606,
-       "preferenceNo": 28
-      },
-      {
-       "applicantId": 30708,
-       "nameFull": "Abdul Rehman S/O Muhammad Riaz",
-       "pmdcNo": "785034-01-M",
-       "marksTotal": 31.519469,
-       "preferenceNo": 43
-      },
-      {
-       "applicantId": 30407,
-       "nameFull": "Syed Abdullah Arif S/O ARIF ALI",
-       "pmdcNo": "78741201M",
-       "marksTotal": 36.260487999999995,
-       "preferenceNo": 8
-      },
-      {
-       "applicantId": 28907,
-       "nameFull": "Muneeb Ahmad S/O Muhammad Mukhtar Ahmad",
-       "pmdcNo": "716203-01-M",
-       "marksTotal": 36.243279,
-       "preferenceNo": 4
-      },
-      {
-       "applicantId": 30569,
-       "nameFull": "Muhammad Hashim Iqbal S/O MUHAMMAD IQBAL",
-       "pmdcNo": "786835-01-M",
-       "marksTotal": 30.96947,
-       "preferenceNo": 36
-      },
-      {
-       "applicantId": 29997,
-       "nameFull": "Rabia Nawaz D/O Muhammad Nawaz",
-       "pmdcNo": "87318701M",
-       "marksTotal": 30.907607,
-       "preferenceNo": 25
-      },
-      {
-       "applicantId": 30667,
-       "nameFull": "Malik Abdullah Rasheed S/O RASHEED AHMAD TEHSIN",
-       "pmdcNo": "716346-01-M",
-       "marksTotal": 30.89566,
-       "preferenceNo": 10
-      },
-      {
-       "applicantId": 30495,
-       "nameFull": "Zoha Saleem D/O Muhammad Saleem",
-       "pmdcNo": "904714-01-M",
-       "marksTotal": 35.639241999999996,
-       "preferenceNo": 33
-      },
-      {
-       "applicantId": 29485,
-       "nameFull": "Ahmad Rafique S/O Muhammad Rafique Anjum",
-       "pmdcNo": "78607401M",
-       "marksTotal": 30.590682,
-       "preferenceNo": 5
-      },
-      {
-       "applicantId": 28439,
-       "nameFull": "Ghulam Shabir S/O Muhammad Ramzan",
-       "pmdcNo": "744522-01-M",
-       "marksTotal": 35.398939,
-       "preferenceNo": 70
-      },
-      {
-       "applicantId": 29669,
-       "nameFull": "Muhammad Aqib S/O Abdul Majeed",
-       "pmdcNo": "873179-01-M",
-       "marksTotal": 30.208906,
-       "preferenceNo": 21
-      },
-      {
-       "applicantId": 29594,
-       "nameFull": "Muhammad Ahmad Ayyaz S/O Muhammad Ayyaz",
-       "pmdcNo": "830297-01-M",
-       "marksTotal": 29.799518,
-       "preferenceNo": 6
-      },
+     "candidates": [
       {
        "applicantId": 28153,
        "nameFull": "Raza Rasheed S/O Rasheed Ahmed",
        "pmdcNo": "742983-01-M",
        "marksTotal": 29.448074,
        "preferenceNo": 6
+      }
+     ],
+     "others": [
+      {
+       "applicantId": 30371,
+       "nameFull": "Muhammad Umer Sher S/O SHER MUHAMMAD",
+       "pmdcNo": "784073-01-M",
+       "marksTotal": 27.47,
+       "preferenceNo": 21,
+       "selected": false,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Medicine",
+        "hospitalName": "Services Hospital, Lahore",
+        "preferenceNo": 4
+       }
       },
       {
        "applicantId": 29071,
        "nameFull": "Muhammad Sarim Khan S/O Javed Ahmad Khan",
        "pmdcNo": "755905-01-M",
        "marksTotal": 28.983193,
-       "preferenceNo": 9
+       "preferenceNo": 9,
+       "selected": false,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Neurology",
+        "hospitalName": "Punjab Institute of Neurosciences, Lahore",
+        "preferenceNo": 1
+       }
       },
       {
-       "applicantId": 30371,
-       "nameFull": "Muhammad Umer Sher S/O SHER MUHAMMAD",
-       "pmdcNo": "784073-01-M",
-       "marksTotal": 27.47,
-       "preferenceNo": 21
+       "applicantId": 29594,
+       "nameFull": "Muhammad Ahmad Ayyaz S/O Muhammad Ayyaz",
+       "pmdcNo": "830297-01-M",
+       "marksTotal": 29.799518,
+       "preferenceNo": 6,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Cardiology",
+        "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
+        "preferenceNo": 2
+       }
+      },
+      {
+       "applicantId": 29669,
+       "nameFull": "Muhammad Aqib S/O Abdul Majeed",
+       "pmdcNo": "873179-01-M",
+       "marksTotal": 30.208906,
+       "preferenceNo": 21,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Cardiology",
+        "hospitalName": "Mayo Hospital, Lahore",
+        "preferenceNo": 4
+       }
+      },
+      {
+       "applicantId": 29485,
+       "nameFull": "Ahmad Rafique S/O Muhammad Rafique Anjum",
+       "pmdcNo": "78607401M",
+       "marksTotal": 30.590682,
+       "preferenceNo": 5,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
+       }
+      },
+      {
+       "applicantId": 30667,
+       "nameFull": "Malik Abdullah Rasheed S/O RASHEED AHMAD TEHSIN",
+       "pmdcNo": "716346-01-M",
+       "marksTotal": 30.89566,
+       "preferenceNo": 10,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 29997,
+       "nameFull": "Rabia Nawaz D/O Muhammad Nawaz",
+       "pmdcNo": "87318701M",
+       "marksTotal": 30.907607,
+       "preferenceNo": 25,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Neurology",
+        "hospitalName": "Mayo Hospital, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 30569,
+       "nameFull": "Muhammad Hashim Iqbal S/O MUHAMMAD IQBAL",
+       "pmdcNo": "786835-01-M",
+       "marksTotal": 30.96947,
+       "preferenceNo": 36,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Pediatrics",
+        "hospitalName": "Children Hospital, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 30708,
+       "nameFull": "Abdul Rehman S/O Muhammad Riaz",
+       "pmdcNo": "785034-01-M",
+       "marksTotal": 31.519469,
+       "preferenceNo": 43,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Dermatology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 3
+       }
+      },
+      {
+       "applicantId": 26896,
+       "nameFull": "Laraib Tariq Khan W/O MUHAMMAD SHEERAZ KHAN",
+       "pmdcNo": "758593-01-M",
+       "marksTotal": 31.640606,
+       "preferenceNo": 28,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Nephrology",
+        "hospitalName": "Holy Family Hospital, Rawalpindi",
+        "preferenceNo": 2
+       }
+      },
+      {
+       "applicantId": 30508,
+       "nameFull": "Usama S/O MUHAMMAD AKRAM SABIR",
+       "pmdcNo": "862182-01-M",
+       "marksTotal": 31.948292,
+       "preferenceNo": 24,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Pediatrics",
+        "hospitalName": "Children Hospital, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 16123,
+       "nameFull": "Asim Rafiq S/O MUHAMMAD RAFIQ",
+       "pmdcNo": "114980-p",
+       "marksTotal": 33.476483,
+       "preferenceNo": 27,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Nephrology",
+        "hospitalName": "Mayo Hospital, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 21144,
+       "nameFull": "Hanana Nasir D/O Nasir Javed",
+       "pmdcNo": "719009-01-M",
+       "marksTotal": 35.345963,
+       "preferenceNo": 21,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Pediatrics",
+        "hospitalName": "Services Hospital, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 28439,
+       "nameFull": "Ghulam Shabir S/O Muhammad Ramzan",
+       "pmdcNo": "744522-01-M",
+       "marksTotal": 35.398939,
+       "preferenceNo": 70,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Pediatrics",
+        "hospitalName": "Children Hospital, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 30495,
+       "nameFull": "Zoha Saleem D/O Muhammad Saleem",
+       "pmdcNo": "904714-01-M",
+       "marksTotal": 35.639241999999996,
+       "preferenceNo": 33,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 28907,
+       "nameFull": "Muneeb Ahmad S/O Muhammad Mukhtar Ahmad",
+       "pmdcNo": "716203-01-M",
+       "marksTotal": 36.243279,
+       "preferenceNo": 4,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Cardiology",
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 30407,
+       "nameFull": "Syed Abdullah Arif S/O ARIF ALI",
+       "pmdcNo": "78741201M",
+       "marksTotal": 36.260487999999995,
+       "preferenceNo": 8,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 30372,
+       "nameFull": "Hamza Hassan S/O Muhammad Hussain",
+       "pmdcNo": "78772001M",
+       "marksTotal": 36.998637,
+       "preferenceNo": 8,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Pediatrics",
+        "hospitalName": "Children Hospital, Lahore",
+        "preferenceNo": 1
+       }
+      },
+      {
+       "applicantId": 30279,
+       "nameFull": "Muhammad Ali Zafar S/O Mamoon Ur Rashid Zafar",
+       "pmdcNo": "785171-01-M",
+       "marksTotal": 37.527272,
+       "preferenceNo": 8,
+       "selected": true,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Dermatology",
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 1
+       }
       }
      ]
     },
@@ -17443,11 +17577,11 @@
      "jobs": 1,
      "candidates": [
       {
-       "applicantId": 28153,
-       "nameFull": "Raza Rasheed S/O Rasheed Ahmed",
-       "pmdcNo": "742983-01-M",
-       "marksTotal": 29.448074,
-       "preferenceNo": 5
+       "applicantId": 29485,
+       "nameFull": "Ahmad Rafique S/O Muhammad Rafique Anjum",
+       "pmdcNo": "78607401M",
+       "marksTotal": 35.590682,
+       "preferenceNo": 4
       }
      ],
      "others": [
@@ -17480,12 +17614,26 @@
        }
       },
       {
+       "applicantId": 28153,
+       "nameFull": "Raza Rasheed S/O Rasheed Ahmed",
+       "pmdcNo": "742983-01-M",
+       "marksTotal": 29.448074,
+       "preferenceNo": 5,
+       "selected": false,
+       "selected_in": {
+        "quotaName": "Punjab",
+        "specialityName": "Pulmonology",
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 6
+       }
+      },
+      {
        "applicantId": 29669,
        "nameFull": "Muhammad Aqib S/O Abdul Majeed",
        "pmdcNo": "873179-01-M",
        "marksTotal": 30.208906,
        "preferenceNo": 19,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Cardiology",
@@ -17499,7 +17647,7 @@
        "pmdcNo": "744522-01-M",
        "marksTotal": 30.398939,
        "preferenceNo": 73,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pediatrics",
@@ -17513,7 +17661,7 @@
        "pmdcNo": "904714-01-M",
        "marksTotal": 30.639242,
        "preferenceNo": 35,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Cardiology",
@@ -17527,7 +17675,7 @@
        "pmdcNo": "87318701M",
        "marksTotal": 30.907607,
        "preferenceNo": 26,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Neurology",
@@ -17541,7 +17689,7 @@
        "pmdcNo": "786073-01-M",
        "marksTotal": 30.927196,
        "preferenceNo": 25,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Dermatology",
@@ -17555,7 +17703,7 @@
        "pmdcNo": "786835-01-M",
        "marksTotal": 30.96947,
        "preferenceNo": 38,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pediatrics",
@@ -17569,7 +17717,7 @@
        "pmdcNo": "88358501M",
        "marksTotal": 31.187884,
        "preferenceNo": 11,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Neurology",
@@ -17583,7 +17731,7 @@
        "pmdcNo": "716203-01-M",
        "marksTotal": 31.243279,
        "preferenceNo": 16,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Cardiology",
@@ -17597,7 +17745,7 @@
        "pmdcNo": "78741201M",
        "marksTotal": 31.260488,
        "preferenceNo": 18,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Cardiology",
@@ -17611,7 +17759,7 @@
        "pmdcNo": "785034-01-M",
        "marksTotal": 31.519469,
        "preferenceNo": 44,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Dermatology",
@@ -17625,7 +17773,7 @@
        "pmdcNo": "758593-01-M",
        "marksTotal": 31.640606,
        "preferenceNo": 31,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Nephrology",
@@ -17639,7 +17787,7 @@
        "pmdcNo": "88354601M",
        "marksTotal": 31.693673,
        "preferenceNo": 25,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pediatrics",
@@ -17653,7 +17801,7 @@
        "pmdcNo": "862182-01-M",
        "marksTotal": 31.948292,
        "preferenceNo": 25,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pediatrics",
@@ -17667,7 +17815,7 @@
        "pmdcNo": "114980-p",
        "marksTotal": 33.476483,
        "preferenceNo": 29,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Nephrology",
@@ -17681,25 +17829,11 @@
        "pmdcNo": "719009-01-M",
        "marksTotal": 35.345963,
        "preferenceNo": 22,
-       "selected": true,
+       "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pediatrics",
         "hospitalName": "Services Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "applicantId": 29485,
-       "nameFull": "Ahmad Rafique S/O Muhammad Rafique Anjum",
-       "pmdcNo": "78607401M",
-       "marksTotal": 35.590682,
-       "preferenceNo": 4,
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
         "preferenceNo": 1
        }
       }
@@ -17755,8 +17889,8 @@
        "selected_in": {
         "quotaName": "Punjab",
         "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 5
+        "hospitalName": "Jinnah Hospital, Lahore",
+        "preferenceNo": 6
        }
       },
       {
@@ -17782,9 +17916,9 @@
        "selected": false,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "specialityName": "Pulmonology",
+        "hospitalName": "Lahore General Hospital, Lahore",
+        "preferenceNo": 4
        }
       },
       {

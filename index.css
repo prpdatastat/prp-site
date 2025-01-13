@@ -468,6 +468,23 @@ span {
   margin-bottom: 10px;
 }
 
+.apphov { 
+  color: rgb(66, 101, 197);
+  font-family: 'light';
+  opacity: 0.5;
+  
+  transition-duration: 0.5s;
+  
+}
+
+.apphov:hover {
+  transform: scale(2,2);
+  cursor: pointer;
+  opacity: 1;
+  text-shadow: 1px 1px 20px #cfc56a;
+  transition-duration: 0.5s;
+  
+}
 .aggMarks {
   font-family: 'light';
   width: max-content;

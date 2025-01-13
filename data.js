@@ -579,3 +579,8 @@ function changeHeadline(data) {
 
     return headline;
 }
+
+function goToId(e) {
+    let txt = e.innerHTML;
+    
+}

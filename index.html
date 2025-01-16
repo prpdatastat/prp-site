@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="navbar notif" id="notif">
-      This is the Estimated Merit List of <span class='important'>2025 Jan</span> Induction based on Official Gazette<br>Accuracy of unofficial Gazette has been displayed below<span class='important'><br>There were some issues with merit list which has been fixed due to unofficial gazette interference<br>Gazette updated dated 13/1/25</div>
+      This is the Official first Merit List of <span class='important'>2025 Jan</span> Induction<br>Accuracy of estimated merit list has been displayed below</div>
         <br>
         <nav class="navbar">
       <div class="logo-container">
@@ -35,17 +35,17 @@
         <div class="counter">
           <div id="FCPS" class="counter-value">500</div>
           <div class="counter-text">FCPS</div>
-          <div class="counter-desc">Accuracy of Unofficial Gazette</div>
+          <div class="counter-desc">Accuracy of Estimated Merit List</div>
         </div>
         <div class="counter">
           <div id="MD" class="counter-value">500</div>
           <div class="counter-text">MD</div>
-          <div class="counter-desc">Accuracy of Unofficial Gazette</div>
+          <div class="counter-desc">Accuracy of Estimated Merit List</div>
         </div>
         <div class="counter">
           <div id="MS" class="counter-value">500</div>
           <div class="counter-text">MS</div>
-          <div class="counter-desc">Accuracy of Unofficial Gazette</div>
+          <div class="counter-desc">Accuracy of Estimated Merit List</div>
         </div>
       
       </div>
@@ -64,12 +64,12 @@
         </label><span class="slidertext"> 2025 Unofficial Merit List</span> 
       </div>  
        -->
-        <h3 class="title">Estimated Merit List based on Official Gazette</h3>
+        <h3 class="title">1st Official Merit List</h3>
         <div class="alert">
-          <h3 class="alert-title">Merit List Issue</h3>
-          <p class="alert-content">There is issue with MS and MD merit list, where <br>Candidates <span class='apphov'>7254 - Sumbal Rafique D/O Muhammad Rafique</span> , <span class='apphov'>18501 - Saira Latif D/O Muhammad Latif</span> , <span class='apphov'>24793 - Khadija Ahmad D/O Ishtiaq Ahmad</span> , <span class='apphov'>27207 - Zuha Khan D/O Muhammad Luqman Khan</span> , <span class='apphov'>21123 - Mahnoor Safdar D/O Safdar Hussain</span> , <span class='apphov'>29533 - Zainab Amir D/O Amir Muzaffer</span> , <span class='apphov'>28483 - Laiba Batool D/O Safdar Bhutta</span> , <span class='apphov'>28584 - Ghulam Shahid S/O MUHAMMAD HUSSAIN</span> , <span class='apphov'>17828 - Haadi Tahir S/O Dr. Tahir Naveed</span> , <span class='apphov'>23330 - Muhammad Asim Zahoor S/O Zahoor Ahmad</span> , <span class='apphov'>25557 - Hafiza Sofia Sarwar D/O Sarwar Murtaza</span> , <span class='apphov'>17815 - Shahzaib Afzal S/O Muhammad Afzal</span> , <span class='apphov'>31085 - Rahmman Udin S/O lali</span> , <span class='apphov'>18398 - Aimen D/O Sheikh Muhammad Tariq</span> , <span class='apphov'>18250 - Hassan Rafique S/O MUHAMMAD RAFIQUE</span> , <span class='apphov'>15719 - Hassan Bin Khalid S/O Khalid Mushtaq</span> , <span class='apphov'>16054 - Ch.M.Makshoof Qasmi S/O Ameer Muhammad Qasmi</span> , <span class='apphov'>28303 - Tauram Javed D/O Muhammad Javed</span> , <span class='apphov'>26805 - Ayesha Arif D/O Muhammad Arif</span> , <span class='apphov'>30255 - Tooba Khalid D/O KHALID BASHIR</span> , <span class='apphov'>20457 - Saba Waris Jalbani D/O Mohammad Waris</span> , <span class='apphov'>28461 - Samrah Mujtaba D/O shakeel ur rehman</span> , <span class='apphov'>17980 - Rimsha Iqbal D/O Iqbal Hussain Chohan</span><br> dont have any preference showing up on data thats why they may not show up on list<br><span class="important">We will keep on updating list as the gazette changes. Do inform us in comments.</span></p>
-          <h3 class="alert-title">Merit List Updated</h3>
-          <p class="alert-content">Merit list is updated according to recent gazette 13/1/25 4:15pm, to see changes in gazette, click <span class="linkableunderline" onclick="gotoUrl('changes.html')">here</span><br><strong>Note:</strong> <span class="important"> These changes might not apparent in gazette on PRP but might show up in few hours or one day</span></p>
+          <!--<h3 class="alert-title">Merit List Issue</h3>-->
+          <p class="alert-content">Click on consent to check their consent</p>
+          <!--<h3 class="alert-title">Merit List Updated</h3>-->
+          <!--<p class="alert-content">Merit list is updated according to recent gazette 13/1/25 4:15pm, to see changes in gazette, click <span class="linkableunderline" onclick="gotoUrl('changes.html')">here</span><br><strong>Note:</strong> <span class="important"> These changes might not apparent in gazette on PRP but might show up in few hours or one day</span></p>-->
         </div>
         </h3>
       <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
@@ -229,7 +229,7 @@
             merit[cand].specialityName,
             merit[cand].hospitalName,
             merit[cand].marksTotal,
-            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkJoining("+merit[cand].applicantId+")'>Check Joining</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
+            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkConsent("+merit[cand].applicantId+")'>Check Consent</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
           ]);
       }
       jQuery("#statTable").DataTable().draw();

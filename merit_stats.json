@@ -1,14 +1,14 @@
 {
  "FCPS": {
-  "accuracy": 78.97350993377484,
-  "correctCandidates": 477
+  "accuracy": 98.51239669421487,
+  "correctCandidates": 596
  },
  "MS": {
-  "accuracy": 61.53846153846154,
+  "accuracy": 100.0,
   "correctCandidates": 24
  },
  "MD": {
-  "accuracy": 71.28712871287128,
-  "correctCandidates": 72
+  "accuracy": 100.0,
+  "correctCandidates": 81
  }
 }

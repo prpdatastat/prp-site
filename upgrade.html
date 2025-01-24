@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRP Statistics</title>
+    
+    <script src="https://unpkg.com/sync-fetch"></script> 
+    <link rel="stylesheet" href="index.css" />
+    
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="data.js"></script>
+    <link
+      href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.js"></script>
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img class="logo"  onclick="gotoUrl()" src="logo.png" />
+      </div>
+    </nav>
+    
+    <div class="main_container">
+      
+    <div class="info">
+        <h1 id="hospital-name">
+            Changes in Upcoming 3rd Merit List
+        </h1>
+        <div class="share-link">
+          <div class="share" onmousedown="shareUrl()"><img src="share.png"></div>
+        </div>
+        <p>
+            Changes expected in Upcoming 3rd Merit List. <small class="small-heading">FCPS ONLY</small>
+          </p>
+        
+
+
+          <div class="filters">           
+            <select
+              onchange="updateList(event);"
+              class="filter-item"
+              name="speciality"
+              id="quota"
+            >
+              <option value="" selected>Quota</option>
+            </select>
+            <select
+              onchange="updateList(event);"
+              class="filter-item"
+              name="quota"
+              id="speciality"
+            >
+              <option value="" selected>Speciality</option>
+            </select>
+            <select
+              onchange="updateList(event);"
+              class="filter-item"
+              name="quota"
+              id="hospital"
+            >
+              <option value="" elected>Hospital</option>
+            </select>
+          </div>
+
+    <table class="stat-table" style="width: 100%" id="statTable">
+      <thead>
+        <tr>
+          <th>Quota</th>
+          <th>Speciality</th>
+          <th>Hospital</th>
+          <th>Changes</th>
+          <th>Previous</th>
+          <th>Reason</th>
+        </tr>
+      </thead>
+      <tbody id="dataRows"></tbody>
+    </table>
+    <!-- begin wwww.htmlcommentbox.com -->
+     <br>
+     <br>
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+<script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24mzyYuuZBe1GhURDyiqYE4%2F"+"&opts=16798&num=10&ts=1736005452841");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+
+    <div class="footer">
+      <span>Made with 💓 in <strong>HTML</strong>  &  <strong>JS</strong> by <img src="github.png">reko-beep</span>
+    </div>
+    </div>
+    <script>    
+
+    let default_filter = {
+      program: "FCPS",
+      quota: "",
+      hospital: "",
+      speciality: "",
+    };
+     
+    jQuery(document).ready(function () {    
+
+        
+      console.log(default_filter)
+    const filters = document.getElementsByTagName("select");
+    console.log(filters)
+    for (filter in filters) {      
+      console.log(filter.id)
+      let options = getOptions(filters[filter].id, default_filter.hospital);
+      console.log("options", options);
+      for (opt in options) {
+        filters[filter].innerHTML +=
+          "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
+      }
+    }
+    
+    for (key in default_filter) {
+      const ele = document.getElementById(key);
+      ele.value = default_filter[key];
+    }
+     
+      jQuery("#statTable").DataTable({
+        order: [[6, 'asc']],
+        paging: true,
+        searching: true,
+        ordering: true,
+        lengthMenu: [10, 25, 50, { label: "All", value: -1 }],
+        lengthChange: true,        
+        columns: [
+          { width: "5%" },
+          { width: "20%" },
+          { width: "20%" },
+          { width: "20%" },
+          { width: "20%" },
+          { width: "20%" },
+          
+        ]
+      });
+      changeProgramUpg();
+    });
+
+
+    function changeProgramUpg() {
+      let changes = getUpgList(default_filter.quota, default_filter.speciality, default_filter.hospital);
+      console.log(changes)
+      jQuery("#statTable").DataTable().clear().draw();
+      for (cand in changes) {
+        console.log(changes[cand])
+        
+          jQuery("#statTable")
+          .DataTable()
+          .row.add([
+          changes[cand].quotaName,
+          changes[cand].specialityName,
+          changes[cand].hospitalName,
+          changes[cand].change,
+          changes[cand].previous,
+          changes[cand].status
+          ]);
+
+        
+       
+      }
+      
+      jQuery("#statTable").DataTable().draw();
+     
+}
+
+
+    function shareUrl() {
+      let url = new URLSearchParams();
+      url.append('hospital', default_filter['hospital'])
+      navigator.clipboard.writeText(window.location.href.split('?')[0] +"?"+url.toString());
+    // Alert the copied text
+      alert("url copied");
+    }
+    function updateList(e) {
+      default_filter[e.target.id] = e.target.value;
+      changeProgramUpg();
+    }
+  
+
+
+
+    </script>
+  </body>
+</html>

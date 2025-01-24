@@ -19,11 +19,61 @@ const prevcandList = load_data('./cand_data.json')
 //const fcpsMeritUnOfficial = load_data('./2025/fcps_merit.json')
 //const msMeritUnOfficial = load_data('./2025/ms_merit.json')
 //const mdMeritUnOfficial = load_data('./2025/md_merit.json')
-
+const upgList = load_data('./upgradationEstimate.json')
 let candData = prevcandList
 let fcpsMerit = prevfcpsMeritList
 let msMerit = prevMsMeritList
 let mdMerit = prevMdMeritList
+
+function getUpgList(quot = '', spe = '', hos = '') {
+    let  result = []
+    for (quota in upgList){
+        if (quota === quot || quot === '')
+        {
+           for (spec in upgList[quota]) {
+            if (spec === spe || spe === '')
+            {
+            for (hosp in upgList[quota][spec]) { 
+                if (hosp === hos || hos === '')
+                {
+                if (upgList[quota][spec][hosp].new.length == 0 && upgList[quota][spec][hosp].prev.length == 0) {
+                    result.push({
+                        quotaName : quota,
+                        specialityName : spec,
+                        hospitalName : hosp,
+                        change : 'Unchanged',
+                        previous : 'Unchanged',
+                        status : 'Same candidate!'
+                    })
+                }
+                else {
+                    for (let i = 0; i < upgList[quota][spec][hosp].new.length; i++) {
+                        let statusI = '';
+                        if (upgList[quota][spec][hosp].prev[i].consent == 1) {
+                            statusI = 'Previous candidate <span class="apphov"> <strong>upgraded</span> to higher preference of their choice';
+                        }
+                        if (upgList[quota][spec][hosp].prev[i].consent == 2) {
+                            statusI = '<span class="infos"> <strong>Previous candidate didnot give consent</strong></span>';
+                        }
+                        result.push({
+                            quotaName : quota,
+                            specialityName : spec,
+                            hospitalName : hosp,
+                            change : upgList[quota][spec][hosp].new[i].nameFull+"<br>Selected at preference <span class='important'>"+upgList[quota][spec][hosp].new[i].preferenceNo+"</span><br>with marks <span class='apphov'>"+upgList[quota][spec][hosp].new[i].marksTotal+"</span>",
+                            previous : upgList[quota][spec][hosp].prev[i].nameFull+"<br>Selected at preference <span class='important'>"+upgList[quota][spec][hosp].prev[i].preferenceNo+"</span><br>with marks <span class='apphov'>"+upgList[quota][spec][hosp].prev[i].marksTotal+"</span>",
+                            status: statusI
+                        })
+                      }                   
+
+                }
+            }
+        }
+    }
+}
+        }
+    }
+    return result
+}
 
 function toggleMerit() {    
     localStorage.setItem('viewUnofficial', !localStorage.getItem('viewUnofficial'));

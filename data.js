@@ -438,7 +438,7 @@ async function getSchedule() {
         console.log('error');
     }
     }
-async function getConsent(applicantId, round = 1) { 
+async function getConsent(applicantId, round = 2) { 
      
 
         try {

@@ -58,8 +58,31 @@
      "prev": []
     },
     "DHQ Hospital, DG Khan": {
-     "new": [],
-     "prev": []
+     "new": [
+      {
+       "nameFull": "Aiman Kainat D/O Abuzar Ghaffari",
+       "marksTotal": 29.436136,
+       "pmdcNo": "782725_01_M",
+       "applicantId": 28622,
+       "preferenceNo": 17,
+       "quotaName": "Punjab",
+       "specialityName": "Anaesthesia",
+       "hospitalName": "DHQ Hospital, DG Khan",
+       "jobs": 1,
+       "placed": 0,
+       "consent": 3
+      }
+     ],
+     "prev": [
+      {
+       "nameFull": "Fahmida Jabeen D/O Muhammad Dilshad Hamid",
+       "marksTotal": 29.913387,
+       "preferenceNo": 25,
+       "pmdcNo": "108924-P",
+       "applicantId": 26295,
+       "consent": 1
+      }
+     ]
     },
     "DHQ Hospital, Gujranwala": {
      "new": [],
@@ -74,8 +97,30 @@
      "prev": []
     },
     "Govt.Teaching Hospital , Shahdra , Lahore": {
-     "new": [],
-     "prev": []
+     "new": [
+      {
+       "nameFull": "Saira Afzal D/O Muhammad Afzal",
+       "marksTotal": 30.187424,
+       "pmdcNo": "761263-01-M",
+       "applicantId": 27366,
+       "preferenceNo": 10,
+       "quotaName": "Punjab",
+       "specialityName": "Anaesthesia",
+       "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore",
+       "jobs": 1,
+       "placed": 0
+      }
+     ],
+     "prev": [
+      {
+       "nameFull": "Sana Riaz D/O MUHAMMAD RIAZ SHAHID",
+       "marksTotal": 30.220833,
+       "preferenceNo": 9,
+       "pmdcNo": "758831-01-M",
+       "applicantId": 30532,
+       "consent": 2
+      }
+     ]
     },
     "Holy Family Hospital, Rawalpindi": {
      "new": [],
@@ -106,12 +151,76 @@
      "prev": []
     },
     "Punjab Institute of Neurosciences, Lahore": {
-     "new": [],
-     "prev": []
+     "new": [
+      {
+       "nameFull": "Muhammad Hamza S/O Muhammad Amin",
+       "marksTotal": 30.225,
+       "pmdcNo": "761022-01-M",
+       "applicantId": 29971,
+       "preferenceNo": 8,
+       "quotaName": "Punjab",
+       "specialityName": "Anaesthesia",
+       "hospitalName": "Punjab Institute of Neurosciences, Lahore",
+       "jobs": 1,
+       "placed": 0
+      }
+     ],
+     "prev": [
+      {
+       "nameFull": "Muhammad Kaleem Tariq S/O Ahmad Tariq",
+       "marksTotal": 30.335249,
+       "preferenceNo": 7,
+       "pmdcNo": "716176-01-M",
+       "applicantId": 27914,
+       "consent": 2
+      }
+     ]
     },
     "Rawalpindi Institute of Cardiology , Rawalpindi": {
-     "new": [],
-     "prev": []
+     "new": [
+      {
+       "nameFull": "Fahmida Jabeen D/O Muhammad Dilshad Hamid",
+       "marksTotal": 29.913387,
+       "pmdcNo": "108924-P",
+       "applicantId": 26295,
+       "preferenceNo": 20,
+       "quotaName": "Punjab",
+       "specialityName": "Anaesthesia",
+       "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi",
+       "jobs": 2,
+       "placed": 0
+      },
+      {
+       "nameFull": "Eza Salam W/O Mahr Muhammad Haseeb Sultan",
+       "marksTotal": 29.867879,
+       "pmdcNo": "721692-01-M",
+       "applicantId": 26787,
+       "preferenceNo": 7,
+       "quotaName": "Punjab",
+       "specialityName": "Anaesthesia",
+       "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi",
+       "jobs": 2,
+       "placed": 1
+      }
+     ],
+     "prev": [
+      {
+       "nameFull": "Muhammad Hamza S/O Muhammad Amin",
+       "marksTotal": 30.225,
+       "preferenceNo": 9,
+       "pmdcNo": "761022-01-M",
+       "applicantId": 29971,
+       "consent": 1
+      },
+      {
+       "nameFull": "Saira Afzal D/O Muhammad Afzal",
+       "marksTotal": 30.187424,
+       "preferenceNo": 11,
+       "pmdcNo": "761263-01-M",
+       "applicantId": 27366,
+       "consent": 1
+      }
+     ]
     },
     "Sahiwal Teaching Hospital, Sahiwal": {
      "new": [],
@@ -321,8 +430,31 @@
      "prev": []
     },
     "Rawalpindi Institute of Cardiology , Rawalpindi": {
-     "new": [],
-     "prev": []
+     "new": [
+      {
+       "nameFull": "Sidra Fatima D/O Abdul Ghafoor",
+       "marksTotal": 29.37277,
+       "pmdcNo": "799058-01-M",
+       "applicantId": 29069,
+       "preferenceNo": 29,
+       "quotaName": "Punjab",
+       "specialityName": "Cardio Thoracic Anesthesia",
+       "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi",
+       "jobs": 1,
+       "placed": 0,
+       "consent": 3
+      }
+     ],
+     "prev": [
+      {
+       "nameFull": "Eza Salam W/O Mahr Muhammad Haseeb Sultan",
+       "marksTotal": 29.867879,
+       "preferenceNo": 9,
+       "pmdcNo": "721692-01-M",
+       "applicantId": 26787,
+       "consent": 1
+      }
+     ]
     }
    },
    "Cardiology": {

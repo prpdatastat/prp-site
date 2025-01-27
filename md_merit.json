@@ -504,12 +504,12 @@
        "quotaName": "Punjab",
        "specialityName": "Cardiology",
        "hospitalName": "Jinnah Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Children Hospital, Lahore",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -1347,12 +1347,12 @@
        "quotaName": "Punjab",
        "specialityName": "Cardiology",
        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Children Hospital, Lahore",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -2626,12 +2626,12 @@
        "quotaName": "Punjab",
        "specialityName": "Dermatology",
        "hospitalName": "Jinnah Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Children Hospital, Lahore",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -6237,12 +6237,12 @@
        "quotaName": "Punjab",
        "specialityName": "Medicine",
        "hospitalName": "Services Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Children Hospital, Lahore",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -8036,12 +8036,12 @@
        "quotaName": "Punjab",
        "specialityName": "Neurology",
        "hospitalName": "Punjab Institute of Neurosciences, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Children Hospital, Lahore",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -8677,13 +8677,6 @@
     "Children Hospital, Lahore": {
      "candidates": [
       {
-       "nameFull": "Hamza Hassan S/O Muhammad Hussain",
-       "marksTotal": 31.998637,
-       "preferenceNo": 1,
-       "pmdcNo": "78772001M",
-       "applicantId": 30372
-      },
-      {
        "nameFull": "Muhammad Hashim Iqbal S/O MUHAMMAD IQBAL",
        "marksTotal": 30.96947,
        "preferenceNo": 1,
@@ -8722,6 +8715,23 @@
        "pmdcNo": "79848001M",
        "applicantId": 29700,
        "preferenceNo": 2,
+       "quotaName": "Punjab",
+       "specialityName": "Pediatrics",
+       "hospitalName": "Children Hospital, Lahore",
+       "selected": false,
+       "selected_in": {
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
+       }
+      },
+      {
+       "nameFull": "Hamza Hassan S/O Muhammad Hussain",
+       "marksTotal": 31.998637,
+       "pmdcNo": "78772001M",
+       "applicantId": 30372,
+       "preferenceNo": 1,
        "quotaName": "Punjab",
        "specialityName": "Pediatrics",
        "hospitalName": "Children Hospital, Lahore",

@@ -25,18 +25,18 @@ let fcpsMerit = prevfcpsMeritList
 let msMerit = prevMsMeritList
 let mdMerit = prevMdMeritList
 
-function getUpgList(quot = '', spe = '', hos = '') {
+function getUpgList(prog, quot = '', spe = '', hos = '') {
     let  result = []
-    for (quota in upgList){
+    for (quota in upgList[prog]){
         if (quota === quot || quot === '')
         {
-           for (spec in upgList[quota]) {
+           for (spec in upgList[prog][quota]) {
             if (spec === spe || spe === '')
             {
-            for (hosp in upgList[quota][spec]) { 
+            for (hosp in upgList[prog][quota][spec]) { 
                 if (hosp === hos || hos === '')
                 {
-                if (upgList[quota][spec][hosp].new.length == 0 && upgList[quota][spec][hosp].prev.length == 0) {
+                if (upgList[prog][quota][spec][hosp].new.length == 0 && upgList[prog][quota][spec][hosp].prev.length == 0) {
                     result.push({
                         quotaName : quota,
                         specialityName : spec,
@@ -47,20 +47,20 @@ function getUpgList(quot = '', spe = '', hos = '') {
                     })
                 }
                 else {
-                    for (let i = 0; i < upgList[quota][spec][hosp].new.length; i++) {
+                    for (let i = 0; i < upgList[prog][quota][spec][hosp].new.length; i++) {
                         let statusI = '';
-                        if (upgList[quota][spec][hosp].prev[i].consent == 1) {
+                        if (upgList[prog][quota][spec][hosp].prev[i].consent == 1) {
                             statusI = 'Previous candidate <span class="apphov"> <strong>upgraded</span> to higher preference of their choice';
                         }
-                        if (upgList[quota][spec][hosp].prev[i].consent == 2) {
+                        if (upgList[prog][quota][spec][hosp].prev[i].consent == 2) {
                             statusI = '<span class="infos"> <strong>Previous candidate didnot give consent</strong></span>';
                         }
                         result.push({
                             quotaName : quota,
                             specialityName : spec,
                             hospitalName : hosp,
-                            change : upgList[quota][spec][hosp].new[i].nameFull+"<br>Selected at preference <span class='important'>"+upgList[quota][spec][hosp].new[i].preferenceNo+"</span><br>with marks <span class='apphov'>"+upgList[quota][spec][hosp].new[i].marksTotal+"</span>",
-                            previous : upgList[quota][spec][hosp].prev[i].nameFull+"<br>Selected at preference <span class='important'>"+upgList[quota][spec][hosp].prev[i].preferenceNo+"</span><br>with marks <span class='apphov'>"+upgList[quota][spec][hosp].prev[i].marksTotal+"</span>",
+                            change : upgList[prog][quota][spec][hosp].new[i].nameFull+"<br>Selected at preference <span class='important'>"+upgList[prog][quota][spec][hosp].new[i].preferenceNo+"</span><br>with marks <span class='apphov'>"+upgList[prog][quota][spec][hosp].new[i].marksTotal+"</span>",
+                            previous : upgList[prog][quota][spec][hosp].prev[i].nameFull+"<br>Selected at preference <span class='important'>"+upgList[prog][quota][spec][hosp].prev[i].preferenceNo+"</span><br>with marks <span class='apphov'>"+upgList[prog][quota][spec][hosp].prev[i].marksTotal+"</span>",
                             status: statusI
                         })
                       }                   

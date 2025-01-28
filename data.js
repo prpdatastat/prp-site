@@ -45,6 +45,28 @@ function getUpgList(prog, quot = '', spe = '', hos = '') {
                         previous : 'Unchanged',
                         status : 'Same candidate!'
                     })
+                if (upgList[prog][quota][spec][hosp].new.length == 0) {
+                    if (upgList[prog][quota][spec][hosp].prev.length != 0) {
+                        for (let i = 0; i < upgList[prog][quota][spec][hosp].new.length; i++) {
+                            let statusI = '';
+                            if (upgList[prog][quota][spec][hosp].prev[i].consent == 1) {
+                                statusI = 'Previous candidate <span class="apphov"> <strong>upgraded</span> to higher preference of their choice';
+                            }
+                            if (upgList[prog][quota][spec][hosp].prev[i].consent == 2) {
+                                statusI = '<span class="infos"> <strong>Previous candidate didnot give consent</strong></span>';
+                            }
+                            result.push({
+                                quotaName : quota,
+                                specialityName : spec,
+                                hospitalName : hosp,
+                                change : 'Unchanged',
+                                previous : upgList[prog][quota][spec][hosp].prev[i].nameFull+"<br>Selected at preference <span class='important'>"+upgList[prog][quota][spec][hosp].prev[i].preferenceNo+"</span><br>with marks <span class='apphov'>"+upgList[prog][quota][spec][hosp].prev[i].marksTotal+"</span>",
+                                status: 'Seat left Vacant'
+                            })
+                          }  
+                    }
+
+                }
                 }
                 else {
                     for (let i = 0; i < upgList[prog][quota][spec][hosp].new.length; i++) {

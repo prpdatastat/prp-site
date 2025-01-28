@@ -15,58 +15,12 @@
      "prev": []
     },
     "Bahawal Victoria Hospital, Bahawalpur": {
-     "new": [
-      {
-       "nameFull": "Nimra Sajjad D/O Sajjad Ali",
-       "marksTotal": 35.851667,
-       "pmdcNo": "78350801M",
-       "applicantId": 29992,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Asad Ali Raza S/O Ashiq Ali",
-       "marksTotal": 37.076894,
-       "preferenceNo": 7,
-       "pmdcNo": "783732-01-M",
-       "applicantId": 30027,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Benazir Bhutto Hospital, Rawalpindi": {
-     "new": [
-      {
-       "nameFull": "Asnia Saeed D/O Saeed Ahmed Khan",
-       "marksTotal": 27.43125,
-       "pmdcNo": "118786-P",
-       "applicantId": 31041,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Benazir Bhutto Hospital, Rawalpindi",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Arfeen Zahra D/O MUHAMMAD JAVED IQBAL KHAN",
-       "marksTotal": 36.643958,
-       "preferenceNo": 1,
-       "pmdcNo": "861481-01-M",
-       "applicantId": 30457,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Children Hospital, Lahore": {
      "new": [
@@ -76,18 +30,6 @@
        "pmdcNo": "761263-01-M",
        "applicantId": 27366,
        "preferenceNo": 2,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Children Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      },
-      {
-       "nameFull": "Muhammad Shaheer Chaudhary S/O MUHAMMAD SHOAIB",
-       "marksTotal": 30.039902,
-       "pmdcNo": "798292-01-M",
-       "applicantId": 30463,
-       "preferenceNo": 6,
        "quotaName": "Punjab",
        "specialityName": "Anaesthesia",
        "hospitalName": "Children Hospital, Lahore",
@@ -103,14 +45,6 @@
        "pmdcNo": "96410-P",
        "applicantId": 22356,
        "consent": 2
-      },
-      {
-       "nameFull": "Hina Irshad Ali Shah W/O MUHAMMAD ARQAM",
-       "marksTotal": 30.608448,
-       "preferenceNo": 3,
-       "pmdcNo": "862386-01-M",
-       "applicantId": 30192,
-       "consent": 1
       }
      ]
     },
@@ -140,29 +74,9 @@
        "jobs": 1,
        "placed": 0,
        "consent": 3
-      },
-      {
-       "nameFull": "Sulaiman Idrees S/O Muhammad Idrees",
-       "marksTotal": 28.473139,
-       "pmdcNo": "757198-01-M",
-       "applicantId": 28656,
-       "preferenceNo": 10,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "DHQ Hospital, Gujranwala",
-       "jobs": 1,
-       "placed": 0
       }
      ],
      "prev": [
-      {
-       "nameFull": "Ume Farwa D/O MUQARAB NAWAZ",
-       "marksTotal": 29.901775,
-       "preferenceNo": 11,
-       "pmdcNo": "755824-01-M",
-       "applicantId": 29007,
-       "consent": 1
-      },
       {
        "nameFull": "Maham Idrees D/O Idrees Iqbal",
        "marksTotal": 29.79804,
@@ -174,67 +88,21 @@
      ]
     },
     "DHQ Rawalpindi": {
-     "new": [
-      {
-       "nameFull": "Uzma Naseem D/O MUHAMMAD YAR",
-       "marksTotal": 29.066591,
-       "pmdcNo": "850995-01-M",
-       "applicantId": 30533,
-       "preferenceNo": 18,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "DHQ Rawalpindi",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Ayezah Zulfiqar D/O Zulfiqar Ahmed",
-       "marksTotal": 35.612639,
-       "preferenceNo": 2,
-       "pmdcNo": "841026-01-M",
-       "applicantId": 31170,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "DHQ Teaching Hospital, Sargodha": {
-     "new": [
-      {
-       "nameFull": "Ridda Fatima D/O Allah Diwaya",
-       "marksTotal": 27.356007,
-       "pmdcNo": "105314-P",
-       "applicantId": 16751,
-       "preferenceNo": 29,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "DHQ Teaching Hospital, Sargodha",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Sulaiman Idrees S/O Muhammad Idrees",
-       "marksTotal": 33.473139,
-       "preferenceNo": 13,
-       "pmdcNo": "757198-01-M",
-       "applicantId": 28656,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Govt.Teaching Hospital , Shahdra , Lahore": {
      "new": [
       {
-       "nameFull": "Fahmida Jabeen D/O Muhammad Dilshad Hamid",
-       "marksTotal": 29.913387,
-       "pmdcNo": "108924-P",
-       "applicantId": 26295,
-       "preferenceNo": 13,
+       "nameFull": "Ume Habiba D/O Rana Ghulam Mustafa",
+       "marksTotal": 29.954967,
+       "pmdcNo": "757688-01-M",
+       "applicantId": 30499,
+       "preferenceNo": 15,
        "quotaName": "Punjab",
        "specialityName": "Anaesthesia",
        "hospitalName": "Govt.Teaching Hospital , Shahdra , Lahore",
@@ -256,6 +124,18 @@
     "Holy Family Hospital, Rawalpindi": {
      "new": [
       {
+       "nameFull": "Fahmida Jabeen D/O Muhammad Dilshad Hamid",
+       "marksTotal": 29.913387,
+       "pmdcNo": "108924-P",
+       "applicantId": 26295,
+       "preferenceNo": 18,
+       "quotaName": "Punjab",
+       "specialityName": "Anaesthesia",
+       "hospitalName": "Holy Family Hospital, Rawalpindi",
+       "jobs": 2,
+       "placed": 0
+      },
+      {
        "nameFull": "Eza Salam W/O Mahr Muhammad Haseeb Sultan",
        "marksTotal": 29.867879,
        "pmdcNo": "721692-01-M",
@@ -264,44 +144,11 @@
        "quotaName": "Punjab",
        "specialityName": "Anaesthesia",
        "hospitalName": "Holy Family Hospital, Rawalpindi",
-       "jobs": 3,
+       "jobs": 2,
        "placed": 1
-      },
-      {
-       "nameFull": "Azka Naeem D/O Naeem Ahmad Latif",
-       "marksTotal": 29.551742,
-       "pmdcNo": "787762-01-M",
-       "applicantId": 30164,
-       "preferenceNo": 9,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Holy Family Hospital, Rawalpindi",
-       "jobs": 2,
-       "placed": 0
-      },
-      {
-       "nameFull": "Tahira Jabeen D/O Muhammad Yaseen",
-       "marksTotal": 28.446809,
-       "pmdcNo": "77781801M",
-       "applicantId": 29613,
-       "preferenceNo": 21,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Holy Family Hospital, Rawalpindi",
-       "jobs": 2,
-       "placed": 1,
-       "consent": 3
       }
      ],
      "prev": [
-      {
-       "nameFull": "Anahita Saher D/O Abdul Aziz",
-       "marksTotal": 34.328655,
-       "preferenceNo": 7,
-       "pmdcNo": "86191401M",
-       "applicantId": 29666,
-       "consent": 2
-      },
       {
        "nameFull": "Aneela Rubab D/O Raja Imdad Hussain",
        "marksTotal": 30.624,
@@ -347,111 +194,33 @@
      ]
     },
     "Jinnah Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Ali Abbas S/O Naseem Abbas",
-       "marksTotal": 30.761289,
-       "pmdcNo": "761386-01-M",
-       "applicantId": 29557,
-       "preferenceNo": 5,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Jinnah Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Haleema Younus D/O MUHAMMAD YOUNUS",
-       "marksTotal": 31.273159,
-       "preferenceNo": 1,
-       "pmdcNo": "872811-01-M",
-       "applicantId": 30603,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Lahore General Hospital, Lahore": {
      "new": [],
      "prev": []
     },
     "Mayo Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Ehtisham Sohail Khan S/O Sohail Anjum Khan",
-       "marksTotal": 30.488889,
-       "pmdcNo": "797987-01-M",
-       "applicantId": 30115,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Ali Abbas S/O Naseem Abbas",
-       "marksTotal": 30.761289,
-       "preferenceNo": 6,
-       "pmdcNo": "761386-01-M",
-       "applicantId": 29557,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Nishtar Hospital, Multan": {
      "new": [],
      "prev": []
     },
     "Punjab Institute of Cardiology, Lahore": {
-     "new": [
-      {
-       "nameFull": "Muhammad Hamza S/O Muhammad Amin",
-       "marksTotal": 30.225,
-       "pmdcNo": "761022-01-M",
-       "applicantId": 29971,
-       "preferenceNo": 7,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Punjab Institute of Cardiology, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Ehtisham Sohail Khan S/O Sohail Anjum Khan",
-       "marksTotal": 30.488889,
-       "preferenceNo": 5,
-       "pmdcNo": "797987-01-M",
-       "applicantId": 30115,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Punjab Institute of Neurosciences, Lahore": {
      "new": [
       {
-       "nameFull": "Ume Farwa D/O MUQARAB NAWAZ",
-       "marksTotal": 29.901775,
-       "pmdcNo": "755824-01-M",
-       "applicantId": 29007,
+       "nameFull": "Muhammad Shaheer Chaudhary S/O MUHAMMAD SHOAIB",
+       "marksTotal": 30.039902,
+       "pmdcNo": "798292-01-M",
+       "applicantId": 30463,
        "preferenceNo": 8,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Punjab Institute of Neurosciences, Lahore",
-       "jobs": 1,
-       "placed": 0
-      },
-      {
-       "nameFull": "Maham Idrees D/O Idrees Iqbal",
-       "marksTotal": 29.79804,
-       "pmdcNo": "758291-01-M",
-       "applicantId": 30677,
-       "preferenceNo": 5,
        "quotaName": "Punjab",
        "specialityName": "Anaesthesia",
        "hospitalName": "Punjab Institute of Neurosciences, Lahore",
@@ -467,19 +236,23 @@
        "pmdcNo": "756255-01-M",
        "applicantId": 25882,
        "consent": 1
-      },
-      {
-       "nameFull": "Muhammad Hamza S/O Muhammad Amin",
-       "marksTotal": 30.225,
-       "preferenceNo": 8,
-       "pmdcNo": "761022-01-M",
-       "applicantId": 29971,
-       "consent": 1
       }
      ]
     },
     "Rawalpindi Institute of Cardiology , Rawalpindi": {
      "new": [
+      {
+       "nameFull": "Maham Idrees D/O Idrees Iqbal",
+       "marksTotal": 29.79804,
+       "pmdcNo": "758291-01-M",
+       "applicantId": 30677,
+       "preferenceNo": 19,
+       "quotaName": "Punjab",
+       "specialityName": "Anaesthesia",
+       "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi",
+       "jobs": 2,
+       "placed": 0
+      },
       {
        "nameFull": "Qura-Tul-Ain D/O Muhammad umer",
        "marksTotal": 29.634622,
@@ -490,20 +263,7 @@
        "specialityName": "Anaesthesia",
        "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi",
        "jobs": 2,
-       "placed": 0
-      },
-      {
-       "nameFull": "Huma Qadeer D/O Rana Abdul Qadeer",
-       "marksTotal": 28.041633,
-       "pmdcNo": "77688301M",
-       "applicantId": 29942,
-       "preferenceNo": 23,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
+       "placed": 1
       }
      ],
      "prev": [
@@ -536,16 +296,17 @@
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "new": [
       {
-       "nameFull": "Kashaf Saeed D/O Rana Saeed Ahmad",
-       "marksTotal": 31.608663,
-       "pmdcNo": "86159701M",
-       "applicantId": 30048,
-       "preferenceNo": 1,
+       "nameFull": "Muhammad Ahmed Alam S/O Mujeeb Ur Rehman",
+       "marksTotal": 33.685101,
+       "pmdcNo": "946283-01-M",
+       "applicantId": 29571,
+       "preferenceNo": 21,
        "quotaName": "Punjab",
        "specialityName": "Anaesthesia",
        "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan",
        "jobs": 1,
-       "placed": 0
+       "placed": 0,
+       "consent": 3
       }
      ],
      "prev": [
@@ -560,59 +321,14 @@
      ]
     },
     "Sir Ganga Ram Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Hina Irshad Ali Shah W/O MUHAMMAD ARQAM",
-       "marksTotal": 35.608447999999996,
-       "pmdcNo": "862386-01-M",
-       "applicantId": 30192,
-       "preferenceNo": 2,
-       "quotaName": "Punjab",
-       "specialityName": "Anaesthesia",
-       "hospitalName": "Sir Ganga Ram Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Kashaf Saeed D/O Rana Saeed Ahmad",
-       "marksTotal": 36.608663,
-       "preferenceNo": 2,
-       "pmdcNo": "86159701M",
-       "applicantId": 30048,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     }
    },
    "Anatomy": {
     "Services Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Amna Asad D/O Asad Maseel",
-       "marksTotal": 34.913864000000004,
-       "pmdcNo": "87297001M",
-       "applicantId": 29999,
-       "preferenceNo": 40,
-       "quotaName": "Punjab",
-       "specialityName": "Anatomy",
-       "hospitalName": "Services Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Hadia Iqbal D/O Muhammad Iqbal Huma",
-       "marksTotal": 35.366429,
-       "preferenceNo": 19,
-       "pmdcNo": "908691-01-M",
-       "applicantId": 30402,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Sir Ganga Ram Hospital, Lahore": {
      "new": [],
@@ -656,23 +372,11 @@
     "Choudhary Prevez Ilahi Institute of Cardiology , Multan": {
      "new": [
       {
-       "nameFull": "Muhammad Hamza Ismail S/O Muhammad Ismail",
-       "marksTotal": 30.569122,
-       "pmdcNo": "751537-01-M",
-       "applicantId": 25460,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiac Surgery",
-       "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
-       "jobs": 1,
-       "placed": 0
-      },
-      {
-       "nameFull": "Attiq Ur Rahman S/O Khadim hussain",
-       "marksTotal": 30.364167,
-       "pmdcNo": "784876-01-M",
-       "applicantId": 30814,
-       "preferenceNo": 8,
+       "nameFull": "Ambreen Rubab Haider D/O Sultan Haider",
+       "marksTotal": 30.577912,
+       "pmdcNo": "784274-01-M",
+       "applicantId": 30922,
+       "preferenceNo": 3,
        "quotaName": "Punjab",
        "specialityName": "Cardiac Surgery",
        "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
@@ -682,14 +386,6 @@
       }
      ],
      "prev": [
-      {
-       "nameFull": "Mahnoor D/O Muhammad Mukhtiar Hussain Khan",
-       "marksTotal": 31.474621,
-       "preferenceNo": 2,
-       "pmdcNo": "79797801M",
-       "applicantId": 29715,
-       "consent": 2
-      },
       {
        "nameFull": "Syed Haseeb Asghar Miana S/O Mian Ahmad Ali",
        "marksTotal": 30.693571,
@@ -711,21 +407,33 @@
        "quotaName": "Punjab",
        "specialityName": "Cardiac Surgery",
        "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad",
-       "jobs": 2,
-       "placed": 1,
+       "jobs": 3,
+       "placed": 0,
        "consent": 3
       },
       {
-       "nameFull": "Muhammad Talha Ayaz S/O Muhammad Ayaz",
-       "marksTotal": 30.291782,
-       "pmdcNo": "778684-01-M",
-       "applicantId": 30921,
-       "preferenceNo": 3,
+       "nameFull": "Ayesha Khan D/O Tahir Firoze Khan",
+       "marksTotal": 30.474672,
+       "pmdcNo": "783608-01-M",
+       "applicantId": 30284,
+       "preferenceNo": 23,
        "quotaName": "Punjab",
        "specialityName": "Cardiac Surgery",
        "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad",
        "jobs": 3,
-       "placed": 0,
+       "placed": 1
+      },
+      {
+       "nameFull": "Muhammad Mazin Sajjad S/O Sajjad Ahmad",
+       "marksTotal": 30.363485,
+       "pmdcNo": "78799901M",
+       "applicantId": 29495,
+       "preferenceNo": 71,
+       "quotaName": "Punjab",
+       "specialityName": "Cardiac Surgery",
+       "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad",
+       "jobs": 3,
+       "placed": 2,
        "consent": 3
       },
       {
@@ -737,21 +445,8 @@
        "quotaName": "Punjab",
        "specialityName": "Cardiac Surgery",
        "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad",
-       "jobs": 3,
-       "placed": 1,
-       "consent": 3
-      },
-      {
-       "nameFull": "Syeda Rehmat Bibi D/O Syed Muhammad Akbar Shah",
-       "marksTotal": 30.249167,
-       "pmdcNo": "79799201M",
-       "applicantId": 29712,
-       "preferenceNo": 45,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiac Surgery",
-       "hospitalName": "Faisalabad Institute of Cardiology, Faisalabad",
-       "jobs": 3,
-       "placed": 2,
+       "jobs": 1,
+       "placed": 0,
        "consent": 3
       }
      ],
@@ -762,7 +457,7 @@
        "preferenceNo": 42,
        "pmdcNo": "71504001M",
        "applicantId": 29670,
-       "consent": 2
+       "consent": 1
       },
       {
        "nameFull": "ALI RAUF S/O MUHAMMAD RAUF",
@@ -834,18 +529,6 @@
        "hospitalName": "Punjab Institute of Cardiology, Lahore",
        "jobs": 1,
        "placed": 0
-      },
-      {
-       "nameFull": "Arbab Osama Naseem S/O Naseem Ullah Arbab",
-       "marksTotal": 31.506926,
-       "pmdcNo": "840783-01-M",
-       "applicantId": 31174,
-       "preferenceNo": 3,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiac Surgery",
-       "hospitalName": "Punjab Institute of Cardiology, Lahore",
-       "jobs": 1,
-       "placed": 0
       }
      ],
      "prev": [
@@ -856,25 +539,17 @@
        "pmdcNo": "716046-01-M",
        "applicantId": 28856,
        "consent": 2
-      },
-      {
-       "nameFull": "Sohaib Roomi S/O Sanaullah",
-       "marksTotal": 31.747097,
-       "preferenceNo": 3,
-       "pmdcNo": "809477-01-M",
-       "applicantId": 30141,
-       "consent": 1
       }
      ]
     },
     "Rawalpindi Institute of Cardiology , Rawalpindi": {
      "new": [
       {
-       "nameFull": "Sohaib Roomi S/O Sanaullah",
-       "marksTotal": 31.747097,
-       "pmdcNo": "809477-01-M",
-       "applicantId": 30141,
-       "preferenceNo": 1,
+       "nameFull": "Muhammad Usman S/O Ahmad Bakhsh",
+       "marksTotal": 32.018256,
+       "pmdcNo": "118751P",
+       "applicantId": 30507,
+       "preferenceNo": 11,
        "quotaName": "Punjab",
        "specialityName": "Cardiac Surgery",
        "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi",
@@ -904,29 +579,16 @@
        "quotaName": "Punjab",
        "specialityName": "Cardiac Surgery",
        "hospitalName": "Wazirabad  Institute of Cardiology, Warzirabad",
-       "jobs": 2,
+       "jobs": 1,
        "placed": 0,
        "consent": 3
       },
       {
-       "nameFull": "Muhammad Faisal Shamsher S/O Muhammad Shamsher",
-       "marksTotal": 30.384956,
-       "pmdcNo": "787445-01-M",
-       "applicantId": 30257,
-       "preferenceNo": 27,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiac Surgery",
-       "hospitalName": "Wazirabad  Institute of Cardiology, Warzirabad",
-       "jobs": 2,
-       "placed": 1,
-       "consent": 3
-      },
-      {
-       "nameFull": "Bilal Qammar S/O Muhammad Qammar Ul Zaman",
-       "marksTotal": 30.21606,
-       "pmdcNo": "787568-01-M",
-       "applicantId": 31025,
-       "preferenceNo": 75,
+       "nameFull": "Muhammad Talha Ayaz S/O Muhammad Ayaz",
+       "marksTotal": 30.291782,
+       "pmdcNo": "778684-01-M",
+       "applicantId": 30921,
+       "preferenceNo": 4,
        "quotaName": "Punjab",
        "specialityName": "Cardiac Surgery",
        "hospitalName": "Wazirabad  Institute of Cardiology, Warzirabad",
@@ -937,20 +599,12 @@
      ],
      "prev": [
       {
-       "nameFull": "Muhammad Hamza Ismail S/O Muhammad Ismail",
-       "marksTotal": 30.569122,
-       "preferenceNo": 4,
-       "pmdcNo": "751537-01-M",
-       "applicantId": 25460,
-       "consent": 1
-      },
-      {
        "nameFull": "Ayesha Khan D/O Tahir Firoze Khan",
        "marksTotal": 30.474672,
        "preferenceNo": 26,
        "pmdcNo": "783608-01-M",
        "applicantId": 30284,
-       "consent": 2
+       "consent": 1
       },
       {
        "nameFull": "Farman Ali S/O HAQ NAWAZ",
@@ -967,11 +621,11 @@
     "Punjab Institute of Cardiology, Lahore": {
      "new": [
       {
-       "nameFull": "Uswa Rafique D/O muhammad rafique raza",
-       "marksTotal": 28.769318,
-       "pmdcNo": "922164-01-M",
-       "applicantId": 30168,
-       "preferenceNo": 10,
+       "nameFull": "Azka Naeem D/O Naeem Ahmad Latif",
+       "marksTotal": 29.551742,
+       "pmdcNo": "787762-01-M",
+       "applicantId": 30164,
+       "preferenceNo": 13,
        "quotaName": "Punjab",
        "specialityName": "Cardio Thoracic Anesthesia",
        "hospitalName": "Punjab Institute of Cardiology, Lahore",
@@ -979,11 +633,11 @@
        "placed": 0
       },
       {
-       "nameFull": "Bayzeed Imran Khan S/O Imran Ashraf Khan",
-       "marksTotal": 28.725822,
-       "pmdcNo": "761265-01-M",
-       "applicantId": 29604,
-       "preferenceNo": 8,
+       "nameFull": "Uzma Naseem D/O MUHAMMAD YAR",
+       "marksTotal": 29.066591,
+       "pmdcNo": "850995-01-M",
+       "applicantId": 30533,
+       "preferenceNo": 21,
        "quotaName": "Punjab",
        "specialityName": "Cardio Thoracic Anesthesia",
        "hospitalName": "Punjab Institute of Cardiology, Lahore",
@@ -1007,7 +661,7 @@
        "preferenceNo": 16,
        "pmdcNo": "757688-01-M",
        "applicantId": 30499,
-       "consent": 2
+       "consent": 1
       }
      ]
     },
@@ -1027,17 +681,16 @@
        "consent": 3
       },
       {
-       "nameFull": "Muhammad Ahmed Alam S/O Mujeeb Ur Rehman",
-       "marksTotal": 28.685101,
-       "pmdcNo": "946283-01-M",
-       "applicantId": 29571,
-       "preferenceNo": 3,
+       "nameFull": "Uswa Rafique D/O muhammad rafique raza",
+       "marksTotal": 28.769318,
+       "pmdcNo": "922164-01-M",
+       "applicantId": 30168,
+       "preferenceNo": 14,
        "quotaName": "Punjab",
        "specialityName": "Cardio Thoracic Anesthesia",
        "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi",
        "jobs": 1,
-       "placed": 0,
-       "consent": 3
+       "placed": 0
       }
      ],
      "prev": [
@@ -1066,57 +719,12 @@
      "prev": []
     },
     "Bahawal Victoria Hospital, Bahawalpur": {
-     "new": [
-      {
-       "nameFull": "Muhammad Hanzala Tariq Chaudhry S/O M.TARIQ JAVED",
-       "marksTotal": 37.18383,
-       "pmdcNo": "757739-01-M",
-       "applicantId": 29106,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Faizan Ahmed Zakir S/O Zakir Ali",
-       "marksTotal": 37.44302,
-       "preferenceNo": 1,
-       "pmdcNo": "894339-01-M",
-       "applicantId": 30349,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Choudhary Prevez Ilahi Institute of Cardiology , Multan": {
-     "new": [
-      {
-       "nameFull": "Iftikhar Hussain S/O MANZOOR HUSSAIN",
-       "marksTotal": 34.138463,
-       "pmdcNo": "106165-P",
-       "applicantId": 18546,
-       "preferenceNo": 29,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Muhammad Fahad S/O Naeem Ahmad",
-       "marksTotal": 36.588914,
-       "preferenceNo": 1,
-       "pmdcNo": "112551-P",
-       "applicantId": 16460,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "DHQ Hospital, DG Khan": {
      "new": [],
@@ -1179,30 +787,8 @@
      "prev": []
     },
     "Nishtar Hospital, Multan": {
-     "new": [
-      {
-       "nameFull": "Nadir Ali S/O Nazar Hussain",
-       "marksTotal": 38.420336,
-       "pmdcNo": "759265-01-M",
-       "applicantId": 28498,
-       "preferenceNo": 4,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Nishtar Hospital, Multan",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Hassan Tariq S/O Tariq Mahmood",
-       "marksTotal": 39.891841,
-       "preferenceNo": 4,
-       "pmdcNo": "112266-P",
-       "applicantId": 24858,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Punjab Institute of Cardiology, Lahore": {
      "new": [],
@@ -1262,8 +848,30 @@
      ]
     },
     "Wazirabad  Institute of Cardiology, Warzirabad": {
-     "new": [],
-     "prev": []
+     "new": [
+      {
+       "nameFull": "Hassan Rafique S/O MUHAMMAD RAFIQUE",
+       "marksTotal": 35.838074,
+       "pmdcNo": "94707-P",
+       "applicantId": 18250,
+       "preferenceNo": 1,
+       "quotaName": "Punjab",
+       "specialityName": "Cardiology",
+       "hospitalName": "Wazirabad  Institute of Cardiology, Warzirabad",
+       "jobs": 1,
+       "placed": 0
+      }
+     ],
+     "prev": [
+      {
+       "nameFull": "Fraz Mahmood S/O Mahmood Hussain",
+       "marksTotal": 36.520098,
+       "preferenceNo": 4,
+       "pmdcNo": "105944-p",
+       "applicantId": 3879,
+       "consent": 2
+      }
+     ]
     }
    },
    "Chemical Pathology": {
@@ -1303,31 +911,8 @@
      "prev": []
     },
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
-     "new": [
-      {
-       "nameFull": "Shaiza Asghar D/O Muhammad Asghar",
-       "marksTotal": 30.275293,
-       "pmdcNo": "776698-01-M",
-       "applicantId": 31090,
-       "preferenceNo": 12,
-       "quotaName": "Punjab",
-       "specialityName": "Chemical Pathology",
-       "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Sundas Akber D/O Ghulam Akber",
-       "marksTotal": 33.110228,
-       "preferenceNo": 2,
-       "pmdcNo": "102556-P",
-       "applicantId": 18630,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     }
    },
    "Community Medicine": {
@@ -1340,17 +925,16 @@
     "AIMH, Sialkot": {
      "new": [
       {
-       "nameFull": "Safa Qaiser D/O QAISER PERVAIZ",
-       "marksTotal": 36.266969,
-       "pmdcNo": "86232701M",
-       "applicantId": 30444,
-       "preferenceNo": 6,
+       "nameFull": "Maham Sohail D/O Asif Sohail",
+       "marksTotal": 36.520454,
+       "pmdcNo": "830231-01-M",
+       "applicantId": 30238,
+       "preferenceNo": 1,
        "quotaName": "Punjab",
        "specialityName": "Dermatology",
        "hospitalName": "AIMH, Sialkot",
        "jobs": 1,
-       "placed": 0,
-       "consent": 3
+       "placed": 0
       }
      ],
      "prev": [
@@ -1419,30 +1003,16 @@
     "Allied Hospital, Faisalabad": {
      "new": [
       {
-       "nameFull": "Zarlish Fazal D/O Shafiq Ur Rehman",
-       "marksTotal": 32.653946,
-       "pmdcNo": "714050-01-M",
-       "applicantId": 23335,
-       "preferenceNo": 10,
+       "nameFull": "Faryal Rehman Malik D/O ABDUL REHMAN",
+       "marksTotal": 33.171515,
+       "pmdcNo": "798062-01-M",
+       "applicantId": 30271,
+       "preferenceNo": 3,
        "quotaName": "Punjab",
        "specialityName": "Diagnostic Radiology",
        "hospitalName": "Allied Hospital, Faisalabad",
-       "jobs": 2,
-       "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Farina Tahir D/O Dr. Tahir Pervez",
-       "marksTotal": 32.536126,
-       "pmdcNo": "761264-01-M",
-       "applicantId": 29333,
-       "preferenceNo": 11,
-       "quotaName": "Punjab",
-       "specialityName": "Diagnostic Radiology",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "jobs": 2,
-       "placed": 1,
-       "consent": 3
+       "jobs": 1,
+       "placed": 0
       }
      ],
      "prev": [
@@ -1452,14 +1022,6 @@
        "preferenceNo": 1,
        "pmdcNo": "905230-01-M",
        "applicantId": 30701,
-       "consent": 2
-      },
-      {
-       "nameFull": "Malik Muhammad Usama S/O MUHAMMAD NAWAZ",
-       "marksTotal": 33.253302,
-       "preferenceNo": 9,
-       "pmdcNo": "798183-01-M",
-       "applicantId": 28793,
        "consent": 2
       }
      ]
@@ -1479,11 +1041,11 @@
     "Children Hospital, Multan": {
      "new": [
       {
-       "nameFull": "Iqra Navid D/O Ali Ahmad Navid",
-       "marksTotal": 31.319318,
-       "pmdcNo": "759336-01-M",
-       "applicantId": 29732,
-       "preferenceNo": 18,
+       "nameFull": "Zarlish Fazal D/O Shafiq Ur Rehman",
+       "marksTotal": 32.653946,
+       "pmdcNo": "714050-01-M",
+       "applicantId": 23335,
+       "preferenceNo": 13,
        "quotaName": "Punjab",
        "specialityName": "Diagnostic Radiology",
        "hospitalName": "Children Hospital, Multan",
@@ -1506,11 +1068,11 @@
     "Choudhary Prevez Ilahi Institute of Cardiology , Multan": {
      "new": [
       {
-       "nameFull": "Saman Imtiaz D/O Imtiaz Ahmad",
-       "marksTotal": 31.164513,
-       "pmdcNo": "71858601M",
-       "applicantId": 30267,
-       "preferenceNo": 18,
+       "nameFull": "Iqra Navid D/O Ali Ahmad Navid",
+       "marksTotal": 31.319318,
+       "pmdcNo": "759336-01-M",
+       "applicantId": 29732,
+       "preferenceNo": 19,
        "quotaName": "Punjab",
        "specialityName": "Diagnostic Radiology",
        "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
@@ -1526,50 +1088,28 @@
        "preferenceNo": 20,
        "pmdcNo": "798062-01-M",
        "applicantId": 30271,
-       "consent": 2
-      }
-     ]
-    },
-    "DHQ Hospital, DG Khan": {
-     "new": [
-      {
-       "nameFull": "Adeeba Ishfaq D/O Muhammad Ishfaq",
-       "marksTotal": 31.078665,
-       "pmdcNo": "84053701M",
-       "applicantId": 29710,
-       "preferenceNo": 22,
-       "quotaName": "Punjab",
-       "specialityName": "Diagnostic Radiology",
-       "hospitalName": "DHQ Hospital, DG Khan",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Faiza Ameen D/O Muhammad Amin Ul Rasheed Khan",
-       "marksTotal": 36.377122,
-       "preferenceNo": 13,
-       "pmdcNo": "757560-01-M",
-       "applicantId": 26380,
        "consent": 1
       }
      ]
     },
+    "DHQ Hospital, DG Khan": {
+     "new": [],
+     "prev": []
+    },
     "DHQ Hospital, Faisalabad": {
      "new": [
       {
-       "nameFull": "Faiza Ameen D/O Muhammad Amin Ul Rasheed Khan",
-       "marksTotal": 31.377122,
-       "pmdcNo": "757560-01-M",
-       "applicantId": 26380,
+       "nameFull": "Farina Tahir D/O Dr. Tahir Pervez",
+       "marksTotal": 32.536126,
+       "pmdcNo": "761264-01-M",
+       "applicantId": 29333,
        "preferenceNo": 12,
        "quotaName": "Punjab",
        "specialityName": "Diagnostic Radiology",
        "hospitalName": "DHQ Hospital, Faisalabad",
        "jobs": 1,
-       "placed": 0
+       "placed": 0,
+       "consent": 3
       }
      ],
      "prev": [
@@ -1600,113 +1140,24 @@
      "prev": []
     },
     "Lahore General Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Ayesha Khan W/O Muhammad Hamza Khan",
-       "marksTotal": 39.813686,
-       "pmdcNo": "715052-01-M ",
-       "applicantId": 21404,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Diagnostic Radiology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Haider Ali Tipu S/O MUSHTAQ AHMED KHAN",
-       "marksTotal": 44.026126,
-       "preferenceNo": 1,
-       "pmdcNo": "105062-P",
-       "applicantId": 30298,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Mayo Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Abdul Rahman S/O Mureed Hussain",
-       "marksTotal": 40.452793,
-       "pmdcNo": "112255-P",
-       "applicantId": 22289,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Diagnostic Radiology",
-       "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Ayesha Khan W/O Muhammad Hamza Khan",
-       "marksTotal": 44.813686,
-       "preferenceNo": 3,
-       "pmdcNo": "715052-01-M ",
-       "applicantId": 21404,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Nishtar Hospital, Multan": {
      "new": [],
      "prev": []
     },
     "Punjab Institute of Cardiology, Lahore": {
-     "new": [
-      {
-       "nameFull": "Muhammad Abubakar Bhutta S/O NAZIR AHMAD",
-       "marksTotal": 35.805628,
-       "pmdcNo": "111980-p",
-       "applicantId": 30831,
-       "preferenceNo": 7,
-       "quotaName": "Punjab",
-       "specialityName": "Diagnostic Radiology",
-       "hospitalName": "Punjab Institute of Cardiology, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Ibtesam Ahmad S/O Nisar Ahmad",
-       "marksTotal": 38.335595,
-       "preferenceNo": 5,
-       "pmdcNo": "716163-01-M",
-       "applicantId": 30325,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Punjab Institute of Neurosciences, Lahore": {
-     "new": [
-      {
-       "nameFull": "Maryam Zahoor D/O Zahoor Ahmad",
-       "marksTotal": 32.33,
-       "pmdcNo": "114436-P",
-       "applicantId": 17367,
-       "preferenceNo": 8,
-       "quotaName": "Punjab",
-       "specialityName": "Diagnostic Radiology",
-       "hospitalName": "Punjab Institute of Neurosciences, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Muhammad Abubakar Bhutta S/O NAZIR AHMAD",
-       "marksTotal": 35.805628,
-       "preferenceNo": 8,
-       "pmdcNo": "111980-p",
-       "applicantId": 30831,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Rawalpindi Institute of Cardiology , Rawalpindi": {
      "new": [],
@@ -1725,31 +1176,8 @@
      "prev": []
     },
     "Sir Ganga Ram Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Fatima Zulfiqar D/O Zulfiqar Ahmad",
-       "marksTotal": 36.959002,
-       "pmdcNo": "840586-01-M",
-       "applicantId": 30061,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Diagnostic Radiology",
-       "hospitalName": "Sir Ganga Ram Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Abdul Rahman S/O Mureed Hussain",
-       "marksTotal": 40.452793,
-       "preferenceNo": 3,
-       "pmdcNo": "112255-P",
-       "applicantId": 22289,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     }
    },
    "Emergency Medicine": {
@@ -1812,54 +1240,12 @@
        "quotaName": "Punjab",
        "specialityName": "Forensic Medicine",
        "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "jobs": 2,
-       "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Saba Rasheed D/O syed rasheed mustafa",
-       "marksTotal": 36.059545,
-       "pmdcNo": "783605-01-M",
-       "applicantId": 30765,
-       "preferenceNo": 81,
-       "quotaName": "Punjab",
-       "specialityName": "Forensic Medicine",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "jobs": 2,
-       "placed": 1,
-       "consent": 3
-      },
-      {
-       "nameFull": "Muhammad Saleem Azeem S/O Jam Muhammad Azeem",
-       "marksTotal": 35.950758,
-       "pmdcNo": "715719-01-M",
-       "applicantId": 24461,
-       "preferenceNo": 103,
-       "quotaName": "Punjab",
-       "specialityName": "Forensic Medicine",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
        "jobs": 1,
        "placed": 0,
        "consent": 3
       }
      ],
      "prev": [
-      {
-       "nameFull": "Urwah Iqbal D/O Muhammad Iqbal",
-       "marksTotal": 36.779394,
-       "preferenceNo": 14,
-       "pmdcNo": "78373301M",
-       "applicantId": 30590,
-       "consent": 2
-      },
-      {
-       "nameFull": "Javaria Noor D/O Muhammad Farooq",
-       "marksTotal": 36.540531,
-       "preferenceNo": 11,
-       "pmdcNo": "783935-01-M",
-       "applicantId": 30641,
-       "consent": 1
-      },
       {
        "nameFull": "Noureen Kashif W/O Kashif Zafar",
        "marksTotal": 36.490847,
@@ -2023,11 +1409,11 @@
     "Children Hospital, Lahore": {
      "new": [
       {
-       "nameFull": "Asra Tariq D/O Dr Tariq Mehmood",
-       "marksTotal": 30.562467,
-       "pmdcNo": "757949-01-M",
-       "applicantId": 31145,
-       "preferenceNo": 2,
+       "nameFull": "Anam Amir W/O Farhan Akhtar",
+       "marksTotal": 31.007315,
+       "pmdcNo": "109409-P",
+       "applicantId": 30169,
+       "preferenceNo": 3,
        "quotaName": "Punjab",
        "specialityName": "Hematology",
        "hospitalName": "Children Hospital, Lahore",
@@ -2112,30 +1498,8 @@
      "prev": []
     },
     "Sir Ganga Ram Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Anam Amir W/O Farhan Akhtar",
-       "marksTotal": 36.007315,
-       "pmdcNo": "109409-P",
-       "applicantId": 30169,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Hematology",
-       "hospitalName": "Sir Ganga Ram Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Madiha Ibrahim W/O hafiz tahir usman",
-       "marksTotal": 44.236983,
-       "preferenceNo": 1,
-       "pmdcNo": "73999-P",
-       "applicantId": 23345,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     }
    },
    "Histopathology": {
@@ -2150,17 +1514,16 @@
     "Children Hospital, Lahore": {
      "new": [
       {
-       "nameFull": "Ayesha Tariq D/O Tariq Rashid",
-       "marksTotal": 30.443592,
-       "pmdcNo": "745430-01-M",
-       "applicantId": 21269,
-       "preferenceNo": 6,
+       "nameFull": "Asra Tariq D/O Dr Tariq Mehmood",
+       "marksTotal": 30.562467,
+       "pmdcNo": "757949-01-M",
+       "applicantId": 31145,
+       "preferenceNo": 10,
        "quotaName": "Punjab",
        "specialityName": "Histopathology",
        "hospitalName": "Children Hospital, Lahore",
        "jobs": 1,
-       "placed": 0,
-       "consent": 3
+       "placed": 0
       }
      ],
      "prev": [
@@ -2175,30 +1538,8 @@
      ]
     },
     "DHQ Hospital, DG Khan": {
-     "new": [
-      {
-       "nameFull": "Hadia Iqbal D/O Muhammad Iqbal Huma",
-       "marksTotal": 30.366429,
-       "pmdcNo": "908691-01-M",
-       "applicantId": 30402,
-       "preferenceNo": 10,
-       "quotaName": "Punjab",
-       "specialityName": "Histopathology",
-       "hospitalName": "DHQ Hospital, DG Khan",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Nadia Qadir D/O Ghulam Qadir",
-       "marksTotal": 35.401547,
-       "preferenceNo": 11,
-       "pmdcNo": "757586-01-M",
-       "applicantId": 30716,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Jinnah Hospital, Lahore": {
      "new": [],
@@ -2317,30 +1658,8 @@
    },
    "Medical Oncology": {
     "Allied Hospital, Faisalabad": {
-     "new": [
-      {
-       "nameFull": "Mlaika Fatima Ahmad D/O Niaz Ahmad",
-       "marksTotal": 36.909242,
-       "pmdcNo": "894207-01-M",
-       "applicantId": 30685,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Medical Oncology",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Kinza Munawar D/O Munawar Hussain Anjum",
-       "marksTotal": 37.335758,
-       "preferenceNo": 4,
-       "pmdcNo": "883690-01-M",
-       "applicantId": 30898,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Jinnah Hospital, Lahore": {
      "new": [],
@@ -2357,7 +1676,7 @@
        "quotaName": "Punjab",
        "specialityName": "Medical Oncology",
        "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 2,
+       "jobs": 1,
        "placed": 0
       },
       {
@@ -2369,33 +1688,12 @@
        "quotaName": "Punjab",
        "specialityName": "Medical Oncology",
        "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 2,
-       "placed": 1,
-       "consent": 3
-      },
-      {
-       "nameFull": "Ayesha Zahid D/O Zahid Iqbal",
-       "marksTotal": 35.370396,
-       "pmdcNo": "109251-P",
-       "applicantId": 21593,
-       "preferenceNo": 9,
-       "quotaName": "Punjab",
-       "specialityName": "Medical Oncology",
-       "hospitalName": "Mayo Hospital, Lahore",
        "jobs": 1,
        "placed": 0,
        "consent": 3
       }
      ],
      "prev": [
-      {
-       "nameFull": "Khadija Khalid D/O Dr. Khalid Ilyas",
-       "marksTotal": 36.78794,
-       "preferenceNo": 3,
-       "pmdcNo": "861435-01-M",
-       "applicantId": 30751,
-       "consent": 2
-      },
       {
        "nameFull": "Rida Safdar D/O SAFDAR IQBAL",
        "marksTotal": 35.794972,
@@ -2429,96 +1727,29 @@
      "prev": []
     },
     "Bahawal Victoria Hospital, Bahawalpur": {
-     "new": [
-      {
-       "nameFull": "Muhammad Waseem Akmal S/O Muhammad Akmal",
-       "marksTotal": 37.734177,
-       "pmdcNo": "757553-01-M",
-       "applicantId": 30874,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Ahmed Uzair S/O Dilbar Hussain",
-       "marksTotal": 38.119653,
-       "preferenceNo": 1,
-       "pmdcNo": "109519-P",
-       "applicantId": 27023,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Benazir Bhutto Hospital, Rawalpindi": {
      "new": [],
      "prev": []
     },
     "DHQ Hospital, DG Khan": {
-     "new": [
-      {
-       "nameFull": "Muhammad Farhan Saleem S/O Muhammad Saleem",
-       "marksTotal": 35.42236,
-       "pmdcNo": "783475-01-M",
-       "applicantId": 30542,
-       "preferenceNo": 42,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "DHQ Hospital, DG Khan",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Farheen Fatima D/O Abdul Rasheed",
-       "marksTotal": 35.729773,
-       "preferenceNo": 2,
-       "pmdcNo": "784892-01-M",
-       "applicantId": 30270,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "DHQ Hospital, Faisalabad": {
-     "new": [
-      {
-       "nameFull": "Areej Kanwal D/O Muzammil Haq",
-       "marksTotal": 36.835302999999996,
-       "pmdcNo": "883352-01-M",
-       "applicantId": 30682,
-       "preferenceNo": 11,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "DHQ Hospital, Faisalabad",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Mlaika Fatima Ahmad D/O Niaz Ahmad",
-       "marksTotal": 36.909242,
-       "preferenceNo": 17,
-       "pmdcNo": "894207-01-M",
-       "applicantId": 30685,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "DHQ Hospital, Gujranwala": {
      "new": [
       {
-       "nameFull": "Javeria Aqeel W/O Faraz Shahid",
-       "marksTotal": 35.744393,
-       "pmdcNo": "112606-P",
-       "applicantId": 30866,
-       "preferenceNo": 4,
+       "nameFull": "Dr.Rafia Shahid D/O Muhammad Shahid",
+       "marksTotal": 35.983412,
+       "pmdcNo": "100883-p",
+       "applicantId": 18601,
+       "preferenceNo": 3,
        "quotaName": "Punjab",
        "specialityName": "Medicine",
        "hospitalName": "DHQ Hospital, Gujranwala",
@@ -2542,31 +1773,8 @@
      "prev": []
     },
     "DHQ Teaching Hospital, Sargodha": {
-     "new": [
-      {
-       "nameFull": "Paras Saleem D/O Muhammad saleem",
-       "marksTotal": 36.684318000000005,
-       "pmdcNo": "78627001M",
-       "applicantId": 29483,
-       "preferenceNo": 6,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "DHQ Teaching Hospital, Sargodha",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Waseem Akram S/O NAZAR MUHAMMAD",
-       "marksTotal": 40.467079,
-       "preferenceNo": 43,
-       "pmdcNo": "111076-P",
-       "applicantId": 29400,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Govt. Teaching Hospital GM Abad, Faisalabad": {
      "new": [
@@ -2606,6 +1814,19 @@
     "Lahore General Hospital, Lahore": {
      "new": [
       {
+       "nameFull": "Zunaira Abd Us Sattar D/O Abd Us Sattar Yazdani",
+       "marksTotal": 35.909134,
+       "pmdcNo": "75687301M",
+       "applicantId": 29966,
+       "preferenceNo": 7,
+       "quotaName": "Punjab",
+       "specialityName": "Medicine",
+       "hospitalName": "Lahore General Hospital, Lahore",
+       "jobs": 2,
+       "placed": 0,
+       "consent": 3
+      },
+      {
        "nameFull": "Mah Laqa D/O Zulfiqar Ahmad",
        "marksTotal": 35.86473,
        "pmdcNo": "720686-01-M",
@@ -2614,21 +1835,8 @@
        "quotaName": "Punjab",
        "specialityName": "Medicine",
        "hospitalName": "Lahore General Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Ahmad Ejaz Mughal S/O Muhammad Ejaz Hussain",
-       "marksTotal": 35.748511,
-       "pmdcNo": "79835901M",
-       "applicantId": 30182,
-       "preferenceNo": 9,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0,
+       "jobs": 2,
+       "placed": 1,
        "consent": 3
       }
      ],
@@ -2664,18 +1872,6 @@
        "hospitalName": "Mayo Hospital, Lahore",
        "jobs": 1,
        "placed": 0
-      },
-      {
-       "nameFull": "Aisha Batool D/O Ghulam Nabi",
-       "marksTotal": 35.516413,
-       "pmdcNo": "90648P",
-       "applicantId": 29934,
-       "preferenceNo": 12,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
       }
      ],
      "prev": [
@@ -2686,14 +1882,6 @@
        "pmdcNo": "88354601M",
        "applicantId": 30695,
        "consent": 1
-      },
-      {
-       "nameFull": "Minahil Shah D/O Syed Tayab Hussain Shah",
-       "marksTotal": 36.318553,
-       "preferenceNo": 1,
-       "pmdcNo": "83035301M",
-       "applicantId": 29718,
-       "consent": 2
       }
      ]
     },
@@ -2739,21 +1927,8 @@
        "quotaName": "Punjab",
        "specialityName": "Medicine",
        "hospitalName": "Services Hospital, Lahore",
-       "jobs": 2,
+       "jobs": 1,
        "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Iram Mubeen D/O Ghulam Ahmad",
-       "marksTotal": 35.971795,
-       "pmdcNo": "784058-01-M",
-       "applicantId": 31316,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Services Hospital, Lahore",
-       "jobs": 2,
-       "placed": 1,
        "consent": 3
       }
      ],
@@ -2764,14 +1939,6 @@
        "preferenceNo": 3,
        "pmdcNo": "104194-P",
        "applicantId": 31114,
-       "consent": 2
-      },
-      {
-       "nameFull": "Kinza Naveed D/O Sardar Naveed Ahmad",
-       "marksTotal": 36.253258,
-       "preferenceNo": 1,
-       "pmdcNo": "90583001M",
-       "applicantId": 29518,
        "consent": 2
       }
      ]
@@ -2838,30 +2005,16 @@
     "Bahawal Victoria Hospital, Bahawalpur": {
      "new": [
       {
-       "nameFull": "Sana Rafiq D/O Muhammad Rafiq",
-       "marksTotal": 37.097954,
-       "pmdcNo": "783577-01-M",
-       "applicantId": 30722,
-       "preferenceNo": 18,
+       "nameFull": "Muhammad Hanzala Tariq Chaudhry S/O M.TARIQ JAVED",
+       "marksTotal": 37.18383,
+       "pmdcNo": "757739-01-M",
+       "applicantId": 29106,
+       "preferenceNo": 2,
        "quotaName": "Punjab",
        "specialityName": "Nephrology",
        "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "jobs": 2,
-       "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Nida Tahir D/O Tahir Latif",
-       "marksTotal": 36.783354,
-       "pmdcNo": "79838401M",
-       "applicantId": 29676,
-       "preferenceNo": 12,
-       "quotaName": "Punjab",
-       "specialityName": "Nephrology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "jobs": 2,
-       "placed": 1,
-       "consent": 3
+       "jobs": 1,
+       "placed": 0
       }
      ],
      "prev": [
@@ -2871,14 +2024,6 @@
        "preferenceNo": 16,
        "pmdcNo": "757910-01-M",
        "applicantId": 28364,
-       "consent": 2
-      },
-      {
-       "nameFull": "Rizwan Rasheed S/O Muhammad Rasheed",
-       "marksTotal": 37.621667,
-       "preferenceNo": 20,
-       "pmdcNo": "78542901M",
-       "applicantId": 30105,
        "consent": 2
       }
      ]
@@ -2946,11 +2091,11 @@
     "Nishtar Hospital, Multan": {
      "new": [
       {
-       "nameFull": "Anmool Fatima D/O Qumber Hussain",
-       "marksTotal": 37.045076,
-       "pmdcNo": "78728101M",
-       "applicantId": 30659,
-       "preferenceNo": 7,
+       "nameFull": "Sahar Aftab D/O Chaudhary Aftab Ahmad",
+       "marksTotal": 37.107651,
+       "pmdcNo": "784174-01-M",
+       "applicantId": 31006,
+       "preferenceNo": 3,
        "quotaName": "Punjab",
        "specialityName": "Nephrology",
        "hospitalName": "Nishtar Hospital, Multan",
@@ -3014,9 +2159,30 @@
        "jobs": 1,
        "placed": 0,
        "consent": 3
+      },
+      {
+       "nameFull": "Muhammad Hammad Mukhtar S/O Mukhtar Ahmad",
+       "marksTotal": 34.437445,
+       "pmdcNo": "745695-01-M",
+       "applicantId": 21117,
+       "preferenceNo": 13,
+       "quotaName": "Punjab",
+       "specialityName": "Nephrology",
+       "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan",
+       "jobs": 1,
+       "placed": 0,
+       "consent": 3
       }
      ],
      "prev": [
+      {
+       "nameFull": "Muhammad Arshad S/O Malik Allah bukhsh",
+       "marksTotal": 34.683759,
+       "preferenceNo": 55,
+       "pmdcNo": "100027-p",
+       "applicantId": 28887,
+       "consent": 2
+      },
       {
        "nameFull": "Mahboob Ahmad S/O MUHAMMAD RAMZAN",
        "marksTotal": 34.628364,
@@ -3088,40 +2254,17 @@
      ]
     },
     "DHQ Hospital, DG Khan": {
-     "new": [
-      {
-       "nameFull": "Muhammad Shahid Javed S/O JAVED IQBAL",
-       "marksTotal": 30.220227,
-       "pmdcNo": "798251-01-M",
-       "applicantId": 30719,
-       "preferenceNo": 42,
-       "quotaName": "Punjab",
-       "specialityName": "Neuro Surgery",
-       "hospitalName": "DHQ Hospital, DG Khan",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Ahmad Jahanzaib S/O Tahir Mahmood ",
-       "marksTotal": 35.255877,
-       "preferenceNo": 22,
-       "pmdcNo": "718796-01-M",
-       "applicantId": 22295,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "DHQ Hospital, Gujranwala": {
      "new": [
       {
-       "nameFull": "Muhammad Mazin Sajjad S/O Sajjad Ahmad",
-       "marksTotal": 30.363485,
-       "pmdcNo": "78799901M",
-       "applicantId": 29495,
-       "preferenceNo": 87,
+       "nameFull": "Muhammad Faisal Shamsher S/O Muhammad Shamsher",
+       "marksTotal": 30.384956,
+       "pmdcNo": "787445-01-M",
+       "applicantId": 30257,
+       "preferenceNo": 33,
        "quotaName": "Punjab",
        "specialityName": "Neuro Surgery",
        "hospitalName": "DHQ Hospital, Gujranwala",
@@ -3146,31 +2289,8 @@
      "prev": []
     },
     "Holy Family Hospital, Rawalpindi": {
-     "new": [
-      {
-       "nameFull": "Mahinoor Mirza D/O Naeem Mirza",
-       "marksTotal": 35.654784,
-       "pmdcNo": "113014-P",
-       "applicantId": 27790,
-       "preferenceNo": 4,
-       "quotaName": "Punjab",
-       "specialityName": "Neuro Surgery",
-       "hospitalName": "Holy Family Hospital, Rawalpindi",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Arbab Osama Naseem S/O Naseem Ullah Arbab",
-       "marksTotal": 36.506926,
-       "preferenceNo": 6,
-       "pmdcNo": "840783-01-M",
-       "applicantId": 31174,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Jinnah Hospital, Lahore": {
      "new": [
@@ -3210,7 +2330,19 @@
        "quotaName": "Punjab",
        "specialityName": "Neuro Surgery",
        "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 3,
+       "jobs": 2,
+       "placed": 0
+      },
+      {
+       "nameFull": "Qaisar Abbas S/O Ghulam Abbas",
+       "marksTotal": 30.976591,
+       "pmdcNo": "761463-01-M",
+       "applicantId": 25621,
+       "preferenceNo": 51,
+       "quotaName": "Punjab",
+       "specialityName": "Neuro Surgery",
+       "hospitalName": "Mayo Hospital, Lahore",
+       "jobs": 2,
        "placed": 0
       },
       {
@@ -3222,34 +2354,9 @@
        "quotaName": "Punjab",
        "specialityName": "Neuro Surgery",
        "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 3,
-       "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Muhammad Tahir Konain S/O TARIQ SAEED",
-       "marksTotal": 30.289736,
-       "pmdcNo": "79828601M",
-       "applicantId": 29566,
-       "preferenceNo": 46,
-       "quotaName": "Punjab",
-       "specialityName": "Neuro Surgery",
-       "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 3,
+       "jobs": 2,
        "placed": 1,
        "consent": 3
-      },
-      {
-       "nameFull": "Ahmad Jahanzaib S/O Tahir Mahmood ",
-       "marksTotal": 30.255877,
-       "pmdcNo": "718796-01-M",
-       "applicantId": 22295,
-       "preferenceNo": 16,
-       "quotaName": "Punjab",
-       "specialityName": "Neuro Surgery",
-       "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 3,
-       "placed": 2
       }
      ],
      "prev": [
@@ -3270,14 +2377,6 @@
        "consent": 1
       },
       {
-       "nameFull": "Muhammad Raheel Zafar S/O ZAFAR IQBAL",
-       "marksTotal": 31.783713,
-       "preferenceNo": 31,
-       "pmdcNo": "760681-01-M",
-       "applicantId": 29235,
-       "consent": 2
-      },
-      {
        "nameFull": "Abdul Wahab Nasir S/O MUHAMMAD NASIR",
        "marksTotal": 31.322095,
        "preferenceNo": 20,
@@ -3288,31 +2387,8 @@
      ]
     },
     "Nishtar Hospital, Multan": {
-     "new": [
-      {
-       "nameFull": "Ambreen Rubab Haider D/O Sultan Haider",
-       "marksTotal": 35.577912,
-       "pmdcNo": "784274-01-M",
-       "applicantId": 30922,
-       "preferenceNo": 9,
-       "quotaName": "Punjab",
-       "specialityName": "Neuro Surgery",
-       "hospitalName": "Nishtar Hospital, Multan",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Muhammad Nouman Riaz Jatoi S/O riaz hussain",
-       "marksTotal": 35.742804,
-       "preferenceNo": 12,
-       "pmdcNo": "798319-01-M",
-       "applicantId": 30664,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Punjab Institute of Neurosciences, Lahore": {
      "new": [
@@ -3338,7 +2414,7 @@
        "specialityName": "Neuro Surgery",
        "hospitalName": "Punjab Institute of Neurosciences, Lahore",
        "jobs": 4,
-       "placed": 1
+       "placed": 2
       },
       {
        "nameFull": "Abdul Rehman S/O Muhammad Abdullah Khan",
@@ -3350,20 +2426,7 @@
        "specialityName": "Neuro Surgery",
        "hospitalName": "Punjab Institute of Neurosciences, Lahore",
        "jobs": 4,
-       "placed": 2
-      },
-      {
-       "nameFull": "Faisal Habib S/O Habib Ullah",
-       "marksTotal": 30.819902,
-       "pmdcNo": "745851-01-M",
-       "applicantId": 21201,
-       "preferenceNo": 15,
-       "quotaName": "Punjab",
-       "specialityName": "Neuro Surgery",
-       "hospitalName": "Punjab Institute of Neurosciences, Lahore",
-       "jobs": 4,
-       "placed": 3,
-       "consent": 3
+       "placed": 3
       },
       {
        "nameFull": "Rinad Arshad D/O Arshad Hussain",
@@ -3379,14 +2442,6 @@
       }
      ],
      "prev": [
-      {
-       "nameFull": "Ameer Hamza S/O ASIF LATIF",
-       "marksTotal": 35.89106,
-       "preferenceNo": 4,
-       "pmdcNo": "787701-01-M",
-       "applicantId": 30079,
-       "consent": 1
-      },
       {
        "nameFull": "Muhammad Abdul Wahab S/O Muhammad Abdul Razzaq",
        "marksTotal": 34.907273,
@@ -3451,11 +2506,11 @@
     "Services Hospital, Lahore": {
      "new": [
       {
-       "nameFull": "Zeeshan Ahmad S/O Muhammad Azhar",
-       "marksTotal": 30.233209,
-       "pmdcNo": "861362-01-M",
-       "applicantId": 30536,
-       "preferenceNo": 38,
+       "nameFull": "Aqsa Arif Malik D/O Dawood Sajid Dar",
+       "marksTotal": 30.523409,
+       "pmdcNo": "721158-01-M",
+       "applicantId": 30446,
+       "preferenceNo": 5,
        "quotaName": "Punjab",
        "specialityName": "Neuro Surgery",
        "hospitalName": "Services Hospital, Lahore",
@@ -3510,7 +2565,7 @@
        "preferenceNo": 52,
        "pmdcNo": "761463-01-M",
        "applicantId": 25621,
-       "consent": 2
+       "consent": 1
       },
       {
        "nameFull": "Ayshan Bin Aziz S/O Aziz Asif",
@@ -3525,11 +2580,11 @@
     "Sir Ganga Ram Hospital, Lahore": {
      "new": [
       {
-       "nameFull": "Sahar Ilyas D/O Muhammad Ilyas",
-       "marksTotal": 35.064362,
-       "pmdcNo": "883531-01-M",
-       "applicantId": 30392,
-       "preferenceNo": 24,
+       "nameFull": "Nimra D/O Muhammad Nadeem",
+       "marksTotal": 35.564527999999996,
+       "pmdcNo": "90561701M",
+       "applicantId": 31065,
+       "preferenceNo": 2,
        "quotaName": "Punjab",
        "specialityName": "Neuro Surgery",
        "hospitalName": "Sir Ganga Ram Hospital, Lahore",
@@ -3554,11 +2609,11 @@
     "AIMH, Sialkot": {
      "new": [
       {
-       "nameFull": "Ayesha Mustafa W/O Ahmad Raza",
-       "marksTotal": 35.682272999999995,
-       "pmdcNo": "94343301-M",
-       "applicantId": 30676,
-       "preferenceNo": 2,
+       "nameFull": "Safa Qaiser D/O QAISER PERVAIZ",
+       "marksTotal": 36.266969,
+       "pmdcNo": "86232701M",
+       "applicantId": 30444,
+       "preferenceNo": 4,
        "quotaName": "Punjab",
        "specialityName": "Neurology",
        "hospitalName": "AIMH, Sialkot",
@@ -3612,11 +2667,11 @@
     "Mayo Hospital, Lahore": {
      "new": [
       {
-       "nameFull": "Waseem Akram S/O NAZAR MUHAMMAD",
-       "marksTotal": 35.467079,
-       "pmdcNo": "111076-P",
-       "applicantId": 29400,
-       "preferenceNo": 1,
+       "nameFull": "Aisha Batool D/O Ghulam Nabi",
+       "marksTotal": 35.516413,
+       "pmdcNo": "90648P",
+       "applicantId": 29934,
+       "preferenceNo": 19,
        "quotaName": "Punjab",
        "specialityName": "Neurology",
        "hospitalName": "Mayo Hospital, Lahore",
@@ -3640,79 +2695,12 @@
      "prev": []
     },
     "Punjab Institute of Neurosciences, Lahore": {
-     "new": [
-      {
-       "nameFull": "Zunaira Abd Us Sattar D/O Abd Us Sattar Yazdani",
-       "marksTotal": 35.909134,
-       "pmdcNo": "75687301M",
-       "applicantId": 29966,
-       "preferenceNo": 5,
-       "quotaName": "Punjab",
-       "specialityName": "Neurology",
-       "hospitalName": "Punjab Institute of Neurosciences, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Muhammad Mudassir Sharif S/O MUHAMMAD SHARIF",
-       "marksTotal": 35.853712,
-       "pmdcNo": "830503-01-M",
-       "applicantId": 30471,
-       "preferenceNo": 9,
-       "quotaName": "Punjab",
-       "specialityName": "Neurology",
-       "hospitalName": "Punjab Institute of Neurosciences, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Qandeel Fatima D/O MUHAMMAD FIAZ",
-       "marksTotal": 37.484599,
-       "preferenceNo": 28,
-       "pmdcNo": "787991-01-M",
-       "applicantId": 30230,
-       "consent": 2
-      },
-      {
-       "nameFull": "Hassan Attique S/O Attique Ahmad",
-       "marksTotal": 36.942803,
-       "preferenceNo": 7,
-       "pmdcNo": "787554-01-M",
-       "applicantId": 30162,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Services Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Sana Sultan D/O SULTAN AHMAD",
-       "marksTotal": 35.440217000000004,
-       "pmdcNo": "906777-01-M",
-       "applicantId": 30783,
-       "preferenceNo": 81,
-       "quotaName": "Punjab",
-       "specialityName": "Neurology",
-       "hospitalName": "Services Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Hafiz Muhammad Asim Riaz S/O MUHAMMAD RIAZ BHUTTA",
-       "marksTotal": 36.822435,
-       "preferenceNo": 5,
-       "pmdcNo": "111602P",
-       "applicantId": 29702,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "new": [],
@@ -3938,31 +2926,8 @@
      "prev": []
     },
     "Lahore General Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Muhammad Usman Tanveer S/O Tanveer Yasin",
-       "marksTotal": 35.185985,
-       "pmdcNo": "787892-01-M",
-       "applicantId": 30488,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Ophthalmology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Hafsa Aslam D/O Muhammad Aslam jutt",
-       "marksTotal": 35.313246,
-       "preferenceNo": 5,
-       "pmdcNo": "757004-01-M",
-       "applicantId": 30051,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Mayo Hospital, Lahore": {
      "new": [],
@@ -3991,31 +2956,8 @@
    },
    "Orthopedic Surgery": {
     "ABS Teaching Hospital, Gujrat": {
-     "new": [
-      {
-       "nameFull": "Jamshaid Raza S/O imam bakhsh alis gull sheer",
-       "marksTotal": 34.350477,
-       "pmdcNo": "743594-01-M",
-       "applicantId": 22398,
-       "preferenceNo": 2,
-       "quotaName": "Punjab",
-       "specialityName": "Orthopedic Surgery",
-       "hospitalName": "ABS Teaching Hospital, Gujrat",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Daniyal Rafiq Awan S/O Muhammad Rafiq Awan",
-       "marksTotal": 37.988712,
-       "preferenceNo": 11,
-       "pmdcNo": "757735-01-M",
-       "applicantId": 25566,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "AIMH, Sialkot": {
      "new": [
@@ -4157,31 +3099,8 @@
      "prev": []
     },
     "DHQ Rawalpindi": {
-     "new": [
-      {
-       "nameFull": "Rubab Ahmed Lone D/O Ahmed Zaman",
-       "marksTotal": 34.727165,
-       "pmdcNo": "84086701M",
-       "applicantId": 30065,
-       "preferenceNo": 2,
-       "quotaName": "Punjab",
-       "specialityName": "Otorhinolaryngology ENT",
-       "hospitalName": "DHQ Rawalpindi",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Humna Rashid D/O RASHID MASOOD",
-       "marksTotal": 37.184477,
-       "preferenceNo": 2,
-       "pmdcNo": "840594-01-M",
-       "applicantId": 30787,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Jinnah Hospital, Lahore": {
      "new": [],
@@ -4273,37 +3192,11 @@
     "Children Hospital, Lahore": {
      "new": [
       {
-       "nameFull": "Sadiah Saeed D/O Saeed Ahmad",
-       "marksTotal": 31.093182,
-       "pmdcNo": "787212-01-M",
-       "applicantId": 30591,
+       "nameFull": "Muhammad Waleed Rauf S/O Abdul Rauf",
+       "marksTotal": 31.220293,
+       "pmdcNo": "71504001M",
+       "applicantId": 29670,
        "preferenceNo": 6,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatric Surgery",
-       "hospitalName": "Children Hospital, Lahore",
-       "jobs": 2,
-       "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Aqsa Arif Malik D/O Dawood Sajid Dar",
-       "marksTotal": 30.523409,
-       "pmdcNo": "721158-01-M",
-       "applicantId": 30446,
-       "preferenceNo": 2,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatric Surgery",
-       "hospitalName": "Children Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Rahat Ul Ain Ahmad D/O Ahmad Bukhsh",
-       "marksTotal": 30.246958,
-       "pmdcNo": "840506-01-M",
-       "applicantId": 30103,
-       "preferenceNo": 9,
        "quotaName": "Punjab",
        "specialityName": "Pediatric Surgery",
        "hospitalName": "Children Hospital, Lahore",
@@ -4311,11 +3204,11 @@
        "placed": 0
       },
       {
-       "nameFull": "Areeb Afzaal S/O Afzaal Ahmad Khalid",
-       "marksTotal": 30.223764,
-       "pmdcNo": "112602-P",
-       "applicantId": 30750,
-       "preferenceNo": 15,
+       "nameFull": "Sadiah Saeed D/O Saeed Ahmad",
+       "marksTotal": 31.093182,
+       "pmdcNo": "787212-01-M",
+       "applicantId": 30591,
+       "preferenceNo": 6,
        "quotaName": "Punjab",
        "specialityName": "Pediatric Surgery",
        "hospitalName": "Children Hospital, Lahore",
@@ -4334,33 +3227,30 @@
        "consent": 2
       },
       {
-       "nameFull": "Abdur Rehman S/O Khalid Mahmood",
-       "marksTotal": 34.401298,
-       "preferenceNo": 16,
-       "pmdcNo": "111177-P",
-       "applicantId": 31107,
-       "consent": 2
-      },
-      {
        "nameFull": "Usman Ghani S/O Naik Ahmad",
        "marksTotal": 31.389269,
        "preferenceNo": 41,
        "pmdcNo": "102400P",
        "applicantId": 27847,
        "consent": 1
-      },
-      {
-       "nameFull": "Muhammad Uzair Khaliq S/O Abdul Khaliq",
-       "marksTotal": 31.241971,
-       "preferenceNo": 65,
-       "pmdcNo": "75552601M",
-       "applicantId": 28571,
-       "consent": 1
       }
      ]
     },
     "Children Hospital, Multan": {
      "new": [
+      {
+       "nameFull": "Faisal Habib S/O Habib Ullah",
+       "marksTotal": 30.819902,
+       "pmdcNo": "745851-01-M",
+       "applicantId": 21201,
+       "preferenceNo": 12,
+       "quotaName": "Punjab",
+       "specialityName": "Pediatric Surgery",
+       "hospitalName": "Children Hospital, Multan",
+       "jobs": 1,
+       "placed": 0,
+       "consent": 3
+      },
       {
        "nameFull": "Muhammad Jahanzaib Razzaq S/O ABDUL RAZZAQ",
        "marksTotal": 30.585044,
@@ -4372,19 +3262,6 @@
        "hospitalName": "Children Hospital, Multan",
        "jobs": 1,
        "placed": 0
-      },
-      {
-       "nameFull": "Muhammad Ahmad Shakir S/O SHAKIR ALI",
-       "marksTotal": 30.2575,
-       "pmdcNo": "748222-01-M",
-       "applicantId": 27040,
-       "preferenceNo": 3,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatric Surgery",
-       "hospitalName": "Children Hospital, Multan",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
       }
      ],
      "prev": [
@@ -4435,29 +3312,9 @@
        "hospitalName": "Mayo Hospital, Lahore",
        "jobs": 1,
        "placed": 0
-      },
-      {
-       "nameFull": "Muhammad Uzair Khaliq S/O Abdul Khaliq",
-       "marksTotal": 31.241971,
-       "pmdcNo": "75552601M",
-       "applicantId": 28571,
-       "preferenceNo": 62,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatric Surgery",
-       "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
       }
      ],
      "prev": [
-      {
-       "nameFull": "Rahat Ul Ain Ahmad D/O Ahmad Bukhsh",
-       "marksTotal": 35.246958,
-       "preferenceNo": 10,
-       "pmdcNo": "840506-01-M",
-       "applicantId": 30103,
-       "consent": 1
-      },
       {
        "nameFull": "Ayesha Tauqeer D/O Tauqeer Abbas",
        "marksTotal": 34.586327,
@@ -4512,7 +3369,7 @@
        "preferenceNo": 3,
        "pmdcNo": "830231-01-M",
        "applicantId": 30238,
-       "consent": 2
+       "consent": 1
       }
      ]
     },
@@ -4523,16 +3380,17 @@
     "Bahawal Victoria Hospital, Bahawalpur": {
      "new": [
       {
-       "nameFull": "Javaria Noor D/O Muhammad Farooq",
-       "marksTotal": 36.540531,
-       "pmdcNo": "783935-01-M",
-       "applicantId": 30641,
-       "preferenceNo": 4,
+       "nameFull": "Sana Rafiq D/O Muhammad Rafiq",
+       "marksTotal": 37.097954,
+       "pmdcNo": "783577-01-M",
+       "applicantId": 30722,
+       "preferenceNo": 1,
        "quotaName": "Punjab",
        "specialityName": "Pediatrics",
        "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
        "jobs": 1,
-       "placed": 0
+       "placed": 0,
+       "consent": 3
       }
      ],
      "prev": [
@@ -4547,31 +3405,8 @@
      ]
     },
     "Benazir Bhutto Hospital, Rawalpindi": {
-     "new": [
-      {
-       "nameFull": "Sheeza Farooq D/O Farooq Ahmed",
-       "marksTotal": 36.821244,
-       "pmdcNo": "861480-01-M",
-       "applicantId": 30515,
-       "preferenceNo": 3,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatrics",
-       "hospitalName": "Benazir Bhutto Hospital, Rawalpindi",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Hafsa Jamal D/O Rana Nasir Jamal",
-       "marksTotal": 37.473167,
-       "preferenceNo": 5,
-       "pmdcNo": "86150201M",
-       "applicantId": 29637,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Children Hospital, Lahore": {
      "new": [
@@ -4610,52 +3445,11 @@
        "quotaName": "Punjab",
        "specialityName": "Pediatrics",
        "hospitalName": "Children Hospital, Multan",
-       "jobs": 2,
-       "placed": 1
-      },
-      {
-       "nameFull": "Mahboob Ahmad S/O MUHAMMAD RAMZAN",
-       "marksTotal": 34.628364,
-       "pmdcNo": "108309-P",
-       "applicantId": 24963,
-       "preferenceNo": 9,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatrics",
-       "hospitalName": "Children Hospital, Multan",
-       "jobs": 2,
+       "jobs": 1,
        "placed": 0
-      },
-      {
-       "nameFull": "Maryam Saleem D/O Muhammad Saleem",
-       "marksTotal": 34.320627,
-       "pmdcNo": "759349-01-M",
-       "applicantId": 26458,
-       "preferenceNo": 3,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatrics",
-       "hospitalName": "Children Hospital, Multan",
-       "jobs": 2,
-       "placed": 1,
-       "consent": 3
       }
      ],
      "prev": [
-      {
-       "nameFull": "Faiqa Falak D/O Falak Sher Wattoo",
-       "marksTotal": 40.68987,
-       "preferenceNo": 1,
-       "pmdcNo": "107105-P",
-       "applicantId": 7324,
-       "consent": 2
-      },
-      {
-       "nameFull": "Usman Khalid S/O Rao Muhammad Khalid",
-       "marksTotal": 37.770769,
-       "preferenceNo": 2,
-       "pmdcNo": "108591",
-       "applicantId": 29685,
-       "consent": 2
-      },
       {
        "nameFull": "Faisal Shahzad Khan S/O Fida Hussain Khan",
        "marksTotal": 35.33154,
@@ -4671,30 +3465,8 @@
      "prev": []
     },
     "DHQ Hospital, DG Khan": {
-     "new": [
-      {
-       "nameFull": "Farheen Fatima D/O Abdul Rasheed",
-       "marksTotal": 35.729773,
-       "pmdcNo": "784892-01-M",
-       "applicantId": 30270,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatrics",
-       "hospitalName": "DHQ Hospital, DG Khan",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Zunaira Ishfaq D/O Ishfaq Ahmad",
-       "marksTotal": 35.886591,
-       "preferenceNo": 5,
-       "pmdcNo": "785826-01-M",
-       "applicantId": 30770,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "DHQ Hospital, Faisalabad": {
      "new": [],
@@ -4758,31 +3530,8 @@
      "prev": []
     },
     "Govt. Teaching Hospital GM Abad, Faisalabad": {
-     "new": [
-      {
-       "nameFull": "Faisal Liaqat S/O Liaqat Ali",
-       "marksTotal": 36.431439999999995,
-       "pmdcNo": "873053-01-M",
-       "applicantId": 31165,
-       "preferenceNo": 10,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatrics",
-       "hospitalName": "Govt. Teaching Hospital GM Abad, Faisalabad",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Areej Kanwal D/O Muzammil Haq",
-       "marksTotal": 36.835303,
-       "preferenceNo": 12,
-       "pmdcNo": "883352-01-M",
-       "applicantId": 30682,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Holy Family Hospital, Rawalpindi": {
      "new": [],
@@ -4820,30 +3569,8 @@
      "prev": []
     },
     "Lahore General Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Hassan Attique S/O Attique Ahmad",
-       "marksTotal": 36.942803,
-       "pmdcNo": "787554-01-M",
-       "applicantId": 30162,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatrics",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Shahzaib S/O Muhammad sadiq",
-       "marksTotal": 38.065541,
-       "preferenceNo": 3,
-       "pmdcNo": "104212-p ",
-       "applicantId": 27298,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Mayo Hospital, Lahore": {
      "new": [
@@ -4880,46 +3607,22 @@
      "prev": []
     },
     "Services Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Syed Shahmeer Anjum S/O Syed Qamar Saqlain Anjum",
-       "marksTotal": 35.507435,
-       "pmdcNo": "744994-01-M",
-       "applicantId": 25027,
-       "preferenceNo": 5,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatrics",
-       "hospitalName": "Services Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Hira Mustafa D/O ghulam mustafa anjum",
-       "marksTotal": 36.13144,
-       "preferenceNo": 2,
-       "pmdcNo": "90645601M",
-       "applicantId": 30458,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "new": [
       {
-       "nameFull": "Muhammad Omer Zahid S/O Zahid Iqbal",
-       "marksTotal": 34.539524,
-       "pmdcNo": "113543-P",
-       "applicantId": 20987,
-       "preferenceNo": 1,
+       "nameFull": "Mahboob Ahmad S/O MUHAMMAD RAMZAN",
+       "marksTotal": 34.628364,
+       "pmdcNo": "108309-P",
+       "applicantId": 24963,
+       "preferenceNo": 18,
        "quotaName": "Punjab",
        "specialityName": "Pediatrics",
        "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan",
        "jobs": 1,
-       "placed": 0,
-       "consent": 3
+       "placed": 0
       }
      ],
      "prev": [
@@ -4944,21 +3647,8 @@
        "quotaName": "Punjab",
        "specialityName": "Pediatrics",
        "hospitalName": "Sir Ganga Ram Hospital, Lahore",
-       "jobs": 2,
+       "jobs": 1,
        "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Saman Shahzad D/O Shahzad Ahmad",
-       "marksTotal": 37.104973,
-       "pmdcNo": "784345-01-M",
-       "applicantId": 30660,
-       "preferenceNo": 25,
-       "quotaName": "Punjab",
-       "specialityName": "Pediatrics",
-       "hospitalName": "Sir Ganga Ram Hospital, Lahore",
-       "jobs": 2,
-       "placed": 1,
        "consent": 3
       }
      ],
@@ -4969,15 +3659,7 @@
        "preferenceNo": 4,
        "pmdcNo": "100883-p",
        "applicantId": 18601,
-       "consent": 2
-      },
-      {
-       "nameFull": "Amna Ghafoor W/O Muhammad Asif",
-       "marksTotal": 39.097277,
-       "preferenceNo": 7,
-       "pmdcNo": "714450-01-M",
-       "applicantId": 29023,
-       "consent": 2
+       "consent": 1
       }
      ]
     }
@@ -5012,31 +3694,8 @@
    },
    "Physiology": {
     "RMU Allied Hospital, Rawalpindi": {
-     "new": [
-      {
-       "nameFull": "Sana Iftikhar D/O Iftikhar Ali",
-       "marksTotal": 36.339461,
-       "pmdcNo": "829823-01-M",
-       "applicantId": 29993,
-       "preferenceNo": 9,
-       "quotaName": "Punjab",
-       "specialityName": "Physiology",
-       "hospitalName": "RMU Allied Hospital, Rawalpindi",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Nawal Ashraf D/O MUHAMMAD ASHRAF",
-       "marksTotal": 36.380942,
-       "preferenceNo": 7,
-       "pmdcNo": "862034-01-M",
-       "applicantId": 30628,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Services Hospital, Lahore": {
      "new": [
@@ -5103,31 +3762,8 @@
      "prev": []
     },
     "Children Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Muhammad Meraj Malik S/O Abdul Rauf Malik",
-       "marksTotal": 33.737989,
-       "pmdcNo": "86665-P",
-       "applicantId": 30870,
-       "preferenceNo": 9,
-       "quotaName": "Punjab",
-       "specialityName": "Plastic Surgery",
-       "hospitalName": "Children Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Aniq Ahmad S/O Malik Nisar Ahmad",
-       "marksTotal": 35.212619,
-       "preferenceNo": 4,
-       "pmdcNo": "113358",
-       "applicantId": 29459,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "DHQ Hospital, DG Khan": {
      "new": [],
@@ -5191,30 +3827,8 @@
      "prev": []
     },
     "Benazir Bhutto Hospital, Rawalpindi": {
-     "new": [
-      {
-       "nameFull": "Sarah Kafeel D/O Kafeel Alam Faiz",
-       "marksTotal": 34.70966,
-       "pmdcNo": "83018001M",
-       "applicantId": 29979,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Psychiatry",
-       "hospitalName": "Benazir Bhutto Hospital, Rawalpindi",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Warda Shahid D/O Shahid Mehmood",
-       "marksTotal": 35.780158,
-       "preferenceNo": 1,
-       "pmdcNo": "90446501M",
-       "applicantId": 29636,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "DHQ Hospital, DG Khan": {
      "new": [
@@ -5227,33 +3841,12 @@
        "quotaName": "Punjab",
        "specialityName": "Psychiatry",
        "hospitalName": "DHQ Hospital, DG Khan",
-       "jobs": 2,
+       "jobs": 1,
        "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Tooba Mukhtar D/O Mukhtar Hussain Syed",
-       "marksTotal": 27.267818,
-       "pmdcNo": "750724-01-M",
-       "applicantId": 26171,
-       "preferenceNo": 10,
-       "quotaName": "Punjab",
-       "specialityName": "Psychiatry",
-       "hospitalName": "DHQ Hospital, DG Khan",
-       "jobs": 2,
-       "placed": 1,
        "consent": 3
       }
      ],
      "prev": [
-      {
-       "nameFull": "Adil Rafique S/O muhammad rafique",
-       "marksTotal": 28.755415,
-       "preferenceNo": 11,
-       "pmdcNo": "114952-p",
-       "applicantId": 21149,
-       "consent": 2
-      },
       {
        "nameFull": "Muhammad Abdullah Hameed S/O Abdul Hameed",
        "marksTotal": 28.002424,
@@ -5277,133 +3870,24 @@
      "prev": []
     },
     "Mayo Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "JEHANZEB AHMAD S/O RIAZ AHMAD ",
-       "marksTotal": 30.156827,
-       "pmdcNo": "778885-01-M",
-       "applicantId": 30315,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Psychiatry",
-       "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Huma Sadaqat D/O SADAQAT HUSSAIN VIRK",
-       "marksTotal": 34.312375,
-       "preferenceNo": 1,
-       "pmdcNo": "760615-01-M",
-       "applicantId": 29688,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Nishtar Hospital, Multan": {
      "new": [],
      "prev": []
     },
     "Punjab Institute of Mental Health, Lahore": {
-     "new": [
-      {
-       "nameFull": "Sadaf Akbar W/O Muneeb ur Rehman",
-       "marksTotal": 29.032122,
-       "pmdcNo": "83797-P",
-       "applicantId": 29502,
-       "preferenceNo": 6,
-       "quotaName": "Punjab",
-       "specialityName": "Psychiatry",
-       "hospitalName": "Punjab Institute of Mental Health, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      },
-      {
-       "nameFull": "Ashar Ahmed S/O Chaudhary Shakeel Ahmed",
-       "marksTotal": 28.788961,
-       "pmdcNo": "113913-P",
-       "applicantId": 19103,
-       "preferenceNo": 4,
-       "quotaName": "Punjab",
-       "specialityName": "Psychiatry",
-       "hospitalName": "Punjab Institute of Mental Health, Lahore",
-       "jobs": 2,
-       "placed": 0
-      },
-      {
-       "nameFull": "Ramlah Masood D/O Dr Muhammad Masood",
-       "marksTotal": 27.394433,
-       "pmdcNo": "744354-01-M",
-       "applicantId": 25970,
-       "preferenceNo": 6,
-       "quotaName": "Punjab",
-       "specialityName": "Psychiatry",
-       "hospitalName": "Punjab Institute of Mental Health, Lahore",
-       "jobs": 2,
-       "placed": 1,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Syed Samar Hussain Shah S/O Syed Qamar Hussain Shah",
-       "marksTotal": 30.554469,
-       "preferenceNo": 52,
-       "pmdcNo": "905255-01-M",
-       "applicantId": 30547,
-       "consent": 2
-      },
-      {
-       "nameFull": "JEHANZEB AHMAD S/O RIAZ AHMAD ",
-       "marksTotal": 30.156827,
-       "preferenceNo": 5,
-       "pmdcNo": "778885-01-M",
-       "applicantId": 30315,
-       "consent": 1
-      },
-      {
-       "nameFull": "Sarah Kafeel D/O Kafeel Alam Faiz",
-       "marksTotal": 29.70966,
-       "preferenceNo": 4,
-       "pmdcNo": "83018001M",
-       "applicantId": 29979,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Services Hospital, Lahore": {
      "new": [],
      "prev": []
     },
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
-     "new": [
-      {
-       "nameFull": "Samra Shaheen D/O Muhammad Iqbal",
-       "marksTotal": 26.56448,
-       "pmdcNo": "102605-P",
-       "applicantId": 22912,
-       "preferenceNo": 11,
-       "quotaName": "Punjab",
-       "specialityName": "Psychiatry",
-       "hospitalName": "Sheikh Zayed Medical Complex, Rahim Yar Khan",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Ashar Ahmed S/O Chaudhary Shakeel Ahmed",
-       "marksTotal": 28.788961,
-       "preferenceNo": 8,
-       "pmdcNo": "113913-P",
-       "applicantId": 19103,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Sir Ganga Ram Hospital, Lahore": {
      "new": [],
@@ -5416,31 +3900,8 @@
      "prev": []
     },
     "Bahawal Victoria Hospital, Bahawalpur": {
-     "new": [
-      {
-       "nameFull": "Saman Javed D/O Javed Iqbal",
-       "marksTotal": 36.77091,
-       "pmdcNo": "783700-01-M",
-       "applicantId": 30053,
-       "preferenceNo": 3,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Muhammad Waseem Akmal S/O Muhammad Akmal",
-       "marksTotal": 37.734177,
-       "preferenceNo": 2,
-       "pmdcNo": "757553-01-M",
-       "applicantId": 30874,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "DHQ Hospital, DG Khan": {
      "new": [
@@ -5474,8 +3935,30 @@
      "prev": []
     },
     "DHQ Hospital, Gujranwala": {
-     "new": [],
-     "prev": []
+     "new": [
+      {
+       "nameFull": "Javeria Aqeel W/O Faraz Shahid",
+       "marksTotal": 35.744393,
+       "pmdcNo": "112606-P",
+       "applicantId": 30866,
+       "preferenceNo": 2,
+       "quotaName": "Punjab",
+       "specialityName": "Pulmonology",
+       "hospitalName": "DHQ Hospital, Gujranwala",
+       "jobs": 1,
+       "placed": 0
+      }
+     ],
+     "prev": [
+      {
+       "nameFull": "Hassan Rafique S/O MUHAMMAD RAFIQUE",
+       "marksTotal": 35.838074,
+       "preferenceNo": 6,
+       "pmdcNo": "94707-P",
+       "applicantId": 18250,
+       "consent": 1
+      }
+     ]
     },
     "Jinnah Hospital, Lahore": {
      "new": [],
@@ -5492,17 +3975,16 @@
     "Nishtar Hospital, Multan": {
      "new": [
       {
-       "nameFull": "Sahar Aftab D/O Chaudhary Aftab Ahmad",
-       "marksTotal": 37.107651,
-       "pmdcNo": "784174-01-M",
-       "applicantId": 31006,
+       "nameFull": "Nadir Ali S/O Nazar Hussain",
+       "marksTotal": 38.420336,
+       "pmdcNo": "759265-01-M",
+       "applicantId": 28498,
        "preferenceNo": 6,
        "quotaName": "Punjab",
        "specialityName": "Pulmonology",
        "hospitalName": "Nishtar Hospital, Multan",
        "jobs": 1,
-       "placed": 0,
-       "consent": 3
+       "placed": 0
       }
      ],
      "prev": [
@@ -5521,30 +4003,8 @@
      "prev": []
     },
     "Services Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Hafiz Muhammad Asim Riaz S/O MUHAMMAD RIAZ BHUTTA",
-       "marksTotal": 36.822435,
-       "pmdcNo": "111602P",
-       "applicantId": 29702,
-       "preferenceNo": 4,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Services Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Mirza Ali Hussnain S/O Muhammad Arshad",
-       "marksTotal": 38.112955,
-       "preferenceNo": 3,
-       "pmdcNo": "777284-01-M",
-       "applicantId": 26313,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "new": [
@@ -5602,36 +4062,25 @@
    },
    "Radiotherapy": {
     "Nishtar Hospital, Multan": {
-     "new": [
-      {
-       "nameFull": "Ifra Shahid D/O Sheikh Shahid Naveed",
-       "marksTotal": 35.805606,
-       "pmdcNo": "787968-01-M",
-       "applicantId": 30400,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Radiotherapy",
-       "hospitalName": "Nishtar Hospital, Multan",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Muhammad Shahzad S/O NAZIR AHMAD",
-       "marksTotal": 35.927196,
-       "preferenceNo": 18,
-       "pmdcNo": "786073-01-M",
-       "applicantId": 30955,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     }
    },
    "Thoracic Surgery": {
     "Mayo Hospital, Lahore": {
      "new": [
+      {
+       "nameFull": "Umaira Ahmed D/O CH. AHMED NADEEM GUJJAR",
+       "marksTotal": 30.907559,
+       "pmdcNo": "922343-01-M",
+       "applicantId": 30286,
+       "preferenceNo": 16,
+       "quotaName": "Punjab",
+       "specialityName": "Thoracic Surgery",
+       "hospitalName": "Mayo Hospital, Lahore",
+       "jobs": 1,
+       "placed": 0
+      },
       {
        "nameFull": "Alia Waheed D/O Abd Ul Waheed",
        "marksTotal": 30.624607,
@@ -5641,21 +4090,8 @@
        "quotaName": "Punjab",
        "specialityName": "Thoracic Surgery",
        "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 2,
+       "jobs": 1,
        "placed": 0
-      },
-      {
-       "nameFull": "Nimra D/O Muhammad Nadeem",
-       "marksTotal": 30.564528,
-       "pmdcNo": "90561701M",
-       "applicantId": 31065,
-       "preferenceNo": 19,
-       "quotaName": "Punjab",
-       "specialityName": "Thoracic Surgery",
-       "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 2,
-       "placed": 1,
-       "consent": 3
       }
      ],
      "prev": [
@@ -5703,7 +4139,7 @@
        "preferenceNo": 35,
        "pmdcNo": "118751P",
        "applicantId": 30507,
-       "consent": 2
+       "consent": 1
       }
      ]
     },
@@ -5772,56 +4208,12 @@
      "prev": []
     },
     "Lahore General Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Ameer Hamza S/O ASIF LATIF",
-       "marksTotal": 35.891059999999996,
-       "pmdcNo": "787701-01-M",
-       "applicantId": 30079,
-       "preferenceNo": 3,
-       "quotaName": "Punjab",
-       "specialityName": "Urology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Muhammad Umar Saleem S/O Muhammad Saleem",
-       "marksTotal": 36.440672,
-       "preferenceNo": 6,
-       "pmdcNo": "717196-01-M",
-       "applicantId": 25218,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Mayo Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Muhammad Shahzaib Asim S/O Ghulam Ahmed",
-       "marksTotal": 36.076211,
-       "pmdcNo": "108334-P",
-       "applicantId": 20463,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Urology",
-       "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Abdul Shakoor S/O Abid Hussain",
-       "marksTotal": 38.172548,
-       "preferenceNo": 2,
-       "pmdcNo": "715086-01-M",
-       "applicantId": 24694,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Nishtar Hospital, Multan": {
      "new": [],
@@ -5832,61 +4224,16 @@
      "prev": []
     },
     "Services Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Muhammad Fiaz S/O MUHAMMAD MANZOOR",
-       "marksTotal": 34.692912,
-       "pmdcNo": "99918P",
-       "applicantId": 29506,
-       "preferenceNo": 7,
-       "quotaName": "Punjab",
-       "specialityName": "Urology",
-       "hospitalName": "Services Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Muhammad Atif S/O MUHAMMAD SALEEM",
-       "marksTotal": 36.081969,
-       "preferenceNo": 5,
-       "pmdcNo": "862548-01-M",
-       "applicantId": 30698,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
      "new": [],
      "prev": []
     },
     "Sir Ganga Ram Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Umaira Ahmed D/O CH. AHMED NADEEM GUJJAR",
-       "marksTotal": 35.907559,
-       "pmdcNo": "922343-01-M",
-       "applicantId": 30286,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Urology",
-       "hospitalName": "Sir Ganga Ram Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Muhammad Shahzaib Asim S/O Ghulam Ahmed",
-       "marksTotal": 36.076211,
-       "preferenceNo": 4,
-       "pmdcNo": "108334-P",
-       "applicantId": 20463,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     }
    }
   },
@@ -5899,31 +4246,8 @@
    },
    "Cardiac Surgery": {
     "Choudhary Prevez Ilahi Institute of Cardiology , Multan": {
-     "new": [
-      {
-       "nameFull": "Hassnain Haider S/O Ashraf Ali",
-       "marksTotal": 26.418896,
-       "pmdcNo": "783831-03-M",
-       "applicantId": 30391,
-       "preferenceNo": 1,
-       "quotaName": "KPK, Sindh, Balochistan",
-       "specialityName": "Cardiac Surgery",
-       "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
-       "jobs": 1,
-       "placed": 0,
-       "consent": 3
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Sohan Lal S/O Balhoo Mal",
-       "marksTotal": 27.830821,
-       "preferenceNo": 1,
-       "pmdcNo": "779365-02-M",
-       "applicantId": 31201,
-       "consent": 2
-      }
-     ]
+     "new": [],
+     "prev": []
     }
    },
    "General Surgery": {
@@ -6136,16 +4460,7 @@
    "Obstetrics & Gynecology": {
     "DHQ Hospital, Jhang": {
      "new": [],
-     "prev": [
-      {
-       "nameFull": "Ansa Shahbaz D/O Muhammad Shahbaz Bajwa",
-       "marksTotal": 36.314982,
-       "preferenceNo": 1,
-       "pmdcNo": "87237-P",
-       "applicantId": 20860,
-       "consent": 2
-      }
-     ]
+     "prev": []
     }
    }
   }
@@ -6227,14 +4542,6 @@
        "pmdcNo": "773018-01-M",
        "applicantId": 27481,
        "consent": 2
-      },
-      {
-       "nameFull": "Muhammad Ahmad Ayyaz S/O Muhammad Ayyaz",
-       "marksTotal": 29.799518,
-       "preferenceNo": 2,
-       "pmdcNo": "830297-01-M",
-       "applicantId": 29594,
-       "consent": 2
       }
      ]
     },
@@ -6243,30 +4550,8 @@
      "prev": []
     },
     "Mayo Hospital, Lahore": {
-     "new": [
-      {
-       "nameFull": "Tayyaba Khalid D/O Chaudhary Muhammad Khalid",
-       "marksTotal": 34.983655,
-       "pmdcNo": "872708-01-M",
-       "applicantId": 30328,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Mayo Hospital, Lahore",
-       "jobs": 1,
-       "placed": 0
-      }
-     ],
-     "prev": [
-      {
-       "nameFull": "Muhammad Aqib S/O Abdul Majeed",
-       "marksTotal": 35.208906,
-       "preferenceNo": 4,
-       "pmdcNo": "873179-01-M",
-       "applicantId": 29669,
-       "consent": 1
-      }
-     ]
+     "new": [],
+     "prev": []
     },
     "Punjab Institute of Cardiology, Lahore": {
      "new": [
@@ -6279,20 +4564,8 @@
        "quotaName": "Punjab",
        "specialityName": "Cardiology",
        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-       "jobs": 2,
+       "jobs": 1,
        "placed": 0
-      },
-      {
-       "nameFull": "Muhammad Aqib S/O Abdul Majeed",
-       "marksTotal": 30.208906,
-       "pmdcNo": "873179-01-M",
-       "applicantId": 29669,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Punjab Institute of Cardiology, Lahore",
-       "jobs": 2,
-       "placed": 1
       }
      ],
      "prev": [
@@ -6302,14 +4575,6 @@
        "preferenceNo": 1,
        "pmdcNo": "781842-01-M",
        "applicantId": 28465,
-       "consent": 2
-      },
-      {
-       "nameFull": "Syed Abdullah Arif S/O ARIF ALI",
-       "marksTotal": 31.260488,
-       "preferenceNo": 1,
-       "pmdcNo": "78741201M",
-       "applicantId": 30407,
        "consent": 2
       }
      ]
@@ -6416,16 +4681,7 @@
     },
     "Mayo Hospital, Lahore": {
      "new": [],
-     "prev": [
-      {
-       "nameFull": "Ayesha Siddiqa D/O Riaz Ahmed",
-       "marksTotal": 35.440983,
-       "preferenceNo": 1,
-       "pmdcNo": "862200-01-M",
-       "applicantId": 30382,
-       "consent": 2
-      }
-     ]
+     "prev": []
     },
     "Punjab Institute of Neurosciences, Lahore": {
      "new": [],

@@ -2,181 +2,8 @@
  "MD": {
   "Punjab": {
    "Cardiology": {
-    "Bahawal Victoria Hospital, Bahawalpur": {
-     "candidates": [
-      {
-       "nameFull": "Faizan Ahmed Zakir S/O Zakir Ali",
-       "marksTotal": 37.44302,
-       "preferenceNo": 1,
-       "pmdcNo": "894339-01-M",
-       "applicantId": 30349
-      }
-     ],
-     "others": [
-      {
-       "nameFull": "Rizwan Rasheed S/O Muhammad Rasheed",
-       "marksTotal": 37.621667,
-       "pmdcNo": "78542901M",
-       "applicantId": 30105,
-       "preferenceNo": 17,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": false,
-       "selected_in": {
-        "quotaName": null,
-        "specialityName": null,
-        "hospitalName": null,
-        "preferenceNo": null
-       }
-      },
-      {
-       "nameFull": "Abdul Rehman S/O Muhammad Riaz",
-       "marksTotal": 31.519469,
-       "pmdcNo": "785034-01-M",
-       "applicantId": 30708,
-       "preferenceNo": 54,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 3
-       }
-      },
-      {
-       "nameFull": "Tauseef Hussain S/O MALIK RAHEEM BAKHSH",
-       "marksTotal": 30.825151,
-       "pmdcNo": "773018-01-M",
-       "applicantId": 27481,
-       "preferenceNo": 7,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muhammad Wajid Rasool S/O Hafiz Muhammad Ramzan",
-       "marksTotal": 30.6968,
-       "pmdcNo": "91912-p",
-       "applicantId": 1708,
-       "preferenceNo": 9,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Zoha Saleem D/O Muhammad Saleem",
-       "marksTotal": 30.639242,
-       "pmdcNo": "904714-01-M",
-       "applicantId": 30495,
-       "preferenceNo": 2,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Ghulam Shabir S/O Muhammad Ramzan",
-       "marksTotal": 30.398939,
-       "pmdcNo": "744522-01-M",
-       "applicantId": 28439,
-       "preferenceNo": 35,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Children Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muhammad Aqib S/O Abdul Majeed",
-       "marksTotal": 30.208906,
-       "pmdcNo": "873179-01-M",
-       "applicantId": 29669,
-       "preferenceNo": 38,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Mayo Hospital, Lahore",
-        "preferenceNo": 4
-       }
-      },
-      {
-       "nameFull": "Mahnoor Fatima D/O Shabbir Hussain Bajwa",
-       "marksTotal": 35.136841000000004,
-       "pmdcNo": "715460-01-M",
-       "applicantId": 28755,
-       "preferenceNo": 20,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Medicine",
-        "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muhammad Umer Sher S/O SHER MUHAMMAD",
-       "marksTotal": 27.47,
-       "pmdcNo": "784073-01-M",
-       "applicantId": 30371,
-       "preferenceNo": 82,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Medicine",
-        "hospitalName": "Services Hospital, Lahore",
-        "preferenceNo": 4
-       }
-      }
-     ]
-    },
     "Choudhary Prevez Ilahi Institute of Cardiology , Multan": {
      "candidates": [
-      {
-       "nameFull": "Tauseef Hussain S/O MALIK RAHEEM BAKHSH",
-       "marksTotal": 30.825151,
-       "preferenceNo": 1,
-       "pmdcNo": "773018-01-M",
-       "applicantId": 27481
-      },
       {
        "nameFull": "Muhammad Wajid Rasool S/O Hafiz Muhammad Ramzan",
        "marksTotal": 30.6968,
@@ -219,12 +46,12 @@
        "quotaName": "Punjab",
        "specialityName": "Cardiology",
        "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -287,12 +114,12 @@
        "quotaName": "Punjab",
        "specialityName": "Cardiology",
        "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -310,6 +137,23 @@
         "specialityName": "Neurology",
         "hospitalName": "Mayo Hospital, Lahore",
         "preferenceNo": 1
+       }
+      },
+      {
+       "nameFull": "Tauseef Hussain S/O MALIK RAHEEM BAKHSH",
+       "marksTotal": 30.825151,
+       "pmdcNo": "773018-01-M",
+       "applicantId": 27481,
+       "preferenceNo": 1,
+       "quotaName": "Punjab",
+       "specialityName": "Cardiology",
+       "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
+       "selected": false,
+       "selected_in": {
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -728,9 +572,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
        }
       },
       {
@@ -1098,9 +942,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
        }
       },
       {
@@ -1227,13 +1071,6 @@
     "Punjab Institute of Cardiology, Lahore": {
      "candidates": [
       {
-       "nameFull": "Muhammad Hamza Maqsood S/O Maqsood Ahmad",
-       "marksTotal": 32.994546,
-       "preferenceNo": 1,
-       "pmdcNo": "781842-01-M",
-       "applicantId": 28465
-      },
-      {
        "nameFull": "Syed Abdullah Arif S/O ARIF ALI",
        "marksTotal": 31.260488,
        "preferenceNo": 1,
@@ -1267,6 +1104,13 @@
        "preferenceNo": 1,
        "pmdcNo": "904714-01-M",
        "applicantId": 30495
+      },
+      {
+       "nameFull": "Ahmad Rafique S/O Muhammad Rafique Anjum",
+       "marksTotal": 30.590682,
+       "preferenceNo": 1,
+       "pmdcNo": "78607401M",
+       "applicantId": 29485
       }
      ],
      "others": [
@@ -1302,6 +1146,23 @@
         "specialityName": "Dermatology",
         "hospitalName": "Services Hospital, Lahore",
         "preferenceNo": 2
+       }
+      },
+      {
+       "nameFull": "Muhammad Hamza Maqsood S/O Maqsood Ahmad",
+       "marksTotal": 32.994546,
+       "pmdcNo": "781842-01-M",
+       "applicantId": 28465,
+       "preferenceNo": 1,
+       "quotaName": "Punjab",
+       "specialityName": "Cardiology",
+       "hospitalName": "Punjab Institute of Cardiology, Lahore",
+       "selected": false,
+       "selected_in": {
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -1568,12 +1429,12 @@
        "quotaName": "Punjab",
        "specialityName": "Cardiology",
        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -1659,23 +1520,6 @@
         "specialityName": "Medicine",
         "hospitalName": "Services Hospital, Lahore",
         "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Ahmad Rafique S/O Muhammad Rafique Anjum",
-       "marksTotal": 30.590682,
-       "pmdcNo": "78607401M",
-       "applicantId": 29485,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Cardiology",
-       "hospitalName": "Punjab Institute of Cardiology, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
        }
       },
       {
@@ -2443,12 +2287,12 @@
        "quotaName": "Punjab",
        "specialityName": "Dermatology",
        "hospitalName": "Benazir Bhutto Hospital, Rawalpindi",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -2830,12 +2674,12 @@
        "quotaName": "Punjab",
        "specialityName": "Dermatology",
        "hospitalName": "Jinnah Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -2918,9 +2762,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
        }
       },
       {
@@ -3251,12 +3095,12 @@
        "quotaName": "Punjab",
        "specialityName": "Dermatology",
        "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -3339,9 +3183,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
        }
       },
       {
@@ -3421,155 +3265,6 @@
        "quotaName": "Punjab",
        "specialityName": "Dermatology",
        "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Medicine",
-        "hospitalName": "Services Hospital, Lahore",
-        "preferenceNo": 4
-       }
-      }
-     ]
-    },
-    "Sahiwal Teaching Hospital, Sahiwal": {
-     "candidates": [
-      {
-       "nameFull": "Muhammad Shahzad S/O NAZIR AHMAD",
-       "marksTotal": 30.927196,
-       "preferenceNo": 6,
-       "pmdcNo": "786073-01-M",
-       "applicantId": 30955
-      }
-     ],
-     "others": [
-      {
-       "nameFull": "Asim Rafiq S/O MUHAMMAD RAFIQ",
-       "marksTotal": 33.476483,
-       "pmdcNo": "114980-p",
-       "applicantId": 16123,
-       "preferenceNo": 25,
-       "quotaName": "Punjab",
-       "specialityName": "Dermatology",
-       "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Nephrology",
-        "hospitalName": "Mayo Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Marrium D/O jamshaid iqbal",
-       "marksTotal": 32.260531,
-       "pmdcNo": "798478-01-M",
-       "applicantId": 30675,
-       "preferenceNo": 6,
-       "quotaName": "Punjab",
-       "specialityName": "Dermatology",
-       "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Jinnah Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Saad Ahmad S/O Shakeel Ahmad",
-       "marksTotal": 31.728961,
-       "pmdcNo": "774494-01-M",
-       "applicantId": 26044,
-       "preferenceNo": 15,
-       "quotaName": "Punjab",
-       "specialityName": "Dermatology",
-       "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Abdul Rehman S/O Muhammad Riaz",
-       "marksTotal": 36.519469,
-       "pmdcNo": "785034-01-M",
-       "applicantId": 30708,
-       "preferenceNo": 6,
-       "quotaName": "Punjab",
-       "specialityName": "Dermatology",
-       "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 3
-       }
-      },
-      {
-       "nameFull": "Ghulam Shabir S/O Muhammad Ramzan",
-       "marksTotal": 30.398939,
-       "pmdcNo": "744522-01-M",
-       "applicantId": 28439,
-       "preferenceNo": 69,
-       "quotaName": "Punjab",
-       "specialityName": "Dermatology",
-       "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Children Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muhammad Aqib S/O Abdul Majeed",
-       "marksTotal": 30.208906,
-       "pmdcNo": "873179-01-M",
-       "applicantId": 29669,
-       "preferenceNo": 39,
-       "quotaName": "Punjab",
-       "specialityName": "Dermatology",
-       "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Mayo Hospital, Lahore",
-        "preferenceNo": 4
-       }
-      },
-      {
-       "nameFull": "Mahnoor Fatima D/O Shabbir Hussain Bajwa",
-       "marksTotal": 30.136841,
-       "pmdcNo": "715460-01-M",
-       "applicantId": 28755,
-       "preferenceNo": 25,
-       "quotaName": "Punjab",
-       "specialityName": "Dermatology",
-       "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Medicine",
-        "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muhammad Umer Sher S/O SHER MUHAMMAD",
-       "marksTotal": 27.47,
-       "pmdcNo": "784073-01-M",
-       "applicantId": 30371,
-       "preferenceNo": 61,
-       "quotaName": "Punjab",
-       "specialityName": "Dermatology",
-       "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
@@ -3821,12 +3516,12 @@
        "quotaName": "Punjab",
        "specialityName": "Dermatology",
        "hospitalName": "Services Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -3943,9 +3638,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
        }
       },
       {
@@ -4259,12 +3954,12 @@
        "quotaName": "Punjab",
        "specialityName": "Dermatology",
        "hospitalName": "Sir Ganga Ram Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -5104,12 +4799,12 @@
        "quotaName": "Punjab",
        "specialityName": "Medical Oncology",
        "hospitalName": "Mayo Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -5308,12 +5003,12 @@
        "quotaName": "Punjab",
        "specialityName": "Medical Oncology",
        "hospitalName": "Mayo Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -5491,240 +5186,6 @@
     }
    },
    "Medicine": {
-    "Allied Hospital, Faisalabad": {
-     "candidates": [
-      {
-       "nameFull": "Ansar Abbas S/O Gulzar Ahmad Khan",
-       "marksTotal": 35.835379,
-       "preferenceNo": 1,
-       "pmdcNo": "905468-01-M",
-       "applicantId": 30001
-      }
-     ],
-     "others": [
-      {
-       "nameFull": "Asim Rafiq S/O MUHAMMAD RAFIQ",
-       "marksTotal": 33.476483,
-       "pmdcNo": "114980-p",
-       "applicantId": 16123,
-       "preferenceNo": 43,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Nephrology",
-        "hospitalName": "Mayo Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Ali Hassan S/O SAEED AHMED",
-       "marksTotal": 32.587424,
-       "pmdcNo": "904986-01-M",
-       "applicantId": 30754,
-       "preferenceNo": 1,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": false,
-       "selected_in": {
-        "quotaName": null,
-        "specialityName": null,
-        "hospitalName": null,
-        "preferenceNo": null
-       }
-      },
-      {
-       "nameFull": "Muhammad Saad Arshad S/O Arshad Mahmood",
-       "marksTotal": 31.961939,
-       "pmdcNo": "86131301M",
-       "applicantId": 30776,
-       "preferenceNo": 9,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Medicine",
-        "hospitalName": "Holy Family Hospital, Rawalpindi",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Usama S/O MUHAMMAD AKRAM SABIR",
-       "marksTotal": 31.948292,
-       "pmdcNo": "862182-01-M",
-       "applicantId": 30508,
-       "preferenceNo": 48,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": false,
-       "selected_in": {
-        "quotaName": null,
-        "specialityName": null,
-        "hospitalName": null,
-        "preferenceNo": null
-       }
-      },
-      {
-       "nameFull": "Hasnain Maqsood S/O Maqsood Ahmad",
-       "marksTotal": 36.545378,
-       "pmdcNo": "760739-01-M",
-       "applicantId": 28790,
-       "preferenceNo": 20,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Institute of Child Health, Faisalabad",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Abdul Rehman S/O Muhammad Riaz",
-       "marksTotal": 31.519469,
-       "pmdcNo": "785034-01-M",
-       "applicantId": 30708,
-       "preferenceNo": 37,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 3
-       }
-      },
-      {
-       "nameFull": "Muhammad Faizan S/O Muhammad Tariq",
-       "marksTotal": 36.477727,
-       "pmdcNo": "883982-01-M",
-       "applicantId": 30096,
-       "preferenceNo": 5,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Neurology",
-        "hospitalName": "Allied Hospital, Faisalabad",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Rabia Nawaz D/O Muhammad Nawaz",
-       "marksTotal": 30.907607,
-       "pmdcNo": "87318701M",
-       "applicantId": 29997,
-       "preferenceNo": 35,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Neurology",
-        "hospitalName": "Mayo Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Zoha Saleem D/O Muhammad Saleem",
-       "marksTotal": 30.639242,
-       "pmdcNo": "904714-01-M",
-       "applicantId": 30495,
-       "preferenceNo": 40,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Noman Asad S/O Sher Muhammad Asad",
-       "marksTotal": 35.530606,
-       "pmdcNo": "906163-01-M",
-       "applicantId": 30863,
-       "preferenceNo": 8,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Allied Hospital, Faisalabad",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Ghulam Shabir S/O Muhammad Ramzan",
-       "marksTotal": 30.398939,
-       "pmdcNo": "744522-01-M",
-       "applicantId": 28439,
-       "preferenceNo": 98,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Children Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muhammad Aqib S/O Abdul Majeed",
-       "marksTotal": 30.208906,
-       "pmdcNo": "873179-01-M",
-       "applicantId": 29669,
-       "preferenceNo": 46,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Mayo Hospital, Lahore",
-        "preferenceNo": 4
-       }
-      },
-      {
-       "nameFull": "Muhammad Umer Sher S/O SHER MUHAMMAD",
-       "marksTotal": 27.47,
-       "pmdcNo": "784073-01-M",
-       "applicantId": 30371,
-       "preferenceNo": 37,
-       "quotaName": "Punjab",
-       "specialityName": "Medicine",
-       "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Medicine",
-        "hospitalName": "Services Hospital, Lahore",
-        "preferenceNo": 4
-       }
-      }
-     ]
-    },
     "Bahawal Victoria Hospital, Bahawalpur": {
      "candidates": [
       {
@@ -5762,12 +5223,12 @@
        "quotaName": "Punjab",
        "specialityName": "Medicine",
        "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -5796,12 +5257,12 @@
        "quotaName": "Punjab",
        "specialityName": "Medicine",
        "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -5813,12 +5274,12 @@
        "quotaName": "Punjab",
        "specialityName": "Medicine",
        "hospitalName": "Bahawal Victoria Hospital, Bahawalpur",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -6546,9 +6007,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
        }
       },
       {
@@ -7211,9 +6672,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
        }
       },
       {
@@ -7411,12 +6872,12 @@
        "quotaName": "Punjab",
        "specialityName": "Neurology",
        "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Medicine",
-        "hospitalName": "Allied Hospital, Faisalabad",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -7581,12 +7042,12 @@
        "quotaName": "Punjab",
        "specialityName": "Neurology",
        "hospitalName": "Mayo Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -7839,9 +7300,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
        }
       },
       {
@@ -8257,12 +7718,12 @@
        "quotaName": "Punjab",
        "specialityName": "Neurology",
        "hospitalName": "Punjab Institute of Neurosciences, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -8362,9 +7823,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
        }
       },
       {
@@ -8579,12 +8040,12 @@
        "quotaName": "Punjab",
        "specialityName": "Pediatrics",
        "hospitalName": "Allied Hospital, Faisalabad",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Medicine",
-        "hospitalName": "Allied Hospital, Faisalabad",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -8871,12 +8332,12 @@
        "quotaName": "Punjab",
        "specialityName": "Pediatrics",
        "hospitalName": "Children Hospital, Lahore",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -9071,12 +8532,12 @@
        "quotaName": "Punjab",
        "specialityName": "Pediatrics",
        "hospitalName": "Institute of Child Health, Faisalabad",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Medicine",
-        "hospitalName": "Allied Hospital, Faisalabad",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -9254,12 +8715,12 @@
        "quotaName": "Punjab",
        "specialityName": "Pediatrics",
        "hospitalName": "Nishtar Hospital, Multan",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -9271,12 +8732,12 @@
        "quotaName": "Punjab",
        "specialityName": "Pediatrics",
        "hospitalName": "Nishtar Hospital, Multan",
-       "selected": true,
+       "selected": false,
        "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Choudhary Prevez Ilahi Institute of Cardiology , Multan",
-        "preferenceNo": 1
+        "quotaName": null,
+        "specialityName": null,
+        "hospitalName": null,
+        "preferenceNo": null
        }
       },
       {
@@ -9576,9 +9037,9 @@
        "selected": true,
        "selected_in": {
         "quotaName": "Punjab",
-        "specialityName": "Pulmonology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 4
+        "specialityName": "Cardiology",
+        "hospitalName": "Punjab Institute of Cardiology, Lahore",
+        "preferenceNo": 1
        }
       },
       {
@@ -10580,328 +10041,6 @@
         "specialityName": null,
         "hospitalName": null,
         "preferenceNo": null
-       }
-      }
-     ],
-     "jobs": 1
-    }
-   },
-   "Pulmonology": {
-    "Lahore General Hospital, Lahore": {
-     "candidates": [
-      {
-       "nameFull": "Ahmad Rafique S/O Muhammad Rafique Anjum",
-       "marksTotal": 35.590682,
-       "preferenceNo": 4,
-       "pmdcNo": "78607401M",
-       "applicantId": 29485
-      }
-     ],
-     "others": [
-      {
-       "nameFull": "Hanana Nasir D/O Nasir Javed",
-       "marksTotal": 35.345963,
-       "pmdcNo": "719009-01-M",
-       "applicantId": 21144,
-       "preferenceNo": 22,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Services Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Asim Rafiq S/O MUHAMMAD RAFIQ",
-       "marksTotal": 33.476483,
-       "pmdcNo": "114980-p",
-       "applicantId": 16123,
-       "preferenceNo": 29,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Nephrology",
-        "hospitalName": "Mayo Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Usama S/O MUHAMMAD AKRAM SABIR",
-       "marksTotal": 31.948292,
-       "pmdcNo": "862182-01-M",
-       "applicantId": 30508,
-       "preferenceNo": 25,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": false,
-       "selected_in": {
-        "quotaName": null,
-        "specialityName": null,
-        "hospitalName": null,
-        "preferenceNo": null
-       }
-      },
-      {
-       "nameFull": "Sana Iqbal D/O Raja Muhammad Iqbal",
-       "marksTotal": 31.693673,
-       "pmdcNo": "88354601M",
-       "applicantId": 30695,
-       "preferenceNo": 25,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": false,
-       "selected_in": {
-        "quotaName": null,
-        "specialityName": null,
-        "hospitalName": null,
-        "preferenceNo": null
-       }
-      },
-      {
-       "nameFull": "Laraib Tariq Khan W/O MUHAMMAD SHEERAZ KHAN",
-       "marksTotal": 31.640606,
-       "pmdcNo": "758593-01-M",
-       "applicantId": 26896,
-       "preferenceNo": 31,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Nephrology",
-        "hospitalName": "Holy Family Hospital, Rawalpindi",
-        "preferenceNo": 2
-       }
-      },
-      {
-       "nameFull": "Abdul Rehman S/O Muhammad Riaz",
-       "marksTotal": 31.519469,
-       "pmdcNo": "785034-01-M",
-       "applicantId": 30708,
-       "preferenceNo": 44,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Lahore General Hospital, Lahore",
-        "preferenceNo": 3
-       }
-      },
-      {
-       "nameFull": "Syed Abdullah Arif S/O ARIF ALI",
-       "marksTotal": 31.260488,
-       "pmdcNo": "78741201M",
-       "applicantId": 30407,
-       "preferenceNo": 18,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muneeb Ahmad S/O Muhammad Mukhtar Ahmad",
-       "marksTotal": 31.243279,
-       "pmdcNo": "716203-01-M",
-       "applicantId": 28907,
-       "preferenceNo": 16,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Jinnah Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Aqsa Amer D/O Muhammad Amer Nazir",
-       "marksTotal": 31.187884,
-       "pmdcNo": "88358501M",
-       "applicantId": 29687,
-       "preferenceNo": 11,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Neurology",
-        "hospitalName": "Mayo Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muhammad Hashim Iqbal S/O MUHAMMAD IQBAL",
-       "marksTotal": 30.96947,
-       "pmdcNo": "786835-01-M",
-       "applicantId": 30569,
-       "preferenceNo": 38,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Children Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muhammad Shahzad S/O NAZIR AHMAD",
-       "marksTotal": 30.927196,
-       "pmdcNo": "786073-01-M",
-       "applicantId": 30955,
-       "preferenceNo": 25,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Dermatology",
-        "hospitalName": "Sahiwal Teaching Hospital, Sahiwal",
-        "preferenceNo": 6
-       }
-      },
-      {
-       "nameFull": "Rabia Nawaz D/O Muhammad Nawaz",
-       "marksTotal": 30.907607,
-       "pmdcNo": "87318701M",
-       "applicantId": 29997,
-       "preferenceNo": 26,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Neurology",
-        "hospitalName": "Mayo Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Zoha Saleem D/O Muhammad Saleem",
-       "marksTotal": 30.639242,
-       "pmdcNo": "904714-01-M",
-       "applicantId": 30495,
-       "preferenceNo": 35,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Punjab Institute of Cardiology, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Ghulam Shabir S/O Muhammad Ramzan",
-       "marksTotal": 30.398939,
-       "pmdcNo": "744522-01-M",
-       "applicantId": 28439,
-       "preferenceNo": 73,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Pediatrics",
-        "hospitalName": "Children Hospital, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muhammad Aqib S/O Abdul Majeed",
-       "marksTotal": 30.208906,
-       "pmdcNo": "873179-01-M",
-       "applicantId": 29669,
-       "preferenceNo": 19,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Mayo Hospital, Lahore",
-        "preferenceNo": 4
-       }
-      },
-      {
-       "nameFull": "Raza Rasheed S/O Rasheed Ahmed",
-       "marksTotal": 29.448074,
-       "pmdcNo": "742983-01-M",
-       "applicantId": 28153,
-       "preferenceNo": 5,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Cardiology",
-        "hospitalName": "Rawalpindi Institute of Cardiology , Rawalpindi",
-        "preferenceNo": 2
-       }
-      },
-      {
-       "nameFull": "Muhammad Sarim Khan S/O Javed Ahmad Khan",
-       "marksTotal": 28.983193,
-       "pmdcNo": "755905-01-M",
-       "applicantId": 29071,
-       "preferenceNo": 12,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Neurology",
-        "hospitalName": "Punjab Institute of Neurosciences, Lahore",
-        "preferenceNo": 1
-       }
-      },
-      {
-       "nameFull": "Muhammad Umer Sher S/O SHER MUHAMMAD",
-       "marksTotal": 27.47,
-       "pmdcNo": "784073-01-M",
-       "applicantId": 30371,
-       "preferenceNo": 28,
-       "quotaName": "Punjab",
-       "specialityName": "Pulmonology",
-       "hospitalName": "Lahore General Hospital, Lahore",
-       "selected": true,
-       "selected_in": {
-        "quotaName": "Punjab",
-        "specialityName": "Medicine",
-        "hospitalName": "Services Hospital, Lahore",
-        "preferenceNo": 4
        }
       }
      ],

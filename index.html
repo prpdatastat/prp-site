@@ -67,7 +67,7 @@
         <h3 class="title">5th Official Merit List</h3>
         <div class="alert">
           <!--<h3 class="alert-title">Merit List Issue</h3>-->
-          <p class="alert-content">Click on consent to check their consent</p>
+          <p class="alert-content">Click on consent to check their consent in ongoing (6th round)<br><span class='important'> Do tell us if someone consent doesnot match on their profile and here!</span></p>
           <!--<h3 class="alert-title">Upcoming 5th Merit List estimated changes</h3>-->
           <!--<p class="alert-content"><span class="linkableunderline" onclick="gotoUrl('upgrade.html')">Click here to see changes in upcoming list</span></p>-->
         </h3>
@@ -229,7 +229,7 @@
             merit[cand].specialityName,
             merit[cand].hospitalName,
             merit[cand].marksTotal,
-            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkJoining("+merit[cand].applicantId+")'>Check Joining</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
+            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkConsent("+merit[cand].applicantId+")'>Check Consent</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
           ]);
       }
       jQuery("#statTable").DataTable().draw();

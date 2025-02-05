@@ -510,12 +510,11 @@ async function getSchedule() {
         console.log('error');
     }
     }
-async function getConsent(applicantId, round = 4) { 
-     
+async function getConsent(applicantId, inductionId = 17, round = 5) {      
 
         try {
         let response = await $.ajax({
-            url: 'https://prp-api.vercel.app/consent/'+applicantId.toString()+"/"+ round.toString(),
+            url: 'https://prp-api.vercel.app/consent/'+applicantId.toString()+"/"+ inductionId.toString()+"/"+ round.toString(),
             type: 'GET',
         });
             return response.toString();

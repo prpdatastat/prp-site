@@ -281,6 +281,15 @@ a:hover {
 .infos strong {
   color: rgb(163, 31, 31)
 }
+.alert-small {
+  padding: 15px;
+  background-color: rgba(172, 82, 82, 0.932);
+  color : white;
+  font-family: 'light';
+  
+  border-radius: 10px;
+
+}
 .cutoff-bubble strong:hover {
   background-color: #5cdb71;
   padding: 0.5em;

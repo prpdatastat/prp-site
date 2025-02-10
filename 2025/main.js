@@ -29,9 +29,9 @@ let candGazetteData = {
 };
 
 let candidates = {
-    FCPS : gazetteFCPS[0].totalCount,
-    MS : gazetteMS[0].totalCount,
-    MD : gazetteMD[0].totalCount
+    FCPS : 0,
+    MS : gazetteMS.length,
+    MD : gazetteMD.length
 }
 function toFixedNumber(num, digits, base){
     const pow = Math.pow(base ?? 10, digits);
@@ -39,7 +39,7 @@ function toFixedNumber(num, digits, base){
   }
 
 
-  /*
+  
 for (cand in candData) {
     let cData = candData[cand];
     for (prog in cData.applied_in) {
@@ -53,12 +53,11 @@ for (cand in candData) {
                 marksProgram : parseFloat(cData.marksTotal + toFixedNumber(cData.programMark[prog], 5))      
                 
             });
-            candidates[prog]++;
         }
     }
 }
-*/
 
+console.log(candidates)
 
 function getGazetteData(prog) {
     return candGazetteData[prog];

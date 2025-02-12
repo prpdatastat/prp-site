@@ -5,11 +5,9 @@ function load_data(path) {
    const data = fetch(path).json();
    return data;
 }
-function ViewMeritList(link = '../index.html') {
+function ViewMeritList(link = '/prp-site/2025/merit.html') {
     window.location.href = link
-    localStorage.setItem('viewUnofficial', true);
 }
-
 
 
 
@@ -20,6 +18,8 @@ const gazetteFCPS = load_data('../2025/fcps_gazat.json')
 const cand_data = load_data('../2025/cand_data.json')
 const gazetteMS = load_data('../2025/ms_gazat.json')
 const gazetteMD = load_data('../2025/md_gazat.json')
+const msMerit = load_data('../2025/ms_merit.json')
+const mdMerit = load_data('../2025/md_merit.json')
 const issueIds = load_data('./candmarks_issue.json')
 let candData = {};
 let candGazetteData = {
@@ -58,7 +58,16 @@ for (cand in candData) {
 }
 
 console.log(candidates)
+function getApplicantId(pmdcNo) {
+    for (applicantId in cand_data) {
+        console.log(cand_data[applicantId])
+        if (cand_data[applicantId].pmdcNo.toLowerCase().trim() == pmdcNo.toLowerCase().trim())
+        {
+            return applicantId
+        }
+}
 
+}
 function getGazetteData(prog) {
     return candGazetteData[prog];
 }
@@ -84,4 +93,190 @@ async function getScrutiny(applicantId) {
 }
 
 
+}
+
+function getMerit(merit,  quota='', speciality='', hospital='', all=false) {    
+
+    let result = [];
+    for (prog in merit) {
+        for (quot in merit[prog]) {
+            if (quota === quot || quota === '') {
+                for (specia in merit[prog][quot]) {
+                    if (specia === speciality || speciality === '')
+                        {
+                    for (hosp in merit[prog][quot][specia]) {
+                        if (hosp === hospital || hospital === '') {
+                        for (cand in merit[prog][quot][specia][hosp].candidates) {
+                            let obj = merit[prog][quot][specia][hosp].candidates[cand]
+                            obj.quotaName = quot
+                            obj.specialityName = specia
+                            obj.hospitalName = hosp
+                            if (all)
+                                {
+                                    obj.symbol = '-'  
+                                }
+                                else 
+                                {
+                                    
+                                obj.symbol = '✔'
+                                }
+                            result.push(obj)
+                        }
+                        if (all) {
+                            for (cand in merit[prog][quot][specia][hosp].others) {
+                                let obj = merit[prog][quot][specia][hosp].others[cand]
+                                obj.specialityName = specia
+                                obj.hospitalName = hosp
+                                
+                                obj.quotaName = quot
+                                if (obj.selected_in.hospitalName === null ) {
+                                    
+                                obj.symbol = '✖'
+                                }
+                                else {
+                                    obj.symbol = '✔'
+                                }
+                                result.push(obj)
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+
+            
+
+            
+    }
+    result.sort( (a,b) => (b.marksTotal - a.marksTotal))
+   
+    return result
+}
+function changeHeadline(data) {
+    let headline = `Showing merit list of ${data.program} candidates who applied`;
+
+    if (data.quota) {
+        headline += ` for quota ${data.quota}`;
+    }
+
+    if (data.speciality) {
+        headline += ` in ${data.speciality}`;
+    }
+
+    if (data.hospital) {
+        headline += ` at ${data.hospital}`;
+    }
+
+    return headline;
+}
+function getSeatsOccupied(data, prog, quotaName, hospitalaname, specialityName) {
+    if (quotaName !== '')
+    {
+        if (quotaName in data[prog]) {
+            if (specialityName != '')
+                {
+                    if (specialityName in data[prog][quotaName]) {
+                        if (hospitalaname != '')
+                        {
+                            if (hospitalaname in data[prog][quotaName][specialityName]) {
+                                return {
+                                    occupied : data[prog][quotaName][specialityName][hospitalaname].candidates.length,
+                                    total : data[prog][quotaName][specialityName][hospitalaname].jobs
+                
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            
+        }
+    }
+    
+    return {
+        occupied : 0,
+        total : 0
+    }
+}
+
+function getOptions(optionType) {
+    let result = [];
+    if (optionType === 'quota') {
+        for (prog in mdMerit) {
+            for (quota in mdMerit[prog]) {
+                if (!result.includes(quota)) {
+                    result.push(quota)
+                }
+            }
+        }
+        for (prog in msMerit) {
+            for (quota in msMerit[prog]) {
+                if (!result.includes(quota)) {
+                    result.push(quota)
+                }
+            }
+        }
+    }
+    if (optionType === 'speciality') {
+        for (prog in mdMerit) {
+            for (quota in mdMerit[prog]) {
+                for (specia in mdMerit[prog][quota]) 
+                    {
+                        if (!result.includes(specia)) {
+                            result.push(specia)
+                        }
+                    }
+                
+            }
+        }
+        for (prog in msMerit) {
+            for (quota in msMerit[prog]) {
+                for (specia in msMerit[prog][quota]) 
+                    {
+                        if (!result.includes(specia)) {
+                            result.push(specia)
+                        }
+                    }
+                
+            }
+        }
+    }
+    if (optionType === 'hospital') {
+        for (prog in mdMerit) {
+            for (quota in mdMerit[prog]) {
+                for (specia in mdMerit[prog][quota]) 
+                    {
+                        for (hospital in mdMerit[prog][quota][specia])
+                            {
+                        if (!result.includes(hospital)) {
+                            result.push(hospital)
+                        }
+                    }
+                
+            }
+        }
+    }
+    for (prog in msMerit) {
+        for (quota in msMerit[prog]) {
+            for (specia in msMerit[prog][quota]) 
+                {
+                    for (hospital in msMerit[prog][quota][specia])
+                        {
+                    if (!result.includes(hospital)) {
+                        result.push(hospital)
+                    }
+                }
+            
+        }
+    }
+}
+    }
+    if (optionType === 'program') {
+        return ['FCPS', 'MS', 'MD']
+    }
+   
+    return result
 }

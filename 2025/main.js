@@ -105,6 +105,8 @@ function getCandidatesData(applicantId) {
     
     
     }
+
+
 async function getScrutiny(applicantId) { 
      
 

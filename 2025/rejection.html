@@ -39,7 +39,7 @@
         <p>
           Click on reason to check the status of scrutiny, either the application is rejected or not checked!   
         </p>
-        
+        <h4  class='alert-small' id="rejectedInfo"></h4>
 
 
           <div class="filters"> 
@@ -116,6 +116,29 @@
       fillTable();
     });
 
+    
+      var table = $('#statTable').DataTable();
+
+      table.on('draw', function() {
+          const ele = document.getElementById('rejectedInfo');
+          var text = '';
+          console.log(ele)
+          ele.innerHTML = ''
+          ele.innerHTML += 'Rejected Candidates on this page are '
+          $('#statTable tbody tr').each(function() {
+              var firstTd = $(this).find('td:first');   
+              $.get('https://prp-api.vercel.app/rejection/'+firstTd.text(), 
+                function(data) {
+
+                    if (data != 'Either the applicant is not checked yet or it is not rejected!')
+                    {   
+                        console.log('rejected'+ firstTd.text())
+                        ele.innerHTML += "<span class='apphov'>"+firstTd.text()+" </span>, "
+                    }
+                })
+             
+          });
+      });
 
     function fillTable() {
       let changes = makeSimpleList();

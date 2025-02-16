@@ -44,7 +44,7 @@
         <h3 class="title">NOTE</h3>
         <div class="alert">
           <!--<h3 class="alert-title">Merit List Issue</h3>-->
-          <p class="alert-content"><br>This is not the rejectection list, its just the list of all applicants who applied, to facilitate seeing the status!<br>Change page, and watch red bar to see whose applications are rejected!<span class='important'></span></p>
+          <p class="alert-content"><br>This is not the rejection list, its just the list of all applicants who applied, to facilitate seeing the status!<br>Change page, and watch red bar to see whose applications are rejected!<span class='important'></span></p>
           <!--<h3 class="alert-title">Upcoming 5th Merit List estimated changes</h3>-->
           <!--<p class="alert-content"><span class="linkableunderline" onclick="gotoUrl('upgrade.html')">Click here to see changes in upcoming list</span></p>-->
         </h3>
@@ -52,7 +52,14 @@
           <div class="filters"> 
           
           </div>
-
+          
+      <div class="consent-pref-switch">
+        <label class="switch">
+          <input id="checkbox2025" onchange="toggleRejected(this)" type="checkbox">
+          <span class="slider"></span>
+        </label><span class="slidertext"> Only Rejected Candidates</span> 
+      </div>  
+      
     <table class="stat-table" style="width: 100%" id="statTable">
       <thead>
         <tr>
@@ -82,10 +89,12 @@
       quota: "",
       hospital: "",
       speciality: "",
+      rejected: false
     };
-     
+    let changes = [];
     jQuery(document).ready(function () {    
-
+      
+    
     /*        
       console.log(default_filter)
     const filters = document.getElementsByTagName("select");
@@ -127,6 +136,9 @@
       var table = $('#statTable').DataTable();
 
       table.on('draw', function() {
+
+          if (!default_filter.rejected)
+          {
           const ele = document.getElementById('rejectedInfo');
           var none = true;
           let totalRows = $('#statTable tbody tr').length;
@@ -154,15 +166,19 @@
           })
              
           });
+        }
          
       });
 
     function fillTable() {
-      let changes = makeSimpleList();
+      if (changes.length === 0) {
+        changes = makeSimpleList();
+      }
       console.log(changes)
+      console.log(changes.length)
+    
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in changes) {
-        console.log(changes[cand])
         
           jQuery("#statTable")
           .DataTable()
@@ -198,7 +214,22 @@
       ele.innerHTML = '' + await getReason(applicantId);
 
     }
+    async function toggleRejected(e) {
+      if (e.checked) {
+        $('#rejectedInfo').css('display', 'none')
+        default_filter.rejected = true
+        changes = await onlyRejected()
+      }
+      else {
+        
+        $('#rejectedInfo').css('display', 'block')
+        default_filter.rejected = false
+        changes = makeSimpleList()
+      }
 
+      fillTable()
+    }
+      
 
     </script>
   </body>

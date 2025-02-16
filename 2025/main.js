@@ -37,6 +37,30 @@ function toFixedNumber(num, digits, base){
     const pow = Math.pow(base ?? 10, digits);
     return Math.round(num*pow) / pow;
   }
+function onlyRejected()  {
+    let result = [];
+    let promises = [];
+
+    for (let app in cand_data) {
+        let promise = new Promise((resolve, reject) => {
+            $.get('https://prp-api.vercel.app/rejection/' + app, function(data) {
+                if (data != 'Either the applicant is not checked yet or it is not rejected!') {
+                    result.push({
+                        applicantId: app,
+                        nameFull: cand_data[app].nameFull,
+                        pmdcNo: cand_data[app].pmdcNo
+                    });
+                }
+                resolve();
+            }).fail(reject);
+        });
+        promises.push(promise);
+    }
+
+    return Promise.all(promises).then(() => result);
+    
+    }
+
 
 function makeSimpleList() {
     let result = [];

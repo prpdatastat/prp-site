@@ -135,7 +135,7 @@
                     if (data != 'Either the applicant is not checked yet or it is not rejected!')
                     {   
                         console.log('rejected'+ firstTd.text())
-                        ele.innerHTML += "<span class='apphov'>"+firstTd.text()+" </span>, "
+                        ele.innerHTML += "<span class='apphov' onmousedown='checkReason("+firstTd.text()+")'>"+firstTd.text()+" </span>, "
                         none = false;
                     }
                     processedRows++;

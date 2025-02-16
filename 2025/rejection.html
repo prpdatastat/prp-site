@@ -121,7 +121,9 @@
 
       table.on('draw', function() {
           const ele = document.getElementById('rejectedInfo');
-          var text = '';
+          var none = true;
+          let totalRows = $('#statTable tbody tr').length;
+          let processedRows = 0;
           console.log(ele)
           ele.innerHTML = ''
           ele.innerHTML += 'Rejected Candidates on this page are '
@@ -134,10 +136,18 @@
                     {   
                         console.log('rejected'+ firstTd.text())
                         ele.innerHTML += "<span class='apphov'>"+firstTd.text()+" </span>, "
+                        none = false;
                     }
-                })
+                    processedRows++;
+                    if (processedRows === totalRows) {
+                    if (none) {
+                        ele.innerHTML = 'No candidates on this page are rejected till now!';
+                    }
+                }
+          })
              
           });
+         
       });
 
     function fillTable() {

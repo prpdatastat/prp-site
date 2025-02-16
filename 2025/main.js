@@ -38,7 +38,19 @@ function toFixedNumber(num, digits, base){
     return Math.round(num*pow) / pow;
   }
 
-
+function makeSimpleList() {
+    let result = [];
+    for (app in cand_data) {   
+        result.push(
+            {
+                applicantId : app,
+                nameFull : cand_data[app].nameFull,
+                pmdcNo : cand_data[app].pmdcNo                
+            }
+        )
+    }
+    return result
+}
   
 for (cand in candData) {
     let cData = candData[cand];
@@ -77,7 +89,22 @@ function getCandidatesData(applicantId) {
     return cand_data[applicantId];
   
     }
+    async function getReason(applicantId) { 
+     
 
+        try {
+        let response = await $.ajax({
+            url: 'https://prp-api.vercel.app/rejection/'+applicantId.toString(),
+            type: 'GET',
+        });
+            return response.toString();
+        
+    } catch (error) {
+        console.log('error');
+    }
+    
+    
+    }
 async function getScrutiny(applicantId) { 
      
 

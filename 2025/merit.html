@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="navbar notif" id="notif">
-      This is the  unofficial merit List of <span class='important'>2025 Feb</span> Induction</div>
+      This is the  3rd Merit List of <span class='important'>2025 Feb</span> Induction</div>
         <br>
         <nav class="navbar">
       <div class="logo-container">
@@ -30,7 +30,7 @@
     <div class="main_container" style="width: 80%">
      
       <div>        
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/2025/index.html')"> View unofficial Feb 2025 Gazette </button>
+        <button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/2025/index.html')"> View Feb 2025 Gazette </button>
       </div>    
       <!--<h3 class="linkableunderline" onclick="gotoComment()"> Wanna Leave a comment for developer? Click here!</h3>-->
       <!--
@@ -42,10 +42,10 @@
       </div>  
        -->      
        
-        <h3 class="title">Unofficial Merit List</h3>
+        <h3 class="title">Official Merit List</h3>
         <div class="alert">
           <!--<h3 class="alert-title">Merit List Issue</h3>-->
-          <p class="alert-content"><br>Unofficial merit list based on <span class='important'> official gazat for Feb Induction 2025</span><br><strong class='important'>Updated on 2/3/25 12:50am</strong></p>
+          <p class="alert-content"><br>3rd Official merit list</span><br></p>
           <!--<h3 class="alert-title">Upcoming 5th Merit List estimated changes</h3>-->
           <!--<p class="alert-content"><span class="linkableunderline" onclick="gotoUrl('upgrade.html')">Click here to see changes in upcoming list</span></p>-->
         </h3>
@@ -206,7 +206,8 @@
             merit[cand].specialityName,
             merit[cand].hospitalName,
             merit[cand].marksTotal,
-            "Pref No."+merit[cand].preferenceNo,
+            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkConsent("+merit[cand].applicantId+")'>Check Consent</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
+            ,
           ]);
       }
       jQuery("#statTable").DataTable().draw();

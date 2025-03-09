@@ -333,3 +333,18 @@ function getOptions(optionType) {
    
     return result
 }
+async function getConsent(applicantId, inductionId = 18, round = 3) {      
+
+    try {
+    let response = await $.ajax({
+        url: 'https://prp-api.vercel.app/consent/'+applicantId.toString()+"/"+ inductionId.toString()+"/"+ round.toString(),
+        type: 'GET',
+    });
+        return response.toString();
+    
+} catch (error) {
+    console.log('error');
+}
+
+
+}

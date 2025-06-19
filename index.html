@@ -20,40 +20,49 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="navbar notif" id="notif">
-      This is the Official 4th Merit List of <span class='important'>2025 Feb</span> Induction<br>Accuracy of estimated merit list has been displayed below</div>
-        <br>
-        <nav class="navbar">
-      <div class="logo-container">
-        <img class="logo" onclick="gotoUrl()"src="logo.png" />
+     <nav class="navbar main-navbar">
+      <div class="nav-content">
+        <div class="logo-container">
+          <img class="logo" onclick="gotoUrl()" src="logo.png" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <!--<li><a href="hospital.html">Hospitals</a></li>-->
+          <!--<li><a href="speciality.html">Specialities</a></li>-->
+          <li><a href="schedule.html">Schedule</a></li>
+        </ul>
       </div>
     </nav>
+    <div class="navbar notif" id="notif">
+      This is the Official 4th Merit List of <span class='important'>2025 Feb</span> Induction<br>Accuracy of estimated merit list has been displayed below
+    </div>
 
     <div class="main_container" style="width: 80%">
       <div class="flex stat-container">
-        
-        <div class="counter">
-          <div id="FCPS" class="counter-value">500</div>
-          <div class="counter-text">FCPS</div>
-          <div class="counter-desc">Accuracy of Estimated Merit List</div>
+        <div class="stat-card">
+          <div id="FCPS" class="stat-number">1,234</div>
+          <div class="stat-desc">FCPS</div>
+          <div class="stat-label">Accuracy of Merit List</div>
         </div>
-        <div class="counter">
-          <div id="MD" class="counter-value">500</div>
-          <div class="counter-text">MD</div>
-          <div class="counter-desc">Accuracy of Estimated Merit List</div>
+        <div class="stat-card">
+          <div id="MS" class="stat-number">1,234</div>
+          <div class="stat-desc">MS</div>
+          <div class="stat-label">Accuracy of Merit List</div>
         </div>
-        <div class="counter">
-          <div id="MS" class="counter-value">500</div>
-          <div class="counter-text">MS</div>
-          <div class="counter-desc">Accuracy of Estimated Merit List</div>
+        <div class="stat-card">
+          <div id="MD" class="stat-number">1,234</div>
+          <div class="stat-desc">MD</div>
+          <div class="stat-label">Accuracy of Merit List</div>
         </div>
+    
+      
       
       </div>
       <div>
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('schedule.html')"> View PRP Schedule </button>
+        <!--<button class="schd-button lrgbtn" onmousedown="gotoUrl('schedule.html')"> View PRP Schedule </button>-->
         <button class="schd-button lrgbtn" onmousedown="gotoUrl('prev.html')"> View Previous Merit Lists </button>
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('scrutiny.html')"> View 2025 Grievance List </button>        
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/2025/index.html')">Feb 2025 Gazette </button>
+        <!-- <button class="schd-button lrgbtn" onmousedown="gotoUrl('scrutiny.html')"> View 2025 Grievance List </button> -->
+        <button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/2025/index.html')">June Unofficial 2025 Gazette </button>
         <br>
 
         <h3 class="simple-text">Unofficial <small class='important'> click on buttons below</small></h3>        

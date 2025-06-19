@@ -2,126 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRP Statistics</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/sync-fetch"></script>
     <link rel="stylesheet" href="index.css" />
-        
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script src="data.js"></script>
-    <link
-      href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
-    
+    <!-- ...other scripts and DataTables CSS... -->
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img class="logo"  onclick="gotoUrl()" src="logo.png" />
+    <!-- Modern Navigation Bar -->
+    <nav class="main-navbar">
+      <div class="nav-content">
+        <div class="logo-container">
+          <img class="logo" onclick="window.location.href='index.html'" src="logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hospital.html">Hospitals</a></li>
+          <li><a href="speciality.html">Specialities</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+        </ul>
       </div>
     </nav>
     <div class="main_container">
-    <div class="info">
-        <h1 id="name">
-            Ali Tahir
-        </h1>
-        <div class="share-link">
-          <div class="share" onmousedown="shareUrl()"><img src="share.png"></div>
+      <div class="info candidate-info-card">
+        <div class="candidate-header">
+          <h1 id="name">Ali Tahir</h1>
+          <div class="share-link">
+            <button class="icon-btn" onclick="shareUrl()" title="Copy shareable link">
+              <img src="share.png" alt="Share" />
+            </button>
+          </div>
         </div>
-        <div class="cutoff-bubble">
-          <span > Applicant ID: <strong id="applicantId"> 15610</strong></span><br>
-          <br>        
-          <span > PMDC Number: <strong id="pmdcNo"> 15610</strong></span><br>
-          
-
+        <div class="candidate-meta">
+          <span class="meta-item">Applicant ID: <strong id="applicantId">15610</strong></span>
+          <span class="meta-item">PMDC Number: <strong id="pmdcNo">15610</strong></span>
         </div>
-        <div class="aggMarks">Provisional Marks:   
-          <span class="bubble "id="provMarks">29
-            <span class="bubble" id="matricMarks">4
-              <span class="bubble" id="interMarks">6
-                <span class="bubble" id="degreeMarks">14
-                  <span class="bubble" id="houseJobMarks">5
-                    <span class="bubble" id="experienceMarks">4</span></span></span></span></span>
-          </span>
+        <div class="stat-card">
+          <div class="stat-number" id="provMarks">29</div>
+          <div class="stat-label">Provisional Marks</div>
+          <div class="bubble-row">
+            <span class="bubble" id="matricMarks">4</span>
+            <span class="bubble" id="interMarks">6</span>
+            <span class="bubble" id="degreeMarks">14</span>
+            <span class="bubble" id="houseJobMarks">5</span>
+            <span class="bubble" id="experienceMarks">4</span>
+            <span class="bubble" id="hardAreaMarks">0</span>
+          </div>
         </div>
-        
-        <div class="aggMarks progMarks">FCPS:  
-          <span class="bubble FCPSmarks" id="houseJobMarks">5</span> MS:  <span class="bubble MSmarks" id="experienceMarks">0</span> MD:  <span class="bubble MDmarks" id="experienceMarks">0</span>
+        <div class="stat-card program-marks">
+          <div class="bubble-row">
+            <span class="bubble FCPSmarks" id="houseJobMarks">5</span>
+            <span class="bubble MSmarks" id="experienceMarks">0</span>
+            <span class="bubble MDmarks" id="experienceMarks">0</span>
+          </div>
+          <div class="stat-label">FCPS / MS / MD</div>
         </div>
-        <div class="legend"> Legend: 
+        <div class="legend">
+          <span class="legend-title">Legend:</span>
           <span class="legend-bubble" id="matricMarks">matric</span>
           <span class="legend-bubble" id="interMarks">inter</span>
           <span class="legend-bubble" id="degreeMarks">degree</span>
           <span class="legend-bubble" id="houseJobMarks">housejob</span>
           <span class="legend-bubble" id="experienceMarks">experience</span>
-          
-          <span class="bubble" id="hardAreaMarks">hard area</span>
-
+          <span class="legend-bubble" id="hardAreaMarks">hard area</span>
         </div>
         <div class="consent-pref-switch">
           <label class="switch">
             <input onchange="changeTable(this)" type="checkbox">
             <span class="slider"></span>
-          </label><span> Show Consent</span> 
-        </div>  
-        <p>
-            Below is the list of hospital he / she applied for
+          </label>
+          <span class="switch-label">Show Consent</span>
+        </div>
+        <p class="candidate-desc">
+          Below is the list of hospitals they applied for:
         </p>
-        
-        
+      </div>
+      <div class="filters">
+        <label for="program" class="filter-label">Program:</label>
+        <select
+          onchange="updateList(event);"
+          class="filter-item"
+          name="quota"
+          id="program"
+        >
+          <option disabled selected value="">Select a program</option>
+        </select>
+      </div>
+      <table class="stat-table" style="width: 100%;" id="consentTable">
+        <thead>
+          <tr>
+            <th>Round No</th>
+            <th>Applied</th>
+            <th>Consent</th>
+          </tr>
+        </thead>
+        <tbody id="dataRows"></tbody>
+      </table>
+      <table class="stat-table" style="width: 100%" id="statTable">
+        <thead>
+          <tr>
+            <th>Quota</th>
+            <th>Hospital</th>
+            <th>Speciality</th>
+            <th>Aggregate</th>
+            <th>Preference No.</th>
+            <th>Selected</th>
+          </tr>
+        </thead>
+        <tbody id="dataRows"></tbody>
+      </table>
+      <div class="footer">
+        <span>Made with 💓 in <strong>HTML</strong> &amp; <strong>JS</strong> by <img src="github.png" alt="github">reko-beep</span>
+      </div>
     </div>
-    <div class="filters">
-      <select
-        onchange="updateList(event);"
-        class="filter-item"
-        name="quota"
-        id="program"
-      >
-      <option disabled selected value="">Select a program
-      </option>
-    </select>
-  
-  </div>
-    
-    <table class="stat-table" style="width: 100%;" id="consentTable">
-      <thead>
-        <tr>
-          <th>Round No</th>
-          <th>Applied</th>
-          <th>Consent</th>
-        </tr>
-      </thead>
-      <tbody id="dataRows"></tbody>
-    </table>
-
-    <table class="stat-table" style="width: 100%" id="statTable">
-      <thead>
-        <tr>
-          <th>Quota</th>
-          <th>Hospital</th>
-          <th>Speciality</th>
-          <th>Aggregate</th>
-          <th>Preference No.</th>
-          <th>Selected</th>
-        </tr>
-      </thead>
-      <tbody id="dataRows"></tbody>
-    </table>
-    
-    
-    <div class="footer">
-      <span>Made with 💓 in <strong>HTML</strong>  &  <strong>JS</strong> by <img src="github.png">reko-beep</span>
-    </div>
-    </div>
-    
-    <script>   
+     <script>   
     let data = {};   
     const default_filter = {
       pmdcNo : '',
@@ -149,15 +142,19 @@
       default_filter.pmdcNo = pmdcNumber;
       console.log(data);
       const marksagg = document.getElementsByClassName('aggMarks')[0];
-      marksagg.innerHTML = `Provisional Marks
-      <span class="bubble "id="provMarks">${data.provMarks}
-            <span class="bubble" id="matricMarks">${data.matric}
-              <span class="bubble" id="interMarks">${data.inter}
-                <span class="bubble" id="degreeMarks">${data.degree}
-                  <span class="bubble" id="houseJobMarks">${data.houseJob}
-                    <span class="bubble" id="experienceMarks">${data.experience}                      
-                    <span class="bubble" id="hardAreaMarks">${data.hardArea}</span></span></span></span></span>`
-      for (pro in data.progMarks) {
+       marksagg.innerHTML = `<div class="stat-card">
+          <div class="stat-number" id="provMarks">${data.provMarks}</div>
+          <div class="stat-label">Provisional Marks</div>
+          <div class="bubble-row">
+            <span class="bubble" id="matricMarks">${data.matric}</span>
+            <span class="bubble" id="interMarks">${data.inter}</span>
+            <span class="bubble" id="degreeMarks">${data.degree}</span>
+            <span class="bubble" id="houseJobMarks">${data.houseJob}</span>
+            <span class="bubble" id="experienceMarks">${data.experience}</span>
+            <span class="bubble" id="hardAreaMarks">${data.hardArea}</span>
+          </div>
+        </div>`
+        for (pro in data.progMarks) {
         const elet = document.getElementsByClassName(pro+'marks')[0];
         
         console.log(pro, pro+'Marks', elet)
@@ -411,6 +408,5 @@ function shareUrl() {
   });
 }
     </script>
-    </div>
   </body>
 </html>

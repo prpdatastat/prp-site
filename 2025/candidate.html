@@ -41,30 +41,37 @@
           <span > PMDC Number: <strong id="pmdcNo"> 15610</strong></span><br>
           <br> 
           <span > Scrutiny: <strong id="scrutiny" onmouseover="" style="cursor: pointer;">Check</strong></span><br>
+        <div class="stat-card" id="aggMarks">
+          <div class="stat-number" id="provMarks">29</div>
+          <div class="stat-label">Provisional Marks</div>
+          <div class="bubble-row">
+            <span class="bubble" id="matricMarks">4</span>
+            <span class="bubble" id="interMarks">6</span>
+            <span class="bubble" id="degreeMarks">14</span>
+            <span class="bubble" id="houseJobMarks">5</span>
+            <span class="bubble" id="experienceMarks">4</span>
+            <span class="bubble" id="hardAreaMarks">0</span>
+          </div>
         </div>
-        <div class="aggMarks">Provisional Marks:   
-          <span class="bubble "id="provMarks">29
-            <span class="bubble" id="matricMarks">4
-              <span class="bubble" id="interMarks">6
-                <span class="bubble" id="degreeMarks">14
-                  <span class="bubble" id="houseJobMarks">5
-                    <span class="bubble" id="experienceMarks">4</span>
-                    <span class="bubble" id="hardAreaMarks">4</span></span></span></span></span>
-          </span>
+        <div class="stat-card program-marks">
+          <div class="bubble-row">
+            <span class="bubble FCPSmarks" id="houseJobMarks">5</span>
+            <span class="bubble MSmarks" id="experienceMarks">0</span>
+            <span class="bubble MDmarks" id="experienceMarks">0</span>
+          </div>
+          <div class="stat-label">FCPS / MS / MD</div>
         </div>
-        
-        <div class="aggMarks progMarks">FCPS:  
-          <span class="bubble FCPSmarks" id="houseJobMarks">5</span> MS:  <span class="bubble MSmarks" id="experienceMarks">0</span> MD:  <span class="bubble MDmarks" id="experienceMarks">0</span>
-        </div>
-        <div class="legend"> Legend: 
+        <div class="legend">
+          <span class="legend-title">Legend:</span>
           <span class="legend-bubble" id="matricMarks">matric</span>
           <span class="legend-bubble" id="interMarks">inter</span>
           <span class="legend-bubble" id="degreeMarks">degree</span>
           <span class="legend-bubble" id="houseJobMarks">housejob</span>
           <span class="legend-bubble" id="experienceMarks">experience</span>
           <span class="legend-bubble" id="hardAreaMarks">hard area</span>
-
         </div>
+        </div>
+         
        
         <div class="consent-pref-switch">
           <label class="switch">
@@ -144,16 +151,20 @@
       data = getCandidatesData(applicantId);
       default_filter.applicantId = applicantId ;
       console.log(data);
-      const marksagg = document.getElementsByClassName('aggMarks')[0];
-      marksagg.innerHTML = `Provisional Marks
-      <span class="bubble "id="provMarks">${data.marksTotal}
-            <span class="bubble" id="matricMarks">${data.matric}
-              <span class="bubble" id="interMarks">${data.fsc}
-                <span class="bubble" id="degreeMarks">${data.degree}
-                  <span class="bubble" id="houseJobMarks">${data.houseJob}
-                    <span class="bubble" id="experienceMarks">${data.experience}</span>
-                    <span class="bubble" id="hardAreaMarks">${data.hardArea}</span></span></span></span>`
-      for (pro in data.programMark) {
+      const marksagg = document.getElementById('aggMarks');
+      marksagg.innerHTML = `<div class="stat-card">
+          <div class="stat-number" id="provMarks">${data.marksTotal}</div>
+          <div class="stat-label">Provisional Marks</div>
+          <div class="bubble-row">
+            <span class="bubble" id="matricMarks">${data.matric}</span>
+            <span class="bubble" id="interMarks">${data.fsc}</span>
+            <span class="bubble" id="degreeMarks">${data.degree}</span>
+            <span class="bubble" id="houseJobMarks">${data.houseJob}</span>
+            <span class="bubble" id="experienceMarks">${data.experience}</span>
+            <span class="bubble" id="hardAreaMarks">${data.hardArea}</span>
+          </div>
+        </div>`   
+         for (pro in data.programMark) {
         console.log('program marks')
         const elet = document.getElementsByClassName(pro+'marks')[0];
         console.log(pro, pro+'Marks', data.programMark[pro])

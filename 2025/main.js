@@ -20,6 +20,7 @@ const gazetteMS = load_data('../2025/ms_gazat.json')
 const gazetteMD = load_data('../2025/md_gazat.json')
 const msMerit = load_data('../2025/ms_merit.json')
 const mdMerit = load_data('../2025/md_merit.json')
+const fcpsMerit = load_data('../2025/fcps_merit.json')
 const issueIds = load_data('./candmarks_issue.json')
 let candData = {};
 let candGazetteData = {
@@ -29,7 +30,7 @@ let candGazetteData = {
 };
 
 let candidates = {
-    FCPS : 0,
+    FCPS : gazetteFCPS.length,
     MS : gazetteMS.length,
     MD : gazetteMD.length
 }

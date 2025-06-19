@@ -1,0 +1,133 @@
+.consent-pref-switch {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+  font-family: 'light';
+  place-items: center;
+  padding: 0px;
+}
+/* The switch - the container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+}
+
+/* Hide the default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2d333b;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* The slider before checked */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  top: 2px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #4a4c4d;
+  transition: .4s;
+  border-radius: 85%;
+}
+
+/* When the checkbox is checked */
+input:checked + .slider {
+  background-color: #40c040;
+}
+.title {
+  font-family: 'heavy';
+  font-size: 30px;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px #427388; 
+}
+/* Move the slider when checked */
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.aggMarks {
+  font-family: 'light';
+  width: max-content;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+}
+
+.aggMarks span {
+  text-align: center;  
+}
+
+#provMarks {
+  background-color: #2d333b;
+  border-radius: 15px;  
+  outline: 1px solid rgb(68, 68, 68);
+}
+#matricMarks {
+  background-color: rgb(66, 197, 66);
+  border-radius: 15px;
+}
+#interMarks {
+  background-color: rgb(208, 218, 76);
+  border-radius: 15px;  
+}
+#degreeMarks {
+  background-color: rgb(197, 140, 66);
+  border-radius: 15px;  
+}
+#houseJobMarks {
+  background-color: rgb(66, 101, 197);
+  border-radius: 15px;  
+}
+#hardAreaMarks {
+  background-color: rgb(66, 182, 197);
+  border-radius: 15px;  
+}
+.legend {
+  font-family: 'light';
+  font-size: 15px;;
+}
+
+.legend-bubble {
+  padding: 0.5em;  
+  outline: 1px solid rgb(68, 68, 68);
+  opacity: 0.85;
+
+}
+
+.legend-bubble:hover {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+#experienceMarks {
+  background-color: rgb(197, 66, 110);
+  border-radius: 15px;  
+}
+.bubble {
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 10px;
+}

@@ -7,35 +7,42 @@
     <title>PRP Statistics</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sync-fetch"></script>
-    <script id="data" src="data.js"></script>
+    <script id='data' src="data.js"></script>
     <script src="schedule.js"></script>
+   
     <link
-      href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
-      rel="stylesheet"
-    />
+    href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
+    rel="stylesheet"
+  />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="navbar notif" id="notif">
-      This is the Official 4th Merit List of <span class='important'>2025 Feb</span> Induction<br>Accuracy of estimated merit list has been displayed below</div>
-        <br>
-        <nav class="navbar">
-      <div class="logo-container">
-        <img class="logo" onclick="gotoUrl()"src="logo.png" />
+     <nav class="navbar main-navbar">
+      <div class="nav-content">
+        <div class="logo-container">
+          <img class="logo" onclick="gotoUrl()" src="logo.png" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <!--<li><a href="hospital.html">Hospitals</a></li>-->
+          <!--<li><a href="speciality.html">Specialities</a></li>-->
+          <li><a href="schedule.html">Schedule</a></li>
+        </ul>
       </div>
-      <span class="nav-toggle" onclick="toggleMenu()">&#9776;</span>
     </nav>
+    <div class="navbar notif" id="notif">
+      This is the Official 4th Merit List of <span class='important'>2025 Feb</span> Induction<br>Accuracy of estimated merit list has been displayed below
+    </div>
 
     <div class="main_container" style="width: 80%">
       <div class="flex stat-container">
-        
-        <div class="counter">
-          <div id="FCPS" class="counter-value">500</div>
-          <div class="counter-text">FCPS</div>
-          <div class="counter-desc">Accuracy of Estimated Merit List</div>
+        <div class="stat-card">
+          <div id="FCPS" class="stat-number">1,234</div>
+          <div class="stat-desc">FCPS</div>
+          <div class="stat-label">Accuracy of Merit List</div>
         </div>
         <div class="stat-card">
           <div id="MS" class="stat-number">1,234</div>
@@ -47,13 +54,15 @@
           <div class="stat-desc">MD</div>
           <div class="stat-label">Accuracy of Merit List</div>
         </div>
+    
+      
       
       </div>
       <div>
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('schedule.html')"> View PRP Schedule </button>
+        <!--<button class="schd-button lrgbtn" onmousedown="gotoUrl('schedule.html')"> View PRP Schedule </button>-->
         <button class="schd-button lrgbtn" onmousedown="gotoUrl('prev.html')"> View Previous Merit Lists </button>
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('scrutiny.html')"> View 2025 Grievance List </button>        
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/2025/index.html')">Feb 2025 Gazette </button>
+        <!-- <button class="schd-button lrgbtn" onmousedown="gotoUrl('scrutiny.html')"> View 2025 Grievance List </button> -->
+        <button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/2025/index.html')">June Unofficial 2025 Gazette </button>
         <br>
 
         <h3 class="simple-text">Unofficial <small class='important'> click on buttons below</small></h3>        
@@ -81,22 +90,39 @@
           <!--<p class="alert-content"><span class="linkableunderline" onclick="gotoUrl('upgrade.html')">Click here to see changes in upcoming list</span></p>-->
         </h3>
       </div>
-      <h4 class="seats">
-        Seats Occupied:
-        <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong>
-      </h4>
+      <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
       <div class="filters">
-        <select onchange="updateList(event);" class="filter-item" name="quota" id="program">
+        <select
+          onchange="updateList(event);"
+          class="filter-item"
+          name="quota"
+          id="program"
+        >
           <option value="" disabled selected>Program</option>
         </select>
-        <select onchange="updateList(event);" class="filter-item" name="speciality" id="quota">
+        <select
+          onchange="updateList(event);"
+          class="filter-item"
+          name="speciality"
+          id="quota"
+        >
           <option value="" selected>Quota</option>
         </select>
-        <select onchange="updateList(event);" class="filter-item" name="quota" id="speciality">
+        <select
+          onchange="updateList(event);"
+          class="filter-item"
+          name="quota"
+          id="speciality"
+        >
           <option value="" selected>Speciality</option>
         </select>
-        <select onchange="updateList(event);" class="filter-item" name="quota" id="hospital">
-          <option value="" selected>Hospital</option>
+        <select
+          onchange="updateList(event);"
+          class="filter-item"
+          name="quota"
+          id="hospital"
+        >
+          <option value="" elected>Hospital</option>
         </select>
       </div>
       <p id="headline"> No Filter selected.</p>
@@ -104,7 +130,7 @@
         <thead>
           <tr>
             <th class="linkable">PMDC Number</th>
-            <th>Name</th>
+            <th >Name</th>
             <th>Quota</th>
             <th class="linkable">Speciality</th>
             <th class="linkable">Hospital</th>
@@ -114,52 +140,222 @@
         </thead>
         <tbody id="dataRows"></tbody>
       </table>
-      <br />
-      <!-- begin wwww.htmlcommentbox.com -->
-      <div id="HCB_comment_box">
-        <a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...
-      </div>
-      <script type="text/javascript" id="hcb">
-        /*<!--*/
-        if (!window.hcb_user) {
-          hcb_user = {};
-        }
-        (function () {
-          var s = document.createElement("script"),
-            l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27");
-          s.setAttribute("type", "text/javascript");
-          s.setAttribute(
-            "src",
-            "https://www.htmlcommentbox.com/jread?page=" +
-              encodeURIComponent(l).replace("+", "%2B") +
-              "&opts=16862&num=10&ts=1681301779772"
-          );
-          if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
-        })();
-        /*-->*/
-      </script>
-      <!-- end www.htmlcommentbox.com -->
+      <br>
+     
+<br>
+<!-- begin wwww.htmlcommentbox.com -->
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+<script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24mzyYuuZBe1GhURDyiqYE4%2F"+"&opts=16798&num=10&ts=1736005452841");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+
       <div class="footer">
-        <span
-          >Made with 💓 in <strong>HTML</strong> & <strong>JS</strong> by
-          <img src="github.png" />reko-beep</span
-        >
+        <span>Made with 💓 in <strong>HTML</strong>  &  <strong>JS</strong> by <img src="github.png">reko-beep</span>
       </div>
     </div>
-    <!-- Hamburger menu toggle script -->
-    <script>
-      function toggleMenu() {
-        var links = document.getElementById("navLinks");
-        if (links.style.display === "block") {
-          links.style.display = "none";
-        } else {
-          links.style.display = "block";
+  </body>
+  <script>
+    const default_filter = {
+      program: "FCPS",
+      quota: "",
+      speciality: "",
+      hospital: "",
+    };
+    let meritData = {
+      FCPS: fcpsMerit,
+      MS: msMerit,
+      MD: mdMerit,
+    };
+    const columnParams = ['pmdcNo', 'name', 'quotaName', 'specialityName', 'hospitalName']
+    jQuery(document).ready(function () {
+      $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
+    
+      jQuery("#statTable").DataTable({
+        order: [[5, 'desc']],
+        paging: true,
+        searching: true,
+        ordering: true,
+        lengthMenu: [10, 25, 50, { label: "All", value: -1 }],
+        lengthChange: true,
+        layout: {
+          topStart: {
+              buttons: [
+                {
+                    extend: 'pdfHtml5',
+                    text: 'Download PDF',
+                    title : '5th_merit_list',
+                    customize: function (doc) {
+                        
+                        let table = doc.content[1].table.body;
+                        console.log(table)
+                        for (i = 1; i < table.length; i++) // skip table header row (i = 0)
+                        {
+                          let txt = table[i][6].text.replace('Check Joining', '')
+                          table[i][6].text = txt; // couldn't be bothered clearing the Age column sample data above :)
+                          
+                        }
+                        console.log(doc['header'])
+                        var cols = [];
+                        cols[0] = {text: 'List downloaded', alignment: 'left', margin:[20] };
+                        cols[1] = {text: 'from PRP statistics', alignment: 'right', margin:[0,0,20] };
+                        var objFooter = {};
+                        objFooter['columns'] = cols;
+                        doc['footer']=objFooter;
+
+                        }
+                        }
+                        // Data URL generated by http://dataurl.net/#dataurlmaker
+                    
+                
+            ]
+          }
+    },
+    
+        columns: [
+          { width: "10%" },
+          { width: "20%" },
+          { width: "10%" },
+          { width: "10%" },
+          { width: "20%" },
+          { width: "5%" },
+          { width: "5%" },
+        ],
+      });
+      changeMeritList();
+    });
+    
+    async function changeMeritList() {
+      const ele = document.getElementById('headline');
+      ele.innerHTML = changeHeadline(default_filter);
+      let merit = getMerit(
+        meritData[default_filter.program],
+        default_filter.quota,
+        default_filter.speciality,
+        default_filter.hospital
+      );
+      let seats = getSeatsOccupied(meritData[default_filter.program],default_filter.program,  default_filter.quota, default_filter.hospital, default_filter.speciality);
+      for (k in seats) {        
+        const ele = document.getElementById(k).innerHTML = seats[k]
+      }
+      jQuery("#statTable").DataTable().clear().draw();
+      for (cand in merit) {
+        jQuery("#statTable")
+          .DataTable()
+          .row.add([
+            merit[cand].pmdcNo,
+            merit[cand].nameFull,
+            merit[cand].quotaName,
+            merit[cand].specialityName,
+            merit[cand].hospitalName,
+            merit[cand].marksTotal,
+            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkConsent("+merit[cand].applicantId+")'>Check Consent</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
+          ]);
+      }
+      jQuery("#statTable").DataTable().draw();
+    }
+      
+      $('#statTable').on('click', 'tbody td', function() {   
+        let param =   columnParams[this._DT_CellIndex.column];
+        let paths = {
+          specialityName : 'speciality.html',
+          hospitalName : 'hospital.html',
+          pmdcNo : 'candidate.html'
+        }
+        const checkParams = ['hospitalName', 'pmdcNo', 'specialityName'];
+        if (checkParams.includes(columnParams[this._DT_CellIndex.column]))
+        {
+        localStorage.setItem(columnParams[this._DT_CellIndex.column], this.textContent)
+        window.location.href = paths[param]
         }
       }
-    </script>
-    <!-- Your old scripts below here -->
-    <script>
-      // ... (rest of your existing scripts from the original file) ...
-    </script>
-  </body>
+  ) 
+    function getCandidateMerit() {
+      let pmdcNoValue = document.getElementById('pmdc-input');
+      localStorage.setItem('pmdcNo', pmdcNoValue.value);
+      window.location.href = 'candidate.html'
+      
+    }
+
+
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    const filters = document.getElementsByTagName("select");
+    console.log(filters);
+    for (filter in filters) {
+      let options = getOptions(filters[filter].id);
+      for (opt in options) {
+        filters[filter].innerHTML +=
+          "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
+      }
+    }
+    for (key in default_filter) {
+      const ele = document.getElementById(key);
+      ele.value = default_filter[key];
+    }
+    function updateList(e) {
+      default_filter[e.target.id] = e.target.value;
+      console.log(default_filter);
+      changeMeritList();
+    }
+    for (program in accuracyMerit) {
+      console.log(accuracyMerit[program])
+      const ele = document.getElementById(program);
+      console.log(ele);
+      ele.innerHTML = accuracyMerit[program].accuracy.toFixed(2);
+    }
+    
+    async function checkConsent(applicantId) {
+      let ele = document.getElementById('status-'+applicantId.toString())
+      console.log(ele, 'status-'+applicantId.toString())
+      ele.innerHTML = '' + await getConsent(applicantId);
+
+    }
+    async function checkJoining(applicantId) {
+      let ele = document.getElementById('status-'+applicantId.toString())
+      console.log(ele, 'status-'+applicantId.toString())
+      ele.innerHTML = '' + await getJoining(applicantId);
+
+    }
+
+    /*
+    function changeMeritYear(e) {
+      
+  if (e.checked) {
+    localStorage.setItem('viewUnofficial', 'true');
+    meritData.FCPS = fcpsMeritUnOfficial;
+    meritData.MS = msMeritUnOfficial;
+    meritData.MD = mdMeritUnOfficial;
+    candData = candDataUnOfficial;
+    changeMeritList()
+    $('.slidertext').css({'color': 'white', 'font-weight': 'bold', 'filter': 'drop-shadow(0px 0px 7px #107e47)', 'transition-duration': '1s'})
+    changeNotification("This is a unofficial Merit list based on unofficial<span class='important'> 2025 Jan</span> Gazette<br>To compare ur merit, see unofficial gazette and click on applicant ID <br><span class='important'>Click on speciality or hospital to see individual merits</span><br>Merit list is updated according to current policy, without program marks.<br><span class='important'>Now you can see how many seats are occupied for  specific speciality and hospital</span>")
+    
+  }else {
+    localStorage.setItem('viewUnofficial', 'false');
+    meritData.FCPS = prevfcpsMeritList;
+    meritData.MS = prevMsMeritList;
+    meritData.MD = prevMdMeritList;
+    candData = prevcandList;
+    changeMeritList()
+    changeNotification(" This is the Estimated Merit List of <span class='important'>2025 Jan</span> Induction<br>Accuracy of unofficial merit list has been displayed below<span class='important'>  </div>")
+    $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
+    
+
+  }
+}*/
+function gotoComment(){
+  const ele = document.getElementById('HCB_comment_box');
+  ele.scrollIntoView();
+}
+  </script>
 </html>

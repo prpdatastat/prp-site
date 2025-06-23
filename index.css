@@ -415,7 +415,6 @@ body {
   cursor: pointer;
   transition: filter 0.2s;
   border-radius: 8px;
-  background: #222;
   box-shadow: 0 2px 8px #0004;
 }
 
@@ -868,6 +867,10 @@ select:focus {
 }
 .share-link .icon-btn:hover {
   background: #23272a;
+}
+.share-link img:hover 
+{
+  cursor: pointer;
 }
 .share-link img {
   width: 22px;

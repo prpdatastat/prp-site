@@ -152,7 +152,7 @@
       default_filter.applicantId = applicantId ;
       console.log(data);
       const marksagg = document.getElementById('aggMarks');
-      marksagg.innerHTML = `<div class="stat-card">
+      marksagg.innerHTML = `
           <div class="stat-number" id="provMarks">${data.marksTotal}</div>
           <div class="stat-label">Provisional Marks</div>
           <div class="bubble-row">
@@ -163,7 +163,7 @@
             <span class="bubble" id="experienceMarks">${data.experience}</span>
             <span class="bubble" id="hardAreaMarks">${data.hardArea}</span>
           </div>
-        </div>`   
+        `   
          for (pro in data.programMark) {
         console.log('program marks')
         const elet = document.getElementsByClassName(pro+'marks')[0];

@@ -391,7 +391,10 @@ body {
   top: 0;
   z-index: 100;
 }
-
+#name {
+  align-items: center;
+  text-align: center;
+}
 .nav-content {
   display: flex;
   align-items: center;

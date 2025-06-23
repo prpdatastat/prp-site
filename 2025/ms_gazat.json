@@ -3580,10 +3580,10 @@
   "houseJob": 2.5,
   "experience": 10.0,
   "research": 0.0,
-  "position": 0.0,
+  "position": 0.6,
   "hardAreas": 0.0,
   "marksProgram": 0.0,
-  "marksTotal": 40.243052999999996,
+  "marksTotal": 40.843053,
   "preference": [
    {
     "quotaName": "Punjab",
@@ -6252,10 +6252,10 @@
   "houseJob": 0.0,
   "experience": 8.333333,
   "research": 0.0,
-  "position": 0.0,
+  "position": 0.6,
   "hardAreas": 0.0,
   "marksProgram": 0.0,
-  "marksTotal": 28.441002,
+  "marksTotal": 29.041002,
   "preference": [
    {
     "quotaName": "Punjab",
@@ -6303,10 +6303,10 @@
   "houseJob": 2.5,
   "experience": 4.583333,
   "research": 0.0,
-  "position": 0.0,
+  "position": 0.6,
   "hardAreas": 0.0,
   "marksProgram": 0.0,
-  "marksTotal": 31.079518,
+  "marksTotal": 31.679517999999998,
   "preference": [
    {
     "quotaName": "Punjab",
@@ -28652,10 +28652,10 @@
   "houseJob": 5.0,
   "experience": 0.0,
   "research": 0.0,
-  "position": 0.0,
+  "position": 1.2,
   "hardAreas": 0.0,
   "marksProgram": 0.0,
-  "marksTotal": 32.427749,
+  "marksTotal": 33.627749,
   "preference": [
    {
     "quotaName": "Punjab",
@@ -67238,10 +67238,10 @@
   "houseJob": 2.5,
   "experience": 0.0,
   "research": 0.0,
-  "position": 0.0,
+  "position": 0.6,
   "hardAreas": 0.0,
   "marksProgram": 0.0,
-  "marksTotal": 27.432530999999997,
+  "marksTotal": 28.032531,
   "preference": [
    {
     "quotaName": "Punjab",
@@ -84250,10 +84250,10 @@
   "houseJob": 2.5,
   "experience": 10.0,
   "research": 0.0,
-  "position": 0.0,
+  "position": 1.8,
   "hardAreas": 0.0,
   "marksProgram": 0.0,
-  "marksTotal": 36.063517,
+  "marksTotal": 37.863517,
   "preference": [
    {
     "quotaName": "Punjab",

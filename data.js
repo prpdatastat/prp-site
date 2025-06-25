@@ -533,7 +533,7 @@ async function getConsent(applicantId, inductionId = 18, round = 4) {
             url: 'https://prp-api.vercel.app/scrutiny/'+applicantId.toString(),
             type: 'GET',
         });
-            return response.status.toString();
+            return "<strong>"+response.statusType.toString()+"</strong> "+response.status.toString();
         
     } catch (error) {
         console.log('error');

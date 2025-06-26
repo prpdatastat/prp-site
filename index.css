@@ -85,6 +85,37 @@ h3.title {
   display: inline-block;
 }
 
+/* Small alert banner */
+.alert-small {
+  background: linear-gradient(90deg, #5cdb71 60%, #43b35a 100%);
+  color: #181d23;
+  font-weight: 700;
+  font-size: 1.06rem;
+  border-radius: 8px;
+  padding: 10px 22px;
+  margin: 18px 0 18px 0;
+  box-shadow: 0 2px 12px #5cdb7133;
+  border-left: 5px solid #fff;
+  letter-spacing: 0.2px;
+  display: inline-block;
+}
+
+/* Modern h3 title */
+h3.title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-top: 18px;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+  border-left: 5px solid var(--accent);
+  padding-left: 16px;
+  background: linear-gradient(90deg, #181d23 80%, #23272a 100%);
+  border-radius: 10px;
+  box-shadow: 0 1px 8px #0002;
+  display: inline-block;
+}
+
 /* Modern alert box */
 .alert {
   background: linear-gradient(100deg, #23272a 80%, #181d23 100%);
@@ -112,6 +143,18 @@ h3.title {
   color: var(--text-muted);
   font-size: 1.04rem;
   margin: 0;
+}
+
+.apphov {
+  color: #ffb347;
+  font-weight: 700;
+  background: #23272a;
+  border-radius: 6px;
+  padding: 2px 10px;
+  margin: 0 2px;
+  font-size: 1.01em;
+  letter-spacing: 0.2px;
+  display: inline-block;
 }
 
 .alert-content .linkableunderline {

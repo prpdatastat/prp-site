@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merit Trends Graphs | PRP Statistics</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar main-navbar">
+    <div class="nav-content">
+      <div class="logo-container">
+        <img class="logo" onclick="window.location.href='index.html'" src="logo.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="prev.html">Previous Merit Lists</a></li>
+        <li><a href="graph.html" class="active">Merit Trends</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main_container" style="width: 90%">
+    <h3 class="title">Merit Trends Visualization</h3>
+    <div class="alert">
+      <p class="alert-content">
+        View how merit cutoffs have changed over the years for each speciality, hospital, and quota.<br>
+        Select your filters below to see interactive graphs.
+      </p>
+    </div>
+    <div class="filters" style="margin-bottom: 24px;">
+      <select id="speciality" class="filter-item"></select>
+      <select id="hospital" class="filter-item"></select>
+      <select id="quota" class="filter-item"></select>
+    </div>
+    <canvas id="trendChart" height="80"></canvas>
+    <div class="footer">
+      <span>Made with 💓 in <strong>HTML</strong> &amp; <strong>JS</strong> by <img src="github.png" alt="github">reko-beep</span>
+    </div>
+  </div>
+  <script>
+    let previousMerits = {};
+    let allSpecialities = new Set();
+    let allHospitals = new Set();
+    let allQuotas = new Set();
+
+    // Load previous_merits.json dynamically
+    fetch('previous_merits.json')
+      .then(res => res.json())
+      .then(data => {
+        previousMerits = data;
+        extractFilters();
+        populateFilters();
+        updateChart();
+      });
+
+    function extractFilters() {
+      // Assuming previousMerits is an array of objects with keys: year, speciality, hospital, quota, merit
+      previousMerits.forEach(entry => {
+        allSpecialities.add(entry.speciality);
+        allHospitals.add(entry.hospital);
+        allQuotas.add(entry.quota);
+      });
+    }
+
+    function populateFilters() {
+      const specialitySel = document.getElementById('speciality');
+      const hospitalSel = document.getElementById('hospital');
+      const quotaSel = document.getElementById('quota');
+      specialitySel.innerHTML = `<option value="">All Specialities</option>` +
+        Array.from(allSpecialities).sort().map(s => `<option value="${s}">${s}</option>`).join('');
+      hospitalSel.innerHTML = `<option value="">All Hospitals</option>` +
+        Array.from(allHospitals).sort().map(h => `<option value="${h}">${h}</option>`).join('');
+      quotaSel.innerHTML = `<option value="">All Quotas</option>` +
+        Array.from(allQuotas).sort().map(q => `<option value="${q}">${q}</option>`).join('');
+      specialitySel.onchange = updateChart;
+      hospitalSel.onchange = updateChart;
+      quotaSel.onchange = updateChart;
+    }
+
+    let chart;
+    function updateChart() {
+  const speciality = document.getElementById('speciality').value;
+  const hospital = document.getElementById('hospital').value;
+  const quota = document.getElementById('quota').value;
+
+  // Filter data
+  let filtered = previousMerits.filter(entry =>
+    (speciality === "" || entry.speciality === speciality) &&
+    (hospital === "" || entry.hospital === hospital) &&
+    (quota === "" || entry.quota === quota)
+  );
+
+  // Group by year
+  let yearMap = {};
+  filtered.forEach(entry => {
+    if (!yearMap[entry.year]) yearMap[entry.year] = [];
+    yearMap[entry.year].push(entry.merit);
+  });
+
+  // Prepare data for chart
+  let years = Object.keys(yearMap).sort();
+  let lowestMerits = years.map(y => Math.min(...yearMap[y]));
+  let highestMerits = years.map(y => Math.max(...yearMap[y]));
+
+  // Chart.js setup
+  const ctx = document.getElementById('trendChart').getContext('2d');
+  if (chart) chart.destroy();
+  chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: years,
+      datasets: [
+        {
+          label: 'Lowest Merit',
+          data: lowestMerits,
+          borderColor: '#5cdb71',
+          backgroundColor: 'rgba(92,219,113,0.15)',
+          pointBackgroundColor: '#5cdb71',
+          pointBorderColor: '#fff',
+          pointRadius: 5,
+          fill: false,
+          tension: 0.25
+        },
+        {
+          label: 'Highest Merit',
+          data: highestMerits,
+          borderColor: '#ffb347',
+          backgroundColor: 'rgba(255,179,71,0.15)',
+          pointBackgroundColor: '#ffb347',
+          pointBorderColor: '#fff',
+          pointRadius: 5,
+          fill: false,
+          tension: 0.25
+        }
+      ]
+    },
+    options: {
+      plugins: {
+        legend: {
+          labels: {
+            color: '#e2e8f0',
+            font: { weight: 'bold' }
+          }
+        },
+        tooltip: {
+          enabled: true,
+          callbacks: {
+            label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)}`
+          }
+        }
+      },
+      scales: {
+        x: {
+          title: { display: true, text: 'Year', color: '#a0aec0' },
+          ticks: { color: '#e2e8f0' },
+          grid: { color: '#23272a' }
+        },
+        y: {
+          title: { display: true, text: 'Merit Cutoff', color: '#a0aec0' },
+          ticks: { color: '#e2e8f0' },
+          grid: { color: '#23272a' }
+        }
+      },
+      responsive: true,
+      maintainAspectRatio: false,
+      backgroundColor: '#181d23'
+    }
+  });
+}
+    
+  </script>
+</body>
+</html>

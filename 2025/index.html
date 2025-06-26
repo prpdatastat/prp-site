@@ -19,15 +19,25 @@
     <link rel="stylesheet" href="../index.css" />
   </head>
   <body>
+    <nav class="navbar main-navbar">
+      <div class="nav-content">
+        <div class="logo-container">
+          <img class="logo" onclick="gotoUrl()" src="logo.png" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <!--<li><a href="hospital.html">Hospitals</a></li>-->
+          <!--<li><a href="speciality.html">Specialities</a></li>-->
+          <li><a href='/prp-site/2025/merit.html'>Unofficial Merit</a></li>          
+          <li><a href='/prp-site/scrutiny.html'>Rejection List</a></li>         
+        </ul>
+      </div>
+    </nav>
     <div class="navbar notif">
       This is unofficial gazette of <span class='important'>2025 une</span> Induction<br>
       Click on applicant ID to check their preferences
     </div>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img class="logo" onclick="location.href ='../index.html'"src="../logo.png" />
-      </div>
-    </nav>
+    
     <div class="info">
       <h1 id="name">
         Unofficial PRP June 2025 Gazette
@@ -49,8 +59,8 @@
           <div class="stat-desc">MD</div>
           <div class="stat-label">Candidates applied</div>
         </div>
-       <button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/scrutiny.html')"> View June Rejected List </button>
-      <h4 class="linkableunderline" onclick="ViewMeritList()">Wanna see merit list based on this gazette?</h4>
+       <!--<button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/scrutiny.html')"> View June Rejected List </button>
+      <h4 class="linkableunderline" onclick="ViewMeritList()">Wanna see merit list based on this gazette?</h4>-->
       <!-- <h4 class="linkable">Issues with Gazat</h4> -->
       <br>
       

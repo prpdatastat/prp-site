@@ -17,15 +17,25 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <nav class="navbar main-navbar">
+      <div class="nav-content">
+        <div class="logo-container">
+          <img class="logo" onclick="gotoUrl()" src="logo.png" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <!--<li><a href="hospital.html">Hospitals</a></li>-->
+          <!--<li><a href="speciality.html">Specialities</a></li>-->
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="prev.html">Previous Merit Lists</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="navbar notif">
       This schedule is fetched from PRP site<br>
       The titles with same date means they have not been started yet!
     </div>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img class="logo" onclick="gotoUrl()"src="logo.png" />
-      </div>
-    </nav>
+   
 
     <div class="main_container" style="width: 80%">
         <div class="info">

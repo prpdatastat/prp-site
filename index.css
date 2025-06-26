@@ -987,7 +987,11 @@ select:focus {
   margin-top: 10px;
   margin-bottom: 4px;
 }
-
+.legend-bubble.highlight {
+  background: #ffe066;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+}
 .bubble {
   background: linear-gradient(90deg, #23272a 60%, #181d23 100%);
   color: var(--accent);
@@ -1000,9 +1004,14 @@ select:focus {
   margin-right: 2px;
   margin-bottom: 2px;
   display: inline-block;
-  transition: background 0.18s, color 0.18s;
-}
+   transition: transform 0.2s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;}
 
+
+.bubble:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  z-index: 2;
+}
 .legend {
   display: flex;
   align-items: center;

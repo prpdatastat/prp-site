@@ -22,9 +22,18 @@
     
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img class="logo"  onclick="gotoUrl()" src="../logo.png" />
+   <nav class="navbar main-navbar">
+      <div class="nav-content">
+        <div class="logo-container">
+          <img class="logo" onclick="gotoUrl()" src="../logo.png" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <!--<li><a href="hospital.html">Hospitals</a></li>-->
+          <!--<li><a href="speciality.html">Specialities</a></li>-->
+          <li><a href='/prp-site/2025/merit.html'>Unofficial Merit</a></li>          
+          <li><a href='/prp-site/scrutiny.html'>Rejection List</a></li>         
+        </ul>
       </div>
     </nav>
     <div class="main_container">
@@ -55,9 +64,9 @@
         </div>
         <div class="stat-card program-marks">
           <div class="bubble-row">
-            <span class="bubble FCPSmarks" id="houseJobMarks">5</span>
-            <span class="bubble MSmarks" id="experienceMarks">0</span>
-            <span class="bubble MDmarks" id="experienceMarks">0</span>
+            <span class="bubble FCPSmarks">✘</span>
+            <span class="bubble MSmarks" >✘</span>
+            <span class="bubble MDmarks" >✘</span>
           </div>
           <div class="stat-label">FCPS / MS / MD</div>
         </div>
@@ -164,17 +173,22 @@
             <span class="bubble" id="hardAreaMarks">${data.hardAreas}</span>
           </div>
         `   
+        
          for (pro in data.programMark) {
         console.log('program marks')
         const elet = document.getElementsByClassName(pro+'marks')[0];
         console.log(pro, pro+'Marks', data.programMark[pro])
-        elet.innerHTML = data.programMark[pro]
+        elet.innerHTML = '✔'
 
       }
       document.getElementById('scrutiny').addEventListener('click', function() {
         checkScrutiny(default_filter.applicantId)
       })
+     
+
       
+      
+
       const nameele = document.getElementById('name');
       nameele.innerHTML = data.nameFull;
 
@@ -369,5 +383,23 @@ function shareUrl() {
   
     </script>
     </div>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Select all .bubble elements inside .bubble-row
+  document.querySelectorAll('.bubble-row .bubble').forEach(function(bubble) {
+    bubble.addEventListener('mouseenter', function() {
+      const id = bubble.id;
+      const legend = document.querySelector('.legend-bubble#' + id);
+      if (legend) legend.classList.add('highlight');
+    });
+    bubble.addEventListener('mouseleave', function() {
+      const id = bubble.id;
+      const legend = document.querySelector('.legend-bubble#' + id);
+      if (legend) legend.classList.remove('highlight');
+    });
+  });
+});
+</script>
   </body>
 </html>

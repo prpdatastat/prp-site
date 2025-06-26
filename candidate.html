@@ -51,9 +51,9 @@
         </div>
         <div class="stat-card program-marks">
           <div class="bubble-row">
-            <span class="bubble FCPSmarks" id="houseJobMarks">5</span>
-            <span class="bubble MSmarks" id="experienceMarks">0</span>
-            <span class="bubble MDmarks" id="experienceMarks">0</span>
+            <span class="bubble FCPSmarks">✘</span>
+            <span class="bubble MSmarks">✘</span>
+            <span class="bubble MDmarks">✘</span>
           </div>
           <div class="stat-label">FCPS / MS / MD</div>
         </div>
@@ -155,13 +155,23 @@
             <span class="bubble" id="hardAreaMarks">${data.hardArea}</span>
           </div>
         </div>`
+        
+         for (pro in data.programMark) {
+        console.log('program marks')
+        const elet = document.getElementsByClassName(pro+'marks')[0];
+        console.log(pro, pro+'Marks', data.programMark[pro])
+        elet.innerHTML = '✔'
+
+      }
+
+        /*
         for (pro in data.progMarks) {
         const elet = document.getElementsByClassName(pro+'marks')[0];
         
         console.log(pro, pro+'Marks', elet)
         elet.innerHTML = data.progMarks[pro]
 
-      }
+      }*/
       
       const nameele = document.getElementById('name');
       nameele.innerHTML = data.name;
@@ -409,5 +419,23 @@ function shareUrl() {
   });
 }
     </script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Select all .bubble elements inside .bubble-row
+  document.querySelectorAll('.bubble-row .bubble').forEach(function(bubble) {
+    bubble.addEventListener('mouseenter', function() {
+      const id = bubble.id;
+      const legend = document.querySelector('.legend-bubble#' + id);
+      if (legend) legend.classList.add('highlight');
+    });
+    bubble.addEventListener('mouseleave', function() {
+      const id = bubble.id;
+      const legend = document.querySelector('.legend-bubble#' + id);
+      if (legend) legend.classList.remove('highlight');
+    });
+  });
+});
+</script>
   </body>
 </html>

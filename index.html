@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    
+<style>
+@keyframes spin { 100% { transform: rotate(360deg); } }
+</style>
      <nav class="navbar main-navbar">
       <div class="nav-content">
         <div class="logo-container">
@@ -330,7 +334,14 @@
       ele.innerHTML = '' + await getJoining(applicantId);
 
     }
-
+    window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.getElementById('loading-overlay').style.opacity = 0;
+    setTimeout(function() {
+      document.getElementById('loading-overlay').style.display = 'none';
+    }, 400);
+  }, 300); // Optional: keep spinner for at least 300ms for smoothness
+});
     /*
     function changeMeritYear(e) {
       

@@ -306,65 +306,57 @@ function getCandidatesData(pmdcNo) {
 
 
  
-function getMerit(merit,  quota='', speciality='', hospital='', all=false) {    
-
+function getMerit(merit, quota = '', speciality = '', hospital = '', all = false) {
     let result = [];
-    for (prog in merit) {
-        for (quot in merit[prog]) {
-            if (quota === quot || quota === '') {
-                for (specia in merit[prog][quot]) {
-                    if (specia === speciality || speciality === '')
-                        {
-                    for (hosp in merit[prog][quot][specia]) {
-                        if (hosp === hospital || hospital === '') {
-                        for (cand in merit[prog][quot][specia][hosp].candidates) {
-                            let obj = merit[prog][quot][specia][hosp].candidates[cand]
-                            obj.quotaName = quot
-                            obj.specialityName = specia
-                            obj.hospitalName = hosp
-                            if (all)
-                                {
-                                    obj.symbol = '-'  
-                                }
-                                else 
-                                {
-                                    
-                                obj.symbol = '✔'
-                                }
-                            result.push(obj)
-                        }
-                        if (all) {
-                            for (cand in merit[prog][quot][specia][hosp].others) {
-                                let obj = merit[prog][quot][specia][hosp].others[cand]
-                                obj.specialityName = specia
-                                obj.hospitalName = hosp
-                                
-                                obj.quotaName = quot
-                                if (obj.selected_in.hospitalName === null ) {
-                                    
-                                obj.symbol = '✖'
-                                }
-                                else {
-                                    obj.symbol = '✔'
-                                }
-                                result.push(obj)
-                            }
+    let seen = new Set(); // To track unique candidate+quota+speciality+hospital
 
+    for (let prog in merit) {
+        for (let quot in merit[prog]) {
+            if (quota === quot || quota === '') {
+                for (let specia in merit[prog][quot]) {
+                    if (specia === speciality || speciality === '') {
+                        for (let hosp in merit[prog][quot][specia]) {
+                            if (hosp === hospital || hospital === '') {
+                                // Candidates
+                                for (let cand in merit[prog][quot][specia][hosp].candidates) {
+                                    let obj = merit[prog][quot][specia][hosp].candidates[cand];
+                                    obj.quotaName = quot;
+                                    obj.specialityName = specia;
+                                    obj.hospitalName = hosp;
+                                    obj.symbol = all ? '-' : '✔';
+
+                                    // Unique key for this candidate in this context
+                                    let uniqueKey = obj.applicantId + '|' + quot + '|' + specia + '|' + hosp;
+                                    if (!seen.has(uniqueKey)) {
+                                        result.push(obj);
+                                        seen.add(uniqueKey);
+                                    }
+                                }
+                                // Others (if all)
+                                if (all) {
+                                    for (let cand in merit[prog][quot][specia][hosp].others) {
+                                        let obj = merit[prog][quot][specia][hosp].others[cand];
+                                        obj.specialityName = specia;
+                                        obj.hospitalName = hosp;
+                                        obj.quotaName = quot;
+                                        obj.symbol = (obj.selected_in.hospitalName === null) ? '✖' : '✔';
+
+                                        let uniqueKey = obj.applicantId + '|' + quot + '|' + specia + '|' + hosp;
+                                        if (!seen.has(uniqueKey)) {
+                                            result.push(obj);
+                                            seen.add(uniqueKey);
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     }
-    }
-
-            
-
-            
-    }
-    result.sort( (a,b) => (b.marksTotal - a.marksTotal))
-   
-    return result
+    result.sort((a, b) => (b.marksTotal - a.marksTotal));
+    return result;
 }
 
 

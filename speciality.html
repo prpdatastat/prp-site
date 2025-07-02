@@ -41,6 +41,12 @@
         <h1 id="speciality-name">
             Pediatrics
         </h1>
+        <div id="speciality-select-container" style="margin-bottom: 1em; display: none;">
+  <label for="speciality-select"><strong>Select Speciality:</strong></label>
+  <select id="speciality-select">
+    <option value="" disabled selected>Select a speciality</option>
+  </select>
+</div>
         <div class="share-link">
           <div class="share" onmousedown="shareUrl()"><img src="share.png"></div>
         </div>
@@ -199,11 +205,17 @@
           { width: "5%" },
           { width: "5%" },
         ],
+        order: [[6, 'asc']],
       });
       for (key in default_filter) {
       const ele = document.getElementById(key);
       ele.value = default_filter[key];
     }
+      const specialitySelectContainer = document.getElementById('speciality-select-container');
+const specialitySelect = document.getElementById('speciality-select');
+
+// If no speciality is set, show dropdown and populate
+
       changeMeritList();
     });
     function changeMeritList() {

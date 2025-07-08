@@ -1017,6 +1017,7 @@ select:focus {
     text-decoration 0.18s,
     text-shadow 0.18s;
 }
+
 .table-container {
   width: 100%;
   max-width: 100%;
@@ -1193,16 +1194,27 @@ select:focus {
   .candidate-meta {
     gap: 10px;
   }
-}
-.comments_list,
-#HCB_comment_box,
+}#HCB_comment_box,
 #HCB_comment_box .hcb-comment-body,
 #HCB_comment_box .hcb-comment-tb,
 #HCB_comment_box .author-name,
-#HCB_comment_box .date {
+#HCB_comment_box .date,
+#HCB_comment_box .hcb-like,
+#HCB_comment_box .hcb-reply,
+#HCB_comment_box .hcb-flag,
+#HCB_comment_box .comment {
   background: #181a1b !important;
   color: #e0e0e0 !important;
   border: none !important;
+  border-radius: 12px !important;
+}
+
+#HCB_comment_box .comment {
+  border-bottom: 1px solid #23272a !important;
+  padding: 1em 0.8em;
+  margin-bottom: 1em;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 12px 0 rgba(92,219,113,0.06);
 }
 
 #HCB_comment_box .hcb-comment-body {
@@ -1230,7 +1242,7 @@ select:focus {
   background: #23272a !important;
   color: #5cdb71 !important;
   border: none !important;
-  border-radius: 4px;
+  border-radius: 6px !important;
   margin-right: 0.5em;
   padding: 3px 10px;
   font-size: 0.98em;
@@ -1238,6 +1250,64 @@ select:focus {
   transition: background 0.2s, color 0.2s;
 }
 
+#HCB_comment_box .hcb-comment-tb button:hover,
+#HCB_comment_box .hcb-like:hover,
+#HCB_comment_box .hcb-reply:hover,
+#HCB_comment_box .hcb-flag:hover {
+  background: #5cdb71 !important;
+  color: #181a1b !important;
+}
+
+#HCB_comment_box .hcb-comment-tb {
+  margin-top: 0.5em;
+}
+
+#HCB_comment_box .likes img {
+  filter: brightness(0.7) invert(0.7);
+}
+
+#FCPS-correct {
+  transition: 
+    transform 0.22s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.22s,
+    color 0.22s;
+  display: inline-block;
+}
+
+#FCPS-correct:hover {
+  transform: scale(1.13) rotate(-2deg);
+  box-shadow: 0 0 16px 2px #5cdb71;
+  color: #fff;
+  cursor: pointer;
+}
+#MD-correct {
+  transition: 
+    transform 0.22s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.22s,
+    color 0.22s;
+  display: inline-block;
+}
+
+#MD-correct:hover {
+  transform: scale(1.13) rotate(-2deg);
+  box-shadow: 0 0 16px 2px #5cdb71;
+  color: #fff;
+  cursor: pointer;
+}
+#MS-correct {
+  transition: 
+    transform 0.22s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.22s,
+    color 0.22s;
+  display: inline-block;
+}
+
+#MS-correct:hover {
+  transform: scale(1.13) rotate(-2deg);
+  box-shadow: 0 0 16px 2px #5cdb71;
+  color: #fff;
+  cursor: pointer;
+}
 #HCB_comment_box .hcb-comment-tb button:hover,
 #HCB_comment_box .hcb-like:hover,
 #HCB_comment_box .hcb-reply:hover,

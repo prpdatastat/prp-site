@@ -23,6 +23,29 @@
     
 <style>
 @keyframes spin { 100% { transform: rotate(360deg); } }
+
+    
+    #statTable tbody td:nth-child(1),
+#statTable tbody td:nth-child(4),
+#statTable tbody td:nth-child(5) {
+  color: var(--accent, #5cdb71);
+  text-decoration: underline dotted;
+  cursor: pointer;
+  font-weight: 700;
+  transition: color 0.18s, text-decoration 0.18s, text-shadow 0.18s;
+}
+
+#statTable tbody tr:hover td:nth-child(1),
+#statTable tbody tr:hover td:nth-child(4),
+#statTable tbody tr:hover td:nth-child(5),
+#statTable tbody td:nth-child(1):hover,
+#statTable tbody td:nth-child(4):hover,
+#statTable tbody td:nth-child(5):hover {
+  color: #fff;
+  text-decoration: underline solid;
+  text-shadow: 0 2px 12px var(--accent, #5cdb71);
+  cursor: pointer;
+}
 </style>
      <nav class="navbar main-navbar">
       <div class="nav-content">
@@ -40,26 +63,29 @@
       </div>
     </nav>
     <div class="navbar notif" id="notif">
-      This is the Official 4th Merit List of <span class='important'>2025 Feb</span> Induction<br>Accuracy of estimated merit list has been displayed below
+      This is estimated merit list based on official Gazette<br>Correctly placed candidates from unofficial merit list, similarity of current merit list to unofficial merit list is show below
     </div>
 
     <div class="main_container" style="width: 80%">
       <div class="flex stat-container">
         <div class="stat-card">
-          <div id="FCPS" class="stat-number">1,234</div>
-          <div class="stat-desc">FCPS</div>
-          <div class="stat-label">Accuracy of Merit List</div>
-        </div>
-        <div class="stat-card">
-          <div id="MS" class="stat-number">1,234</div>
-          <div class="stat-desc">MS</div>
-          <div class="stat-label">Accuracy of Merit List</div>
-        </div>
-        <div class="stat-card">
-          <div id="MD" class="stat-number">1,234</div>
-          <div class="stat-desc">MD</div>
-          <div class="stat-label">Accuracy of Merit List</div>
-        </div>
+  <div id="FCPS" class="stat-number">1,234</div>
+  <div class="stat-desc">FCPS</div>
+  <div class="stat-label">Similar to unofficial merit list</div>
+  <div class="stat-correct" id="FCPS-correct"></div>
+</div>
+<div class="stat-card">
+  <div id="MS" class="stat-number">1,234</div>
+  <div class="stat-desc">MS</div>
+  <div class="stat-label">Similar to unofficial merit list</div>
+  <div class="stat-correct" id="MS-correct"></div>
+</div>
+<div class="stat-card">
+  <div id="MD" class="stat-number">1,234</div>
+  <div class="stat-desc">MD</div>
+  <div class="stat-label">Similar to unofficial merit list</div>
+  <div class="stat-correct" id="MD-correct"></div>
+</div>
     
       
       
@@ -89,15 +115,22 @@
       </div>  
        -->
       
-       <div class='alert-small'>Official Gazette and Merit of Feb Induction for MS/MD candidates have been uploaded</div>
-        <h3 class="title">4th Official Merit List</h3>
-        <div class="alert">
-          <!--<h3 class="alert-title">Merit List Issue</h3>-->
-          <p class="alert-content"><br><span class="apphov">NOTE: FCPS Merit list is of previous induction</span><br>You can now click on hospital and speciality name to check individual merit list<br><span class='important'></span></p>
-          <!--<h3 class="alert-title">Upcoming 5th Merit List estimated changes</h3>-->
-          <!--<p class="alert-content"><span class="linkableunderline" onclick="gotoUrl('upgrade.html')">Click here to see changes in upcoming list</span></p>-->
-        </h3>
-      </div>
+       <div class="alert merit-desc" style="
+  background: #23272a;
+  color: #e0e0e0;
+  border-left: 5px solid #5cdb71;
+  border-radius: 7px;
+  padding: 1.1em 1.5em;
+  margin: 1.2em 0 1.5em 0;
+  box-shadow: 0 2px 16px 0 rgba(92,219,113,0.07);
+  font-size: 1.08em;
+">
+  <strong>About this Merit List</strong><br>
+  This merit list is compiled from the <span style="color:#5cdb71;font-weight:600;">official gazette</span>. The statistics above show how closely the official merit list matches the previously published unofficial merit, including the number of candidates <span style="color:#5cdb71;font-weight:600;">correctly placed</span> in both lists.<br>
+  <span style="color:#b5ffcb;">This provides transparency and helps you assess the accuracy of the unofficial data.</span>
+  <br><br>
+  <span style="color:#aaa;">You can now click on hospital and speciality name to check individual merit lists.</span>
+</div>
       <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
       <div class="filters">
         <select
@@ -316,11 +349,16 @@
       changeMeritList();
     }
     for (program in accuracyMerit) {
-      console.log(accuracyMerit[program])
-      const ele = document.getElementById(program);
-      console.log(ele);
-      ele.innerHTML = accuracyMerit[program].accuracy.toFixed(2);
-    }
+  const ele = document.getElementById(program);
+  ele.innerHTML = accuracyMerit[program].accuracy; // Show total candidates
+
+  // Calculate and show correctly placed candidates
+  const correct = accuracyMerit[program].correctCandidates;
+  const correctEle = document.getElementById(program + '-correct');
+  if (correctEle) {
+    correctEle.innerHTML = `<span style="color:#5cdb71;font-weight:600;">Correctly placed Candidates: ${correct}</span>`;
+  }
+}
     
     async function checkConsent(applicantId) {
       let ele = document.getElementById('status-'+applicantId.toString())
@@ -373,4 +411,6 @@ function gotoComment(){
   ele.scrollIntoView();
 }
   </script>
+ 
+  </style>
 </html>

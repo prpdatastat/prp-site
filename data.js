@@ -102,7 +102,7 @@ function toggleMerit() {
 }
 
 const seats = load_data('./seats.json')
-const accuracyMerit = load_data('./merit_stats.json')
+const accuracyMerit = load_data('./stats.json')
 const changes = load_data('./changes.json')
 const prevMerit = load_data('./previous_merits.json')
 const rejected = load_data('./rejected.json')

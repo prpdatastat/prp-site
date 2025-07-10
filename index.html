@@ -148,6 +148,51 @@
   <span style="color:#b5ffcb;">This provides transparency and helps you assess the accuracy of the unofficial data.</span>
   <br><br>
   <span style="color:#aaa;">You can now click on hospital and speciality name to check individual merit lists.</span>
+</div><div class="pmdc-search-bar" style="
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin: 1.2em 0 1.7em 0;
+  background: #23272a;
+  border-radius: 10px;
+  padding: 0.7em 1.2em;
+  box-shadow: 0 2px 12px 0 rgba(92,219,113,0.07);
+  max-width: 420px;
+">
+  <input
+    id="pmdc-input"
+    type="text"
+    placeholder="Enter PMDC Number"
+    style="
+      flex: 1;
+      background: #181a1b;
+      color: #e0e0e0;
+      border: 1.5px solid #5cdb71;
+      border-radius: 6px;
+      padding: 0.6em 1em;
+      font-size: 1.08em;
+      outline: none;
+      transition: border 0.18s;
+    "
+    onkeydown="if(event.key==='Enter'){getCandidateMerit();}"
+    autocomplete="off"
+  />
+  <button
+    onclick="getCandidateMerit()"
+    style="
+      background: #5cdb71;
+      color: #181a1b;
+      border: none;
+      border-radius: 6px;
+      padding: 0.6em 1.2em;
+      font-size: 1.08em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s, color 0.18s;
+    "
+    onmouseover="this.style.background='#43b95a';"
+    onmouseout="this.style.background='#5cdb71';"
+  >Search</button>
 </div>
       <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
       <div class="filters">

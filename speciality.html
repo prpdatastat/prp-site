@@ -173,6 +173,9 @@
                     extend: 'pdfHtml5',
                     text: 'Download PDF',
                     title : default_filter.speciality+',  '+default_filter.hospital+' Merit List',
+                    filename : function(){
+                      default_filter.hospital+","+default_filter.speciality+' Estimated Merit List'
+                    },
                     customize: function (doc) {
 
                       let table = doc.content[1].table.body;

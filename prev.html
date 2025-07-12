@@ -207,7 +207,10 @@
                 {
                     extend: 'pdfHtml5',
                     text: 'Download PDF',
-                    title : 'PRP '+default_filter.program+" "+default_data.round+' Merit List ',
+                    title : 'PRP Merit List ',
+                    filename: function () {
+        return 'PRP_' +default_data.year+"_"+default_data.month+"_"+default_data.round+"_" + default_filter.program + '_' + default_data.round + '_Merit_List';
+      },
                     customize: function (doc) {
                         
                         let table = doc.content[1].table.body;

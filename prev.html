@@ -21,26 +21,48 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <nav class="navbar main-navbar">
+      <div class="nav-content">
+        <div class="logo-container">
+          <img class="logo" onclick="gotoUrl()" src="logo.png" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" >Home</a></li>
+          <!--<li><a href="hospital.html">Hospitals</a></li>-->
+          <!--<li><a href="speciality.html">Specialities</a></li>-->
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="/prp-site/2025/index.html">Gazette</a></li>
+          <li><a href="prev.html" class="active">Previous Merit Lists</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="navbar notif">
       Previous Merit lists<br>
       <span class='important'>If you want to contribute some of the merits lists email them at rekorex358@gmail.com</span><br>
     </div>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img class="logo" onclick="gotoUrl()"src="logo.png" />
-      </div>
-    </nav>
-
+    
     <div class="main_container" style="width: 80%">
-      <div class="flex stat-container">     
-        
-        <div class="merit-helper">
-          <div><img class='helper-icon' src="notif.png"></div>    
-          <div><span class='helper-text' id="helper">Test Text </span></div> 
-          </div>
-          </div>
-        </div>
-      </div>
+      <div class="navbar notif merit-helper" id="merit-helper" style="
+  background: #23272a;
+  color: #e0e0e0;
+  border-left: 5px solid #5cdb71;
+  border-radius: 9px;
+  padding: 1em 1.5em;
+  margin-bottom: 1.2em;
+  font-size: 1.09em;
+  box-shadow: 0 2px 12px 0 rgba(92,219,113,0.08);
+  opacity: 1;
+  transition: box-shadow 0.3s, opacity 0.3s;
+">
+  <strong id="merit-helper-title" style="color:#5cdb71;">Merit List Helper</strong><br>
+  <span id="merit-helper-content">
+    Please select which year you want to see merit lists of!
+    <br><small style="color:#b0b0b0;display:block;margin-top:0.6em;">
+      If the merit list does not show up or glitches, please select the options again in this order: 
+      <strong>Year &gt; Month &gt; Round &gt; Program</strong>.
+    </small>
+  </span>
+</div>
       
       <div class="filters">
         <select
@@ -52,6 +74,7 @@
         <option value="2022" >2022</option>
         <option value="2023" >2023</option>
         <option value="2024" >2024</option>
+        <option value="2025" >2025</option>
       </select>
       <select
         onchange="updateMeritData(event);"
@@ -159,6 +182,19 @@
         }, 1000)
     
  };
+ function updateMeritHelper(title, content) {
+  const helper = document.getElementById('merit-helper');
+  const helperTitle = document.getElementById('merit-helper-title');
+  const helperContent = document.getElementById('merit-helper-content');
+  helperTitle.textContent = title;
+  helperContent.innerHTML = content;
+
+  // Animation
+  helper.classList.add('animated');
+  setTimeout(() => {
+    helper.classList.remove('animated');
+  }, 700);
+}
     
     const columnParams = ['pmdcNo', 'name', 'quotaName', 'specialityName', 'hospitalName']
     jQuery(document).ready(function () {
@@ -282,17 +318,46 @@
         const ele = document.getElementById(changeSequence[e.target.id]);
         default_data[changeSequence[e.target.id]] = ''
         
-      changeHelperText('Please select which '+changeSequence[e.target.id]+' you want to see merit lists of!')
-        ele.innerHTML = ""
+      if (e.target.id === 'year') {
+    title = "Year Selected";
+    content = `Showing merit lists for <span style="color:#5cdb71;font-weight:600;">${default_data.year}</span>. Please select a month.`;
+  } else if (e.target.id === 'month') {
+    title = "Month Selected";
+    content = `Showing merit lists for <span style="color:#5cdb71;font-weight:600;">${default_data.year} ${default_data.month}</span>. Please select a round.`;
+  } else if (e.target.id === 'round') {
+    title = "Round Selected";
+    content = `Showing merit lists for <span style="color:#5cdb71;font-weight:600;">${default_data.year} ${default_data.month} ${default_data.round}</span>. Please select a program.`;
+  }
+  updateMeritHelper(title, content);
+    ele.innerHTML = ""
         let options = getPreviousMerits(default_data.year, default_data.month, default_data.round, '');
         for (opt in options) {
           ele.innerHTML += 
             "<option value='" + options[opt] + "'>" + options[opt] + "</option>"
         }
+            if (e.target.id === 'year') {
+      const monthSelect = document.getElementById('month');
+      // If only one valid month option (excluding the disabled one)
+      const validOptions = Array.from(monthSelect.options).filter(opt => !opt.disabled);
+      if (validOptions.length === 1) {
+        monthSelect.value = validOptions[0].value;
+        // Manually trigger the change event for month
+        monthSelect.dispatchEvent(new Event('change'));
+      }
+    }
       }
       else {
-        changeHelperText('Please select which program you want to see merit lists of!')
-     
+        if (e.target.id === 'year') {
+    title = "Year Selected";
+    content = `Showing merit lists for <span style="color:#5cdb71;font-weight:600;">${default_data.year}</span>. Please select a month.`;
+  } else if (e.target.id === 'month') {
+    title = "Month Selected";
+    content = `Showing merit lists for <span style="color:#5cdb71;font-weight:600;">${default_data.year} ${default_data.month}</span>. Please select a round.`;
+  } else if (e.target.id === 'round') {
+    title = "Round Selected";
+    content = `Showing merit lists for <span style="color:#5cdb71;font-weight:600;">${default_data.year} ${default_data.month} ${default_data.round}</span>. Please select a program.`;
+  }
+  updateMeritHelper(title, content);
         for (prog in meritData) {
          meritData[prog] = getPreviousMerits(default_data.year, default_data.month, default_data.round, prog);
      

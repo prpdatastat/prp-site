@@ -22,7 +22,17 @@
   <body>
     
 <style>
-@keyframes spin { 100% { transform: rotate(360deg); } }
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 12px rgba(0, 255, 170, 0.2), 0 0 5px rgba(0, 255, 170, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(0, 255, 170, 0.6), 0 0 12px rgba(0, 255, 170, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 12px rgba(0, 255, 170, 0.2), 0 0 5px rgba(0, 255, 170, 0.1);
+  }
+}
 
     
     #statTable tbody td:nth-child(1),
@@ -62,7 +72,9 @@
         </ul>
       </div>
     </nav>
-   <div class="navbar notif" id="notif" style="
+
+  
+<div class="navbar notif" id="notif" style="
   background: #23272a;
   color: #e0e0e0;
   border-left: 5px solid #5cdb71;
@@ -82,7 +94,29 @@
   <span style="color:#aaa;">
     Statistics below show how closely the estimated merit list matches the previously published unofficial merit, including the number of correctly placed candidates in both lists.
   </span>
+
+  <hr style="border-color: rgba(255,255,255,0.1); margin: 1em 0;">
+
+  <div style="
+    margin-top: 0.5em;
+    padding: 0.7em 1em;
+    background: #1e1f22;
+    border-left: 4px solid #00ffaa;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.25);
+    animation: glowPulse 2s infinite;
+  ">
+    <strong style="color:#00ffaa;">📚 All Previous Merit Lists Now Available!</strong><br>
+    <span style="color:#b0ffe0;">
+      🔗 View here: 
+      <a href="https://prpdatastat.github.io/prp-site/prev.html" target="_blank" style="color:#ffe066; font-weight:bold; text-decoration:underline;">
+        prpdatastat.github.io/prp-site/prev.html
+      </a>
+    </span>
+  </div>
 </div>
+
+
 
     <div class="main_container" style="width: 80%">
       <div class="flex stat-container">

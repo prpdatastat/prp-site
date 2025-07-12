@@ -57,10 +57,6 @@
   <strong id="merit-helper-title" style="color:#5cdb71;">Merit List Helper</strong><br>
   <span id="merit-helper-content">
     Please select which year you want to see merit lists of!
-    <br><small style="color:#b0b0b0;display:block;margin-top:0.6em;">
-      If the merit list does not show up or glitches, please select the options again in this order: 
-      <strong>Year &gt; Month &gt; Round &gt; Program</strong>.
-    </small>
   </span>
 </div>
       
@@ -198,7 +194,6 @@
     
     const columnParams = ['pmdcNo', 'name', 'quotaName', 'specialityName', 'hospitalName']
     jQuery(document).ready(function () {
-      changeHelperText('Please select which year you want to see merit lists of!')
       jQuery("#statTable").DataTable({
         order: [[5, 'desc']],
         paging: true,
@@ -236,7 +231,9 @@
                     
                 
             ]
-          }
+          },
+           bottomStart: ['pageLength', 'info'],
+        bottomEnd: 'paging'
     },
     
         columns: [

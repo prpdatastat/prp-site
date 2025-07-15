@@ -1207,27 +1207,6 @@ select:focus {
   .candidate-meta {
     gap: 10px;
   }
-}#HCB_comment_box,
-#HCB_comment_box .hcb-comment-body,
-#HCB_comment_box .hcb-comment-tb,
-#HCB_comment_box .author-name,
-#HCB_comment_box .date,
-#HCB_comment_box .hcb-like,
-#HCB_comment_box .hcb-reply,
-#HCB_comment_box .hcb-flag,
-#HCB_comment_box .comment {
-  background: #181a1b !important;
-  color: #e0e0e0 !important;
-  border: none !important;
-  border-radius: 12px !important;
-}
-
-#HCB_comment_box .comment {
-  border-bottom: 1px solid #23272a !important;
-  padding: 1em 0.8em;
-  margin-bottom: 1em;
-  border-radius: 12px !important;
-  box-shadow: 0 2px 12px 0 rgba(92,219,113,0.06);
 }
 .merit-helper.animated {
   box-shadow: 0 0 24px 2px #5cdb71, 0 2px 12px 0 rgba(92,219,113,0.08);
@@ -1239,54 +1218,9 @@ select:focus {
   60% { box-shadow: 0 0 24px 2px #5cdb71; opacity: 1; }
   100% { box-shadow: 0 2px 12px 0 rgba(92,219,113,0.08); opacity: 0.93; }
 }
-#HCB_comment_box .hcb-comment-body {
-  font-size: 1.08rem;
-  color: #e0e0e0 !important;
-  background: transparent !important;
-  padding: 0.5em 0;
-}
 
-#HCB_comment_box .author-name {
-  color: #5cdb71 !important;
-  font-weight: bold;
-}
 
-#HCB_comment_box .date {
-  color: #888 !important;
-  font-size: 0.95em;
-  margin-left: 0.5em;
-}
 
-#HCB_comment_box .hcb-comment-tb button,
-#HCB_comment_box .hcb-like,
-#HCB_comment_box .hcb-reply,
-#HCB_comment_box .hcb-flag {
-  background: #23272a !important;
-  color: #5cdb71 !important;
-  border: none !important;
-  border-radius: 6px !important;
-  margin-right: 0.5em;
-  padding: 3px 10px;
-  font-size: 0.98em;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-}
-
-#HCB_comment_box .hcb-comment-tb button:hover,
-#HCB_comment_box .hcb-like:hover,
-#HCB_comment_box .hcb-reply:hover,
-#HCB_comment_box .hcb-flag:hover {
-  background: #5cdb71 !important;
-  color: #181a1b !important;
-}
-
-#HCB_comment_box .hcb-comment-tb {
-  margin-top: 0.5em;
-}
-
-#HCB_comment_box .likes img {
-  filter: brightness(0.7) invert(0.7);
-}
 
 #FCPS-correct {
   transition: 
@@ -1330,26 +1264,158 @@ select:focus {
   color: #fff;
   cursor: pointer;
 }
+/* Comment Box Styles */
+#HCB_comment_box .comment {
+  border-bottom: 1px solid #23272a !important;
+  padding: 1em 1em; /* Increased padding for better spacing */
+  margin-bottom: 1em;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 12px 0 rgba(92,219,113,0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#HCB_comment_box .comment:hover {
+  box-shadow: 0 4px 20px rgba(92,219,113,0.15); /* Enhanced shadow on hover */
+  transform: scale(1.02); /* Slightly enlarge comment box on hover */
+}
+
+/* Button Styles */
+#HCB_comment_box .hcb-comment-tb button,
+#HCB_comment_box .hcb-like,
+#HCB_comment_box .hcb-reply,
+#HCB_comment_box .hcb-flag {
+  background: #23272a !important;
+  color: #5cdb71 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  margin-right: 0.5em;
+  padding: 8px 16px; /* Increased padding for better touch area */
+  font-size: 0.98em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s; /* Added transform for hover */
+}
+
 #HCB_comment_box .hcb-comment-tb button:hover,
 #HCB_comment_box .hcb-like:hover,
 #HCB_comment_box .hcb-reply:hover,
 #HCB_comment_box .hcb-flag:hover {
-  background: #5cdb71 !important;
-  color: #181a1b !important;
+  background: #5cdb71 !important; /* Change background color on hover */
+  color: #181a1b !important; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
-#HCB_comment_box .hcb-comment-tb {
-  margin-top: 0.5em;
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+  #HCB_comment_box .comment {
+    padding: 0.8em; /* Adjust padding for smaller screens */
+  }
+  
+  #HCB_comment_box .hcb-comment-tb button {
+    padding: 6px 12px; /* Adjust button padding for smaller screens */
+  }
+}
+/* Comment Form Container */
+#HCB_comment_form_box {
+  background: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin: 20px 0;
 }
 
-#HCB_comment_box .comment {
-  border-bottom: 1px solid #23272a !important;
-  padding: 1em 0;
+/* Input Fields */
+#hcb_form_name_container,
+#hcb_form_content {
+  background: #23272a;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
 }
 
-#HCB_comment_box .likes img {
-  filter: brightness(0.7) invert(0.7);
+#hcb_form_name_container input,
+#hcb_form_content {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text-main);
+  font-size: 1rem;
+  outline: none;
 }
+
+/* Input Field Hover Effect */
+#hcb_form_name_container:hover,
+#hcb_form_content:hover {
+  box-shadow: 0 0 10px rgba(92, 219, 113, 0.5);
+}
+
+/* Textarea Specific Styles */
+#hcb_form_content {
+  resize: none; /* Prevent resizing */
+}
+
+/* Submit Button */
+#hcb_submit {
+  background: var(--accent);
+  color: #181d23;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  margin-right: 10px; /* Space between buttons */
+}
+
+#hcb_submit:hover {
+  background: var(--accent-hover);
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Add Image Button */
+#hcb_file_label {
+  display: inline-block;
+  background: var(--accent);
+  color: #181d23;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#hcb_file_label:hover {
+  background: var(--accent-hover);
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Admin Link Styles */
+.admin-link {
+  float: right;
+  margin-top: 10px;
+}
+
+/* Home Description Styles */
+.home-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  #HCB_comment_form_box {
+    padding: 15px;
+  }
+
+  #hcb_submit,
+  #hcb_file_label {
+    width: 100%; /* Full width on smaller screens */
+    margin: 5px 0; /* Adjust margins */
+  }
+}
+
 /* Hide old font-face rules */
 @font-face { font-family: "heavy"; src: local('Inter'); }
 @font-face { font-family: "light"; src: local('Inter'); }

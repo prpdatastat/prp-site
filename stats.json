@@ -4,11 +4,11 @@
   "correctCandidates": 507
  },
  "MS": {
-  "accuracy": 77.29,
-  "correctCandidates": 160
+  "accuracy": 76.47,
+  "correctCandidates": 156
  },
  "MD": {
-  "accuracy": 89.12,
-  "correctCandidates": 213
+  "accuracy": 89.53,
+  "correctCandidates": 214
  }
 }

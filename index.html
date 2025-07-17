@@ -478,7 +478,7 @@ You must provide either a threshold or a filter to generate meaningful results. 
     const filters = document.getElementsByTagName("select");
     console.log(filters);
     for (filter in filters) {
-      let options = getOptions(filters[filter].id.replace('filter-', '') || filters[filter].id);
+      let options = getOptions(String(filters[filter].id).replace('filter-', '') || filters[filter].id);
       for (opt in options) {
         filters[filter].innerHTML +=
           "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
@@ -495,6 +495,7 @@ You must provide either a threshold or a filter to generate meaningful results. 
     }
     for (program in accuracyMerit) {
   const ele = document.getElementById(program);
+  console.log(ele, program, accuracyMerit[program].accuracy);
   ele.innerHTML = accuracyMerit[program].accuracy; // Show total candidates
 
   // Calculate and show correctly placed candidates

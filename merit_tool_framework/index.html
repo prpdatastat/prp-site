@@ -191,89 +191,52 @@
   <span style="color:#b5ffcb;">This provides transparency and helps you assess the accuracy of the unofficial data.</span>
   <br><br>
   <span style="color:#aaa;">You can now click on hospital and speciality name to check individual merit lists.</span>
-</div>
-<div style="margin-top: 2.5em; max-width: 560px;">
-  
-
- <div style="
+</div><div class="pmdc-search-bar" style="
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin: 1.2em 0 1.7em 0;
   background: #23272a;
-  border-radius: 14px;
-  padding: 2em 2em 1.8em 2em;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.2);
-  max-width: 620px;
-  margin: 2em auto;
-  font-family: 'Segoe UI', sans-serif;
+  border-radius: 10px;
+  padding: 0.7em 1.2em;
+  box-shadow: 0 2px 12px 0 rgba(92,219,113,0.07);
+  max-width: 420px;
 ">
-
-  <h2 style="color: #5cdb71; font-size: 1.6em; margin-bottom: 0.4em;">
-    🎓 Helpful Tools
-  </h2>
-  <p style="color: #b0b0b0; font-size: 0.96em; margin-bottom: 1.6em;">
-    Search your PMDC number 
-  </p>
-
-  <!-- PMDC Search -->
-  <div style="display: flex; align-items: center; gap: 0.7em; margin-bottom: 1.5em;">
-    <input
-      id="pmdc-input"
-      type="text"
-      placeholder="🔎 Enter PMDC Number"
-      style="flex: 1; background: #181a1b; color: #e0e0e0; border: 1.5px solid #5cdb71; border-radius: 6px; padding: 0.6em 1em; font-size: 1.05em; outline: none;"
-      onkeydown="if(event.key==='Enter'){getCandidateMerit();}"
-      autocomplete="off"
-    />
-    <button
-      onclick="getCandidateMerit()"
-      style="background: #5cdb71; color: #181a1b; border: none; border-radius: 6px; padding: 0.6em 1.2em; font-size: 1.05em; font-weight: 600; cursor: pointer;"
-      onmouseover="this.style.background='#43b95a';"
-      onmouseout="this.style.background='#5cdb71';"
-    >Search</button>
-  </div>
-  <h2 style="color: #5cdb71; font-size: 1.6em; margin-bottom: 0.4em;">
-    🎓 Check near-merit Matches
-  </h2>
-  <p style="color: #b0b0b0; font-size: 0.96em; margin-bottom: 1.6em;">
-    Explore how close you were to selection by entering your merit. Adjust the margin to find nearby candidates.
-  </p>
-  <!-- Merit Input -->
-  <div style="display: flex; flex-wrap: wrap; gap: 0.7em; align-items: center;">
-    <input
-      id="merit-input"
-      type="number"
-      placeholder="🎯 Your merit (e.g. 31.2)"
-      style="flex: 1 1 140px; background: #181a1b; color: #e0e0e0; border: 1.5px solid #5cdb71; border-radius: 6px; padding: 0.6em 1em; font-size: 1.05em;"
-    />
-    <select
-      id="merit-program"
-      style="flex: 1 1 120px; background: #181a1b; color: #e0e0e0; border: 1.5px solid #5cdb71; border-radius: 6px; padding: 0.6em 1em; font-size: 1.05em;"
-    >
-      <option value="MS">MS</option>
-      <option value="MD">MD</option>
-      <option value="FCPS">FCPS</option>
-    </select>
-    <input
-      id="merit-threshold"
-      type="number"
-      min="0.5"
-      max="10"
-      step="0.1"
-      value="3"
-      placeholder="± Marks"
-      style="flex: 1 1 100px; background: #181a1b; color: #e0e0e0; border: 1.5px solid #5cdb71; border-radius: 6px; padding: 0.6em 1em; font-size: 1.05em;"
-    />
-    <button
-      onclick="showNearMeritMatches()"
-      style="flex: 1 1 120px; background: #5cdb71; color: #181a1b; border: none; border-radius: 6px; padding: 0.6em 1.2em; font-size: 1.05em; font-weight: 600; cursor: pointer;"
-    >
-      Show Matches
-    </button>
-  </div>
-
+  <input
+    id="pmdc-input"
+    type="text"
+    placeholder="Enter PMDC Number"
+    style="
+      flex: 1;
+      background: #181a1b;
+      color: #e0e0e0;
+      border: 1.5px solid #5cdb71;
+      border-radius: 6px;
+      padding: 0.6em 1em;
+      font-size: 1.08em;
+      outline: none;
+      transition: border 0.18s;
+    "
+    onkeydown="if(event.key==='Enter'){getCandidateMerit();}"
+    autocomplete="off"
+  />
+  <button
+    onclick="getCandidateMerit()"
+    style="
+      background: #5cdb71;
+      color: #181a1b;
+      border: none;
+      border-radius: 6px;
+      padding: 0.6em 1.2em;
+      font-size: 1.08em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s, color 0.18s;
+    "
+    onmouseover="this.style.background='#43b95a';"
+    onmouseout="this.style.background='#5cdb71';"
+  >Search</button>
 </div>
-
-</div>
-
-
       <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
       <div class="filters">
         <select

@@ -233,8 +233,10 @@
     🎓 Check near-merit Matches
   </h2>
   <p style="color: #b0b0b0; font-size: 0.96em; margin-bottom: 1.6em;">
-    Explore how close you were to selection by entering your merit. Adjust the margin to find nearby candidates.
-  </p>
+   Explore how close your merit was to selection.<br>
+Enter your merit and optionally filter by specialty or hospital.<br>
+At least a threshold or one filter is required.<br>
+You must provide either a threshold or a filter to generate meaningful results.  </p>
   <!-- Merit Input -->
   <div style="display: flex; flex-wrap: wrap; gap: 0.7em; align-items: center;">
     <input
@@ -261,12 +263,11 @@
       placeholder="± Marks"
       style="flex: 1 1 100px; background: #181a1b; color: #e0e0e0; border: 1.5px solid #5cdb71; border-radius: 6px; padding: 0.6em 1em; font-size: 1.05em;"
     />
-    <button
-      onclick="showNearMeritMatches()"
-      style="flex: 1 1 120px; background: #5cdb71; color: #181a1b; border: none; border-radius: 6px; padding: 0.6em 1.2em; font-size: 1.05em; font-weight: 600; cursor: pointer;"
-    >
-      Show Matches
-    </button>
+    <div style="display: flex; gap: 0.7em; margin-bottom: 1em;">
+    <select id="filter-speciality" type="text" placeholder="Filter by speciality" style="flex: 1; background: #181a1b; color: white; border: 1px solid #5cdb71; border-radius: 6px; padding: 0.6em;"></select>
+    <select id="filter-hospital" type="text" placeholder="Filter by hospital" style="flex: 1; background: #181a1b; color: white; border: 1px solid #5cdb71; border-radius: 6px; padding: 0.6em;"></select>
+    <button onclick="showNearMeritMatches()" style="background: #5cdb71; color: black; padding: 0.6em 1em; border-radius: 6px; border: none;">Show Matches</button>
+  </div>
   </div>
 
 </div>
@@ -477,7 +478,7 @@
     const filters = document.getElementsByTagName("select");
     console.log(filters);
     for (filter in filters) {
-      let options = getOptions(filters[filter].id);
+      let options = getOptions(filters[filter].id.replace('filter-', '') || filters[filter].id);
       for (opt in options) {
         filters[filter].innerHTML +=
           "<option value='" + options[opt] + "'>" + options[opt] + "</option>";

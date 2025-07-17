@@ -487,34 +487,52 @@ function parseNumberth(string ) {
     else { return string+"th"}
 }
 
+
 function showNearMeritMatches() {
   const merit = parseFloat(document.getElementById("merit-input").value);
   const program = document.getElementById("merit-program").value;
-  const threshold = parseFloat(document.getElementById("merit-threshold").value);
+  const threshold = parseFloat(document.getElementById("merit-threshold").value) || 3;
+  const filterSpeciality = document.getElementById("filter-speciality").value.toLowerCase().trim();
+  const filterHospital = document.getElementById("filter-hospital").value.toLowerCase().trim();
+
   if (isNaN(merit)) {
     alert("Please enter a valid merit score.");
     return;
   }
 
   const data = meritData[program];
-  console.log('loaded data', data)
-  console.log('merit', merit, 'program', program)
   const closeList = [];
-  
 
+  const usingFilter = !!(filterSpeciality || filterHospital);
+  const allowThresholdMatch = !usingFilter && threshold > 0;
+
+  if (!usingFilter && !allowThresholdMatch) {
+    alert("Please enter either a filter (speciality/hospital) or a valid threshold.");
+    return;
+  }
 
   for (let quota in data[program]) {
     for (let speciality in data[program][quota]) {
       for (let hospital in data[program][quota][speciality]) {
-        
+        const candidates = data[program][quota][speciality][hospital]["candidates"];
+        if (!Array.isArray(candidates)) continue;
 
-        const candidates = data[program][quota][speciality][hospital]["candidates"] || [];
         candidates.forEach(cand => {
-          /*if (cand.selected === false) return;*/
+          if (cand.selected === false) return;
           const score = parseFloat(cand.marksTotal);
           const delta = score - merit;
-          console.log('score', score, 'delta', delta, 'merit', merit, (Math.abs(delta) <= threshold))
-          if (Math.abs(delta) <= threshold) {
+
+          const matchSpeciality = speciality.toLowerCase().includes(filterSpeciality);
+          const matchHospital = hospital.toLowerCase().includes(filterHospital);
+
+          const passesFilters =
+            (filterSpeciality ? matchSpeciality : true) &&
+            (filterHospital ? matchHospital : true);
+
+          if (
+            (usingFilter && passesFilters) ||
+            (allowThresholdMatch && Math.abs(delta) <= threshold)
+          ) {
             closeList.push({
               name: cand.nameFull || "-",
               score: score,
@@ -546,9 +564,12 @@ function showNearMeritMatches() {
   });
 
   table.draw();
-document.getElementById("headline").innerText =
-  `🔍 Candidates within ±${threshold} marks of your merit (${merit})`;
 
+  const headline = document.getElementById("headline");
+  headline.style.display = "block";
+  headline.innerText = usingFilter
+    ? `🔍 Matches for filters (Speciality: "${filterSpeciality}", Hospital: "${filterHospital}") with your merit (${merit})`
+    : `🔍 Candidates within ±${threshold} marks of your merit (${merit})`;
 }
 
 function getGradientColor(delta) {

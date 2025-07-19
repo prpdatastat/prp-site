@@ -370,7 +370,9 @@ You must provide either a threshold or a filter to generate meaningful results. 
                 {
                     extend: 'pdfHtml5',
                     text: 'Download PDF',
-                    title : 'estimatedMeritListJune2025 ',
+                    title : 'officialFirstRoundMeritList',
+                    filename : function(){
+                     default_filter.program + 'officialFirstRoundMeritList'  },
                
                     customize: function (doc) {
                         

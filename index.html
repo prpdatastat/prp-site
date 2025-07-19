@@ -136,19 +136,19 @@ Additional comparison details include the number of correctly placed candidates 
   <div id="FCPS" class="stat-number">1,234</div>
   <div class="stat-desc">FCPS</div>
   <div class="stat-label">Similar to estimated merit list</div>
-  <div class="stat-correct" id="FCPS-correct"></div>
+  <div style='display:none;' class="stat-correct" id="FCPS-correct"></div>
 </div>
 <div class="stat-card">
   <div id="MS" class="stat-number">1,234</div>
   <div class="stat-desc">MS</div>
   <div class="stat-label">Similar to estimated merit list</div>
-  <div class="stat-correct" id="MS-correct"></div>
+  <div style='display:none;' class="stat-correct" id="MS-correct"></div>
 </div>
 <div class="stat-card">
   <div id="MD" class="stat-number">1,234</div>
   <div class="stat-desc">MD</div>
   <div class="stat-label">Similar to estimated merit list</div>
-  <div class="stat-correct" id="MD-correct"></div>
+  <div style='display:none;' class="stat-correct" id="MD-correct"></div>
 </div>
     
       
@@ -502,7 +502,7 @@ You must provide either a threshold or a filter to generate meaningful results. 
     for (program in accuracyMerit) {
   const ele = document.getElementById(program);
   console.log(ele, program, accuracyMerit[program].accuracy);
-  ele.innerHTML = accuracyMerit[program].accuracy; // Show total candidates
+  ele.innerHTML = String(accuracyMerit[program].accuracy) +"%"; // Show total candidates
 
   // Calculate and show correctly placed candidates
   const correct = accuracyMerit[program].correctCandidates;

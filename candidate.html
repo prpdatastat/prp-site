@@ -162,21 +162,30 @@
           <div class="stat-label">Provisional Marks</div>
           <div class="bubble-row">
             <span class="bubble" id="matricMarks">${data.matric}</span>
-            <span class="bubble" id="interMarks">${data.inter}</span>
+            <span class="bubble" id="inter Marks">${data.inter}</span>
             <span class="bubble" id="degreeMarks">${data.degree}</span>
             <span class="bubble" id="houseJobMarks">${data.houseJob}</span>
             <span class="bubble" id="experienceMarks">${data.experience}</span>
             <span class="bubble" id="hardAreaMarks">${data.hardArea}</span>
           </div>
         </div>`
-        
-         for (pro in data.programMark) {
-        console.log('program marks')
-        const elet = document.getElementsByClassName(pro+'marks')[0];
-        console.log(pro, pro+'Marks', data.programMark[pro])
+         let k = ['FCPS', 'MS', 'MD']
+         for (pro in k) {
+          let currPro = k[pro];
+          console.log(k)
+          if (currPro in data) {
+            if (data[currPro].length > 0){
+              console.log(currPro, data[currPro], data[currPro].length)
+              const elet = document.getElementsByClassName(currPro+'marks')[0];
+       
         elet.innerHTML = '✔'
+            } else {
+              const elet = document.getElementsByClassName(currPro+'marks')[0];
 
-      }
+        elet.innerHTML = 'x'
+            }
+          }
+        } 
 
         /*
         for (pro in data.progMarks) {

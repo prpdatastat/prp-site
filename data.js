@@ -644,15 +644,15 @@ async function getConsent(applicantId, inductionId = 19, round = 1) {
     
     }
 
-async function getConsentData(applicantId) { 
+async function getConsentData(applicantId, inductionId = 19) { 
     
 
         try {
         let response = await $.ajax({
-            url: 'https://prp-api.vercel.app/consent/'+applicantId.toString()+"/",
+            url: 'https://prp-api.vercel.app/consent/'+applicantId.toString()+"/"+ inductionId.toString()+"/",
             type: 'GET',
         });
-            
+            console.log(response)
             return response;
         
     } catch (error) {

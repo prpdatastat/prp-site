@@ -62,13 +62,19 @@
           </div>
         </div>
         <div class="stat-card program-marks">
-          <div class="bubble-row">
-            <span class="bubble FCPSmarks">✘</span>
-            <span class="bubble MSmarks">✘</span>
-            <span class="bubble MDmarks">✘</span>
-          </div>
-          <div class="stat-label">FCPS / MS / MD</div>
-        </div>
+  <div class="bubble-row">
+    <span class="bubble FCPSmarks" id="FCPSmarks">
+      
+    </span>
+    <span class="bubble MSmarks" id="MSmarks">
+      
+    </span>
+    <span class="bubble MDmarks" id="MDmarks">
+      
+    </span>
+  </div>
+  <div class="stat-label"><span class="legend-bubble" id="FCPSmarks">fcps</span><span class="legend-bubble" id="MSmarks">ms</span><span class="legend-bubble" id="MDmarks">md</span></div>
+</div>
         <div class="legend">
           <span class="legend-title">Legend:</span>
           <span class="legend-bubble" id="matricMarks">matric</span>
@@ -341,13 +347,14 @@ function shareUrl() {
       console.log(merit)
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in merit) {
+        console.log(merit[cand])
         jQuery("#statTable")
           .DataTable()
           .row.add([
             merit[cand].quotaName,            
             merit[cand].hospitalName,
             merit[cand].specialityName,
-            merit[cand].marks,
+            merit[cand].marksTotal,
             merit[cand].preferenceNo,
             merit[cand].symbol
           ]);

@@ -19,12 +19,24 @@ const prevcandList = load_data('./cand_data.json')
 //const fcpsMeritUnOfficial = load_data('./2025/fcps_merit.json')
 //const msMeritUnOfficial = load_data('./2025/ms_merit.json')
 //const mdMeritUnOfficial = load_data('./2025/md_merit.json')
+let fcpsGazat = load_data('./2025/fcps_gazat.json')
+let msGazat = load_data('./2025/ms_gazat.json')
+let mdGazat = load_data('./2025/md_gazat.json')
+const constGazat = {
+    FCPS : fcpsGazat,
+    MS : msGazat,
+    MD : mdGazat
+}
 const upgList = load_data('./upgradationEstimate.json')
 let candData = prevcandList
 let fcpsMerit = prevfcpsMeritList
 let msMerit = prevMsMeritList
 let mdMerit = prevMdMeritList
-
+const constData = {
+    FCPS : fcpsMerit,
+    MS : msMerit,
+    MD : mdMerit
+}
 function getUpgList(prog, quot = '', spe = '', hos = '') {
     let  result = []
     for (quota in upgList[prog]){
@@ -661,6 +673,23 @@ async function getConsentData(applicantId, inductionId = 19) {
     
     
     }
+async function considerApplicant(applicantId, inductionId = 19) { 
+    
+
+        try {
+        let response = await $.ajax({
+            url: 'https://prp-api.vercel.app/consider/'+applicantId.toString()+"/"+ inductionId.toString()+"/",
+            type: 'GET',
+        });
+            console.log(response)
+            return response;
+        
+    } catch (error) {
+        console.log(error);
+    }
+    
+    
+    }
     /*
     function checkMeritDataUnhinged() {
         if (localStorage.getItem('viewUnofficial'))
@@ -741,3 +770,4 @@ function goToId(e) {
     let txt = e.innerHTML;
     
 }
+

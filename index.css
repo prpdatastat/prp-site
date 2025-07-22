@@ -498,6 +498,57 @@ body {
   cursor: pointer;
 }
 
+
+.next-candidate {
+  display: inline-block;
+  background: linear-gradient(90deg, #4ed964 70%, #aaffc3 100%);
+  color: #181d23;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  padding: 7px 18px;
+  margin: 4px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(78, 217, 100, 0.35);
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.next-candidate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(126, 255, 167, 0.2), rgba(78, 217, 100, 0.2));
+  z-index: 0;
+  transition: left 0.35s ease;
+}
+
+.next-candidate:hover {
+  color: #ffffff;
+  background: linear-gradient(90deg, #2fb94f 60%, #5cdb71 100%);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 14px rgba(78, 217, 100, 0.45);
+}
+
+.next-candidate:hover::before {
+  left: 0;
+}
+.row-highlight {
+  background: linear-gradient(90deg, #2e5d3f 0%, #3a7753 50%, #2e5d3f 100%) !important;
+  border-left: 4px solid #5cdb71;
+  color: #ffffff !important;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+
 .consentstatusstyle {
   display: inline-block;
   margin-top: 7px;
@@ -1012,6 +1063,25 @@ select:focus {
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 4px;
+}
+.next-candidate-btn {
+  background-color: #343a40;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.next-candidate-btn:hover {
+  background-color: #495057;
+}
+.highlighted-row {
+  background-color: #e0ffe0 !important;
+  transition: background-color 1s ease;
 }
 .legend-bubble.highlight {
   background: #ffe066;

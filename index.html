@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/sync-fetch"></script>
     <script id='data' src="data.js"></script>
     <script src="schedule.js"></script>
-   
+   <script src="nil.js"></script>
     <link
     href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
     rel="stylesheet"
@@ -93,9 +93,10 @@
   <a href="mailto:rekobeep@proton.me" style="color:#ffe066; font-weight:bold;">rekobeep@proton.me</a>
   <br><br>-->
 
-  <strong style="color:#5cdb71;">✅ Official Merit List – Round 2 Published!</strong><br>
-  Released by the <span style="color:#ffe066; font-weight:600;">official government authority</span>.<br>
-  <span style="color:#5cdb71;"><b>Click "Check Consent"</b></span> to view applicant consent status.
+<strong style="color:#5cdb71;">✅ Official Merit List – Round 2 Published!</strong><br>
+Released by the <span style="color:#ffe066; font-weight:600;">official government authority</span>.<br>
+<span style="color:#5cdb71;"><b>Click "Check Consent"</b></span> to view the current applicant's consent status.<br>
+✨ <span style="color:#7fffa7;"><b>New:</b> "Show Next Candidate"</span> reveals who will be considered next <i>if the current candidate does not give consent</i>. Use it to preview upcoming applicants in line!
 
   <br><br>
   <span style="color:#ffd43b; font-weight:600;">
@@ -324,6 +325,7 @@ You must provide either a threshold or a filter to generate meaningful results. 
             <th class="linkable">Hospital</th>
             <th>Aggregate</th>
             <th>Preference No.</th>
+            <th>Next Candidate in Line</th>
           </tr>
         </thead>
         <tbody id="dataRows"></tbody>
@@ -410,6 +412,7 @@ You must provide either a threshold or a filter to generate meaningful results. 
           { width: "20%" },
           { width: "5%" },
           { width: "5%" },
+          { width: "5%" }
         ],
       });
       changeMeritList();
@@ -433,14 +436,16 @@ You must provide either a threshold or a filter to generate meaningful results. 
         jQuery("#statTable")
           .DataTable()
           .row.add([
-            merit[cand].pmdcNo,
-            merit[cand].nameFull,
-            merit[cand].quotaName,
-            merit[cand].specialityName,
-            merit[cand].hospitalName,
-            merit[cand].marksTotal,
-            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkConsent("+merit[cand].applicantId+")'>Check Consent</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
-          ]);
+  merit[cand].pmdcNo,
+  merit[cand].nameFull,
+  merit[cand].quotaName,
+  merit[cand].specialityName,
+  merit[cand].hospitalName,
+  merit[cand].marksTotal,
+  "Pref No." + merit[cand].preferenceNo + "<br><span class='check-consent' onmousedown='checkConsent(" + merit[cand].applicantId + ")'>Check Consent</span><br><span class='consentstatusstyle' id='status-" + merit[cand].applicantId + "'></span>",
+  `<span data-count=0 class='next-candidate' onclick='showNextCandidate(this)'>Show Next Candidate</span>`
+
+]);
       }
       jQuery("#statTable").DataTable().draw();
     }
@@ -511,7 +516,57 @@ You must provide either a threshold or a filter to generate meaningful results. 
     correctEle.innerHTML = `<span style="color:#5cdb71;font-weight:600;">Correctly placed Candidates: ${correct}</span>`;
   }
 }
-    
+    async function showNextCandidate(elem) {
+    const $btn = $(this);
+    let count = (parseInt($btn.data('count')) || 0) + 1;
+    const table = $('#statTable').DataTable();
+    const row = $(elem).closest('tr');
+    const rowIndex = table.row(row).index(); // always correct
+    const rowData = table.row(rowIndex).data(); // Current row
+
+  // Reconstruct the selectedCandidate info
+  const selectedCandidate = {
+    nameFull: rowData[1], // name
+    marksTotal: parseFloat(rowData[5]) // marks
+  };
+
+  const program = default_filter.program;
+  const quota = rowData[2]; // quota
+  const speciality = rowData[3];
+  const hospital = rowData[4];
+  console.log('Selected Candidate:', selectedCandidate, 'Program:', program, 'Quota:', quota, 'Speciality:', speciality, 'Hospital:', hospital);
+  // Call your existing function to get next candidate
+  console.log(selectedCandidate)
+  
+  const next = await nextCandidateInLine(selectedCandidate, program,  quota, speciality, hospital);
+
+  if (!next) {
+    alert("No next candidate found.");
+    return;
+  }
+  console.log(next, 'next candidate');
+  // Construct updated row data
+  const updatedRow = [
+    next.pmdcNo,
+    next.nameFull,
+    next.quotaName,
+    next.specialityName,
+    next.hospitalName,
+    next.marksTotal,
+    `Pref No.${next.preferenceNo}<br>
+      <span class='check-consent' onmousedown='checkConsent(${next.applicantId})'>Check Consent</span><br>
+      <span class='consentstatusstyle' id='status-${next.applicantId}'></span>`,
+    `<span data-count='${count}' class='next-candidate' onclick='showNextCandidate(this)'>Show Next Candidate</span>`
+  ];
+
+  // Update the row
+  table.row(rowIndex).data(updatedRow).draw(false);
+
+  $(row).addClass('row-highlight');
+
+ 
+}
+
     async function checkConsent(applicantId) {
       let ele = document.getElementById('status-'+applicantId.toString())
       console.log(ele, 'status-'+applicantId.toString())

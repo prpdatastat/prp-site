@@ -8,12 +8,14 @@
        "applicantId": 32722,
        "nameFull": "Hadia Sajjad",
        "marksTotal": 36.153031,
+       "pmdcNo": "788002-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32006,
        "nameFull": "Zohaib Yousaf",
        "marksTotal": 33.305325,
+       "pmdcNo": "759994-01-M",
        "preferenceNo": 1
       }
      ],
@@ -196,12 +198,14 @@
        "applicantId": 32913,
        "nameFull": "Muhammad Hammad Ijaz",
        "marksTotal": 31.478333,
+       "pmdcNo": "873047-01-M ",
        "preferenceNo": 19
       },
       {
        "applicantId": 21304,
        "nameFull": "Muhammad Usman Tariq",
        "marksTotal": 29.285293,
+       "pmdcNo": "717981-01-M",
        "preferenceNo": 2
       }
      ],
@@ -394,6 +398,7 @@
        "applicantId": 32336,
        "nameFull": "Mujahid Hassan",
        "marksTotal": 23.908409,
+       "pmdcNo": "873206-01-M",
        "preferenceNo": 2
       }
      ],
@@ -586,6 +591,7 @@
        "applicantId": 32168,
        "nameFull": "Ali Hassan Qayyum",
        "marksTotal": 29.140724,
+       "pmdcNo": "775128-01-M",
        "preferenceNo": 1
       }
      ],
@@ -698,6 +704,7 @@
        "applicantId": 32138,
        "nameFull": "Ayesha Zahid",
        "marksTotal": 28.885909,
+       "pmdcNo": "746172-01-M",
        "preferenceNo": 1
       }
      ],
@@ -860,12 +867,14 @@
        "applicantId": 31986,
        "nameFull": "Salman Farooq Ahmad",
        "marksTotal": 31.33606,
+       "pmdcNo": "830077-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32014,
        "nameFull": "Abdur Rehman",
        "marksTotal": 29.20066,
+       "pmdcNo": "773007-01-M",
        "preferenceNo": 2
       }
      ],
@@ -1038,12 +1047,14 @@
        "applicantId": 28801,
        "nameFull": "Ali Sufyan",
        "marksTotal": 30.158453,
+       "pmdcNo": "756073-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32504,
        "nameFull": "Rebiya",
        "marksTotal": 28.039697,
+       "pmdcNo": "798103-01-M",
        "preferenceNo": 1
       }
      ],
@@ -1196,6 +1207,7 @@
        "applicantId": 32060,
        "nameFull": "Maryam Saeed",
        "marksTotal": 27.656296,
+       "pmdcNo": "830100-01-M",
        "preferenceNo": 2
       }
      ],
@@ -1388,18 +1400,21 @@
        "applicantId": 31696,
        "nameFull": "Muhammad Arslan Khalid",
        "marksTotal": 30.105682,
+       "pmdcNo": "759270-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 31977,
        "nameFull": "Muhammad Ali Hassan",
        "marksTotal": 29.358561,
+       "pmdcNo": "785342-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32135,
        "nameFull": "Rabiah Wakeel",
        "marksTotal": 28.532139,
+       "pmdcNo": "943410-01-M",
        "preferenceNo": 3
       }
      ],
@@ -1562,6 +1577,7 @@
        "applicantId": 29946,
        "nameFull": "Mah Noor Saeed",
        "marksTotal": 35.415227,
+       "pmdcNo": "78492901M",
        "preferenceNo": 1
       }
      ],
@@ -1704,6 +1720,7 @@
        "applicantId": 31591,
        "nameFull": "Hamza Faryad",
        "marksTotal": 35.546818,
+       "pmdcNo": "785633-01-M",
        "preferenceNo": 1
       }
      ],
@@ -1836,6 +1853,7 @@
        "applicantId": 20645,
        "nameFull": "Insha Fatima",
        "marksTotal": 28.227371,
+       "pmdcNo": "712732-01-M",
        "preferenceNo": 1
       }
      ],
@@ -2008,6 +2026,7 @@
        "applicantId": 32153,
        "nameFull": "Sana Jahangir",
        "marksTotal": 34.791786,
+       "pmdcNo": "883308-01-M",
        "preferenceNo": 1
       }
      ],
@@ -2200,12 +2219,14 @@
        "applicantId": 32092,
        "nameFull": "Ayesha Khalique",
        "marksTotal": 30.50894,
+       "pmdcNo": "785053-01-M",
        "preferenceNo": 2
       },
       {
        "applicantId": 31971,
        "nameFull": "Namrah Khalid",
        "marksTotal": 30.001583,
+       "pmdcNo": "840611-01-M",
        "preferenceNo": 2
       }
      ],
@@ -2410,6 +2431,7 @@
        "applicantId": 25557,
        "nameFull": "Hafiza Sofia Sarwar",
        "marksTotal": 27.605581,
+       "pmdcNo": "753787-01-M",
        "preferenceNo": 1
       }
      ],
@@ -2902,6 +2924,7 @@
        "applicantId": 28866,
        "nameFull": "Umair Rehman",
        "marksTotal": 29.667803,
+       "pmdcNo": "760831-01-M",
        "preferenceNo": 14
       }
      ],
@@ -3374,12 +3397,14 @@
        "applicantId": 32499,
        "nameFull": "Aneeq Ahmad",
        "marksTotal": 36.20894,
+       "pmdcNo": "90878P",
        "preferenceNo": 1
       },
       {
        "applicantId": 29386,
        "nameFull": "Babar Baig",
        "marksTotal": 24.663116,
+       "pmdcNo": "744682-01-M",
        "preferenceNo": 1
       }
      ],
@@ -3972,6 +3997,7 @@
        "applicantId": 21123,
        "nameFull": "Mahnoor Safdar",
        "marksTotal": 30.48966,
+       "pmdcNo": "716332-01-M",
        "preferenceNo": 1
       }
      ],
@@ -4386,12 +4412,14 @@
        "applicantId": 32319,
        "nameFull": "Usama Ahmad Butt",
        "marksTotal": 36.83606,
+       "pmdcNo": "797994-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32087,
        "nameFull": "Khalid Naeem Fani",
        "marksTotal": 30.882728,
+       "pmdcNo": "786797-01-M",
        "preferenceNo": 2
       }
      ],
@@ -5074,12 +5102,14 @@
        "applicantId": 31629,
        "nameFull": "Shahzaib",
        "marksTotal": 30.037782,
+       "pmdcNo": "113212-P",
        "preferenceNo": 3
       },
       {
        "applicantId": 31763,
        "nameFull": "Um E Tayyaba",
        "marksTotal": 29.964226,
+       "pmdcNo": "754397-01-M",
        "preferenceNo": 4
       }
      ],
@@ -5702,6 +5732,7 @@
        "applicantId": 32221,
        "nameFull": "SHAHBAZ HANIF",
        "marksTotal": 27.432531,
+       "pmdcNo": "117897-P",
        "preferenceNo": 2
       }
      ],
@@ -6344,6 +6375,7 @@
        "applicantId": 26287,
        "nameFull": "MUHAMMAD YAHYA CHEEMA",
        "marksTotal": 36.209492,
+       "pmdcNo": "714856-01-M",
        "preferenceNo": 1
       }
      ],
@@ -6716,12 +6748,14 @@
        "applicantId": 33172,
        "nameFull": "Muhammad Usman Ali",
        "marksTotal": 29.883106,
+       "pmdcNo": "906056-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 28295,
        "nameFull": "Tayba Nisar",
        "marksTotal": 28.032139,
+       "pmdcNo": "112360-p",
        "preferenceNo": 1
       }
      ],
@@ -7104,18 +7138,21 @@
        "applicantId": 30718,
        "nameFull": "Najeeb Ul Hassan",
        "marksTotal": 33.195985,
+       "pmdcNo": "851116-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 30908,
        "nameFull": "Zeeshan Kashif",
        "marksTotal": 32.660834,
+       "pmdcNo": "79829001M",
        "preferenceNo": 1
       },
       {
        "applicantId": 31858,
        "nameFull": "Sharjeel Mahmood",
        "marksTotal": 31.279134,
+       "pmdcNo": "754863-01-M",
        "preferenceNo": 1
       }
      ],
@@ -7718,18 +7755,21 @@
        "applicantId": 28651,
        "nameFull": "Shakila Saleem",
        "marksTotal": 35.252543,
+       "pmdcNo": "760410-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 33048,
        "nameFull": "Nauman Tahir",
        "marksTotal": 34.977651,
+       "pmdcNo": "799132-01-M",
        "preferenceNo": 2
       },
       {
        "applicantId": 23425,
        "nameFull": "Ali Haider",
        "marksTotal": 34.792695,
+       "pmdcNo": "721535-01-M",
        "preferenceNo": 1
       }
      ],
@@ -8192,12 +8232,14 @@
        "applicantId": 18646,
        "nameFull": "Seerat Fatima",
        "marksTotal": 31.410325,
+       "pmdcNo": "718756-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 22950,
        "nameFull": "Najam Ul Huda Khan",
        "marksTotal": 29.33368,
+       "pmdcNo": "743294-01-M",
        "preferenceNo": 1
       }
      ],
@@ -8580,6 +8622,7 @@
        "applicantId": 30455,
        "nameFull": "Aramish Iqbal",
        "marksTotal": 26.390011,
+       "pmdcNo": "75766501M",
        "preferenceNo": 22
       }
      ],
@@ -9022,6 +9065,7 @@
        "applicantId": 30616,
        "nameFull": "Fatima Azam",
        "marksTotal": 29.99452,
+       "pmdcNo": "775555-01-M",
        "preferenceNo": 1
       }
      ],
@@ -9404,6 +9448,7 @@
        "applicantId": 22634,
        "nameFull": "Saban Muzaffar",
        "marksTotal": 32.697097,
+       "pmdcNo": "111508-P",
        "preferenceNo": 1
       }
      ],
@@ -9856,12 +9901,14 @@
        "applicantId": 31546,
        "nameFull": "Zaheer Ahmad",
        "marksTotal": 31.523258,
+       "pmdcNo": "798874-01-M",
        "preferenceNo": 2
       },
       {
        "applicantId": 28647,
        "nameFull": "Fatima Waheed",
        "marksTotal": 28.67986,
+       "pmdcNo": "758309-01-M",
        "preferenceNo": 2
       }
      ],
@@ -10244,6 +10291,7 @@
        "applicantId": 31724,
        "nameFull": "Talia Bushra",
        "marksTotal": 27.260926,
+       "pmdcNo": "785646-01-M",
        "preferenceNo": 1
       }
      ],
@@ -10576,18 +10624,21 @@
        "applicantId": 30319,
        "nameFull": "Laiba Amir",
        "marksTotal": 30.209377,
+       "pmdcNo": "908612-01-M",
        "preferenceNo": 3
       },
       {
        "applicantId": 31728,
        "nameFull": "JAVARIA RAFIQUE",
        "marksTotal": 30.136844,
+       "pmdcNo": "798245-01-M",
        "preferenceNo": 3
       },
       {
        "applicantId": 31476,
        "nameFull": "Tasmia Nawaz",
        "marksTotal": 25.771969,
+       "pmdcNo": "907924-01-M",
        "preferenceNo": 3
       }
      ],
@@ -11242,6 +11293,7 @@
        "applicantId": 31487,
        "nameFull": "Hamed Ijaz",
        "marksTotal": 27.342464,
+       "pmdcNo": "777748-01-M",
        "preferenceNo": 2
       }
      ],
@@ -11574,6 +11626,7 @@
        "applicantId": 31601,
        "nameFull": "Abu Hurera Hassan",
        "marksTotal": 27.925202,
+       "pmdcNo": "775238-01-M",
        "preferenceNo": 6
       }
      ],
@@ -11968,18 +12021,21 @@
        "applicantId": 22985,
        "nameFull": "Nazia Perveen",
        "marksTotal": 40.098019,
+       "pmdcNo": "715988-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32449,
        "nameFull": "Kinza Naeem",
        "marksTotal": 36.659773,
+       "pmdcNo": "787936-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32617,
        "nameFull": "Maria Ahmed",
        "marksTotal": 36.115833,
+       "pmdcNo": "798263-01-M",
        "preferenceNo": 1
       }
      ],
@@ -13152,6 +13208,7 @@
        "applicantId": 32702,
        "nameFull": "Komal Tanvir",
        "marksTotal": 35.678031,
+       "pmdcNo": "756865-01-M",
        "preferenceNo": 1
       }
      ],
@@ -14344,6 +14401,7 @@
        "applicantId": 30723,
        "nameFull": "Arooj Zakria",
        "marksTotal": 35.325703,
+       "pmdcNo": "101572-p",
        "preferenceNo": 2
       }
      ],
@@ -15176,12 +15234,14 @@
        "applicantId": 32598,
        "nameFull": "Ayesha Nawaz",
        "marksTotal": 41.279839,
+       "pmdcNo": "116649-P",
        "preferenceNo": 1
       },
       {
        "applicantId": 32454,
        "nameFull": "Hafsa Hamid",
        "marksTotal": 40.226699,
+       "pmdcNo": "774045-01-M",
        "preferenceNo": 1
       }
      ],
@@ -16194,6 +16254,7 @@
        "applicantId": 32070,
        "nameFull": "Maryam Javaid",
        "marksTotal": 35.364924,
+       "pmdcNo": "904883-01-M",
        "preferenceNo": 2
       }
      ],
@@ -17216,6 +17277,7 @@
        "applicantId": 32039,
        "nameFull": "Madiha Riaz",
        "marksTotal": 34.91013,
+       "pmdcNo": "919225-01-M",
        "preferenceNo": 10
       }
      ],
@@ -18208,6 +18270,7 @@
        "applicantId": 30735,
        "nameFull": "Ifra Pervaiz",
        "marksTotal": 35.131976,
+       "pmdcNo": "780578-01-M",
        "preferenceNo": 4
       }
      ],
@@ -19350,30 +19413,35 @@
        "applicantId": 23336,
        "nameFull": "Maryam Liaqat",
        "marksTotal": 39.095586,
+       "pmdcNo": "747059-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32292,
        "nameFull": "Kaneez Fatima",
        "marksTotal": 36.320927,
+       "pmdcNo": "872745-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 33127,
        "nameFull": "Laila Jan",
        "marksTotal": 35.927404,
+       "pmdcNo": "919988-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 30428,
        "nameFull": "Maryam",
        "marksTotal": 35.41599,
+       "pmdcNo": "90690401M",
        "preferenceNo": 2
       },
       {
        "applicantId": 22811,
        "nameFull": "Khadija",
        "marksTotal": 35.211671,
+       "pmdcNo": "714024-01-M ",
        "preferenceNo": 1
       }
      ],
@@ -20556,6 +20624,7 @@
        "applicantId": 32283,
        "nameFull": "Tabinda Mohy Ud Din",
        "marksTotal": 35.946721,
+       "pmdcNo": "71531201M",
        "preferenceNo": 1
       }
      ],
@@ -21478,12 +21547,14 @@
        "applicantId": 32326,
        "nameFull": "Ammara Arshad",
        "marksTotal": 35.424545,
+       "pmdcNo": "785928-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32412,
        "nameFull": "Kainat Rafiq",
        "marksTotal": 34.549989,
+       "pmdcNo": "785647-01-M",
        "preferenceNo": 8
       }
      ],
@@ -22466,12 +22537,14 @@
        "applicantId": 26963,
        "nameFull": "Falaq Shahid",
        "marksTotal": 36.537444,
+       "pmdcNo": "76650-P",
        "preferenceNo": 1
       },
       {
        "applicantId": 28198,
        "nameFull": "Maryam Hanif",
        "marksTotal": 35.198301,
+       "pmdcNo": "111299-P",
        "preferenceNo": 1
       }
      ],
@@ -23644,18 +23717,21 @@
        "applicantId": 18952,
        "nameFull": "Aqsa Ibraheem",
        "marksTotal": 35.410086,
+       "pmdcNo": "101722-P",
        "preferenceNo": 2
       },
       {
        "applicantId": 28349,
        "nameFull": "Nayabfatima",
        "marksTotal": 34.620963,
+       "pmdcNo": "115253-p",
        "preferenceNo": 14
       },
       {
        "applicantId": 29194,
        "nameFull": "Bisma Shafqat",
        "marksTotal": 34.580044,
+       "pmdcNo": "109114-P",
        "preferenceNo": 6
       }
      ],
@@ -24818,6 +24894,7 @@
        "applicantId": 27363,
        "nameFull": "Hadia Ikram",
        "marksTotal": 36.330909,
+       "pmdcNo": "756754-01-M",
        "preferenceNo": 13
       }
      ],
@@ -25750,12 +25827,14 @@
        "applicantId": 27508,
        "nameFull": "Ruqaya Fatima",
        "marksTotal": 39.676179,
+       "pmdcNo": "721511-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 28032,
        "nameFull": "Aeman Basharat",
        "marksTotal": 39.383592,
+       "pmdcNo": "100479-P",
        "preferenceNo": 9
       }
      ],
@@ -26768,12 +26847,14 @@
        "applicantId": 27554,
        "nameFull": "Ayesha Arshad",
        "marksTotal": 39.155118,
+       "pmdcNo": "757764-01-M",
        "preferenceNo": 8
       },
       {
        "applicantId": 30552,
        "nameFull": "Bisma Imran",
        "marksTotal": 36.420833,
+       "pmdcNo": "783545-01-M",
        "preferenceNo": 1
       }
      ],
@@ -27746,6 +27827,7 @@
        "applicantId": 32191,
        "nameFull": "Aymen Babar",
        "marksTotal": 36.308333,
+       "pmdcNo": "783685-01-M ",
        "preferenceNo": 7
       }
      ],
@@ -28708,6 +28790,7 @@
        "applicantId": 32335,
        "nameFull": "Ayesha Sadiqa",
        "marksTotal": 35.735899,
+       "pmdcNo": "872896-01-M",
        "preferenceNo": 12
       }
      ],
@@ -29740,6 +29823,7 @@
        "applicantId": 30369,
        "nameFull": "Ansa Ramay",
        "marksTotal": 35.548936,
+       "pmdcNo": "86160001M",
        "preferenceNo": 5
       }
      ],
@@ -30742,12 +30826,14 @@
        "applicantId": 32295,
        "nameFull": "Ayesha Azam",
        "marksTotal": 36.88784,
+       "pmdcNo": "93327-P",
        "preferenceNo": 1
       },
       {
        "applicantId": 32452,
        "nameFull": "Amna Ashraf",
        "marksTotal": 36.063368,
+       "pmdcNo": "830223-01-M",
        "preferenceNo": 12
       }
      ],
@@ -31780,6 +31866,7 @@
        "applicantId": 25634,
        "nameFull": "Kanza Saeed",
        "marksTotal": 40.234178,
+       "pmdcNo": "780856-01-M",
        "preferenceNo": 1
       }
      ],
@@ -32752,6 +32839,7 @@
        "applicantId": 29376,
        "nameFull": "Aqsa Ismail",
        "marksTotal": 35.977045,
+       "pmdcNo": "756494-01-M",
        "preferenceNo": 14
       }
      ],
@@ -33684,12 +33772,14 @@
        "applicantId": 23358,
        "nameFull": "Fizzah Nadir",
        "marksTotal": 36.444567,
+       "pmdcNo": "717224-01-M",
        "preferenceNo": 10
       },
       {
        "applicantId": 32703,
        "nameFull": "Tehreem Munir",
        "marksTotal": 36.4275,
+       "pmdcNo": "862538-01-M",
        "preferenceNo": 1
       }
      ],
@@ -34882,12 +34972,14 @@
        "applicantId": 29976,
        "nameFull": "Mehvish Balqees",
        "marksTotal": 35.929773,
+       "pmdcNo": "86155401M",
        "preferenceNo": 1
       },
       {
        "applicantId": 8059,
        "nameFull": "FATIMA TUL ZOHRA",
        "marksTotal": 35.003529,
+       "pmdcNo": "81426-S",
        "preferenceNo": 3
       }
      ],
@@ -35772,6 +35864,7 @@
        "applicantId": 33543,
        "nameFull": "Amna Muhammad",
        "marksTotal": 29.714059,
+       "pmdcNo": "113940-p",
        "preferenceNo": 2
       }
      ],
@@ -35964,6 +36057,7 @@
        "applicantId": 31598,
        "nameFull": "Sheraaz Shahid",
        "marksTotal": 30.344826,
+       "pmdcNo": "762642-01-M",
        "preferenceNo": 3
       }
      ],
@@ -36156,6 +36250,7 @@
        "applicantId": 32725,
        "nameFull": "Muhammad Shahab",
        "marksTotal": 33.622164,
+       "pmdcNo": "757558-01-M",
        "preferenceNo": 9
       }
      ],
@@ -36208,6 +36303,7 @@
        "applicantId": 32301,
        "nameFull": "Aliha Abbas",
        "marksTotal": 35.16617,
+       "pmdcNo": "778090-01-M",
        "preferenceNo": 2
       }
      ],
@@ -36390,6 +36486,7 @@
        "applicantId": 32752,
        "nameFull": "Urwa Khalid",
        "marksTotal": 30.898423,
+       "pmdcNo": "851137-01-M",
        "preferenceNo": 2
       }
      ],
@@ -36502,6 +36599,7 @@
        "applicantId": 32492,
        "nameFull": "Muhammad Asim Haneef",
        "marksTotal": 29.345076,
+       "pmdcNo": "778258-01-M",
        "preferenceNo": 6
       }
      ],
@@ -36674,6 +36772,7 @@
        "applicantId": 21228,
        "nameFull": "Hizra Altaf",
        "marksTotal": 30.007468,
+       "pmdcNo": "715341-01-M",
        "preferenceNo": 1
       }
      ],
@@ -36786,18 +36885,21 @@
        "applicantId": 33533,
        "nameFull": "Syed Sana Ullah",
        "marksTotal": 36.063517,
+       "pmdcNo": "112982-p",
        "preferenceNo": 1
       },
       {
        "applicantId": 32150,
        "nameFull": "Muhammad Aizad Faizan Khan",
        "marksTotal": 34.842857,
+       "pmdcNo": "840642-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32047,
        "nameFull": "Zulnorain Rubab",
        "marksTotal": 30.628627,
+       "pmdcNo": "872817-01-M",
        "preferenceNo": 1
       }
      ],
@@ -36990,6 +37092,7 @@
        "applicantId": 25694,
        "nameFull": "Fatima Khan Lodhi",
        "marksTotal": 39.316613,
+       "pmdcNo": "774741-01-M",
        "preferenceNo": 1
       }
      ],
@@ -37182,6 +37285,7 @@
        "applicantId": 32470,
        "nameFull": "Nisha Wakeel",
        "marksTotal": 34.890758,
+       "pmdcNo": "786783-01-M",
        "preferenceNo": 1
       }
      ],
@@ -37324,6 +37428,7 @@
        "applicantId": 25452,
        "nameFull": "Hasnat Arif",
        "marksTotal": 31.679518,
+       "pmdcNo": "750487-01-M",
        "preferenceNo": 5
       }
      ],
@@ -37466,6 +37571,7 @@
        "applicantId": 32107,
        "nameFull": "Malik Sohaib Mazhar",
        "marksTotal": 36.039142,
+       "pmdcNo": "862199-01-M",
        "preferenceNo": 1
       }
      ],
@@ -37608,6 +37714,7 @@
        "applicantId": 26516,
        "nameFull": "Sana Tahir",
        "marksTotal": 30.313312,
+       "pmdcNo": "722343-01-M",
        "preferenceNo": 4
       }
      ],
@@ -37770,6 +37877,7 @@
        "applicantId": 32439,
        "nameFull": "Hadiqa Nazar",
        "marksTotal": 26.55,
+       "pmdcNo": "862288-01-M",
        "preferenceNo": 3
       }
      ],
@@ -37842,6 +37950,7 @@
        "applicantId": 27611,
        "nameFull": "Muhammad Tayyab",
        "marksTotal": 28.899513,
+       "pmdcNo": "719938-01-M",
        "preferenceNo": 3
       }
      ],
@@ -38024,6 +38133,7 @@
        "applicantId": 31526,
        "nameFull": "Amna Arooj Abbas",
        "marksTotal": 29.969091,
+       "pmdcNo": "785584-01-M",
        "preferenceNo": 1
       }
      ],
@@ -38118,6 +38228,7 @@
        "applicantId": 31460,
        "nameFull": "Muhammad Umar",
        "marksTotal": 32.562248,
+       "pmdcNo": "118932-P",
        "preferenceNo": 1
       }
      ],
@@ -38710,12 +38821,14 @@
        "applicantId": 29603,
        "nameFull": "RAO USMAN AKRAM",
        "marksTotal": 34.364026,
+       "pmdcNo": "78780401M",
        "preferenceNo": 1
       },
       {
        "applicantId": 29111,
        "nameFull": "Muhammad Ali",
        "marksTotal": 31.559838,
+       "pmdcNo": "719918-01-M",
        "preferenceNo": 4
       }
      ],
@@ -39268,6 +39381,7 @@
        "applicantId": 25757,
        "nameFull": "Muhammad Ahmad",
        "marksTotal": 38.385357,
+       "pmdcNo": "774007-01-M",
        "preferenceNo": 1
       }
      ],
@@ -39740,6 +39854,7 @@
        "applicantId": 27683,
        "nameFull": "Ammar Ahmed",
        "marksTotal": 29.749837,
+       "pmdcNo": "746391-01-M",
        "preferenceNo": 2
       }
      ],
@@ -40152,6 +40267,7 @@
        "applicantId": 28595,
        "nameFull": "Muhammad Fahad Hassan Sher",
        "marksTotal": 24.888398,
+       "pmdcNo": "756147-01-M",
        "preferenceNo": 5
       }
      ],
@@ -40584,6 +40700,7 @@
        "applicantId": 32926,
        "nameFull": "Nida Tahir",
        "marksTotal": 30.74447,
+       "pmdcNo": "873035-01-M",
        "preferenceNo": 5
       }
      ],
@@ -41086,6 +41203,7 @@
        "applicantId": 31025,
        "nameFull": "Bilal Qammar",
        "marksTotal": 30.21606,
+       "pmdcNo": "787568-01-M",
        "preferenceNo": 73
       }
      ],
@@ -41468,12 +41586,14 @@
        "applicantId": 27762,
        "nameFull": "Hafiz Muhammad Zubair",
        "marksTotal": 35.346484,
+       "pmdcNo": "110927-P",
        "preferenceNo": 1
       },
       {
        "applicantId": 34014,
        "nameFull": "Hafiz Muhammad Shoaib",
        "marksTotal": 32.492348,
+       "pmdcNo": "784900-01-M ",
        "preferenceNo": 1
       }
      ],
@@ -42016,12 +42136,14 @@
        "applicantId": 27134,
        "nameFull": "Nouman Zafar",
        "marksTotal": 31.071894,
+       "pmdcNo": "774091-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 30689,
        "nameFull": "Muhammad Hammad",
        "marksTotal": 30.007727,
+       "pmdcNo": "787121-01-M",
        "preferenceNo": 3
       }
      ],
@@ -42514,6 +42636,7 @@
        "applicantId": 28409,
        "nameFull": "Muhammad Faraz Shaukat",
        "marksTotal": 30.221459,
+       "pmdcNo": "750413-01-M",
        "preferenceNo": 4
       }
      ],
@@ -42946,6 +43069,7 @@
        "applicantId": 33538,
        "nameFull": "Hashim Khan",
        "marksTotal": 35.550699,
+       "pmdcNo": "799262-01-M",
        "preferenceNo": 1
       }
      ],
@@ -43368,6 +43492,7 @@
        "applicantId": 32202,
        "nameFull": "Muhammad Bin Aamir",
        "marksTotal": 28.800575,
+       "pmdcNo": "905597-01-M",
        "preferenceNo": 3
       }
      ],
@@ -43750,6 +43875,7 @@
        "applicantId": 32453,
        "nameFull": "Husnain Sarwar",
        "marksTotal": 34.85731,
+       "pmdcNo": "840441-01-M",
        "preferenceNo": 4
       }
      ],
@@ -44182,6 +44308,7 @@
        "applicantId": 28132,
        "nameFull": "Hamza Nisar Ahmed",
        "marksTotal": 28.464166,
+       "pmdcNo": "717320-01-M",
        "preferenceNo": 2
       }
      ],
@@ -44544,6 +44671,7 @@
        "applicantId": 32736,
        "nameFull": "Muhammad Kamran Danish",
        "marksTotal": 34.712349,
+       "pmdcNo": "719212-01-M",
        "preferenceNo": 1
       }
      ],
@@ -45126,6 +45254,7 @@
        "applicantId": 31563,
        "nameFull": "Bedar Bakht",
        "marksTotal": 28.413008,
+       "pmdcNo": "111165-P",
        "preferenceNo": 1
       }
      ],
@@ -45400,6 +45529,7 @@
        "applicantId": 31921,
        "nameFull": "Jawad Khalil",
        "marksTotal": 43.031905,
+       "pmdcNo": "112829-p",
        "preferenceNo": 1
       }
      ],
@@ -45622,6 +45752,7 @@
        "applicantId": 28158,
        "nameFull": "Muhammad Aqib",
        "marksTotal": 33.912122,
+       "pmdcNo": "773220-01-M",
        "preferenceNo": 3
       }
      ],
@@ -45834,6 +45965,7 @@
        "applicantId": 28973,
        "nameFull": "Kiran Hayat",
        "marksTotal": 32.466981,
+       "pmdcNo": "757575-01-M",
        "preferenceNo": 1
       }
      ],
@@ -45976,6 +46108,7 @@
        "applicantId": 32420,
        "nameFull": "MUHAMMAD TAHIR SALEEM",
        "marksTotal": 30.976287,
+       "pmdcNo": "798092-01-M",
        "preferenceNo": 6
       }
      ],
@@ -46178,6 +46311,7 @@
        "applicantId": 28302,
        "nameFull": "Masooma Arif",
        "marksTotal": 29.556515,
+       "pmdcNo": "761476-01-M",
        "preferenceNo": 11
       }
      ],
@@ -46370,6 +46504,7 @@
        "applicantId": 32922,
        "nameFull": "Muhammad Arsalan",
        "marksTotal": 28.868182,
+       "pmdcNo": "873170-01-M",
        "preferenceNo": 8
       }
      ],
@@ -46562,6 +46697,7 @@
        "applicantId": 32356,
        "nameFull": "Zonaira Aleem",
        "marksTotal": 33.898695,
+       "pmdcNo": "747614-01-M",
        "preferenceNo": 3
       }
      ],
@@ -46784,6 +46920,7 @@
        "applicantId": 31942,
        "nameFull": "Fareeha Naveed",
        "marksTotal": 35.374188,
+       "pmdcNo": "110657-P",
        "preferenceNo": 5
       }
      ],
@@ -46966,6 +47103,7 @@
        "applicantId": 32067,
        "nameFull": "Zeeshan Haider",
        "marksTotal": 30.965454,
+       "pmdcNo": "799168-01-M",
        "preferenceNo": 2
       }
      ],
@@ -47188,6 +47326,7 @@
        "applicantId": 29108,
        "nameFull": "Sumbal Wajid",
        "marksTotal": 32.381688,
+       "pmdcNo": "780412-01-M",
        "preferenceNo": 1
       }
      ],
@@ -47370,6 +47509,7 @@
        "applicantId": 32041,
        "nameFull": "Muhammad Naeem Abbas Abid",
        "marksTotal": 40.277262,
+       "pmdcNo": "101073-p",
        "preferenceNo": 1
       }
      ],
@@ -47562,6 +47702,7 @@
        "applicantId": 22299,
        "nameFull": "Muhammad Noman Shahzad",
        "marksTotal": 38.918084,
+       "pmdcNo": "112020-P",
        "preferenceNo": 1
       }
      ],
@@ -47764,6 +47905,7 @@
        "applicantId": 25575,
        "nameFull": "Haider",
        "marksTotal": 43.952392,
+       "pmdcNo": "717360-01-M",
        "preferenceNo": 1
       }
      ],
@@ -47976,6 +48118,7 @@
        "applicantId": 31578,
        "nameFull": "Muhammad Sohail",
        "marksTotal": 34.128899,
+       "pmdcNo": "787567-01-M",
        "preferenceNo": 11
       }
      ],
@@ -48188,6 +48331,7 @@
        "applicantId": 32450,
        "nameFull": "Aqiba",
        "marksTotal": 36.471655,
+       "pmdcNo": "798449-01-M",
        "preferenceNo": 2
       }
      ],
@@ -48400,6 +48544,7 @@
        "applicantId": 29610,
        "nameFull": "Muhammad Ahsan Saeed",
        "marksTotal": 30.237957,
+       "pmdcNo": "776676-01-M",
        "preferenceNo": 7
       }
      ],
@@ -48592,6 +48737,7 @@
        "applicantId": 31914,
        "nameFull": "Daniyal Babar",
        "marksTotal": 35.667197,
+       "pmdcNo": "861665-01-M",
        "preferenceNo": 1
       }
      ],
@@ -48814,6 +48960,7 @@
        "applicantId": 28704,
        "nameFull": "Ahmad Shahroz",
        "marksTotal": 28.232294,
+       "pmdcNo": "110201-P",
        "preferenceNo": 8
       }
      ],
@@ -48958,6 +49105,7 @@
        "applicantId": 29393,
        "nameFull": "Ayesha Khalid",
        "marksTotal": 25.802037,
+       "pmdcNo": "748804-01-M",
        "preferenceNo": 2
       }
      ],
@@ -49360,6 +49508,7 @@
        "applicantId": 28213,
        "nameFull": "Amna Iftikhar",
        "marksTotal": 28.541515,
+       "pmdcNo": "780749-01-M",
        "preferenceNo": 5
       }
      ],
@@ -49952,6 +50101,7 @@
        "applicantId": 32001,
        "nameFull": "Aatqa Nadeem",
        "marksTotal": 29.377114,
+       "pmdcNo": "861501-01-M",
        "preferenceNo": 4
       }
      ],
@@ -50324,12 +50474,14 @@
        "applicantId": 31032,
        "nameFull": "Shumaila Ramzan",
        "marksTotal": 30.735529,
+       "pmdcNo": "840558-01-M",
        "preferenceNo": 3
       },
       {
        "applicantId": 32114,
        "nameFull": "Mishal Khan",
        "marksTotal": 29.645455,
+       "pmdcNo": "840676-01-M",
        "preferenceNo": 1
       }
      ],
@@ -50732,6 +50884,7 @@
        "applicantId": 17848,
        "nameFull": "Aliza Khalid",
        "marksTotal": 34.577402,
+       "pmdcNo": "119102-P",
        "preferenceNo": 1
       }
      ],
@@ -51124,6 +51277,7 @@
        "applicantId": 28784,
        "nameFull": "Kiran Abbas",
        "marksTotal": 34.61408,
+       "pmdcNo": "744779-01-M",
        "preferenceNo": 1
       }
      ],
@@ -51446,6 +51600,7 @@
        "applicantId": 32476,
        "nameFull": "Muhammad Talha Javed",
        "marksTotal": 34.25909,
+       "pmdcNo": "907096-01-M",
        "preferenceNo": 4
       }
      ],
@@ -51968,6 +52123,7 @@
        "applicantId": 25581,
        "nameFull": "Malik Aqeel Ahmad",
        "marksTotal": 30.571213,
+       "pmdcNo": "761361-01-M",
        "preferenceNo": 1
       }
      ],
@@ -52212,12 +52368,14 @@
        "applicantId": 27077,
        "nameFull": "Adil Habib",
        "marksTotal": 35.91054,
+       "pmdcNo": "719708-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 32121,
        "nameFull": "Ali Hassan Gormani",
        "marksTotal": 35.200606,
+       "pmdcNo": "787863-01-M",
        "preferenceNo": 2
       }
      ],
@@ -52880,6 +53038,7 @@
        "applicantId": 31711,
        "nameFull": "Syed Saqlain Haider Shah",
        "marksTotal": 36.126201,
+       "pmdcNo": "779643-01-M",
        "preferenceNo": 2
       }
      ],
@@ -53502,18 +53661,21 @@
        "applicantId": 32190,
        "nameFull": "Fatima Muqaddas Ejaz",
        "marksTotal": 35.347273,
+       "pmdcNo": "829761-01-M",
        "preferenceNo": 2
       },
       {
        "applicantId": 31785,
        "nameFull": "Muhammad Burhan Rashid",
        "marksTotal": 29.517122,
+       "pmdcNo": "944199-01-M",
        "preferenceNo": 3
       },
       {
        "applicantId": 32011,
        "nameFull": "Asad Umair",
        "marksTotal": 29.182651,
+       "pmdcNo": "785415-01-M",
        "preferenceNo": 2
       }
      ],
@@ -54116,12 +54278,14 @@
        "applicantId": 31383,
        "nameFull": "Muhammad Sarfraz Akram",
        "marksTotal": 35.714395,
+       "pmdcNo": "776581-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 27921,
        "nameFull": "Muhammad Aqib Khan",
        "marksTotal": 31.165281,
+       "pmdcNo": "776398-01-M",
        "preferenceNo": 1
       }
      ],
@@ -54534,6 +54698,7 @@
        "applicantId": 26494,
        "nameFull": "Bushra Asad",
        "marksTotal": 31.616191,
+       "pmdcNo": "757444-01-M",
        "preferenceNo": 1
       }
      ],
@@ -54916,6 +55081,7 @@
        "applicantId": 22416,
        "nameFull": "Muhammad Waqas",
        "marksTotal": 35.361028,
+       "pmdcNo": "716528-01-M",
        "preferenceNo": 1
       }
      ],
@@ -55530,6 +55696,7 @@
        "applicantId": 20276,
        "nameFull": "Uzair Ali",
        "marksTotal": 39.038863,
+       "pmdcNo": "717311-01-M",
        "preferenceNo": 1
       }
      ],
@@ -56092,12 +56259,14 @@
        "applicantId": 28034,
        "nameFull": "Muhammad Sohaib Zia",
        "marksTotal": 30.314762,
+       "pmdcNo": "773149-01-M",
        "preferenceNo": 2
       },
       {
        "applicantId": 32076,
        "nameFull": "Ali Raza",
        "marksTotal": 29.227273,
+       "pmdcNo": "894078-01-M",
        "preferenceNo": 2
       }
      ],
@@ -56630,6 +56799,7 @@
        "applicantId": 30228,
        "nameFull": "Muhammad Khalid",
        "marksTotal": 26.790671,
+       "pmdcNo": "116353-P",
        "preferenceNo": 8
       }
      ],
@@ -56922,6 +57092,7 @@
        "applicantId": 23227,
        "nameFull": "Hafiz Shahrukh Hassan",
        "marksTotal": 33.459416,
+       "pmdcNo": "718460-01-M",
        "preferenceNo": 1
       }
      ],
@@ -57394,6 +57565,7 @@
        "applicantId": 32621,
        "nameFull": "Samroze Ali",
        "marksTotal": 34.670909,
+       "pmdcNo": "862081-01-M",
        "preferenceNo": 1
       }
      ],
@@ -57806,6 +57978,7 @@
        "applicantId": 31865,
        "nameFull": "Ahmad Mustafa",
        "marksTotal": 28.833116,
+       "pmdcNo": "755860-01-M",
        "preferenceNo": 41
       }
      ],
@@ -58308,6 +58481,7 @@
        "applicantId": 21394,
        "nameFull": "Sher Zaman",
        "marksTotal": 30.206915,
+       "pmdcNo": "720749-01-M",
        "preferenceNo": 1
       }
      ],
@@ -58660,18 +58834,21 @@
        "applicantId": 31790,
        "nameFull": "Muhammad Younus",
        "marksTotal": 33.767731,
+       "pmdcNo": "776760-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 30002,
        "nameFull": "Shahzaib Ahmad",
        "marksTotal": 29.90049,
+       "pmdcNo": "90682001M",
        "preferenceNo": 6
       },
       {
        "applicantId": 32172,
        "nameFull": "Hammad Ahmad Bhatti",
        "marksTotal": 29.839015,
+       "pmdcNo": "851186-01-M",
        "preferenceNo": 1
       }
      ],
@@ -59204,6 +59381,7 @@
        "applicantId": 32840,
        "nameFull": "Muhammad Usama",
        "marksTotal": 34.998864,
+       "pmdcNo": "906141-01-M",
        "preferenceNo": 1
       }
      ],
@@ -59706,12 +59884,14 @@
        "applicantId": 27813,
        "nameFull": "Zahid Bashir",
        "marksTotal": 43.195529,
+       "pmdcNo": "757594-01-M",
        "preferenceNo": 1
       },
       {
        "applicantId": 27610,
        "nameFull": "Muhammad Ali Sattar",
        "marksTotal": 32.570844,
+       "pmdcNo": "755651-01-M",
        "preferenceNo": 1
       }
      ],
@@ -60114,6 +60294,7 @@
        "applicantId": 32818,
        "nameFull": "Hafiz Sheharyar Mustafa",
        "marksTotal": 32.945963,
+       "pmdcNo": "754271-01-M",
        "preferenceNo": 1
       }
      ],
@@ -60496,6 +60677,7 @@
        "applicantId": 31445,
        "nameFull": "MUQEET ANWAR",
        "marksTotal": 25.55822,
+       "pmdcNo": "749726-01-M",
        "preferenceNo": 1
       }
      ],
@@ -60828,6 +61010,7 @@
        "applicantId": 31592,
        "nameFull": "Asif Ali",
        "marksTotal": 44.136754,
+       "pmdcNo": "108571-p",
        "preferenceNo": 1
       }
      ],
@@ -61354,6 +61537,7 @@
        "applicantId": 33077,
        "nameFull": "Adeel Gul",
        "marksTotal": 29.812727,
+       "pmdcNo": "905552-05-M",
        "preferenceNo": 1
       }
      ],
@@ -61367,6 +61551,7 @@
        "applicantId": 26075,
        "nameFull": "Zainab",
        "marksTotal": 29.154492,
+       "pmdcNo": "754705-05-M",
        "preferenceNo": 1
       }
      ],
@@ -61382,6 +61567,7 @@
        "applicantId": 30523,
        "nameFull": "Abdul Qadeer Amin",
        "marksTotal": 26.69291,
+       "pmdcNo": "AMC-R19757",
        "preferenceNo": 1
       }
      ],

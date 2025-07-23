@@ -1,0 +1,145 @@
+/* Hero Area */
+.cutoff-hero {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+.cutoff-headline {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--accent);
+  text-shadow: 0 2px 12px #5cdb7144;
+  margin-bottom: 14px;
+}
+.cutoff-subtext {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Filters */
+.cutoff-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding: 0 20px;
+}
+
+/* Card Container */
+.cutoff-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 24px 40px 24px;
+}
+.cutoff-card {
+  background: linear-gradient(135deg, #1e1e28 60%, #23272a 100%);
+  border-left: 5px solid var(--accent);
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  padding: 24px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: cardFade 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.cutoff-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 28px rgba(92,219,113,0.15);
+}
+.cutoff-card h3 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+.cutoff-card p {
+  color: var(--text-main);
+  margin: 6px 0;
+  font-size: 1.05rem;
+}
+@keyframes cardFade {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+@keyframes fadeCard {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.cutoff-alert {
+  background: #23272a;
+  color: #e0e0e0;
+  border-left: 5px solid #5cdb71;
+  border-radius: 9px;
+  padding: 1em 1.5em;
+  margin: 0 auto 1.2em auto;
+  max-width: 880px;
+  font-size: 1.05em;
+  box-shadow: 0 2px 12px rgba(92, 219, 113, 0.15);
+  animation: glowPulseGreen 3s ease-in-out infinite;
+  text-align: center;
+}
+
+@keyframes glowPulseGreen {
+  0% { box-shadow: 0 0 12px rgba(92,219,113,0.1); }
+  50% { box-shadow: 0 0 24px rgba(92,219,113,0.25); }
+  100% { box-shadow: 0 0 12px rgba(92,219,113,0.1); }
+}
+
+.cutoff-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #181d23;
+  background: var(--accent);
+  border-radius: 24px;
+  margin-top: 16px;
+  box-shadow: 0 2px 12px rgba(92,219,113,0.3);
+  animation: meritPulse 1s ease-out;
+  text-align: center;
+}
+
+@keyframes meritPulse {
+  0%   { transform: scale(0.85); opacity: 0.6; box-shadow: 0 0 0 rgba(92,219,113,0); }
+  50%  { transform: scale(1.1); opacity: 1; box-shadow: 0 0 12px rgba(92,219,113,0.4); }
+  100% { transform: scale(1); box-shadow: 0 2px 12px rgba(92,219,113,0.3); }
+}
+
+/* Optional colorful background variants (random or by specialty) */
+.cutoff-card:nth-child(4n+1) { border-left-color: #ffe066; }
+.cutoff-card:nth-child(4n+2) { border-left-color: #66d9ff; }
+.cutoff-card:nth-child(4n+3) { border-left-color: #a78bfa; }
+.cutoff-card:nth-child(4n+4) { border-left-color: #ff6b81; }
+
+.cutoff-section-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent);
+  background: linear-gradient(90deg, #181d23, #23272a);
+  padding: 16px 24px;
+  margin: 24px auto 30px auto;
+  border-left: 6px solid var(--accent);
+  border-radius: 10px;
+  max-width: 720px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  text-align: center;
+  letter-spacing: 0.5px;
+  animation: pulseTitle 0.6s ease;
+}
+@keyframes pulseTitle {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}

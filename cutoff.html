@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRP Statistics</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sync-fetch"></script>
+    <script id='data' src="data.js"></script>
+    <script src="schedule.js"></script>
+   <script src="nil.js"></script>
+    <link
+    href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
+    rel="stylesheet"
+  />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="cutoff.css" />
+  </head>
+</head>
+<body>
+     <nav class="navbar main-navbar">
+      <div class="nav-content">
+        <div class="logo-container">
+          <img class="logo" onclick="gotoUrl()" src="logo.png" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" >Home</a></li>                
+          <li><a href="review.html">Training Reviews</a></li>
+          <li><a href="cutoff.html" class="active">Cutoff Merits</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="/prp-site/2025/index.html">Gazette</a></li>
+          <li><a href="prev.html">Previous Merit Lists</a></li>
+        </ul>
+      </div>
+    </nav>
+   
+
+    <section class="cutoff-hero">
+  <h1 class="cutoff-headline">🎯 Cutoff Merit Dashboard</h1>
+  <p class="cutoff-subtext">
+    Browse final <strong>cutoff merits</strong> by <span class="apphov">program</span>, <span class="apphov">hospital</span>, and <span class="apphov">quota</span>. Instantly see the minimum merit required for selection.
+  </p>
+</section>
+
+<div class="cutoff-filters">
+  <select id="program-select"><option value="">All Programs</option><option value="FCPS">FCPS</option><option value="MS">MS</option><option value="MD">MD</option></select>
+  <select id="quota-select"><option value="">All Quotas</option></select>
+  <select id="hospital-select"><option value="">All Hospitals</option></select>
+  <button id="show-cutoffs-btn">Show Cutoffs</button>
+</div>
+
+<div id="cutoff-display-area" class="cutoff-cards-wrapper">
+  <!-- Cards dynamically populate here -->
+</div>
+
+    </div>
+
+    <script src="data.js"></script> <!-- Include your existing data.js -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const programSelect = document.getElementById('program-select');
+            const quotaSelect = document.getElementById('quota-select');
+            const hospitalSelect = document.getElementById('hospital-select');
+            const showCutoffsBtn = document.getElementById('show-cutoffs-btn');
+            const cutoffDisplayArea = document.getElementById('cutoff-display-area');
+
+            // Function to populate dropdowns
+            function populateDropdown(selectElement, options) {
+                console.log(`Populating dropdown for ${selectElement.id} with options:`, options);
+                selectElement.innerHTML = '<option value="">All</option>'; // Reset and add default
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    selectElement.appendChild(opt);
+                });
+            }
+
+            // Initial population of dropdowns
+            populateDropdown(quotaSelect, getOptions('quota'));
+            populateDropdown(hospitalSelect, getOptions('hospital')); // Adjust as needed
+
+            // Event listener for the button
+            showCutoffsBtn.addEventListener('click', () => {
+                const selectedProgram = programSelect.value;
+                const selectedQuota = quotaSelect.value;
+                const selectedHospital = hospitalSelect.value;
+
+                if (!selectedProgram) {
+                    alert('Please select a Program.');
+                    return;
+                }
+
+                const cutoffs = getCutoffMerit(selectedProgram, selectedQuota, selectedHospital);
+                displayCutoffs(cutoffs, selectedProgram, selectedQuota, selectedHospital);
+            });
+
+            // Function to display cutoffs
+            function displayCutoffs(cutoffs, program, quota, hospital) {
+                cutoffDisplayArea.innerHTML = ''; // Clear previous results
+
+                if (!cutoffs || Object.keys(cutoffs).length === 0) {
+                    cutoffDisplayArea.innerHTML = '<p>No cutoff data found for the selected criteria.</p>';
+                    return;
+                                }
+                const title = document.createElement('h2');
+                title.className = 'cutoff-section-title';
+                title.textContent = `Cutoff Merits for ${program} (Quota: ${quota || 'All'}, Hospital: ${hospital || 'All'})`;
+                cutoffDisplayArea.appendChild(title);
+
+
+                // Displaying as cards
+                for (const speciality in cutoffs) {
+                    for (const hosp in cutoffs[speciality]) {
+                        const card = document.createElement('div');
+                        card.classList.add('cutoff-card');
+                                        card.innerHTML = `
+                <h3>${speciality}</h3>
+                <p><strong>Hospital:</strong> ${hosp}</p>
+                <div class="cutoff-badge glow-badge">Merit: ${cutoffs[speciality][hosp].toFixed(2)}</div>
+                `;
+
+                        cutoffDisplayArea.appendChild(card);
+
+                    }
+                }
+            }
+
+            // Function to get cutoff merit
+            function getCutoffMerit(program, quota, hospital) {
+                let cutoffData = {};
+
+                if (!constData[program]) {
+                    return null;
+                }
+
+                const programData = constData[program];
+
+                for (const qName in programData[program]) {
+                    if (quota === '' || qName === quota) {
+                        for (const sName in programData[program][qName]) {
+                            for (const hName in programData[program][qName][sName]) {
+                                if (hospital === '' || hName === hospital) {
+                                    const candidates = programData[program][qName][sName][hName].candidates;
+
+                                    if (candidates && candidates.length > 0) {
+                                        candidates.sort((a, b) => a.marksTotal - b.marksTotal);
+                                        const lowestSelectedScore = candidates[0].marksTotal;
+
+                                        if (!cutoffData[sName]) {
+                                            cutoffData[sName] = {};
+                                        }
+                                        cutoffData[sName][hName] = lowestSelectedScore;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                return cutoffData;
+            }
+        });
+    </script>
+</body>
+</html>

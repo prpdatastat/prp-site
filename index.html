@@ -119,10 +119,7 @@
       🔗 prpdatastat.github.io/prp-site/prev.html
     </a>
     <br><br>
-    <strong style="color:#00ffaa;">📄 BDS Unofficial Merit List</strong><br>
-    <a href="https://prpdatastat.github.io/prp-site/bdsUnofficial2025.xlsx" target="_blank" style="color:#ffe066; font-weight:bold; text-decoration:underline;">
-      🔗 Download Here
-    </a>
+    
   </div>
 </div>
 
@@ -131,6 +128,10 @@
 
 
     <div class="main_container" style="width: 80%">
+      <div id="hopeBoxContainer" class="hope-highlight"></div>
+
+
+
       <div class="flex stat-container">
         <div class="stat-card">
   <div id="FCPS" class="stat-number">1,234</div>
@@ -342,6 +343,8 @@ You must provide either a threshold or a filter to generate meaningful results. 
       </div>
     </div>
   </body>
+  
+
   <script>
     const default_filter = {
       program: "FCPS",
@@ -356,7 +359,32 @@ You must provide either a threshold or a filter to generate meaningful results. 
     };
     const columnParams = ['pmdcNo', 'name', 'quotaName', 'specialityName', 'hospitalName']
     jQuery(document).ready(function () {
-      $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
+       // Prevent duplicate box rendering
+  if ($("#hopeBoxContainer .hope-box").length > 0) return;
+
+  $.getJSON("hope-messages.json", function (data) {
+    const messages = data.messages || [];
+    const titles = data.titles || ["You're Not Alone"];
+
+    if (messages.length === 0) return;
+
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+    console.log(randomMessage, randomTitle);
+    const boxHtml = `
+    <div class="hope-title font-bold mb-3 flex items-center gap-2 text-yellow-900 text-xl tracking-wide">🌟 ${randomTitle}</div>
+    <div class="hope-box text-sm text-yellow-900 bg-yellow-50 border border-dashed border-yellow-400 p-3 rounded-md">
+      ${randomMessage}
+    </div>
+  
+`;
+
+
+    // ✅ CORRECT: appending as HTML
+    $("#hopeBoxContainer").append(boxHtml);
+  });
+  
+  $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
     
       jQuery("#statTable").DataTable({
         order: [[5, 'desc']],

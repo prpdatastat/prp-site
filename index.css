@@ -532,6 +532,36 @@ body {
   animation: slideIn 0.8s ease-out;
   line-height: 1.7;
 }
+/* Neon effect for title */
+.neon-title {
+  animation: neonPulse 2.5s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(255, 222, 89, 0.5), 0 0 10px rgba(255, 200, 0, 0.6);
+}
+
+/* Soft glow around message box */
+.neon-box {
+  box-shadow: 0 0 12px rgba(255, 240, 150, 0.4), 0 0 20px rgba(255, 224, 100, 0.3);
+  animation: boxGlow 3s ease-in-out infinite alternate;
+}
+
+/* Keyframes for subtle pulsing glow */
+@keyframes neonPulse {
+  0%, 100% {
+    text-shadow: 0 0 6px rgba(255, 222, 89, 0.5), 0 0 10px rgba(255, 200, 0, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 240, 150, 0.8), 0 0 18px rgba(255, 215, 80, 0.7);
+  }
+}
+
+@keyframes boxGlow {
+  from {
+    box-shadow: 0 0 6px rgba(255, 230, 120, 0.4), 0 0 10px rgba(255, 215, 80, 0.3);
+  }
+  to {
+    box-shadow: 0 0 14px rgba(255, 240, 150, 0.6), 0 0 22px rgba(255, 224, 100, 0.5);
+  }
+}
 
 .hope-highlight::before {
   display: block;

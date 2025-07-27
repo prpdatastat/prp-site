@@ -608,7 +608,7 @@ async function getSchedule() {
         console.log('error');
     }
     }
-async function getConsent(applicantId, inductionId = 19, round = 3) {      
+async function getConsent(applicantId, inductionId = 19, round = 4) {      
 
         try {
         let response = await $.ajax({

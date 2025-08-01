@@ -543,6 +543,22 @@ body {
   box-shadow: 0 0 12px rgba(255, 240, 150, 0.4), 0 0 20px rgba(255, 224, 100, 0.3);
   animation: boxGlow 3s ease-in-out infinite alternate;
 }
+.nonjoin-item {
+  background: #1c1e22;
+  padding: 0.4em 0.8em;
+  border: 2px solid #ff4d4f;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+.nonjoin-item:hover {
+  background: #2b2f34;
+  border-color: #ffa39e;
+}
 
 /* Keyframes for subtle pulsing glow */
 @keyframes neonPulse {

@@ -10,6 +10,8 @@
     <script id='data' src="data.js"></script>
     <script src="schedule.js"></script>
    <script src="nil.js"></script>
+   <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <link
     href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
     rel="stylesheet"
@@ -92,7 +94,7 @@
     <strong style="color:#5cdb71;">📊 New:</strong> View official <b>Cutoff Merits</b> for each specialty using the <b>Cutoff Dashboard</b> below.
   </div>
 
-  <strong style="color:#5cdb71;">✅ Official Merit List – Round 5 Published!</strong><br>
+  <strong style="color:#5cdb71;">✅ Official Merit List – Round 6 Published!</strong><br>
   Released by the <span style="color:#ffe066; font-weight:600;">official government authority</span>.<br>
   <span style="color:#5cdb71;"><b>Click "Check Consent"</b></span> to view the current applicant's consent status.<br>
   ✨ <span style="color:#7fffa7;"><b>New:</b> "Show Next Candidate"</span> reveals who will be considered next <i>if the current candidate does not give consent</i>. Use it to preview upcoming applicants in line!
@@ -282,6 +284,22 @@ You must provide either a threshold or a filter to generate meaningful results. 
 
 
       <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
+      <div id="nonJoinNotif" style="
+  background: #2a2d31;
+  margin: 1em 0;
+  padding: 0.8em 1.2em;
+  border-left: 4px solid #ff4d4f;
+  border-radius: 6px;
+  color: #ddd;
+  font-size: 0.95em;
+  box-shadow: 0 0 10px rgba(255, 77, 79, 0.2);
+  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+">
+</div>
       <div class="filters">
         <select
           onchange="updateList(event);"
@@ -327,7 +345,7 @@ You must provide either a threshold or a filter to generate meaningful results. 
             <th class="linkable">Hospital</th>
             <th>Aggregate</th>
             <th>Preference No.</th>
-            <th>Next Candidate in Line</th>
+            <!--<th>Next Candidate in Line</th>--->
           </tr>
         </thead>
         <tbody id="dataRows"></tbody>
@@ -360,6 +378,118 @@ You must provide either a threshold or a filter to generate meaningful results. 
       MD: mdMerit,
     };
     const columnParams = ['pmdcNo', 'name', 'quotaName', 'specialityName', 'hospitalName']
+    const joiningCache = {}; // Cache joining statuses
+
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function getJoiningSafe(applicantId, retries = 3) {
+  if (joiningCache[applicantId]) return joiningCache[applicantId];
+
+  for (let i = 0; i < retries; i++) {
+    try {
+      const res = await $.ajax({
+        url: `https://prp-api.vercel.app/joining/${applicantId}/`,
+        method: 'GET',
+      });
+      joiningCache[applicantId] = res;
+      return res;
+    } catch (err) {
+      if (i < retries - 1) {
+        await wait(200); // retry delay
+      } else {
+        console.warn(`❌ API failed for ${applicantId} after ${retries} tries`);
+        return undefined; // treat as not joined
+      }
+    }
+  }
+}
+
+async function nonJoinersNotice() {
+  const table = $('#statTable').DataTable();
+  const pageRows = table.rows({ page: 'current' }).nodes();
+  const container = document.getElementById('nonJoinNotif');
+  container.innerHTML = '';
+
+  let nonJoinerCount = 0;
+  const itemWrapper = document.createElement('div');
+  itemWrapper.style.display = 'flex';
+  itemWrapper.style.flexWrap = 'wrap';
+  itemWrapper.style.gap = '0.6em';
+  itemWrapper.style.alignItems = 'center';
+
+  const tasks = [];
+
+  for (let i = 0; i < pageRows.length; i++) {
+    const $row = $(pageRows[i]);
+
+    const task = async () => {
+      await wait(i * 100); // Stagger requests
+
+      const statusCell = $row.find('.consentstatusstyle');
+      const idAttr = statusCell.attr('id');
+      if (!idAttr) return;
+
+      const applicantId = idAttr.split('-')[1];
+
+      const joiningStatus = await getJoiningSafe(applicantId);
+
+      const div = document.createElement('div');
+      div.innerHTML = joiningStatus || '';
+      const plainStatus = (div.textContent || div.innerText || '').trim().toLowerCase();
+
+      console.log(`Applicant ${applicantId}: "${plainStatus}"`);
+
+      if (plainStatus !== 'joined') {
+        nonJoinerCount++;
+
+        const applicantName = $row.find('td:nth-child(2)').text().trim();
+        const quota = $row.find('td:nth-child(3)').text().trim();
+        const speciality = $row.find('td:nth-child(4)').text().trim();
+        const hospital = $row.find('td:nth-child(5)').text().trim();
+
+        const block = document.createElement('span');
+        block.className = 'nonjoin-item';
+        block.setAttribute('data-tippy-content',
+          `🚫 Seat wasted at:<br><b>${speciality}</b>, <b>${hospital}</b><br>Quota: ${quota}<br><i>${applicantName}</i>`
+        );
+        block.innerHTML = `<b>❌ ${applicantId}</b>`;
+        itemWrapper.appendChild(block);
+      }
+    };
+
+    tasks.push(task());
+  }
+
+  await Promise.all(tasks);
+
+  if (nonJoinerCount > 0) {
+    const heading = document.createElement('div');
+    heading.innerHTML = `⚠️ <b>${nonJoinerCount}</b> seat${nonJoinerCount > 1 ? 's' : ''} wasted on this page`;
+    heading.style.marginBottom = '0.5em';
+    heading.style.color = '#ffadad';
+    heading.style.fontWeight = 'bold';
+    heading.style.fontSize = '1em';
+    container.appendChild(heading);
+    container.appendChild(itemWrapper);
+    container.style.display = 'block';
+  } else {
+    container.style.display = 'none';
+  }
+
+  tippy('[data-tippy-content]', {
+    allowHTML: true,
+    placement: 'top',
+    theme: 'light-border',
+    interactive: false,
+    animation: 'scale-subtle',
+    delay: [100, 0],
+  });
+}
+
+
+
     jQuery(document).ready(function () {
        // Prevent duplicate box rendering
   if ($("#hopeBoxContainer .hope-box").length > 0) return;
@@ -385,6 +515,7 @@ You must provide either a threshold or a filter to generate meaningful results. 
     // ✅ CORRECT: appending as HTML
     $("#hopeBoxContainer").append(boxHtml);
   });
+  
   
   $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
     
@@ -440,7 +571,6 @@ You must provide either a threshold or a filter to generate meaningful results. 
           { width: "10%" },
           { width: "20%" },
           { width: "5%" },
-          { width: "5%" },
           { width: "5%" }
         ],
       });
@@ -471,13 +601,16 @@ You must provide either a threshold or a filter to generate meaningful results. 
   merit[cand].specialityName,
   merit[cand].hospitalName,
   merit[cand].marksTotal,
-  "Pref No." + merit[cand].preferenceNo + "<br><span class='check-consent' onmousedown='checkConsent(" + merit[cand].applicantId + ")'>Check Consent</span><br><span class='consentstatusstyle' id='status-" + merit[cand].applicantId + "'></span>",
-  `<span data-count=0 class='next-candidate' onclick='showNextCandidate(this)'>Show Next Candidate</span>`
+  "Pref No." + merit[cand].preferenceNo + "<br><span class='check-consent' onmousedown='checkJoining(" + merit[cand].applicantId + ")'>Check Joining</span><br><span class='consentstatusstyle' id='status-" + merit[cand].applicantId + "'></span>"
+  //`<span data-count=0 class='next-candidate' onclick='showNextCandidate(this)'>Show Next Candidate</span>`
 
 ]);
       }
       jQuery("#statTable").DataTable().draw();
     }
+    $('#statTable').on('draw.dt', function () {
+  nonJoinersNotice();
+});
       
       $('#statTable').on('click', 'tbody td', function() {   
         let param =   columnParams[this._DT_CellIndex.column];
@@ -493,7 +626,11 @@ You must provide either a threshold or a filter to generate meaningful results. 
         window.location.href = paths[param]
         }
       }
-  ) 
+  );
+
+
+
+
     function getCandidateMerit() {
       let pmdcNoValue = document.getElementById('pmdc-input');
       localStorage.setItem('pmdcNo', pmdcNoValue.value);

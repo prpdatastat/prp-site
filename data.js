@@ -22,6 +22,15 @@ const prevcandList = load_data('./cand_data.json')
 let fcpsGazat = load_data('./2025/fcps_gazat.json')
 let msGazat = load_data('./2025/ms_gazat.json')
 let mdGazat = load_data('./2025/md_gazat.json')
+let fcpsWasted = load_data('fcps_wasted_seats.json')
+let msWasted = load_data('ms_wasted_seats.json')
+let mdWasted = load_data('md_wasted_seats.json')
+
+const wastedData = {
+    FCPS: fcpsWasted,
+    MS: msWasted,
+    MD: mdWasted
+}
 const constGazat = {
     FCPS : fcpsGazat,
     MS : msGazat,
@@ -241,7 +250,12 @@ function gotoUrl(link = 'index.html') {
     window.location.href = link
 }
 
-
+function getPMDCNo(applicantId){
+    if (applicantId in candData) {
+        return candData[applicantId].pmdcNo;
+    }
+    return null;
+}
 function getCandidatesData(pmdcNo) {
 
   
@@ -316,8 +330,39 @@ function getCandidatesData(pmdcNo) {
 
     }
 
+function getWastedData(data, program, quota = '', speciality = '', hospital = '') {
+    let result = [];
+    console.log(wastedData)
+    for (let prog in wastedData) {
+        if (prog === program || program === '') {
+            console.log(wastedData[prog])
+            for (let quot in wastedData[prog]) {
+                if (quot === quota || quota === '') {
+                    for (let specia in wastedData[prog][quot]) {
+                        if (specia === speciality || speciality === '') {
+                            for (let hosp in wastedData[prog][quot][specia]) {
+                                if (hosp === hospital || hospital === '') {
+                                    let obj = {};
+                                    obj.quotaName = quot;
+                                    obj.specialityName = specia;
+                                    obj.hospitalName = hosp;
+                                    obj.candidates = [];
+                                     for (let cand in wastedData[prog][quot][specia][hosp].candidates) {
+                                        obj.candidates.push(wastedData[prog][quot][specia][hosp].candidates[cand]);
+                                    }
+                                    result.push(obj);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    console.log(result)
+    return result;
+}
 
- 
 function getMerit(merit, quota = '', speciality = '', hospital = '', all = false) {
     let result = [];
     let seen = new Set(); // To track unique candidate+quota+speciality+hospital

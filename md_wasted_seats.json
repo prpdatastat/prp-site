@@ -1,0 +1,642 @@
+{
+  "Punjab": {
+    "Cardiology": {
+      "Bahawal Victoria Hospital, Bahawalpur": {
+        "candidates": [],
+        "others": []
+      },
+      "Benazir Bhutto Hospital, Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "Choudhary Prevez Ilahi Institute of Cardiology , Multan": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Teaching Hospital, Sargodha": {
+        "candidates": [],
+        "others": []
+      },
+      "Faisalabad Institute of Cardiology, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "Jinnah Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Nishtar Hospital, Multan": {
+        "candidates": [],
+        "others": []
+      },
+      "Punjab Institute of Cardiology, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Rawalpindi Institute of Cardiology , Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "Sahiwal Teaching Hospital, Sahiwal": {
+        "candidates": [],
+        "others": []
+      },
+      "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+        "candidates": [
+          31893
+        ],
+        "others": []
+      },
+      "Sir Ganga Ram Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Wazirabad  Institute of Cardiology, Warzirabad": {
+        "candidates": [
+          29274
+        ],
+        "others": []
+      }
+    },
+    "Dermatology": {
+      "AIMH, Sialkot": {
+        "candidates": [],
+        "others": []
+      },
+      "Bahawal Victoria Hospital, Bahawalpur": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Hospital, Gujranwala": {
+        "candidates": [
+          32753
+        ],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Diagnostic Radiology": {
+      "AIMH, Sialkot": {
+        "candidates": [],
+        "others": []
+      },
+      "Allied Hospital, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "Bahawal Victoria Hospital, Bahawalpur": {
+        "candidates": [],
+        "others": []
+      },
+      "Benazir Bhutto Hospital, Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "Children Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Children Hospital, Multan": {
+        "candidates": [
+          16683
+        ],
+        "others": []
+      },
+      "Choudhary Prevez Ilahi Institute of Cardiology , Multan": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Hospital, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Hospital, Gujranwala": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Teaching Hospital, Sargodha": {
+        "candidates": [],
+        "others": []
+      },
+      "Govt. Teaching Hospital GM Abad, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "Holy Family Hospital, Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "Jinnah Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Lahore General Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Nishtar Hospital, Multan": {
+        "candidates": [],
+        "others": []
+      },
+      "Nishtar-II Hospital Multan ": {
+        "candidates": [],
+        "others": []
+      },
+      "Punjab Institute of Cardiology, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Punjab Institute of Neurosciences, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Sahiwal Teaching Hospital, Sahiwal": {
+        "candidates": [],
+        "others": []
+      },
+      "Services Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+        "candidates": [],
+        "others": []
+      },
+      "Sir Ganga Ram Hospital, Lahore": {
+        "candidates": [
+          32355
+        ],
+        "others": []
+      }
+    },
+    "Emergency Medicine": {
+      "Holy Family Hospital, Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Medical Oncology": {
+      "Allied Hospital, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "Jinnah Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Medicine": {
+      "ABS Teaching Hospital, Gujrat": {
+        "candidates": [],
+        "others": []
+      },
+      "AIMH, Sialkot": {
+        "candidates": [],
+        "others": []
+      },
+      "Allied Hospital, Faisalabad": {
+        "candidates": [
+          20542
+        ],
+        "others": []
+      },
+      "Bahawal Victoria Hospital, Bahawalpur": {
+        "candidates": [],
+        "others": []
+      },
+      "Benazir Bhutto Hospital, Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Hospital, DG Khan": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Hospital, Faisalabad": {
+        "candidates": [
+          33550
+        ],
+        "others": []
+      },
+      "DHQ Hospital, Gujranwala": {
+        "candidates": [
+          32181
+        ],
+        "others": []
+      },
+      "DHQ Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Teaching Hospital, Sargodha": {
+        "candidates": [],
+        "others": []
+      },
+      "Govt. Teaching Hospital GM Abad, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "Holy Family Hospital, Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "Jinnah Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Lahore General Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [
+          26746
+        ],
+        "others": []
+      },
+      "Nishtar Hospital, Multan": {
+        "candidates": [],
+        "others": []
+      },
+      "Sahiwal Teaching Hospital, Sahiwal": {
+        "candidates": [],
+        "others": []
+      },
+      "Services Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+        "candidates": [],
+        "others": []
+      },
+      "Sir Ganga Ram Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Nephrology": {
+      "AIMH, Sialkot": {
+        "candidates": [],
+        "others": []
+      },
+      "Allied Hospital, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "Holy Family Hospital, Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "Jinnah Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Lahore General Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Sahiwal Teaching Hospital, Sahiwal": {
+        "candidates": [],
+        "others": []
+      },
+      "Services Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Sir Ganga Ram Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Neurology": {
+      "AIMH, Sialkot": {
+        "candidates": [],
+        "others": []
+      },
+      "Allied Hospital, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "Bahawal Victoria Hospital, Bahawalpur": {
+        "candidates": [],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Nishtar Hospital, Multan": {
+        "candidates": [],
+        "others": []
+      },
+      "Punjab Institute of Neurosciences, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Services Hospital, Lahore": {
+        "candidates": [
+          32437
+        ],
+        "others": []
+      },
+      "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+        "candidates": [],
+        "others": []
+      },
+      "Sir Ganga Ram Hospital, Lahore": {
+        "candidates": [
+          17349
+        ],
+        "others": []
+      }
+    },
+    "Pediatrics": {
+      "ABS Teaching Hospital, Gujrat": {
+        "candidates": [],
+        "others": []
+      },
+      "AIMH, Sialkot": {
+        "candidates": [],
+        "others": []
+      },
+      "Allied Hospital, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "Bahawal Victoria Hospital, Bahawalpur": {
+        "candidates": [],
+        "others": []
+      },
+      "Benazir Bhutto Hospital, Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "Children Hospital, Lahore": {
+        "candidates": [
+          32213,
+          31735
+        ],
+        "others": []
+      },
+      "Children Hospital, Multan": {
+        "candidates": [
+          21063
+        ],
+        "others": []
+      },
+      "Civil Hospital Bahawalpur": {
+        "candidates": [
+          32321
+        ],
+        "others": []
+      },
+      "DHQ Hospital, DG Khan": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Hospital, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Hospital, Gujranwala": {
+        "candidates": [
+          30773
+        ],
+        "others": []
+      },
+      "DHQ Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Teaching Hospital, Sargodha": {
+        "candidates": [],
+        "others": []
+      },
+      "Govt. Teaching Hospital GM Abad, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "Holy Family Hospital, Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "Institute of Child Health, Faisalabad": {
+        "candidates": [
+          30409
+        ],
+        "others": []
+      },
+      "Jinnah Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Lahore General Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [
+          28125
+        ],
+        "others": []
+      },
+      "Nishtar Hospital, Multan": {
+        "candidates": [],
+        "others": []
+      },
+      "Sahiwal Teaching Hospital, Sahiwal": {
+        "candidates": [],
+        "others": []
+      },
+      "Services Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+        "candidates": [],
+        "others": []
+      },
+      "Sir Ganga Ram Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Psychiatry": {
+      "Benazir Bhutto Hospital, Rawalpindi": {
+        "candidates": [],
+        "others": []
+      },
+      "DHQ Hospital, Faisalabad": {
+        "candidates": [
+          32068
+        ],
+        "others": []
+      },
+      "Jinnah Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Lahore General Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Nishtar Hospital, Multan": {
+        "candidates": [],
+        "others": []
+      },
+      "Punjab Institute of Mental Health, Lahore": {
+        "candidates": [
+          25880
+        ],
+        "others": []
+      },
+      "Sahiwal Teaching Hospital, Sahiwal": {
+        "candidates": [],
+        "others": []
+      },
+      "Services Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Sir Ganga Ram Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Pulmonology": {
+      "Allied Hospital, Faisalabad": {
+        "candidates": [
+          21712
+        ],
+        "others": []
+      },
+      "Bahawal Victoria Hospital, Bahawalpur": {
+        "candidates": [
+          31530
+        ],
+        "others": []
+      },
+      "DHQ Hospital, Faisalabad": {
+        "candidates": [],
+        "others": []
+      },
+      "Jinnah Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Lahore General Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Mayo Hospital, Lahore": {
+        "candidates": [
+          27232,
+          31886
+        ],
+        "others": []
+      },
+      "Services Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      },
+      "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+        "candidates": [
+          32273
+        ],
+        "others": []
+      },
+      "Sir Ganga Ram Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      }
+    }
+  },
+  "KPK, Sindh, Balochistan": {
+    "Medicine": {
+      "Sahiwal Teaching Hospital, Sahiwal": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Pediatrics": {
+      "Nishtar-II Hospital Multan ": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Pulmonology": {
+      "Sheikh Zayed Medical Complex, Rahim Yar Khan": {
+        "candidates": [],
+        "others": []
+      }
+    }
+  },
+  "AJK, G&B,ICT": {
+    "Cardiology": {
+      "Wazirabad  Institute of Cardiology, Warzirabad": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Medicine": {
+      "DHQ Rawalpindi": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Nephrology": {
+      "Services Hospital, Lahore": {
+        "candidates": [],
+        "others": []
+      }
+    }
+  },
+  "Foriegn": {
+    "Cardiology": {
+      "Choudhary Prevez Ilahi Institute of Cardiology , Multan": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Medicine": {
+      "Nishtar-II Hospital Multan ": {
+        "candidates": [],
+        "others": []
+      }
+    },
+    "Nephrology": {
+      "Sahiwal Teaching Hospital, Sahiwal": {
+        "candidates": [],
+        "others": []
+      }
+    }
+  }
+}

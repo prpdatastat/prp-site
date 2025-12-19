@@ -5,363 +5,947 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRP Statistics</title>
+
+    <!-- libs (kept as before) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sync-fetch"></script>
-    <script id='data' src="data.js"></script>
+    <script id="data" src="data.js"></script>
     <script src="schedule.js"></script>
-   <script src="nil.js"></script>
-   <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="nil.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <link
-    href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
-    rel="stylesheet"
-  />
+      href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    
-<style>
-@keyframes glowPulse {
-  0% {
-    box-shadow: 0 0 12px rgba(0, 255, 170, 0.2), 0 0 5px rgba(0, 255, 170, 0.1);
-  }
-  50% {
-    box-shadow: 0 0 18px rgba(0, 255, 170, 0.6), 0 0 12px rgba(0, 255, 170, 0.3);
-  }
-  100% {
-    box-shadow: 0 0 12px rgba(0, 255, 170, 0.2), 0 0 5px rgba(0, 255, 170, 0.1);
-  }
+
+    <!-- Modernized, self-contained styles (appended into page per request) -->
+    <style>
+      :root {
+        --bg: #071217;
+        --card: rgba(14,20,24,0.92);
+        --accent: #39c0b7;
+        --accent-2: #ffd166;
+        --muted: #9fb7b3;
+        --text: #e6eef2;
+        --glass-border: rgba(255,255,255,0.04);
+      }
+      :root {
+  --bg: #071217;
+  --card: rgba(14,20,24,0.92);
+  --accent: #39c0b7;
+  --accent-2: #ffd166;
+  --muted: #9fb7b3;
+  --text: #e6eef2;
+  --glass-border: rgba(255,255,255,0.04);
+
+  /* neon helpers */
+  --accent-rgb: 57,192,183;
+  --accent-2-rgb: 255,209,102;
 }
 
-    
-    #statTable tbody td:nth-child(1),
-#statTable tbody td:nth-child(4),
-#statTable tbody td:nth-child(5) {
-  color: var(--accent, #5cdb71);
-  text-decoration: underline dotted;
+
+      /* Base */
+      html, body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; -webkit-font-smoothing:antialiased; margin:0; padding:0; }
+      a { color: var(--accent-2); text-decoration: none; }
+      .page { max-width:1200px; margin:26px auto; padding:22px; }
+
+      /* Top nav */
+      .main-navbar { display:flex; align-items:center; justify-content:space-between; padding:8px 12px; margin-bottom:16px; }
+      .nav-content { display:flex; align-items:center; gap:18px; width:100%; }
+      .logo { height:44px; cursor:pointer; border-radius:8px; }
+      .nav-links { display:flex; gap:12px; list-style:none; padding:0; margin:0; align-items:center; }
+      .nav-links a { color:var(--muted); padding:6px 10px; border-radius:8px; font-weight:600; }
+      .nav-links a:hover, .nav-links a.active { color:var(--text); background: rgba(255,255,255,0.02); box-shadow: 0 6px 18px rgba(2,12,14,0.35); }
+
+      /* Notification */
+      .notif { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.03)); border-left:5px solid var(--accent-2); padding:14px 16px; border-radius:10px; box-shadow:0 10px 30px rgba(2,12,14,0.45); margin-bottom:18px; color:var(--text); }
+      .notif .title { color:var(--accent); font-weight:800; font-size:1.02rem; }
+      .notif .sub { color:var(--muted); margin-top:8px; }
+
+      /* Grid layout: stats + main content */
+      .top-grid { display:grid; grid-template-columns: 1fr 420px; gap:18px; align-items:start; }
+      .stats-grid { display:grid; grid-template-columns: repeat(3, minmax(140px,1fr)); gap:14px; }
+      .stat-card { background:var(--card); border:1px solid var(--glass-border); padding:18px; border-radius:12px; box-shadow:0 8px 30px rgba(2,12,14,0.25); }
+      .stat-number { font-weight:900; font-size:2.4rem; background: linear-gradient(90deg, var(--accent) 0%, #7ee9d8 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+      .stat-desc { color:var(--muted); font-weight:700; margin-top:4px; }
+      .stat-correct { color:var(--muted); margin-top:8px; font-size:0.95rem; }
+
+      /* Helper / Tools card: tabs */
+      .card { background:var(--card); border:1px solid var(--glass-border); padding:14px; border-radius:12px; box-shadow:0 10px 30px rgba(2,12,14,0.25); }
+      .tabs { display:flex; gap:8px; margin-bottom:12px; }
+      .tabbtn { background:transparent; border:1px solid transparent; color:var(--muted); padding:8px 10px; border-radius:8px; cursor:pointer; font-weight:700; }
+      .tabbtn.active { color:var(--text); background:linear-gradient(90deg, rgba(57,192,183,0.06), rgba(255,255,255,0.01)); border-color: rgba(57,192,183,0.12); box-shadow:0 6px 20px rgba(57,192,183,0.06); }
+      .tabpanel { display:none; }
+      .tabpanel.active { display:block; animation: slideUp .32s ease; }
+
+      @keyframes slideUp { from { transform: translateY(6px); opacity:0 } to { transform: translateY(0); opacity:1 } }
+
+      /* PMDC search and near-merit controls */
+      .search-row { display:flex; gap:10px; align-items:center; margin-bottom:10px; }
+      .search-input { flex:1; padding:10px 12px; border-radius:8px; background:rgba(255,255,255,0.01); border:1px solid rgba(255,255,255,0.03); color:var(--text); font-weight:600; }
+      .btn { border:none; background:linear-gradient(90deg,var(--accent), #2fc7b8); color:#071017; padding:10px 12px; border-radius:8px; cursor:pointer; font-weight:800; }
+
+      /* Controls bar: filters + headline */
+      .controls { display:flex; gap:12px; align-items:center; justify-content:space-between; margin:14px 0; flex-wrap:wrap; }
+      .filters { display:grid; grid-template-columns: repeat(4, minmax(120px,1fr)); gap:10px; flex:1; }
+      .filter-item { padding:10px; border-radius:8px; background:rgba(255,255,255,0.01); border:1px solid rgba(255,255,255,0.03); color:var(--text); font-weight:700; }
+
+      /* Table card */
+      .table-card { margin-top:10px; border-radius:12px; padding:12px; background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02)); border:1px solid rgba(255,255,255,0.03); box-shadow:0 10px 30px rgba(2,12,14,0.25); }
+      .headline { color:var(--muted); margin:0 0 12px 0; font-weight:700; }
+
+      /* Table linkable cells */
+      #statTable tbody td:nth-child(1), #statTable tbody td:nth-child(4), #statTable tbody td:nth-child(5) {
+        color:var(--accent); font-weight:700; cursor:pointer; text-decoration: underline dotted;
+      }
+      #statTable tbody td:hover { background: rgba(57,192,183,0.02); color: #fff; text-decoration: underline solid; }
+
+      /* Non-joiners / badges */
+      .nonjoin-item { padding:6px 10px; background:#2b2d31; border-radius:8px; color:#ffdede; border:1px solid rgba(255,0,0,0.05); font-weight:700; }
+
+      /* Footer */
+      .footer { color:var(--muted); margin-top:18px; text-align:center; padding:12px 0; }
+
+      /* Responsive */
+      @media (max-width: 980px) {
+        .top-grid { grid-template-columns: 1fr; }
+        .stats-grid { grid-template-columns: repeat(3, 1fr); }
+        .filters { grid-template-columns: repeat(2, 1fr); }
+      }
+      @media (max-width: 520px) {
+        .stats-grid { grid-template-columns: repeat(2,1fr); }
+      }
+      /* ========== Neon hover/focus styles ========== */
+
+/* subtle shared transitions */
+.btn, .filter-item, .search-input, .tabbtn {
+  transition: box-shadow .18s ease, transform .12s ease, color .12s ease, border-color .12s;
+  will-change: transform, box-shadow;
+}
+
+/* neon pulse animation used on focus */
+@keyframes neonPulse {
+  0% { box-shadow: 0 0 0 rgba(var(--accent-rgb), 0); }
+  50% { box-shadow: 0 0 28px rgba(var(--accent-rgb), 0.14); }
+  100% { box-shadow: 0 0 0 rgba(var(--accent-rgb), 0); }
+}
+.filter-item option,
+.filter-item optgroup {
+  /* Dark, high-contrast background for options */
+  background: linear-gradient(180deg, rgba(14,20,24,1), rgba(10,14,16,1));
+  color: var(--text);
+  padding: 8px 12px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/* fallback for older browsers */
+select option { 
+  background: #0f171a;
+  color: var(--text);
+}
+
+/* visible highlight for currently focused/hovered option where supported */
+.filter-item option:hover,
+.filter-item option:checked {
+  background: rgba(var(--accent-rgb), 0.08);
+  color: #fff;
+}
+
+/* Improve select open/focus visuals */
+.filter-item:focus {
+  box-shadow: 0 12px 40px rgba(var(--accent-rgb), 0.12), 0 0 18px rgba(var(--accent-rgb), 0.06);
+  border-color: rgba(var(--accent-rgb), 0.18);
+  outline: none;
+}
+
+/* ---------- Neon-like styles for inline "Check Consent" control ---------- */
+.check-consent {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(var(--accent-rgb),0.05), rgba(255,255,255,0.01));
+  color: var(--accent);
+  font-weight: 800;
   cursor: pointer;
-  font-weight: 700;
-  transition: color 0.18s, text-decoration 0.18s, text-shadow 0.18s;
+  border: 1px solid rgba(var(--accent-rgb), 0.14);
+  box-shadow: 0 6px 18px rgba(var(--accent-rgb), 0.06), 0 0 8px rgba(var(--accent-rgb), 0.04);
+  transition: transform .12s ease, box-shadow .18s ease, color .12s ease, background .12s ease;
+  text-decoration: none;
+}
+.check-consent:hover,
+.check-consent:focus,
+.check-consent:active {
+  transform: translateY(-3px);
+  color: #071017;
+  background: linear-gradient(90deg, var(--accent), #3ccba8);
+  box-shadow: 0 18px 48px rgba(var(--accent-rgb), 0.18), 0 0 28px rgba(var(--accent-rgb), 0.12);
+  outline: none;
 }
 
-#statTable tbody tr:hover td:nth-child(1),
-#statTable tbody tr:hover td:nth-child(4),
-#statTable tbody tr:hover td:nth-child(5),
+/* readable status text below the check control */
+.consentstatusstyle {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+/* keep keyboard focus visible */
+.check-consent:focus-visible { outline: 3px solid rgba(var(--accent-rgb),0.12); outline-offset: 3px; }
+
+/* Buttons */
+.btn:hover,
+.btn:focus,
+.btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 30px rgba(var(--accent-rgb), 0.18),
+    0 0 12px rgba(var(--accent-rgb), 0.20);
+  outline: none;
+}
+
+/* Tab buttons */
+.tabbtn:hover {
+  color: var(--text);
+  box-shadow: 0 6px 18px rgba(var(--accent-rgb), 0.06);
+}
+.tabbtn.active {
+  background: linear-gradient(90deg, rgba(var(--accent-rgb),0.05), rgba(255,255,255,0.01));
+  border-color: rgba(var(--accent-rgb),0.12);
+  box-shadow: 0 10px 28px rgba(var(--accent-rgb),0.08), 0 0 6px rgba(var(--accent-rgb),0.08);
+}
+
+/* Inputs and selects focus */
+.search-input:focus,
+.filter-item:focus,
+.filter-item:focus-visible,
+.search-input:focus-visible {
+  box-shadow:
+    0 10px 30px rgba(var(--accent-rgb), 0.06),
+    0 0 10px rgba(var(--accent-rgb), 0.12);
+  border-color: rgba(var(--accent-rgb), 0.30);
+  animation: neonPulse 1.2s ease-in-out 1;
+  outline: none;
+}
+
+/* keyboard-friendly focus ring */
+:focus-visible {
+  outline: 3px solid rgba(var(--accent-rgb), 0.10);
+  outline-offset: 3px;
+}
+
+/* Stylize native select: custom caret and padding */
+.filter-item {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 20 20'%3E%3Cpath fill='%23ffd166' d='M5 7l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 38px; /* room for caret */
+}
+
+.filter-item {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 20 20'%3E%3Cpath fill='%23ffd166' d='M5 7l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 38px; /* room for caret */
+  color: var(--text);
+  background-color: rgba(255,255,255,0.01);
+  transition: box-shadow .18s, border-color .12s, transform .12s;
+}
+
+/* Make options readable in most browsers */
+.filter-item option {
+  background: #0f171a; /* dark option background */
+  color: var(--text);
+  padding: 8px 12px;
+  line-height: 1.6;
+}
+
+/* Hover / focus visible styles for select */
+.filter-item:hover,
+.filter-item:focus {
+  box-shadow: 0 10px 30px rgba(var(--accent-rgb),0.06), 0 0 10px rgba(var(--accent-rgb),0.08);
+  border-color: rgba(var(--accent-rgb),0.18);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Make the open dropdown show the same dark look on supported browsers */
+.filter-item:focus option:checked,
+.filter-item:focus option {
+  background: rgba(var(--accent-rgb), 0.06);
+  color: var(--text);
+}
+
+/* Data table row hover + focus (neon-like) */
+#statTable tbody tr {
+  transition: transform .12s ease, box-shadow .18s ease, background .18s ease;
+  will-change: transform, box-shadow, background;
+}
+#statTable tbody tr:hover,
+#statTable tbody tr:focus {
+  transform: translateY(-6px);
+  background: linear-gradient(90deg, rgba(var(--accent-rgb),0.04), rgba(255,255,255,0.01));
+  box-shadow: 0 18px 40px rgba(2,12,14,0.45), 0 0 18px rgba(var(--accent-rgb), 0.06);
+  outline: none;
+}
+
+/* give row cells a subtle rounded look when hovered */
+#statTable tbody tr:hover td:first-child { border-top-left-radius:8px; border-bottom-left-radius:8px; }
+#statTable tbody tr:hover td:last-child  { border-top-right-radius:8px; border-bottom-right-radius:8px; }
+
+/* keyboard focus for rows */
+#statTable tbody tr:focus { box-shadow: 0 18px 40px rgba(2,12,14,0.45), 0 0 22px rgba(var(--accent-rgb),0.08); }
+
+/* smaller accent on individual cells when hovering a row */
+#statTable tbody tr:hover td {
+  box-shadow: inset 0 0 0 9999px rgba(255,255,255,0.01);
+}
+
+/* ensure select caret remains visible on dark backgrounds */
+.filter-item::-ms-expand { display: none; }
+/* dropdown options (best-effort, browser dependent) */
+.filter-item option {
+  background: var(--card);
+  color: var(--text);
+  padding: 6px 10px;
+}
+
+/* smaller subtle hover for table link cells */
 #statTable tbody td:nth-child(1):hover,
 #statTable tbody td:nth-child(4):hover,
 #statTable tbody td:nth-child(5):hover {
-  color: #fff;
-  text-decoration: underline solid;
-  text-shadow: 0 2px 12px var(--accent, #5cdb71);
-  cursor: pointer;
+  box-shadow: inset 0 0 0 9999px rgba(var(--accent-rgb), 0.02);
 }
-</style>
-     <nav class="navbar main-navbar">
-      <div class="nav-content">
-        <div class="logo-container">
-          <img class="logo" onclick="gotoUrl()" src="logo.png" />
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <!--<li><a href="hospital.html">Hospitals</a></li>-->
-          <!--<li><a href="speciality.html">Specialities</a></li>-->
-          <li><a href="wasted.html">Wasted Seats</a></li>
-          <li><a href="review.html">Training Reviews</a></li>
-          <li><a href="cutoff.html">Cutoff Merits</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="/prp-site/2025/index.html">Gazette</a></li>
-          <li><a href="prev.html">Previous Merit Lists</a></li>
-        </ul>
-      </div>
-    </nav>
 
-  
-<div class="navbar notif" id="notif" style="
-  background: #23272a;
-  color: #e0e0e0;
-  border-left: 5px solid #ff4d4f;
-  border-radius: 9px;
-  padding: 1em 1.5em;
-  margin-bottom: 1.2em;
-  font-size: 1.05em;
-  box-shadow: 0 2px 12px rgba(255, 77, 79, 0.15);
-">
+/* slight neon accent on status badges */
+.nonjoin-item {
+  box-shadow: 0 6px 18px rgba(255, 77, 79, 0.06), 0 0 8px rgba(var(--accent-rgb), 0.04);
+}
 
-  <div style="margin-bottom: 1em; background: #1e1f22; border-left: 4px solid #5cdb71; padding: 0.6em 1em; border-radius: 6px;">
-    <strong style="color:#5cdb71;">📊 New:</strong> Explore <b>Cutoff Merits</b> for each specialty in the <b>Cutoff Dashboard</b> below.
-  </div>
+/* ensure transitions for dynamic elements added later */
+.tabpanel,
+.card,
+.stat-card,
+.table-card {
+  transition: box-shadow .18s ease, transform .12s ease, opacity .12s;
+}
 
-  <strong style="color:#5cdb71;">✅ Round 6 Merit List Published!</strong><br>
-  Released by the <span style="color:#ffe066; font-weight:600;">official authority</span>. Use <b>"Check Consent"</b> to verify applicant status.<br>
-  <span style="color:#7fffa7;">✨ <b>Show Next Candidate:</b></span> Preview who’s next if consent is not given.
+/* ---------- Custom-styled dropdown (replaces native UI visually) ---------- */
+.select-wrapper { position: relative; width: 100%; }
+select.filter-item.native-hidden { position: absolute !important; left: -9999px !important; opacity: 0 !important; width: 1px !important; height: 1px !important; pointer-events: none !important; }
 
-  <br><br>
-
-  <span style="color:#ffd43b; font-weight:600;">📉 New Feature: Wasted Seat Tracker</span><br>
-  <span style="color:#aaa;">See hospitals/specialties where seats were left vacant due to candidates not joining.</span>
-
-  <hr style="border-color: rgba(255,255,255,0.1); margin: 1em 0;">
-
-  <div style="
-    padding: 0.7em 1em;
-    background: #1e1f22;
-    border-left: 4px solid #00ffaa;
-    border-radius: 6px;
-    box-shadow: 0 0 15px rgba(0, 255, 170, 0.25);
-    animation: glowPulse 2s infinite;
-  ">
-    <strong style="color:#00ffaa;">📁 July 2025 Lists Added to Archive</strong><br>
-    <a href="https://prpdatastat.github.io/prp-site/prev.html" target="_blank" style="color:#ffe066; font-weight:bold; text-decoration:underline;">
-      🔗 prpdatastat.github.io/prp-site/prev.html
-    </a>
-  </div>
-</div>
-
-
-
-
-
-
-    <div class="main_container" style="width: 80%">
-      
-
-
-
-      <div class="flex stat-container">
-        <div class="stat-card">
-  <div id="FCPS" class="stat-number">1,234</div>
-  <div class="stat-desc">FCPS</div>
-  <div class="stat-label">Similar to estimated merit list</div>
-  <div style='display:none;' class="stat-correct" id="FCPS-correct"></div>
-</div>
-<div class="stat-card">
-  <div id="MS" class="stat-number">1,234</div>
-  <div class="stat-desc">MS</div>
-  <div class="stat-label">Similar to estimated merit list</div>
-  <div style='display:none;' class="stat-correct" id="MS-correct"></div>
-</div>
-<div class="stat-card">
-  <div id="MD" class="stat-number">1,234</div>
-  <div class="stat-desc">MD</div>
-  <div class="stat-label">Similar to estimated merit list</div>
-  <div style='display:none;' class="stat-correct" id="MD-correct"></div>
-</div>
-    
-      
-      
-      </div>
-      <div>
-        <!--<button class="schd-button lrgbtn" onmousedown="gotoUrl('schedule.html')"> View PRP Schedule </button>-->
-       <!-- <button class="schd-button lrgbtn" onmousedown="gotoUrl('scrutiny.html')"> View 2025 Grievance List </button> -->
-        
-
-        <!--<h3 class="simple-text">Unofficial <small class='important'> click on buttons below</small></h3>        
-        <br>
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/2025/index.html')">June Unofficial 2025 Gazette </button>
-        <button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/scrutiny.html')"> View June Rejected List </button>
-        <br>-->
-        <!--
-        <button class="schd-button lrgbtn unofficial" onmousedown="gotoUrl('/prp-site/2025/merit.html')">Feb 2025 Merit </button>
-        <button class="schd-button lrgbtn unofficial" onmousedown="gotoUrl('/prp-site/2025/rejection.html')">Feb 2025 Scrutiny</button>
-         -->
-      </div>    
-      <h3 class="linkableunderline" onclick="gotoComment()"> Wanna Leave a comment for developer? Click here!</h3>
-      <!--
-      <div class="consent-pref-switch">
-        <label class="switch">
-          <input id="checkbox2025" onchange="changeMeritYear(this)" type="checkbox">
-          <span class="slider"></span>
-        </label><span class="slidertext"> 2025 Unofficial Merit List</span> 
-      </div>  
-       -->
-      
-  <div id="hopeBoxContainer" class="hope-highlight"></div>
-  
-       <div class="alert merit-desc" style="
-  background: #23272a;
-  color: #e0e0e0;
-  border-left: 5px solid #5cdb71;
-  border-radius: 7px;
-  padding: 1.1em 1.5em;
-  margin: 1.2em 0 1.5em 0;
-  box-shadow: 0 2px 16px 0 rgba(92,219,113,0.07);
-  font-size: 1.08em;
-">
-  <!--<strong>About this Merit List</strong><br>
-  This merit list is compiled from the <span style="color:#5cdb71;font-weight:600;">official gazette</span>. The statistics above show how closely the estimated merit list based on official gazette matches the previously published unofficial merit, including the number of candidates <span style="color:#5cdb71;font-weight:600;">correctly placed</span> in both lists.<br>
-  <span style="color:#b5ffcb;">This provides transparency and helps you assess the accuracy of the unofficial data.</span>
-  <br><br>
-  <span style="color:#aaa;">You can now click on hospital and speciality name to check individual merit lists.</span>-->
-</div>
-<div style="margin-top: 2.5em; max-width: 560px;">
-  
-
- <div style="
-  background: #23272a;
-  border-radius: 14px;
-  padding: 2em 2em 1.8em 2em;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.2);
-  max-width: 620px;
-  margin: 2em auto;
-  font-family: 'Segoe UI', sans-serif;
-">
-
-  <h2 style="color: #5cdb71; font-size: 1.6em; margin-bottom: 0.4em;">
-    🎓 Helpful Tools
-  </h2>
-  <p style="color: #b0b0b0; font-size: 0.96em; margin-bottom: 1.6em;">
-    Search your PMDC number 
-  </p>
-
-  <!-- PMDC Search -->
-  <div style="display: flex; align-items: center; gap: 0.7em; margin-bottom: 1.5em;">
-    <input
-      id="pmdc-input"
-      type="text"
-      placeholder="🔎 Enter PMDC Number"
-      style="flex: 1; background: #181a1b; color: #e0e0e0; border: 1.5px solid #5cdb71; border-radius: 6px; padding: 0.6em 1em; font-size: 1.05em; outline: none;"
-      onkeydown="if(event.key==='Enter'){getCandidateMerit();}"
-      autocomplete="off"
-    />
-    <button
-      onclick="getCandidateMerit()"
-      style="background: #5cdb71; color: #181a1b; border: none; border-radius: 6px; padding: 0.6em 1.2em; font-size: 1.05em; font-weight: 600; cursor: pointer;"
-      onmouseover="this.style.background='#43b95a';"
-      onmouseout="this.style.background='#5cdb71';"
-    >Search</button>
-  </div>
-  <h2 style="color: #5cdb71; font-size: 1.6em; margin-bottom: 0.4em;">
-    🎓 Check near-merit Matches
-  </h2>
-  <p style="color: #b0b0b0; font-size: 0.96em; margin-bottom: 1.6em;">
-   Explore how close your merit was to selection.<br>
-Enter your merit and optionally filter by specialty or hospital.<br>
-At least a threshold or one filter is required.<br>
-You must provide either a threshold or a filter to generate meaningful results.  </p>
-  <!-- Merit Input -->
-  <div style="display: flex; flex-wrap: wrap; gap: 0.7em; align-items: center;">
-    <input
-      id="merit-input"
-      type="number"
-      placeholder="🎯 Your merit (e.g. 31.2)"
-      style="flex: 1 1 140px; background: #181a1b; color: #e0e0e0; border: 1.5px solid #5cdb71; border-radius: 6px; padding: 0.6em 1em; font-size: 1.05em;"
-    />
-    <select
-      id="merit-program"
-      style="flex: 1 1 120px; background: #181a1b; color: #e0e0e0; border: 1.5px solid #5cdb71; border-radius: 6px; padding: 0.6em 1em; font-size: 1.05em;"
-    >
-      <option value="MS">MS</option>
-      <option value="MD">MD</option>
-      <option value="FCPS">FCPS</option>
-    </select>
-    <input
-      id="merit-threshold"
-      type="number"
-      min="0.5"
-      max="10"
-      step="0.1"
-      value="3"
-      placeholder="± Marks"
-      style="flex: 1 1 100px; background: #181a1b; color: #e0e0e0; border: 1.5px solid #5cdb71; border-radius: 6px; padding: 0.6em 1em; font-size: 1.05em;"
-    />
-    <div style="display: flex; gap: 0.7em; margin-bottom: 1em;">
-    <select id="filter-speciality" type="text" placeholder="Filter by speciality" style="flex: 1; background: #181a1b; color: white; border: 1px solid #5cdb71; border-radius: 6px; padding: 0.6em;"></select>
-    <select id="filter-hospital" type="text" placeholder="Filter by hospital" style="flex: 1; background: #181a1b; color: white; border: 1px solid #5cdb71; border-radius: 6px; padding: 0.6em;"></select>
-    <button onclick="showNearMeritMatches()" style="background: #5cdb71; color: black; padding: 0.6em 1em; border-radius: 6px; border: none;">Show Matches</button>
-  </div>
-  </div>
-
-</div>
-
-</div>
-
-
-      <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
-      <div id="nonJoinNotif" style="
-  background: #2a2d31;
-  margin: 1em 0;
-  padding: 0.8em 1.2em;
-  border-left: 4px solid #ff4d4f;
-  border-radius: 6px;
-  color: #ddd;
-  font-size: 0.95em;
-  box-shadow: 0 0 10px rgba(255, 77, 79, 0.2);
-  display: none;
+/* Custom select shell */
+.custom-select {
+  position: relative;
+  border-radius: 8px;
+  font-weight: 700;
+  user-select: none;
+}
+.custom-select .cs-trigger {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.6em;
+  justify-content: space-between;
   align-items: center;
-">
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.01);
+  border: 1px solid rgba(255,255,255,0.03);
+  color: var(--text);
+  transition: box-shadow .14s, transform .12s, border-color .12s;
+}
+.custom-select .cs-trigger:focus {
+  outline: none;
+  box-shadow: 0 10px 30px rgba(var(--accent-rgb), 0.06), 0 0 10px rgba(var(--accent-rgb), 0.12);
+  border-color: rgba(var(--accent-rgb), 0.22);
+  transform: translateY(-2px);
+}
+.custom-select .cs-placeholder { color: var(--muted); }
+.custom-select .cs-caret { color: var(--accent-2); opacity: 0.95; }
+
+/* Options dropdown */
+.custom-select .cs-options {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 8px);
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 10px;
+  max-height: 260px;
+  overflow: auto;
+  z-index: 1200;
+  padding: 6px;
+  box-shadow: 0 18px 40px rgba(2,12,14,0.45);
+  display: none;
+  transform-origin: top center;
+}
+.custom-select.open .cs-options { display: block; animation: slideUp .22s ease; }
+
+/* option */
+.cs-option {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 700;
+  transition: background .12s, color .12s, transform .08s;
+}
+.cs-option + .cs-option { margin-top: 6px; }
+.cs-option:hover,
+.cs-option.focused {
+  background: rgba(var(--accent-rgb), 0.06);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(var(--accent-rgb), 0.06);
+}
+.cs-option[aria-selected="true"] {
+  background: rgba(var(--accent-rgb), 0.10);
+  box-shadow: 0 8px 30px rgba(var(--accent-rgb), 0.08);
+  color: #fff;
+}
+
+/* small helper note for empty lists */
+.cs-empty { padding: 10px; color: var(--muted); font-weight:600; }
+
+/* ensure native option readability if user opens native dropdown */
+select.filter-item option { background: #0f171a; color: var(--text); padding:8px 10px; }
+.notice-card {
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+  padding:14px 18px;
+  border-radius:12px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.01), rgba(0,0,0,0.03));
+  border-left: 6px solid var(--accent-2);
+  box-shadow: 0 12px 36px rgba(2,12,14,0.45);
+  color: var(--text);
+  margin-bottom:18px;
+  transition: transform .28s ease, box-shadow .28s ease, opacity .28s;
+}
+.notice-left { display:flex; gap:12px; align-items:flex-start; flex:1; min-width:0; }
+.notice-badge {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));
+  color: var(--accent-2);
+  border-radius:10px;
+  padding:8px 10px;
+  font-weight:800;
+  font-size:0.92rem;
+  min-width:fit-content;
+  box-shadow: 0 6px 18px rgba(57,192,183,0.04);
+}
+.notice-body { min-width:0; }
+.notice-title { font-weight:900; color:var(--accent); font-size:1.05rem; line-height:1.1; }
+.notice-sub { color:var(--muted); margin-top:6px; font-size:0.95rem; line-height:1.4; }
+
+/* CTA & small meta */
+.notice-actions { display:flex; gap:10px; align-items:center; margin-left:8px; }
+.notice-btn {
+  background: linear-gradient(90deg,var(--accent), #2fc7b8);
+  color: #071017;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight:800;
+  cursor:pointer;
+  transition: transform .12s, box-shadow .18s;
+}
+.notice-link { color: var(--accent-2); font-weight:700; text-decoration:underline; cursor:pointer; }
+
+/* tones */
+.notice-card.notice-info { border-left-color: var(--accent-2); }
+.notice-card.notice-warn { border-left-color: #ffb86b; }
+.notice-card.notice-success { border-left-color: #6be0b8; }
+
+/* Easy-edit hint (hidden visually, available in DOM) */
+.notice-meta { display:none; }
+
+/* entrance animation */
+.notice-card.notice-animate { transform: translateY(-6px); box-shadow: 0 22px 50px rgba(2,12,14,0.5); }
+#notif { position: relative; overflow: visible; }
+#notif .notice-carousel { position: relative; min-height: 86px; }
+.notice-slide { display: none; padding: 10px 0; }
+.notice-slide.active { display: block; animation: fadeIn .32s ease both; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: translateY(0) } }
+
+/* Controls (prev/next) */
+.notice-controls { position: static; display:flex; gap:8px; }
+.notice-controls button { min-width:36px; min-height:36px; padding:6px; }
+.notice-controls button:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(var(--accent-rgb),0.06); color:var(--text); }
+
+/* Dots / indicators */
+.notice-dots { display:flex; gap:8px; align-items:center; margin-left:8px; }
+.notice-dot { width:10px; height:10px; border-radius:999px; background: rgba(255,255,255,0.04); cursor:pointer; border:1px solid rgba(255,255,255,0.02); }
+.notice-dot.active { background: linear-gradient(90deg,var(--accent), #2fc7b8); box-shadow: 0 6px 18px rgba(var(--accent-rgb),0.08); }
+
+/* Slide layout inside notice */
+.notice-content { display:flex; align-items:flex-start; gap:12px; }
+.notice-left .notice-badge { min-width: 84px; text-align:center; }
+.notice-extra { margin-top:6px; color:var(--accent-2); font-weight:700; }
+
+/* Progress bar (fills each interval) */
+.notice-progress { position: absolute; left:0; right:0; bottom:0; height:4px; background: rgba(255,255,255,0.02); border-bottom-left-radius: 8px; border-bottom-right-radius:8px; overflow:hidden; }
+.notice-progress .bar { height:100%; width:0%; background: linear-gradient(90deg,var(--accent),#6be0b8); transition: width linear; }
+
+/* Small helper: hide controls when one slide */
+.notice-controls.hidden { display:none; }
+.notice-dots.hidden { display:none; }
+
+/* Responsive tweaks */
+@media (max-width:720px) {
+  .notice-controls { top:8px; right:8px; }
+  .notice-left { gap:8px; }
+}
+/* ==============================
+   HTMLCommentBox (HCB) - Themed
+   Make HCB match site's modern dark theme
+   ============================== */
+
+#HCB_comment_box {
+  --hcb-bg: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.03));
+  --hcb-border: rgba(255,255,255,0.03);
+  --hcb-accent-shadow: rgba(92,219,113,0.10);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Comment card */
+#HCB_comment_box .comment {
+  background: var(--hcb-bg);
+  border: 1px solid var(--hcb-border) !important;
+  padding: 14px 16px !important;
+  margin-bottom: 12px;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 28px rgba(2,12,14,0.45);
+  transition: transform .18s ease, box-shadow .20s ease, border-color .12s;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+/* Hover / focus */
+#HCB_comment_box .comment:hover,
+#HCB_comment_box .comment:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px var(--hcb-accent-shadow);
+  border-color: rgba(92,219,113,0.12) !important;
+}
+
+/* Avatar and author area */
+#HCB_comment_box .hcb-avatar {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Body */
+#HCB_comment_box .hcb-comment-content,
+#HCB_comment_box .comment .hcb-content {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  word-break: break-word;
+  flex: 1 1 auto;
+}
+
+/* Meta row (name, time, actions) */
+#HCB_comment_box .hcb-comment-meta,
+#HCB_comment_box .comment .hcb-meta {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  width:100%;
+  justify-content:space-between;
+  margin-bottom: 8px;
+}
+#HCB_comment_box .hcb-username {
+  color: var(--text-main);
+  font-weight: 800;
+  font-size: 0.98rem;
+}
+
+/* Inline actions / small buttons */
+#HCB_comment_box .hcb-comment-tb button,
+#HCB_comment_box .hcb-like,
+#HCB_comment_box .hcb-reply,
+#HCB_comment_box .hcb-flag {
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+  color: #071017 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 8px 12px; /* comfortable touch area */
+  font-size: 0.95rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 26px rgba(57,192,183,0.06);
+  transition: transform .12s ease, box-shadow .18s ease, opacity .12s;
+  margin: 0 4px 4px 0;
+}
+
+/* hover / focus */
+#HCB_comment_box .hcb-comment-tb button:hover,
+#HCB_comment_box .hcb-like:hover,
+#HCB_comment_box .hcb-reply:hover,
+#HCB_comment_box .hcb-flag:hover,
+#HCB_comment_box .hcb-comment-tb button:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 48px rgba(57,192,183,0.14);
+  outline: none;
+}
+
+/* keyboard visible focus */
+#HCB_comment_box .hcb-comment-tb button:focus-visible,
+#HCB_comment_box .hcb-like:focus-visible,
+#HCB_comment_box .hcb-reply:focus-visible {
+  outline: 3px solid rgba(92,219,113,0.12);
+  outline-offset: 4px;
+}
+
+/* Status / small note */
+#HCB_comment_box .hcb-status,
+#HCB_comment_box .hcb-time {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: .92rem;
+}
+
+/* Input / Form container */
+#HCB_comment_form_box {
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));
+  border-radius: 12px;
+  box-shadow: 0 10px 36px rgba(2,12,14,0.35);
+  padding: 16px;
+  margin: 18px 0;
+  border: 1px solid var(--hcb-border);
+}
+
+/* Text inputs / textarea */
+#hcb_form_name_container,
+#hcb_form_content {
+  background: rgba(255,255,255,0.01);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.02);
+  transition: box-shadow .18s ease, border-color .12s;
+}
+#hcb_form_name_container input,
+#hcb_form_content textarea,
+#hcb_form_content {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text-main);
+  font-size: 1rem;
+  outline: none;
+  resize: vertical;
+  min-height: 88px;
+  padding: 6px;
+}
+
+/* focus glow */
+#hcb_form_name_container:focus-within,
+#hcb_form_content:focus-within {
+  box-shadow: 0 10px 30px rgba(57,192,183,0.06), 0 0 10px rgba(57,192,183,0.08);
+  border-color: rgba(92,219,113,0.12);
+}
+
+/* Submit / file buttons */
+#hcb_submit {
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+  color: #071017;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 28px rgba(57,192,183,0.06);
+  transition: transform .12s, box-shadow .18s;
+}
+#hcb_submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 48px rgba(57,192,183,0.14);
+}
+
+/* File label */
+#hcb_file_label {
+  background: rgba(255,255,255,0.01);
+  color: var(--text-main);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* small actions area: align to right on desktop */
+#HCB_comment_box .hcb-comment-tb { display:flex; gap:6px; align-items:center; justify-content:flex-end; }
+
+/* Readable link colors */
+#HCB_comment_box a { color: var(--accent); font-weight:700; text-decoration: underline; }
+
+/* Compact mobile layout */
+@media (max-width: 640px) {
+  #HCB_comment_box .comment { flex-direction: column; gap:8px; align-items: stretch; padding:12px; }
+  #HCB_comment_box .hcb-avatar { width:40px; height:40px; }
+  #HCB_comment_box .hcb-comment-tb { justify-content:flex-start; flex-wrap:wrap; }
+  #HCB_comment_form_box { padding:12px; }
+}
+
+/* Scrollbar for comment list */
+#HCB_comment_box::-webkit-scrollbar { height: 8px; width: 10px; }
+#HCB_comment_box::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.03); border-radius: 8px; }
+#HCB_comment_box::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.06); }
+
+/* Accessibility helpers */
+#HCB_comment_box .hcb-like[aria-pressed="true"], 
+#HCB_comment_box .hcb-flag[aria-pressed="true"] {
+  box-shadow: 0 10px 30px rgba(57,192,183,0.12);
+  transform: translateY(-2px);
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+
+      <!-- NAV -->
+      <nav class="navbar main-navbar" aria-label="Main navigation">
+        <div class="nav-content">
+          <div style="display:flex;align-items:center;gap:12px">
+            <img class="logo" onclick="gotoUrl()" src="logo.png" alt="PRP" />
+            <ul class="nav-links" style="display:flex;gap:8px;">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="wasted.html">Wasted Seats</a></li>
+              <li><a href="review.html">Training Reviews</a></li>
+              <li><a href="cutoff.html">Cutoff Merits</a></li>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="/prp-site/2025/index.html">Gazette</a></li>
+              <li><a href="prev.html">Prev Lists</a></li>
+            </ul>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="color:var(--muted); font-weight:700;">Updated: Official Gazette</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Primary notification -->
+      <div id="notif" class="notice-card notice-info" role="region" aria-live="polite" aria-atomic="true">
+  <div class="notice-carousel" id="notice-carousel" tabindex="0" aria-label="Page notices">
+    <!-- slides rendered by JS -->
+  </div>
+
+  <div class="notice-side" id="notice-side" aria-hidden="false">
+    <div class="notice-controls" id="notice-controls" aria-hidden="false">
+      <button id="notice-prev" aria-label="Previous notice">◀</button>
+      <button id="notice-next" aria-label="Next notice">▶</button>
+    </div>
+
+    <div class="notice-dots" id="notice-dots" aria-hidden="false"></div>
+  </div>
+
+  <div class="notice-progress" id="notice-progress" aria-hidden="true">
+    <div class="bar" id="notice-progress-bar" style="width:0%"></div>
+  </div>
 </div>
-      <div class="filters">
-        <select
-          onchange="updateList(event);"
-          class="filter-item"
-          name="quota"
-          id="program"
-        >
-          <option value="" disabled selected>Program</option>
-        </select>
-        <select
-          onchange="updateList(event);"
-          class="filter-item"
-          name="speciality"
-          id="quota"
-        >
-          <option value="" selected>Quota</option>
-        </select>
-        <select
-          onchange="updateList(event);"
-          class="filter-item"
-          name="quota"
-          id="speciality"
-        >
-          <option value="" selected>Speciality</option>
-        </select>
-        <select
-          onchange="updateList(event);"
-          class="filter-item"
-          name="quota"
-          id="hospital"
-        >
-          <option value="" elected>Hospital</option>
-        </select>
+
+      <!-- Top area: stats and helper/tools -->
+      <div class="top-grid">
+        <!-- left: stats -->
+        <div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div id="FCPS" class="stat-number">—</div>
+              <div class="stat-desc">FCPS</div>
+              <div class="stat-correct" id="FCPS-correct">—</div>
+            </div>
+            <div class="stat-card">
+              <div id="MS" class="stat-number">—</div>
+              <div class="stat-desc">MS</div>
+              <div class="stat-correct" id="MS-correct">—</div>
+            </div>
+            <div class="stat-card">
+              <div id="MD" class="stat-number">—</div>
+              <div class="stat-desc">MD</div>
+              <div class="stat-correct" id="MD-correct">—</div>
+            </div>
+          </div>
+
+          <!-- controls + table headline -->
+          <div class="controls" style="margin-top:14px;">
+            <div style="min-width:320px; display:flex; gap:10px; align-items:center;">
+              <input id="pmdc-input" class="search-input search-input-sm" type="text" placeholder="🔎 Enter PMDC Number" onkeydown="if(event.key==='Enter'){getCandidateMerit();}" />
+              <button class="btn" onclick="getCandidateMerit()">Search</button>
+            </div>
+
+            <div style="flex:1;">
+              <div class="filters">
+                <select onchange="updateList(event);" class="filter-item" id="program"><option value="" disabled selected>Program</option></select>
+                <select onchange="updateList(event);" class="filter-item" id="quota"><option value="" selected>Quota</option></select>
+                <select onchange="updateList(event);" class="filter-item" id="speciality"><option value="" selected>Speciality</option></select>
+                <select onchange="updateList(event);" class="filter-item" id="hospital"><option value="" selected>Hospital</option></select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right: helper card with tabs -->
+        <div class="card">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+            <div style="font-weight:800; color:var(--accent);">Tools</div>
+            <div style="color:var(--muted); font-weight:700; font-size:0.95rem;" id="helper-status">Ready</div>
+          </div>
+
+          <div class="tabs" style="margin-top:12px;">
+            <button class="tabbtn active" data-tab="search-tab">PMDC Search</button>
+            <button class="tabbtn" data-tab="near-tab">Near-merit</button>
+            <button class="tabbtn" data-tab="about-tab">About</button>
+          </div>
+
+          <div id="search-tab" class="tabpanel active">
+            <div class="search-row">
+              <input id="pmdc-input-2" class="search-input" placeholder="Enter PMDC number" onkeydown="if(event.key==='Enter'){document.getElementById('pmdc-input').value=this.value; getCandidateMerit();}" />
+              <button class="btn" onclick="document.getElementById('pmdc-input').value=document.getElementById('pmdc-input-2').value; getCandidateMerit();">Go</button>
+            </div>
+            <div style="color:var(--muted); font-size:0.95rem;">Enter a PMDC number and press Enter or Go to jump to the candidate page.</div>
+          </div>
+
+          <div id="near-tab" class="tabpanel">
+            <div style="display:flex; gap:8px; align-items:center; margin-bottom:8px;">
+              <input id="merit-input" type="number" placeholder="Your merit (e.g. 31.2)" class="search-input" />
+              <input id="merit-threshold" type="number" step="0.1" value="3" style="width:92px;" class="search-input" />
+            </div>
+            <div style="display:flex; gap:8px;">
+              <select id="near-speciality" class="filter-item"><option value="">Any Speciality</option></select>
+              <select id="near-hospital" class="filter-item"><option value="">Any Hospital</option></select>
+            </div>
+            <div style="margin-top:10px;"><button class="btn" onclick="showNearMeritMatches()">Show Matches</button></div>
+            <div id="near-results" style="margin-top:10px; color:var(--muted); font-size:0.95rem;"></div>
+          </div>
+
+          <div id="about-tab" class="tabpanel">
+            <div style="color:var(--muted); font-size:0.95rem;">
+              The site compares unofficial lists with the official gazette. Unofficial lists were pulled from PRP backend and were <b>not scrutinized</b>. Always consult the official gazette for final results. Transparency and accuracy are core goals.
+            </div>
+          </div>
+        </div>
       </div>
-      <p id="headline"> No Filter selected.</p>
-      <table class="stat-table" style="width: 100%" id="statTable">
-        <thead>
-          <tr>
-            <th class="linkable">PMDC Number</th>
-            <th >Name</th>
-            <th>Quota</th>
-            <th class="linkable">Speciality</th>
-            <th class="linkable">Hospital</th>
-            <th>Aggregate</th>
-            <th>Preference No.</th>
-            <!--<th>Next Candidate in Line</th>--->
-          </tr>
-        </thead>
-        <tbody id="dataRows"></tbody>
-      </table>
-      <br>
-     
-<br>
-<!-- begin wwww.htmlcommentbox.com -->
-<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+
+      <!-- Table section -->
+      <div class="table-card">
+        <p id="headline" class="headline">No Filter selected.</p>
+        <table class="stat-table" style="width: 100%" id="statTable">
+          <thead>
+            <tr>
+              <th>PMDC Number</th>
+              <th>Name</th>
+              <th>Quota</th>
+              <th>Speciality</th>
+              <th>Hospital</th>
+              <th>Aggregate</th>
+              <th>Preference No.</th>
+            </tr>
+          </thead>
+          <tbody id="dataRows"></tbody>
+        </table>
+
+        <div id="nonJoinNotif" style="display:none; margin-top:12px;"></div>
+      </div>
+
+      <!-- Comments + footer -->
+      <div style="margin-top:18px;">
+        <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24mzyYuuZBe1GhURDyiqYE4%2F"+"&opts=16798&num=10&ts=1736005452841");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
 
+      </div>
+
       <div class="footer">
-        <span>Made with 💓 in <strong>HTML</strong>  &  <strong>JS</strong> by <img src="github.png">reko-beep</span>
+        Made with ❤ • PRP Statistics — <a href="https://prpdatastat.github.io/prp-site/" target="_blank">main page</a>
       </div>
     </div>
-  </body>
-  
 
-  <script>
+    <!-- Small page script: tabs, helper status and auto-populate near filters -->
+    <script>
+      // Tabs
+      document.querySelectorAll('.tabbtn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.tabbtn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          document.querySelectorAll('.tabpanel').forEach(p => p.classList.remove('active'));
+          document.getElementById(btn.dataset.tab).classList.add('active');
+        });
+      });
+
+      // Update helper-status when filters change
+      function setHelperStatus(text) {
+        const el = document.getElementById('helper-status'); if (el) el.textContent = text;
+        const helper = document.querySelector('.card'); helper && helper.animate([{ transform: 'translateY(-6px)' }, { transform: 'translateY(0)' }], { duration: 360 });
+      }
+
+      // populate near-tab selects with existing options if available
+      function populateNearFilters() {
+        try {
+          const specs = getOptions('speciality') || [];
+          const hospitals = getOptions('hospital') || [];
+          const sp = document.getElementById('near-speciality');
+          const hp = document.getElementById('near-hospital');
+          specs.forEach(s => sp.insertAdjacentHTML('beforeend', `<option value="${s}">${s}</option>`));
+          hospitals.forEach(h => hp.insertAdjacentHTML('beforeend', `<option value="${h}">${h}</option>`));
+        } catch (e) {}
+      }
+      populateNearFilters();
+
+      // Simple helper function called by existing logic when filters change
+      (function wireFiltersForStatus() {
+        ['program','quota','speciality','hospital'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.addEventListener('change', (e) => {
+            setHelperStatus(`Filtered by ${e.target.id}: ${e.target.value || 'All'}`);
+            // allow existing updateList() to run as it already does
+          });
+        });
+      })();
+
+      // Allow pressing Enter in the small PMDC input to copy to main search and navigate
+      document.getElementById('pmdc-input-2').addEventListener('keydown', function (e) { if (e.key === 'Enter') { document.getElementById('pmdc-input').value = this.value; getCandidateMerit(); } });
+
+      // show near merit placeholder (connects to your existing showNearMeritMatches)
+      function showNearMeritMatches() {
+        const m = document.getElementById('merit-input').value;
+        if (!m) { document.getElementById('near-results').textContent = 'Enter your merit first.'; return; }
+        document.getElementById('near-results').textContent = 'Searching...';
+        // call existing function if available
+        if (typeof showNearMeritMatches === 'function' && showNearMeritMatches !== arguments.callee) {
+          return showNearMeritMatches();
+        }
+        // otherwise show placeholder
+        setTimeout(()=> document.getElementById('near-results').textContent = 'No matches (placeholder).', 600);
+      }
+    </script>
+
+ <script>
     const default_filter = {
       program: "FCPS",
       quota: "",
@@ -374,146 +958,8 @@ You must provide either a threshold or a filter to generate meaningful results. 
       MD: mdMerit,
     };
     const columnParams = ['pmdcNo', 'name', 'quotaName', 'specialityName', 'hospitalName']
-    const joiningCache = {}; // Cache joining statuses
-
-function wait(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function getJoiningSafe(applicantId, retries = 3) {
-  if (joiningCache[applicantId]) return joiningCache[applicantId];
-
-  for (let i = 0; i < retries; i++) {
-    try {
-      const res = await $.ajax({
-        url: `https://prp-api.vercel.app/joining/${applicantId}/`,
-        method: 'GET',
-      });
-      joiningCache[applicantId] = res;
-      return res;
-    } catch (err) {
-      if (i < retries - 1) {
-        await wait(200); // retry delay
-      } else {
-        console.warn(`❌ API failed for ${applicantId} after ${retries} tries`);
-        return undefined; // treat as not joined
-      }
-    }
-  }
-}
-
-async function nonJoinersNotice() {
-  const table = $('#statTable').DataTable();
-  const pageRows = table.rows({ page: 'current' }).nodes();
-  const container = document.getElementById('nonJoinNotif');
-  container.innerHTML = '';
-
-  let nonJoinerCount = 0;
-  const itemWrapper = document.createElement('div');
-  itemWrapper.style.display = 'flex';
-  itemWrapper.style.flexWrap = 'wrap';
-  itemWrapper.style.gap = '0.6em';
-  itemWrapper.style.alignItems = 'center';
-
-  const tasks = [];
-
-  for (let i = 0; i < pageRows.length; i++) {
-    const $row = $(pageRows[i]);
-
-    const task = async () => {
-      await wait(i * 100); // Stagger requests
-
-      const statusCell = $row.find('.consentstatusstyle');
-      const idAttr = statusCell.attr('id');
-      if (!idAttr) return;
-
-      const applicantId = idAttr.split('-')[1];
-
-      const joiningStatus = await getJoiningSafe(applicantId);
-
-      const div = document.createElement('div');
-      div.innerHTML = joiningStatus || '';
-      const plainStatus = (div.textContent || div.innerText || '').trim().toLowerCase();
-
-      console.log(`Applicant ${applicantId}: "${plainStatus}"`);
-
-      if (plainStatus !== 'joined') {
-        nonJoinerCount++;
-
-        const applicantName = $row.find('td:nth-child(2)').text().trim();
-        const quota = $row.find('td:nth-child(3)').text().trim();
-        const speciality = $row.find('td:nth-child(4)').text().trim();
-        const hospital = $row.find('td:nth-child(5)').text().trim();
-
-        const block = document.createElement('span');
-        block.className = 'nonjoin-item';
-        block.setAttribute('data-tippy-content',
-          `🚫 Seat wasted at:<br><b>${speciality}</b>, <b>${hospital}</b><br>Quota: ${quota}<br><i>${applicantName}</i>`
-        );
-        block.innerHTML = `<b>❌ ${applicantId}</b>`;
-        itemWrapper.appendChild(block);
-      }
-    };
-
-    tasks.push(task());
-  }
-
-  await Promise.all(tasks);
-
-  if (nonJoinerCount > 0) {
-    const heading = document.createElement('div');
-    heading.innerHTML = `⚠️ <b>${nonJoinerCount}</b> seat${nonJoinerCount > 1 ? 's' : ''} wasted on this page`;
-    heading.style.marginBottom = '0.5em';
-    heading.style.color = '#ffadad';
-    heading.style.fontWeight = 'bold';
-    heading.style.fontSize = '1em';
-    container.appendChild(heading);
-    container.appendChild(itemWrapper);
-    container.style.display = 'block';
-  } else {
-    container.style.display = 'none';
-  }
-
-  tippy('[data-tippy-content]', {
-    allowHTML: true,
-    placement: 'top',
-    theme: 'light-border',
-    interactive: false,
-    animation: 'scale-subtle',
-    delay: [100, 0],
-  });
-}
-
-
-
     jQuery(document).ready(function () {
-       // Prevent duplicate box rendering
-  if ($("#hopeBoxContainer .hope-box").length > 0) return;
-
-  $.getJSON("hope-messages.json", function (data) {
-    const messages = data.messages || [];
-    const titles = data.titles || ["You're Not Alone"];
-
-    if (messages.length === 0) return;
-
-    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-    const randomTitle = titles[Math.floor(Math.random() * titles.length)];
-    console.log(randomMessage, randomTitle);
-    const boxHtml = `
-    <div class="hope-title neon-title font-bold mb-3 flex items-center gap-2 text-yellow-900 text-xl tracking-wide">🌟 ${randomTitle}</div>
-    <div class="hope-box neon-box text-sm text-yellow-900 bg-yellow-50 border border-dashed border-yellow-400 p-3 rounded-md">
-      ${randomMessage}
-    </div>
-  
-`;
-
-
-    // ✅ CORRECT: appending as HTML
-    $("#hopeBoxContainer").append(boxHtml);
-  });
-  
-  
-  $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
+      $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
     
       jQuery("#statTable").DataTable({
         order: [[5, 'desc']],
@@ -528,11 +974,8 @@ async function nonJoinersNotice() {
                 {
                     extend: 'pdfHtml5',
                     text: 'Download PDF',
-                    title : 'officialFirstRoundMeritList',
-                    filename : function(){
-                     default_filter.program + 'officialFirstRoundMeritList'
-                    },
-
+                    title : 'estimatedMeritListJune2025 ',
+               
                     customize: function (doc) {
                         
                         let table = doc.content[1].table.body;
@@ -567,7 +1010,7 @@ async function nonJoinersNotice() {
           { width: "10%" },
           { width: "20%" },
           { width: "5%" },
-          { width: "5%" }
+          { width: "5%" },
         ],
       });
       changeMeritList();
@@ -582,31 +1025,27 @@ async function nonJoinersNotice() {
         default_filter.speciality,
         default_filter.hospital
       );
+      /*
       let seats = getSeatsOccupied(meritData[default_filter.program],default_filter.program,  default_filter.quota, default_filter.hospital, default_filter.speciality);
       for (k in seats) {        
         const ele = document.getElementById(k).innerHTML = seats[k]
-      }
+      }*/
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in merit) {
         jQuery("#statTable")
           .DataTable()
           .row.add([
-  merit[cand].pmdcNo,
-  merit[cand].nameFull,
-  merit[cand].quotaName,
-  merit[cand].specialityName,
-  merit[cand].hospitalName,
-  merit[cand].marksTotal,
-  "Pref No." + merit[cand].preferenceNo + "<br><span class='check-consent' onmousedown='checkJoining(" + merit[cand].applicantId + ")'>Check Joining</span><br><span class='consentstatusstyle' id='status-" + merit[cand].applicantId + "'></span>"
-  //`<span data-count=0 class='next-candidate' onclick='showNextCandidate(this)'>Show Next Candidate</span>`
-
-]);
+            merit[cand].pmdcNo,
+            merit[cand].nameFull,
+            merit[cand].quotaName,
+            merit[cand].specialityName,
+            merit[cand].hospitalName,
+            merit[cand].marksTotal,
+            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkConsent("+merit[cand].applicantId+")'>Check Consent</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
+          ]);
       }
       jQuery("#statTable").DataTable().draw();
     }
-    $('#statTable').on('draw.dt', function () {
-  nonJoinersNotice();
-});
       
       $('#statTable').on('click', 'tbody td', function() {   
         let param =   columnParams[this._DT_CellIndex.column];
@@ -622,11 +1061,7 @@ async function nonJoinersNotice() {
         window.location.href = paths[param]
         }
       }
-  );
-
-
-
-
+  ) 
     function getCandidateMerit() {
       let pmdcNoValue = document.getElementById('pmdc-input');
       localStorage.setItem('pmdcNo', pmdcNoValue.value);
@@ -651,7 +1086,7 @@ async function nonJoinersNotice() {
     const filters = document.getElementsByTagName("select");
     console.log(filters);
     for (filter in filters) {
-      let options = getOptions(String(filters[filter].id).replace('filter-', '') || filters[filter].id);
+      let options = getOptions(filters[filter].id);
       for (opt in options) {
         filters[filter].innerHTML +=
           "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
@@ -668,8 +1103,7 @@ async function nonJoinersNotice() {
     }
     for (program in accuracyMerit) {
   const ele = document.getElementById(program);
-  console.log(ele, program, accuracyMerit[program].accuracy);
-  ele.innerHTML = String(accuracyMerit[program].accuracy) +"%"; // Show total candidates
+  ele.innerHTML = accuracyMerit[program].accuracy; // Show total candidates
 
   // Calculate and show correctly placed candidates
   const correct = accuracyMerit[program].correctCandidates;
@@ -678,57 +1112,7 @@ async function nonJoinersNotice() {
     correctEle.innerHTML = `<span style="color:#5cdb71;font-weight:600;">Correctly placed Candidates: ${correct}</span>`;
   }
 }
-    async function showNextCandidate(elem) {
-    const $btn = $(this);
-    let count = (parseInt($btn.data('count')) || 0) + 1;
-    const table = $('#statTable').DataTable();
-    const row = $(elem).closest('tr');
-    const rowIndex = table.row(row).index(); // always correct
-    const rowData = table.row(rowIndex).data(); // Current row
-
-  // Reconstruct the selectedCandidate info
-  const selectedCandidate = {
-    nameFull: rowData[1], // name
-    marksTotal: parseFloat(rowData[5]) // marks
-  };
-
-  const program = default_filter.program;
-  const quota = rowData[2]; // quota
-  const speciality = rowData[3];
-  const hospital = rowData[4];
-  console.log('Selected Candidate:', selectedCandidate, 'Program:', program, 'Quota:', quota, 'Speciality:', speciality, 'Hospital:', hospital);
-  // Call your existing function to get next candidate
-  console.log(selectedCandidate)
-  
-  const next = await nextCandidateInLine(selectedCandidate, program,  quota, speciality, hospital);
-
-  if (!next) {
-    alert("No next candidate found.");
-    return;
-  }
-  console.log(next, 'next candidate');
-  // Construct updated row data
-  const updatedRow = [
-    next.pmdcNo,
-    next.nameFull,
-    next.quotaName,
-    next.specialityName,
-    next.hospitalName,
-    next.marksTotal,
-    `Pref No.${next.preferenceNo}<br>
-      <span class='check-consent' onmousedown='checkConsent(${next.applicantId})'>Check Consent</span><br>
-      <span class='consentstatusstyle' id='status-${next.applicantId}'></span>`,
-    `<span data-count='${count}' class='next-candidate' onclick='showNextCandidate(this)'>Show Next Candidate</span>`
-  ];
-
-  // Update the row
-  table.row(rowIndex).data(updatedRow).draw(false);
-
-  $(row).addClass('row-highlight');
-
- 
-}
-
+    
     async function checkConsent(applicantId) {
       let ele = document.getElementById('status-'+applicantId.toString())
       console.log(ele, 'status-'+applicantId.toString())
@@ -780,6 +1164,433 @@ function gotoComment(){
   ele.scrollIntoView();
 }
   </script>
- 
-  </style>
+  <script>
+/* ---------- Build accessible custom selects (keeps native select for form & compatibility) ---------- */
+(function () {
+  const SELECT_SELECTOR = 'select.filter-item';
+
+  function createCustomSelect(select) {
+    if (select.dataset.customized === 'true') return;
+    // wrap and hide native select
+    const wrapper = document.createElement('div');
+    wrapper.className = 'select-wrapper';
+    select.parentNode.insertBefore(wrapper, select);
+    wrapper.appendChild(select);
+    select.classList.add('native-hidden');
+    select.dataset.customized = 'true';
+
+    // create custom shell
+    const cs = document.createElement('div');
+    cs.className = 'custom-select';
+    cs.setAttribute('role', 'combobox');
+    cs.setAttribute('aria-haspopup', 'listbox');
+    cs.setAttribute('tabindex', 0);
+
+    const trigger = document.createElement('div');
+    trigger.className = 'cs-trigger';
+    trigger.setAttribute('tabindex', 0);
+
+    const label = document.createElement('div');
+    label.className = 'cs-label cs-placeholder';
+    label.textContent = select.options[select.selectedIndex] ? select.options[select.selectedIndex].text : select.getAttribute('placeholder') || select.id;
+
+    const caret = document.createElement('div');
+    caret.className = 'cs-caret';
+    caret.innerHTML = '&#9662;';
+
+    trigger.appendChild(label);
+    trigger.appendChild(caret);
+
+    const opts = document.createElement('div');
+    opts.className = 'cs-options';
+    opts.setAttribute('role', 'listbox');
+    opts.setAttribute('tabindex', -1);
+
+    // populate options (skipping disabled placeholder-only options)
+    function populateOptions() {
+      opts.innerHTML = '';
+      const options = Array.from(select.options).filter(o => o.value !== '' || o.selected);
+      if (options.length === 0) {
+        const empty = document.createElement('div');
+        empty.className = 'cs-empty';
+        empty.textContent = 'No options';
+        opts.appendChild(empty);
+        return;
+      }
+      options.forEach((o, idx) => {
+        const item = document.createElement('div');
+        item.className = 'cs-option';
+        item.setAttribute('role', 'option');
+        item.dataset.value = o.value;
+        item.innerText = o.text;
+        if (o.disabled) item.style.opacity = 0.6;
+        if (o.selected) item.setAttribute('aria-selected', 'true');
+        item.addEventListener('click', (ev) => {
+          select.value = o.value;
+          // trigger change on native select so existing handlers run
+          select.dispatchEvent(new Event('change', { bubbles: true }));
+          label.textContent = o.text;
+          closeAll();
+          trigger.focus();
+        });
+        item.addEventListener('mouseenter', () => {
+          setFocused(item);
+        });
+        opts.appendChild(item);
+      });
+    }
+
+    cs.appendChild(trigger);
+    cs.appendChild(opts);
+    wrapper.appendChild(cs);
+
+    // keyboard navigation
+    let focusedIndex = -1;
+    function setFocused(el) {
+      const all = opts.querySelectorAll('.cs-option');
+      all.forEach(a => a.classList.remove('focused'));
+      if (!el) { focusedIndex = -1; return; }
+      el.classList.add('focused');
+      focusedIndex = Array.from(all).indexOf(el);
+      // ensure visible
+      el.scrollIntoView({ block: 'nearest' });
+    }
+
+    function open() {
+      cs.classList.add('open');
+      populateOptions();
+      document.addEventListener('click', outsideClose);
+    }
+    function closeAll() { close(); }
+    function close() {
+      cs.classList.remove('open');
+      focusedIndex = -1;
+      setFocused(null);
+      document.removeEventListener('click', outsideClose);
+    }
+    function outsideClose(e) {
+      if (!cs.contains(e.target)) close();
+    }
+
+    // clicking trigger opens options
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (cs.classList.contains('open')) close(); else open();
+    });
+
+    // keyboard events on trigger
+    trigger.addEventListener('keydown', (e) => {
+      const items = opts.querySelectorAll('.cs-option');
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (!cs.classList.contains('open')) { open(); return; }
+        focusedIndex = Math.min(items.length - 1, (focusedIndex === -1 ? 0 : focusedIndex + 1));
+        setFocused(items[focusedIndex]);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (!cs.classList.contains('open')) { open(); return; }
+        focusedIndex = Math.max(0, (focusedIndex === -1 ? items.length - 1 : focusedIndex - 1));
+        setFocused(items[focusedIndex]);
+      } else if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        if (!cs.classList.contains('open')) { open(); } else {
+          const items = opts.querySelectorAll('.cs-option');
+          if (items[focusedIndex]) items[focusedIndex].click();
+        }
+      } else if (e.key === 'Escape') {
+        close();
+      }
+    });
+
+    // update label when native select changes (for external updates)
+    const mo = new MutationObserver(() => {
+      const opt = select.options[select.selectedIndex];
+      if (opt) label.textContent = opt.text;
+      populateOptions();
+    });
+    mo.observe(select, { childList: true, subtree: true, attributes: true, characterData: true });
+
+    // initial populate
+    populateOptions();
+  }
+
+  function setFocused(el) {
+    if (!el) return;
+    const wrapper = el.closest('.cs-options');
+    if (!wrapper) return;
+    wrapper.querySelectorAll('.cs-option').forEach(a => a.classList.remove('focused'));
+    el.classList.add('focused');
+  }
+
+  function closeAll() {
+    document.querySelectorAll('.custom-select.open').forEach(cs => cs.classList.remove('open'));
+  }
+
+  // build for existing and future selects
+  function buildAll() {
+    document.querySelectorAll(SELECT_SELECTOR).forEach(s => createCustomSelect(s));
+  }
+
+  // observe DOM for newly added selects (since options are populated dynamically)
+  const observer = new MutationObserver((mutations) => {
+    for (const m of mutations) {
+      m.addedNodes && m.addedNodes.forEach(node => {
+        if (node.nodeType === 1 && node.matches && node.matches(SELECT_SELECTOR)) createCustomSelect(node);
+        else if (node.querySelectorAll) {
+          node.querySelectorAll && node.querySelectorAll(SELECT_SELECTOR).forEach(s => createCustomSelect(s));
+        }
+      });
+      // if options changed on an existing select, MutationObserver inside createCustomSelect updates it
+    }
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+
+  // close on outside click and ESC at document level
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.custom-select')) closeAll();
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAll(); });
+
+  // run on DOM ready (and again after a short delay to catch dynamic population)
+  document.addEventListener('DOMContentLoaded', () => {
+    buildAll();
+    setTimeout(buildAll, 250); // catch late-populated options
+  });
+
+  // also expose for manual call if needed
+  window.rebuildCustomFilterSelects = buildAll;
+})();
+</script>
+<script>
+const PAGE_NOTICES = [
+  {
+    badge: 'WIP',
+    title: 'Site Redesign in Progress',
+    subtitle: 'Note some things might not work or throw error, might still be in old design.',
+    extra: '...Stay tuned for the new look!',
+    ctaText: 'Home',
+    ctaHref: '/prp-site/2025/index.html',
+    tone: 'info' // 'info'|'warn'|'success'
+  },
+  {
+    badge: 'Unofficial',
+    title: 'Unofficial Potential Publication',
+    subtitle: 'We do not currently plan to publish further unofficial merit lists. However, because some colleagues and close associates have applied for the recent induction, we may attempt to publish an unofficial list. This is not certain due to time constraints and our duty hours.',
+    extra: 'We aim to decide by Monday; if we cannot, an unofficial list may not be published afterward.',
+    ctaText: 'WIP',
+    ctaHref: '/prp-site/2025/index.html',
+    tone: 'warn'
+  }
+];
+
+const NOTICE_INTERVAL = 8000; // ms, change if you want faster/slower rotation
+
+const NoticeSlideshow = (function () {
+  let notices = [];
+  let idx = 0;
+  let timer = null;
+  let interval = NOTICE_INTERVAL;
+  const carousel = document.getElementById('notice-carousel');
+  const dotsEl = document.getElementById('notice-dots');
+  const prevBtn = document.getElementById('notice-prev');
+  const nextBtn = document.getElementById('notice-next');
+  const controls = document.getElementById('notice-controls');
+  const progressBar = document.getElementById('notice-progress-bar');
+
+  function buildSlides(arr) {
+    notices = Array.isArray(arr) ? arr.slice() : [];
+    carousel.innerHTML = '';
+    dotsEl.innerHTML = '';
+
+    if (!notices.length) { carousel.innerHTML = '<div class="notice-slide active"><div class="notice-content"><div class="notice-left"><div class="notice-badge">Info</div></div><div class="notice-body"><div class="notice-title">No notices</div><div class="notice-sub">There are no page notices at the moment.</div></div></div></div>'; controls.classList.add('hidden'); dotsEl.classList.add('hidden'); return; }
+
+    notices.forEach((n, i) => {
+      const slide = document.createElement('div');
+      slide.className = 'notice-slide';
+      slide.dataset.index = i;
+      slide.setAttribute('role', 'group');
+      slide.setAttribute('aria-roledescription', 'slide');
+
+      // Build slide DOM (avoid template literal innerHTML to prevent backtick/escape issues)
+      const content = document.createElement('div');
+      content.className = 'notice-content';
+
+      const left = document.createElement('div');
+      left.className = 'notice-left';
+      const badge = document.createElement('div');
+      badge.className = 'notice-badge';
+      badge.style.borderLeft = '0';
+      badge.style.padding = '8px 10px';
+      badge.style.fontWeight = '800';
+      badge.style.color = (n.tone === 'warn') ? 'var(--accent-2)' : 'var(--accent)';
+      badge.textContent = n.badge || '';
+      left.appendChild(badge);
+
+      const body = document.createElement('div');
+      body.className = 'notice-body';
+      const title = document.createElement('div');
+      title.className = 'notice-title';
+      title.textContent = n.title || '';
+      const sub = document.createElement('div');
+      sub.className = 'notice-sub';
+      sub.style.marginTop = '6px';
+      // allow light HTML in subtitle/extra if present
+      sub.innerHTML = n.subtitle || '';
+      body.appendChild(title);
+      body.appendChild(sub);
+      if (n.extra) {
+        const extra = document.createElement('div');
+        extra.className = 'notice-extra';
+        extra.textContent = n.extra;
+        body.appendChild(extra);
+      }
+      if (n.ctaText) {
+        const cwrap = document.createElement('div');
+        cwrap.style.marginTop = '10px';
+        const btn = document.createElement('button');
+        btn.className = 'notice-btn small';
+        btn.dataset.href = n.ctaHref || '';
+        btn.dataset.index = i;
+        btn.setAttribute('aria-label', 'Open notice link');
+        btn.style.cssText = 'background:linear-gradient(90deg,var(--accent),#2fc7b8); color:#071017; padding:6px 10px; border-radius:8px; font-weight:800; border:none; cursor:pointer';
+        btn.textContent = n.ctaText;
+        btn.addEventListener('click', () => { if (btn.dataset.href) window.location.href = btn.dataset.href; });
+        cwrap.appendChild(btn);
+        body.appendChild(cwrap);
+      }
+
+      content.appendChild(left);
+      content.appendChild(body);
+      slide.appendChild(content);
+       carousel.appendChild(slide);
+
+      // dot (kept same)
+      const dot = document.createElement('button');
+      dot.className = 'notice-dot';
+      dot.setAttribute('aria-label', `Show notice ${i + 1}`);
+      dot.dataset.index = i;
+      dot.addEventListener('click', () => showNotice(i, true));
+      dotsEl.appendChild(dot);
+    });
+
+    // show first slide
+    idx = 0;
+    showNotice(0);
+    attachCTAs();
+    controls.classList.toggle('hidden', notices.length <= 1);
+    dotsEl.classList.toggle('hidden', notices.length <= 1);
+  }
+
+  function attachCTAs() {
+    carousel.querySelectorAll('.notice-btn').forEach(b => {
+      b.addEventListener('click', (e) => {
+        const href = b.dataset.href;
+        if (href) window.location.href = href;
+      });
+    });
+  }
+
+  function showNotice(i, userTriggered = false) {
+    const slides = carousel.querySelectorAll('.notice-slide');
+    slides.forEach(s => s.classList.remove('active'));
+    const dots = dotsEl.querySelectorAll('.notice-dot');
+    dots.forEach(d => d.classList.remove('active'));
+    const slide = slides[i];
+    if (slide) slide.classList.add('active');
+    if (dots[i]) dots[i].classList.add('active');
+    idx = i;
+    resetProgress();
+    if (userTriggered) { restartAutoplay(); }
+    // set tone class on outer container
+    const tone = (notices[i] && notices[i].tone) || 'info';
+    const wrap = document.getElementById('notif');
+    wrap.classList.remove('notice-info', 'notice-warn', 'notice-success');
+    wrap.classList.add('notice-' + (tone || 'info'));
+  }
+
+  function next() { showNotice((idx + 1) % notices.length, false); }
+  function prev() { showNotice((idx - 1 + notices.length) % notices.length, false); }
+
+  function startAutoplay() {
+    clearTimer();
+    if (notices.length <= 1) return;
+    progressBar.style.transition = `none`;
+    progressBar.style.width = '0%';
+    // allow CSS reflow before animation
+    requestAnimationFrame(() => {
+      progressBar.style.transition = `width ${interval}ms linear`;
+      progressBar.style.width = '100%';
+    });
+    timer = setTimeout(() => {
+      next();
+      startAutoplay();
+    }, interval);
+  }
+
+  function resetProgress() {
+    progressBar.style.transition = 'none';
+    progressBar.style.width = '0%';
+    // restart progress
+    requestAnimationFrame(() => {
+      progressBar.style.transition = `width ${interval}ms linear`;
+      progressBar.style.width = '100%';
+    });
+  }
+
+  function pause() { clearTimer(); progressBar.style.transition = 'none'; }
+  function resume() { startAutoplay(); }
+
+  function clearTimer() { if (timer) { clearTimeout(timer); timer = null; } }
+
+  function restartAutoplay() { clearTimer(); startAutoplay(); }
+
+  function wireUI() {
+    nextBtn.addEventListener('click', () => { next(); restartAutoplay(); });
+    prevBtn.addEventListener('click', () => { prev(); restartAutoplay(); });
+
+    // pause on hover/focus for accessibility
+    const wrap = document.getElementById('notif');
+    ['mouseenter','focusin'].forEach(ev => wrap.addEventListener(ev, pause));
+    ['mouseleave','focusout'].forEach(ev => wrap.addEventListener(ev, resume));
+
+    // keyboard navigation: left/right arrows
+    wrap.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { next(); restartAutoplay(); }
+      if (e.key === 'ArrowLeft') { prev(); restartAutoplay(); }
+    });
+  }
+
+  function setNotices(arr, opts = {}) {
+    if (!Array.isArray(arr)) arr = [arr];
+    notices = arr.slice();
+    interval = opts.interval || NOTICE_INTERVAL;
+    buildSlides(notices);
+    startAutoplay();
+  }
+
+  // public API
+  return {
+    init: function (arr, opts = {}) { setNotices(arr || [], opts); wireUI(); },
+    set: setNotices,
+    next, prev, pause, resume, getCurrent: () => idx
+  };
+})();
+
+// Init slideshow on DOM ready using PAGE_NOTICES; keeps backward-compatible single PAGE_NOTICE too
+document.addEventListener('DOMContentLoaded', () => {
+  NoticeSlideshow.init(PAGE_NOTICES);
+});
+
+// Backwards-compatible helper to set a single page notice
+function setPageNotice(newCfg) {
+  // accept either single object or array
+  if (Array.isArray(newCfg)) NoticeSlideshow.set(newCfg);
+  else NoticeSlideshow.set([newCfg]);
+}
+
+// convenience: programmatic update of the notices array
+function setPageNotices(noticesArray, opts = {}) {
+  NoticeSlideshow.set(noticesArray, opts);
+}
+</script></body>
 </html>

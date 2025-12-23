@@ -7,14 +7,22 @@
     <title>PRP Statistics</title>
 
     <!-- libs (kept as before) -->
+
+    <!-- libs (kept as before) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sync-fetch"></script>
+    <script id="data" src="data.js"></script>
     <script id="data" src="data.js"></script>
     <script src="schedule.js"></script>
     <script src="nil.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="nil.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <link
+      href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
+      rel="stylesheet"
+    />
       href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.0.8/r-3.0.2/sl-2.0.3/datatables.min.css"
       rel="stylesheet"
     />
@@ -190,12 +198,40 @@
       <!-- Comments + footer -->
       <div style="margin-top:18px;">
         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+
+      <!-- Table section -->
+      <div class="table-card">
+        <p id="headline" class="headline">No Filter selected.</p>
+        <table class="stat-table" style="width: 100%" id="statTable">
+          <thead>
+            <tr>
+              <th>PMDC Number</th>
+              <th>Name</th>
+              <th>Quota</th>
+              <th>Speciality</th>
+              <th>Hospital</th>
+              <th>Aggregate</th>
+              <th>Preference No.</th>
+            </tr>
+          </thead>
+          <tbody id="dataRows"></tbody>
+        </table>
+
+        <div id="nonJoinNotif" style="display:none; margin-top:12px;"></div>
+      </div>
+
+      <!-- Comments + footer -->
+      <div style="margin-top:18px;">
+        <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24mzyYuuZBe1GhURDyiqYE4%2F"+"&opts=16798&num=10&ts=1736005452841");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
 
       </div>
 
+      </div>
+
       <div class="footer">
+        Made with ❤ • PRP Statistics — <a href="https://prpdatastat.github.io/prp-site/" target="_blank">main page</a>
         Made with ❤ • PRP Statistics — <a href="https://prpdatastat.github.io/prp-site/" target="_blank">main page</a>
       </div>
     </div>
@@ -259,6 +295,66 @@
       }
     </script>
 
+    <!-- Small page script: tabs, helper status and auto-populate near filters -->
+    <script>
+      // Tabs
+      document.querySelectorAll('.tabbtn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.tabbtn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          document.querySelectorAll('.tabpanel').forEach(p => p.classList.remove('active'));
+          document.getElementById(btn.dataset.tab).classList.add('active');
+        });
+      });
+
+      // Update helper-status when filters change
+      function setHelperStatus(text) {
+        const el = document.getElementById('helper-status'); if (el) el.textContent = text;
+        const helper = document.querySelector('.card'); helper && helper.animate([{ transform: 'translateY(-6px)' }, { transform: 'translateY(0)' }], { duration: 360 });
+      }
+
+      // populate near-tab selects with existing options if available
+      function populateNearFilters() {
+        try {
+          const specs = getOptions('speciality') || [];
+          const hospitals = getOptions('hospital') || [];
+          const sp = document.getElementById('near-speciality');
+          const hp = document.getElementById('near-hospital');
+          specs.forEach(s => sp.insertAdjacentHTML('beforeend', `<option value="${s}">${s}</option>`));
+          hospitals.forEach(h => hp.insertAdjacentHTML('beforeend', `<option value="${h}">${h}</option>`));
+        } catch (e) {}
+      }
+      populateNearFilters();
+
+      // Simple helper function called by existing logic when filters change
+      (function wireFiltersForStatus() {
+        ['program','quota','speciality','hospital'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.addEventListener('change', (e) => {
+            setHelperStatus(`Filtered by ${e.target.id}: ${e.target.value || 'All'}`);
+            // allow existing updateList() to run as it already does
+          });
+        });
+      })();
+
+      // Allow pressing Enter in the small PMDC input to copy to main search and navigate
+      document.getElementById('pmdc-input-2').addEventListener('keydown', function (e) { if (e.key === 'Enter') { document.getElementById('pmdc-input').value = this.value; getCandidateMerit(); } });
+
+      // show near merit placeholder (connects to your existing showNearMeritMatches)
+      function showNearMeritMatches() {
+        const m = document.getElementById('merit-input').value;
+        if (!m) { document.getElementById('near-results').textContent = 'Enter your merit first.'; return; }
+        document.getElementById('near-results').textContent = 'Searching...';
+        // call existing function if available
+        if (typeof showNearMeritMatches === 'function' && showNearMeritMatches !== arguments.callee) {
+          return showNearMeritMatches();
+        }
+        // otherwise show placeholder
+        setTimeout(()=> document.getElementById('near-results').textContent = 'No matches (placeholder).', 600);
+      }
+    </script>
+
+ <script>
  <script>
     const default_filter = {
       program: "FCPS",
@@ -274,6 +370,7 @@
     const columnParams = ['pmdcNo', 'name', 'quotaName', 'specialityName', 'hospitalName']
     jQuery(document).ready(function () {
       $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
+      $('.slidertext').css({'color': 'white','font-weight': 'light', 'filter': 'drop-shadow(0px 0px 0px #107e47)', 'transition-duration': '1s'})
     
       jQuery("#statTable").DataTable({
         order: [[5, 'desc']],
@@ -288,6 +385,8 @@
                 {
                     extend: 'pdfHtml5',
                     text: 'Download PDF',
+                    title : 'estimatedMeritListJune2025 ',
+               
                     title : 'estimatedMeritListJune2025 ',
                
                     customize: function (doc) {
@@ -325,6 +424,7 @@
           { width: "20%" },
           { width: "5%" },
           { width: "5%" },
+          { width: "5%" },
         ],
       });
       changeMeritList();
@@ -340,15 +440,25 @@
         default_filter.hospital
       );
       /*
+      /*
       let seats = getSeatsOccupied(meritData[default_filter.program],default_filter.program,  default_filter.quota, default_filter.hospital, default_filter.speciality);
       for (k in seats) {        
         const ele = document.getElementById(k).innerHTML = seats[k]
+      }*/
       }*/
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in merit) {
         jQuery("#statTable")
           .DataTable()
           .row.add([
+            merit[cand].pmdcNo,
+            merit[cand].nameFull,
+            merit[cand].quotaName,
+            merit[cand].specialityName,
+            merit[cand].hospitalName,
+            merit[cand].marksTotal,
+            "Pref No."+merit[cand].preferenceNo+"<br><span class='check-consent' onmousedown='checkConsent("+merit[cand].applicantId+")'>Check Consent</span><br><span class='consentstatusstyle' id='status-"+merit[cand].applicantId.toString()+"'></span>",
+          ]);
             merit[cand].pmdcNo,
             merit[cand].nameFull,
             merit[cand].quotaName,
@@ -376,6 +486,7 @@
         }
       }
   ) 
+  ) 
     function getCandidateMerit() {
       let pmdcNoValue = document.getElementById('pmdc-input');
       localStorage.setItem('pmdcNo', pmdcNoValue.value);
@@ -401,6 +512,7 @@
     console.log(filters);
     for (filter in filters) {
       let options = getOptions(filters[filter].id);
+      let options = getOptions(filters[filter].id);
       for (opt in options) {
         filters[filter].innerHTML +=
           "<option value='" + options[opt] + "'>" + options[opt] + "</option>";
@@ -418,6 +530,7 @@
     for (program in accuracyMerit) {
   const ele = document.getElementById(program);
   ele.innerHTML = accuracyMerit[program].accuracy; // Show total candidates
+  ele.innerHTML = accuracyMerit[program].accuracy; // Show total candidates
 
   // Calculate and show correctly placed candidates
   const correct = accuracyMerit[program].correctCandidates;
@@ -426,6 +539,7 @@
     correctEle.innerHTML = `<span style="color:#5cdb71;font-weight:600;">Correctly placed Candidates: ${correct}</span>`;
   }
 }
+    
     
     async function checkConsent(applicantId) {
       let ele = document.getElementById('status-'+applicantId.toString())

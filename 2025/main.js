@@ -273,6 +273,13 @@ function getOptions(optionType) {
                 }
             }
         }
+        for (prog in fcpsMerit) {
+            for (quota in fcpsMerit[prog]) {
+                if (!result.includes(quota)) {
+                    result.push(quota)
+                }
+            }
+        }
     }
     if (optionType === 'speciality') {
         for (prog in mdMerit) {
@@ -289,6 +296,17 @@ function getOptions(optionType) {
         for (prog in msMerit) {
             for (quota in msMerit[prog]) {
                 for (specia in msMerit[prog][quota]) 
+                    {
+                        if (!result.includes(specia)) {
+                            result.push(specia)
+                        }
+                    }
+                
+            }
+        }
+        for (prog in fcpsMerit) {
+            for (quota in fcpsMerit[prog]) {
+                for (specia in fcpsMerit[prog][quota]) 
                     {
                         if (!result.includes(specia)) {
                             result.push(specia)
@@ -316,6 +334,20 @@ function getOptions(optionType) {
     for (prog in msMerit) {
         for (quota in msMerit[prog]) {
             for (specia in msMerit[prog][quota]) 
+                {
+                    for (hospital in msMerit[prog][quota][specia])
+                        {
+                    if (!result.includes(hospital)) {
+                        result.push(hospital)
+                    }
+                }
+            
+        }
+    }
+}
+for (prog in fcpsMeritMerit) {
+        for (quota in fcpsMerit[prog]) {
+            for (specia in fcpsMerit[prog][quota]) 
                 {
                     for (hospital in msMerit[prog][quota][specia])
                         {

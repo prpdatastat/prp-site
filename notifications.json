@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "type": "announcement",
+    "title": "Cutoff Dashboard Live",
+    "message": "Cutoff merits have been published for the latest intake. Use filters to refine by program, hospital, and quota.",
+    "link": "cutoff.html"
+  },
+  {
+    "id": "2",
+    "type": "urgent",
+    "title": "Round 6 Updates",
+    "message": "Official authority released Round 6 merit list — check consent and wasted seat tracker.",
+    "link": "index.html"
+  },
+  {
+    "id": "3",
+    "type": "info",
+    "title": "New: Wasted Seat Reports",
+    "message": "You can now view wasted seats by hospital & specialty in the Wasted Seats dashboard.",
+    "link": "wasted.html"
+  },
+  {
+    "id": "4",
+    "type": "fcps",
+    "title": "FCPS Gazette Added",
+    "message": "FCPS lists for July 2025 are now available in the Gazette archive.",
+    "link": "2025/index.html"
+  }
+]

@@ -389,19 +389,7 @@ h4.seats .important, .seats .important {
   border-left: none;
   box-shadow: none;
 }
-#headline {
-  margin: 2em 0 1em 0;
-  font-size: 1.45em;
-  color: #5cdb71;
-  font-weight: 600;
-  background: #181a1b;
-  padding: 0.8em 1.2em;
-  border-left: 6px solid #5cdb71;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease;
-  max-width: 680px;
-}
+
 
 .linkableunderline:hover, .info .linkableunderline:hover {
   color: #fff;

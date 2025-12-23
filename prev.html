@@ -19,6 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="site-theme.css" />
   </head>
   <body>
     <nav class="navbar main-navbar">
@@ -26,6 +27,7 @@
         <div class="logo-container">
           <img class="logo" onclick="gotoUrl()" src="logo.png" />
         </div>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" style="display:none; border:0; background:transparent; color:var(--muted); font-weight:800; font-size:1.3rem;">☰</button>
         <ul class="nav-links">
           <li><a href="index.html" >Home</a></li>
           <!--<li><a href="hospital.html">Hospitals</a></li>-->
@@ -377,4 +379,5 @@
       
     
   </script>
+  <script src="site-theme.js"></script>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Training Reviews</title>
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="site-theme.css" />
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sync-fetch"></script>
   <script src="data.js"></script>
@@ -142,14 +143,14 @@ form#reviewForm textarea {
       </label>
 
       <label>Specialty</label>
-      <select id='speciality' name="speciality" required>
+      <select id='speciality' name="speciality" required class="filter-item">
       </select>
 
       <label>Hospital</label>
-      <select id='hospital' name="hospital" required>
+      <select id='hospital' name="hospital" required class="filter-item">
       </select>
       <label>Year of Training</label>
-      <select name="year" required>
+      <select name="year" required class="filter-item">
         <option value='PGY1'>PGY1</option>       
         <option value='PGY2'>PGY2</option>        
         <option value='PGY3'>PGY3</option>        
@@ -166,13 +167,13 @@ form#reviewForm textarea {
 
     <h3 class="title">Filter Reviews</h3>
     <div class="filter-bar">
-      <select id="filterSpeciality">
+      <select id="filterSpeciality" class="filter-item">
         <option value="">All Specialties</option>
       </select>
-      <select id="filterHospital">
+      <select id="filterHospital" class="filter-item">
         <option value="">All Hospitals</option>
       </select>
-      <select id="filterYear">
+      <select id="filterYear" class="filter-item">
         <option value="">All Years</option>
        <option value='PGY1'>PGY1</option>       
         <option value='PGY2'>PGY2</option>        
@@ -257,6 +258,8 @@ form#reviewForm textarea {
     function renderReviews() {
   const container = document.getElementById("reviewsContainer");
   container.innerHTML = "";
+</script>
+<script src="site-theme.js"></script>
   const start = (currentPage - 1) * perPage;
   const pageItems = filteredIssues.slice(start, start + perPage);
 

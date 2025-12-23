@@ -1,0 +1,116 @@
+/* Compact overrides for prp-site index — keeps original file untouched */
+
+/* Navbar compact */
+.main-navbar .nav-content { height: 52px; padding: 0 1.2vw; }
+.main-navbar .logo { width: 36px; height: 36px; margin-right: 8px; }
+.main-navbar .nav-links { gap: 1vw; }
+.main-navbar .nav-links a { font-size: 0.98rem; padding: 6px 10px; border-radius: 6px; }
+
+/* Compact container */
+.main_container { padding: 16px; gap: 12px; margin-top: 16px; border-radius: 12px; }
+
+/* Compact stat-cards already applied, but add fallbacks */
+.stat-card, .counter-div { padding: 12px 14px; min-width: 140px; max-width: 260px; }
+.stat-card .stat-number { font-size: 1.6rem; }
+
+/* Compact table */
+.stat-table th, .stat-table td { padding: 8px 10px; font-size: 0.95rem; }
+
+/* Compact alert / bubble */
+.alert, .cutoff-bubble { padding: 12px 14px; margin: 12px 0; border-radius: 8px; font-size: 0.98rem; }
+
+/* Compact tools panel */
+.tool-panel { background: #0f1724; border-radius: 8px; padding: 10px 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); max-width: 620px; margin: 1.2em auto; font-family: 'Segoe UI', sans-serif; font-size: 0.95rem; border: 1px solid var(--border); }
+.tool-panel h2 { color: var(--accent); font-size: 1.1rem; margin-bottom: 0.35rem; }
+.tool-panel p { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.9rem; }
+.tool-panel input, .tool-panel select, .tool-panel button { padding: 0.4em 0.6em !important; font-size: 0.95rem !important; border-radius: 6px !important; background: var(--bg-card); color: var(--text-main); border: 1px solid rgba(14,178,169,0.06); }
+.tool-panel .compact-row { display:flex; gap:0.6em; align-items:center; }
+.pmdc-input, .compact-input { flex: 1 1 110px; background: var(--bg-card); color: var(--text-main); border: 1px solid rgba(14,178,169,0.04); border-radius: 6px; padding: 0.36em 0.6em; font-size: 0.95rem; }
+.compact-btn { background: var(--accent); color: #ffffff; border: none; padding: 6px 10px; border-radius: 8px; cursor: pointer; font-size: 0.92rem; font-weight: 600; transition: background .12s ease; }
+.compact-btn:hover { background: var(--accent-hover); }
+.compact-row.small-gap { gap: 0.4em; }
+
+/* Compact helpers added for consistent compact layout */
+.compact-alert { background: #23272a; color: #e0e0e0; border-left: 5px solid var(--accent); border-radius: 7px; padding: 0.9em 1em; margin: 1.0em 0; box-shadow: 0 2px 8px rgba(14,178,169,0.03); font-size: 0.96rem; }
+.compact-row.mb-2 { margin-bottom: 0.9em; }
+.compact-row.compact-wrap { flex-wrap:wrap; gap:0.6em; align-items:center; }
+.compact-row.small-gap { display:flex; gap:0.6em; margin-bottom: 0.4em; }
+.compact-input option { background: var(--bg-card); color: var(--text-main); }
+.filter-item.compact-input { padding-right: 18px; }
+
+/* Compact stat-card */
+.stat-card.compact { padding: 8px 10px; min-width: 120px; max-width: 220px; margin: 6px 6px; }
+.stat-card.compact .stat-number { font-size: 1.25rem; }
+.stat-card.compact .stat-desc { font-size: 0.95rem; }
+.stat-card.compact .stat-label { font-size: 0.85rem; color: var(--text-muted); }
+
+
+/* Compact notif */
+.navbar.notif { padding: 8px 12px; font-size: 0.95rem; text-align: left; border-radius: 8px; }
+
+/* Hide comment box by default (we lazy-load it) */
+#HCB_comment_box, #HCB_wrapper { display: none; }
+#showCommentsBtn { display: inline-block; margin: 10px 0; }
+
+/* Small tweaks */
+.footer { margin-top: 20px; }
+
+@media (max-width: 700px) {
+  .main-navbar .nav-links a { padding: 8px 10px; }
+  .main_container { padding: 12px; }
+}
+
+/* Layout: tabbed tool panel + responsive grid */
+.main_container { display: block; }
+.layout-grid { display: grid; grid-template-columns: 320px 1fr; gap: 20px; align-items: start; max-width: 1200px; margin: 20px auto; padding: 18px; background: transparent; border-radius: 0; box-shadow: none; }
+.tool-sidebar { width: 320px; }
+.tool-panel { background: transparent; border: 1px solid rgba(255,255,255,0.02); }
+
+/* Tools tabs */
+.tools-tabs { background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+.tab-list { display:flex; gap: 6px; padding: 10px; background: transparent; }
+.tab-button { background: transparent; color: var(--text-muted); border: none; padding: 8px 10px; border-radius: 8px; cursor: pointer; font-weight: 700; }
+.tab-button.active { background: linear-gradient(90deg, rgba(14,178,169,0.06), rgba(14,178,169,0.03)); color: var(--text-main); box-shadow: 0 6px 18px rgba(14,178,169,0.03); }
+.tab-panel { display:none; padding: 12px; }
+.tab-panel.active { display:block; }
+
+/* Stat container alignment and spacing */
+.flex.stat-container { display:flex; gap:12px; align-items:center; justify-content:flex-start; flex-wrap:wrap; }
+.stat-card.compact { margin: 6px 4px; background: var(--bg-card); border: 1px solid var(--border); box-shadow: none; padding: 12px; border-radius: 8px; }
+.stat-card .stat-number { color: var(--text-main); font-weight: 800; }
+.stat-card .stat-desc, .stat-card .stat-label { color: var(--text-muted); }
+
+/* Compact non-join notice */
+.compact-nonjoin { background: linear-gradient(90deg, #0b0f14, #0d1117); border-left: 4px solid #ff6b6b; color: #ffd7d7; padding: 0.7em 1em; border-radius: 6px; box-shadow: 0 4px 20px rgba(255,107,107,0.06); display: none; margin: 1em 0; }
+.compact-nonjoin .nonjoin-item { background: rgba(255,107,107,0.06); padding: 6px 8px; border-radius: 6px; color: #ffd7d7; font-weight: 600; }
+
+/* HCB / Comments neon theme */
+#HCB_wrapper { display: none; margin-top: 0.8em; }
+#HCB_wrapper.neon-comments { display:block; background: transparent; border-left: 4px solid rgba(14,178,169,0.12); padding: 12px; border-radius: 8px; box-shadow: none; }
+#HCB_wrapper .hcb-main { color: var(--text-main); }
+#HCB_comment_box, #HCB_wrapper .hcb-comment { background: transparent !important; color: var(--text-main) !important; }
+#showCommentsBtn.compact-btn { box-shadow: 0 6px 26px rgba(14,178,169,0.12); }
+
+/* Notification carousel theme */
+#notifCarousel { background: linear-gradient(90deg, rgba(6,10,12,0.5), rgba(12,18,20,0.5)); border: 1px solid rgba(14,178,169,0.03); padding: 10px; border-radius: 10px; box-shadow: 0 6px 20px rgba(14,178,169,0.02); margin-bottom: 12px; }
+#notifSlides .notif-slide { background: rgba(8,14,18,0.6); border-left: 4px solid var(--accent); padding: 10px 12px; color: var(--text-main); border-radius: 8px; box-shadow: 0 6px 18px rgba(14,178,169,0.04); display: none; }
+#notifSlides .notif-slide.active { display:block; }
+#notifControls button { background: transparent; border: 1px solid rgba(255,255,255,0.03); color: var(--text-main); padding: 6px 10px; border-radius: 6px; }
+#notifCarousel .tag { padding: 3px 8px; border-radius: 999px; font-weight:700; margin-right: 8px; }
+.tag.info { background: rgba(16,47,98,0.6); color: var(--text-main); }
+.tag.urgent { background: rgba(98,16,24,0.65); color: #ffd6d6; }
+.tag.announcement { background: rgba(14,178,169,0.85); color: #fff; }
+
+/* Tool header and simplified look */
+.tool-header { display:flex; align-items:center; gap:8px; padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.02); }
+.tool-header .tool-title { font-size: 1rem; color: var(--accent); margin: 0; font-weight: 700; }
+.tool-panel .tool-body { padding: 12px; }
+
+/* Mobile responsive */
+@media (max-width: 920px) {
+  .layout-grid { grid-template-columns: 1fr; padding: 12px; }
+  .tool-sidebar { width:100%; }
+  .tab-list { justify-content: flex-start; overflow-x: auto; }
+  #notifCarousel { padding: 8px; }
+} 
+

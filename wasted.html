@@ -20,50 +20,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="site-theme.css" />
   </head>
   <body>
-    
-<style>
-@keyframes glowPulse {
-  0% {
-    box-shadow: 0 0 12px rgba(0, 255, 170, 0.2), 0 0 5px rgba(0, 255, 170, 0.1);
-  }
-  50% {
-    box-shadow: 0 0 18px rgba(0, 255, 170, 0.6), 0 0 12px rgba(0, 255, 170, 0.3);
-  }
-  100% {
-    box-shadow: 0 0 12px rgba(0, 255, 170, 0.2), 0 0 5px rgba(0, 255, 170, 0.1);
-  }
-}
-
-    
-    #statTable tbody td:nth-child(1),
-#statTable tbody td:nth-child(4),
-#statTable tbody td:nth-child(5) {
-  color: var(--accent, #5cdb71);
-  text-decoration: underline dotted;
-  cursor: pointer;
-  font-weight: 700;
-  transition: color 0.18s, text-decoration 0.18s, text-shadow 0.18s;
-}
-
-#statTable tbody tr:hover td:nth-child(1),
-#statTable tbody tr:hover td:nth-child(4),
-#statTable tbody tr:hover td:nth-child(5),
-#statTable tbody td:nth-child(1):hover,
-#statTable tbody td:nth-child(4):hover,
-#statTable tbody td:nth-child(5):hover {
-  color: #fff;
-  text-decoration: underline solid;
-  text-shadow: 0 2px 12px var(--accent, #5cdb71);
-  cursor: pointer;
-}
-</style>
      <nav class="navbar main-navbar">
       <div class="nav-content">
         <div class="logo-container">
           <img class="logo" onclick="gotoUrl()" src="logo.png" />
         </div>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" style="display:none; border:0; background:transparent; color:var(--muted); font-weight:800; font-size:1.3rem;">☰</button>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <!--<li><a href="hospital.html">Hospitals</a></li>-->
@@ -434,6 +399,5 @@ function gotoComment(){
   ele.scrollIntoView();
 }
   </script>
- 
-  </style>
+  <script src="site-theme.js"></script>
 </html>

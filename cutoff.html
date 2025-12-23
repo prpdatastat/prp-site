@@ -19,6 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="site-theme.css" />
     <link rel="stylesheet" href="cutoff.css" />
   </head>
 </head>
@@ -28,6 +29,7 @@
         <div class="logo-container">
           <img class="logo" onclick="gotoUrl()" src="logo.png" />
         </div>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" style="display:none; border:0; background:transparent; color:var(--muted); font-weight:800; font-size:1.3rem;">☰</button>
         <ul class="nav-links">
           <li><a href="index.html" >Home</a></li>                
           <li><a href="review.html">Training Reviews</a></li>
@@ -48,10 +50,10 @@
 </section>
 
 <div class="cutoff-filters">
-  <select id="program-select"><option value="">All Programs</option><option value="FCPS">FCPS</option><option value="MS">MS</option><option value="MD">MD</option></select>
-  <select id="quota-select"><option value="">All Quotas</option></select>
-  <select id="hospital-select"><option value="">All Hospitals</option></select>
-  <button id="show-cutoffs-btn">Show Cutoffs</button>
+  <select id="program-select" class="filter-item"><option value="">All Programs</option><option value="FCPS">FCPS</option><option value="MS">MS</option><option value="MD">MD</option></select>
+  <select id="quota-select" class="filter-item"><option value="">All Quotas</option></select>
+  <select id="hospital-select" class="filter-item"><option value="">All Hospitals</option></select>
+  <button id="show-cutoffs-btn" class="btn">Show Cutoffs</button>
 </div>
 
 <div id="cutoff-display-area" class="cutoff-cards-wrapper">
@@ -166,5 +168,6 @@
             }
         });
     </script>
+    <script src="site-theme.js"></script>
 </body>
 </html>

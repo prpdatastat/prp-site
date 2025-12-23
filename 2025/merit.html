@@ -16,28 +16,50 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
     <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../site-theme.css" />
   </head>
   <body>
-    <nav class="navbar main-navbar">
-      <div class="nav-content">
-        <div class="logo-container">
-          <img class="logo" onclick="gotoUrl()" src="../logo.png" />
+     <!-- NAV -->
+      <nav class="navbar main-navbar" aria-label="Main navigation">
+        <div class="nav-content">
+          <div style="display:flex;align-items:center;gap:12px">
+            <img class="logo" onclick="gotoUrl()" src="../logo.png" alt="PRP" />
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" style="display:none; border:0; background:transparent; color:var(--muted); font-weight:800; font-size:1.3rem;">☰</button>
+            <ul class="nav-links" style="display:flex;gap:8px;">
+              <li><a href="../index.html" class="active">Home</a></li>
+         
+              <li><a href="/prp-site/2025/index.html">Unofficial Gazette</a></li>
+     
+            </ul>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="color:var(--muted); font-weight:700;">Updated: Official Gazette</span>
+          </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <!--<li><a href="hospital.html">Hospitals</a></li>-->
-          <!--<li><a href="speciality.html">Specialities</a></li>-->
-          <li><a href='/prp-site/2025/index.html'>Unofficial Gazette</a></li>          
-          <li><a href='/prp-site/scrutiny.html'>Rejection List</a></li>         
-        </ul>
-      </div>
-    </nav>
-    <div class="navbar notif" id="notif">
-      This is the  unofficial merit list of <span class='important'>2025 June</span> Induction</div>
-        <br>
+      </nav>
+
+      <!-- Primary notification -->
+      <div id="notif" class="notice-card notice-info" role="region" aria-live="polite" aria-atomic="true">
+  <div class="notice-carousel" id="notice-carousel" tabindex="0" aria-label="Page notices">
+    <!-- slides rendered by JS -->
+  </div>
+
+  <div class="notice-side" id="notice-side" aria-hidden="false">
+    <div class="notice-controls" id="notice-controls" aria-hidden="false">
+      <button id="notice-prev" aria-label="Previous notice">◀</button>
+      <button id="notice-next" aria-label="Next notice">▶</button>
+    </div>
+
+    <div class="notice-dots" id="notice-dots" aria-hidden="false"></div>
+  </div>
+
+  <div class="notice-progress" id="notice-progress" aria-hidden="true">
+    <div class="bar" id="notice-progress-bar" style="width:0%"></div>
+  </div>
+</div>
         
 
-    <div class="main_container" style="width: 80%">
+ 
      
        
       <!--<h3 class="linkableunderline" onclick="gotoComment()"> Wanna Leave a comment for developer? Click here!</h3>-->
@@ -49,7 +71,7 @@
         </label><span class="slidertext"> 2025 Unofficial Merit List</span> 
       </div>  
        -->      
-       
+       <!--
         <h3 class="title">Unofficial Merit List</h3>
         <div class="alert">
           <h3 class="alert-title">For People claiming this list is fake!</h3>
@@ -64,13 +86,15 @@ This list is intended for informational purposes only and should not be treated 
 
 If you notice any discrepancy, feel free to report it. We welcome feedback and aim to keep the process transparent and open.</span><br>
 <strong> The list is unofficial but real. It's not fake — just not final.”
-“If there’s a mistake, it’s in logic — not in intention"<strong></p>
+“If there’s a mistake, it’s in logic — not in intention"<strong></p>-->
           <!--<h3 class="alert-title">Upcoming 5th Merit List estimated changes</h3>-->
           <!--<p class="alert-content"><span class="linkableunderline" onclick="gotoUrl('upgrade.html')">Click here to see changes in upcoming list</span></p>-->
-        </h3>
-      </div>
-      <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
-      <div class="filters">
+    <div class="controls" style="margin-top:14px;">
+              <div style="min-width:320px; display:flex; gap:10px; align-items:center;">
+                <!-- placeholder for future small controls -->
+              </div>
+              <div style="flex:1;">
+                <div class="filters">
         <select
           onchange="updateList(event);"
           class="filter-item"
@@ -104,23 +128,33 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
           <option value="" elected>Hospital</option>
         </select>
       </div>
-      <p id="headline"> No Filter selected.</p>
-      <div class="table-container">
-      <table class="stat-table" style="width: 100%" id="statTable">
-        <thead>
-          <tr>
-            <th class="linkable">PMDC Number</th>
-            <th >Name</th>
-            <th>Quota</th>
-            <th>Speciality</th>
-            <th>Hospital</th>
-            <th>Aggregate</th>
-            <th>Preference No.</th>
-          </tr>
-        </thead>
-        <tbody id="dataRows"></tbody>
-      </table>
-    </div>
+              </div>
+            </div>
+          </div>
+      <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
+      
+      <div class="card">
+            <div style="font-weight:800; color:var(--accent);" id="headline"></div>
+          </div>
+        </div>
+      <div class="table-card">
+        <div class="table-container">
+          <table class="stat-table" style="width: 100%" id="statTable">
+            <thead>
+              <tr>
+                <th class="linkable">PMDC Number</th>
+                <th >Name</th>
+                <th>Quota</th>
+                <th>Speciality</th>
+                <th>Hospital</th>
+                <th>Aggregate</th>
+                <th>Preference No.</th>
+              </tr>
+            </thead>
+            <tbody id="dataRows"></tbody>
+          </table>
+        </div>
+      </div>
       <br>
      
 <br>
@@ -128,10 +162,12 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24mzyYuuZBe1GhURDyiqYE4%2F"+"&opts=16798&num=10&ts=1736005452841");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
+<script src="../site-theme.js"></script>
 
       <div class="footer">
         <span>Made with 💓 in <strong>HTML</strong>  &  <strong>JS</strong> by <img src="../github.png">reko-beep</span>
       </div>
+    </div>
     </div>
   </body>
   <script>

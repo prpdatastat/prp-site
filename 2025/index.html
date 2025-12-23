@@ -17,139 +17,114 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
     <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../site-theme.css" />
   </head>
   <body>
-    <nav class="navbar main-navbar">
-      <div class="nav-content">
-        <div class="logo-container">
-          <img class="logo" onclick="gotoUrl()" src="../logo.png" />
+    <!-- NAV -->
+      <nav class="navbar main-navbar" aria-label="Main navigation">
+        <div class="nav-content">
+          <div style="display:flex;align-items:center;gap:12px">
+            <img class="logo" onclick="gotoUrl()" src="logo.png" alt="PRP" />
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" style="display:none; border:0; background:transparent; color:var(--muted); font-weight:800; font-size:1.3rem;">☰</button>
+            <ul class="nav-links" style="display:flex;gap:8px;">
+              <li><a href="index.html" class="active">Home</a></li>              
+              <li><a href="/prp-site/2025/merit.html">Unofficial Merit</a></li>
+            </ul>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="color:var(--muted); font-weight:700;">Updated: Official Gazette</span>
+          </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <!--<li><a href="hospital.html">Hospitals</a></li>-->
-          <!--<li><a href="speciality.html">Specialities</a></li>-->
-          <li><a href='/prp-site/2025/merit.html'>Unofficial Merit</a></li>         
-          <!--<li><a href='/prp-site/scrutiny.html'>Rejection List</a></li>-->     
-        </ul>
-      </div>
-    </nav>
-    <div class="navbar notif">
-      This is Official gazette of <span class='important'>2025 June</span> Induction<br>
-      Click on applicant ID to check their preferences
-    </div>
-    
-    <div class="info">
-      <h1 id="name">
-        Official PRP June 2025 Gazette
-    </h1>
-    <div class="main_container" style="width: 80%">
-      <div class="flex stat-container">
-        <div class="stat-card">
-          <div id="FCPS" class="stat-number">1,234</div>
-          <div class="stat-desc">FCPS</div>
-          <div class="stat-label">Candidates applied</div>
-        </div>
-        <div class="stat-card">
-          <div id="MS" class="stat-number">1,234</div>
-          <div class="stat-desc">MS</div>
-          <div class="stat-label">Candidates applied</div>
-        </div>
-        <div class="stat-card">
-          <div id="MD" class="stat-number">1,234</div>
-          <div class="stat-desc">MD</div>
-          <div class="stat-label">Candidates applied</div>
-        </div>
-       <!--<button class="schd-button lrgbtn" onmousedown="gotoUrl('/prp-site/scrutiny.html')"> View June Rejected List </button>
-      <h4 class="linkableunderline" onclick="ViewMeritList()">Wanna see merit list based on this gazette?</h4>-->
-      <!-- <h4 class="linkable">Issues with Gazat</h4> -->
-      <br>
-      
-       <h3 class="title">Notification</h3>
-<div class="alert" style="background:#23272a; color:#e0e0e0; border-radius:12px; border-left:5px solid #5cdb71; padding:1.1em 1.6em; margin-bottom:1.5em; box-shadow:0 2px 16px 0 rgba(92,219,113,0.08);">
-  <p class="alert-content" style="margin:0;">
-    <strong style="color:#5cdb71;">Clarification on the Unofficial Merit List</strong><br>
-    <span style="color:#ffe066;">
-      The previous unofficial merit list was generated using data extracted from the PRP backend before the official gazette was released. As clearly stated earlier on this site, such unofficial lists may contain discrepancies due to limitations in the available data at that time and were <b>not scrutinized</b> for official verification.
-    </span>
-    <br><br>
-    <span style="color:#b5ffcb;">
-      Examples of these discrepancies include: position marks being assigned at the college level, house job marks being calculated differently, and experience marks being awarded based on incomplete or incorrect information.
-    </span>
-    <br><br>
-    <span style="color:#e0e0e0;">
-      Users were always advised to wait for the estimated merit list based on the official gazette for more accurate and reliable results. Transparency and accuracy are core values of this site, and the main page provides a detailed comparison showing how closely the unofficial merit list aligns with the official, gazette-based list.
-    </span>
-    <br><br>
-    <span style="color:#aaa; font-size:0.97em;">
-      For the most accurate and up-to-date information, please refer to the merit list compiled from the official gazette, available on the <a href="https://prpdatastat.github.io/prp-site/" style="color:#5cdb71; text-decoration:underline; font-weight:600;">main PRP Statistics page</a>.
-    </span>
-  </p>
-</div>
-      <div class="alert" style="
-  background: #23272a;
-  color: #e0e0e0;
-  border-radius: 14px;
-  border-left: 5px solid #5cdb71;
-  padding: 1.2em 1.7em;
-  margin-bottom: 1.5em;
-  box-shadow: 0 2px 16px 0 rgba(92,219,113,0.09);
-  font-size: 1.12em;
-">
-  <strong style="color:#5cdb71; font-size:1.13em;">Official Gazette Notice</strong><br>
-  <span style="color:#ffe066;">
-    The list below is the <b>official gazette</b> published by PRP authorities for the June 2025 induction.
-  </span>
-  <br><br>
-  <span style="color:#b5ffcb;">
-    <b>Note:</b> Only <strong>eligible candidates</strong> as determined by the official scrutiny process are included in this list.
-  </span>
-  <br>
-  <span style="color:#aaa; font-size:0.97em;">
-    For transparency and accuracy, all data is presented exactly as released by the official PRP gazette.
-  </span>
-</div>
-        <br>
-        <br>
-        <span id='issues' class="important">
+      </nav>
 
-        </span>
-      </p>
+      <!-- Primary notification -->
+      <div id="notif" class="notice-card notice-info" role="region" aria-live="polite" aria-atomic="true">
+  <div class="notice-carousel" id="notice-carousel" tabindex="0" aria-label="Page notices">
+    <!-- slides rendered by JS -->
   </div>
-          
-      <div class="filters">
-        <select
-          onchange="updateList(event);"
-          class="filter-item"
-          name="quota"
-          id="program"
-        >
-          <option value="" disabled selected>Program</option>
-        </select>
+
+  <div class="notice-side" id="notice-side" aria-hidden="false">
+    <div class="notice-controls" id="notice-controls" aria-hidden="false">
+      <button id="notice-prev" aria-label="Previous notice">◀</button>
+      <button id="notice-next" aria-label="Next notice">▶</button>
+    </div>
+
+    <div class="notice-dots" id="notice-dots" aria-hidden="false"></div>
+  </div>
+
+  <div class="notice-progress" id="notice-progress" aria-hidden="true">
+    <div class="bar" id="notice-progress-bar" style="width:0%"></div>
+  </div>
+</div>
+
+      
         
-      </div>
-      <div class="table-container">
-      <table class="stat-table" style="width: 100%" id="statTable">
-        <thead>
-          <tr>
-            <th class="linkable">Applicant ID</th>
-            <th >PMDC Number</th>
-            <th >Name</th>
-            <th >Matric</th>
-            <th >Inter</th>            
-            <th >Degree</th>
-            <th >House Job</th>
-            <th >Experience</th>
-            <th >Hard Areas</th>
-            <th >Position</th>
-            <th>Aggregate</th>       
-          </tr>
-        </thead>
-        <tbody id="dataRows"></tbody>
-      </table>
+        <div class="top-grid">
+          <div>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div id="FCPS" class="stat-number">—</div>
+                <div class="stat-desc">FCPS</div>
+                <div class="stat-correct" id="FCPS-correct">—</div>
+              </div>
+              <div class="stat-card">
+                <div id="MS" class="stat-number">—</div>
+                <div class="stat-desc">MS</div>
+                <div class="stat-correct" id="MS-correct">—</div>
+              </div>
+              <div class="stat-card">
+                <div id="MD" class="stat-number">—</div>
+                <div class="stat-desc">MD</div>
+                <div class="stat-correct" id="MD-correct">—</div>
+              </div>
+            </div>
+
+            <div class="controls" style="margin-top:14px;">
+              <div style="min-width:320px; display:flex; gap:10px; align-items:center;">
+                <!-- placeholder for future small controls -->
+              </div>
+              <div style="flex:1;">
+                <div class="filters">
+                  <select onchange="updateList(event);" class="filter-item" name="quota" id="program">
+                    <option value="" disabled selected>Program</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="font-weight:800; color:var(--accent);">Unofficial Gazette 2026</div>
+            <div style="color:var(--muted); margin-top:6px;">This page displays the unofficial gazette-based merit list for January 2026.</div>
+          </div>
+        </div>
+      <div class="table-card">
+        <div class="table-container">
+          <table class="stat-table" style="width: 100%" id="statTable">
+            <thead>
+              <tr>
+                <th class="linkable">Applicant ID</th>
+                <th >PMDC Number</th>
+                <th >Name</th>
+                <th >Matric</th>
+                <th >Inter</th>            
+                <th >Degree</th>
+                <th >MDCAT</th>
+                <th >House Job</th>
+                <th >Experience</th>
+                <th >Porgarm Marks</th>
+                <th >Position</th>
+                <th>Aggregate</th>       
+              </tr>
+            </thead>
+            <tbody id="dataRows"></tbody>
+          </table>
+        </div>
       </div>
       <div class="footer">
         <span>Made with 💓 in <strong>HTML</strong>  &  <strong>JS</strong> by <img src="../github.png">reko-beep</span>
       </div>
+    </div>
     </div>
   </body>
   <script>
@@ -207,6 +182,8 @@
           { width: "20%" },
           { width: "10%" },
           { width: "10%" },
+          
+          { width: "10%" },
           { width: "10%" },
           { width: "10%" },
           { width: "10%" },
@@ -234,10 +211,11 @@
             gazette[cand].nameFull,
             gazette[cand].matric,
             gazette[cand].fsc,
-            gazette[cand].degree,
+            gazette[cand].degree,            
+            gazette[cand].mdcat,
             gazette[cand].houseJob,
             gazette[cand].experience,
-            gazette[cand].hardArea,
+            gazette[cand].marksProgram,
             gazette[cand].position,
             gazette[cand].marksTotal,
                 ]);
@@ -305,4 +283,255 @@
     }
    
   </script>
+  <script src="../site-theme.js"></script>
+  <script>
+const PAGE_NOTICES = [
+  {
+    badge: 'Announcement',
+    title: 'Unofficial Gazette uploaded',
+    subtitle: 'Experience, House Job, Degree and MDCAT marks have been added — computed aggregates may differ from the official list.',
+    extra: 'Note: Program marks exist on the backend for FCPS and MD/MS but are not yet applied here; final aggregates may change when they are included.',
+    ctaText: 'View Gazette',
+    ctaHref: '/prp-site/2025/index.html',
+    tone: 'warn' // 'info'|'warn'|'success'
+  },
+   {
+    badge: 'IMPORTANT',
+    title: 'Unofficial Gazette uploaded',
+    subtitle: 'Experience, House Job, Degree and MDCAT marks have been added — Candidate pages should only be used for preferences not for their aggregate. TOTAL MARKS are according to PPM 2026 Policy minus attempt marks',
+    extra: 'Note: Program marks  (attempt) exist on the backend for FCPS and MD/MS but are not yet applied here; .',
+    ctaText: 'View Gazette',
+    ctaHref: '/prp-site/2025/index.html',
+    tone: 'warn' // 'info'|'warn'|'success'
+  },
+  {
+    badge: 'Info',
+    title: 'Automated estimate — informational only',
+    subtitle: 'This list is computer-generated and intended to give a rough idea; the data are fetched from the official database and are not fictitious.',
+    extra: 'Do not treat this as final—consult the official gazette for authoritative results.',
+    ctaText: 'Understood',
+    ctaHref: '/prp-site/2025/index.html',
+    tone: 'info'
+  },
+  {
+    badge: 'Link',
+    title: 'See computed merits',
+    subtitle: 'View merit estimates for the upcoming cycle.',
+    extra: 'Click through to see computed merit lists.',
+    ctaText: 'Open 2026 Merit',
+    ctaHref: '/prp-site/2026/merit.html',
+    tone: 'info'
+  }
+];
+
+const NOTICE_INTERVAL = 8000; // ms, change if you want faster/slower rotation
+
+const NoticeSlideshow = (function () {
+  let notices = [];
+  let idx = 0;
+  let timer = null;
+  let interval = NOTICE_INTERVAL;
+  const carousel = document.getElementById('notice-carousel');
+  const dotsEl = document.getElementById('notice-dots');
+  const prevBtn = document.getElementById('notice-prev');
+  const nextBtn = document.getElementById('notice-next');
+  const controls = document.getElementById('notice-controls');
+  const progressBar = document.getElementById('notice-progress-bar');
+
+  function buildSlides(arr) {
+    notices = Array.isArray(arr) ? arr.slice() : [];
+    carousel.innerHTML = '';
+    dotsEl.innerHTML = '';
+
+    if (!notices.length) { carousel.innerHTML = '<div class="notice-slide active"><div class="notice-content"><div class="notice-left"><div class="notice-badge">Info</div></div><div class="notice-body"><div class="notice-title">No notices</div><div class="notice-sub">There are no page notices at the moment.</div></div></div></div>'; controls.classList.add('hidden'); dotsEl.classList.add('hidden'); return; }
+
+    notices.forEach((n, i) => {
+      const slide = document.createElement('div');
+      slide.className = 'notice-slide';
+      slide.dataset.index = i;
+      slide.setAttribute('role', 'group');
+      slide.setAttribute('aria-roledescription', 'slide');
+
+      // Build slide DOM (avoid template literal innerHTML to prevent backtick/escape issues)
+      const content = document.createElement('div');
+      content.className = 'notice-content';
+
+      const left = document.createElement('div');
+      left.className = 'notice-left';
+      const badge = document.createElement('div');
+      badge.className = 'notice-badge';
+      badge.style.borderLeft = '0';
+      badge.style.padding = '8px 10px';
+      badge.style.fontWeight = '800';
+      badge.style.color = (n.tone === 'warn') ? 'var(--accent-2)' : 'var(--accent)';
+      badge.textContent = n.badge || '';
+      left.appendChild(badge);
+
+      const body = document.createElement('div');
+      body.className = 'notice-body';
+      const title = document.createElement('div');
+      title.className = 'notice-title';
+      title.textContent = n.title || '';
+      const sub = document.createElement('div');
+      sub.className = 'notice-sub';
+      sub.style.marginTop = '6px';
+      // allow light HTML in subtitle/extra if present
+      sub.innerHTML = n.subtitle || '';
+      body.appendChild(title);
+      body.appendChild(sub);
+      if (n.extra) {
+        const extra = document.createElement('div');
+        extra.className = 'notice-extra';
+        extra.textContent = n.extra;
+        body.appendChild(extra);
+      }
+      if (n.ctaText) {
+        const cwrap = document.createElement('div');
+        cwrap.style.marginTop = '10px';
+        const btn = document.createElement('button');
+        btn.className = 'notice-btn small';
+        btn.dataset.href = n.ctaHref || '';
+        btn.dataset.index = i;
+        btn.setAttribute('aria-label', 'Open notice link');
+        btn.style.cssText = 'background:linear-gradient(90deg,var(--accent),#2fc7b8); color:#071017; padding:6px 10px; border-radius:8px; font-weight:800; border:none; cursor:pointer';
+        btn.textContent = n.ctaText;
+        btn.addEventListener('click', () => { if (btn.dataset.href) window.location.href = btn.dataset.href; });
+        cwrap.appendChild(btn);
+        body.appendChild(cwrap);
+      }
+
+      content.appendChild(left);
+      content.appendChild(body);
+      slide.appendChild(content);
+       carousel.appendChild(slide);
+
+      // dot (kept same)
+      const dot = document.createElement('button');
+      dot.className = 'notice-dot';
+      dot.setAttribute('aria-label', `Show notice ${i + 1}`);
+      dot.dataset.index = i;
+      dot.addEventListener('click', () => showNotice(i, true));
+      dotsEl.appendChild(dot);
+    });
+
+    // show first slide
+    idx = 0;
+    showNotice(0);
+    attachCTAs();
+    controls.classList.toggle('hidden', notices.length <= 1);
+    dotsEl.classList.toggle('hidden', notices.length <= 1);
+  }
+
+  function attachCTAs() {
+    carousel.querySelectorAll('.notice-btn').forEach(b => {
+      b.addEventListener('click', (e) => {
+        const href = b.dataset.href;
+        if (href) window.location.href = href;
+      });
+    });
+  }
+
+  function showNotice(i, userTriggered = false) {
+    const slides = carousel.querySelectorAll('.notice-slide');
+    slides.forEach(s => s.classList.remove('active'));
+    const dots = dotsEl.querySelectorAll('.notice-dot');
+    dots.forEach(d => d.classList.remove('active'));
+    const slide = slides[i];
+    if (slide) slide.classList.add('active');
+    if (dots[i]) dots[i].classList.add('active');
+    idx = i;
+    resetProgress();
+    if (userTriggered) { restartAutoplay(); }
+    // set tone class on outer container
+    const tone = (notices[i] && notices[i].tone) || 'info';
+    const wrap = document.getElementById('notif');
+    wrap.classList.remove('notice-info', 'notice-warn', 'notice-success');
+    wrap.classList.add('notice-' + (tone || 'info'));
+  }
+
+  function next() { showNotice((idx + 1) % notices.length, false); }
+  function prev() { showNotice((idx - 1 + notices.length) % notices.length, false); }
+
+  function startAutoplay() {
+    clearTimer();
+    if (notices.length <= 1) return;
+    progressBar.style.transition = `none`;
+    progressBar.style.width = '0%';
+    // allow CSS reflow before animation
+    requestAnimationFrame(() => {
+      progressBar.style.transition = `width ${interval}ms linear`;
+      progressBar.style.width = '100%';
+    });
+    timer = setTimeout(() => {
+      next();
+      startAutoplay();
+    }, interval);
+  }
+
+  function resetProgress() {
+    progressBar.style.transition = 'none';
+    progressBar.style.width = '0%';
+    // restart progress
+    requestAnimationFrame(() => {
+      progressBar.style.transition = `width ${interval}ms linear`;
+      progressBar.style.width = '100%';
+    });
+  }
+
+  function pause() { clearTimer(); progressBar.style.transition = 'none'; }
+  function resume() { startAutoplay(); }
+
+  function clearTimer() { if (timer) { clearTimeout(timer); timer = null; } }
+
+  function restartAutoplay() { clearTimer(); startAutoplay(); }
+
+  function wireUI() {
+    nextBtn.addEventListener('click', () => { next(); restartAutoplay(); });
+    prevBtn.addEventListener('click', () => { prev(); restartAutoplay(); });
+
+    // pause on hover/focus for accessibility
+    const wrap = document.getElementById('notif');
+    ['mouseenter','focusin'].forEach(ev => wrap.addEventListener(ev, pause));
+    ['mouseleave','focusout'].forEach(ev => wrap.addEventListener(ev, resume));
+
+    // keyboard navigation: left/right arrows
+    wrap.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { next(); restartAutoplay(); }
+      if (e.key === 'ArrowLeft') { prev(); restartAutoplay(); }
+    });
+  }
+
+  function setNotices(arr, opts = {}) {
+    if (!Array.isArray(arr)) arr = [arr];
+    notices = arr.slice();
+    interval = opts.interval || NOTICE_INTERVAL;
+    buildSlides(notices);
+    startAutoplay();
+  }
+
+  // public API
+  return {
+    init: function (arr, opts = {}) { setNotices(arr || [], opts); wireUI(); },
+    set: setNotices,
+    next, prev, pause, resume, getCurrent: () => idx
+  };
+})();
+
+// Init slideshow on DOM ready using PAGE_NOTICES; keeps backward-compatible single PAGE_NOTICE too
+document.addEventListener('DOMContentLoaded', () => {
+  NoticeSlideshow.init(PAGE_NOTICES);
+});
+
+// Backwards-compatible helper to set a single page notice
+function setPageNotice(newCfg) {
+  // accept either single object or array
+  if (Array.isArray(newCfg)) NoticeSlideshow.set(newCfg);
+  else NoticeSlideshow.set([newCfg]);
+}
+
+// convenience: programmatic update of the notices array
+function setPageNotices(noticesArray, opts = {}) {
+  NoticeSlideshow.set(noticesArray, opts);
+}
+</script>
 </html>

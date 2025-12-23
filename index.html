@@ -22,708 +22,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
 
-    <!-- Modernized, self-contained styles (appended into page per request) -->
-    <style>
-      :root {
-        --bg: #071217;
-        --card: rgba(14,20,24,0.92);
-        --accent: #39c0b7;
-        --accent-2: #ffd166;
-        --muted: #9fb7b3;
-        --text: #e6eef2;
-        --glass-border: rgba(255,255,255,0.04);
-      }
-      :root {
-  --bg: #071217;
-  --card: rgba(14,20,24,0.92);
-  --accent: #39c0b7;
-  --accent-2: #ffd166;
-  --muted: #9fb7b3;
-  --text: #e6eef2;
-  --glass-border: rgba(255,255,255,0.04);
+    <!-- Modernized styles moved to shared stylesheet -->
+    <link rel="stylesheet" href="site-theme.css" />
 
-  /* neon helpers */
-  --accent-rgb: 57,192,183;
-  --accent-2-rgb: 255,209,102;
-}
+<!-- moved to site-theme.css -->
+<!-- moved to site-theme.css -->
 
 
-      /* Base */
-      html, body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; -webkit-font-smoothing:antialiased; margin:0; padding:0; }
-      a { color: var(--accent-2); text-decoration: none; }
-      .page { max-width:1200px; margin:26px auto; padding:22px; }
-
-      /* Top nav */
-      .main-navbar { display:flex; align-items:center; justify-content:space-between; padding:8px 12px; margin-bottom:16px; }
-      .nav-content { display:flex; align-items:center; gap:18px; width:100%; }
-      .logo { height:44px; cursor:pointer; border-radius:8px; }
-      .nav-links { display:flex; gap:12px; list-style:none; padding:0; margin:0; align-items:center; }
-      .nav-links a { color:var(--muted); padding:6px 10px; border-radius:8px; font-weight:600; }
-      .nav-links a:hover, .nav-links a.active { color:var(--text); background: rgba(255,255,255,0.02); box-shadow: 0 6px 18px rgba(2,12,14,0.35); }
-
-      /* Notification */
-      .notif { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.03)); border-left:5px solid var(--accent-2); padding:14px 16px; border-radius:10px; box-shadow:0 10px 30px rgba(2,12,14,0.45); margin-bottom:18px; color:var(--text); }
-      .notif .title { color:var(--accent); font-weight:800; font-size:1.02rem; }
-      .notif .sub { color:var(--muted); margin-top:8px; }
-
-      /* Grid layout: stats + main content */
-      .top-grid { display:grid; grid-template-columns: 1fr 420px; gap:18px; align-items:start; }
-      .stats-grid { display:grid; grid-template-columns: repeat(3, minmax(140px,1fr)); gap:14px; }
-      .stat-card { background:var(--card); border:1px solid var(--glass-border); padding:18px; border-radius:12px; box-shadow:0 8px 30px rgba(2,12,14,0.25); }
-      .stat-number { font-weight:900; font-size:2.4rem; background: linear-gradient(90deg, var(--accent) 0%, #7ee9d8 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-      .stat-desc { color:var(--muted); font-weight:700; margin-top:4px; }
-      .stat-correct { color:var(--muted); margin-top:8px; font-size:0.95rem; }
-
-      /* Helper / Tools card: tabs */
-      .card { background:var(--card); border:1px solid var(--glass-border); padding:14px; border-radius:12px; box-shadow:0 10px 30px rgba(2,12,14,0.25); }
-      .tabs { display:flex; gap:8px; margin-bottom:12px; }
-      .tabbtn { background:transparent; border:1px solid transparent; color:var(--muted); padding:8px 10px; border-radius:8px; cursor:pointer; font-weight:700; }
-      .tabbtn.active { color:var(--text); background:linear-gradient(90deg, rgba(57,192,183,0.06), rgba(255,255,255,0.01)); border-color: rgba(57,192,183,0.12); box-shadow:0 6px 20px rgba(57,192,183,0.06); }
-      .tabpanel { display:none; }
-      .tabpanel.active { display:block; animation: slideUp .32s ease; }
-
-      @keyframes slideUp { from { transform: translateY(6px); opacity:0 } to { transform: translateY(0); opacity:1 } }
-
-      /* PMDC search and near-merit controls */
-      .search-row { display:flex; gap:10px; align-items:center; margin-bottom:10px; }
-      .search-input { flex:1; padding:10px 12px; border-radius:8px; background:rgba(255,255,255,0.01); border:1px solid rgba(255,255,255,0.03); color:var(--text); font-weight:600; }
-      .btn { border:none; background:linear-gradient(90deg,var(--accent), #2fc7b8); color:#071017; padding:10px 12px; border-radius:8px; cursor:pointer; font-weight:800; }
-
-      /* Controls bar: filters + headline */
-      .controls { display:flex; gap:12px; align-items:center; justify-content:space-between; margin:14px 0; flex-wrap:wrap; }
-      .filters { display:grid; grid-template-columns: repeat(4, minmax(120px,1fr)); gap:10px; flex:1; }
-      .filter-item { padding:10px; border-radius:8px; background:rgba(255,255,255,0.01); border:1px solid rgba(255,255,255,0.03); color:var(--text); font-weight:700; }
-
-      /* Table card */
-      .table-card { margin-top:10px; border-radius:12px; padding:12px; background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02)); border:1px solid rgba(255,255,255,0.03); box-shadow:0 10px 30px rgba(2,12,14,0.25); }
-      .headline { color:var(--muted); margin:0 0 12px 0; font-weight:700; }
-
-      /* Table linkable cells */
-      #statTable tbody td:nth-child(1), #statTable tbody td:nth-child(4), #statTable tbody td:nth-child(5) {
-        color:var(--accent); font-weight:700; cursor:pointer; text-decoration: underline dotted;
-      }
-      #statTable tbody td:hover { background: rgba(57,192,183,0.02); color: #fff; text-decoration: underline solid; }
-
-      /* Non-joiners / badges */
-      .nonjoin-item { padding:6px 10px; background:#2b2d31; border-radius:8px; color:#ffdede; border:1px solid rgba(255,0,0,0.05); font-weight:700; }
-
-      /* Footer */
-      .footer { color:var(--muted); margin-top:18px; text-align:center; padding:12px 0; }
-
-      /* Responsive */
-      @media (max-width: 980px) {
-        .top-grid { grid-template-columns: 1fr; }
-        .stats-grid { grid-template-columns: repeat(3, 1fr); }
-        .filters { grid-template-columns: repeat(2, 1fr); }
-      }
-      @media (max-width: 520px) {
-        .stats-grid { grid-template-columns: repeat(2,1fr); }
-      }
-      /* ========== Neon hover/focus styles ========== */
-
-/* subtle shared transitions */
-.btn, .filter-item, .search-input, .tabbtn {
-  transition: box-shadow .18s ease, transform .12s ease, color .12s ease, border-color .12s;
-  will-change: transform, box-shadow;
-}
-
-/* neon pulse animation used on focus */
-@keyframes neonPulse {
-  0% { box-shadow: 0 0 0 rgba(var(--accent-rgb), 0); }
-  50% { box-shadow: 0 0 28px rgba(var(--accent-rgb), 0.14); }
-  100% { box-shadow: 0 0 0 rgba(var(--accent-rgb), 0); }
-}
-.filter-item option,
-.filter-item optgroup {
-  /* Dark, high-contrast background for options */
-  background: linear-gradient(180deg, rgba(14,20,24,1), rgba(10,14,16,1));
-  color: var(--text);
-  padding: 8px 12px;
-  line-height: 1.6;
-  font-weight: 600;
-}
-
-/* fallback for older browsers */
-select option { 
-  background: #0f171a;
-  color: var(--text);
-}
-
-/* visible highlight for currently focused/hovered option where supported */
-.filter-item option:hover,
-.filter-item option:checked {
-  background: rgba(var(--accent-rgb), 0.08);
-  color: #fff;
-}
-
-/* Improve select open/focus visuals */
-.filter-item:focus {
-  box-shadow: 0 12px 40px rgba(var(--accent-rgb), 0.12), 0 0 18px rgba(var(--accent-rgb), 0.06);
-  border-color: rgba(var(--accent-rgb), 0.18);
-  outline: none;
-}
-
-/* ---------- Neon-like styles for inline "Check Consent" control ---------- */
-.check-consent {
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 10px;
-  background: linear-gradient(90deg, rgba(var(--accent-rgb),0.05), rgba(255,255,255,0.01));
-  color: var(--accent);
-  font-weight: 800;
-  cursor: pointer;
-  border: 1px solid rgba(var(--accent-rgb), 0.14);
-  box-shadow: 0 6px 18px rgba(var(--accent-rgb), 0.06), 0 0 8px rgba(var(--accent-rgb), 0.04);
-  transition: transform .12s ease, box-shadow .18s ease, color .12s ease, background .12s ease;
-  text-decoration: none;
-}
-.check-consent:hover,
-.check-consent:focus,
-.check-consent:active {
-  transform: translateY(-3px);
-  color: #071017;
-  background: linear-gradient(90deg, var(--accent), #3ccba8);
-  box-shadow: 0 18px 48px rgba(var(--accent-rgb), 0.18), 0 0 28px rgba(var(--accent-rgb), 0.12);
-  outline: none;
-}
-
-/* readable status text below the check control */
-.consentstatusstyle {
-  display: block;
-  margin-top: 6px;
-  color: var(--muted);
-  font-weight: 600;
-  font-size: 0.92rem;
-}
-
-/* keep keyboard focus visible */
-.check-consent:focus-visible { outline: 3px solid rgba(var(--accent-rgb),0.12); outline-offset: 3px; }
-
-/* Buttons */
-.btn:hover,
-.btn:focus,
-.btn:focus-visible {
-  transform: translateY(-2px);
-  box-shadow:
-    0 8px 30px rgba(var(--accent-rgb), 0.18),
-    0 0 12px rgba(var(--accent-rgb), 0.20);
-  outline: none;
-}
-
-/* Tab buttons */
-.tabbtn:hover {
-  color: var(--text);
-  box-shadow: 0 6px 18px rgba(var(--accent-rgb), 0.06);
-}
-.tabbtn.active {
-  background: linear-gradient(90deg, rgba(var(--accent-rgb),0.05), rgba(255,255,255,0.01));
-  border-color: rgba(var(--accent-rgb),0.12);
-  box-shadow: 0 10px 28px rgba(var(--accent-rgb),0.08), 0 0 6px rgba(var(--accent-rgb),0.08);
-}
-
-/* Inputs and selects focus */
-.search-input:focus,
-.filter-item:focus,
-.filter-item:focus-visible,
-.search-input:focus-visible {
-  box-shadow:
-    0 10px 30px rgba(var(--accent-rgb), 0.06),
-    0 0 10px rgba(var(--accent-rgb), 0.12);
-  border-color: rgba(var(--accent-rgb), 0.30);
-  animation: neonPulse 1.2s ease-in-out 1;
-  outline: none;
-}
-
-/* keyboard-friendly focus ring */
-:focus-visible {
-  outline: 3px solid rgba(var(--accent-rgb), 0.10);
-  outline-offset: 3px;
-}
-
-/* Stylize native select: custom caret and padding */
-.filter-item {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 20 20'%3E%3Cpath fill='%23ffd166' d='M5 7l5 5 5-5z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 38px; /* room for caret */
-}
-
-.filter-item {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 20 20'%3E%3Cpath fill='%23ffd166' d='M5 7l5 5 5-5z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 38px; /* room for caret */
-  color: var(--text);
-  background-color: rgba(255,255,255,0.01);
-  transition: box-shadow .18s, border-color .12s, transform .12s;
-}
-
-/* Make options readable in most browsers */
-.filter-item option {
-  background: #0f171a; /* dark option background */
-  color: var(--text);
-  padding: 8px 12px;
-  line-height: 1.6;
-}
-
-/* Hover / focus visible styles for select */
-.filter-item:hover,
-.filter-item:focus {
-  box-shadow: 0 10px 30px rgba(var(--accent-rgb),0.06), 0 0 10px rgba(var(--accent-rgb),0.08);
-  border-color: rgba(var(--accent-rgb),0.18);
-  transform: translateY(-2px);
-  outline: none;
-}
-
-/* Make the open dropdown show the same dark look on supported browsers */
-.filter-item:focus option:checked,
-.filter-item:focus option {
-  background: rgba(var(--accent-rgb), 0.06);
-  color: var(--text);
-}
-
-/* Data table row hover + focus (neon-like) */
-#statTable tbody tr {
-  transition: transform .12s ease, box-shadow .18s ease, background .18s ease;
-  will-change: transform, box-shadow, background;
-}
-#statTable tbody tr:hover,
-#statTable tbody tr:focus {
-  transform: translateY(-6px);
-  background: linear-gradient(90deg, rgba(var(--accent-rgb),0.04), rgba(255,255,255,0.01));
-  box-shadow: 0 18px 40px rgba(2,12,14,0.45), 0 0 18px rgba(var(--accent-rgb), 0.06);
-  outline: none;
-}
-
-/* give row cells a subtle rounded look when hovered */
-#statTable tbody tr:hover td:first-child { border-top-left-radius:8px; border-bottom-left-radius:8px; }
-#statTable tbody tr:hover td:last-child  { border-top-right-radius:8px; border-bottom-right-radius:8px; }
-
-/* keyboard focus for rows */
-#statTable tbody tr:focus { box-shadow: 0 18px 40px rgba(2,12,14,0.45), 0 0 22px rgba(var(--accent-rgb),0.08); }
-
-/* smaller accent on individual cells when hovering a row */
-#statTable tbody tr:hover td {
-  box-shadow: inset 0 0 0 9999px rgba(255,255,255,0.01);
-}
-
-/* ensure select caret remains visible on dark backgrounds */
-.filter-item::-ms-expand { display: none; }
-/* dropdown options (best-effort, browser dependent) */
-.filter-item option {
-  background: var(--card);
-  color: var(--text);
-  padding: 6px 10px;
-}
-
-/* smaller subtle hover for table link cells */
-#statTable tbody td:nth-child(1):hover,
-#statTable tbody td:nth-child(4):hover,
-#statTable tbody td:nth-child(5):hover {
-  box-shadow: inset 0 0 0 9999px rgba(var(--accent-rgb), 0.02);
-}
-
-/* slight neon accent on status badges */
-.nonjoin-item {
-  box-shadow: 0 6px 18px rgba(255, 77, 79, 0.06), 0 0 8px rgba(var(--accent-rgb), 0.04);
-}
-
-/* ensure transitions for dynamic elements added later */
-.tabpanel,
-.card,
-.stat-card,
-.table-card {
-  transition: box-shadow .18s ease, transform .12s ease, opacity .12s;
-}
-
-/* ---------- Custom-styled dropdown (replaces native UI visually) ---------- */
-.select-wrapper { position: relative; width: 100%; }
-select.filter-item.native-hidden { position: absolute !important; left: -9999px !important; opacity: 0 !important; width: 1px !important; height: 1px !important; pointer-events: none !important; }
-
-/* Custom select shell */
-.custom-select {
-  position: relative;
-  border-radius: 8px;
-  font-weight: 700;
-  user-select: none;
-}
-.custom-select .cs-trigger {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  background: rgba(255,255,255,0.01);
-  border: 1px solid rgba(255,255,255,0.03);
-  color: var(--text);
-  transition: box-shadow .14s, transform .12s, border-color .12s;
-}
-.custom-select .cs-trigger:focus {
-  outline: none;
-  box-shadow: 0 10px 30px rgba(var(--accent-rgb), 0.06), 0 0 10px rgba(var(--accent-rgb), 0.12);
-  border-color: rgba(var(--accent-rgb), 0.22);
-  transform: translateY(-2px);
-}
-.custom-select .cs-placeholder { color: var(--muted); }
-.custom-select .cs-caret { color: var(--accent-2); opacity: 0.95; }
-
-/* Options dropdown */
-.custom-select .cs-options {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: calc(100% + 8px);
-  background: var(--card);
-  border: 1px solid rgba(255,255,255,0.03);
-  border-radius: 10px;
-  max-height: 260px;
-  overflow: auto;
-  z-index: 1200;
-  padding: 6px;
-  box-shadow: 0 18px 40px rgba(2,12,14,0.45);
-  display: none;
-  transform-origin: top center;
-}
-.custom-select.open .cs-options { display: block; animation: slideUp .22s ease; }
-
-/* option */
-.cs-option {
-  padding: 8px 10px;
-  border-radius: 8px;
-  color: var(--text);
-  cursor: pointer;
-  font-weight: 700;
-  transition: background .12s, color .12s, transform .08s;
-}
-.cs-option + .cs-option { margin-top: 6px; }
-.cs-option:hover,
-.cs-option.focused {
-  background: rgba(var(--accent-rgb), 0.06);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(var(--accent-rgb), 0.06);
-}
-.cs-option[aria-selected="true"] {
-  background: rgba(var(--accent-rgb), 0.10);
-  box-shadow: 0 8px 30px rgba(var(--accent-rgb), 0.08);
-  color: #fff;
-}
-
-/* small helper note for empty lists */
-.cs-empty { padding: 10px; color: var(--muted); font-weight:600; }
+<!-- moved to site-theme.css -->
+<!-- moved to site-theme.css -->
+<!-- moved to site-theme.css -->
+<!-- moved to site-theme.css -->
+<!-- moved to site-theme.css -->
 
 /* ensure native option readability if user opens native dropdown */
-select.filter-item option { background: #0f171a; color: var(--text); padding:8px 10px; }
-.notice-card {
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap:14px;
-  padding:14px 18px;
-  border-radius:12px;
-  background: linear-gradient(90deg, rgba(255,255,255,0.01), rgba(0,0,0,0.03));
-  border-left: 6px solid var(--accent-2);
-  box-shadow: 0 12px 36px rgba(2,12,14,0.45);
-  color: var(--text);
-  margin-bottom:18px;
-  transition: transform .28s ease, box-shadow .28s ease, opacity .28s;
-}
-.notice-left { display:flex; gap:12px; align-items:flex-start; flex:1; min-width:0; }
-.notice-badge {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));
-  color: var(--accent-2);
-  border-radius:10px;
-  padding:8px 10px;
-  font-weight:800;
-  font-size:0.92rem;
-  min-width:fit-content;
-  box-shadow: 0 6px 18px rgba(57,192,183,0.04);
-}
-.notice-body { min-width:0; }
-.notice-title { font-weight:900; color:var(--accent); font-size:1.05rem; line-height:1.1; }
-.notice-sub { color:var(--muted); margin-top:6px; font-size:0.95rem; line-height:1.4; }
-
-/* CTA & small meta */
-.notice-actions { display:flex; gap:10px; align-items:center; margin-left:8px; }
-.notice-btn {
-  background: linear-gradient(90deg,var(--accent), #2fc7b8);
-  color: #071017;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-weight:800;
-  cursor:pointer;
-  transition: transform .12s, box-shadow .18s;
-}
-.notice-link { color: var(--accent-2); font-weight:700; text-decoration:underline; cursor:pointer; }
-
-/* tones */
-.notice-card.notice-info { border-left-color: var(--accent-2); }
-.notice-card.notice-warn { border-left-color: #ffb86b; }
-.notice-card.notice-success { border-left-color: #6be0b8; }
-
-/* Easy-edit hint (hidden visually, available in DOM) */
-.notice-meta { display:none; }
-
-/* entrance animation */
-.notice-card.notice-animate { transform: translateY(-6px); box-shadow: 0 22px 50px rgba(2,12,14,0.5); }
-#notif { position: relative; overflow: visible; }
-#notif .notice-carousel { position: relative; min-height: 86px; }
-.notice-slide { display: none; padding: 10px 0; }
-.notice-slide.active { display: block; animation: fadeIn .32s ease both; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: translateY(0) } }
-
-/* Controls (prev/next) */
-.notice-controls { position: static; display:flex; gap:8px; }
-.notice-controls button { min-width:36px; min-height:36px; padding:6px; }
-.notice-controls button:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(var(--accent-rgb),0.06); color:var(--text); }
-
-/* Dots / indicators */
-.notice-dots { display:flex; gap:8px; align-items:center; margin-left:8px; }
-.notice-dot { width:10px; height:10px; border-radius:999px; background: rgba(255,255,255,0.04); cursor:pointer; border:1px solid rgba(255,255,255,0.02); }
-.notice-dot.active { background: linear-gradient(90deg,var(--accent), #2fc7b8); box-shadow: 0 6px 18px rgba(var(--accent-rgb),0.08); }
-
-/* Slide layout inside notice */
-.notice-content { display:flex; align-items:flex-start; gap:12px; }
-.notice-left .notice-badge { min-width: 84px; text-align:center; }
-.notice-extra { margin-top:6px; color:var(--accent-2); font-weight:700; }
-
-/* Progress bar (fills each interval) */
-.notice-progress { position: absolute; left:0; right:0; bottom:0; height:4px; background: rgba(255,255,255,0.02); border-bottom-left-radius: 8px; border-bottom-right-radius:8px; overflow:hidden; }
-.notice-progress .bar { height:100%; width:0%; background: linear-gradient(90deg,var(--accent),#6be0b8); transition: width linear; }
-
-/* Small helper: hide controls when one slide */
-.notice-controls.hidden { display:none; }
-.notice-dots.hidden { display:none; }
-
-/* Responsive tweaks */
-@media (max-width:720px) {
-  .notice-controls { top:8px; right:8px; }
-  .notice-left { gap:8px; }
-}
-/* ==============================
-   HTMLCommentBox (HCB) - Themed
-   Make HCB match site's modern dark theme
-   ============================== */
-
-#HCB_comment_box {
-  --hcb-bg: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.03));
-  --hcb-border: rgba(255,255,255,0.03);
-  --hcb-accent-shadow: rgba(92,219,113,0.10);
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Comment card */
-#HCB_comment_box .comment {
-  background: var(--hcb-bg);
-  border: 1px solid var(--hcb-border) !important;
-  padding: 14px 16px !important;
-  margin-bottom: 12px;
-  border-radius: 12px !important;
-  box-shadow: 0 8px 28px rgba(2,12,14,0.45);
-  transition: transform .18s ease, box-shadow .20s ease, border-color .12s;
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-
-/* Hover / focus */
-#HCB_comment_box .comment:hover,
-#HCB_comment_box .comment:focus-within {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 48px var(--hcb-accent-shadow);
-  border-color: rgba(92,219,113,0.12) !important;
-}
-
-/* Avatar and author area */
-#HCB_comment_box .hcb-avatar {
-  width: 46px;
-  height: 46px;
-  flex: 0 0 46px;
-  border-radius: 8px;
-  object-fit: cover;
-  border: 1px solid rgba(255,255,255,0.03);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
-
-/* Body */
-#HCB_comment_box .hcb-comment-content,
-#HCB_comment_box .comment .hcb-content {
-  color: var(--text-muted);
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
-  word-break: break-word;
-  flex: 1 1 auto;
-}
-
-/* Meta row (name, time, actions) */
-#HCB_comment_box .hcb-comment-meta,
-#HCB_comment_box .comment .hcb-meta {
-  display:flex;
-  align-items:center;
-  gap:10px;
-  width:100%;
-  justify-content:space-between;
-  margin-bottom: 8px;
-}
-#HCB_comment_box .hcb-username {
-  color: var(--text-main);
-  font-weight: 800;
-  font-size: 0.98rem;
-}
-
-/* Inline actions / small buttons */
-#HCB_comment_box .hcb-comment-tb button,
-#HCB_comment_box .hcb-like,
-#HCB_comment_box .hcb-reply,
-#HCB_comment_box .hcb-flag {
-  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
-  color: #071017 !important;
-  border: none !important;
-  border-radius: 8px !important;
-  padding: 8px 12px; /* comfortable touch area */
-  font-size: 0.95rem;
-  font-weight: 800;
-  cursor: pointer;
-  box-shadow: 0 8px 26px rgba(57,192,183,0.06);
-  transition: transform .12s ease, box-shadow .18s ease, opacity .12s;
-  margin: 0 4px 4px 0;
-}
-
-/* hover / focus */
-#HCB_comment_box .hcb-comment-tb button:hover,
-#HCB_comment_box .hcb-like:hover,
-#HCB_comment_box .hcb-reply:hover,
-#HCB_comment_box .hcb-flag:hover,
-#HCB_comment_box .hcb-comment-tb button:focus {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 48px rgba(57,192,183,0.14);
-  outline: none;
-}
-
-/* keyboard visible focus */
-#HCB_comment_box .hcb-comment-tb button:focus-visible,
-#HCB_comment_box .hcb-like:focus-visible,
-#HCB_comment_box .hcb-reply:focus-visible {
-  outline: 3px solid rgba(92,219,113,0.12);
-  outline-offset: 4px;
-}
-
-/* Status / small note */
-#HCB_comment_box .hcb-status,
-#HCB_comment_box .hcb-time {
-  color: var(--text-muted);
-  font-weight: 600;
-  font-size: .92rem;
-}
-
-/* Input / Form container */
-#HCB_comment_form_box {
-  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));
-  border-radius: 12px;
-  box-shadow: 0 10px 36px rgba(2,12,14,0.35);
-  padding: 16px;
-  margin: 18px 0;
-  border: 1px solid var(--hcb-border);
-}
-
-/* Text inputs / textarea */
-#hcb_form_name_container,
-#hcb_form_content {
-  background: rgba(255,255,255,0.01);
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid rgba(255,255,255,0.02);
-  transition: box-shadow .18s ease, border-color .12s;
-}
-#hcb_form_name_container input,
-#hcb_form_content textarea,
-#hcb_form_content {
-  width: 100%;
-  border: none;
-  background: transparent;
-  color: var(--text-main);
-  font-size: 1rem;
-  outline: none;
-  resize: vertical;
-  min-height: 88px;
-  padding: 6px;
-}
-
-/* focus glow */
-#hcb_form_name_container:focus-within,
-#hcb_form_content:focus-within {
-  box-shadow: 0 10px 30px rgba(57,192,183,0.06), 0 0 10px rgba(57,192,183,0.08);
-  border-color: rgba(92,219,113,0.12);
-}
-
-/* Submit / file buttons */
-#hcb_submit {
-  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
-  color: #071017;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 18px;
-  font-size: 1rem;
-  font-weight: 800;
-  cursor: pointer;
-  box-shadow: 0 8px 28px rgba(57,192,183,0.06);
-  transition: transform .12s, box-shadow .18s;
-}
-#hcb_submit:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 48px rgba(57,192,183,0.14);
-}
-
-/* File label */
-#hcb_file_label {
-  background: rgba(255,255,255,0.01);
-  color: var(--text-main);
-  border-radius: 8px;
-  padding: 8px 12px;
-  font-weight: 700;
-  border: 1px solid rgba(255,255,255,0.03);
-}
-
-/* small actions area: align to right on desktop */
-#HCB_comment_box .hcb-comment-tb { display:flex; gap:6px; align-items:center; justify-content:flex-end; }
-
-/* Readable link colors */
-#HCB_comment_box a { color: var(--accent); font-weight:700; text-decoration: underline; }
-
-/* Compact mobile layout */
-@media (max-width: 640px) {
-  #HCB_comment_box .comment { flex-direction: column; gap:8px; align-items: stretch; padding:12px; }
-  #HCB_comment_box .hcb-avatar { width:40px; height:40px; }
-  #HCB_comment_box .hcb-comment-tb { justify-content:flex-start; flex-wrap:wrap; }
-  #HCB_comment_form_box { padding:12px; }
-}
-
-/* Scrollbar for comment list */
-#HCB_comment_box::-webkit-scrollbar { height: 8px; width: 10px; }
-#HCB_comment_box::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.03); border-radius: 8px; }
-#HCB_comment_box::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.06); }
-
-/* Accessibility helpers */
-#HCB_comment_box .hcb-like[aria-pressed="true"], 
-#HCB_comment_box .hcb-flag[aria-pressed="true"] {
-  box-shadow: 0 10px 30px rgba(57,192,183,0.12);
-  transform: translateY(-2px);
-}
-    </style>
+<!-- moved to site-theme.css -->
   </head>
 
   <body>
@@ -734,13 +47,14 @@ select.filter-item option { background: #0f171a; color: var(--text); padding:8px
         <div class="nav-content">
           <div style="display:flex;align-items:center;gap:12px">
             <img class="logo" onclick="gotoUrl()" src="logo.png" alt="PRP" />
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" style="display:none; border:0; background:transparent; color:var(--muted); font-weight:800; font-size:1.3rem;">☰</button>
             <ul class="nav-links" style="display:flex;gap:8px;">
               <li><a href="index.html" class="active">Home</a></li>
               <li><a href="wasted.html">Wasted Seats</a></li>
               <li><a href="review.html">Training Reviews</a></li>
               <li><a href="cutoff.html">Cutoff Merits</a></li>
               <li><a href="schedule.html">Schedule</a></li>
-              <li><a href="/prp-site/2025/index.html">Gazette</a></li>
+              <li><a href="/prp-site/2025/index.html">Unofficial Gazette</a></li>
               <li><a href="prev.html">Prev Lists</a></li>
             </ul>
           </div>
@@ -1164,203 +478,8 @@ function gotoComment(){
   ele.scrollIntoView();
 }
   </script>
-  <script>
-/* ---------- Build accessible custom selects (keeps native select for form & compatibility) ---------- */
-(function () {
-  const SELECT_SELECTOR = 'select.filter-item';
+  
 
-  function createCustomSelect(select) {
-    if (select.dataset.customized === 'true') return;
-    // wrap and hide native select
-    const wrapper = document.createElement('div');
-    wrapper.className = 'select-wrapper';
-    select.parentNode.insertBefore(wrapper, select);
-    wrapper.appendChild(select);
-    select.classList.add('native-hidden');
-    select.dataset.customized = 'true';
-
-    // create custom shell
-    const cs = document.createElement('div');
-    cs.className = 'custom-select';
-    cs.setAttribute('role', 'combobox');
-    cs.setAttribute('aria-haspopup', 'listbox');
-    cs.setAttribute('tabindex', 0);
-
-    const trigger = document.createElement('div');
-    trigger.className = 'cs-trigger';
-    trigger.setAttribute('tabindex', 0);
-
-    const label = document.createElement('div');
-    label.className = 'cs-label cs-placeholder';
-    label.textContent = select.options[select.selectedIndex] ? select.options[select.selectedIndex].text : select.getAttribute('placeholder') || select.id;
-
-    const caret = document.createElement('div');
-    caret.className = 'cs-caret';
-    caret.innerHTML = '&#9662;';
-
-    trigger.appendChild(label);
-    trigger.appendChild(caret);
-
-    const opts = document.createElement('div');
-    opts.className = 'cs-options';
-    opts.setAttribute('role', 'listbox');
-    opts.setAttribute('tabindex', -1);
-
-    // populate options (skipping disabled placeholder-only options)
-    function populateOptions() {
-      opts.innerHTML = '';
-      const options = Array.from(select.options).filter(o => o.value !== '' || o.selected);
-      if (options.length === 0) {
-        const empty = document.createElement('div');
-        empty.className = 'cs-empty';
-        empty.textContent = 'No options';
-        opts.appendChild(empty);
-        return;
-      }
-      options.forEach((o, idx) => {
-        const item = document.createElement('div');
-        item.className = 'cs-option';
-        item.setAttribute('role', 'option');
-        item.dataset.value = o.value;
-        item.innerText = o.text;
-        if (o.disabled) item.style.opacity = 0.6;
-        if (o.selected) item.setAttribute('aria-selected', 'true');
-        item.addEventListener('click', (ev) => {
-          select.value = o.value;
-          // trigger change on native select so existing handlers run
-          select.dispatchEvent(new Event('change', { bubbles: true }));
-          label.textContent = o.text;
-          closeAll();
-          trigger.focus();
-        });
-        item.addEventListener('mouseenter', () => {
-          setFocused(item);
-        });
-        opts.appendChild(item);
-      });
-    }
-
-    cs.appendChild(trigger);
-    cs.appendChild(opts);
-    wrapper.appendChild(cs);
-
-    // keyboard navigation
-    let focusedIndex = -1;
-    function setFocused(el) {
-      const all = opts.querySelectorAll('.cs-option');
-      all.forEach(a => a.classList.remove('focused'));
-      if (!el) { focusedIndex = -1; return; }
-      el.classList.add('focused');
-      focusedIndex = Array.from(all).indexOf(el);
-      // ensure visible
-      el.scrollIntoView({ block: 'nearest' });
-    }
-
-    function open() {
-      cs.classList.add('open');
-      populateOptions();
-      document.addEventListener('click', outsideClose);
-    }
-    function closeAll() { close(); }
-    function close() {
-      cs.classList.remove('open');
-      focusedIndex = -1;
-      setFocused(null);
-      document.removeEventListener('click', outsideClose);
-    }
-    function outsideClose(e) {
-      if (!cs.contains(e.target)) close();
-    }
-
-    // clicking trigger opens options
-    trigger.addEventListener('click', (e) => {
-      e.stopPropagation();
-      if (cs.classList.contains('open')) close(); else open();
-    });
-
-    // keyboard events on trigger
-    trigger.addEventListener('keydown', (e) => {
-      const items = opts.querySelectorAll('.cs-option');
-      if (e.key === 'ArrowDown') {
-        e.preventDefault();
-        if (!cs.classList.contains('open')) { open(); return; }
-        focusedIndex = Math.min(items.length - 1, (focusedIndex === -1 ? 0 : focusedIndex + 1));
-        setFocused(items[focusedIndex]);
-      } else if (e.key === 'ArrowUp') {
-        e.preventDefault();
-        if (!cs.classList.contains('open')) { open(); return; }
-        focusedIndex = Math.max(0, (focusedIndex === -1 ? items.length - 1 : focusedIndex - 1));
-        setFocused(items[focusedIndex]);
-      } else if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        if (!cs.classList.contains('open')) { open(); } else {
-          const items = opts.querySelectorAll('.cs-option');
-          if (items[focusedIndex]) items[focusedIndex].click();
-        }
-      } else if (e.key === 'Escape') {
-        close();
-      }
-    });
-
-    // update label when native select changes (for external updates)
-    const mo = new MutationObserver(() => {
-      const opt = select.options[select.selectedIndex];
-      if (opt) label.textContent = opt.text;
-      populateOptions();
-    });
-    mo.observe(select, { childList: true, subtree: true, attributes: true, characterData: true });
-
-    // initial populate
-    populateOptions();
-  }
-
-  function setFocused(el) {
-    if (!el) return;
-    const wrapper = el.closest('.cs-options');
-    if (!wrapper) return;
-    wrapper.querySelectorAll('.cs-option').forEach(a => a.classList.remove('focused'));
-    el.classList.add('focused');
-  }
-
-  function closeAll() {
-    document.querySelectorAll('.custom-select.open').forEach(cs => cs.classList.remove('open'));
-  }
-
-  // build for existing and future selects
-  function buildAll() {
-    document.querySelectorAll(SELECT_SELECTOR).forEach(s => createCustomSelect(s));
-  }
-
-  // observe DOM for newly added selects (since options are populated dynamically)
-  const observer = new MutationObserver((mutations) => {
-    for (const m of mutations) {
-      m.addedNodes && m.addedNodes.forEach(node => {
-        if (node.nodeType === 1 && node.matches && node.matches(SELECT_SELECTOR)) createCustomSelect(node);
-        else if (node.querySelectorAll) {
-          node.querySelectorAll && node.querySelectorAll(SELECT_SELECTOR).forEach(s => createCustomSelect(s));
-        }
-      });
-      // if options changed on an existing select, MutationObserver inside createCustomSelect updates it
-    }
-  });
-  observer.observe(document.body, { childList: true, subtree: true });
-
-  // close on outside click and ESC at document level
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.custom-select')) closeAll();
-  });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAll(); });
-
-  // run on DOM ready (and again after a short delay to catch dynamic population)
-  document.addEventListener('DOMContentLoaded', () => {
-    buildAll();
-    setTimeout(buildAll, 250); // catch late-populated options
-  });
-
-  // also expose for manual call if needed
-  window.rebuildCustomFilterSelects = buildAll;
-})();
-</script>
 <script>
 const PAGE_NOTICES = [
   {
@@ -1369,14 +488,14 @@ const PAGE_NOTICES = [
     subtitle: 'Note some things might not work or throw error, might still be in old design.',
     extra: '...Stay tuned for the new look!',
     ctaText: 'Home',
-    ctaHref: '/prp-site/2025/index.html',
+    ctaHref: 'index.html',
     tone: 'info' // 'info'|'warn'|'success'
   },
   {
     badge: 'Unofficial',
-    title: 'Unofficial Potential Publication',
-    subtitle: 'We do not currently plan to publish further unofficial merit lists. However, because some colleagues and close associates have applied for the recent induction, we may attempt to publish an unofficial list. This is not certain due to time constraints and our duty hours.',
-    extra: 'We aim to decide by Monday; if we cannot, an unofficial list may not be published afterward.',
+    title: 'Unofficial lists have been published',
+    subtitle: 'Unofficial gazette for Jan 2026 induction is now available. Merit list according to unofficial gazette is also live.',
+    extra: '',
     ctaText: 'WIP',
     ctaHref: '/prp-site/2025/index.html',
     tone: 'warn'
@@ -1592,5 +711,140 @@ function setPageNotice(newCfg) {
 function setPageNotices(noticesArray, opts = {}) {
   NoticeSlideshow.set(noticesArray, opts);
 }
-</script></body>
+</script>
+<script>
+(function(){
+  // Lightweight helpers moved from modified-index.html
+  function wait(ms){ return new Promise(r=>setTimeout(r,ms)); }
+  const joiningCache = {};
+  async function getJoiningSafe(applicantId, retries = 3){
+    if(joiningCache[applicantId]) return joiningCache[applicantId];
+    for(let i=0;i<retries;i++){
+      try{
+        const res = await $.ajax({url: `https://prp-api.vercel.app/joining/${applicantId}/`, method: 'GET'});
+        joiningCache[applicantId] = res;
+        return res;
+      }catch(err){
+        if(i < retries - 1) await wait(200);
+        else { console.warn(`❌ API failed for ${applicantId} after ${retries} tries`); return undefined; }
+      }
+    }
+  }
+
+  async function nonJoinersNotice(){
+    const table = $('#statTable').DataTable();
+    const pageRows = table.rows({ page: 'current' }).nodes();
+    const container = document.getElementById('nonJoinNotif');
+    container.innerHTML = '';
+
+    let nonJoinerCount = 0;
+    const itemWrapper = document.createElement('div');
+    itemWrapper.style.display = 'flex';
+    itemWrapper.style.flexWrap = 'wrap';
+    itemWrapper.style.gap = '0.6em';
+
+    const tasks = [];
+    for (let i = 0; i < pageRows.length; i++) {
+      const $row = $(pageRows[i]);
+      tasks.push((async function(i, $row){
+        await wait(i * 100);
+        const statusCell = $row.find('.consentstatusstyle');
+        const idAttr = statusCell.attr('id');
+        if (!idAttr) return;
+        const applicantId = idAttr.split('-')[1];
+        const joiningStatus = await getJoiningSafe(applicantId);
+        const div = document.createElement('div'); div.innerHTML = joiningStatus || '';
+        const plainStatus = (div.textContent || div.innerText || '').trim().toLowerCase();
+        if (plainStatus !== 'joined') {
+          nonJoinerCount++;
+          const applicantName = $row.find('td:nth-child(2)').text().trim();
+          const quota = $row.find('td:nth-child(3)').text().trim();
+          const speciality = $row.find('td:nth-child(4)').text().trim();
+          const hospital = $row.find('td:nth-child(5)').text().trim();
+          const block = document.createElement('span');
+          block.className = 'nonjoin-item';
+          block.setAttribute('data-tippy-content', `🚫 Seat wasted at:<br><b>${speciality}</b>, <b>${hospital}</b><br>Quota: ${quota}<br><i>${applicantName}</i>`);
+          block.innerHTML = `<b>❌ ${applicantId}</b>`;
+          itemWrapper.appendChild(block);
+        }
+      })(i, $row));
+    }
+
+    await Promise.all(tasks);
+
+    if (nonJoinerCount > 0) {
+      const heading = document.createElement('div');
+      heading.innerHTML = `⚠️ <b>${nonJoinerCount}</b> seat${nonJoinerCount > 1 ? 's' : ''} wasted on this page`;
+      heading.style.marginBottom = '0.5em';
+      heading.style.color = '#ffadad';
+      heading.style.fontWeight = 'bold';
+      heading.style.fontSize = '1em';
+      container.appendChild(heading);
+      container.appendChild(itemWrapper);
+      container.style.display = 'block';
+    } else {
+      container.style.display = 'none';
+    }
+
+    // initialize tooltips
+    if (typeof tippy === 'function') {
+      tippy('[data-tippy-content]', { allowHTML: true, placement: 'top', theme: 'light-border', animation: 'scale-subtle', delay: [100, 0] });
+    }
+  }
+
+  // Wire to table draws
+  $('#statTable').on('draw.dt', function () { nonJoinersNotice(); });
+
+  async function showNextCandidate(elem){
+    const table = $('#statTable').DataTable();
+    const row = $(elem).closest('tr');
+    const rowIndex = table.row(row).index();
+    const rowData = table.row(rowIndex).data();
+
+    const selectedCandidate = { nameFull: rowData[1], marksTotal: parseFloat(rowData[5]) };
+    const program = default_filter.program;
+    const quota = rowData[2];
+    const speciality = rowData[3];
+    const hospital = rowData[4];
+
+    const next = await nextCandidateInLine(selectedCandidate, program, quota, speciality, hospital);
+    if (!next) { alert("No next candidate found."); return; }
+
+    const count = (parseInt($(elem).data('count')) || 0) + 1;
+    const updatedRow = [
+      next.pmdcNo,
+      next.nameFull,
+      next.quotaName,
+      next.specialityName,
+      next.hospitalName,
+      next.marksTotal,
+      `Pref No.${next.preferenceNo}<br><span class='check-consent' onmousedown='checkConsent(${next.applicantId})'>Check Consent</span><br><span class='consentstatusstyle' id='status-${next.applicantId}'></span>`,
+      `<span data-count='${count}' class='next-candidate' onclick='showNextCandidate(this)'>Show Next Candidate</span>`
+    ];
+
+    table.row(rowIndex).data(updatedRow).draw(false);
+    $(row).addClass('row-highlight');
+  }
+
+  function loadComments(){
+    const btn = document.getElementById('showCommentsBtn'); if (btn) btn.style.display='none';
+    var wrapper = document.getElementById('HCB_wrapper'); if(wrapper){ wrapper.style.display = 'block'; wrapper.classList.add('neon-comments'); }
+    var s=document.createElement('script'), l=''+window.location, h='https://www.htmlcommentbox.com';
+    s.setAttribute('type','text/javascript');
+    s.setAttribute('src', h+'/jread?page='+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24mzyYuuZBe1GhURDyiqYE4%2F"+"&opts=16798&num=10&ts="+Date.now());
+    document.getElementsByTagName('head')[0].appendChild(s);
+  }
+
+  // Nav toggle handled by site-theme.js (shared)
+
+  // expose useful functions for debugging
+  window.getJoiningSafe = getJoiningSafe;
+  window.nonJoinersNotice = nonJoinersNotice;
+  window.showNextCandidate = showNextCandidate;
+  window.loadComments = loadComments;
+
+})();
+</script>
+<script src="site-theme.js"></script>
+</body>
 </html>

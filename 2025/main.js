@@ -345,11 +345,11 @@ function getOptions(optionType) {
         }
     }
 }
-for (prog in fcpsMeritMerit) {
+for (prog in fcpsMerit) {
         for (quota in fcpsMerit[prog]) {
             for (specia in fcpsMerit[prog][quota]) 
                 {
-                    for (hospital in msMerit[prog][quota][specia])
+                    for (hospital in fcpsMerit[prog][quota][specia])
                         {
                     if (!result.includes(hospital)) {
                         result.push(hospital)
@@ -359,11 +359,12 @@ for (prog in fcpsMeritMerit) {
         }
     }
 }
+
+    console.log('hospital', result)
     }
     if (optionType === 'program') {
         return ['FCPS', 'MS', 'MD']
     }
-   
     return result
 }
 async function getConsent(applicantId, inductionId = 18, round = 3) {      

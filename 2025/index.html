@@ -18,6 +18,12 @@
     <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
     <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="../site-theme.css" />
+    <style>
+      td:nth-child(8),
+      th:nth-child(8) {
+        background-color: var(--accent-3) !important;
+      }
+    </style>
   </head>
   <body>
     <!-- NAV -->
@@ -105,14 +111,12 @@
               <tr>
                 <th class="linkable">Applicant ID</th>
                 <th >PMDC Number</th>
-                <th >Name</th>
-                <th >Matric</th>
-                <th >Inter</th>            
+                <th >Name</th>          
                 <th >Degree</th>
                 <th >MDCAT</th>
                 <th >House Job</th>
                 <th >Experience</th>
-                <th >Porgarm Marks</th>
+                <th >Program(Attempt) Marks</th>
                 <th >Position</th>
                 <th>Aggregate</th>       
               </tr>
@@ -155,7 +159,7 @@
                 {
                     extend: 'pdfHtml5',
                     text: 'Download PDF',
-                    title : 'gazetteOfficial',
+                    title : 'gazetteUnofficial',
                     customize: function (doc) {
                         
                         let table = doc.content[1].table.body;
@@ -179,11 +183,7 @@
     
         columns: [
           { width: "10%" },
-          { width: "20%" },
-          { width: "10%" },
-          { width: "10%" },
-          
-          { width: "10%" },
+          { width: "20%" },                    { width: "10%" },
           { width: "10%" },
           { width: "10%" },
           { width: "10%" },
@@ -209,8 +209,6 @@
           gazette[cand].applicantId,
             gazette[cand].pmdcNo,
             gazette[cand].nameFull,
-            gazette[cand].matric,
-            gazette[cand].fsc,
             gazette[cand].degree,            
             gazette[cand].mdcat,
             gazette[cand].houseJob,

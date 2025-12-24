@@ -305,6 +305,7 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
     console.log(filters);
     for (filter in filters) {
       let options = getOptions(filters[filter].id);
+      console.log(options, filters[filter].id);
       for (opt in options) {
         filters[filter].innerHTML +=
           "<option value='" + options[opt] + "'>" + options[opt] + "</option>";

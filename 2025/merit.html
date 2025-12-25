@@ -147,7 +147,7 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
                 <th>Quota</th>
                 <th>Speciality</th>
                 <th>Hospital</th>
-                <th>Aggregate</th>
+                <th>Aggregate + AttemptMark</th>
                 <th>Preference No.</th>
               </tr>
             </thead>
@@ -263,7 +263,7 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
             merit[cand].quotaName,
             merit[cand].specialityName,
             merit[cand].hospitalName,
-            merit[cand].marksTotal,
+            merit[cand].marksTotal+"<sub style='color:var(--text-desc);'>+"+getProgramMark(merit[cand].applicantId, default_filter.program)+"</sub>",
             "Pref No."+merit[cand].preferenceNo,
             ,
           ]);
@@ -320,7 +320,19 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
       console.log(default_filter);
       changeMeritList();
     }
-   
+   function getProgramMark(applicantId, program) {
+      let cD = cand_data;
+      if (applicantId in cD){
+          if (program in cD[applicantId]['programMark']){
+          console.log(cD[applicantId]['nameFull'],cD[applicantId]['programMark'][program])
+            return cD[applicantId]['programMark'][program];
+
+        }else {
+          return 0;
+        }
+      }
+      return 0;
+    }
     
     async function checkConsent(applicantId) {
       let ele = document.getElementById('status-'+applicantId.toString())

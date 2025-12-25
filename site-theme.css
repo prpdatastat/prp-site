@@ -615,3 +615,6 @@ notice-dots.hidden { display:none; }
   from { opacity: 1; transform: translateY(0); }
   to   { opacity: 0; transform: translateY(-10px); }
 }
+.row-highlight {
+   background-color: var(--text-desc) !important;
+}

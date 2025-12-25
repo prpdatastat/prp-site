@@ -17,6 +17,7 @@
     <script src="https://cdn.datatables.net/v/dt/dt-2.0.8/b-3.0.2/b-html5-3.0.2/datatables.min.js"></script>
     <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="../site-theme.css" />
+    
   </head>
   <body>
      <!-- NAV -->
@@ -142,10 +143,13 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
     <span class="toggle-text">With attempt marks</span>
   </label>
 </div>
+  <div class='card'><span  style="font-weight:800; color:var(--text-desc);">If you select an option in all four dropdowns — Speciality, Program, Hospital, and Quota — the table will show next-in-line candidates who may be considered if the currently selected candidate does not give consent.</span>
+  </div>
       <div class="card">
             <div style="font-weight:800; color:var(--accent);" id="headline"></div>
           </div>
-        </div>
+        
+      </div>
       <div class="table-card">
         <div class="table-container">
           <table class="stat-table table-fade active" style="width: 100%" id="statTable">
@@ -263,7 +267,9 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
           { width: "5%" },
           { width: "5%" },
         ],
-      });
+
+      },
+    );
       changeMeritList();
     });
     
@@ -276,46 +282,106 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
         default_filter.speciality,
         default_filter.hospital
       );
+      console.log(merit);
       let seats = getSeatsOccupied(meritData[default_filter.program],default_filter.program,  default_filter.quota, default_filter.hospital, default_filter.speciality);
       for (k in seats) {        
         const ele = document.getElementById(k).innerHTML = seats[k]
       }
       jQuery("#statTable").DataTable().clear().draw();
-      for (cand in merit) {
-        const check = document.getElementById('tableToggle');
-        console.log(check.checked)
-        if (check.checked) {
-        jQuery("#statTable")
-          .DataTable()
-          .row.add([
-            merit[cand].pmdcNo,
-            merit[cand].nameFull,
-            merit[cand].quotaName,
-            merit[cand].specialityName,
-            merit[cand].hospitalName,
-            merit[cand].marksTotal,
-            "Pref No."+merit[cand].preferenceNo,
-            ,
-          ]);
-      }
-     else {
-       jQuery("#statTable")
-          .DataTable()
-          .row.add([
-            merit[cand].pmdcNo,
-            merit[cand].nameFull,
-            merit[cand].quotaName,
-            merit[cand].specialityName,
-            merit[cand].hospitalName,
-            merit[cand].marksTotal+"<sub style='color:var(--text-desc);'>+"+getProgramMark(merit[cand].applicantId, default_filter.program)+"</sub>",
-            "Pref No."+merit[cand].preferenceNo,
-            ,
-          ]);
-      }
-    }
-      jQuery("#statTable").DataTable().draw();
-    }
       
+  const rowNodes = [];
+      for (const cand in merit) {
+  const check = document.getElementById('tableToggle');
+  if (check.checked) {
+
+   
+
+    // ➜ version WITHOUT program marks
+    jQuery("#statTable").DataTable().row.add([
+      merit[cand].pmdcNo,
+      merit[cand].nameFull,
+      merit[cand].quotaName,
+      merit[cand].specialityName,
+      merit[cand].hospitalName,
+      merit[cand].marksTotal,
+      "Pref No." + merit[cand].preferenceNo,
+    ]);
+     if (
+      default_filter.hospital !== "" &&
+      default_filter.speciality !== "" &&
+      default_filter.quota !== ""
+    ) {
+      let candsNext =  getNextInLineCandidates(default_filter.program, {
+          quotaName: default_filter.quota,
+          specialityName: default_filter.speciality,
+          hospitalName: default_filter.hospital
+        })
+        for (cd in candsNext) {
+          console.log('next in line candidate', candsNext[cd])
+        const rowNode = jQuery("#statTable").DataTable().row.add([
+      candsNext[cd].pmdcNo+"<br> <sub style='color:var(--text-desc);'> Next in line</sub>",
+      candsNext[cd].nameFull,
+      candsNext[cd].quotaName,
+      candsNext[cd].specialityName,
+      candsNext[cd].hospitalName,
+      candsNext[cd].marksTotal,
+      "Pref No." + candsNext[cd].preferenceNo,
+    ]);
+    rowNodes.push(rowNode);
+    }
+
+  } 
+}else {
+
+    
+
+    // ➜ version WITH program marks
+    jQuery("#statTable").DataTable().row.add([
+      merit[cand].pmdcNo,
+      merit[cand].nameFull,
+      merit[cand].quotaName,
+      merit[cand].specialityName,
+      merit[cand].hospitalName,
+      merit[cand].marksTotal +
+        "<sub style='color:var(--text-desc);'>+" +
+        getProgramMark(merit[cand].applicantId, default_filter.program) +
+        "</sub>",
+      "Pref No." + merit[cand].preferenceNo,
+    ]);
+    if (
+      default_filter.hospital !== "" &&
+      default_filter.speciality !== "" &&
+      default_filter.quota !== ""
+    ) {
+      let candsNext =  getNextInLineCandidates(default_filter.program, {
+          quotaName: default_filter.quota,
+          specialityName: default_filter.speciality,
+          hospitalName: default_filter.hospital
+        })
+        for (cd in candsNext) {
+          console.log('next in line candidate', candsNext[cd])
+        const rowNode = jQuery("#statTable").DataTable().row.add([
+      candsNext[cd].pmdcNo+"<br> <sub style='color:var(--text-desc);'> Next in line</sub>",
+      candsNext[cd].nameFull,
+      candsNext[cd].quotaName,
+      candsNext[cd].specialityName,
+      candsNext[cd].hospitalName,
+      candsNext[cd].marksTotal+
+       "<sub style='color:var(--text-desc);'>+" +
+        getProgramMark(merit[cand].applicantId, default_filter.program) +
+        "</sub>",
+      "Pref No." + candsNext[cd].preferenceNo,
+    ]);
+    
+    }
+
+  } 
+  }
+}
+      jQuery("#statTable").DataTable().draw();
+    
+    }
+  
       $('#statTable').on('click', 'tbody td', function() {   
         let param =   columnParams[this._DT_CellIndex.column];
         let paths = {
@@ -419,47 +485,7 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
   }
 }*/
       
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("tableToggle");
-  const tableA = document.getElementById("tableA");
-  const tableB = document.getElementById("tableB");
 
-  let animating = false;
-
-  function switchTables(showTable, hideTable) {
-    if (animating || showTable === hideTable) return;
-    animating = true;
-
-    // animate outgoing
-    hideTable.classList.remove("active");
-    hideTable.classList.remove("anim-in");
-    hideTable.classList.add("anim-out");
-
-    // after fade-out, animate incoming
-    hideTable.addEventListener("animationend", function handleOut() {
-      hideTable.classList.remove("anim-out");
-      hideTable.removeEventListener("animationend", handleOut);
-
-      showTable.classList.add("active", "anim-in");
-
-      showTable.addEventListener("animationend", function handleIn() {
-        showTable.classList.remove("anim-in");
-        showTable.removeEventListener("animationend", handleIn);
-        animating = false;
-      });
-    });
-  }
-
-  function updateTables() {
-    if (toggle.checked) {
-      switchTables(tableB, tableA);
-    } else {
-      switchTables(tableA, tableB);
-    }
-  }
-
-  toggle.addEventListener("change", updateTables);
-});
     function withAttemptMaks(e) {
       
   if (e.checked) {
@@ -488,4 +514,59 @@ function gotoComment(){
   ele.scrollIntoView();
 }
   </script>
+  <script>
+  
+function getNextInLineCandidates(program, params = {}) {
+  const prog = program;
+
+  // Get the 'others' list
+  const others = meritData[prog][prog][params.quotaName][params.specialityName][params.hospitalName]['others'];
+
+  // Step 1: Build a fast lookup map of all already selected candidates
+  const selectedApplicants = new Map();
+  for (const quota of Object.keys(meritData[prog][prog])) {
+    for (const speciality of Object.keys(meritData[prog][prog][quota])) {
+      for (const hospital of Object.keys(meritData[prog][prog][quota][speciality])) {
+        const candidates = meritData[prog][prog][quota][speciality][hospital].candidates;
+        for (const c of candidates) {
+          if (!selectedApplicants.has(c.applicantId) || c.preferenceNo < selectedApplicants.get(c.applicantId).preferenceNo) {
+            selectedApplicants.set(c.applicantId, c);
+          }
+        }
+      }
+    }
+  }
+
+  // Step 2: Determine the minimum marks from already-selected candidates for this hospital
+  const currentCandidates = meritData[prog][prog][params.quotaName][params.specialityName][params.hospitalName].candidates;
+  const minMarks = Math.min(...currentCandidates.map(c => parseFloat(c.marksTotal)));
+
+  // Step 3: Filter 'others' to include only those who:
+  //   - Are not already selected with a better preference
+  //   - Have marks <= minMarks (next in line)
+  const result = [...new Map(
+  others
+    .filter(cand => {
+      const selected = selectedApplicants.get(cand.applicantId);
+      const isBelowMinMarks = parseFloat(cand.marksTotal) <= minMarks;
+      return isBelowMinMarks && (!selected || selected.preferenceNo >= cand.preferenceNo);
+    })
+    .map(cand => [cand.applicantId, {
+      nameFull: cand.nameFull,
+      marksTotal: cand.marksTotal,
+      pmdcNo: cand.pmdcNo,
+      applicantId: cand.applicantId,
+      preferenceNo: cand.preferenceNo,
+      specialityName: params.specialityName,
+      quotaName: params.quotaName,
+      hospitalName: params.hospitalName
+    }])
+).values()]  // values() returns only the unique objects
+.sort((a, b) => parseFloat(b.marksTotal) - parseFloat(a.marksTotal));
+  return result;
+}
+
+
+</script>
+
 </html>

@@ -79,7 +79,7 @@
     // populate options (skipping disabled placeholder-only options)
     function populateOptions() {
       opts.innerHTML = '';
-      const options = Array.from(select.options).filter(o => o.value != '' || o.selected);
+      const options = Array.from(select.options)
       if (options.length === 0) {
         const empty = document.createElement('div');
         empty.className = 'cs-empty';

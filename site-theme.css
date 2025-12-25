@@ -525,7 +525,93 @@ notice-dots.hidden { display:none; }
   gap: 12px;
   align-items: flex-start;
 }
+.table-toggle {
+  display:flex;
+  justify-content:center;
+  margin-bottom:12px;
+}
 
+.toggle-label {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:800;
+  color: var(--muted);
+  cursor:pointer;
+}
 
-```
-The file still contains the entire style. Our earlier replacement didn't remove it. We'll try again with a more precise match for the entire block. Let's perform a replace matching the comment through closing `</style>` as oldString; use the exact content as seen. (I'll now call replace_string_in_file targeting that large block.)
+/* pill track */
+.toggle-switch {
+  position: relative;
+  width: 58px;
+  height: 28px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 8px 24px rgba(2,12,14,0.45);
+  transition: background .18s ease, box-shadow .18s ease;
+}
+
+/* knob */
+.toggle-switch::after {
+  content:"";
+  position:absolute;
+  top:3px;
+  left:4px;
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  background: var(--accent);
+  box-shadow: 0 6px 16px rgba(var(--accent-rgb), .26);
+  transition: transform .18s ease;
+}
+
+/* hide native checkbox */
+#tableToggle {
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
+
+/* ON state */
+#tableToggle:checked + .toggle-switch {
+  background: linear-gradient(90deg, rgba(var(--accent-rgb),.10), rgba(255,255,255,.02));
+  box-shadow: 0 16px 40px rgba(var(--accent-rgb),.12);
+}
+
+#tableToggle:checked + .toggle-switch::after {
+  transform: translateX(26px);
+}
+
+/* base hidden state */
+.table-fade {
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+}
+
+/* visible state */
+.table-fade.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* animation helpers */
+.table-fade.anim-in {
+  animation: fadeSlideIn .28s ease forwards;
+}
+
+.table-fade.anim-out {
+  animation: fadeSlideOut .22s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-10px); }
+}

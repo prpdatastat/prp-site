@@ -132,14 +132,41 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
             </div>
           </div>
       <h4 class="seats"> Seats Occupied: <span class="important" id="occupied">1</span> / <strong id="total"> 2 </strong></h4>
-      
+      <div class="table-toggle card">
+  <label class="toggle-label">
+    <span class="toggle-text">Without attempt marks</span>
+
+    <input type="checkbox" id="tableToggle" onchange="withAttemptMaks(this);"/>
+    <span class="toggle-switch"></span>
+
+    <span class="toggle-text">With attempt marks</span>
+  </label>
+</div>
       <div class="card">
             <div style="font-weight:800; color:var(--accent);" id="headline"></div>
           </div>
         </div>
       <div class="table-card">
         <div class="table-container">
-          <table class="stat-table" style="width: 100%" id="statTable">
+          <table class="stat-table table-fade active" style="width: 100%" id="statTable">
+            <thead>
+              <tr>
+                <th class="linkable">PMDC Number</th>
+                <th >Name</th>
+                <th>Quota</th>
+                <th>Speciality</th>
+                <th>Hospital</th>
+                <th>Aggregate + AttemptMark</th>
+                <th>Preference No.</th>
+              </tr>
+            </thead>
+            <tbody id="dataRows"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="table-card">
+        <div class="table-container">
+          <table class="stat-table table-fade" style="width: 100%" id="statTableAttemptMarks">
             <thead>
               <tr>
                 <th class="linkable">PMDC Number</th>
@@ -255,7 +282,24 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
       }
       jQuery("#statTable").DataTable().clear().draw();
       for (cand in merit) {
+        const check = document.getElementById('tableToggle');
+        console.log(check.checked)
+        if (check.checked) {
         jQuery("#statTable")
+          .DataTable()
+          .row.add([
+            merit[cand].pmdcNo,
+            merit[cand].nameFull,
+            merit[cand].quotaName,
+            merit[cand].specialityName,
+            merit[cand].hospitalName,
+            merit[cand].marksTotal,
+            "Pref No."+merit[cand].preferenceNo,
+            ,
+          ]);
+      }
+     else {
+       jQuery("#statTable")
           .DataTable()
           .row.add([
             merit[cand].pmdcNo,
@@ -268,6 +312,7 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
             ,
           ]);
       }
+    }
       jQuery("#statTable").DataTable().draw();
     }
       
@@ -373,6 +418,71 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
 
   }
 }*/
+      
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("tableToggle");
+  const tableA = document.getElementById("tableA");
+  const tableB = document.getElementById("tableB");
+
+  let animating = false;
+
+  function switchTables(showTable, hideTable) {
+    if (animating || showTable === hideTable) return;
+    animating = true;
+
+    // animate outgoing
+    hideTable.classList.remove("active");
+    hideTable.classList.remove("anim-in");
+    hideTable.classList.add("anim-out");
+
+    // after fade-out, animate incoming
+    hideTable.addEventListener("animationend", function handleOut() {
+      hideTable.classList.remove("anim-out");
+      hideTable.removeEventListener("animationend", handleOut);
+
+      showTable.classList.add("active", "anim-in");
+
+      showTable.addEventListener("animationend", function handleIn() {
+        showTable.classList.remove("anim-in");
+        showTable.removeEventListener("animationend", handleIn);
+        animating = false;
+      });
+    });
+  }
+
+  function updateTables() {
+    if (toggle.checked) {
+      switchTables(tableB, tableA);
+    } else {
+      switchTables(tableA, tableB);
+    }
+  }
+
+  toggle.addEventListener("change", updateTables);
+});
+    function withAttemptMaks(e) {
+      
+  if (e.checked) {
+    localStorage.setItem('attemptMarks', 'false');
+    meritData = {
+      MS: load_data('../2025/attemptmarks/ms_merit.json'),
+      MD: load_data('../2025/attemptmarks/md_merit.json'),
+      FCPS: load_data('../2025/attemptmarks/fcps_merit.json'),
+    };
+    changeMeritList()
+    
+  }else {
+    localStorage.setItem('attemptMarks', 'false');
+    meritData = {
+      MS: load_data('../2025/ms_merit.json'),
+      MD: load_data('../2025/md_merit.json'),
+      FCPS: load_data('../2025/fcps_merit.json'),
+    };
+    changeMeritList()
+   
+
+  }
+}
 function gotoComment(){
   const ele = document.getElementById('HCB_comment_box');
   ele.scrollIntoView();

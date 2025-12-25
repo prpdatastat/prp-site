@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/sync-fetch"></script>
     <link rel="stylesheet" href="../index.css" />
         
+    <link rel="stylesheet" href="../site-theme.css" />
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="../2025/main.js"></script>
@@ -182,7 +183,7 @@
         console.log('program marks')
         const elet = document.getElementsByClassName(pro+'marks')[0];
         console.log(pro, pro+'Marks', data.programMark[pro])
-        elet.innerHTML = '✔'
+        elet.innerHTML = data.programMark[pro]
 
       }
       document.getElementById('scrutiny').addEventListener('click', function() {

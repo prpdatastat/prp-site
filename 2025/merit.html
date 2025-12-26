@@ -274,113 +274,126 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
     });
     
     async function changeMeritList() {
-      const ele = document.getElementById('headline');
-      ele.innerHTML = changeHeadline(default_filter);
-      let merit = getMerit(
-        meritData[default_filter.program],
-        default_filter.quota,
-        default_filter.speciality,
-        default_filter.hospital
-      );
-      console.log(merit);
-      let seats = getSeatsOccupied(meritData[default_filter.program],default_filter.program,  default_filter.quota, default_filter.hospital, default_filter.speciality);
-      for (k in seats) {        
-        const ele = document.getElementById(k).innerHTML = seats[k]
-      }
-      jQuery("#statTable").DataTable().clear().draw();
-      
-  const rowNodes = [];
-      for (const cand in merit) {
-  const check = document.getElementById('tableToggle');
-  if (check.checked) {
 
-   
+  const ele = document.getElementById('headline');
+  ele.innerHTML = changeHeadline(default_filter);
 
-    // ➜ version WITHOUT program marks
-    jQuery("#statTable").DataTable().row.add([
-      merit[cand].pmdcNo,
-      merit[cand].nameFull,
-      merit[cand].quotaName,
-      merit[cand].specialityName,
-      merit[cand].hospitalName,
-      merit[cand].marksTotal,
-      "Pref No." + merit[cand].preferenceNo,
-    ]);
-     if (
-      default_filter.hospital !== "" &&
-      default_filter.speciality !== "" &&
-      default_filter.quota !== ""
-    ) {
-      let candsNext =  getNextInLineCandidates(default_filter.program, {
-          quotaName: default_filter.quota,
-          specialityName: default_filter.speciality,
-          hospitalName: default_filter.hospital
-        })
-        for (cd in candsNext) {
-          console.log('next in line candidate', candsNext[cd])
-        const rowNode = jQuery("#statTable").DataTable().row.add([
-      candsNext[cd].pmdcNo,
-      candsNext[cd].nameFull+"<br> <sub style='color:var(--text-desc);'> Next in line</sub>",
-      candsNext[cd].quotaName,
-      candsNext[cd].specialityName,
-      candsNext[cd].hospitalName,
-      candsNext[cd].marksTotal,
-      "Pref No." + candsNext[cd].preferenceNo,
-    ]);
-    rowNodes.push(rowNode);
-    }
+  let merit = getMerit(
+    meritData[default_filter.program],
+    default_filter.quota,
+    default_filter.speciality,
+    default_filter.hospital
+  );
 
-  } 
-}else {
+  let seats = getSeatsOccupied(
+    meritData[default_filter.program],
+    default_filter.program,
+    default_filter.quota,
+    default_filter.hospital,
+    default_filter.speciality
+  );
 
-    
-
-    // ➜ version WITH program marks
-    jQuery("#statTable").DataTable().row.add([
-      merit[cand].pmdcNo,
-      merit[cand].nameFull,
-      merit[cand].quotaName,
-      merit[cand].specialityName,
-      merit[cand].hospitalName,
-      merit[cand].marksTotal +
-        "<sub style='color:var(--text-desc);'>+" +
-        getProgramMark(merit[cand].applicantId, default_filter.program) +
-        "</sub>",
-      "Pref No." + merit[cand].preferenceNo,
-    ]);
-    if (
-      default_filter.hospital !== "" &&
-      default_filter.speciality !== "" &&
-      default_filter.quota !== ""
-    ) {
-      let candsNext =  getNextInLineCandidates(default_filter.program, {
-          quotaName: default_filter.quota,
-          specialityName: default_filter.speciality,
-          hospitalName: default_filter.hospital
-        })
-        for (cd in candsNext) {
-          console.log('next in line candidate', candsNext[cd])
-        const rowNode = jQuery("#statTable").DataTable().row.add([
-      candsNext[cd].pmdcNo,
-      candsNext[cd].nameFull+"<br> <sub style='color:var(--text-desc);'> Next in line</sub>",
-      candsNext[cd].quotaName,
-      candsNext[cd].specialityName,
-      candsNext[cd].hospitalName,
-      candsNext[cd].marksTotal+
-       "<sub style='color:var(--text-desc);'>+" +
-        getProgramMark(candsNext[cd].applicantId, default_filter.program) +
-        "</sub>",
-      "Pref No." + candsNext[cd].preferenceNo,
-    ]);
-    
-    }
-
-  } 
+  for (k in seats) {
+    document.getElementById(k).innerHTML = seats[k];
   }
-}
-      jQuery("#statTable").DataTable().draw();
-    
+
+  const dt = jQuery("#statTable").DataTable();
+  dt.clear().draw();
+
+  const check = document.getElementById('tableToggle');
+
+  // ----------------------------------------------------
+  // 1️⃣  Add MERIT candidates
+  // ----------------------------------------------------
+  for (const cand in merit) {
+
+    if (check.checked) {
+      // WITHOUT program marks
+      dt.row.add([
+        merit[cand].pmdcNo,
+        merit[cand].nameFull,
+        merit[cand].quotaName,
+        merit[cand].specialityName,
+        merit[cand].hospitalName,
+        merit[cand].marksTotal,
+        "Pref No." + merit[cand].preferenceNo
+      ]);
+
+    } else {
+      // WITH program marks
+      dt.row.add([
+        merit[cand].pmdcNo,
+        merit[cand].nameFull,
+        merit[cand].quotaName,
+        merit[cand].specialityName,
+        merit[cand].hospitalName,
+        merit[cand].marksTotal +
+          "<sub style='color:var(--text-desc);'>+" +
+          getProgramMark(merit[cand].applicantId, default_filter.program) +
+          "</sub>",
+        "Pref No." + merit[cand].preferenceNo
+      ]);
     }
+  }
+
+  // ----------------------------------------------------
+  // 2️⃣  Compute NEXT-IN-LINE candidates ONCE
+  // ----------------------------------------------------
+  let candsNext = [];
+
+  if (
+    default_filter.hospital !== "" &&
+    default_filter.speciality !== "" &&
+    default_filter.quota !== ""
+  ) {
+    candsNext = getNextInLineCandidates(default_filter.program, {
+      quotaName: default_filter.quota,
+      specialityName: default_filter.speciality,
+      hospitalName: default_filter.hospital
+    });
+  }
+
+  // ----------------------------------------------------
+  // 3️⃣  Add NEXT-IN-LINE rows (single render)
+  // ----------------------------------------------------
+  for (const cd in candsNext) {
+
+    if (check.checked) {
+      // WITHOUT program marks
+      dt.row.add([
+        candsNext[cd].pmdcNo +
+          "<br><sub style='color:var(--text-desc);'>Next in line</sub>",
+        candsNext[cd].nameFull,
+        candsNext[cd].quotaName,
+        candsNext[cd].specialityName,
+        candsNext[cd].hospitalName,
+        candsNext[cd].marksTotal,
+        "Pref No." + candsNext[cd].preferenceNo
+      ]);
+
+    } else {
+      // WITH program marks
+      dt.row.add([
+        candsNext[cd].pmdcNo +
+          "<br><sub style='color:var(--text-desc);'>Next in line</sub>",
+        candsNext[cd].nameFull,
+        candsNext[cd].quotaName,
+        candsNext[cd].specialityName,
+        candsNext[cd].hospitalName,
+        candsNext[cd].marksTotal +
+          "<sub style='color:var(--text-desc);'>+" +
+          getProgramMark(candsNext[cd].applicantId, default_filter.program) +
+          "</sub>",
+        "Pref No." + candsNext[cd].preferenceNo
+      ]);
+    }
+  }
+
+  // ----------------------------------------------------
+  // 4️⃣ Draw final table
+  // ----------------------------------------------------
+  dt.draw();
+}
   
       $('#statTable').on('click', 'tbody td', function() {   
         let param =   columnParams[this._DT_CellIndex.column];

@@ -361,9 +361,9 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
     if (check.checked) {
       // WITHOUT program marks
       dt.row.add([
-        candsNext[cd].pmdcNo +
+        candsNext[cd].pmdcNo ,
+        candsNext[cd].nameFull+
           "<br><sub style='color:var(--text-desc);'>Next in line</sub>",
-        candsNext[cd].nameFull,
         candsNext[cd].quotaName,
         candsNext[cd].specialityName,
         candsNext[cd].hospitalName,
@@ -374,9 +374,9 @@ If you notice any discrepancy, feel free to report it. We welcome feedback and a
     } else {
       // WITH program marks
       dt.row.add([
-        candsNext[cd].pmdcNo +
+        candsNext[cd].pmdcNo ,
+        candsNext[cd].nameFull+
           "<br><sub style='color:var(--text-desc);'>Next in line</sub>",
-        candsNext[cd].nameFull,
         candsNext[cd].quotaName,
         candsNext[cd].specialityName,
         candsNext[cd].hospitalName,
